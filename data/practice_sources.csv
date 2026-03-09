@@ -1,0 +1,18 @@
+source_id,source_name,source_type,url,tier,notes
+SRC001,ICAR Handbook of Agriculture,Government,https://icar.org.in,T1,Standard reference for Indian farming practices
+SRC002,NHB Protected Cultivation Guidelines,Government,https://nhb.gov.in,T1,National Horticulture Board technical manuals
+SRC003,NHB Shade Net Guidelines,Government,https://nhb.gov.in,T1,Net house technical standards
+SRC004,NHM Horticulture Mission Reports,Government,https://nhm.nic.in,T1,Orchard establishment guidelines
+SRC005,CRIDA Dryland Farming Manual,Government,https://crida.in,T1,Central Research Institute for Dryland Agriculture
+SRC006,ICAR IFS Guidelines,Government,https://icar.org.in,T1,Integrated Farming System models
+SRC007,NHB Intercropping in Orchards,Government,https://nhb.gov.in,T1,Intercropping with fruit crops
+SRC008,DMR Mushroom Cultivation,Government,https://nrcmushroom.org,T1,Directorate of Mushroom Research
+SRC009,ICAR Vegetable Production Guide,Government,https://icar.org.in,T1,Intensive open-field vegetable production guidelines
+SRC010,IARI Drip Irrigation Manual,Government,https://iari.res.in,T1,Water-efficient drip-based intensive farming practices
+SRC011,ICAR Hydroponics Research,Government,https://icar.org.in,T1,Hydroponic and NFT controlled-environment agriculture
+SRC012,ICRAF Agroforestry Guidelines,Research,https://worldagroforestry.org,T2,Agroforestry models for timber/fruit with intercropping
+SRC013,NDRI Dairy Farming Guide,Government,https://ndri.res.in,T2,National Dairy Research Institute integrated dairy+fodder models
+SRC014,ICAR Poultry Handbook,Government,https://icar.org.in,T2,Backyard and semi-commercial poultry production systems
+SRC015,CIFA Aquaculture Guide,Government,https://cifa.nic.in,T2,Central Institute of Freshwater Aquaculture fish pond management
+SRC016,NHB Nursery Guidelines,Government,https://nhb.gov.in,T2,Seedling and sapling nursery production under horticulture mission
+SRC017,KVIC Beekeeping Manual,Government,https://kvic.org.in,T2,Khadi and Village Industries Commission apiculture guidelines

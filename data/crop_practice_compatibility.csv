@@ -1,0 +1,307 @@
+crop_id,practice_code,compatibility,compatibility_score,role_hint,rationale
+FR_MANGO,ORCHARD,GOOD,1.0,PRIMARY,Classic perennial orchard crop; best fit with orchard systems.
+FR_MANGO,ORCHARD_INTERCROP,GOOD,1.0,PRIMARY,Mango orchards commonly support intercrops in early years for cashflow.
+FR_MANGO,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip improves water efficiency and fruit quality; depends on orchard setup.
+
+FR_GUAVA,ORCHARD,GOOD,1.0,PRIMARY,Early-bearing orchard fruit; suitable for horticulture practice.
+FR_GUAVA,ORCHARD_INTERCROP,GOOD,1.0,PRIMARY,Guava plantations can support intercrops in initial years.
+FR_GUAVA,DRIP_INTENSIVE,MED,0.6,PRIMARY,Water-efficient drip improves productivity; requires infrastructure.
+
+FR_POMEGRANATE,ORCHARD,GOOD,1.0,PRIMARY,Strong fit with semi-arid horticulture under drip.
+FR_POMEGRANATE,ORCHARD_INTERCROP,GOOD,1.0,PRIMARY,Intercrops possible in young orchards before canopy closes.
+FR_POMEGRANATE,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Highly compatible due to water efficiency + fertigation benefits.
+
+FR_LEMON,ORCHARD,GOOD,1.0,PRIMARY,Citrus orchard crop; fits perennial horticulture model.
+FR_LEMON,ORCHARD_INTERCROP,GOOD,1.0,PRIMARY,Intercrops possible in early years; steady orchard planning.
+FR_LEMON,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip beneficial but orchard management is primary driver.
+
+FR_ACID_LIME,ORCHARD,GOOD,1.0,PRIMARY,Acid lime fits orchard horticulture systems well.
+FR_ACID_LIME,ORCHARD_INTERCROP,GOOD,1.0,PRIMARY,Intercrops possible in young orchards.
+FR_ACID_LIME,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip helps water efficiency and fruit quality.
+
+FR_DRAGONFRUIT,ORCHARD,GOOD,1.0,PRIMARY,Perennial high-value fruit grown with trellis pillars; orchard-like system.
+FR_DRAGONFRUIT,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Very compatible—drip is commonly used for efficient irrigation.
+FR_DRAGONFRUIT,ORCHARD_INTERCROP,MED,0.6,PRIMARY,Intercrops possible early, but trellis footprint may limit space.
+
+FR_BANANA,OPEN_FIELD,GOOD,1.0,PRIMARY,Commercial banana plantations are typically open-field with assured irrigation.
+FR_BANANA,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Drip is highly beneficial for banana (water + fertigation efficiency).
+FR_BANANA,INTEGRATED,MED,0.6,PRIMARY,Can be included in diversified integrated systems as a high-value component.
+
+FR_PAPAYA,OPEN_FIELD,GOOD,1.0,PRIMARY,Papaya grown as open-field plantation/field fruit.
+FR_PAPAYA,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip supports uniform growth and fruiting; improves water efficiency.
+FR_PAPAYA,INTEGRATED,MED,0.6,PRIMARY,Works as a component crop in diversified systems.
+
+FR_AMLA,ORCHARD,GOOD,1.0,PRIMARY,Hardy low-water perennial orchard; long-term horticulture fit.
+FR_AMLA,AGROFORESTRY,MED,0.6,PRIMARY,Fits agroforestry as perennial hardy tree with intercrop options.
+FR_AMLA,ORCHARD_INTERCROP,MED,0.6,PRIMARY,Intercrops feasible early; depends on spacing and canopy.
+
+FR_BER,ORCHARD,GOOD,1.0,PRIMARY,Very hardy orchard fruit suited to dry belts.
+FR_BER,AGROFORESTRY,GOOD,1.0,PRIMARY,Excellent agroforestry tree option in arid/semi-arid systems.
+FR_BER,ORCHARD_INTERCROP,MED,0.6,PRIMARY,Intercrops possible in young plantations.
+
+FR_LITCHI,ORCHARD,GOOD,1.0,PRIMARY,Perennial fruit requiring humid subtropical conditions and management.
+FR_LITCHI,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip can help but suitability depends heavily on climate and humidity.
+FR_LITCHI,ORCHARD_INTERCROP,MED,0.6,PRIMARY,Intercrops feasible early; orchard maturity takes time.
+
+FR_GRAPES,ORCHARD,GOOD,1.0,PRIMARY,Grapes are perennial vineyard systems similar to orchards with trellis.
+FR_GRAPES,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Drip irrigation is commonly used for grapes for precision watering.
+FR_GRAPES,NET_HOUSE,MED,0.6,PRIMARY,Some table grapes can benefit from partial protection; adoption varies.
+
+FR_JAMUN,ORCHARD,GOOD,1.0,PRIMARY,Hardy perennial fruit tree; long-term orchard fit.
+FR_JAMUN,AGROFORESTRY,MED,0.6,PRIMARY,Can be integrated as a perennial tree in agroforestry.
+FR_JAMUN,ORCHARD_INTERCROP,MED,0.6,PRIMARY,Intercrops feasible early; long horizon.
+
+FR_COCONUT,ORCHARD,GOOD,1.0,PRIMARY,Perennial plantation crop suited to humid/coastal belts.
+FR_COCONUT,AGROFORESTRY,MED,0.6,PRIMARY,Can be combined with intercrops in plantation agroforestry models.
+FR_COCONUT,INTEGRATED,MED,0.6,PRIMARY,Often part of mixed farming in suitable regions.
+
+FR_APPLE,ORCHARD,GOOD,1.0,PRIMARY,Temperate fruit orchard requiring specific hill climate.
+FR_APPLE,NET_HOUSE,MED,0.6,PRIMARY,Protection can help in some zones but not mandatory; climate dominates.
+FR_APPLE,AGROFORESTRY,MED,0.6,PRIMARY,Can exist in hill agroforestry systems with long horizon.
+
+CE_WHEAT,OPEN_FIELD,GOOD,1.0,PRIMARY,Standard rabi cereal for open-field systems.
+CE_WHEAT,RAIN_FED,MED,0.6,PRIMARY,Possible in reliable rainfall or conserved moisture rabi belts.
+CE_WHEAT,INTEGRATED,MED,0.6,INTERCROP,Seasonal component in integrated farming rotations.
+
+CE_MAIZE,OPEN_FIELD,GOOD,1.0,PRIMARY,Versatile cereal crop for open-field cultivation.
+CE_MAIZE,RAIN_FED,MED,0.6,PRIMARY,Possible where rainfall is moderate and timely.
+CE_MAIZE,INTEGRATED,MED,0.6,INTERCROP,Common rotation/seasonal component in diversified systems.
+
+CE_RICE,OPEN_FIELD,GOOD,1.0,PRIMARY,Standard paddy cultivation in open-field irrigated/rainfed lowlands.
+CE_RICE,INTEGRATED,MED,0.6,INTERCROP,Can be part of IFS in suitable wetland belts (farm diversification).
+CE_RICE,DRIP_INTENSIVE,MED,0.6,PRIMARY,Only in niche systems; generally not primary drip crop (keep MED for flexibility).
+
+CE_BARLEY,OPEN_FIELD,GOOD,1.0,PRIMARY,Hardy rabi cereal for open-field.
+CE_BARLEY,RAIN_FED,GOOD,1.0,PRIMARY,Works well under low water and dry rabi conditions.
+CE_BARLEY,INTEGRATED,MED,0.6,INTERCROP,Rotation crop in diversified systems.
+
+CE_SORGHUM_FODDER,OPEN_FIELD,GOOD,1.0,PRIMARY,Common open-field fodder crop.
+CE_SORGHUM_FODDER,RAIN_FED,GOOD,1.0,PRIMARY,Highly suitable for dryland fodder production.
+CE_SORGHUM_FODDER,INTEGRATED,GOOD,1.0,INTERCROP,Strong fit in livestock-linked integrated farming.
+
+MI_BAJRA,OPEN_FIELD,GOOD,1.0,PRIMARY,Millet cultivated in open-field dry belts.
+MI_BAJRA,RAIN_FED,GOOD,1.0,PRIMARY,Ideal dryland millet requiring very low water.
+MI_BAJRA,INTEGRATED,MED,0.6,INTERCROP,Rotation/seasonal component in diversified systems.
+
+MI_JOWAR,OPEN_FIELD,GOOD,1.0,PRIMARY,Millet suitable for open-field cultivation.
+MI_JOWAR,RAIN_FED,GOOD,1.0,PRIMARY,Strong dryland fit; stable under low water.
+MI_JOWAR,INTEGRATED,MED,0.6,INTERCROP,Rotation crop; fodder/grain value in IFS.
+
+MI_RAGI,OPEN_FIELD,GOOD,1.0,PRIMARY,Millet crop suitable for open-field cultivation.
+MI_RAGI,RAIN_FED,GOOD,1.0,PRIMARY,Excellent drought-tolerant millet for dryland systems.
+MI_RAGI,INTEGRATED,MED,0.6,INTERCROP,Rotation crop in diversified systems.
+
+PU_CHICKPEA,OPEN_FIELD,GOOD,1.0,PRIMARY,Standard rabi pulse in open-field.
+PU_CHICKPEA,RAIN_FED,GOOD,1.0,PRIMARY,Low water pulse suited to dry rabi conditions.
+PU_CHICKPEA,INTEGRATED,MED,0.6,INTERCROP,Rotation pulse adding soil nitrogen in IFS.
+
+PU_PIGEONPEA,OPEN_FIELD,GOOD,1.0,PRIMARY,Common kharif pulse crop.
+PU_PIGEONPEA,RAIN_FED,MED,0.6,PRIMARY,Works in moderate rainfall dryland belts.
+PU_PIGEONPEA,INTEGRATED,MED,0.6,INTERCROP,Rotation pulse in diversified systems.
+
+PU_LENTIL,OPEN_FIELD,GOOD,1.0,PRIMARY,Rabi pulse suited to open-field.
+PU_LENTIL,RAIN_FED,MED,0.6,PRIMARY,Works in dry rabi belts with conserved moisture.
+PU_LENTIL,INTEGRATED,MED,0.6,INTERCROP,Rotation pulse component in IFS.
+
+PU_PEA_DRY,OPEN_FIELD,GOOD,1.0,PRIMARY,Rabi pulse in open-field.
+PU_PEA_DRY,INTEGRATED,MED,0.6,INTERCROP,Rotation pulse component in IFS.
+PU_PEA_DRY,NET_HOUSE,MED,0.6,PRIMARY,Can be grown under net/shade protection in some vegetable systems.
+
+PU_MOONG,OPEN_FIELD,GOOD,1.0,PRIMARY,Short-duration pulse in zaid/kharif seasons.
+PU_MOONG,RAIN_FED,MED,0.6,PRIMARY,Works with moderate rainfall and timely sowing.
+PU_MOONG,INTEGRATED,MED,0.6,INTERCROP,Fast pulse rotation improving soil in IFS.
+
+PU_URAD,OPEN_FIELD,GOOD,1.0,PRIMARY,Short-duration pulse crop in kharif.
+PU_URAD,RAIN_FED,MED,0.6,PRIMARY,Works where rainfall is moderate and well-distributed.
+PU_URAD,INTEGRATED,MED,0.6,INTERCROP,Rotation pulse in diversified systems.
+
+OS_MUSTARD,OPEN_FIELD,GOOD,1.0,PRIMARY,Standard rabi oilseed.
+OS_MUSTARD,RAIN_FED,GOOD,1.0,PRIMARY,Strong low-water rabi oilseed fit.
+OS_MUSTARD,INTEGRATED,MED,0.6,INTERCROP,Rotation oilseed in IFS.
+
+OS_SOYBEAN,OPEN_FIELD,GOOD,1.0,PRIMARY,Standard kharif oilseed crop.
+OS_SOYBEAN,RAIN_FED,MED,0.6,PRIMARY,Works in moderate rainfall belts; variability exists.
+OS_SOYBEAN,INTEGRATED,MED,0.6,INTERCROP,Rotation oilseed in diversified systems.
+
+OS_SUNFLOWER,OPEN_FIELD,GOOD,1.0,PRIMARY,Oilseed suitable for open-field cultivation.
+OS_SUNFLOWER,RAIN_FED,MED,0.6,PRIMARY,Possible in moderate rainfall belts.
+OS_SUNFLOWER,INTEGRATED,MED,0.6,INTERCROP,Rotation oilseed in IFS.
+
+OS_SESAME,OPEN_FIELD,GOOD,1.0,PRIMARY,Oilseed suitable for open-field.
+OS_SESAME,RAIN_FED,GOOD,1.0,PRIMARY,Good dryland oilseed in low water areas.
+OS_SESAME,INTEGRATED,MED,0.6,INTERCROP,Rotation oilseed in diversified systems.
+
+OS_GROUNDNUT,OPEN_FIELD,GOOD,1.0,PRIMARY,Standard open-field oilseed.
+OS_GROUNDNUT,RAIN_FED,GOOD,1.0,PRIMARY,Good rainfed oilseed with correct sowing timing.
+OS_GROUNDNUT,INTEGRATED,MED,0.6,INTERCROP,Rotation/intercrop component in diversified systems.
+
+VE_POTATO,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Intensive vegetable crop typically grown in open-field systems.
+VE_POTATO,OPEN_FIELD,MED,0.6,PRIMARY,Can be grown as a seasonal field crop where inputs are available.
+VE_POTATO,NET_HOUSE,MED,0.6,PRIMARY,Some protection possible but not typical; remains seasonal.
+
+VE_ONION,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Commercial open-field allium crop.
+VE_ONION,OPEN_FIELD,MED,0.6,PRIMARY,Can be part of general open-field farming depending on intensity.
+VE_ONION,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Drip + fertigation improves uniform bulb development and water efficiency.
+
+VE_TOMATO,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Standard intensive open-field vegetable crop.
+VE_TOMATO,NET_HOUSE,GOOD,1.0,PRIMARY,Net protection helps reduce pest pressure and improves quality.
+VE_TOMATO,POLYHOUSE,GOOD,1.0,PRIMARY,High-value protected tomato production with better quality and season extension.
+VE_TOMATO,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Drip improves yield consistency and water efficiency.
+
+VE_OKRA,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Classic warm-season open-field vegetable.
+VE_OKRA,OPEN_FIELD,MED,0.6,PRIMARY,Fits general open-field farming with moderate inputs.
+VE_OKRA,INTEGRATED,MED,0.6,INTERCROP,Short-duration component crop in diversified systems.
+
+VE_BRINJAL,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Hardy but pest-sensitive intensive vegetable crop.
+VE_BRINJAL,NET_HOUSE,MED,0.6,PRIMARY,Net protection can reduce pest pressure in some systems.
+VE_BRINJAL,INTEGRATED,MED,0.6,PRIMARY,Component in diversified farming where management is strong.
+
+VE_CABBAGE,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Cool-season vegetable suited to open-field intensive systems.
+VE_CABBAGE,NET_HOUSE,MED,0.6,PRIMARY,Partial protection possible; depends on market and climate.
+VE_CABBAGE,POLYHOUSE,MED,0.6,PRIMARY,Possible but less common; economics depends on premium market.
+
+VE_CAULIFLOWER,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Cool-season open-field vegetable.
+VE_CAULIFLOWER,NET_HOUSE,MED,0.6,PRIMARY,Protection possible in some belts; depends on temperature control needs.
+VE_CAULIFLOWER,POLYHOUSE,MED,0.6,PRIMARY,Feasible but less common; used for off-season premium.
+
+VE_CARROT,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Root vegetable suited to open-field intensive systems.
+VE_CARROT,OPEN_FIELD,MED,0.6,PRIMARY,Can fit general open-field if inputs/market exist.
+VE_CARROT,NET_HOUSE,MED,0.6,PRIMARY,Possible in protected systems; not primary use-case.
+
+VE_RADISH,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Short-duration vegetable; quick cash crop in open-field.
+VE_RADISH,NET_HOUSE,MED,0.6,PRIMARY,Can be produced under partial protection for quality.
+VE_RADISH,INTEGRATED,MED,0.6,INTERCROP,Quick filler crop in diversified systems.
+
+VE_SPINACH,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Leafy vegetable suited to intensive open-field.
+VE_SPINACH,NET_HOUSE,MED,0.6,PRIMARY,Protection improves leaf quality and reduces pest pressure.
+VE_SPINACH,POLYHOUSE,MED,0.6,PRIMARY,Possible for premium leafy production; economics depends on buyers.
+
+VE_CORIANDER_LEAF,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Leafy herb for quick cycles in open-field.
+VE_CORIANDER_LEAF,NET_HOUSE,MED,0.6,PRIMARY,Protection improves quality and reduces pest damage.
+VE_CORIANDER_LEAF,POLYHOUSE,MED,0.6,PRIMARY,Premium herb production possible; depends on market.
+
+VE_CUCUMBER_OPEN,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Common summer/open-field vegetable crop.
+VE_CUCUMBER_OPEN,NET_HOUSE,MED,0.6,PRIMARY,Protection improves quality and reduces pest pressure.
+VE_CUCUMBER_OPEN,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip helpful but trellis/management drives success.
+
+VE_BITTER_GOURD,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Common open-field trellis vegetable.
+VE_BITTER_GOURD,NET_HOUSE,MED,0.6,PRIMARY,Protection reduces pest pressure; depends on trellis setup.
+VE_BITTER_GOURD,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip supports efficient watering; management critical.
+
+VE_BOTTLE_GOURD,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Common open-field trellis vegetable.
+VE_BOTTLE_GOURD,NET_HOUSE,MED,0.6,PRIMARY,Protection improves quality; depends on trellis.
+VE_BOTTLE_GOURD,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip useful for efficiency; not mandatory.
+
+VE_PUMPKIN,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Hardy open-field vegetable with better shelf life.
+VE_PUMPKIN,RAIN_FED,MED,0.6,PRIMARY,Possible in moderate rainfall belts; hardy crop.
+VE_PUMPKIN,INTEGRATED,MED,0.6,INTERCROP,Useful seasonal component in diversified systems.
+
+VE_WATERMELON,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,High-value seasonal open-field crop in summer.
+VE_WATERMELON,NET_HOUSE,MED,0.6,PRIMARY,Protection possible for quality; not common at scale.
+VE_WATERMELON,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Drip commonly used for water efficiency and fruit uniformity.
+
+VE_MUSKMELON,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Seasonal open-field crop with strong market timing effects.
+VE_MUSKMELON,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Drip improves water efficiency and fruit set.
+VE_MUSKMELON,NET_HOUSE,MED,0.6,PRIMARY,Protection possible in niche premium systems.
+
+VE_FRENCH_BEAN,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Vegetable legume suited to intensive open-field systems.
+VE_FRENCH_BEAN,NET_HOUSE,MED,0.6,PRIMARY,Protection improves quality; depends on buyers.
+VE_FRENCH_BEAN,INTEGRATED,MED,0.6,INTERCROP,Rotation crop improving soil in diversified systems.
+
+VE_GREEN_PEA,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Cool-season vegetable legume in open-field.
+VE_GREEN_PEA,NET_HOUSE,MED,0.6,PRIMARY,Protection can improve quality; not mandatory.
+VE_GREEN_PEA,INTEGRATED,MED,0.6,INTERCROP,Rotation crop for diversified farming.
+
+SP_TURMERIC,OPEN_FIELD_VEG,MED,0.6,PRIMARY,Often cultivated in open-field spice systems; higher input than cereals.
+SP_TURMERIC,OPEN_FIELD,MED,0.6,PRIMARY,Can be grown in open-field as a spice crop with proper management.
+SP_TURMERIC,ORCHARD_INTERCROP,GOOD,1.0,INTERCROP,Excellent intercrop under young orchards in many systems.
+SP_TURMERIC,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip beneficial for water efficiency; depends on region.
+
+SP_GINGER,OPEN_FIELD_VEG,MED,0.6,PRIMARY,Grown in open-field spice belts; disease management critical.
+SP_GINGER,NET_HOUSE,MED,0.6,PRIMARY,Partial protection helps in some belts; depends on humidity/disease pressure.
+SP_GINGER,ORCHARD_INTERCROP,MED,0.6,INTERCROP,Possible in suitable shade systems; region-specific.
+
+SP_GARLIC,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Common rabi spice crop in open-field intensive systems.
+SP_GARLIC,OPEN_FIELD,MED,0.6,PRIMARY,Can be part of general open-field where intensity is moderate.
+SP_GARLIC,ORCHARD_INTERCROP,MED,0.6,INTERCROP,Possible in young orchards; depends on spacing and light.
+
+SP_CUMIN,OPEN_FIELD,GOOD,1.0,PRIMARY,Classic open-field seed spice in dry rabi belts.
+SP_CUMIN,RAIN_FED,MED,0.6,PRIMARY,Possible with dry climate and correct management.
+SP_CUMIN,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip can help but not typical; used where water must be efficient.
+
+SP_CORIANDER_SEED,OPEN_FIELD,GOOD,1.0,PRIMARY,Seed spice crop suited to open-field rabi.
+SP_CORIANDER_SEED,RAIN_FED,MED,0.6,PRIMARY,Possible in dry rabi belts; rainfall timing matters.
+SP_CORIANDER_SEED,ORCHARD_INTERCROP,MED,0.6,INTERCROP,Possible as a short rabi intercrop in young orchards.
+
+SP_CHILLI,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Commercial chilli in open-field intensive systems.
+SP_CHILLI,NET_HOUSE,GOOD,1.0,PRIMARY,Net protection improves quality and reduces pest pressure.
+SP_CHILLI,POLYHOUSE,MED,0.6,PRIMARY,Possible for premium production but less common than capsicum/tomato.
+SP_CHILLI,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip improves water efficiency; management critical.
+
+SP_FENUGREEK,OPEN_FIELD,GOOD,1.0,PRIMARY,Short-duration rabi seed spice/leaf crop in open-field.
+SP_FENUGREEK,RAIN_FED,MED,0.6,PRIMARY,Works in low water rabi belts with correct timing.
+SP_FENUGREEK,ORCHARD_INTERCROP,MED,0.6,INTERCROP,Useful quick rabi intercrop in young orchards.
+
+SP_FENNEL,OPEN_FIELD,GOOD,1.0,PRIMARY,Seed spice suited to open-field rabi.
+SP_FENNEL,RAIN_FED,MED,0.6,PRIMARY,Possible in dry belts with correct management.
+SP_FENNEL,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip can help stabilize yield where water is limited.
+
+SP_AJWAIN,OPEN_FIELD,GOOD,1.0,PRIMARY,Seed spice suited to open-field rabi systems.
+SP_AJWAIN,RAIN_FED,MED,0.6,PRIMARY,Possible in dry belts with appropriate moisture management.
+SP_AJWAIN,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip can help where water efficiency is needed.
+
+CM_SUGARCANE,OPEN_FIELD,GOOD,1.0,PRIMARY,Standard sugarcane cultivation is open-field with assured irrigation.
+CM_SUGARCANE,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Drip is highly beneficial for water efficiency and fertigation.
+CM_SUGARCANE,INTEGRATED,MED,0.6,PRIMARY,Can be part of diversified systems; depends on local industry linkage.
+
+CM_COTTON,OPEN_FIELD,GOOD,1.0,PRIMARY,Standard cotton cultivation in open-field kharif.
+CM_COTTON,RAIN_FED,MED,0.6,PRIMARY,Possible in rainfed belts; risk depends on pests and rainfall.
+CM_COTTON,INTEGRATED,MED,0.6,INTERCROP,Rotation crop in diversified systems where management is strong.
+
+CM_POTATO_SEED,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Seed potato requires intensive management; fits intensive open-field systems.
+CM_POTATO_SEED,NET_HOUSE,MED,0.6,PRIMARY,Protection can help seed quality in niche systems.
+CM_POTATO_SEED,INTEGRATED,MED,0.6,PRIMARY,Can be included where quality control and market linkage exist.
+
+CM_JUTE,OPEN_FIELD,GOOD,1.0,PRIMARY,Commercial fibre crop grown in open-field humid belts.
+CM_JUTE,RAIN_FED,MED,0.6,PRIMARY,Rainfed cultivation possible in humid rainfall zones.
+CM_JUTE,INTEGRATED,MED,0.6,INTERCROP,Rotation crop in diversified systems in suitable belts.
+
+CM_TEA,AGROFORESTRY,GOOD,1.0,PRIMARY,Tea is a plantation crop best represented under long-horizon perennial/agroforestry systems.
+CM_TEA,ORCHARD,MED,0.6,PRIMARY,Perennial plantation resembles orchard-type long-horizon horticulture.
+CM_TEA,INTEGRATED,MED,0.6,PRIMARY,Can be part of integrated hill farming where feasible.
+
+CM_COFFEE,AGROFORESTRY,GOOD,1.0,PRIMARY,Coffee is commonly grown under shade systems; strong agroforestry fit.
+CM_COFFEE,ORCHARD,MED,0.6,PRIMARY,Perennial plantation aligns with orchard-like management long-term.
+CM_COFFEE,INTEGRATED,MED,0.6,PRIMARY,Can be part of diversified plantation systems where feasible.
+
+PR_CAPSICUM,POLYHOUSE,GOOD,1.0,PRIMARY,Best suited for protected cultivation with high quality and yield.
+PR_CAPSICUM,NET_HOUSE,GOOD,1.0,PRIMARY,Strong fit with pest protection and partial climate control.
+PR_CAPSICUM,OPEN_FIELD_VEG,MED,0.6,PRIMARY,Possible outdoors but generally lower yield/quality and higher pest risk.
+
+PR_CUCUMBER,POLYHOUSE,GOOD,1.0,PRIMARY,Very common protected crop with high yields and fast cycles.
+PR_CUCUMBER,NET_HOUSE,GOOD,1.0,PRIMARY,Good protection for quality; trellis-based production.
+PR_CUCUMBER,OPEN_FIELD_VEG,MED,0.6,PRIMARY,Possible open-field in season; higher pest/disease risk.
+
+PR_TOMATO,POLYHOUSE,GOOD,1.0,PRIMARY,Ideal protected crop for premium quality and season extension.
+PR_TOMATO,NET_HOUSE,GOOD,1.0,PRIMARY,Good pest protection; quality improvement vs open-field.
+PR_TOMATO,OPEN_FIELD_VEG,MED,0.6,PRIMARY,Can be grown outdoors but with higher disease/price volatility.
+
+PR_STRAWBERRY,POLYHOUSE,GOOD,1.0,PRIMARY,Protected cultivation supports strawberry sensitivity and premium market.
+PR_STRAWBERRY,NET_HOUSE,MED,0.6,PRIMARY,Some protection feasible; quality depends on climate control.
+PR_STRAWBERRY,HYDROPONICS,MED,0.6,PRIMARY,Possible in advanced systems (substrate-based); higher technical needs.
+
+PR_LETTUCE,HYDROPONICS,GOOD,1.0,PRIMARY,Leafy greens are a flagship hydroponics crop.
+PR_LETTUCE,POLYHOUSE,GOOD,1.0,PRIMARY,Protected leafy production is common with premium buyers.
+PR_LETTUCE,NET_HOUSE,MED,0.6,PRIMARY,Shade net supports leafy production; depends on heat stress and buyers.
+
+FL_MARIGOLD,OPEN_FIELD_VEG,GOOD,1.0,PRIMARY,Common open-field flower crop with event-driven demand.
+FL_MARIGOLD,NET_HOUSE,MED,0.6,PRIMARY,Can be grown with partial protection for quality; not mandatory.
+FL_MARIGOLD,INTEGRATED,MED,0.6,INTERCROP,Seasonal flower component in diversified farming.
+
+FL_ROSE,POLYHOUSE,GOOD,1.0,PRIMARY,Cut rose production benefits strongly from protected cultivation.
+FL_ROSE,NET_HOUSE,MED,0.6,PRIMARY,Some protection feasible; premium quality often needs stronger control.
+FL_ROSE,HYDROPONICS,MED,0.6,PRIMARY,Possible in advanced substrate/soilless systems; higher technical requirement.
+
+FL_GERBERA,POLYHOUSE,GOOD,1.0,PRIMARY,Gerbera is typically grown under protected cultivation for cut flowers.
+FL_GERBERA,NET_HOUSE,MED,0.6,PRIMARY,Partial protection possible; yield/quality may vary.
+FL_GERBERA,HYDROPONICS,MED,0.6,PRIMARY,Possible in soilless/substrate systems; requires technical capacity.
