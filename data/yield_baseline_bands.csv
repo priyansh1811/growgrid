@@ -1,0 +1,39 @@
+crop_id,low_yield_per_acre,base_yield_per_acre,high_yield_per_acre,yield_unit,source_notes
+FR_MANGO,15,30,50,quintal,Bearing trees 5+ years; varies hugely by variety and age
+FR_GUAVA,30,60,100,quintal,Meadow orcharding gives higher yields
+FR_POMEGRANATE,20,40,60,quintal,3+ year bearing trees; drip irrigated
+FR_BANANA,80,120,180,quintal,Tissue culture; Grand Naine or G9
+FR_PAPAYA,60,100,160,quintal,Hybrid varieties; irrigated
+CE_WHEAT,10,16,22,quintal,Irrigated; improved varieties
+CE_MAIZE,12,20,30,quintal,Hybrid; kharif or rabi depending on state
+CE_RICE,12,18,25,quintal,Irrigated transplanted; varies by method (SRI higher)
+MI_BAJRA,5,8,12,quintal,Rainfed kharif; hybrid varieties
+MI_JOWAR,5,8,12,quintal,Rainfed; dual purpose grain+fodder
+MI_RAGI,5,8,12,quintal,Rainfed or irrigated; finger millet
+PU_CHICKPEA,4,7,10,quintal,Rabi irrigated; wilt resistant varieties
+PU_PIGEONPEA,3,6,9,quintal,Kharif; long duration varieties
+PU_LENTIL,3,5,8,quintal,Rabi; small-seeded types
+PU_MOONG,2,4,6,quintal,Short duration 60-65 days; kharif/summer
+PU_URAD,2,4,6,quintal,Kharif; 75-90 days
+OS_MUSTARD,4,7,10,quintal,Rabi; irrigated
+OS_SOYBEAN,5,8,12,quintal,Kharif rainfed; central India
+OS_GROUNDNUT,6,10,15,quintal,Pod yield; kharif or rabi
+VE_POTATO,40,70,100,quintal,Irrigated rabi; 90-120 days
+VE_ONION,40,70,100,quintal,Rabi main season; storage varieties
+VE_TOMATO,60,100,160,quintal,Open field; determinate hybrids
+VE_OKRA,20,35,50,quintal,Kharif or summer; multiple pickings
+VE_BRINJAL,40,70,100,quintal,Multiple pickings over 4-5 months
+VE_CABBAGE,40,70,100,quintal,Single harvest; 80-90 days
+VE_CAULIFLOWER,30,50,80,quintal,Single harvest; curd weight
+VE_CARROT,30,50,80,quintal,Rabi; sandy loam soils best
+VE_SPINACH,15,25,40,quintal,Multiple cuttings; short duration
+SP_TURMERIC,40,70,100,quintal,Fresh rhizome yield; 8-9 month crop
+SP_GINGER,30,50,80,quintal,Fresh rhizome; 8-9 months
+SP_CHILLI,15,25,40,quintal,Dry chilli weight; multiple pickings
+SP_GARLIC,15,25,40,quintal,Rabi; bulb yield
+SP_CUMIN,2,3.5,5,quintal,Rabi; arid zones
+CM_SUGARCANE,200,300,400,quintal,12-month plant crop; ratoon slightly less
+CM_COTTON,4,7,10,quintal,Lint equivalent; Bt cotton
+PR_CAPSICUM,40,70,100,quintal,Polyhouse; year-round production
+PR_TOMATO,80,140,200,quintal,Polyhouse; indeterminate hybrids
+FL_MARIGOLD,20,40,60,quintal,Loose flowers; multiple pickings

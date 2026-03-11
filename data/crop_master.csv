@@ -84,3 +84,5 @@ PR_LETTUCE,Lettuce (Protected),PROTECTED_VEG,YEAR_ROUND,MED,MED,MED,1,2,HIGH,HIG
 FL_MARIGOLD,Marigold,FLOWER,"KHARIF,RABI",LOW,MED,MED,2,3,MED,HIGH,NO,"market_event_driven","Demand spikes around events; local market dependent."
 FL_ROSE,Rose (Protected),PROTECTED_FLOWER,YEAR_ROUND,MED,HIGH,HIGH,5,7,HIGH,HIGH,YES,"protected,high_value","High value but market + management risk."
 FL_GERBERA,Gerbera (Protected),PROTECTED_FLOWER,YEAR_ROUND,MED,HIGH,HIGH,4,6,HIGH,HIGH,YES,"protected,high_value","Cut flower; needs controlled environment + buyer network."
+
+MU_OYSTER,Oyster Mushroom,MUSHROOM,YEAR_ROUND,LOW,MED,MED,1,2,HIGH,HIGH,NO,"indoor,controlled","Indoor mushroom; needs controlled humidity/temperature; fast turnover."

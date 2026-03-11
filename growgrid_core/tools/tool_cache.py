@@ -2,12 +2,16 @@
 
 Cache key format: "{location}|{practice_code}|{crop_id}|{season}|v1"
 TTL default: 168 hours (7 days).
+
+Uses a thread-local connection so the cache is safe when used from multiple
+threads (e.g. uvicorn worker threads).
 """
 
 from __future__ import annotations
 
 import json
 import sqlite3
+import threading
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -25,19 +29,29 @@ CREATE TABLE IF NOT EXISTS tool_cache (
 
 
 class ToolCache:
-    """Simple SQLite-backed cache for external API results."""
+    """Simple SQLite-backed cache for external API results.
+    Thread-safe: each thread gets its own SQLite connection.
+    """
 
     def __init__(self, db_path: Path | str | None = None) -> None:
         if db_path is None:
             CACHE_DIR.mkdir(parents=True, exist_ok=True)
             db_path = CACHE_DIR / "tavily_cache.db"
-        self._conn = sqlite3.connect(str(db_path))
-        self._conn.execute(_DDL)
-        self._conn.commit()
+        self._db_path = str(db_path)
+        self._local = threading.local()
+
+    def _conn(self) -> sqlite3.Connection:
+        """Return the thread-local SQLite connection, creating it if needed."""
+        if not hasattr(self._local, "conn") or self._local.conn is None:
+            conn = sqlite3.connect(self._db_path)
+            conn.execute(_DDL)
+            conn.commit()
+            self._local.conn = conn
+        return self._local.conn
 
     def get(self, key: str) -> list[dict[str, Any]] | None:
         """Return cached payload if fresh, else None."""
-        row = self._conn.execute(
+        row = self._conn().execute(
             "SELECT payload_json, created_at, ttl_hours FROM tool_cache WHERE cache_key = ?",
             (key,),
         ).fetchone()
@@ -48,8 +62,9 @@ class ToolCache:
         created = datetime.fromisoformat(created_str)
         if datetime.now(timezone.utc) - created > timedelta(hours=ttl_hours):
             # Stale — delete and return None
-            self._conn.execute("DELETE FROM tool_cache WHERE cache_key = ?", (key,))
-            self._conn.commit()
+            c = self._conn()
+            c.execute("DELETE FROM tool_cache WHERE cache_key = ?", (key,))
+            c.commit()
             return None
 
         return json.loads(payload_json)
@@ -58,16 +73,16 @@ class ToolCache:
         """Store payload in cache (upsert)."""
         ttl = ttl_hours if ttl_hours is not None else CACHE_TTL_HOURS
         now = datetime.now(timezone.utc).isoformat()
-        self._conn.execute(
+        self._conn().execute(
             """INSERT OR REPLACE INTO tool_cache (cache_key, payload_json, created_at, ttl_hours)
                VALUES (?, ?, ?, ?)""",
             (key, json.dumps(payload), now, ttl),
         )
-        self._conn.commit()
+        self._conn().commit()
 
     def is_fresh(self, key: str, max_age_hours: int | None = None) -> bool:
         """Check if a key exists and is fresh."""
-        row = self._conn.execute(
+        row = self._conn().execute(
             "SELECT created_at, ttl_hours FROM tool_cache WHERE cache_key = ?",
             (key,),
         ).fetchone()
@@ -79,4 +94,7 @@ class ToolCache:
         return datetime.now(timezone.utc) - created <= timedelta(hours=effective_ttl)
 
     def close(self) -> None:
-        self._conn.close()
+        """Close the thread-local connection for the current thread."""
+        if hasattr(self._local, "conn") and self._local.conn is not None:
+            self._local.conn.close()
+            self._local.conn = None

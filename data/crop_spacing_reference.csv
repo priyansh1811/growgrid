@@ -1,0 +1,47 @@
+crop_id,practice_code,row_spacing_cm,plant_spacing_cm,plants_per_acre,planting_pattern,depth_cm,notes
+FR_MANGO,ORCHARD,1000,1000,16,square_planting,60,10m x 10m traditional spacing
+FR_MANGO,ORCHARD_INTERCROP,800,800,25,square_planting,60,8m x 8m high density with intercrop
+FR_GUAVA,ORCHARD,600,600,45,square_planting,45,6m x 6m standard; meadow orcharding 2m x 1m
+FR_POMEGRANATE,ORCHARD,450,300,120,rectangular,40,4.5m x 3m high density
+FR_BANANA,OPEN_FIELD,180,180,1200,square_planting,30,1.8m x 1.8m tissue culture
+FR_BANANA,DRIP_INTENSIVE,180,150,1450,rectangular,30,1.8m x 1.5m paired row with drip
+FR_PAPAYA,OPEN_FIELD,250,250,260,square_planting,30,2.5m x 2.5m
+CE_WHEAT,OPEN_FIELD,22,0,800000,line_sowing,5,22.5cm row spacing; continuous sowing
+CE_WHEAT,RAINFED,22,0,800000,line_sowing,5,Same spacing; rainfed varieties
+CE_MAIZE,OPEN_FIELD,60,20,13200,line_sowing,5,60cm x 20cm hybrid kharif
+CE_RICE,OPEN_FIELD,20,15,54000,transplant,3,20cm x 15cm transplanted paddy
+MI_BAJRA,OPEN_FIELD,45,15,23760,line_sowing,3,45cm x 15cm after thinning
+MI_BAJRA,RAINFED,45,15,23760,line_sowing,3,Same; rainfed kharif
+MI_JOWAR,OPEN_FIELD,45,15,23760,line_sowing,4,45cm x 15cm grain sorghum
+MI_JOWAR,RAINFED,45,15,23760,line_sowing,4,Same; rainfed
+MI_RAGI,OPEN_FIELD,30,10,53820,transplant,2,30cm x 10cm transplanted
+PU_CHICKPEA,OPEN_FIELD,30,10,53820,line_sowing,5,30cm x 10cm; rabi sowing
+PU_PIGEONPEA,OPEN_FIELD,60,20,13200,line_sowing,4,60cm x 20cm; long duration
+PU_MOONG,OPEN_FIELD,30,10,53820,line_sowing,4,30cm x 10cm; close spacing
+OS_MUSTARD,OPEN_FIELD,45,15,23760,line_sowing,2,45cm x 15cm after thinning
+OS_SOYBEAN,OPEN_FIELD,45,5,35700,line_sowing,3,45cm x 5cm continuous row
+OS_GROUNDNUT,OPEN_FIELD,30,10,53820,line_sowing,5,30cm x 10cm bunch type
+VE_POTATO,OPEN_FIELD_VEG,60,20,13200,ridge_planting,8,60cm x 20cm on ridges
+VE_ONION,OPEN_FIELD_VEG,15,10,107640,transplant,2,15cm x 10cm on flat beds
+VE_TOMATO,OPEN_FIELD_VEG,60,45,5940,transplant,0,60cm x 45cm staked
+VE_TOMATO,POLYHOUSE,90,40,4460,transplant,0,90cm x 40cm in polyhouse beds
+VE_OKRA,OPEN_FIELD_VEG,60,30,8910,direct_sowing,3,60cm x 30cm
+VE_BRINJAL,OPEN_FIELD_VEG,60,45,5940,transplant,0,60cm x 45cm
+VE_CABBAGE,OPEN_FIELD_VEG,45,45,7920,transplant,0,45cm x 45cm
+VE_CAULIFLOWER,OPEN_FIELD_VEG,45,45,7920,transplant,0,45cm x 45cm
+VE_CARROT,OPEN_FIELD_VEG,30,8,67320,direct_sowing,1,30cm x 8cm on raised beds
+VE_SPINACH,OPEN_FIELD_VEG,20,10,80760,direct_sowing,2,20cm x 10cm broadcast/line
+VE_CUCUMBER_OPEN,OPEN_FIELD_VEG,150,60,1780,direct_sowing,3,1.5m x 60cm trailing type
+VE_BITTER_GOURD,OPEN_FIELD_VEG,200,60,1340,direct_sowing,3,2m x 60cm with trellis
+VE_BOTTLE_GOURD,OPEN_FIELD_VEG,300,90,600,direct_sowing,3,3m x 90cm with pandal
+SP_TURMERIC,OPEN_FIELD_VEG,45,20,17820,rhizome_planting,7,45cm x 20cm on ridges/beds
+SP_GINGER,OPEN_FIELD_VEG,40,20,20190,rhizome_planting,5,40cm x 20cm on raised beds
+SP_CHILLI,OPEN_FIELD_VEG,60,45,5940,transplant,0,60cm x 45cm
+SP_GARLIC,OPEN_FIELD_VEG,15,10,107640,clove_planting,3,15cm x 10cm on raised beds
+SP_CUMIN,OPEN_FIELD,30,0,500000,broadcast,1,30cm rows or broadcast; 5 kg seed/acre
+CM_SUGARCANE,OPEN_FIELD,90,30,5940,sett_planting,10,90cm furrow spacing; 3-budded setts
+CM_COTTON,OPEN_FIELD,90,60,2970,dibbling,5,90cm x 60cm; Bt cotton
+PR_CAPSICUM,POLYHOUSE,90,40,4460,transplant,0,90cm x 40cm in polyhouse
+PR_CUCUMBER,POLYHOUSE,100,40,4000,transplant,0,100cm x 40cm vertical training
+PR_TOMATO,POLYHOUSE,90,40,4460,transplant,0,90cm x 40cm indeterminate
+FL_MARIGOLD,OPEN_FIELD_VEG,40,30,13380,transplant,0,40cm x 30cm African marigold

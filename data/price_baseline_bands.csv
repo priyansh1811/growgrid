@@ -1,0 +1,39 @@
+crop_id,low_price_per_unit,base_price_per_unit,high_price_per_unit,price_unit,source_notes
+FR_MANGO,1500,3000,6000,INR_per_quintal,Farmgate; varies hugely by variety (Alphonso premium)
+FR_GUAVA,1000,2000,4000,INR_per_quintal,Farmgate; L49 and Allahabad Safeda
+FR_POMEGRANATE,3000,6000,10000,INR_per_quintal,Bhagwa variety premium; export quality higher
+FR_BANANA,600,1000,1800,INR_per_quintal,Grand Naine farmgate; seasonal variation
+FR_PAPAYA,500,1000,2000,INR_per_quintal,Red Lady hybrid; farmgate
+CE_WHEAT,2000,2275,2800,INR_per_quintal,MSP 2024-25 Rs 2275; open market slightly higher
+CE_MAIZE,1800,2090,2500,INR_per_quintal,MSP 2024-25 Rs 2090; poultry feed demand
+CE_RICE,1800,2300,2800,INR_per_quintal,MSP paddy Rs 2300; milling premium
+MI_BAJRA,2000,2500,3200,INR_per_quintal,MSP Rs 2500; local market demand
+MI_JOWAR,2500,3180,3800,INR_per_quintal,MSP Rs 3180; food + fodder value
+MI_RAGI,3000,3846,4500,INR_per_quintal,MSP Rs 3846; health food premium rising
+PU_CHICKPEA,4000,5440,7000,INR_per_quintal,MSP Rs 5440; mandi price higher in lean season
+PU_PIGEONPEA,5000,7000,9000,INR_per_quintal,MSP Rs 7000; dal demand strong
+PU_LENTIL,4000,6425,8000,INR_per_quintal,MSP Rs 6425; import substitution
+PU_MOONG,5000,8558,11000,INR_per_quintal,MSP Rs 8558; summer moong premium
+PU_URAD,5000,6950,9000,INR_per_quintal,MSP Rs 6950; processing demand
+OS_MUSTARD,4000,5650,7000,INR_per_quintal,MSP Rs 5650; edible oil demand
+OS_SOYBEAN,3000,4600,6000,INR_per_quintal,MSP Rs 4600; crushing demand
+OS_GROUNDNUT,4000,6377,8000,INR_per_quintal,MSP Rs 6377; in-shell price
+VE_POTATO,500,1000,2000,INR_per_quintal,Highly volatile; cold storage matters
+VE_ONION,600,1200,3000,INR_per_quintal,Very volatile; seasonal glut/shortage
+VE_TOMATO,500,1200,3000,INR_per_quintal,Most volatile vegetable; seasonal variation extreme
+VE_OKRA,1000,2000,3500,INR_per_quintal,Mandi price; summer premium
+VE_BRINJAL,600,1200,2500,INR_per_quintal,Mandi; round vs long varieties
+VE_CABBAGE,400,800,1500,INR_per_quintal,Bulk vegetable; winter glut common
+VE_CAULIFLOWER,600,1200,2500,INR_per_quintal,Seasonal; early varieties premium
+VE_CARROT,600,1200,2000,INR_per_quintal,Fresh market; Delhi red type
+VE_SPINACH,800,1500,2500,INR_per_quintal,Leafy green; perishable
+SP_TURMERIC,5000,8000,14000,INR_per_quintal,Dry turmeric; curcumin content matters
+SP_GINGER,4000,7000,12000,INR_per_quintal,Fresh ginger farmgate
+SP_CHILLI,8000,14000,22000,INR_per_quintal,Dry chilli; Guntur market reference
+SP_GARLIC,4000,8000,15000,INR_per_quintal,Volatile; import competition
+SP_CUMIN,15000,25000,40000,INR_per_quintal,High value spice; Rajasthan/Gujarat
+CM_SUGARCANE,280,350,400,INR_per_quintal,SAP/FRP based; state-wise variation
+CM_COTTON,5000,6620,8000,INR_per_quintal,MSP Rs 6620 for medium staple; lint basis
+PR_CAPSICUM,2000,4000,7000,INR_per_quintal,Polyhouse colored capsicum premium
+PR_TOMATO,1000,2500,5000,INR_per_quintal,Protected cultivation premium; off-season
+FL_MARIGOLD,2000,4000,8000,INR_per_quintal,Festival season premium (Dussehra/Diwali)

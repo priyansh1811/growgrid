@@ -5,10 +5,10 @@ from __future__ import annotations
 import sqlite3
 from unittest.mock import patch
 
-from growgrid_core.agents.step_4_crop_recommender_agent import CropRecommenderAgent
+from growgrid_core.agents.step_1_validation_agent import ValidationAgent
 from growgrid_core.agents.step_2_goal_classifier_agent import GoalClassifierAgent
 from growgrid_core.agents.step_3_practice_recommender_agent import PracticeRecommenderAgent
-from growgrid_core.agents.step_1_validation_agent import ValidationAgent
+from growgrid_core.agents.step_4_crop_recommender_agent import CropRecommenderAgent
 from growgrid_core.tools.llm_client import MockLLMClient
 from growgrid_core.utils.enums import Goal, IrrigationSource, LabourLevel, RiskLevel, WaterLevel
 from growgrid_core.utils.types import CropPortfolioEntry, PlanRequest

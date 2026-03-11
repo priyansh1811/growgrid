@@ -19,6 +19,27 @@ def get_all_practices(conn: sqlite3.Connection) -> list[dict]:
     return _rows_to_dicts(cur)
 
 
+def get_crop_count_by_practice(
+    conn: sqlite3.Connection,
+    min_compatibility: str = "MED",
+) -> dict[str, int]:
+    """Return a dict of practice_code -> count of compatible crops.
+
+    Useful for penalizing or eliminating practices with no crop mappings.
+    """
+    compat_values = ("GOOD",) if min_compatibility == "GOOD" else ("GOOD", "MED")
+    placeholders = ",".join("?" for _ in compat_values)
+
+    sql = f"""
+        SELECT practice_code, COUNT(DISTINCT crop_id) AS crop_count
+        FROM crop_practice_compatibility
+        WHERE compatibility IN ({placeholders})
+        GROUP BY practice_code
+    """
+    cur = conn.execute(sql, compat_values)
+    return {row["practice_code"]: row["crop_count"] for row in cur.fetchall()}
+
+
 def get_practice_by_code(conn: sqlite3.Connection, practice_code: str) -> dict | None:
     """Return a single practice row or None."""
     cur = conn.execute(
@@ -144,3 +165,87 @@ def get_compatibility_score(
     )
     row = cur.fetchone()
     return float(row["compatibility_score"]) if row else 0.0
+
+
+# ── Economics queries ───────────────────────────────────────────────────
+
+
+def get_crop_costs(conn: sqlite3.Connection, crop_id: str) -> list[dict]:
+    """Return cost profile rows for a specific crop."""
+    cur = conn.execute(
+        "SELECT * FROM crop_cost_profile WHERE crop_id = ?",
+        (crop_id,),
+    )
+    return _rows_to_dicts(cur)
+
+
+def get_yield_bands(conn: sqlite3.Connection, crop_id: str) -> dict | None:
+    """Return yield baseline bands for a crop, or None if not found."""
+    cur = conn.execute(
+        "SELECT * FROM yield_baseline_bands WHERE crop_id = ?",
+        (crop_id,),
+    )
+    row = cur.fetchone()
+    return dict(row) if row else None
+
+
+def get_price_bands(conn: sqlite3.Connection, crop_id: str) -> dict | None:
+    """Return price baseline bands for a crop, or None if not found."""
+    cur = conn.execute(
+        "SELECT * FROM price_baseline_bands WHERE crop_id = ?",
+        (crop_id,),
+    )
+    row = cur.fetchone()
+    return dict(row) if row else None
+
+
+def get_loss_factor(conn: sqlite3.Connection, perishability: str) -> dict | None:
+    """Return loss factor for a perishability level, or None."""
+    cur = conn.execute(
+        "SELECT * FROM loss_factor_reference WHERE perishability_level = ?",
+        (perishability,),
+    )
+    row = cur.fetchone()
+    return dict(row) if row else None
+
+
+# ── Field layout queries ────────────────────────────────────────────────
+
+
+def get_crop_spacing(
+    conn: sqlite3.Connection, crop_id: str, practice_code: str
+) -> dict | None:
+    """Return spacing reference for a crop-practice pair, or None."""
+    cur = conn.execute(
+        "SELECT * FROM crop_spacing_reference WHERE crop_id = ? AND practice_code = ?",
+        (crop_id, practice_code),
+    )
+    row = cur.fetchone()
+    return dict(row) if row else None
+
+
+def get_all_spacings_for_crop(conn: sqlite3.Connection, crop_id: str) -> list[dict]:
+    """Return all spacing entries for a crop (across practices)."""
+    cur = conn.execute(
+        "SELECT * FROM crop_spacing_reference WHERE crop_id = ?",
+        (crop_id,),
+    )
+    return _rows_to_dicts(cur)
+
+
+# ── Government schemes queries ──────────────────────────────────────────
+
+
+def get_all_schemes(conn: sqlite3.Connection) -> list[dict]:
+    """Return all scheme metadata rows."""
+    cur = conn.execute("SELECT * FROM schemes_metadata")
+    return _rows_to_dicts(cur)
+
+
+def get_schemes_for_state(conn: sqlite3.Connection, state: str) -> list[dict]:
+    """Return schemes applicable to a state (including ALL = central schemes)."""
+    cur = conn.execute(
+        "SELECT * FROM schemes_metadata WHERE state = 'ALL' OR state LIKE ?",
+        (f"%{state}%",),
+    )
+    return _rows_to_dicts(cur)

@@ -1,0 +1,127 @@
+crop_id,component,cost_type,min_inr_per_acre,max_inr_per_acre,notes
+FR_MANGO,seed_or_planting_material,CAPEX,8000,15000,Grafted saplings 40-70/acre (high-density); one-time orchard establishment
+FR_MANGO,fertilizer_and_nutrients,OPEX,4000,7000,FYM + NPK + micronutrients per year bearing tree
+FR_MANGO,labour,OPEX,6000,12000,Pruning + harvesting + orchard maintenance
+FR_MANGO,pesticide_and_protection,OPEX,2000,4000,Mango hopper + fruit fly + anthracnose management
+FR_GUAVA,seed_or_planting_material,CAPEX,6000,12000,Grafted plants 150-200/acre; meadow orcharding option
+FR_GUAVA,fertilizer_and_nutrients,OPEX,3000,5500,FYM + balanced NPK + zinc
+FR_GUAVA,labour,OPEX,5000,10000,Pruning + multiple harvests + basin management
+FR_GUAVA,pesticide_and_protection,OPEX,1500,3000,Fruit fly traps + wilt management
+FR_POMEGRANATE,seed_or_planting_material,CAPEX,12000,20000,Air-layered plants 280-400/acre; high-density planting
+FR_POMEGRANATE,fertilizer_and_nutrients,OPEX,4000,7000,NPK + micronutrients + drip fertigation
+FR_POMEGRANATE,labour,OPEX,6000,10000,Pruning + bahar treatment + harvesting
+FR_POMEGRANATE,pesticide_and_protection,OPEX,3000,6000,Bacterial blight + fruit borer + oily spot management
+FR_POMEGRANATE,irrigation_cost,OPEX,3000,5000,Drip irrigation operation and maintenance
+FR_BANANA,seed_or_planting_material,CAPEX,8000,14000,Tissue culture plants 1200-1600/acre
+FR_BANANA,fertilizer_and_nutrients,OPEX,6000,10000,Heavy feeder; NPK + FYM + micronutrients
+FR_BANANA,labour,OPEX,8000,15000,Desuckering + propping + bunch management + harvest
+FR_BANANA,pesticide_and_protection,OPEX,2000,4000,Sigatoka + Panama wilt + nematode management
+FR_BANANA,irrigation_cost,OPEX,3000,6000,Drip irrigation; high water requirement
+FR_PAPAYA,seed_or_planting_material,CAPEX,3000,6000,Hybrid seeds or seedlings 700-1000 plants/acre
+FR_PAPAYA,fertilizer_and_nutrients,OPEX,4000,7000,NPK + FYM + micronutrients; heavy feeder
+FR_PAPAYA,labour,OPEX,5000,9000,Planting + harvesting + plant care
+FR_PAPAYA,pesticide_and_protection,OPEX,2000,4000,Ring spot virus + mealybug + mite management
+CE_WHEAT,seed_or_planting_material,CAPEX,2000,3000,40-50 kg/acre seed
+CE_WHEAT,fertilizer_and_nutrients,OPEX,3000,5000,NPK + micronutrients
+CE_WHEAT,labour,OPEX,4000,7000,Sowing to harvest
+CE_WHEAT,pesticide_and_protection,OPEX,1000,2500,Weed + pest management
+CE_MAIZE,seed_or_planting_material,CAPEX,2500,4000,Hybrid seed 8-10 kg/acre
+CE_MAIZE,fertilizer_and_nutrients,OPEX,3000,5500,NPK + zinc sulphate
+CE_MAIZE,labour,OPEX,4000,7000,Sowing + earthing up + harvest
+CE_MAIZE,pesticide_and_protection,OPEX,1000,2500,Fall armyworm + stem borer management
+CE_RICE,seed_or_planting_material,CAPEX,1500,3000,20-25 kg/acre seed; nursery raising
+CE_RICE,fertilizer_and_nutrients,OPEX,3500,6000,NPK + zinc + FYM
+CE_RICE,labour,OPEX,6000,10000,Transplanting + weeding + harvesting; labour intensive
+CE_RICE,pesticide_and_protection,OPEX,1500,3000,BPH + blast + sheath blight management
+CE_RICE,irrigation_cost,OPEX,2000,4000,Puddling + standing water maintenance
+MI_BAJRA,seed_or_planting_material,CAPEX,800,1500,Hybrid seed 2-3 kg/acre
+MI_BAJRA,fertilizer_and_nutrients,OPEX,1500,3000,Low fertilizer; NPK basal + top dressing
+MI_BAJRA,labour,OPEX,3000,5000,Sowing + thinning + harvest
+MI_BAJRA,pesticide_and_protection,OPEX,500,1500,Downy mildew + shoot fly management
+MI_JOWAR,seed_or_planting_material,CAPEX,800,1500,Hybrid/improved seed 3-4 kg/acre
+MI_JOWAR,fertilizer_and_nutrients,OPEX,1500,3000,NPK moderate dose
+MI_JOWAR,labour,OPEX,3000,5000,Sowing + harvesting + threshing
+MI_JOWAR,pesticide_and_protection,OPEX,500,1500,Shoot fly + stem borer management
+MI_RAGI,seed_or_planting_material,CAPEX,600,1200,Seed 2-4 kg/acre; transplanting or direct sowing
+MI_RAGI,fertilizer_and_nutrients,OPEX,1500,2500,NPK moderate; responds to nitrogen
+MI_RAGI,labour,OPEX,3500,6000,Transplanting + weeding + harvesting
+MI_RAGI,pesticide_and_protection,OPEX,500,1200,Blast + aphid management
+PU_CHICKPEA,seed_or_planting_material,CAPEX,2500,4000,Seed 25-35 kg/acre; Rhizobium treatment
+PU_CHICKPEA,fertilizer_and_nutrients,OPEX,1500,3000,DAP + low nitrogen; responds to phosphorus
+PU_CHICKPEA,labour,OPEX,3000,5000,Sowing + weeding + harvest
+PU_CHICKPEA,pesticide_and_protection,OPEX,1500,3000,Pod borer (Helicoverpa) + wilt management
+PU_PIGEONPEA,seed_or_planting_material,CAPEX,1500,2500,Seed 6-8 kg/acre
+PU_PIGEONPEA,fertilizer_and_nutrients,OPEX,1500,2500,DAP + low nitrogen; N-fixing crop
+PU_PIGEONPEA,labour,OPEX,3500,6000,Sowing + multiple pickings + threshing
+PU_PIGEONPEA,pesticide_and_protection,OPEX,2000,4000,Pod borer + pod fly + Fusarium wilt management
+PU_MOONG,seed_or_planting_material,CAPEX,2000,3500,Seed 6-8 kg/acre
+PU_MOONG,fertilizer_and_nutrients,OPEX,1200,2500,DAP + Rhizobium; low N requirement
+PU_MOONG,labour,OPEX,3000,5000,Sowing + weeding + harvest; short duration
+PU_MOONG,pesticide_and_protection,OPEX,1000,2000,Whitefly + yellow mosaic virus management
+OS_MUSTARD,seed_or_planting_material,CAPEX,600,1200,Seed 2-3 kg/acre
+OS_MUSTARD,fertilizer_and_nutrients,OPEX,2000,3500,NPK + sulphur
+OS_MUSTARD,labour,OPEX,3000,5000,Sowing + thinning + harvest
+OS_MUSTARD,pesticide_and_protection,OPEX,1000,2000,Aphid + white rust management
+OS_SOYBEAN,seed_or_planting_material,CAPEX,3000,5000,Seed 25-30 kg/acre
+OS_SOYBEAN,fertilizer_and_nutrients,OPEX,2000,3500,DAP + Rhizobium + potash
+OS_SOYBEAN,labour,OPEX,3500,6000,Sowing + weeding + harvest
+OS_SOYBEAN,pesticide_and_protection,OPEX,1500,3000,Girdle beetle + stem fly + defoliators management
+OS_GROUNDNUT,seed_or_planting_material,CAPEX,4000,7000,Seed kernel 40-50 kg/acre; expensive seed
+OS_GROUNDNUT,fertilizer_and_nutrients,OPEX,2500,4000,Gypsum + SSP + micronutrients
+OS_GROUNDNUT,labour,OPEX,5000,8000,Sowing + earthing up + digging + peeling
+OS_GROUNDNUT,pesticide_and_protection,OPEX,1500,3000,Tikka leaf spot + collar rot + aflatoxin management
+VE_POTATO,seed_or_planting_material,CAPEX,10000,18000,Seed tubers 6-8 quintal/acre; major cost item
+VE_POTATO,fertilizer_and_nutrients,OPEX,4000,7000,NPK + FYM + micronutrients; heavy feeder
+VE_POTATO,labour,OPEX,6000,10000,Planting + earthing up + harvesting
+VE_POTATO,pesticide_and_protection,OPEX,2000,4000,Late blight + aphid + tuber moth management
+VE_POTATO,irrigation_cost,OPEX,2000,4000,4-6 irrigations critical
+VE_ONION,seed_or_planting_material,CAPEX,4000,8000,Seed 3-4 kg/acre or sets; nursery raising cost
+VE_ONION,fertilizer_and_nutrients,OPEX,4000,6500,NPK + sulphur + FYM
+VE_ONION,labour,OPEX,8000,14000,Transplanting + weeding + harvesting + curing; very labour intensive
+VE_ONION,pesticide_and_protection,OPEX,2000,4000,Thrips + purple blotch + Stemphylium management
+VE_TOMATO,seed_or_planting_material,CAPEX,3000,6000,Hybrid seed + nursery raising; 8000-10000 plants/acre
+VE_TOMATO,fertilizer_and_nutrients,OPEX,4000,7000,NPK + calcium + FYM + drip fertigation
+VE_TOMATO,labour,OPEX,7000,12000,Transplanting + staking + multiple harvests
+VE_TOMATO,pesticide_and_protection,OPEX,3000,6000,Tuta absoluta + leaf curl virus + late blight management
+VE_OKRA,seed_or_planting_material,CAPEX,2000,3500,Hybrid seed 2-3 kg/acre
+VE_OKRA,fertilizer_and_nutrients,OPEX,2500,4000,NPK + FYM
+VE_OKRA,labour,OPEX,5000,8000,Multiple pickings every 2-3 days
+VE_OKRA,pesticide_and_protection,OPEX,1500,3000,Shoot & fruit borer + YVMV management
+VE_BRINJAL,seed_or_planting_material,CAPEX,2500,4500,Hybrid seed + nursery; 6000-8000 plants/acre
+VE_BRINJAL,fertilizer_and_nutrients,OPEX,3000,5000,NPK + FYM + micronutrients
+VE_BRINJAL,labour,OPEX,6000,10000,Transplanting + staking + regular picking
+VE_BRINJAL,pesticide_and_protection,OPEX,3000,6000,Shoot & fruit borer + wilt; heavy pest pressure
+VE_CABBAGE,seed_or_planting_material,CAPEX,2000,4000,Hybrid seed + nursery raising; 8000-10000 plants/acre
+VE_CABBAGE,fertilizer_and_nutrients,OPEX,3000,5000,NPK + boron + FYM
+VE_CABBAGE,labour,OPEX,5000,9000,Transplanting + weeding + single harvest
+VE_CABBAGE,pesticide_and_protection,OPEX,2000,3500,Diamond back moth + head borer management
+VE_CAULIFLOWER,seed_or_planting_material,CAPEX,2500,4500,Hybrid seed + nursery; 8000-10000 plants/acre
+VE_CAULIFLOWER,fertilizer_and_nutrients,OPEX,3500,5500,NPK + boron + molybdenum + FYM
+VE_CAULIFLOWER,labour,OPEX,5000,9000,Transplanting + weeding + timely harvest
+VE_CAULIFLOWER,pesticide_and_protection,OPEX,2000,3500,Diamond back moth + black rot management
+SP_TURMERIC,seed_or_planting_material,CAPEX,8000,14000,Seed rhizomes 6-8 quintal/acre; major cost
+SP_TURMERIC,fertilizer_and_nutrients,OPEX,4000,7000,NPK + FYM + micronutrients; heavy feeder
+SP_TURMERIC,labour,OPEX,8000,14000,Planting + mulching + earthing up + harvesting + curing
+SP_TURMERIC,pesticide_and_protection,OPEX,1500,3000,Rhizome rot + shoot borer + leaf blotch management
+SP_GINGER,seed_or_planting_material,CAPEX,15000,25000,Seed rhizomes 6-10 quintal/acre; very expensive seed
+SP_GINGER,fertilizer_and_nutrients,OPEX,5000,8000,NPK + FYM + micronutrients; heavy organic manure
+SP_GINGER,labour,OPEX,10000,16000,Planting + mulching + earthing up + harvesting
+SP_GINGER,pesticide_and_protection,OPEX,3000,5000,Soft rot + rhizome fly + bacterial wilt; seed treatment critical
+SP_CHILLI,seed_or_planting_material,CAPEX,3000,6000,Hybrid seed + nursery raising; 8000-12000 plants/acre
+SP_CHILLI,fertilizer_and_nutrients,OPEX,4000,6500,NPK + calcium + FYM + drip fertigation
+SP_CHILLI,labour,OPEX,7000,12000,Transplanting + multiple pickings + drying
+SP_CHILLI,pesticide_and_protection,OPEX,3000,6000,Thrips + mites + leaf curl virus + fruit rot management
+CM_SUGARCANE,seed_or_planting_material,CAPEX,5000,9000,Setts 25-30 quintal/acre; single bud technology reduces cost
+CM_SUGARCANE,fertilizer_and_nutrients,OPEX,5000,8000,NPK heavy + FYM + press mud
+CM_SUGARCANE,labour,OPEX,8000,15000,Planting + earthing up + detrashing + harvesting
+CM_SUGARCANE,pesticide_and_protection,OPEX,2000,4000,Early shoot borer + top borer + red rot management
+CM_SUGARCANE,irrigation_cost,OPEX,4000,7000,12-15 irrigations; high water crop
+CM_COTTON,seed_or_planting_material,CAPEX,2500,4000,Bt cotton hybrid seed packets; 1-1.5 packets/acre
+CM_COTTON,fertilizer_and_nutrients,OPEX,3500,6000,NPK + micronutrients + foliar sprays
+CM_COTTON,labour,OPEX,6000,10000,Sowing + thinning + multiple pickings
+CM_COTTON,pesticide_and_protection,OPEX,3000,6000,Bollworm + sucking pests + pink bollworm management
+PR_CAPSICUM,seed_or_planting_material,CAPEX,5000,8000,Hybrid seed (imported) + nursery; 3000-4000 plants/acre
+PR_CAPSICUM,fertilizer_and_nutrients,OPEX,5000,8000,Fertigation through drip; NPK + Ca + Mg
+PR_CAPSICUM,labour,OPEX,8000,14000,Training + pruning + harvesting + crop management
+PR_CAPSICUM,pesticide_and_protection,OPEX,3000,5000,Thrips + mites + powdery mildew in polyhouse
+PR_CAPSICUM,infrastructure,CAPEX,80000,150000,Polyhouse/shade net structure amortized per acre per year

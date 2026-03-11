@@ -1,7 +1,39 @@
 {
   "permissions": {
     "allow": [
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git -C \"/Users/priyansh18/Desktop/growgrid cursor\" log --oneline -20)",
+      "Bash(git -C \"/Users/priyansh18/Desktop/growgrid cursor\" show --stat HEAD)",
+      "Bash(ruff check growgrid_core/ apps/)",
+      "Bash(ruff check growgrid_core/)",
+      "Bash(ruff check growgrid_core/agents/step_6_critic_agent.py growgrid_core/agents/step_11_report_composer_agent.py growgrid_core/services/plan_runner.py growgrid_core/utils/types.py)",
+      "Bash(ruff check --fix growgrid_core/utils/types.py)",
+      "Bash(python -m pytest tests/ -v --timeout=30)",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(ruff check growgrid_core/ --fix)",
+      "Bash(npm install recharts)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npm run build)",
+      "Bash(python -m pytest tests/ -v --tb=short)",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT COUNT\\(*\\) FROM sqlite_master WHERE type=''table'';\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \".tables\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT COUNT\\(*\\) FROM crop_master;\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT DISTINCT practice_code FROM crop_practice_compatibility ORDER BY practice_code;\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT COUNT\\(*\\) FROM practice_master;\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT COUNT\\(*\\) FROM crop_practice_compatibility WHERE practice_code=''DAIRY_FODDER'';\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT COUNT\\(*\\) FROM crop_practice_compatibility WHERE practice_code=''FISH_POND'';\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT COUNT\\(*\\) FROM crop_practice_compatibility;\")",
+      "Bash(ls -lh \"/Users/priyansh18/Desktop/growgrid cursor/data/\"*.csv)",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT practice_code, COUNT\\(*\\) as crop_count FROM crop_practice_compatibility GROUP BY practice_code ORDER BY crop_count DESC;\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT COUNT\\(*\\) as total_crops FROM crop_master;\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT crop_id, practice_code, compatibility FROM crop_practice_compatibility LIMIT 5;\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT crop_id, water_need FROM crop_master WHERE water_need=''HIGH'' LIMIT 10;\")",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT COUNT\\(*\\) FROM crop_master WHERE water_need=''HIGH'';\")",
+      "Bash(python3 -c \":*)",
+      "Bash(python3:*)",
+      "Bash(sqlite3 \"/Users/priyansh18/Desktop/growgrid cursor/data/growgrid.db\" \"SELECT COUNT\\(*\\) FROM crop_practice_compatibility WHERE practice_code=''BEEKEEPING'';\")",
+      "Bash(python -m ruff check growgrid_core/ tests/)",
+      "Bash(python -m ruff check --fix growgrid_core/ tests/)"
     ]
   }
 }

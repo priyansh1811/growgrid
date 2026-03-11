@@ -7,7 +7,6 @@ from pathlib import Path
 
 import pandas as pd
 
-
 from growgrid_core.config import DATA_DIR, DB_PATH
 
 # ── Indexes (performance) ───────────────────────────────────────────────
@@ -33,6 +32,18 @@ _INDEX_DDL: list[str] = [
     # crop location suitability
     "CREATE INDEX IF NOT EXISTS idx_cls_crop ON crop_location_suitability(crop_id)",
     "CREATE INDEX IF NOT EXISTS idx_cls_state ON crop_location_suitability(state)",
+
+    # economics
+    "CREATE INDEX IF NOT EXISTS idx_crop_cost_crop ON crop_cost_profile(crop_id)",
+    "CREATE INDEX IF NOT EXISTS idx_yield_crop ON yield_baseline_bands(crop_id)",
+    "CREATE INDEX IF NOT EXISTS idx_price_crop ON price_baseline_bands(crop_id)",
+
+    # spacing
+    "CREATE INDEX IF NOT EXISTS idx_spacing_crop ON crop_spacing_reference(crop_id)",
+    "CREATE INDEX IF NOT EXISTS idx_spacing_practice ON crop_spacing_reference(practice_code)",
+
+    # schemes
+    "CREATE INDEX IF NOT EXISTS idx_schemes_state ON schemes_metadata(state)",
 ]
 
 
@@ -134,6 +145,78 @@ _DDL: list[str] = [
         PRIMARY KEY (crop_id, state)
     )
     """,
+    # ── Economics tables ─────────────────────────────────────────────
+    """
+    CREATE TABLE IF NOT EXISTS crop_cost_profile (
+        crop_id          TEXT NOT NULL,
+        component        TEXT NOT NULL,
+        cost_type        TEXT NOT NULL,
+        min_inr_per_acre INTEGER,
+        max_inr_per_acre INTEGER,
+        notes            TEXT
+    )
+    """,
+    """
+    CREATE TABLE IF NOT EXISTS yield_baseline_bands (
+        crop_id              TEXT PRIMARY KEY,
+        low_yield_per_acre   REAL,
+        base_yield_per_acre  REAL,
+        high_yield_per_acre  REAL,
+        yield_unit           TEXT,
+        source_notes         TEXT
+    )
+    """,
+    """
+    CREATE TABLE IF NOT EXISTS price_baseline_bands (
+        crop_id              TEXT PRIMARY KEY,
+        low_price_per_unit   REAL,
+        base_price_per_unit  REAL,
+        high_price_per_unit  REAL,
+        price_unit           TEXT,
+        source_notes         TEXT
+    )
+    """,
+    """
+    CREATE TABLE IF NOT EXISTS loss_factor_reference (
+        perishability_level TEXT PRIMARY KEY,
+        loss_pct_low        REAL,
+        loss_pct_base       REAL,
+        loss_pct_high       REAL,
+        notes               TEXT
+    )
+    """,
+    # ── Field layout table ──────────────────────────────────────────
+    """
+    CREATE TABLE IF NOT EXISTS crop_spacing_reference (
+        crop_id          TEXT NOT NULL,
+        practice_code    TEXT NOT NULL,
+        row_spacing_cm   REAL,
+        plant_spacing_cm REAL,
+        plants_per_acre  INTEGER,
+        planting_pattern TEXT,
+        depth_cm         REAL,
+        notes            TEXT,
+        PRIMARY KEY (crop_id, practice_code)
+    )
+    """,
+    # ── Government schemes table ────────────────────────────────────
+    """
+    CREATE TABLE IF NOT EXISTS schemes_metadata (
+        scheme_id           TEXT PRIMARY KEY,
+        scheme_name         TEXT NOT NULL,
+        state               TEXT NOT NULL,
+        ministry            TEXT,
+        practice_tags       TEXT,
+        crop_tags           TEXT,
+        category_tags       TEXT,
+        eligibility_summary TEXT,
+        subsidy_pct         REAL,
+        max_subsidy_inr     REAL,
+        application_url     TEXT,
+        source_url          TEXT,
+        last_updated        TEXT
+    )
+    """,
 ]
 
 
@@ -161,7 +244,11 @@ def _load_csv_into_table(
     if not csv_path.exists():
         return 0
 
-    df = pd.read_csv(csv_path)
+    try:
+        df = pd.read_csv(csv_path)
+    except pd.errors.ParserError:
+        # Fallback: Python engine skips or warns on bad lines (e.g. extra commas in notes)
+        df = pd.read_csv(csv_path, engine="python", on_bad_lines="skip")
 
     # Basic cleanup: ensure NaNs become NULLs (not the string 'nan')
     df = df.where(pd.notnull(df), None)
@@ -207,6 +294,15 @@ def load_all(db_path: Path | None = None, data_dir: Path | None = None) -> sqlit
         "crop_master.csv": "crop_master",
         "crop_practice_compatibility.csv": "crop_practice_compatibility",
         "crop_location_suitability.csv": "crop_location_suitability",
+        # Economics
+        "crop_cost_profile.csv": "crop_cost_profile",
+        "yield_baseline_bands.csv": "yield_baseline_bands",
+        "price_baseline_bands.csv": "price_baseline_bands",
+        "loss_factor_reference.csv": "loss_factor_reference",
+        # Field layout
+        "crop_spacing_reference.csv": "crop_spacing_reference",
+        # Government schemes
+        "schemes_metadata.csv": "schemes_metadata",
     }
 
     for csv_name, table_name in csv_table_map.items():

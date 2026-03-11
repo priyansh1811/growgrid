@@ -14,7 +14,7 @@ from growgrid_core.agents.base_agent import BaseAgent
 from growgrid_core.agents.step_2_goal_classifier_agent import SCORING_DIMENSIONS
 from growgrid_core.config import PRACTICE_ALTERNATIVES_COUNT
 from growgrid_core.db.db_loader import load_all
-from growgrid_core.db.queries import get_all_practices
+from growgrid_core.db.queries import get_all_practices, get_crop_count_by_practice
 from growgrid_core.utils.scoring import (
     capex_fit,
     ordinal_fit,
@@ -53,16 +53,19 @@ class PracticeRecommenderAgent(BaseAgent):
         conn = self._get_conn()
         practices = get_all_practices(conn)
         hard_constraints: list[HardConstraint] = state.get("hard_constraints", [])
+        crop_counts = get_crop_count_by_practice(conn)
 
         all_scores: list[PracticeScore] = []
 
         for p in practices:
+            practice_code = p.get("practice_code", "UNKNOWN")
+
             elimination_reason = self._check_hard_filters(p, profile, hard_constraints)
 
             if elimination_reason:
                 all_scores.append(
                     PracticeScore(
-                        practice_code=p.get("practice_code", "UNKNOWN"),
+                        practice_code=practice_code,
                         practice_name=p.get("practice_name", "Unknown"),
                         fit_scores={},
                         weighted_score=0.0,
@@ -72,13 +75,34 @@ class PracticeRecommenderAgent(BaseAgent):
                 )
                 continue
 
+            # Eliminate practices with no compatible crops in the database
+            n_crops = crop_counts.get(practice_code, 0)
+            if n_crops == 0:
+                all_scores.append(
+                    PracticeScore(
+                        practice_code=practice_code,
+                        practice_name=p.get("practice_name", "Unknown"),
+                        fit_scores={},
+                        weighted_score=0.0,
+                        eliminated=True,
+                        elimination_reason="No compatible crops defined for this practice.",
+                    )
+                )
+                continue
+
             fits = self._compute_fits(p, profile)
             assert set(fits.keys()) == set(SCORING_DIMENSIONS), "Fit dimensions must match SCORING_DIMENSIONS"
             score = weighted_sum(fits, w)
 
+            # Soft diversity penalty: favor practices with broader crop pools
+            if n_crops <= 2:
+                score *= 0.90
+            elif n_crops <= 5:
+                score *= 0.95
+
             all_scores.append(
                 PracticeScore(
-                    practice_code=p.get("practice_code", "UNKNOWN"),
+                    practice_code=practice_code,
                     practice_name=p.get("practice_name", "Unknown"),
                     fit_scores=fits,
                     weighted_score=round(score, 4),

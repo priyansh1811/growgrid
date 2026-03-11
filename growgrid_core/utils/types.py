@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any, Optional, Literal
+from typing import Any, Literal, Optional
 
 from pydantic import BaseModel, Field, model_validator
 
@@ -27,6 +27,8 @@ class PlanValidationError(Exception):
 
 
 class PlanRequest(BaseModel):
+    name: str | None = Field(default=None, description="User's name (for email delivery)")
+    email: str | None = Field(default=None, description="User's email (for email delivery)")
     location: str = Field(..., min_length=1, description="State + District")
     land_area_acres: float = Field(..., gt=0)
     water_availability: WaterLevel
@@ -207,6 +209,116 @@ class AgronomistVerification(BaseModel):
     evidence_cards: list[EvidenceCard] = Field(default_factory=list)
 
 
+# ── Critic report ───────────────────────────────────────────────────────
+
+
+class CriticIssue(BaseModel):
+    severity: Literal["CRITICAL", "WARNING", "INFO"]
+    dimension: str  # water, budget, horizon, labour, perishability, irrigation, etc.
+    description: str
+    affected_item: str  # practice_code or crop_id
+    suggested_fix: Optional[str] = None
+
+
+class CriticReport(BaseModel):
+    issues: list[CriticIssue] = Field(default_factory=list)
+    fixes_applied: list[str] = Field(default_factory=list)
+    final_confidence: float = 1.0  # 0..1 — reduced per issue severity
+    summary: str = ""
+
+
+# ── Report payload ──────────────────────────────────────────────────────
+
+
+class ReportSection(BaseModel):
+    title: str
+    content: Any  # structured data for rendering
+
+
+class ReportPayload(BaseModel):
+    executive_summary: str = ""
+    sections: list[ReportSection] = Field(default_factory=list)
+    generated_at: str = ""
+
+
+# ── Economics ───────────────────────────────────────────────────────────
+
+
+class CostBreakdown(BaseModel):
+    crop_id: str
+    crop_name: str
+    capex_per_acre: float = 0.0
+    opex_per_acre: float = 0.0
+    total_cost: float = 0.0
+    components: list[dict[str, Any]] = Field(default_factory=list)
+
+
+class ROISummary(BaseModel):
+    scenario: str  # "best", "base", "worst"
+    revenue: float = 0.0
+    total_cost: float = 0.0
+    profit: float = 0.0
+    roi_pct: float = 0.0
+    breakeven_months: Optional[float] = None
+
+
+class SensitivityResult(BaseModel):
+    factor: str  # "price_-15%", "yield_-10%", "labour_+10%"
+    adjusted_roi_pct: float = 0.0
+    still_profitable: bool = True
+
+
+class EconomicsReport(BaseModel):
+    cost_breakdown: list[CostBreakdown] = Field(default_factory=list)
+    roi_summary: list[ROISummary] = Field(default_factory=list)
+    sensitivity: list[SensitivityResult] = Field(default_factory=list)
+    total_capex: float = 0.0
+    total_opex: float = 0.0
+    data_coverage: float = 0.0  # 0..1 — fraction of crops with cost data
+
+
+# ── Field layout ────────────────────────────────────────────────────────
+
+
+class FieldBlock(BaseModel):
+    crop_id: str
+    crop_name: str
+    area_acres: float
+    row_spacing_cm: float = 0.0
+    plant_spacing_cm: float = 0.0
+    total_plants: int = 0
+    rows: int = 0
+    plants_per_row: int = 0
+    block_label: str = ""
+
+
+class FieldLayoutPlan(BaseModel):
+    blocks: list[FieldBlock] = Field(default_factory=list)
+    total_area_used_acres: float = 0.0
+    notes: list[str] = Field(default_factory=list)
+
+
+# ── Government schemes ──────────────────────────────────────────────────
+
+
+class MatchedScheme(BaseModel):
+    scheme_id: str
+    scheme_name: str
+    relevance_score: float = 0.0
+    subsidy_pct: Optional[float] = None
+    max_subsidy_inr: Optional[float] = None
+    eligibility_summary: str = ""
+    application_url: Optional[str] = None
+    match_reasons: list[str] = Field(default_factory=list)
+
+
+class SchemesReport(BaseModel):
+    matched_schemes: list[MatchedScheme] = Field(default_factory=list)
+    total_potential_subsidy: Optional[float] = None
+    eligibility_checklist: list[str] = Field(default_factory=list)
+    data_note: str = ""
+
+
 # ── Full response ────────────────────────────────────────────────────────
 
 
@@ -227,3 +339,9 @@ class PlanResponse(BaseModel):
     selected_crop_portfolio_reason: str = ""
     agronomist_verification: AgronomistVerification
     grow_guides: list[GrowGuide]
+    # Phase-1 additions (optional for backward compatibility)
+    critic_report: Optional[CriticReport] = None
+    report_payload: Optional[ReportPayload] = None
+    economics: Optional[EconomicsReport] = None
+    field_layout: Optional[FieldLayoutPlan] = None
+    schemes: Optional[SchemesReport] = None

@@ -32,7 +32,6 @@ from growgrid_core.utils.types import (
     ValidatedProfile,
 )
 
-
 logger = logging.getLogger(__name__)
 
 # Month N: ... pattern for grow guide timeline

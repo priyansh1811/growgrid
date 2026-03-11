@@ -305,3 +305,42 @@ FL_ROSE,HYDROPONICS,MED,0.6,PRIMARY,Possible in advanced substrate/soilless syst
 FL_GERBERA,POLYHOUSE,GOOD,1.0,PRIMARY,Gerbera is typically grown under protected cultivation for cut flowers.
 FL_GERBERA,NET_HOUSE,MED,0.6,PRIMARY,Partial protection possible; yield/quality may vary.
 FL_GERBERA,HYDROPONICS,MED,0.6,PRIMARY,Possible in soilless/substrate systems; requires technical capacity.
+
+OS_MUSTARD,BEEKEEPING,GOOD,1.0,COMPANION,Mustard is a prime bee-forage and honey crop; pollination boosts yields.
+OS_SUNFLOWER,BEEKEEPING,GOOD,1.0,COMPANION,Sunflower is a major nectar source; bees improve seed set.
+FR_LITCHI,BEEKEEPING,GOOD,1.0,COMPANION,Litchi orchards are classic sites for apiaries; high-quality honey.
+OS_SESAME,BEEKEEPING,MED,0.6,COMPANION,Sesame flowers attract bees; moderate synergy.
+SP_CORIANDER_SEED,BEEKEEPING,MED,0.6,COMPANION,Coriander seed flowers produce nectar; moderate honey potential.
+FL_MARIGOLD,BEEKEEPING,MED,0.6,COMPANION,Marigold provides pollen; supports hive nutrition.
+
+CE_SORGHUM_FODDER,DAIRY_FODDER,GOOD,1.0,PRIMARY,Premier fodder crop for dairy cattle; fast biomass.
+CE_MAIZE,DAIRY_FODDER,GOOD,1.0,PRIMARY,Maize silage is a primary cattle feed; dual-purpose grain+fodder.
+CE_BARLEY,DAIRY_FODDER,MED,0.6,PRIMARY,Barley grain and straw used as cattle feed in some regions.
+MI_BAJRA,DAIRY_FODDER,GOOD,1.0,PRIMARY,Bajra stover is a key dry-season livestock feed.
+MI_JOWAR,DAIRY_FODDER,GOOD,1.0,PRIMARY,Jowar is a dual-purpose grain + fodder crop.
+OS_GROUNDNUT,DAIRY_FODDER,MED,0.6,INTERCROP,Groundnut cake is a protein-rich cattle feed supplement.
+
+CE_RICE,FISH_POND,GOOD,1.0,PRIMARY,Rice-fish integration is a proven system in eastern/southern India.
+VE_SPINACH,FISH_POND,MED,0.6,INTERCROP,Leafy vegetables can be grown on pond bunds for extra income.
+VE_BOTTLE_GOURD,FISH_POND,MED,0.6,INTERCROP,Cucurbits on pond bunds; trellis over water edge.
+FR_BANANA,FISH_POND,MED,0.6,INTERCROP,Banana on pond bunds utilizes nutrient-rich pond soil.
+FR_COCONUT,FISH_POND,MED,0.6,INTERCROP,Coconut palms along pond embankments in suitable belts.
+
+MU_OYSTER,MUSHROOM,GOOD,1.0,PRIMARY,Oyster mushroom is the standard variety for indoor cultivation.
+VE_SPINACH,MUSHROOM,MED,0.6,INTERCROP,Spinach can be grown alongside mushroom sheds for extra income.
+VE_CORIANDER_LEAF,MUSHROOM,MED,0.6,INTERCROP,Leafy herbs near mushroom units for diversification.
+
+VE_TOMATO,NURSERY,GOOD,1.0,PRIMARY,Tomato seedlings are a high-demand nursery product.
+VE_BRINJAL,NURSERY,GOOD,1.0,PRIMARY,Brinjal seedling production is a common nursery activity.
+SP_CHILLI,NURSERY,GOOD,1.0,PRIMARY,Chilli seedlings are widely demanded by vegetable farmers.
+PR_CAPSICUM,NURSERY,MED,0.6,PRIMARY,Capsicum seedlings for protected cultivation farmers.
+FL_MARIGOLD,NURSERY,MED,0.6,PRIMARY,Marigold seedlings for seasonal flower demand.
+FR_GUAVA,NURSERY,MED,0.6,PRIMARY,Guava saplings for orchard establishment.
+FR_POMEGRANATE,NURSERY,MED,0.6,PRIMARY,Pomegranate saplings for horticulture demand.
+
+CE_MAIZE,POULTRY_BACKYARD,GOOD,1.0,PRIMARY,Maize grain is the primary poultry feed ingredient.
+CE_SORGHUM_FODDER,POULTRY_BACKYARD,GOOD,1.0,PRIMARY,Sorghum grain used as poultry feed in many regions.
+MI_BAJRA,POULTRY_BACKYARD,GOOD,1.0,PRIMARY,Bajra grain is a cost-effective poultry feed.
+OS_GROUNDNUT,POULTRY_BACKYARD,MED,0.6,INTERCROP,Groundnut cake is a protein supplement for poultry.
+OS_SOYBEAN,POULTRY_BACKYARD,MED,0.6,INTERCROP,Soybean meal is a key protein source in poultry feed.
+PU_MOONG,POULTRY_BACKYARD,MED,0.6,INTERCROP,Short-duration pulse; residue and grain serve as minor poultry feed.
