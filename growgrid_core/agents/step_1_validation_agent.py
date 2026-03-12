@@ -24,7 +24,6 @@ from growgrid_core.utils.enums import IrrigationSource, LabourLevel, RiskLevel, 
 from growgrid_core.utils.types import (
     HardConstraint,
     PlanRequest,
-    PlanValidationError,
     SoftConstraint,
     ValidatedProfile,
 )

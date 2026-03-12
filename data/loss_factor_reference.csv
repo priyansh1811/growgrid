@@ -1,0 +1,6 @@
+perishability_level,loss_pct_low,loss_pct_base,loss_pct_high,notes
+VERY_LOW,1,3,5,Dried spices and storable grains with good infrastructure — cumin fennel ajwain coriander seed
+LOW,2,5,8,Cereals pulses oilseeds — storable with basic care
+MED,5,10,18,Onion potato sugarcane — some storage loss expected
+MED_HIGH,8,15,25,Fruits like mango guava — moderate cold chain helps reduce losses
+HIGH,10,20,35,Tomato banana leafy vegetables — rapid deterioration without cold chain

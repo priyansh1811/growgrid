@@ -95,6 +95,44 @@ class CropRecommenderAgent(BaseAgent):
         conn = self._get_conn()
         candidates = get_crops_for_practice(conn, selected_practice.practice_code)
 
+        # Fallback: if selected practice has no crops, try alternatives
+        active_practice = selected_practice
+        if not candidates:
+            alternatives: list[PracticeScore] = state.get("practice_alternatives", [])
+            for alt in alternatives:
+                if alt.eliminated:
+                    continue
+                alt_candidates = get_crops_for_practice(conn, alt.practice_code)
+                if alt_candidates:
+                    logger.warning(
+                        "Primary practice %s has 0 compatible crops; "
+                        "falling back to alternative practice %s (%d crops).",
+                        selected_practice.practice_code,
+                        alt.practice_code,
+                        len(alt_candidates),
+                    )
+                    candidates = alt_candidates
+                    active_practice = alt
+                    state["selected_practice"] = alt
+                    state["selected_practice_reason"] = (
+                        f"Fell back from {selected_practice.practice_code} "
+                        f"(no compatible crops) to {alt.practice_code}."
+                    )
+                    break
+
+        if not candidates:
+            logger.warning(
+                "No compatible crops found for practice %s or any alternatives.",
+                selected_practice.practice_code,
+            )
+            state["crop_ranking"] = []
+            state["selected_crop_portfolio"] = []
+            state["selected_crop_portfolio_reason"] = (
+                "No compatible crops found for the selected practice or alternatives. "
+                "Consider changing your constraints."
+            )
+            return state
+
         # Location-based suitability: state parsed from profile.location, score/eliminate by state data
         state_name = _state_from_location(profile.location)
         suitability_by_crop = get_suitability_by_state(conn, state_name) if state_name else {}
@@ -167,6 +205,16 @@ class CropRecommenderAgent(BaseAgent):
         feasible = [s for s in all_scores if not s.eliminated]
         feasible.sort(key=lambda s: (-s.final_score, s.crop_id))
 
+        # Progressive constraint relaxation when hard filters eliminated all crops
+        if not feasible and candidates:
+            feasible, relax_warnings = self._progressive_relax(
+                all_scores, candidates, profile, hard_constraints,
+                suitability_by_crop, soft_constraints, w,
+            )
+            if relax_warnings:
+                existing_warnings = state.get("warnings", [])
+                state["warnings"] = existing_warnings + relax_warnings
+
         # Build portfolio
         portfolio = self._build_portfolio(feasible, profile, category_by_id, role_by_id)
 
@@ -178,7 +226,7 @@ class CropRecommenderAgent(BaseAgent):
             state["selected_crop_portfolio_reason"] = "No feasible crops for this practice and constraints."
         elif llm and CROP_LLM_LAYER_ENABLED:
             state["selected_crop_portfolio_reason"] = _llm_portfolio_explanation(
-                llm, profile, weights, selected_practice, portfolio, user_context
+                llm, profile, weights, active_practice, portfolio, user_context
             )
         else:
             state["selected_crop_portfolio_reason"] = _deterministic_portfolio_reason(
@@ -289,6 +337,132 @@ class CropRecommenderAgent(BaseAgent):
             )
 
         return portfolio
+
+    # ── Progressive constraint relaxation ─────────────────────────
+
+    @staticmethod
+    def _progressive_relax(
+        all_scores: list[CropScore],
+        candidates: list[dict],
+        profile: ValidatedProfile,
+        hard_constraints: list[HardConstraint],
+        suitability_by_crop: dict[str, dict],
+        soft_constraints: list,
+        w: dict[str, float],
+    ) -> tuple[list[CropScore], list[str]]:
+        """Progressively relax constraints when all crops are eliminated.
+
+        Returns (re-scored feasible list, list of relaxation warnings).
+
+        Rounds:
+          1. Relax risk (allow MED risk for LOW tolerance) + extend horizon +3mo.
+          2. Last resort: return top 3 eliminated crops by compatibility score.
+        """
+        warnings: list[str] = []
+
+        # Round 1: Relax risk gate + horizon
+        relaxed_scores: list[CropScore] = []
+        for c in candidates:
+            elimination = None
+
+            # Keep water and labour hard gates
+            for hc in hard_constraints:
+                if hc.operator != "exclude_if_equal":
+                    continue
+                if hc.dimension == "water" and hc.threshold == "HIGH" and c.get("water_need") == "HIGH":
+                    elimination = hc.reason
+                    break
+                if hc.dimension == "labour" and hc.threshold == "HIGH" and c.get("labour_need") == "HIGH":
+                    elimination = hc.reason
+                    break
+                # Skip risk check — that's what we're relaxing
+
+            # Relaxed risk: only block HIGH risk (allow MED risk for LOW tolerance users)
+            if not elimination and c.get("risk_level") == "HIGH":
+                elimination = "Risk tolerance LOW; crop is HIGH risk."
+
+            # Relaxed horizon: extend by +3 months
+            relaxed_horizon = profile.horizon_months + 3
+            if not elimination and relaxed_horizon < c["time_to_first_income_months_min"]:
+                elimination = (
+                    f"Horizon+3mo ({relaxed_horizon}mo) still shorter than "
+                    f"crop min income time ({c['time_to_first_income_months_min']}mo)."
+                )
+
+            # Location gate stays the same
+            if not elimination:
+                loc_elim = _location_elimination(c["crop_id"], suitability_by_crop)
+                if loc_elim:
+                    elimination = loc_elim
+
+            if elimination:
+                relaxed_scores.append(
+                    CropScore(
+                        crop_id=c["crop_id"],
+                        crop_name=c["crop_name"],
+                        fit_scores={},
+                        compatibility_score=c["compatibility_score"],
+                        final_score=0.0,
+                        eliminated=True,
+                        elimination_reason=elimination,
+                    )
+                )
+                continue
+
+            fits = CropRecommenderAgent._compute_fits(c, profile)
+            base_score = _weighted_sum_partial(fits, w)
+            base_score = _apply_soft_penalties(base_score, c, soft_constraints)
+            compat = c["compatibility_score"]
+            loc_mult = _location_suitability_multiplier(c["crop_id"], suitability_by_crop)
+            season_mult = _season_multiplier(profile.planning_month, c.get("seasons_supported"))
+            final = round(base_score * compat * loc_mult * season_mult, 4)
+
+            relaxed_scores.append(
+                CropScore(
+                    crop_id=c["crop_id"],
+                    crop_name=c["crop_name"],
+                    fit_scores=fits,
+                    compatibility_score=compat,
+                    final_score=final,
+                    eliminated=False,
+                )
+            )
+
+        feasible = [s for s in relaxed_scores if not s.eliminated]
+        if feasible:
+            feasible.sort(key=lambda s: (-s.final_score, s.crop_id))
+            warnings.append(
+                "Constraints relaxed: risk gate widened and horizon extended by "
+                "+3 months to find feasible crops."
+            )
+            return feasible, warnings
+
+        # Round 2: Last resort — return top 3 from eliminated list by compatibility_score
+        eliminated = [s for s in all_scores if s.eliminated and s.compatibility_score > 0]
+        eliminated.sort(key=lambda s: (-s.compatibility_score, s.crop_id))
+        if eliminated:
+            top_3 = eliminated[:3]
+            result = []
+            for s in top_3:
+                result.append(
+                    CropScore(
+                        crop_id=s.crop_id,
+                        crop_name=s.crop_name,
+                        fit_scores=s.fit_scores,
+                        compatibility_score=s.compatibility_score,
+                        final_score=round(s.compatibility_score * 0.5, 4),
+                        eliminated=False,
+                        elimination_reason=None,
+                    )
+                )
+            warnings.append(
+                "WARNING: All crops failed hard filters. Returning top crops "
+                "by compatibility with relaxed constraints. Results may not match "
+                "your stated preferences exactly."
+            )
+            return result, warnings
+
+        return [], warnings
 
 
 def _state_from_location(location: str) -> str | None:
@@ -463,7 +637,7 @@ Return JSON with "preferences" array (or empty array)."""
         prefs = out.get("preferences") or []
         result: list[SoftConstraint] = []
         valid_pairs = {("water", "penalise_high_water"), ("labour", "penalise_high_labour"), ("risk", "penalise_high_risk")}
-        for p in prefs if isinstance(p, dict) else []:
+        for p in (prefs if isinstance(prefs, list) else []):
             dim = p.get("dimension")
             pref = p.get("preference")
             if (dim, pref) not in valid_pairs:

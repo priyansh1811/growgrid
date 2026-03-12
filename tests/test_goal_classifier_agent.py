@@ -7,12 +7,12 @@ from unittest.mock import patch
 
 import pytest
 
+from growgrid_core.agents.step_1_validation_agent import ValidationAgent
 from growgrid_core.agents.step_2_goal_classifier_agent import (
     _BASE_TEMPLATES,
     SCORING_DIMENSIONS,
     GoalClassifierAgent,
 )
-from growgrid_core.agents.step_1_validation_agent import ValidationAgent
 from growgrid_core.utils.enums import Goal, IrrigationSource, LabourLevel, RiskLevel, WaterLevel
 from growgrid_core.utils.types import PlanRequest, WeightVector
 

@@ -21,7 +21,9 @@ from typing import Any
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, Field, ValidationError
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+from pydantic import BaseModel, Field, ValidationError, field_validator
 
 from growgrid_core.agents.step_0_clarification_agent import (
     ClarificationAgent,
@@ -47,6 +49,7 @@ app = FastAPI(
     version="1.0.0",
 )
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
@@ -62,6 +65,9 @@ app.add_middleware(
 class FormInputs(BaseModel):
     """Form payload for clarify and refine."""
 
+    name: str = Field(default="")
+    email: str = Field(default="")
+    category: str = Field(default="general")
     location: str = Field(..., min_length=1)
     land_area_acres: float = Field(..., gt=0)
     water_availability: str  # WaterLevel value
@@ -72,6 +78,19 @@ class FormInputs(BaseModel):
     time_horizon_years: float = Field(..., gt=0)
     risk_tolerance: str  # RiskLevel value
     planning_month: int | None = Field(default=None, ge=1, le=12)  # 1–12 for season-aware recommendations
+
+    @field_validator("planning_month", mode="before")
+    @classmethod
+    def coerce_planning_month(cls, v: object) -> int | None:
+        if v is None or v == "":
+            return None
+        if isinstance(v, int):
+            return v if 1 <= v <= 12 else None
+        try:
+            m = int(v)
+            return m if 1 <= m <= 12 else None
+        except (TypeError, ValueError):
+            return None
 
 
 class ClarifyAnswer(BaseModel):
@@ -93,9 +112,17 @@ def _build_plan_request(form_dict: dict[str, Any], refinement: RefinementResult)
     goal = refinement.suggested_goal or form_dict["goal"]
     risk = refinement.suggested_risk_tolerance or form_dict["risk_tolerance"]
     planning_month = form_dict.get("planning_month")
-    if planning_month is not None:
-        planning_month = int(planning_month) if 1 <= int(planning_month) <= 12 else None
+    if planning_month is not None and planning_month != "":
+        try:
+            m = int(planning_month)
+            planning_month = m if 1 <= m <= 12 else None
+        except (TypeError, ValueError):
+            planning_month = None
+    else:
+        planning_month = None
     return PlanRequest(
+        name=form_dict.get("name") or None,
+        email=form_dict.get("email") or None,
         location=form_dict["location"],
         land_area_acres=float(form_dict["land_area_acres"]),
         water_availability=WaterLevel(form_dict["water_availability"]),
@@ -146,14 +173,14 @@ def plan(request: PlanRequest) -> PlanResponse:
     conn = get_connection()
     try:
         return run_pipeline(request, conn=conn, cache=_CACHE)
-    finally:
-        conn.close()
     except PlanValidationError as e:
         raise HTTPException(status_code=400, detail=e.errors)
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        conn.close()
 
 
 class PlanFromFormBody(BaseModel):
@@ -179,3 +206,18 @@ def plan_from_form(body: PlanFromFormBody) -> PlanResponse:
         raise HTTPException(status_code=500, detail=str(e))
     finally:
         conn.close()
+
+
+# ── Static file serving (production) ──────────────────────────────────────
+
+_STATIC_DIR = ROOT / "apps" / "web" / "dist"
+if _STATIC_DIR.is_dir():
+    app.mount("/assets", StaticFiles(directory=_STATIC_DIR / "assets"), name="static-assets")
+
+    @app.get("/{full_path:path}")
+    def serve_spa(full_path: str) -> FileResponse:
+        """Serve the React SPA for any non-API route."""
+        file_path = _STATIC_DIR / full_path
+        if file_path.is_file():
+            return FileResponse(file_path)
+        return FileResponse(_STATIC_DIR / "index.html")

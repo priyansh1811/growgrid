@@ -1,0 +1,78 @@
+crop_id,low_price_per_unit,base_price_per_unit,high_price_per_unit,price_unit,source_notes
+FR_MANGO,1500,3000,6000,INR_per_quintal,Farmgate; varies hugely by variety (Alphonso premium)
+FR_GUAVA,1000,2000,4000,INR_per_quintal,Farmgate; L49 and Allahabad Safeda
+FR_POMEGRANATE,3000,6000,10000,INR_per_quintal,Bhagwa variety premium; export quality higher
+FR_BANANA,600,1000,1800,INR_per_quintal,Grand Naine farmgate; seasonal variation
+FR_PAPAYA,500,1000,2000,INR_per_quintal,Red Lady hybrid; farmgate
+CE_WHEAT,2000,2275,2800,INR_per_quintal,MSP 2024-25 Rs 2275; open market slightly higher
+CE_MAIZE,1800,2090,2500,INR_per_quintal,MSP 2024-25 Rs 2090; poultry feed demand
+CE_RICE,1800,2300,2800,INR_per_quintal,MSP paddy Rs 2300; milling premium
+MI_BAJRA,2000,2500,3200,INR_per_quintal,MSP Rs 2500; local market demand
+MI_JOWAR,2500,3180,3800,INR_per_quintal,MSP Rs 3180; food + fodder value
+MI_RAGI,3000,3846,4500,INR_per_quintal,MSP Rs 3846; health food premium rising
+PU_CHICKPEA,4000,5440,7000,INR_per_quintal,MSP Rs 5440; mandi price higher in lean season
+PU_PIGEONPEA,5000,7000,9000,INR_per_quintal,MSP Rs 7000; dal demand strong
+PU_LENTIL,4000,6425,8000,INR_per_quintal,MSP Rs 6425; import substitution
+PU_MOONG,5000,8558,11000,INR_per_quintal,MSP Rs 8558; summer moong premium
+PU_URAD,5000,6950,9000,INR_per_quintal,MSP Rs 6950; processing demand
+OS_MUSTARD,4000,5650,7000,INR_per_quintal,MSP Rs 5650; edible oil demand
+OS_SOYBEAN,3000,4600,6000,INR_per_quintal,MSP Rs 4600; crushing demand
+OS_GROUNDNUT,4000,6377,8000,INR_per_quintal,MSP Rs 6377; in-shell price
+VE_POTATO,500,1000,2000,INR_per_quintal,Highly volatile; cold storage matters
+VE_ONION,600,1200,3000,INR_per_quintal,Very volatile; seasonal glut/shortage
+VE_TOMATO,500,1200,3000,INR_per_quintal,Most volatile vegetable; seasonal variation extreme
+VE_OKRA,1000,2000,3500,INR_per_quintal,Mandi price; summer premium
+VE_BRINJAL,600,1200,2500,INR_per_quintal,Mandi; round vs long varieties
+VE_CABBAGE,400,800,1500,INR_per_quintal,Bulk vegetable; winter glut common
+VE_CAULIFLOWER,600,1200,2500,INR_per_quintal,Seasonal; early varieties premium
+VE_CARROT,600,1200,2000,INR_per_quintal,Fresh market; Delhi red type
+VE_SPINACH,800,1500,2500,INR_per_quintal,Leafy green; perishable
+SP_TURMERIC,5000,8000,14000,INR_per_quintal,Dry turmeric; curcumin content matters
+SP_GINGER,4000,7000,12000,INR_per_quintal,Fresh ginger farmgate
+SP_CHILLI,8000,14000,22000,INR_per_quintal,Dry chilli; Guntur market reference
+SP_GARLIC,4000,8000,15000,INR_per_quintal,Volatile; import competition
+SP_CUMIN,15000,25000,40000,INR_per_quintal,High value spice; Rajasthan/Gujarat
+CM_SUGARCANE,280,350,400,INR_per_quintal,SAP/FRP based; state-wise variation
+CM_COTTON,5000,6620,8000,INR_per_quintal,MSP Rs 6620 for medium staple; lint basis
+PR_CAPSICUM,2000,4000,7000,INR_per_quintal,Polyhouse colored capsicum premium
+PR_TOMATO,1000,2500,5000,INR_per_quintal,Protected cultivation premium; off-season
+FL_MARIGOLD,2000,4000,8000,INR_per_quintal,Festival season premium (Dussehra/Diwali)
+FR_LEMON,1500,3000,6000,INR_per_quintal,Farmgate; seasonal variation; citrus demand steady
+FR_ACID_LIME,1500,3000,6000,INR_per_quintal,Farmgate; seasonal pricing; beverage industry demand
+FR_DRAGONFRUIT,5000,10000,18000,INR_per_quintal,Premium exotic fruit; urban market premium
+FR_AMLA,1000,2000,4000,INR_per_quintal,Processing demand; Chyawanprash and ayurveda industry
+FR_BER,1000,2000,4000,INR_per_quintal,Local market; hardy fruit; seasonal
+FR_LITCHI,3000,6000,12000,INR_per_quintal,Seasonal premium; highly perishable; export potential
+FR_GRAPES,2000,4000,8000,INR_per_quintal,Table/wine variety; export grade commands premium
+FR_JAMUN,1500,3000,6000,INR_per_quintal,Seasonal niche; processing and fresh market
+FR_COCONUT,800,1500,2500,INR_per_hundred_nuts,Copra/fresh nut price; tender coconut premium higher
+FR_APPLE,4000,8000,15000,INR_per_quintal,Hill region premium; Shimla/Kashmir varieties
+CE_BARLEY,1500,1735,2200,INR_per_quintal,MSP Rs 1735; beer/malt industry demand
+CE_SORGHUM_FODDER,200,400,600,INR_per_quintal,Green fodder; local sale value for dairy integration
+PU_PEA_DRY,3000,5600,7000,INR_per_quintal,Dry grain; MSP reference; dal processing demand
+OS_SUNFLOWER,4000,6760,8000,INR_per_quintal,MSP Rs 6760; oil extraction demand
+OS_SESAME,6000,8635,12000,INR_per_quintal,MSP Rs 8635; export grade til; strong demand
+VE_RADISH,400,800,1500,INR_per_quintal,Bulk vegetable; short duration; winter glut possible
+VE_CORIANDER_LEAF,1000,2000,4000,INR_per_quintal,Fresh herb; perishable; nearby market essential
+VE_CUCUMBER_OPEN,600,1200,2500,INR_per_quintal,Open field; summer premium; seasonal variation
+VE_BITTER_GOURD,1000,2000,4000,INR_per_quintal,Medicinal value; moderate but steady demand
+VE_BOTTLE_GOURD,500,1000,2000,INR_per_quintal,Bulk vegetable; widespread consumption
+VE_PUMPKIN,400,800,1500,INR_per_quintal,Hardy; storage possible; processing demand growing
+VE_WATERMELON,500,1000,2500,INR_per_quintal,Summer premium; transport cost significant
+VE_MUSKMELON,800,1500,3000,INR_per_quintal,Summer premium; perishable; timing matters
+VE_FRENCH_BEAN,1500,3000,5000,INR_per_quintal,Fresh market; perishable; export demand for frozen
+VE_GREEN_PEA,2000,4000,7000,INR_per_quintal,Fresh green pea premium; rabi season; cold storage helps
+SP_CORIANDER_SEED,5000,8000,13000,INR_per_quintal,Spice market; Rajasthan/Gujarat main markets
+SP_FENUGREEK,4000,7000,12000,INR_per_quintal,Methi seed + leaf dual value; spice demand
+SP_FENNEL,8000,14000,22000,INR_per_quintal,Saunf; Gujarat/Rajasthan market; strong export
+SP_AJWAIN,10000,18000,28000,INR_per_quintal,Niche spice; strong domestic price; medicinal use
+CM_POTATO_SEED,800,1500,2500,INR_per_quintal,Premium over table potato; quality certification needed
+CM_JUTE,3500,5050,6500,INR_per_quintal,MSP Rs 5050; raw jute; government procurement
+CM_TEA,15000,25000,40000,INR_per_quintal,Auction price; CTC/orthodox; estate vs smallholder
+CM_COFFEE,20000,35000,50000,INR_per_quintal,Clean coffee; arabica premium; export linked
+PR_CUCUMBER,1500,3000,5000,INR_per_quintal,Protected premium; off-season supply advantage
+PR_STRAWBERRY,10000,18000,30000,INR_per_quintal,High premium; perishable; urban retail market
+PR_LETTUCE,3000,6000,10000,INR_per_quintal,Premium leafy; urban/hotel/restaurant market
+FL_ROSE,3000,6000,12000,INR_per_quintal,Cut flower stems; seasonal and event-driven premium
+FL_GERBERA,4000,8000,15000,INR_per_quintal,Cut flowers; premium market; consistent demand
+MU_OYSTER,5000,10000,18000,INR_per_quintal,Fresh mushroom farmgate; urban market premium

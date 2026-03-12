@@ -37,11 +37,12 @@ class TestToolCache:
         cache.set("key1", [{"data": "test"}], ttl_hours=0)
         # Manually backdate the entry so it's clearly stale
         old_time = (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat()
-        cache._conn.execute(
+        conn = cache._conn()
+        conn.execute(
             "UPDATE tool_cache SET created_at = ? WHERE cache_key = ?",
             (old_time, "key1"),
         )
-        cache._conn.commit()
+        conn.commit()
         # Now it should be stale
         assert cache.get("key1") is None
 
