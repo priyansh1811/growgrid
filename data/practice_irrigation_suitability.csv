@@ -1,0 +1,86 @@
+practice_code,irrigation_source,suitability,rationale
+OPEN_FIELD,NONE,MED,Works for lower input rainfed field crops
+OPEN_FIELD,CANAL,GOOD,Stable canal supply supports field crop planning
+OPEN_FIELD,BOREWELL,GOOD,Reliable borewell irrigation supports field operations
+OPEN_FIELD,DRIP,GOOD,Drip improves field water efficiency
+OPEN_FIELD,MIXED,GOOD,Multiple irrigation sources improve resilience
+OPEN_FIELD_VEG,NONE,POOR,Vegetables need more assured irrigation
+OPEN_FIELD_VEG,CANAL,MED,Possible when canal delivery is reliable
+OPEN_FIELD_VEG,BOREWELL,GOOD,Borewell irrigation suits frequent vegetable watering
+OPEN_FIELD_VEG,DRIP,GOOD,Drip is well suited for intensive vegetables
+OPEN_FIELD_VEG,MIXED,GOOD,Mixed sources reduce crop stress risk
+RAIN_FED,NONE,GOOD,Designed for no formal irrigation
+RAIN_FED,CANAL,MED,Possible but the dryland advantage reduces
+RAIN_FED,BOREWELL,MED,Possible though not the core model
+RAIN_FED,DRIP,MED,Possible but no longer a pure rainfed setup
+RAIN_FED,MIXED,MED,Possible though irrigation changes the model
+DRIP_INTENSIVE,NONE,NOT_FEASIBLE,Requires installed drip irrigation
+DRIP_INTENSIVE,CANAL,MED,Needs storage and pressurization to work well
+DRIP_INTENSIVE,BOREWELL,GOOD,Borewell fed drip is a common fit
+DRIP_INTENSIVE,DRIP,GOOD,Ideal match for a drip based system
+DRIP_INTENSIVE,MIXED,GOOD,Multiple sources improve network reliability
+NET_HOUSE,NONE,NOT_FEASIBLE,Protected crops need assured irrigation
+NET_HOUSE,CANAL,POOR,Canal only supply is weak for sensitive crops
+NET_HOUSE,BOREWELL,MED,Can work if pressure and timing are stable
+NET_HOUSE,DRIP,GOOD,Drip suits controlled net house production
+NET_HOUSE,MIXED,GOOD,Multiple sources reduce protected crop risk
+POLYHOUSE,NONE,NOT_FEASIBLE,Polyhouse production needs dependable irrigation
+POLYHOUSE,CANAL,POOR,Canal only is weak without storage and fertigation
+POLYHOUSE,BOREWELL,MED,Borewell can support polyhouse if stable
+POLYHOUSE,DRIP,GOOD,Drip and fertigation are the preferred setup
+POLYHOUSE,MIXED,GOOD,Multiple sources improve system reliability
+HYDROPONICS,NONE,NOT_FEASIBLE,Hydroponics needs continuous controlled water supply
+HYDROPONICS,CANAL,POOR,Canal water alone is unsuitable without treatment
+HYDROPONICS,BOREWELL,MED,Can work if water quality is manageable
+HYDROPONICS,DRIP,GOOD,Pressurized delivery aligns with system needs
+HYDROPONICS,MIXED,GOOD,Mixed sources improve reliability
+ORCHARD,NONE,POOR,Orchard establishment is risky without assured water
+ORCHARD,CANAL,GOOD,Canal irrigation works where delivery is dependable
+ORCHARD,BOREWELL,GOOD,Borewell supports orchard establishment and bearing
+ORCHARD,DRIP,GOOD,Drip is ideal for orchards
+ORCHARD,MIXED,GOOD,Multiple sources improve perennial resilience
+ORCHARD_INTERCROP,NONE,POOR,Trees and intercrops both benefit from assured water
+ORCHARD_INTERCROP,CANAL,GOOD,Canal supply supports both components
+ORCHARD_INTERCROP,BOREWELL,GOOD,Borewell helps manage both tree and intercrop needs
+ORCHARD_INTERCROP,DRIP,GOOD,Drip is highly suitable for orchard rows and intercrops
+ORCHARD_INTERCROP,MIXED,GOOD,Multiple sources improve dual enterprise reliability
+AGROFORESTRY,NONE,MED,Can work with rainfall when species are chosen well
+AGROFORESTRY,CANAL,MED,Helps establishment but is not essential everywhere
+AGROFORESTRY,BOREWELL,MED,Helps tree establishment in drier belts
+AGROFORESTRY,DRIP,GOOD,Drip suits young trees and targeted irrigation
+AGROFORESTRY,MIXED,GOOD,Mixed sources improve establishment and resilience
+INTEGRATED,NONE,POOR,Integrated systems usually need water for multiple enterprises
+INTEGRATED,CANAL,GOOD,Canal water supports multi enterprise systems
+INTEGRATED,BOREWELL,GOOD,Borewell improves operational stability
+INTEGRATED,DRIP,GOOD,Drip supports efficient crop and fodder blocks
+INTEGRATED,MIXED,GOOD,Mixed sources improve resilience across enterprises
+DAIRY_FODDER,NONE,POOR,Dairy and fodder systems need dependable water
+DAIRY_FODDER,CANAL,GOOD,Canal water suits fodder production
+DAIRY_FODDER,BOREWELL,GOOD,Borewell helps maintain year round fodder
+DAIRY_FODDER,DRIP,MED,Useful for fodder blocks but not the full system
+DAIRY_FODDER,MIXED,GOOD,Mixed sources improve livestock water security
+POULTRY_BACKYARD,NONE,MED,Can work if crop dependence stays limited
+POULTRY_BACKYARD,CANAL,GOOD,Supports the crop side of the system
+POULTRY_BACKYARD,BOREWELL,GOOD,Improves reliability for birds and crops
+POULTRY_BACKYARD,DRIP,MED,Useful for crops but not the main poultry need
+POULTRY_BACKYARD,MIXED,GOOD,Mixed sources improve resilience
+FISH_POND,NONE,NOT_FEASIBLE,Pond systems require a dependable water source
+FISH_POND,CANAL,GOOD,Canal supply supports pond filling and exchange
+FISH_POND,BOREWELL,MED,Possible but costly for pond filling
+FISH_POND,DRIP,NOT_FEASIBLE,Drip does not fit pond management
+FISH_POND,MIXED,GOOD,Mixed sources improve pond reliability
+NURSERY,NONE,NOT_FEASIBLE,Nursery production needs frequent controlled watering
+NURSERY,CANAL,MED,Possible if water can be stored and delivered well
+NURSERY,BOREWELL,GOOD,Borewell supports reliable nursery irrigation
+NURSERY,DRIP,GOOD,Drip or micro irrigation is highly suitable
+NURSERY,MIXED,GOOD,Mixed sources improve reliability for planting material
+MUSHROOM,NONE,MED,Needs water but total quantity is moderate
+MUSHROOM,CANAL,MED,Possible if clean water handling is maintained
+MUSHROOM,BOREWELL,GOOD,Clean borewell water is a strong fit
+MUSHROOM,DRIP,POOR,Drip is not the main delivery mode for mushroom units
+MUSHROOM,MIXED,GOOD,Mixed sources improve hygiene and backup reliability
+BEEKEEPING,NONE,GOOD,Apiary operations do not depend heavily on irrigation
+BEEKEEPING,CANAL,GOOD,Irrigation type does not constrain beekeeping
+BEEKEEPING,BOREWELL,GOOD,Borewell is generally sufficient for apiary needs
+BEEKEEPING,DRIP,GOOD,Drip often supports forage crops around the apiary
+BEEKEEPING,MIXED,GOOD,Mixed water sources add general farm resilience

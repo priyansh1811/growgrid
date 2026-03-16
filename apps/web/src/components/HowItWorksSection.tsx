@@ -1,0 +1,168 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+
+const stepIcons = [
+  'M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z', // map pin
+  'M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z', // cpu
+  'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z', // document
+]
+
+const steps = [
+  {
+    num: '01',
+    title: 'Tell Us About Your Farm',
+    body: 'Enter your state, district, land area, water source, budget, labour availability, soil type, primary goal, and risk tolerance. The more you share, the more precise your plan.',
+    visual: (
+      <div className="space-y-2">
+        {[
+          ['State', 'Maharashtra'],
+          ['Land', '2 acres'],
+          ['Goal', 'Stable Income'],
+          ['Soil', 'Loamy'],
+          ['Water', 'Borewell'],
+        ].map(([label, value], i) => (
+          <motion.div
+            key={label}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.6 + i * 0.1 }}
+            className="flex items-center justify-between rounded-lg border border-gray-200 bg-gray-50 px-4 py-2.5"
+          >
+            <span className="text-xs font-medium text-gray-500">{label}</span>
+            <span className="text-sm font-semibold text-forest">{value}</span>
+          </motion.div>
+        ))}
+      </div>
+    ),
+  },
+  {
+    num: '02',
+    title: '11 Specialist Agents Analyse Your Profile',
+    body: "GrowGrid's pipeline of 11 AI agents runs sequentially — each one handling a specialist task. Hard filters eliminate what won't work. Weighted scoring finds the best fit. An Agronomist Agent verifies every claim with real web evidence.",
+    visual: (
+      <div className="flex items-center gap-2 overflow-hidden py-4">
+        {['Validate', 'Classify', 'Match', 'Select', 'Verify'].map((label, i) => (
+          <motion.div
+            key={label}
+            initial={{ opacity: 0.3 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.6 + i * 0.3 }}
+            className="flex flex-col items-center gap-1.5"
+          >
+            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-primary-400/40 bg-primary-400/15 text-xs font-bold text-primary-500">
+              {i + 1}
+            </div>
+            <span className="text-[10px] font-medium text-gray-500">{label}</span>
+            {i < 4 && (
+              <div className="absolute translate-x-[38px]">
+                <svg width="16" height="2" className="text-primary-400/40">
+                  <line x1="0" y1="1" x2="16" y2="1" stroke="currentColor" strokeWidth="2" strokeDasharray="4 3" />
+                </svg>
+              </div>
+            )}
+          </motion.div>
+        ))}
+      </div>
+    ),
+  },
+  {
+    num: '03',
+    title: 'Receive Your Complete Farm Advisory',
+    body: 'Your plan includes: recommended practice, crop portfolio, financial projections, risk matrix, govt scheme matches, and a month-by-month implementation roadmap. Every decision is explained. Nothing is a black box.',
+    visual: (
+      <div className="space-y-2">
+        {[
+          'Farm Profile',
+          'Crop Portfolio',
+          'Financial Plan',
+          'Risk Matrix',
+          'Govt Schemes',
+          '30/60/90 Day Actions',
+        ].map((s, i) => (
+          <motion.div
+            key={s}
+            initial={{ opacity: 0, x: 10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.6 + i * 0.1 }}
+            className="flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-4 py-2"
+          >
+            <span className="text-primary-500">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5" /></svg>
+            </span>
+            <span className="text-sm font-medium text-forest">{s}</span>
+          </motion.div>
+        ))}
+      </div>
+    ),
+  },
+]
+
+export function HowItWorksSection() {
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true })
+
+  return (
+    <section id="how-it-works" className="bg-cream py-24 sm:py-32">
+      <div ref={ref} className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-4 text-sm font-semibold tracking-wider text-primary-500 uppercase"
+        >
+          How It Works
+        </motion.p>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-16 font-display text-4xl font-normal leading-tight text-forest sm:text-5xl"
+        >
+          From farm inputs to full advisory plan.
+          <br />
+          <span className="font-display italic text-primary-500">In minutes.</span>
+        </motion.h2>
+
+        {/* Steps */}
+        <div className="space-y-16 md:space-y-24">
+          {steps.map((step, i) => (
+            <motion.div
+              key={step.num}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className={`flex flex-col gap-8 md:flex-row md:items-start md:gap-16 ${
+                i % 2 === 1 ? 'md:flex-row-reverse' : ''
+              }`}
+            >
+              {/* Text */}
+              <div className="flex-1">
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-forest">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d={stepIcons[i]} />
+                    </svg>
+                  </span>
+                  <span className="text-xs font-bold tracking-wider text-primary-500 uppercase">
+                    Step {step.num}
+                  </span>
+                </div>
+                <h3 className="mb-3 text-2xl font-bold text-forest">{step.title}</h3>
+                <p className="text-base leading-relaxed text-gray-600">{step.body}</p>
+              </div>
+
+              {/* Visual */}
+              <div className="flex-1 rounded-2xl border border-gray-200 bg-white p-6 shadow-md">
+                {step.visual}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

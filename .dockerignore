@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.git/
+.github/
+.pytest_cache/
+data/growgrid.db
+data/cache/
+*.egg-info/
+.DS_Store
+.cursor/
+projectinfo.md

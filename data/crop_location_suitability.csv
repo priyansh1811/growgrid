@@ -1,0 +1,363 @@
+crop_id,state,suitability,rationale,source_tag
+FR_MANGO,Uttar Pradesh,GOOD,Major mango producing belt with strong commercial cultivation,APEDA_MANGO
+FR_MANGO,Andhra Pradesh,GOOD,Major mango producing state and export-linked supply,APEDA_MANGO
+FR_MANGO,Bihar,GOOD,Significant mango cultivation in Indo-Gangetic plains,APEDA_MANGO
+FR_MANGO,Karnataka,GOOD,Major mango producing state in peninsular India,APEDA_MANGO
+FR_MANGO,Gujarat,GOOD,Major mango producing state with commercial varieties,APEDA_MANGO
+FR_MANGO,Madhya Pradesh,GOOD,Large mango belt in central India,APEDA_MANGO
+FR_MANGO,Tamil Nadu,GOOD,Major mango growing region with stable production,APEDA_MANGO
+FR_MANGO,Maharashtra,MED,Commercial mango belts exist but varies by district,APEDA_MANGO
+FR_MANGO,Telangana,MED,Suitable climate; good orchard adoption in multiple districts,CLIMATE_BASED
+FR_GUAVA,Uttar Pradesh,GOOD,Major guava producing state NCB/Allahabad belts N. India plains,NHB_GUAVA
+FR_GUAVA,Bihar,GOOD,Major guava producing state with strong adoption,NHB_GUAVA
+FR_GUAVA,West Bengal,GOOD,Important guava producing region,NHB_GUAVA
+FR_GUAVA,Madhya Pradesh,MED,Suitable belts; adoption present,CLIMATE_BASED
+FR_GUAVA,Odisha,MED,Suitable tropical/subtropical belts,CLIMATE_BASED
+FR_GUAVA,Andhra Pradesh,MED,Suitable climate; local belts exist,CLIMATE_BASED
+FR_GUAVA,Tamil Nadu,MED,Suitable warm belts; local production exists,CLIMATE_BASED
+FR_POMEGRANATE,Maharashtra,GOOD,Primary commercial cultivation hub in India,NHB_POMEGRANATE
+FR_POMEGRANATE,Gujarat,MED,Commercial plantations present in semi-arid belts,NHB_POMEGRANATE
+FR_POMEGRANATE,Rajasthan,MED,Semi-arid suitability; plantations exist,NHB_POMEGRANATE
+FR_POMEGRANATE,Karnataka,MED,Commercial pockets exist (semi-arid districts),NHB_POMEGRANATE
+FR_POMEGRANATE,Tamil Nadu,MED,Plantations present in suitable belts,NHB_POMEGRANATE
+FR_POMEGRANATE,Andhra Pradesh,MED,Plantations present in suitable belts,NHB_POMEGRANATE
+FR_POMEGRANATE,Telangana,MED,Suitable semi-arid pockets with drip adoption,CLIMATE_BASED
+FR_LEMON,Uttar Pradesh,MED,Suitable subtropical citrus belts; requires management,CLIMATE_BASED
+FR_LEMON,Maharashtra,MED,Suitable climate in many districts; citrus pockets,CLIMATE_BASED
+FR_LEMON,Andhra Pradesh,MED,Suitable citrus belts; local adoption,CLIMATE_BASED
+FR_LEMON,Telangana,MED,Suitable citrus belts; local adoption,CLIMATE_BASED
+FR_LEMON,Tamil Nadu,MED,Suitable warm belts; citrus pockets,CLIMATE_BASED
+FR_LEMON,Gujarat,MED,Suitable belts with irrigation,CLIMATE_BASED
+FR_LEMON,Rajasthan,MED,Suitable with irrigation in warmer belts,CLIMATE_BASED
+FR_ACID_LIME,Andhra Pradesh,MED,Suitable citrus belts; common for acid lime,CLIMATE_BASED
+FR_ACID_LIME,Telangana,MED,Suitable citrus belts; common for acid lime,CLIMATE_BASED
+FR_ACID_LIME,Maharashtra,MED,Acid lime pockets exist with market linkages,CLIMATE_BASED
+FR_ACID_LIME,Tamil Nadu,MED,Suitable warm belts; citrus adoption,CLIMATE_BASED
+FR_ACID_LIME,Karnataka,MED,Suitable belts with irrigation,CLIMATE_BASED
+FR_DRAGONFRUIT,Gujarat,MED,Adoption rising in arid/semi-arid belts; requires trellis+market,CLIMATE_BASED
+FR_DRAGONFRUIT,Maharashtra,MED,Adoption rising; needs trellis and training,CLIMATE_BASED
+FR_DRAGONFRUIT,Rajasthan,MED,Suitable semi-arid belts with drip; needs frost protection,CLIMATE_BASED
+FR_DRAGONFRUIT,Karnataka,MED,Suitable warm belts; needs trellis and management,CLIMATE_BASED
+FR_DRAGONFRUIT,Tamil Nadu,MED,Suitable warm belts; needs trellis and market,CLIMATE_BASED
+FR_DRAGONFRUIT,Andhra Pradesh,MED,Suitable belts; needs training and trellis,CLIMATE_BASED
+FR_DRAGONFRUIT,Telangana,MED,Suitable belts; needs drip and trellis,CLIMATE_BASED
+FR_BANANA,Andhra Pradesh,GOOD,Major banana producing state; strong commercial cultivation,PIB_BANANA
+FR_BANANA,Maharashtra,GOOD,Major banana producing state with commercial belts,PIB_BANANA
+FR_BANANA,Karnataka,GOOD,High production belts and strong adoption,PIB_BANANA
+FR_BANANA,Tamil Nadu,GOOD,Major producing state with established belts,PIB_BANANA
+FR_BANANA,Uttar Pradesh,GOOD,Major producing state in north belts,PIB_BANANA
+FR_BANANA,Gujarat,MED,Large producing pockets and expansion,PIB_BANANA
+FR_BANANA,Telangana,MED,Suitable belts with irrigation support,PIB_BANANA
+FR_BANANA,Kerala,MED,Suitable humid belts; local production,PIB_BANANA
+FR_PAPAYA,Andhra Pradesh,GOOD,High papaya productivity belt in India,NEWS_HORTI_AP
+FR_PAPAYA,Telangana,MED,Suitable tropical belts; significant cultivation,CLIMATE_BASED
+FR_PAPAYA,Tamil Nadu,MED,Suitable tropical belts; local adoption,CLIMATE_BASED
+FR_PAPAYA,Maharashtra,MED,Suitable belts; management needed,CLIMATE_BASED
+FR_PAPAYA,Karnataka,MED,Suitable belts; management needed,CLIMATE_BASED
+FR_PAPAYA,Uttar Pradesh,MED,Suitable in warmer districts; frost risk in winters,CLIMATE_BASED
+FR_PAPAYA,Bihar,MED,Suitable belts; frost sensitivity needs care,CLIMATE_BASED
+CE_WHEAT,Uttar Pradesh,GOOD,Major wheat growing state,APEDA_WHEAT
+CE_WHEAT,Madhya Pradesh,GOOD,Major wheat growing state,APEDA_WHEAT
+CE_WHEAT,Punjab,GOOD,Major wheat growing state,APEDA_WHEAT
+CE_WHEAT,Haryana,GOOD,Major wheat growing state,APEDA_WHEAT
+CE_WHEAT,Rajasthan,GOOD,Major wheat growing state,APEDA_WHEAT
+CE_WHEAT,Bihar,GOOD,Major wheat growing state,APEDA_WHEAT
+CE_WHEAT,Gujarat,GOOD,Major wheat growing state,APEDA_WHEAT
+CE_WHEAT,Uttarakhand,MED,Suitable hill/foothill belts,CLIMATE_BASED
+CE_WHEAT,West Bengal,MED,Limited belts; still cultivated,CLIMATE_BASED
+CE_RICE,West Bengal,GOOD,Top rice producing belt,ECON_SURVEY_CROPS
+CE_RICE,Uttar Pradesh,GOOD,Top rice producing belt,ECON_SURVEY_CROPS
+CE_RICE,Telangana,GOOD,Top rice producing belt,ECON_SURVEY_CROPS
+CE_RICE,Odisha,GOOD,High rice adoption in humid belts,CLIMATE_BASED
+CE_RICE,Chhattisgarh,GOOD,Strong paddy belts and adoption,CLIMATE_BASED
+CE_RICE,Andhra Pradesh,GOOD,Major paddy belts; irrigation supported,CLIMATE_BASED
+CE_RICE,Bihar,MED,Strong paddy belts in many districts,CLIMATE_BASED
+CE_RICE,Assam,MED,Humid belts suitable,CLIMATE_BASED
+CE_RICE,Punjab,MED,Major rice cultivation but water-intensive,CLIMATE_BASED
+CE_RICE,Tamil Nadu,MED,Delta belts suitable; irrigation-dependent,CLIMATE_BASED
+CE_MAIZE,Uttar Pradesh,MED,Maize cultivated in multiple belts; district-dependent,CLIMATE_BASED
+CE_MAIZE,Madhya Pradesh,MED,Strong adoption in multiple districts,CLIMATE_BASED
+CE_MAIZE,Bihar,MED,Strong adoption; rainfall/irrigation dependent,CLIMATE_BASED
+CE_MAIZE,Karnataka,MED,Major maize state in many districts,CLIMATE_BASED
+CE_MAIZE,Rajasthan,MED,Adopted in suitable belts; rainfall dependent,CLIMATE_BASED
+CE_MAIZE,Telangana,MED,Adopted in multiple belts,CLIMATE_BASED
+CE_MAIZE,Maharashtra,MED,Adopted in multiple belts,CLIMATE_BASED
+PU_CHICKPEA,Madhya Pradesh,GOOD,Major gram belt; drought-tolerant rabi pulse,CLIMATE_BASED
+PU_CHICKPEA,Maharashtra,GOOD,Strong rabi pulse belts,CLIMATE_BASED
+PU_CHICKPEA,Rajasthan,GOOD,Low water rabi suitability,CLIMATE_BASED
+PU_CHICKPEA,Uttar Pradesh,MED,Adopted in rabi belts,CLIMATE_BASED
+PU_CHICKPEA,Karnataka,MED,Adopted in dry belts,CLIMATE_BASED
+PU_CHICKPEA,Telangana,MED,Adopted in suitable pockets,CLIMATE_BASED
+OS_MUSTARD,Rajasthan,GOOD,Major mustard belt; low water rabi oilseed,CLIMATE_BASED
+OS_MUSTARD,Haryana,GOOD,Strong mustard adoption in rabi,CLIMATE_BASED
+OS_MUSTARD,Uttar Pradesh,GOOD,Common rabi oilseed rotation,CLIMATE_BASED
+OS_MUSTARD,Madhya Pradesh,MED,Suitable rabi belts,CLIMATE_BASED
+OS_MUSTARD,Punjab,MED,Suitable but area may be lower vs wheat,CLIMATE_BASED
+VE_ONION,Maharashtra,GOOD,Top onion producing state,APEDA_ONION
+VE_ONION,Madhya Pradesh,GOOD,Major onion producing state,APEDA_ONION
+VE_ONION,Gujarat,GOOD,Major onion producing state,APEDA_ONION
+VE_ONION,Karnataka,GOOD,Major onion producing state,APEDA_ONION
+VE_ONION,Rajasthan,GOOD,Major onion producing state,APEDA_ONION
+VE_ONION,Bihar,MED,Important producing belts exist,APEDA_ONION
+VE_ONION,West Bengal,MED,Important producing belts exist,APEDA_ONION
+VE_ONION,Uttar Pradesh,MED,Important producing belts exist,APEDA_ONION
+VE_ONION,Haryana,MED,Important producing belts exist,APEDA_ONION
+VE_ONION,Andhra Pradesh,MED,Important producing belts exist,APEDA_ONION
+VE_POTATO,Uttar Pradesh,GOOD,Major potato belt; storage linkages important,CLIMATE_BASED
+VE_POTATO,West Bengal,GOOD,Major potato belt; cold storage ecosystem,CLIMATE_BASED
+VE_POTATO,Bihar,MED,Significant potato cultivation belts,CLIMATE_BASED
+VE_POTATO,Punjab,MED,Commercial belts exist,CLIMATE_BASED
+VE_POTATO,Haryana,MED,Commercial belts exist,CLIMATE_BASED
+VE_POTATO,Madhya Pradesh,MED,Commercial belts exist,CLIMATE_BASED
+VE_TOMATO,Andhra Pradesh,MED,Strong production belts but high market volatility,CLIMATE_BASED
+VE_TOMATO,Karnataka,MED,Strong production belts but disease/price risk,CLIMATE_BASED
+VE_TOMATO,Maharashtra,MED,Commercial belts but high volatility,CLIMATE_BASED
+VE_TOMATO,Telangana,MED,Adopted widely; market and disease risk,CLIMATE_BASED
+VE_TOMATO,Uttar Pradesh,MED,Seasonal belts; market access matters,CLIMATE_BASED
+VE_OKRA,Uttar Pradesh,MED,Common warm-season vegetable; district-dependent,CLIMATE_BASED
+VE_OKRA,Bihar,MED,Common warm-season vegetable,CLIMATE_BASED
+VE_OKRA,West Bengal,MED,Common warm-season vegetable,CLIMATE_BASED
+VE_OKRA,Maharashtra,MED,Common warm-season vegetable,CLIMATE_BASED
+VE_OKRA,Andhra Pradesh,MED,Common warm-season vegetable,CLIMATE_BASED
+VE_OKRA,Tamil Nadu,MED,Common warm-season vegetable,CLIMATE_BASED
+MI_BAJRA,Rajasthan,GOOD,Core millet belt; very low water suitability,CLIMATE_BASED
+MI_BAJRA,Gujarat,GOOD,Strong dryland millet suitability,CLIMATE_BASED
+MI_BAJRA,Haryana,MED,Dry belts suitable,CLIMATE_BASED
+MI_BAJRA,Uttar Pradesh,MED,West UP belts suitable,CLIMATE_BASED
+MI_BAJRA,Maharashtra,MED,Dry belts suitable,CLIMATE_BASED
+MI_JOWAR,Maharashtra,GOOD,Core sorghum belt; dryland suitability,CLIMATE_BASED
+MI_JOWAR,Karnataka,GOOD,Strong adoption in dry belts,CLIMATE_BASED
+MI_JOWAR,Telangana,MED,Dry belts suitable,CLIMATE_BASED
+MI_JOWAR,Madhya Pradesh,MED,Dry belts suitable,CLIMATE_BASED
+PU_PIGEONPEA,Maharashtra,GOOD,Strong tur/arhar cultivation belts,CLIMATE_BASED
+PU_PIGEONPEA,Karnataka,GOOD,Strong adoption in many belts,CLIMATE_BASED
+PU_PIGEONPEA,Telangana,MED,Common kharif pulse in suitable belts,CLIMATE_BASED
+PU_PIGEONPEA,Madhya Pradesh,MED,Adoption in pockets,CLIMATE_BASED
+PU_PIGEONPEA,Uttar Pradesh,MED,Common pulse in pockets,CLIMATE_BASED
+PU_LENTIL,Uttar Pradesh,GOOD,Major masoor belt,CLIMATE_BASED
+PU_LENTIL,Madhya Pradesh,MED,Suitable rabi belts,CLIMATE_BASED
+PU_LENTIL,Bihar,MED,Suitable rabi belts,CLIMATE_BASED
+PU_LENTIL,West Bengal,MED,Suitable rabi belts,CLIMATE_BASED
+PU_PEA_DRY,Uttar Pradesh,MED,Suitable cool-season pulse belts,CLIMATE_BASED
+PU_PEA_DRY,Bihar,MED,Suitable cool-season pulse belts,CLIMATE_BASED
+PU_PEA_DRY,Madhya Pradesh,MED,Suitable cool-season pulse belts,CLIMATE_BASED
+OS_SOYBEAN,Madhya Pradesh,GOOD,Core soybean belt in India,CLIMATE_BASED
+OS_SOYBEAN,Maharashtra,GOOD,Strong soybean adoption in kharif,CLIMATE_BASED
+OS_SOYBEAN,Rajasthan,MED,Adopted in suitable belts,CLIMATE_BASED
+OS_SUNFLOWER,Karnataka,MED,Adopted in suitable belts,CLIMATE_BASED
+OS_SUNFLOWER,Andhra Pradesh,MED,Adopted in suitable belts,CLIMATE_BASED
+OS_SUNFLOWER,Maharashtra,MED,Adopted in suitable belts,CLIMATE_BASED
+OS_SESAME,Rajasthan,MED,Dryland suitable oilseed,CLIMATE_BASED
+OS_SESAME,Gujarat,MED,Dryland suitable oilseed,CLIMATE_BASED
+OS_SESAME,Uttar Pradesh,MED,Adopted in pockets,CLIMATE_BASED
+OS_SESAME,Madhya Pradesh,MED,Adopted in pockets,CLIMATE_BASED
+CM_SUGARCANE,Uttar Pradesh,GOOD,Core sugarcane belt with established industry,CLIMATE_BASED
+CM_SUGARCANE,Maharashtra,GOOD,Major sugarcane belt; water management critical,CLIMATE_BASED
+CM_SUGARCANE,Karnataka,MED,Industry-linked belts exist,CLIMATE_BASED
+CM_SUGARCANE,Tamil Nadu,MED,Industry-linked belts exist,CLIMATE_BASED
+CM_SUGARCANE,Andhra Pradesh,MED,Industry-linked belts exist,CLIMATE_BASED
+CM_COTTON,Gujarat,GOOD,Major cotton belt; commercial cultivation,CLIMATE_BASED
+CM_COTTON,Maharashtra,GOOD,Major cotton belt; pest/price risk,CLIMATE_BASED
+CM_COTTON,Telangana,GOOD,Major cotton belt; pest risk,CLIMATE_BASED
+CM_COTTON,Andhra Pradesh,MED,Cotton belts exist; pest risk,CLIMATE_BASED
+CM_COTTON,Madhya Pradesh,MED,Commercial belts exist; pest risk,CLIMATE_BASED
+CM_COTTON,Rajasthan,MED,Commercial belts exist; irrigation improves stability,CLIMATE_BASED
+CM_POTATO_SEED,Uttar Pradesh,MED,Seed potato possible with strong quality control,CLIMATE_BASED
+CM_POTATO_SEED,Punjab,MED,Seed potato possible with quality systems,CLIMATE_BASED
+CM_POTATO_SEED,Haryana,MED,Seed potato possible with market linkages,CLIMATE_BASED
+SP_TURMERIC,Telangana,MED,Spice belts exist; curing/storage needed,CLIMATE_BASED
+SP_TURMERIC,Maharashtra,MED,Spice belts exist; curing/storage needed,CLIMATE_BASED
+SP_TURMERIC,Tamil Nadu,MED,Spice belts exist; curing/storage needed,CLIMATE_BASED
+SP_TURMERIC,Andhra Pradesh,MED,Spice belts exist; curing/storage needed,CLIMATE_BASED
+SP_GINGER,Kerala,MED,Suitable humid belts; disease risk management critical,CLIMATE_BASED
+SP_GINGER,Karnataka,MED,Suitable belts; disease risk management critical,CLIMATE_BASED
+SP_GINGER,Meghalaya,MED,Suitable humid belts; disease risk management critical,CLIMATE_BASED
+SP_GARLIC,Madhya Pradesh,MED,Cool-season belts suitable; labour intensive,CLIMATE_BASED
+SP_GARLIC,Rajasthan,MED,Cool-season belts suitable; labour intensive,CLIMATE_BASED
+SP_GARLIC,Uttar Pradesh,MED,Cool-season belts suitable; labour intensive,CLIMATE_BASED
+SP_CUMIN,Gujarat,MED,Dry climate belts suitable; disease/weather sensitive,CLIMATE_BASED
+SP_CUMIN,Rajasthan,MED,Dry climate belts suitable; disease/weather sensitive,CLIMATE_BASED
+SP_CORIANDER_SEED,Rajasthan,MED,Dry/cool season belts suitable,CLIMATE_BASED
+SP_CORIANDER_SEED,Madhya Pradesh,MED,Dry/cool season belts suitable,CLIMATE_BASED
+SP_CORIANDER_SEED,Uttar Pradesh,MED,Dry/cool season belts suitable,CLIMATE_BASED
+SP_CHILLI,Andhra Pradesh,MED,Major chilli belt; pest/market risk,CLIMATE_BASED
+SP_CHILLI,Telangana,MED,Major chilli belt; pest/market risk,CLIMATE_BASED
+SP_CHILLI,Karnataka,MED,Chilli belts exist; pest risk,CLIMATE_BASED
+SP_CHILLI,Maharashtra,MED,Chilli belts exist; pest risk,CLIMATE_BASED
+PR_CAPSICUM,Haryana,MED,Protected cultivation clusters exist near NCR markets,CLIMATE_BASED
+PR_CAPSICUM,Uttar Pradesh,MED,Protected clusters exist near big markets,CLIMATE_BASED
+PR_CAPSICUM,Maharashtra,MED,Protected clusters exist near cities,CLIMATE_BASED
+PR_CAPSICUM,Karnataka,MED,Protected clusters exist near cities,CLIMATE_BASED
+PR_CAPSICUM,Tamil Nadu,MED,Protected clusters exist near cities,CLIMATE_BASED
+PR_CAPSICUM,Telangana,MED,Protected clusters exist near Hyderabad market,CLIMATE_BASED
+PR_CUCUMBER,Haryana,MED,Protected clusters exist near NCR markets,CLIMATE_BASED
+PR_CUCUMBER,Uttar Pradesh,MED,Protected clusters exist near big markets,CLIMATE_BASED
+PR_CUCUMBER,Maharashtra,MED,Protected clusters exist near cities,CLIMATE_BASED
+PR_CUCUMBER,Karnataka,MED,Protected clusters exist near cities,CLIMATE_BASED
+PR_CUCUMBER,Tamil Nadu,MED,Protected clusters exist near cities,CLIMATE_BASED
+PR_CUCUMBER,Telangana,MED,Protected clusters exist near Hyderabad market,CLIMATE_BASED
+PR_TOMATO,Haryana,MED,Protected cultivation for season extension,CLIMATE_BASED
+PR_TOMATO,Uttar Pradesh,MED,Protected cultivation for season extension,CLIMATE_BASED
+PR_TOMATO,Maharashtra,MED,Protected clusters exist near cities,CLIMATE_BASED
+PR_TOMATO,Karnataka,MED,Protected clusters exist near cities,CLIMATE_BASED
+PR_TOMATO,Tamil Nadu,MED,Protected clusters exist near cities,CLIMATE_BASED
+PR_STRAWBERRY,Maharashtra,MED,Protected strawberry feasible in select cool belts; high management,CLIMATE_BASED
+PR_STRAWBERRY,Himachal Pradesh,MED,Feasible in cool belts with protected systems,CLIMATE_BASED
+PR_STRAWBERRY,Uttarakhand,MED,Feasible in cool belts with protected systems,CLIMATE_BASED
+PR_LETTUCE,Karnataka,MED,Feasible with cold chain and market proximity,CLIMATE_BASED
+PR_LETTUCE,Maharashtra,MED,Feasible with cold chain and market proximity,CLIMATE_BASED
+PR_LETTUCE,Delhi,MED,Feasible with strong buyer proximity,CLIMATE_BASED
+PR_LETTUCE,Haryana,MED,Feasible with NCR buyers + cold chain,CLIMATE_BASED
+FL_MARIGOLD,Uttar Pradesh,MED,Common flower crop; event-driven demand,CLIMATE_BASED
+FL_MARIGOLD,West Bengal,MED,Common flower crop; event-driven demand,CLIMATE_BASED
+FL_MARIGOLD,Karnataka,MED,Common flower crop; event-driven demand,CLIMATE_BASED
+FL_MARIGOLD,Tamil Nadu,MED,Common flower crop; event-driven demand,CLIMATE_BASED
+FL_ROSE,Maharashtra,MED,Protected rose clusters near city markets,CLIMATE_BASED
+FL_ROSE,Karnataka,MED,Protected rose clusters near city markets,CLIMATE_BASED
+FL_ROSE,Tamil Nadu,MED,Protected rose clusters near city markets,CLIMATE_BASED
+FL_ROSE,Haryana,MED,Protected rose near NCR; high input,CLIMATE_BASED
+CE_BARLEY,Rajasthan,GOOD,Major barley belt; rabi dryland suitability,ECON_SURVEY_CROPS
+CE_BARLEY,Uttar Pradesh,GOOD,Strong rabi barley cultivation in western UP,ECON_SURVEY_CROPS
+CE_BARLEY,Haryana,MED,Suitable rabi belts; lower area than wheat,CLIMATE_BASED
+CE_BARLEY,Madhya Pradesh,MED,Suitable cool-season belts,CLIMATE_BASED
+CE_BARLEY,Punjab,MED,Suitable rabi cereal; limited area,CLIMATE_BASED
+CE_SORGHUM_FODDER,Maharashtra,GOOD,Core sorghum belt; multi-cut fodder system,CLIMATE_BASED
+CE_SORGHUM_FODDER,Karnataka,GOOD,Strong dryland fodder sorghum adoption,CLIMATE_BASED
+CE_SORGHUM_FODDER,Rajasthan,MED,Suitable dry belts for fodder,CLIMATE_BASED
+CE_SORGHUM_FODDER,Gujarat,MED,Suitable belts for livestock integration,CLIMATE_BASED
+MI_RAGI,Karnataka,GOOD,Core ragi belt; major producing state,ECON_SURVEY_CROPS
+MI_RAGI,Tamil Nadu,GOOD,Strong finger millet cultivation tradition,ECON_SURVEY_CROPS
+MI_RAGI,Uttarakhand,MED,Hill ragi cultivation; traditional crop,CLIMATE_BASED
+MI_RAGI,Jharkhand,MED,Tribal belt ragi adoption; dryland suitable,CLIMATE_BASED
+MI_RAGI,Odisha,MED,Suitable tribal and dryland belts,CLIMATE_BASED
+OS_GROUNDNUT,Gujarat,GOOD,Major groundnut producing state; Junagadh/Saurashtra belt,ECON_SURVEY_CROPS
+OS_GROUNDNUT,Andhra Pradesh,GOOD,Major producing state; Anantapur belt,ECON_SURVEY_CROPS
+OS_GROUNDNUT,Rajasthan,GOOD,Large kharif groundnut area; Bikaner/Jodhpur,ECON_SURVEY_CROPS
+OS_GROUNDNUT,Tamil Nadu,MED,Significant production in multiple districts,CLIMATE_BASED
+OS_GROUNDNUT,Karnataka,MED,Commercial belts in northern districts,CLIMATE_BASED
+PU_MOONG,Rajasthan,GOOD,Major moong belt; summer and kharif,ECON_SURVEY_CROPS
+PU_MOONG,Maharashtra,MED,Kharif moong in suitable belts,CLIMATE_BASED
+PU_MOONG,Madhya Pradesh,MED,Suitable summer and kharif belts,CLIMATE_BASED
+PU_MOONG,Uttar Pradesh,MED,Summer moong gaining adoption,CLIMATE_BASED
+PU_URAD,Maharashtra,GOOD,Strong kharif urad cultivation belts,ECON_SURVEY_CROPS
+PU_URAD,Madhya Pradesh,MED,Suitable kharif pulse belts,CLIMATE_BASED
+PU_URAD,Uttar Pradesh,MED,Kharif urad in multiple districts,CLIMATE_BASED
+PU_URAD,Rajasthan,MED,Suitable kharif belts; rainfall dependent,CLIMATE_BASED
+VE_BRINJAL,Uttar Pradesh,MED,Common vegetable; widespread cultivation,CLIMATE_BASED
+VE_BRINJAL,West Bengal,MED,Major brinjal producing state,CLIMATE_BASED
+VE_BRINJAL,Maharashtra,MED,Commercial belts near cities,CLIMATE_BASED
+VE_BRINJAL,Bihar,MED,Widely cultivated vegetable,CLIMATE_BASED
+VE_BRINJAL,Karnataka,MED,Significant production in southern belts,CLIMATE_BASED
+VE_CABBAGE,Uttar Pradesh,MED,Rabi vegetable in cool-season belts,CLIMATE_BASED
+VE_CABBAGE,West Bengal,MED,Major producing state; winter crop,CLIMATE_BASED
+VE_CABBAGE,Bihar,MED,Suitable cool-season cultivation,CLIMATE_BASED
+VE_CABBAGE,Madhya Pradesh,MED,Suitable rabi belts near markets,CLIMATE_BASED
+VE_CAULIFLOWER,Uttar Pradesh,MED,Rabi vegetable; strong market linkages,CLIMATE_BASED
+VE_CAULIFLOWER,West Bengal,MED,Major cauliflower state; early varieties,CLIMATE_BASED
+VE_CAULIFLOWER,Bihar,MED,Suitable cool-season cultivation,CLIMATE_BASED
+VE_CAULIFLOWER,Haryana,MED,Commercial belts near Delhi market,CLIMATE_BASED
+VE_CARROT,Haryana,MED,Suitable cool-season root crop belts,CLIMATE_BASED
+VE_CARROT,Punjab,MED,Commercial carrot cultivation established,CLIMATE_BASED
+VE_CARROT,Uttar Pradesh,MED,Winter carrot in multiple districts,CLIMATE_BASED
+VE_CARROT,Karnataka,MED,Ooty/Nilgiri belts; year-round possible,CLIMATE_BASED
+VE_RADISH,Uttar Pradesh,MED,Common quick vegetable; winter season,CLIMATE_BASED
+VE_RADISH,West Bengal,MED,Widely grown short-duration crop,CLIMATE_BASED
+VE_RADISH,Punjab,MED,Cool-season suitability; commercial belts,CLIMATE_BASED
+VE_RADISH,Haryana,MED,Suitable belts near urban markets,CLIMATE_BASED
+VE_SPINACH,Uttar Pradesh,MED,Common leafy vegetable in rabi season,CLIMATE_BASED
+VE_SPINACH,Punjab,MED,Cool-season leafy green; established,CLIMATE_BASED
+VE_SPINACH,Haryana,MED,Suitable near urban markets,CLIMATE_BASED
+VE_SPINACH,Maharashtra,MED,Year-round in cooler belts; winter main,CLIMATE_BASED
+VE_CORIANDER_LEAF,Rajasthan,MED,Strong coriander belt; both leaf and seed,CLIMATE_BASED
+VE_CORIANDER_LEAF,Madhya Pradesh,MED,Suitable cool-season herb crop,CLIMATE_BASED
+VE_CORIANDER_LEAF,Gujarat,MED,Year-round near urban markets,CLIMATE_BASED
+VE_CORIANDER_LEAF,Uttar Pradesh,MED,Common herb crop; nearby market needed,CLIMATE_BASED
+VE_CUCUMBER_OPEN,Uttar Pradesh,MED,Summer/kharif cucumber; widespread,CLIMATE_BASED
+VE_CUCUMBER_OPEN,Bihar,MED,Common summer vegetable,CLIMATE_BASED
+VE_CUCUMBER_OPEN,Maharashtra,MED,Suitable warm belts; market access needed,CLIMATE_BASED
+VE_CUCUMBER_OPEN,Karnataka,MED,Year-round in suitable warm belts,CLIMATE_BASED
+VE_BITTER_GOURD,Uttar Pradesh,MED,Common summer vegetable; trellis recommended,CLIMATE_BASED
+VE_BITTER_GOURD,Bihar,MED,Popular summer/kharif crop,CLIMATE_BASED
+VE_BITTER_GOURD,West Bengal,MED,Strong market demand; suitable climate,CLIMATE_BASED
+VE_BITTER_GOURD,Maharashtra,MED,Commercial cultivation near cities,CLIMATE_BASED
+VE_BOTTLE_GOURD,Uttar Pradesh,MED,Common cucurbit; pandal/trailing,CLIMATE_BASED
+VE_BOTTLE_GOURD,Bihar,MED,Widely cultivated summer/kharif crop,CLIMATE_BASED
+VE_BOTTLE_GOURD,Rajasthan,MED,Suitable warm belts with irrigation,CLIMATE_BASED
+VE_BOTTLE_GOURD,Madhya Pradesh,MED,Suitable belts near markets,CLIMATE_BASED
+VE_PUMPKIN,Uttar Pradesh,MED,Hardy cucurbit; widespread cultivation,CLIMATE_BASED
+VE_PUMPKIN,West Bengal,MED,Major producing state; kharif crop,CLIMATE_BASED
+VE_PUMPKIN,Bihar,MED,Common vegetable; long shelf life,CLIMATE_BASED
+VE_PUMPKIN,Odisha,MED,Suitable warm humid belts,CLIMATE_BASED
+VE_WATERMELON,Rajasthan,MED,Summer watermelon belt; sandy soils suitable,CLIMATE_BASED
+VE_WATERMELON,Uttar Pradesh,MED,Summer crop in riverbed areas,CLIMATE_BASED
+VE_WATERMELON,Karnataka,MED,Suitable warm belts; commercial cultivation,CLIMATE_BASED
+VE_WATERMELON,Maharashtra,MED,Summer crop; transport to urban markets,CLIMATE_BASED
+VE_MUSKMELON,Rajasthan,MED,Summer muskmelon belt; arid suitable,CLIMATE_BASED
+VE_MUSKMELON,Uttar Pradesh,MED,Summer crop; riverbed cultivation common,CLIMATE_BASED
+VE_MUSKMELON,Punjab,MED,Summer crop; commercial belts near cities,CLIMATE_BASED
+VE_MUSKMELON,Haryana,MED,Suitable summer crop near NCR market,CLIMATE_BASED
+VE_FRENCH_BEAN,Himachal Pradesh,MED,Cool-season suitability; hill vegetable,CLIMATE_BASED
+VE_FRENCH_BEAN,Karnataka,MED,Year-round in cooler elevated belts,CLIMATE_BASED
+VE_FRENCH_BEAN,Uttar Pradesh,MED,Rabi crop in suitable belts,CLIMATE_BASED
+VE_GREEN_PEA,Uttar Pradesh,MED,Major pea producing state; rabi crop,CLIMATE_BASED
+VE_GREEN_PEA,Himachal Pradesh,MED,Hill pea; cool-season; quality premium,CLIMATE_BASED
+VE_GREEN_PEA,Madhya Pradesh,MED,Suitable rabi belts; commercial cultivation,CLIMATE_BASED
+VE_GREEN_PEA,Punjab,MED,Rabi pea; established cultivation,CLIMATE_BASED
+FR_AMLA,Uttar Pradesh,GOOD,Major amla belt; Pratapgarh district famous,NHB_AMLA
+FR_AMLA,Rajasthan,MED,Suitable dry belts; drought-tolerant perennial,CLIMATE_BASED
+FR_AMLA,Gujarat,MED,Suitable semi-arid belts,CLIMATE_BASED
+FR_AMLA,Madhya Pradesh,MED,Suitable belts with low water availability,CLIMATE_BASED
+FR_BER,Rajasthan,GOOD,Major ber belt; arid/semi-arid suitability,NHB_BER
+FR_BER,Gujarat,MED,Suitable dry belts; commercial varieties,CLIMATE_BASED
+FR_BER,Haryana,MED,Adopted in dry belts; improved varieties,CLIMATE_BASED
+FR_BER,Madhya Pradesh,MED,Suitable belts; hardy fruit tree,CLIMATE_BASED
+FR_LITCHI,Bihar,GOOD,India's major litchi belt; Muzaffarpur district,NHB_LITCHI
+FR_LITCHI,West Bengal,MED,Suitable humid subtropical belts,CLIMATE_BASED
+FR_LITCHI,Uttarakhand,MED,Terai belt suitable; emerging production,CLIMATE_BASED
+FR_LITCHI,Jharkhand,MED,Suitable belts adjacent to Bihar belt,CLIMATE_BASED
+FR_GRAPES,Maharashtra,GOOD,India's grape capital; Nashik/Sangli/Solapur belt,NHB_GRAPES
+FR_GRAPES,Karnataka,MED,Emerging grape belts; Bijapur/Bagalkot,CLIMATE_BASED
+FR_GRAPES,Tamil Nadu,MED,Suitable semi-arid belts; Theni/Madurai,CLIMATE_BASED
+FR_GRAPES,Andhra Pradesh,MED,Emerging grape cultivation pockets,CLIMATE_BASED
+FR_JAMUN,Uttar Pradesh,MED,Common perennial; roadside and orchard planting,CLIMATE_BASED
+FR_JAMUN,Gujarat,MED,Suitable warm belts; processing demand,CLIMATE_BASED
+FR_JAMUN,Maharashtra,MED,Suitable belts; niche fruit,CLIMATE_BASED
+FR_JAMUN,Rajasthan,MED,Suitable belts; hardy low-input tree,CLIMATE_BASED
+FR_COCONUT,Kerala,GOOD,India's coconut capital; coastal and inland,NHB_COCONUT
+FR_COCONUT,Karnataka,GOOD,Major producing state; coastal and Maidan belt,NHB_COCONUT
+FR_COCONUT,Tamil Nadu,GOOD,Major producing state; Coimbatore/Thanjavur belt,NHB_COCONUT
+FR_COCONUT,Andhra Pradesh,MED,Coastal belt suitability; East Godavari,CLIMATE_BASED
+FR_COCONUT,Goa,MED,Suitable coastal environment,CLIMATE_BASED
+FR_APPLE,Himachal Pradesh,GOOD,India's apple capital; Shimla/Kullu/Kinnaur belt,NHB_APPLE
+FR_APPLE,Jammu & Kashmir,GOOD,Major apple belt; Kashmir valley,NHB_APPLE
+FR_APPLE,Uttarakhand,MED,Suitable high-altitude belts; emerging,CLIMATE_BASED
+SP_FENUGREEK,Rajasthan,GOOD,Major fenugreek belt; rabi spice crop,CLIMATE_BASED
+SP_FENUGREEK,Madhya Pradesh,MED,Suitable cool-season spice belts,CLIMATE_BASED
+SP_FENUGREEK,Gujarat,MED,Suitable rabi spice belts,CLIMATE_BASED
+SP_FENUGREEK,Uttar Pradesh,MED,Suitable cool-season belts,CLIMATE_BASED
+SP_FENNEL,Gujarat,GOOD,India's fennel hub; Mehsana/Banaskantha,CLIMATE_BASED
+SP_FENNEL,Rajasthan,GOOD,Major saunf belt; Nagaur/Sirohi,CLIMATE_BASED
+SP_FENNEL,Uttar Pradesh,MED,Suitable cool-season belts,CLIMATE_BASED
+SP_AJWAIN,Rajasthan,GOOD,Major ajwain belt; Chittorgarh/Jhalawar,CLIMATE_BASED
+SP_AJWAIN,Gujarat,MED,Suitable dry belts; niche spice,CLIMATE_BASED
+SP_AJWAIN,Madhya Pradesh,MED,Suitable cool-season belts,CLIMATE_BASED
+CM_JUTE,West Bengal,GOOD,India's jute capital; Gangetic delta,ECON_SURVEY_CROPS
+CM_JUTE,Bihar,GOOD,Major jute producing state; Indo-Gangetic plains,ECON_SURVEY_CROPS
+CM_JUTE,Assam,MED,Suitable humid belts; traditional crop,CLIMATE_BASED
+CM_JUTE,Odisha,MED,Suitable humid belts; limited area,CLIMATE_BASED
+CM_TEA,Assam,GOOD,India's largest tea producing state; Brahmaputra valley,ECON_SURVEY_CROPS
+CM_TEA,West Bengal,GOOD,Darjeeling and Dooars tea belt; premium teas,ECON_SURVEY_CROPS
+CM_TEA,Kerala,MED,High-range tea estates; Munnar/Wayanad,CLIMATE_BASED
+CM_TEA,Tamil Nadu,MED,Nilgiri tea belt; suitable high-altitude,CLIMATE_BASED
+CM_COFFEE,Karnataka,GOOD,India's coffee capital; Coorg/Chikmagalur/Hassan,ECON_SURVEY_CROPS
+CM_COFFEE,Kerala,GOOD,Major producing state; Wayanad/Idukki,ECON_SURVEY_CROPS
+CM_COFFEE,Tamil Nadu,MED,Shevaroy and Nilgiri hills; shade-grown,CLIMATE_BASED
+FL_GERBERA,Maharashtra,MED,Protected gerbera near Pune/Mumbai market,CLIMATE_BASED
+FL_GERBERA,Karnataka,MED,Protected clusters near Bangalore market,CLIMATE_BASED
+FL_GERBERA,Tamil Nadu,MED,Cool highland belts; Hosur/Ooty corridor,CLIMATE_BASED
+FL_GERBERA,Haryana,MED,Protected cultivation near Delhi NCR market,CLIMATE_BASED
+MU_OYSTER,Maharashtra,MED,Indoor mushroom; urban market proximity matters,CLIMATE_BASED
+MU_OYSTER,Uttar Pradesh,MED,Indoor mushroom; climate independent; large market,CLIMATE_BASED
+MU_OYSTER,Kerala,MED,Indoor mushroom; suitable humidity; local demand,CLIMATE_BASED
+MU_OYSTER,Tamil Nadu,MED,Indoor mushroom; research support from TNAU,CLIMATE_BASED
+MU_OYSTER,Karnataka,MED,Indoor mushroom; Bangalore urban market,CLIMATE_BASED

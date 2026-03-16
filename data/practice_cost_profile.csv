@@ -1,0 +1,158 @@
+practice_code,component,cost_type,min_inr_per_acre,max_inr_per_acre,notes
+OPEN_FIELD,Land Preparation,CAPEX,2000,6000,Ploughing/harrowing/bed prep; varies by soil and machinery.
+OPEN_FIELD,Seeds & Sowing,CAPEX,2500,9000,Seed rate depends on crop (wheat/maize/pulses/oilseeds).
+OPEN_FIELD,Basic Irrigation Setup,CAPEX,0,15000,0 if rainfed canal access; else pipes/sprinkler/basic setup.
+OPEN_FIELD,Soil Testing & Amendments,CAPEX,500,3000,Soil test + lime/gypsum/organic matter if needed.
+OPEN_FIELD,Fertilizers,OPEX,3000,9000,Per season; depends on crop and soil fertility.
+OPEN_FIELD,Pesticides/Weedicides,OPEX,1500,6000,Per season; varies with pest pressure.
+OPEN_FIELD,Labour,OPEX,3000,9000,"""Per season; sowing, weeding, harvest."""
+OPEN_FIELD,Harvesting/Threshing,OPEX,2000,7000,Machine hire or labour; crop dependent.
+OPEN_FIELD,Transport/Marketing,OPEX,1000,5000,"""Mandi transport, grading, commissions (approx)."""
+
+OPEN_FIELD_VEG,Land Preparation & Beds,CAPEX,3000,9000,Ridges/raised beds; higher prep than cereals.
+OPEN_FIELD_VEG,Seedlings/Transplanting,CAPEX,4000,15000,Nursery seedlings + transplant labour.
+OPEN_FIELD_VEG,Irrigation Setup,CAPEX,5000,20000,Pump/pipes; drip optional but beneficial.
+OPEN_FIELD_VEG,Drip + Mulch (Optional Upgrade),CAPEX,8000,30000,Improves water efficiency + weed control (not mandatory).
+OPEN_FIELD_VEG,Fertilizers & Manure,OPEX,8000,22000,Per crop cycle; vegetables are input intensive.
+OPEN_FIELD_VEG,Plant Protection,OPEX,5000,20000,High variability; IPM reduces cost.
+OPEN_FIELD_VEG,Labour (Frequent Operations),OPEX,9000,30000,Picking/harvesting multiple rounds.
+OPEN_FIELD_VEG,Staking/Trellis (Crop-dependent),OPEX,2000,12000,Required for gourds/tomato in many cases.
+OPEN_FIELD_VEG,Harvest + Packaging,OPEX,3000,15000,"Crates, grading, packaging materials."
+OPEN_FIELD_VEG,Transport/Cold-chain Access,OPEX,2000,12000,Higher for perishables; depends on market distance.
+
+RAIN_FED,Land Preparation,CAPEX,1500,6000,Minimal tillage/one plough; moisture conservation important.
+RAIN_FED,Seeds & Sowing,CAPEX,1500,5000,Prefer drought-tolerant varieties.
+RAIN_FED,Moisture Conservation Measures,CAPEX,500,4000,"Residue mulch, contour bunding (if applicable)."
+RAIN_FED,Fertilizers (Minimal),OPEX,1500,5000,Often low input; may use FYM/limited fertilizers.
+RAIN_FED,Weed & Pest Control,OPEX,800,3500,Lower than irrigated; depends on season.
+RAIN_FED,Labour,OPEX,1200,4500,Mostly family labour + limited hired labour.
+RAIN_FED,Harvest/Threshing,OPEX,1500,6000,Crop dependent; machine hire possible.
+
+DRIP_INTENSIVE,Drip System + Filters,CAPEX,12000,35000,Mainline/submain/filters/emitters; per acre basis.
+DRIP_INTENSIVE,Fertigation Unit,CAPEX,4000,15000,Venturi or tank + basic dosing.
+DRIP_INTENSIVE,Water Storage (Optional),CAPEX,0,12000,Tank/lining if intermittent supply.
+DRIP_INTENSIVE,Land Prep & Beds,CAPEX,3000,9000,Depends on crop; more for vegetables.
+DRIP_INTENSIVE,Planting Material,CAPEX,3000,15000,Seeds/seedlings depending on crop.
+DRIP_INTENSIVE,Fertilizers/Nutrients,OPEX,7000,22000,Often higher efficiency; cost depends on crop.
+DRIP_INTENSIVE,Plant Protection,OPEX,3000,15000,Depends on crop; drip reduces some disease pressure.
+DRIP_INTENSIVE,Labour,OPEX,5000,18000,Operation/maintenance + harvesting.
+DRIP_INTENSIVE,Maintenance & Repairs,OPEX,800,4000,Flushing/filters/line repairs per season.
+
+NET_HOUSE,Structure (Shade Net + Frame),CAPEX,500000,1500000,Full upfront cost; shade net structure Rs 5-15 lakh/acre.
+NET_HOUSE,Drip Irrigation (Recommended),CAPEX,80000,200000,Full drip system for net house.
+NET_HOUSE,Bed Prep & Media (If used),CAPEX,50000,150000,Raised beds/media depends on crop.
+NET_HOUSE,Seeds/Seedlings,OPEX,5000,15000,Per cycle; quality planting material.
+NET_HOUSE,Fertilizers/Nutrients,OPEX,8000,20000,Per cycle; moderate-high depending on crop.
+NET_HOUSE,Plant Protection,OPEX,4000,15000,Lower than open-field for some pests; still required.
+NET_HOUSE,Labour,OPEX,7000,20000,Per cycle; training/harvest.
+NET_HOUSE,Packaging/Marketing,OPEX,2000,12000,Depends on perishability and market distance.
+
+POLYHOUSE,Structure (Frame + Poly Film),CAPEX,2000000,4500000,Full upfront cost; naturally ventilated polyhouse Rs 20-45 lakh/acre.
+POLYHOUSE,Drip + Fertigation System,CAPEX,150000,300000,Full drip + fertigation unit for polyhouse.
+POLYHOUSE,Insect Netting & Ventilation,CAPEX,50000,150000,Side nets + ridge vents + exhaust fans.
+POLYHOUSE,Growing Media/Bed Setup,CAPEX,80000,200000,Cocopeat beds + raised bed construction + substrate.
+POLYHOUSE,Nursery/Seedlings,OPEX,8000,20000,Per cycle; high quality hybrids.
+POLYHOUSE,Nutrients & Fertilizers,OPEX,12000,35000,Per cycle; fertigation driven.
+POLYHOUSE,Plant Protection & Sanitation,OPEX,6000,25000,"""Sticky traps, IPM, disinfectants."""
+POLYHOUSE,Labour (Skilled),OPEX,12000,40000,"""Training, pruning, trellising, harvest."""
+POLYHOUSE,Electricity/Utilities,OPEX,2000,12000,Fans/pumps/lights if used; varies by setup.
+POLYHOUSE,Repairs & Plastic Replacement Reserve,OPEX,2000,12000,Film/net replacement cycle provisioning.
+
+HYDROPONICS,Structure (Polyhouse/Shade + Benching),CAPEX,3000000,6000000,Full upfront cost; high-tech polyhouse + benching Rs 30-60 lakh/acre.
+HYDROPONICS,Channels/Racks (NFT/DWC),CAPEX,500000,1500000,Core hydro hardware per acre equivalent.
+HYDROPONICS,Nutrient Tanks + Pumps,CAPEX,200000,600000,Recirculation system with backup.
+HYDROPONICS,Filtration + Sterilization,CAPEX,100000,400000,Filters/UV; improves hygiene.
+HYDROPONICS,Sensors (pH/EC) & Monitoring,CAPEX,50000,200000,Manual meters to semi-automated monitoring.
+HYDROPONICS,Seedlings/Planting Material,OPEX,10000,25000,Per cycle; frequent replanting for leafy greens.
+HYDROPONICS,Nutrients,OPEX,18000,50000,Per cycle; solution management is critical.
+HYDROPONICS,Labour (Technical),OPEX,15000,50000,Monitoring + harvesting + sanitation.
+HYDROPONICS,Electricity,OPEX,6000,25000,Pumps + cooling/ventilation depending on climate.
+HYDROPONICS,Consumables & Sanitation,OPEX,3000,15000,"""Cleaning agents, filters, replacement parts."""
+
+ORCHARD,Saplings/Planting Material,CAPEX,15000,45000,Density dependent; high-density costs more.
+ORCHARD,Pit Digging & Planting,CAPEX,10000,25000,"""Pits, FYM, basal dose, labour."""
+ORCHARD,Drip Irrigation (Recommended),CAPEX,10000,25000,Tree drip; improves survival and yields.
+ORCHARD,Fencing (Optional),CAPEX,0,40000,Depends on stray animal pressure.
+ORCHARD,Intercultural Tools/Pruning Tools,CAPEX,1500,7000,Basic orchard tools.
+ORCHARD,Annual Fertilizers & Manure,OPEX,6000,18000,Yearly; increases with tree age.
+ORCHARD,Plant Protection (Pests/Diseases),OPEX,4000,15000,Yearly; depends on crop and climate.
+ORCHARD,Pruning/Training Labour,OPEX,3000,12000,Yearly; skill dependent.
+ORCHARD,Harvesting & Packaging,OPEX,4000,20000,Seasonal; includes crates and grading.
+
+ORCHARD_INTERCROP,Saplings/Planting Material,CAPEX,12000,40000,Primary orchard establishment cost.
+ORCHARD_INTERCROP,Pit Digging & Planting,CAPEX,9000,22000,Orchard establishment.
+ORCHARD_INTERCROP,Intercrop Seeds/Seedlings,CAPEX,3000,15000,Short duration crops for early cashflow.
+ORCHARD_INTERCROP,Drip Irrigation (Recommended),CAPEX,10000,25000,Supports both orchard and intercrop efficiency.
+ORCHARD_INTERCROP,Fencing (Optional),CAPEX,0,40000,Highly location dependent.
+ORCHARD_INTERCROP,Fertilizers & Manure,OPEX,9000,26000,Combined nutrient needs of orchard + intercrop.
+ORCHARD_INTERCROP,Plant Protection,OPEX,6000,22000,Higher due to multiple crops.
+ORCHARD_INTERCROP,Labour,OPEX,8000,28000,More operations due to intercrop cycles.
+ORCHARD_INTERCROP,Harvest/Marketing,OPEX,5000,22000,Multiple harvests + transport.
+
+AGROFORESTRY,Trees/Saplings,CAPEX,8000,25000,Timber/fruit trees depending on model.
+AGROFORESTRY,Soil & Water Conservation,CAPEX,2000,15000,"""Contour bunding, trenches, mulching."""
+AGROFORESTRY,Fencing (Optional),CAPEX,0,35000,Depends on grazing/animal pressure.
+AGROFORESTRY,Intercrop Seeds (Optional),CAPEX,0,8000,Only if intercrops included early.
+AGROFORESTRY,Maintenance Labour,OPEX,3000,12000,"""Weeding, mulching, pruning."""
+AGROFORESTRY,Plant Protection (Low),OPEX,1000,6000,Generally lower but depends on species.
+AGROFORESTRY,Harvest/Marketing (Long-term),OPEX,0,8000,Often later-stage costs; not annual initially.
+
+INTEGRATED,Basic Farm Infrastructure Setup,CAPEX,15000,60000,"""Compost pit, sheds, basic water lines; varies by components."""
+INTEGRATED,Composting/Vermicompost Unit,CAPEX,5000,25000,Organic recycling unit.
+INTEGRATED,Farm Pond/Water Harvesting,CAPEX,0,80000,Optional but common; cost depends on excavation/lining.
+INTEGRATED,Livestock/Poultry Initial Stock,CAPEX,8000,50000,Depends on type and scale.
+INTEGRATED,Feed Storage & Equipment,CAPEX,4000,25000,"""Feed bins, small tools, crates."""
+INTEGRATED,Seeds/Planting Material,OPEX,4000,20000,Multiple crops/rotations.
+INTEGRATED,Feed & Veterinary,OPEX,12000,60000,Major recurring cost if livestock included.
+INTEGRATED,Labour,OPEX,8000,30000,Higher labour due to multiple enterprises.
+INTEGRATED,Waste Management & Utilities,OPEX,2000,12000,"""Cleaning, disposal, minor repairs."""
+
+DAIRY_FODDER,Animal Shed & Flooring,CAPEX,20000,80000,Shed construction depends on materials and scale.
+DAIRY_FODDER,Milking & Storage Equipment,CAPEX,8000,40000,Milking machine optional; basic cans minimal.
+DAIRY_FODDER,Initial Livestock Purchase,CAPEX,30000,120000,Highly variable by breed/age; per acre-equivalent scaling.
+DAIRY_FODDER,Fodder Establishment,CAPEX,4000,15000,Fodder seed + land prep.
+DAIRY_FODDER,Feed & Supplements,OPEX,30000,120000,Major recurring; depends on herd size.
+DAIRY_FODDER,Veterinary & Breeding,OPEX,5000,25000,Health + AI services.
+DAIRY_FODDER,Labour,OPEX,15000,60000,Daily operations.
+DAIRY_FODDER,Utilities & Transport,OPEX,3000,15000,"""Water, electricity, milk delivery."""
+
+POULTRY_BACKYARD,Poultry Shed Setup,CAPEX,12000,60000,Shed + feeders + drinkers.
+POULTRY_BACKYARD,Initial Chicks/Birds,CAPEX,8000,40000,Depends on batch size and breed.
+POULTRY_BACKYARD,Biosecurity Setup,CAPEX,1500,8000,"""Disinfectant stations, nets, sanitation."""
+POULTRY_BACKYARD,Feed,OPEX,20000,90000,Major recurring cost; depends on batch size.
+POULTRY_BACKYARD,Vaccination & Medicines,OPEX,1500,10000,Recurring per batch.
+POULTRY_BACKYARD,Bedding/Consumables,OPEX,2000,12000,"""Litter, cleaning supplies."""
+POULTRY_BACKYARD,Labour,OPEX,6000,25000,Daily care and cleaning.
+POULTRY_BACKYARD,Transport/Marketing,OPEX,1500,12000,Live bird/egg marketing cost.
+
+FISH_POND,Pond Excavation/Lining,CAPEX,40000,200000,Major cost; depends on depth/lining and soil type.
+FISH_POND,Water Inlet/Outlet & Pump,CAPEX,8000,50000,Water control + pumping if needed.
+FISH_POND,Initial Fingerlings Stock,CAPEX,6000,25000,Stocking material cost.
+FISH_POND,Feed,OPEX,25000,120000,Major recurring cost; depends on density and species.
+FISH_POND,Lime/Water Treatment,OPEX,4000,25000,Maintains water quality; periodic.
+FISH_POND,Labour,OPEX,8000,35000,"""Feeding, monitoring, harvest."""
+FISH_POND,Harvesting Gear & Transport,OPEX,2000,15000,"""Nets, icing, market transport."""
+
+NURSERY,Shade Net Structure,CAPEX,25000,80000,Required for most nursery operations.
+NURSERY,Trays/Polybags/Media Setup,CAPEX,8000,35000,"""Trays, cocopeat/media, potting area."""
+NURSERY,Irrigation Setup,CAPEX,6000,25000,Misters/sprinklers/drip; depends on nursery type.
+NURSERY,Seed Stock & Mother Plants,OPEX,8000,40000,Recurring; varies by crop and scale.
+NURSERY,Plant Protection,OPEX,4000,18000,"""Damping-off control, pests; hygiene critical."""
+NURSERY,Labour,OPEX,12000,45000,"""Daily monitoring, grading, packing."""
+NURSERY,Packaging/Transport,OPEX,2000,15000,Delivery to farmers; fragile plants.
+
+MUSHROOM,Shed/Room Setup,CAPEX,10000,60000,Basic shed to semi-controlled room.
+MUSHROOM,Racks/Trays/Bags Setup,CAPEX,6000,30000,Racks or bagging setup.
+MUSHROOM,Substrate & Spawn (Initial),CAPEX,6000,18000,Straw/compost + spawn for first batch.
+MUSHROOM,Temperature/Humidity Control,CAPEX,0,40000,Optional upgrade; fans/foggers/cooling if needed.
+MUSHROOM,Spawn & Substrate (Recurring),OPEX,6000,22000,Per cycle inputs.
+MUSHROOM,Labour,OPEX,5000,18000,Per cycle; hygiene + harvesting.
+MUSHROOM,Packaging/Transport,OPEX,2000,12000,Perishable; requires quick movement.
+
+BEEKEEPING,Bee Boxes & Basic Tools,CAPEX,8000,35000,"""Boxes, frames, smoker, hive tools."""
+BEEKEEPING,Colony Purchase,CAPEX,6000,30000,Depends on colony strength and season.
+BEEKEEPING,Protective Gear,CAPEX,1500,8000,"""Suit, gloves, veil."""
+BEEKEEPING,Honey Extractor (Optional),CAPEX,0,25000,Manual/centrifugal depending on scale.
+BEEKEEPING,Feed Supplements,OPEX,1000,8000,During dearth periods; sugar syrup etc.
+BEEKEEPING,Maintenance & Medicines,OPEX,800,6000,"""Mite control, routine upkeep."""
+BEEKEEPING,Transport/Apiary Shifts,OPEX,0,12000,Migratory beekeeping costs; optional.

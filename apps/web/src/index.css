@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Base ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface-50 text-slate-800 antialiased;
+}
+
+/* ===== Grain texture overlay ===== */
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  z-index: 1;
+}
+
+/* ===== Pipeline connector line ===== */
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.animate-dash-flow {
+  animation: dash-flow 1s linear infinite;
+}
+
+/* ===== Landing page animations ===== */
+@keyframes hero-title-reveal {
+  0% { opacity: 0; transform: translateY(30px) scale(0.97); filter: blur(8px); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+@keyframes hero-fade-in {
+  0% { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
+
+@keyframes card-fade-up {
+  0% { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-hero-title { animation: hero-title-reveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both; }
+.animate-hero-tagline { animation: hero-fade-in 0.8s ease-out 0.9s both; }
+.animate-hero-cta { animation: hero-fade-in 0.8s ease-out 1.2s both; }
+.animate-scroll-indicator { animation: scroll-bounce 2s ease-in-out infinite; }
+.animate-card-visible { animation: card-fade-up 0.7s ease-out both; }
+
+/* ===== Hero heading effects ===== */
+
+/* Layered 3D title: shadow layer sits behind, gradient layer on top */
+.hero-title-3d {
+  position: relative;
+  display: inline-block;
+}
+
+/* Shadow layer — renders the soft depth */
+.hero-title-3d-shadow {
+  color: #CDC5B4;
+}
+
+/* Gradient layer — renders the refined ivory-to-sage fill on top */
+.hero-title-3d-gradient {
+  position: absolute;
+  inset: 0;
+  color: transparent;
+  background-image: linear-gradient(165deg, #F0EBE0 0%, #D8D0C0 18%, #B8C4AD 42%, #C5BEA8 68%, #EDE8DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 100% 220%;
+  animation: gradient-shift 8s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 50% 0%; }
+  50% { background-position: 50% 55%; }
+}
+
+/* Breathing ambient glow behind the heading */
+@keyframes hero-ambient-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(1.02); }
+}
+
+.hero-ambient-glow {
+  animation: hero-ambient-glow 4s ease-in-out infinite;
+}
+
+/* Stat card glass effect */
+.stat-glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== Section gradient bridges ===== */
+.section-bridge-dark-to-light {
+  height: 5rem;
+  background: linear-gradient(to bottom, #0D2B1A, #F5F2EC);
+}
+.section-bridge-light-to-dark {
+  height: 5rem;
+  background: linear-gradient(to bottom, #F5F2EC, #0D2B1A);
+}
+
+/* ===== Cloud drift (mobile fallback when parallax disabled) ===== */
+@keyframes cloud-drift-left {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-20px); }
+}
+@keyframes cloud-drift-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+}

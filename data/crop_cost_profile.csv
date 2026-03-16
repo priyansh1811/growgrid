@@ -1,0 +1,684 @@
+crop_id,component,cost_type,min_inr_per_acre,max_inr_per_acre,notes
+CE_BARLEY,fertilizer_and_nutrients,OPEX,2000,4000,NPK moderate dose; responds to nitrogen
+CE_BARLEY,harvesting_and_post_harvest,OPEX,2000,3500,Combine harvesting + threshing + cleaning + bagging
+CE_BARLEY,intercultural_operations,OPEX,2000,3500,Weeding + thinning; low maintenance cereal
+CE_BARLEY,irrigation_cost,OPEX,1500,3000,Low water requirement; 1-2 irrigations usually sufficient
+CE_BARLEY,labour,OPEX,3500,6000,Sowing + harvesting + threshing
+CE_BARLEY,land_preparation,CAPEX,3000,5000,Ploughing + leveling + seed bed preparation
+CE_BARLEY,marketing_and_transport,OPEX,1000,2000,Mandi fees + transport; bulk cereal low value
+CE_BARLEY,pesticide_and_protection,OPEX,800,1500,Stripe rust + aphid; relatively low input
+CE_BARLEY,seed_or_planting_material,CAPEX,1500,2500,Seed 35-40 kg/acre
+CE_MAIZE,fertilizer_and_nutrients,OPEX,3000,5500,NPK + zinc sulphate
+CE_MAIZE,harvesting_and_post_harvest,OPEX,2500,4000,Cob picking + dehusking + shelling + drying
+CE_MAIZE,intercultural_operations,OPEX,2500,4000,Earthing up + weeding + thinning
+CE_MAIZE,irrigation_cost,OPEX,3000,5000,Medium water need; critical at tasselling and grain filling
+CE_MAIZE,labour,OPEX,4000,7000,Sowing + earthing up + harvest
+CE_MAIZE,land_preparation,CAPEX,3500,5000,Ploughing + leveling + ridge/furrow making
+CE_MAIZE,marketing_and_transport,OPEX,1000,2000,Mandi fees + transport; bulk cereal
+CE_MAIZE,pesticide_and_protection,OPEX,1000,2500,Fall armyworm + stem borer management
+CE_MAIZE,seed_or_planting_material,CAPEX,2500,4000,Hybrid seed 8-10 kg/acre
+CE_RICE,fertilizer_and_nutrients,OPEX,3500,6000,NPK + zinc + FYM
+CE_RICE,harvesting_and_post_harvest,OPEX,2500,4000,Combine harvest or manual + threshing + drying + winnowing
+CE_RICE,intercultural_operations,OPEX,2500,4000,Weeding + gap filling + water management
+CE_RICE,irrigation_cost,OPEX,2000,4000,Puddling + standing water maintenance
+CE_RICE,labour,OPEX,6000,10000,Transplanting + weeding + harvesting; labour intensive
+CE_RICE,land_preparation,CAPEX,4000,5000,Puddling + leveling + bund making; wet preparation
+CE_RICE,marketing_and_transport,OPEX,1000,2000,Mandi fees + transport; bulk cereal
+CE_RICE,pesticide_and_protection,OPEX,1500,3000,BPH + blast + sheath blight management
+CE_RICE,seed_or_planting_material,CAPEX,1500,3000,20-25 kg/acre seed; nursery raising
+CE_SORGHUM_FODDER,fertilizer_and_nutrients,OPEX,1500,2500,NPK + FYM; nitrogen after each cut
+CE_SORGHUM_FODDER,harvesting_and_post_harvest,OPEX,2000,3500,Multiple cuttings + bundling + transport to livestock
+CE_SORGHUM_FODDER,intercultural_operations,OPEX,2000,3500,Weeding + thinning between cuts
+CE_SORGHUM_FODDER,irrigation_cost,OPEX,1500,3000,Low water requirement; rainfed with supplemental irrigation
+CE_SORGHUM_FODDER,labour,OPEX,2500,4500,Sowing + cutting + bundling; 3-4 cuts
+CE_SORGHUM_FODDER,land_preparation,CAPEX,3000,4500,Ploughing + leveling + seed bed preparation
+CE_SORGHUM_FODDER,marketing_and_transport,OPEX,1000,2000,Local transport; mostly on-farm use or local sale
+CE_SORGHUM_FODDER,pesticide_and_protection,OPEX,500,1000,Shoot fly + stem borer; minimal chemical input
+CE_SORGHUM_FODDER,seed_or_planting_material,CAPEX,600,1200,Seed 8-10 kg/acre; multi-cut varieties
+CE_WHEAT,fertilizer_and_nutrients,OPEX,3000,5000,NPK + micronutrients
+CE_WHEAT,harvesting_and_post_harvest,OPEX,2000,4000,Combine harvesting + threshing + cleaning + storage
+CE_WHEAT,intercultural_operations,OPEX,2000,4000,Weeding + hoeing; one or two rounds
+CE_WHEAT,irrigation_cost,OPEX,3000,5000,Medium water need; 4-6 irrigations at critical stages
+CE_WHEAT,labour,OPEX,4000,7000,Sowing to harvest
+CE_WHEAT,land_preparation,CAPEX,3500,5000,Ploughing + planking + leveling; fine tilth needed
+CE_WHEAT,marketing_and_transport,OPEX,1000,2000,Mandi fees + transport; bulk cereal
+CE_WHEAT,pesticide_and_protection,OPEX,1000,2500,Weed + pest management
+CE_WHEAT,seed_or_planting_material,CAPEX,2000,3000,40-50 kg/acre seed
+CM_COFFEE,fertilizer_and_nutrients,OPEX,5000,9000,NPK + FYM + lime + micronutrients
+CM_COFFEE,harvesting_and_post_harvest,OPEX,6000,10000,Selective picking + pulping + fermentation + drying + grading
+CM_COFFEE,intercultural_operations,OPEX,4000,6000,Weeding + shade regulation + mulching
+CM_COFFEE,irrigation_cost,OPEX,2000,4000,Drip/sprinkler during dry season; shade reduces need
+CM_COFFEE,labour,OPEX,10000,20000,Shade management + pruning + harvesting + processing
+CM_COFFEE,land_preparation,CAPEX,10000,15000,Pit digging + shade tree planting + layout for orchard
+CM_COFFEE,marketing_and_transport,OPEX,3000,5000,Processing + auction/direct sale + transport
+CM_COFFEE,pesticide_and_protection,OPEX,3000,6000,White stem borer + berry borer + rust management
+CM_COFFEE,seed_or_planting_material,CAPEX,20000,40000,Grafted seedlings 260/acre; shade tree planting included
+CM_COTTON,fertilizer_and_nutrients,OPEX,3500,6000,NPK + micronutrients + foliar sprays
+CM_COTTON,harvesting_and_post_harvest,OPEX,4000,8000,Multiple manual pickings + ginning + baling
+CM_COTTON,intercultural_operations,OPEX,3000,5000,Weeding + earthing up + thinning; long duration crop
+CM_COTTON,irrigation_cost,OPEX,3000,5000,Medium water need; critical at flowering and boll formation
+CM_COTTON,labour,OPEX,6000,10000,Sowing + thinning + multiple pickings
+CM_COTTON,land_preparation,CAPEX,3500,5000,Ploughing + leveling + ridge making for cotton
+CM_COTTON,marketing_and_transport,OPEX,2000,4000,Mandi transport + APMC fees + commission
+CM_COTTON,pesticide_and_protection,OPEX,3000,6000,Bollworm + sucking pests + pink bollworm management
+CM_COTTON,seed_or_planting_material,CAPEX,2500,4000,Bt cotton hybrid seed packets; 1-1.5 packets/acre
+CM_JUTE,fertilizer_and_nutrients,OPEX,2000,3500,NPK + FYM; nitrogen responsive for fibre
+CM_JUTE,harvesting_and_post_harvest,OPEX,3000,5000,Harvesting + retting + stripping + drying + baling
+CM_JUTE,intercultural_operations,OPEX,2500,4000,Weeding + thinning; needs clean field
+CM_JUTE,irrigation_cost,OPEX,3000,5000,Medium water need; rainfed but supplemental irrigation helps
+CM_JUTE,labour,OPEX,5000,9000,Sowing + weeding + harvesting + retting + stripping
+CM_JUTE,land_preparation,CAPEX,3500,5000,Ploughing + leveling + fine seed bed for small seeds
+CM_JUTE,marketing_and_transport,OPEX,2000,4000,Bale transport + mill/market fees
+CM_JUTE,pesticide_and_protection,OPEX,1000,2000,Stem rot + semilooper; moderate pressure
+CM_JUTE,seed_or_planting_material,CAPEX,800,1500,Seed 3-4 kg/acre; broadcast/line sowing
+CM_POTATO_SEED,fertilizer_and_nutrients,OPEX,4000,7000,NPK + FYM + micronutrients; heavy feeder
+CM_POTATO_SEED,harvesting_and_post_harvest,OPEX,4000,7000,Careful digging + grading + cold storage + certification
+CM_POTATO_SEED,intercultural_operations,OPEX,3000,5000,Earthing up + weeding + roguing for seed purity
+CM_POTATO_SEED,irrigation_cost,OPEX,2000,4000,4-6 irrigations; critical for tuber development
+CM_POTATO_SEED,labour,OPEX,6000,10000,Planting + roguing + earthing up + harvesting
+CM_POTATO_SEED,land_preparation,CAPEX,4000,6000,Deep ploughing + leveling + ridge/furrow making
+CM_POTATO_SEED,marketing_and_transport,OPEX,3000,5000,Cold storage + certification fees + transport to buyers
+CM_POTATO_SEED,pesticide_and_protection,OPEX,2500,4500,Late blight + aphid vector + virus management; strict roguing
+CM_POTATO_SEED,seed_or_planting_material,CAPEX,12000,20000,Certified seed tubers 6-8 quintal/acre; quality premium
+CM_SUGARCANE,fertilizer_and_nutrients,OPEX,5000,8000,NPK heavy + FYM + press mud
+CM_SUGARCANE,harvesting_and_post_harvest,OPEX,4000,8000,Manual/machine harvesting + detrashing + transport to mill
+CM_SUGARCANE,intercultural_operations,OPEX,3000,5000,Earthing up + gap filling + tying; long duration
+CM_SUGARCANE,irrigation_cost,OPEX,4000,7000,12-15 irrigations; high water crop
+CM_SUGARCANE,labour,OPEX,8000,15000,Planting + earthing up + detrashing + harvesting
+CM_SUGARCANE,land_preparation,CAPEX,4000,6000,Deep ploughing + leveling + furrow making for setts
+CM_SUGARCANE,marketing_and_transport,OPEX,2000,4000,Transport to sugar mill + weighment charges
+CM_SUGARCANE,pesticide_and_protection,OPEX,2000,4000,Early shoot borer + top borer + red rot management
+CM_SUGARCANE,seed_or_planting_material,CAPEX,5000,9000,Setts 25-30 quintal/acre; single bud technology reduces cost
+CM_TEA,fertilizer_and_nutrients,OPEX,6000,10000,NPK + zinc + sulphur; heavy nitrogen feeder
+CM_TEA,harvesting_and_post_harvest,OPEX,6000,10000,Leaf processing + withering + rolling + drying + grading
+CM_TEA,intercultural_operations,OPEX,4000,6000,Weeding + mulching + shade regulation + infilling
+CM_TEA,irrigation_cost,OPEX,3000,5000,Sprinkler/drip in dry months; mulching helps
+CM_TEA,labour,OPEX,15000,30000,Plucking + pruning + shade management; very labour intensive
+CM_TEA,land_preparation,CAPEX,10000,15000,Pit digging + terracing + shade tree planting; hill terrain
+CM_TEA,marketing_and_transport,OPEX,3000,5000,Auction house fees + packaging + transport
+CM_TEA,pesticide_and_protection,OPEX,4000,8000,Tea mosquito bug + red spider mite + blister blight
+CM_TEA,seed_or_planting_material,CAPEX,30000,60000,Clonal cuttings 2200/acre; nursery + field planting
+FL_GERBERA,fertilizer_and_nutrients,OPEX,5000,9000,Fertigation; NPK + micronutrients; pH sensitive
+FL_GERBERA,harvesting_and_post_harvest,OPEX,5000,10000,Daily harvesting + grading + sleeving + cold chain packing
+FL_GERBERA,infrastructure,CAPEX,2200000,4800000,Full upfront polyhouse + raised beds construction cost per acre
+FL_GERBERA,intercultural_operations,OPEX,3000,5000,Disbudding + dead leaf removal + bed maintenance
+FL_GERBERA,irrigation_cost,OPEX,5000,8000,High water need; drip fertigation in polyhouse; climate control
+FL_GERBERA,labour,OPEX,8000,15000,Disbudding + harvesting + grading + packing
+FL_GERBERA,land_preparation,CAPEX,6000,10000,Raised bed preparation + media filling in polyhouse
+FL_GERBERA,marketing_and_transport,OPEX,4000,6000,Cold chain + flower auction/market + commission agent
+FL_GERBERA,pesticide_and_protection,OPEX,3000,6000,Whitefly + leaf miner + powdery mildew + crown rot
+FL_GERBERA,seed_or_planting_material,CAPEX,10000,18000,Tissue culture plantlets imported; 17000+ plants/acre
+FL_MARIGOLD,fertilizer_and_nutrients,OPEX,2500,4000,NPK + FYM; moderate feeder
+FL_MARIGOLD,harvesting_and_post_harvest,OPEX,5000,8000,Daily flower picking + sorting + garland making + packing
+FL_MARIGOLD,intercultural_operations,OPEX,3000,5000,Weeding + pinching + earthing up for bushiness
+FL_MARIGOLD,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation for continuous flowering
+FL_MARIGOLD,labour,OPEX,5000,8000,Transplanting + multiple pickings + sorting
+FL_MARIGOLD,land_preparation,CAPEX,5000,7000,Ploughing + bed making + FYM incorporation
+FL_MARIGOLD,marketing_and_transport,OPEX,3000,6000,Perishable; daily market transport + commission
+FL_MARIGOLD,pesticide_and_protection,OPEX,1500,3000,Red spider mite + leaf spot + damping off
+FL_MARIGOLD,seed_or_planting_material,CAPEX,1500,3000,Seed + nursery raising; 13000 plants/acre
+FL_ROSE,fertilizer_and_nutrients,OPEX,5000,8000,Fertigation; NPK + micronutrients + organic
+FL_ROSE,harvesting_and_post_harvest,OPEX,5000,10000,Daily cutting + grading + bunching + cold chain packing
+FL_ROSE,infrastructure,CAPEX,2200000,4800000,Full upfront polyhouse construction cost per acre
+FL_ROSE,intercultural_operations,OPEX,3000,5000,Desuckering + weeding + mulching + bed maintenance
+FL_ROSE,irrigation_cost,OPEX,5000,8000,High water need; drip fertigation in polyhouse; climate control
+FL_ROSE,labour,OPEX,8000,15000,Pruning + harvesting + grading + packing; daily operation
+FL_ROSE,land_preparation,CAPEX,6000,10000,Raised bed preparation + media filling in polyhouse
+FL_ROSE,marketing_and_transport,OPEX,4000,6000,Cold chain + flower market/auction + commission agent
+FL_ROSE,pesticide_and_protection,OPEX,3000,6000,Powdery mildew + thrips + red spider mite + black spot
+FL_ROSE,seed_or_planting_material,CAPEX,8000,15000,Grafted plants on rootstock; 10000+ plants/acre in polyhouse
+FR_AMLA,fertilizer_and_nutrients,OPEX,2000,4000,FYM + NPK; low input crop
+FR_AMLA,harvesting_and_post_harvest,OPEX,5000,8000,Shaking + collection + grading + value addition (murabba/candy)
+FR_AMLA,intercultural_operations,OPEX,3000,5000,Basin cleaning + weeding + mulching
+FR_AMLA,irrigation_cost,OPEX,3000,5000,Medium water need; basin or drip irrigation
+FR_AMLA,labour,OPEX,3000,6000,Minimal pruning + seasonal harvesting
+FR_AMLA,land_preparation,CAPEX,8000,12000,Pit digging + layout for wide spacing orchard
+FR_AMLA,marketing_and_transport,OPEX,3000,6000,Transport + processing units + commission
+FR_AMLA,pesticide_and_protection,OPEX,1000,2000,Rust + fruit borer; low pest pressure
+FR_AMLA,seed_or_planting_material,CAPEX,5000,10000,Grafted saplings 25/acre; wide spacing
+FR_APPLE,fertilizer_and_nutrients,OPEX,5000,9000,NPK + FYM + calcium + boron for fruit quality
+FR_APPLE,harvesting_and_post_harvest,OPEX,6000,10000,Manual picking + grading + packing + cold storage
+FR_APPLE,intercultural_operations,OPEX,4000,6000,Mulching + basin management + thinning
+FR_APPLE,irrigation_cost,OPEX,2000,4000,Drip irrigation in dry spells; hill micro-irrigation
+FR_APPLE,labour,OPEX,8000,15000,Pruning + thinning + harvesting + grading; skilled labour
+FR_APPLE,land_preparation,CAPEX,10000,15000,Pit digging + terracing + layout for hill orchard
+FR_APPLE,marketing_and_transport,OPEX,5000,8000,Cold chain + long-distance transport + commission agent
+FR_APPLE,pesticide_and_protection,OPEX,4000,8000,Scab + codling moth + woolly aphid; intensive spray schedule
+FR_APPLE,seed_or_planting_material,CAPEX,20000,40000,Grafted on rootstock 200/acre high-density; hill region nurseries
+FR_BANANA,fertilizer_and_nutrients,OPEX,6000,10000,Heavy feeder; NPK + FYM + micronutrients
+FR_BANANA,harvesting_and_post_harvest,OPEX,5000,8000,Bunch harvesting + dehanding + ripening + grading + packing
+FR_BANANA,intercultural_operations,OPEX,4000,6000,Desuckering + propping + earthing up + mulching
+FR_BANANA,irrigation_cost,OPEX,3000,6000,Drip irrigation; high water requirement
+FR_BANANA,labour,OPEX,8000,15000,Desuckering + propping + bunch management + harvest
+FR_BANANA,land_preparation,CAPEX,8000,12000,Pit digging + layout + FYM filling for plantation
+FR_BANANA,marketing_and_transport,OPEX,4000,8000,Perishable; ripening chamber + market transport + commission
+FR_BANANA,pesticide_and_protection,OPEX,2000,4000,Sigatoka + Panama wilt + nematode management
+FR_BANANA,seed_or_planting_material,CAPEX,8000,14000,Tissue culture plants 1200-1600/acre
+FR_BER,fertilizer_and_nutrients,OPEX,2000,3500,FYM + NPK; drought-tolerant low input
+FR_BER,harvesting_and_post_harvest,OPEX,5000,8000,Picking + grading + packing; perishable fruit
+FR_BER,intercultural_operations,OPEX,3000,5000,Basin cleaning + weeding + mulching
+FR_BER,irrigation_cost,OPEX,3000,5000,Medium water need; basin or drip irrigation
+FR_BER,labour,OPEX,3000,5000,Pruning + harvesting; low maintenance
+FR_BER,land_preparation,CAPEX,8000,12000,Pit digging + layout for orchard establishment
+FR_BER,marketing_and_transport,OPEX,3000,6000,Perishable; quick market transport + commission
+FR_BER,pesticide_and_protection,OPEX,800,1500,Fruit fly + powder mildew; minimal input
+FR_BER,seed_or_planting_material,CAPEX,4000,8000,Budded plants 45/acre
+FR_COCONUT,fertilizer_and_nutrients,OPEX,4000,7000,NPK + organic manure + micronutrients
+FR_COCONUT,harvesting_and_post_harvest,OPEX,5000,8000,Climbing harvest + dehusking + copra making + grading
+FR_COCONUT,intercultural_operations,OPEX,3000,5000,Basin management + weeding + husk burial
+FR_COCONUT,irrigation_cost,OPEX,3000,5000,Basin irrigation or drip; coastal areas may need less
+FR_COCONUT,labour,OPEX,5000,9000,Climber for harvest + basin management + inter-cultivation
+FR_COCONUT,land_preparation,CAPEX,8000,12000,Pit digging + layout for triangular spacing orchard
+FR_COCONUT,marketing_and_transport,OPEX,3000,6000,Copra/fresh nut transport + oil mill/market
+FR_COCONUT,pesticide_and_protection,OPEX,2000,4000,Rhinoceros beetle + red palm weevil + bud rot management
+FR_COCONUT,seed_or_planting_material,CAPEX,8000,15000,Quality seedlings 29/acre; 7.5m triangular spacing
+FR_DRAGONFRUIT,fertilizer_and_nutrients,OPEX,4000,7000,NPK + FYM + micronutrients; moderate feeder
+FR_DRAGONFRUIT,harvesting_and_post_harvest,OPEX,5000,9000,Picking + grading + packing; premium fruit handling
+FR_DRAGONFRUIT,intercultural_operations,OPEX,3500,6000,Training on pillars + pruning + weeding + mulching
+FR_DRAGONFRUIT,irrigation_cost,OPEX,3000,5000,Medium water need; drip irrigation on pillars
+FR_DRAGONFRUIT,labour,OPEX,6000,12000,Training + pruning + pollination + harvesting
+FR_DRAGONFRUIT,land_preparation,CAPEX,10000,15000,Concrete pillar installation + pit digging + layout
+FR_DRAGONFRUIT,marketing_and_transport,OPEX,4000,8000,Premium fruit; careful packing + transport + commission
+FR_DRAGONFRUIT,pesticide_and_protection,OPEX,1500,3000,Stem rot + anthracnose; relatively low pest pressure
+FR_DRAGONFRUIT,seed_or_planting_material,CAPEX,25000,50000,Cuttings + concrete pillars 180/acre; high initial cost
+FR_GRAPES,fertilizer_and_nutrients,OPEX,5000,9000,NPK + micronutrients + growth regulators
+FR_GRAPES,harvesting_and_post_harvest,OPEX,6000,10000,Cluster cutting + grading + packing + pre-cooling
+FR_GRAPES,intercultural_operations,OPEX,4000,6000,Trellis maintenance + vine training + mulching
+FR_GRAPES,irrigation_cost,OPEX,3000,5000,Drip irrigation essential; water scheduling critical
+FR_GRAPES,labour,OPEX,8000,15000,Pruning + training + thinning + harvesting; skilled labour
+FR_GRAPES,land_preparation,CAPEX,10000,15000,Pit digging + trellis/pandal foundation + layout
+FR_GRAPES,marketing_and_transport,OPEX,5000,8000,Cold chain + long-distance transport + export packing
+FR_GRAPES,pesticide_and_protection,OPEX,4000,8000,Downy mildew + powdery mildew + anthracnose; intensive spraying
+FR_GRAPES,seed_or_planting_material,CAPEX,30000,60000,Rootstock grafts + trellis/pandal system 300/acre
+FR_GUAVA,fertilizer_and_nutrients,OPEX,3000,5500,FYM + balanced NPK + zinc
+FR_GUAVA,harvesting_and_post_harvest,OPEX,5000,8000,Multiple picking rounds + grading + packing
+FR_GUAVA,intercultural_operations,OPEX,3000,5000,Basin management + weeding + mulching
+FR_GUAVA,irrigation_cost,OPEX,3000,5000,Medium water need; basin or drip irrigation
+FR_GUAVA,labour,OPEX,5000,10000,Pruning + multiple harvests + basin management
+FR_GUAVA,land_preparation,CAPEX,8000,12000,Pit digging + layout for orchard spacing
+FR_GUAVA,marketing_and_transport,OPEX,3000,6000,Perishable; quick market transport + commission
+FR_GUAVA,pesticide_and_protection,OPEX,1500,3000,Fruit fly traps + wilt management
+FR_GUAVA,seed_or_planting_material,CAPEX,6000,12000,Grafted plants 150-200/acre; meadow orcharding option
+FR_JAMUN,fertilizer_and_nutrients,OPEX,2000,4000,FYM + NPK; low input perennial
+FR_JAMUN,harvesting_and_post_harvest,OPEX,5000,8000,Manual picking + grading + quick transport; highly perishable
+FR_JAMUN,intercultural_operations,OPEX,3000,5000,Basin cleaning + weeding + mulching
+FR_JAMUN,irrigation_cost,OPEX,3000,5000,Medium water need; basin or drip irrigation
+FR_JAMUN,labour,OPEX,3000,5000,Minimal maintenance + seasonal harvest
+FR_JAMUN,land_preparation,CAPEX,8000,12000,Pit digging + layout for wide spacing orchard
+FR_JAMUN,marketing_and_transport,OPEX,3000,6000,Highly perishable; quick local market + commission
+FR_JAMUN,pesticide_and_protection,OPEX,800,1500,Leaf webber + fruit borer; low pressure
+FR_JAMUN,seed_or_planting_material,CAPEX,4000,8000,Grafted plants 25/acre; wide spacing
+FR_LEMON,fertilizer_and_nutrients,OPEX,3500,6000,NPK + FYM + micronutrients per year
+FR_LEMON,harvesting_and_post_harvest,OPEX,5000,8000,Multiple picking rounds + grading + waxing + packing
+FR_LEMON,intercultural_operations,OPEX,3000,5000,Basin management + weeding + mulching
+FR_LEMON,irrigation_cost,OPEX,3000,5000,Medium water need; drip or basin irrigation
+FR_LEMON,labour,OPEX,5000,9000,Pruning + harvesting + orchard maintenance
+FR_LEMON,land_preparation,CAPEX,8000,12000,Pit digging + layout for citrus orchard
+FR_LEMON,marketing_and_transport,OPEX,3000,6000,Market transport + commission; seasonal price variation
+FR_LEMON,pesticide_and_protection,OPEX,2000,4000,Citrus psylla + leaf miner + canker management
+FR_LEMON,seed_or_planting_material,CAPEX,8000,15000,Grafted saplings 40-50/acre; citrus orchard establishment
+FR_LITCHI,fertilizer_and_nutrients,OPEX,5000,8000,NPK + FYM + micronutrients; needs zinc and boron
+FR_LITCHI,harvesting_and_post_harvest,OPEX,6000,10000,Cluster cutting + grading + packing + cold chain
+FR_LITCHI,intercultural_operations,OPEX,3500,6000,Basin management + mulching + weeding
+FR_LITCHI,irrigation_cost,OPEX,3000,5000,Critical irrigation during fruit development
+FR_LITCHI,labour,OPEX,6000,12000,Pruning + harvesting + post-harvest handling
+FR_LITCHI,land_preparation,CAPEX,10000,15000,Pit digging + layout for orchard; large canopy spacing
+FR_LITCHI,marketing_and_transport,OPEX,5000,8000,Highly perishable; cold chain + express transport
+FR_LITCHI,pesticide_and_protection,OPEX,3000,6000,Litchi mite + fruit borer + bark eating caterpillar
+FR_LITCHI,seed_or_planting_material,CAPEX,12000,22000,Air-layered plants 25/acre; premium planting material
+FR_MANGO,fertilizer_and_nutrients,OPEX,4000,7000,FYM + NPK + micronutrients per year bearing tree
+FR_MANGO,harvesting_and_post_harvest,OPEX,5000,10000,Manual picking + grading + ripening + packing
+FR_MANGO,intercultural_operations,OPEX,3000,5000,Basin management + weeding + mulching + whitewashing
+FR_MANGO,irrigation_cost,OPEX,3000,5000,Medium water need; drip or basin irrigation
+FR_MANGO,labour,OPEX,6000,12000,Pruning + harvesting + orchard maintenance
+FR_MANGO,land_preparation,CAPEX,8000,12000,Pit digging + layout for orchard spacing
+FR_MANGO,marketing_and_transport,OPEX,4000,8000,Perishable; ripening + market transport + commission
+FR_MANGO,pesticide_and_protection,OPEX,2000,4000,Mango hopper + fruit fly + anthracnose management
+FR_MANGO,seed_or_planting_material,CAPEX,8000,15000,Grafted saplings 40-70/acre (high-density); one-time orchard establishment
+FR_PAPAYA,fertilizer_and_nutrients,OPEX,4000,7000,NPK + FYM + micronutrients; heavy feeder
+FR_PAPAYA,harvesting_and_post_harvest,OPEX,5000,8000,Regular picking + grading + packing; continuous bearing
+FR_PAPAYA,intercultural_operations,OPEX,3500,6000,Weeding + mulching + propping + thinning male plants
+FR_PAPAYA,irrigation_cost,OPEX,5000,8000,High water need; regular drip irrigation essential
+FR_PAPAYA,labour,OPEX,5000,9000,Planting + harvesting + plant care
+FR_PAPAYA,land_preparation,CAPEX,8000,12000,Pit digging + bed raising + layout for plantation
+FR_PAPAYA,marketing_and_transport,OPEX,4000,8000,Highly perishable; careful packing + market transport
+FR_PAPAYA,pesticide_and_protection,OPEX,2000,4000,Ring spot virus + mealybug + mite management
+FR_PAPAYA,seed_or_planting_material,CAPEX,3000,6000,Hybrid seeds or seedlings 700-1000 plants/acre
+FR_POMEGRANATE,fertilizer_and_nutrients,OPEX,4000,7000,NPK + micronutrients + drip fertigation
+FR_POMEGRANATE,harvesting_and_post_harvest,OPEX,5000,10000,Manual picking + grading + aril extraction/packing
+FR_POMEGRANATE,intercultural_operations,OPEX,3500,6000,Bahar treatment + mulching + weeding + training
+FR_POMEGRANATE,irrigation_cost,OPEX,3000,5000,Drip irrigation operation and maintenance
+FR_POMEGRANATE,labour,OPEX,6000,10000,Pruning + bahar treatment + harvesting
+FR_POMEGRANATE,land_preparation,CAPEX,10000,15000,Pit digging + high-density layout + bund making
+FR_POMEGRANATE,marketing_and_transport,OPEX,4000,8000,Grading + export packing + cold chain + commission
+FR_POMEGRANATE,pesticide_and_protection,OPEX,3000,6000,Bacterial blight + fruit borer + oily spot management
+FR_POMEGRANATE,seed_or_planting_material,CAPEX,12000,20000,Air-layered plants 280-400/acre; high-density planting
+MI_BAJRA,fertilizer_and_nutrients,OPEX,1500,3000,Low fertilizer; NPK basal + top dressing
+MI_BAJRA,harvesting_and_post_harvest,OPEX,2000,3500,Earhead cutting + threshing + drying + winnowing
+MI_BAJRA,intercultural_operations,OPEX,2000,3500,Thinning + weeding; drought tolerant low maintenance
+MI_BAJRA,irrigation_cost,OPEX,1500,2500,Low water need; mostly rainfed with protective irrigation
+MI_BAJRA,labour,OPEX,3000,5000,Sowing + thinning + harvest
+MI_BAJRA,land_preparation,CAPEX,3000,4500,Ploughing + leveling; light soil preparation
+MI_BAJRA,marketing_and_transport,OPEX,1000,2000,Mandi fees + transport; bulk millet
+MI_BAJRA,pesticide_and_protection,OPEX,500,1500,Downy mildew + shoot fly management
+MI_BAJRA,seed_or_planting_material,CAPEX,800,1500,Hybrid seed 2-3 kg/acre
+MI_JOWAR,fertilizer_and_nutrients,OPEX,1500,3000,NPK moderate dose
+MI_JOWAR,harvesting_and_post_harvest,OPEX,2000,3500,Earhead cutting + threshing + drying + winnowing
+MI_JOWAR,intercultural_operations,OPEX,2000,3500,Thinning + weeding; low maintenance
+MI_JOWAR,irrigation_cost,OPEX,1500,2500,Low water need; mostly rainfed
+MI_JOWAR,labour,OPEX,3000,5000,Sowing + harvesting + threshing
+MI_JOWAR,land_preparation,CAPEX,3000,4500,Ploughing + leveling; light preparation
+MI_JOWAR,marketing_and_transport,OPEX,1000,2000,Mandi fees + transport; bulk millet
+MI_JOWAR,pesticide_and_protection,OPEX,500,1500,Shoot fly + stem borer management
+MI_JOWAR,seed_or_planting_material,CAPEX,800,1500,Hybrid/improved seed 3-4 kg/acre
+MI_RAGI,fertilizer_and_nutrients,OPEX,1500,2500,NPK moderate; responds to nitrogen
+MI_RAGI,harvesting_and_post_harvest,OPEX,2000,3500,Earhead cutting + threshing + cleaning + drying
+MI_RAGI,intercultural_operations,OPEX,2000,3500,Weeding + gap filling; transplanted crop needs early care
+MI_RAGI,irrigation_cost,OPEX,1500,3000,Low water need; rainfed with supplemental irrigation
+MI_RAGI,labour,OPEX,3500,6000,Transplanting + weeding + harvesting
+MI_RAGI,land_preparation,CAPEX,3000,4500,Ploughing + leveling + nursery bed preparation
+MI_RAGI,marketing_and_transport,OPEX,1000,2000,Mandi fees + transport; bulk millet
+MI_RAGI,pesticide_and_protection,OPEX,500,1200,Blast + aphid management
+MI_RAGI,seed_or_planting_material,CAPEX,600,1200,Seed 2-4 kg/acre; transplanting or direct sowing
+MU_OYSTER,fertilizer_and_nutrients,OPEX,0,0,No fertilizer needed; substrate provides nutrients
+MU_OYSTER,harvesting_and_post_harvest,OPEX,4000,8000,Multiple flush harvesting + trimming + grading + packing
+MU_OYSTER,infrastructure,CAPEX,15000,30000,Shade house + racks + humidification system
+MU_OYSTER,intercultural_operations,OPEX,3000,5000,Bag maintenance + humidity control + competitor mold removal
+MU_OYSTER,irrigation_cost,OPEX,5000,8000,High humidity maintenance; regular misting and water spraying
+MU_OYSTER,labour,OPEX,5000,10000,Substrate preparation + inoculation + harvesting + packing
+MU_OYSTER,land_preparation,CAPEX,5000,8000,Shade house floor preparation + rack installation area
+MU_OYSTER,marketing_and_transport,OPEX,3000,6000,Highly perishable; quick cold chain + restaurant/retail supply
+MU_OYSTER,pesticide_and_protection,OPEX,500,1500,Sanitation + competitor mold management; no pesticides
+MU_OYSTER,seed_or_planting_material,CAPEX,6000,12000,Spawn bags + substrate (straw/sawdust); 5-6 cycles/year
+OS_GROUNDNUT,fertilizer_and_nutrients,OPEX,2500,4000,Gypsum + SSP + micronutrients
+OS_GROUNDNUT,harvesting_and_post_harvest,OPEX,3000,5000,Digging + drying + stripping + grading + bagging
+OS_GROUNDNUT,intercultural_operations,OPEX,2500,4000,Earthing up + weeding + pegging support
+OS_GROUNDNUT,irrigation_cost,OPEX,3000,5000,Medium water need; critical at pegging and pod filling
+OS_GROUNDNUT,labour,OPEX,5000,8000,Sowing + earthing up + digging + peeling
+OS_GROUNDNUT,land_preparation,CAPEX,3500,5000,Ploughing + leveling + ridge/furrow making
+OS_GROUNDNUT,marketing_and_transport,OPEX,2000,4000,Mandi transport + oil mill + commission
+OS_GROUNDNUT,pesticide_and_protection,OPEX,1500,3000,Tikka leaf spot + collar rot + aflatoxin management
+OS_GROUNDNUT,seed_or_planting_material,CAPEX,4000,7000,Seed kernel 40-50 kg/acre; expensive seed
+OS_MUSTARD,fertilizer_and_nutrients,OPEX,2000,3500,NPK + sulphur
+OS_MUSTARD,harvesting_and_post_harvest,OPEX,1500,3000,Cutting + drying + threshing + cleaning
+OS_MUSTARD,intercultural_operations,OPEX,1500,3000,Thinning + weeding; low maintenance
+OS_MUSTARD,irrigation_cost,OPEX,1500,3000,Low water need; 1-2 irrigations at critical stages
+OS_MUSTARD,labour,OPEX,3000,5000,Sowing + thinning + harvest
+OS_MUSTARD,land_preparation,CAPEX,3000,4500,Ploughing + leveling + seed bed preparation
+OS_MUSTARD,marketing_and_transport,OPEX,1500,3000,Mandi transport + oil mill sale
+OS_MUSTARD,pesticide_and_protection,OPEX,1000,2000,Aphid + white rust management
+OS_MUSTARD,seed_or_planting_material,CAPEX,600,1200,Seed 2-3 kg/acre
+OS_SESAME,fertilizer_and_nutrients,OPEX,1500,3000,NPK moderate; responds to phosphorus
+OS_SESAME,harvesting_and_post_harvest,OPEX,1500,3000,Capsule drying + threshing + cleaning; timing critical
+OS_SESAME,intercultural_operations,OPEX,1500,3000,Thinning + weeding; low maintenance crop
+OS_SESAME,irrigation_cost,OPEX,1500,3000,Low water need; mostly rainfed
+OS_SESAME,labour,OPEX,3000,5000,Sowing + thinning + capsule harvest; timing critical
+OS_SESAME,land_preparation,CAPEX,3000,4500,Ploughing + leveling; light soil preferred
+OS_SESAME,marketing_and_transport,OPEX,2000,3500,Mandi sale + oil mill; niche market value
+OS_SESAME,pesticide_and_protection,OPEX,800,1500,Phyllody + leaf webber; relatively low pressure
+OS_SESAME,seed_or_planting_material,CAPEX,600,1200,Seed 2-3 kg/acre; low seed rate
+OS_SOYBEAN,fertilizer_and_nutrients,OPEX,2000,3500,DAP + Rhizobium + potash
+OS_SOYBEAN,harvesting_and_post_harvest,OPEX,2000,3500,Combine harvest + drying + cleaning + bagging
+OS_SOYBEAN,intercultural_operations,OPEX,2000,3500,Weeding + hoeing; early weed control critical
+OS_SOYBEAN,irrigation_cost,OPEX,3000,5000,Medium water need; rainfed with supplemental irrigation
+OS_SOYBEAN,labour,OPEX,3500,6000,Sowing + weeding + harvest
+OS_SOYBEAN,land_preparation,CAPEX,3500,5000,Ploughing + leveling + seed bed preparation
+OS_SOYBEAN,marketing_and_transport,OPEX,2000,3500,Mandi transport + oil mill + soybean processor
+OS_SOYBEAN,pesticide_and_protection,OPEX,1500,3000,Girdle beetle + stem fly + defoliators management
+OS_SOYBEAN,seed_or_planting_material,CAPEX,3000,5000,Seed 25-30 kg/acre
+OS_SUNFLOWER,fertilizer_and_nutrients,OPEX,2500,4000,NPK + sulphur + boron for seed filling
+OS_SUNFLOWER,harvesting_and_post_harvest,OPEX,2000,3500,Head cutting + drying + threshing + cleaning
+OS_SUNFLOWER,intercultural_operations,OPEX,2000,3500,Earthing up + weeding + bird scaring
+OS_SUNFLOWER,irrigation_cost,OPEX,3000,5000,Medium water need; critical at flowering
+OS_SUNFLOWER,labour,OPEX,3500,6000,Sowing + earthing up + harvest + threshing
+OS_SUNFLOWER,land_preparation,CAPEX,3500,5000,Ploughing + leveling + ridge making
+OS_SUNFLOWER,marketing_and_transport,OPEX,2000,3500,Mandi sale + oil mill; moderate value
+OS_SUNFLOWER,pesticide_and_protection,OPEX,1000,2500,Head borer + Alternaria; bird damage management
+OS_SUNFLOWER,seed_or_planting_material,CAPEX,1500,3000,Hybrid seed 2-3 kg/acre
+PR_CAPSICUM,fertilizer_and_nutrients,OPEX,5000,8000,Fertigation through drip; NPK + Ca + Mg
+PR_CAPSICUM,harvesting_and_post_harvest,OPEX,4000,8000,Regular picking + grading + packing + cold chain
+PR_CAPSICUM,infrastructure,CAPEX,2000000,4500000,Full upfront polyhouse construction cost per acre
+PR_CAPSICUM,intercultural_operations,OPEX,3000,5000,Pruning + training + mulch management + climate control
+PR_CAPSICUM,irrigation_cost,OPEX,5000,8000,High water need; drip fertigation in polyhouse
+PR_CAPSICUM,labour,OPEX,8000,14000,Training + pruning + harvesting + crop management
+PR_CAPSICUM,land_preparation,CAPEX,5000,8000,Bed preparation + media filling inside polyhouse
+PR_CAPSICUM,marketing_and_transport,OPEX,3000,6000,Premium produce; cold chain + supermarket/export
+PR_CAPSICUM,pesticide_and_protection,OPEX,3000,5000,Thrips + mites + powdery mildew in polyhouse
+PR_CAPSICUM,seed_or_planting_material,CAPEX,5000,8000,Hybrid seed (imported) + nursery; 3000-4000 plants/acre
+PR_CUCUMBER,fertilizer_and_nutrients,OPEX,5000,8000,Fertigation through drip; NPK + Ca + Mg
+PR_CUCUMBER,harvesting_and_post_harvest,OPEX,4000,7000,Daily picking + grading + packing; continuous harvest
+PR_CUCUMBER,infrastructure,CAPEX,2000000,4500000,Full upfront polyhouse construction cost per acre
+PR_CUCUMBER,intercultural_operations,OPEX,3000,5000,Training + pruning + tendril management + climate control
+PR_CUCUMBER,irrigation_cost,OPEX,5000,8000,High water need; drip fertigation in polyhouse
+PR_CUCUMBER,labour,OPEX,8000,14000,Training + pruning + daily picking + crop management
+PR_CUCUMBER,land_preparation,CAPEX,5000,8000,Bed preparation + media filling inside polyhouse
+PR_CUCUMBER,marketing_and_transport,OPEX,3000,6000,Premium produce; cold chain + supermarket/export
+PR_CUCUMBER,pesticide_and_protection,OPEX,3000,5000,Powdery mildew + whitefly + red spider mite in protected
+PR_CUCUMBER,seed_or_planting_material,CAPEX,4000,7000,Parthenocarpic hybrid seed; polyhouse nursery
+PR_LETTUCE,fertilizer_and_nutrients,OPEX,4000,7000,Fertigation; NPK + Ca for tipburn prevention
+PR_LETTUCE,harvesting_and_post_harvest,OPEX,4000,7000,Harvesting + washing + packing + cold chain; multiple cycles
+PR_LETTUCE,infrastructure,CAPEX,2000000,4500000,Full upfront polyhouse/net house construction cost per acre
+PR_LETTUCE,intercultural_operations,OPEX,3000,5000,Bed maintenance + climate control + gap filling
+PR_LETTUCE,irrigation_cost,OPEX,5000,8000,High water need; drip/NFT system in protected cultivation
+PR_LETTUCE,labour,OPEX,6000,12000,Transplanting + harvesting + packing; multiple cycles
+PR_LETTUCE,land_preparation,CAPEX,5000,8000,Bed/channel preparation + media setup in polyhouse
+PR_LETTUCE,marketing_and_transport,OPEX,3000,6000,Premium produce; cold chain + retail/restaurant supply
+PR_LETTUCE,pesticide_and_protection,OPEX,2000,4000,Aphid + downy mildew + bottom rot; sanitation critical
+PR_LETTUCE,seed_or_planting_material,CAPEX,3000,6000,Imported seed/seedlings; multiple batches per year
+PR_STRAWBERRY,fertilizer_and_nutrients,OPEX,5000,8000,Fertigation; NPK + Ca + micronutrients
+PR_STRAWBERRY,harvesting_and_post_harvest,OPEX,5000,10000,Regular picking + grading + clamshell packing + cold chain
+PR_STRAWBERRY,infrastructure,CAPEX,2200000,4800000,Full upfront polyhouse + raised bed + mulch system per acre
+PR_STRAWBERRY,intercultural_operations,OPEX,3000,5000,Runner removal + mulching + bed maintenance
+PR_STRAWBERRY,irrigation_cost,OPEX,5000,8000,High water need; drip fertigation in polyhouse
+PR_STRAWBERRY,labour,OPEX,10000,18000,Planting + mulching + regular picking + grading + packing
+PR_STRAWBERRY,land_preparation,CAPEX,6000,10000,Raised bed preparation + mulch laying + drip setup
+PR_STRAWBERRY,marketing_and_transport,OPEX,4000,6000,Highly perishable; cold chain + premium retail
+PR_STRAWBERRY,pesticide_and_protection,OPEX,3000,6000,Botrytis + powdery mildew + spider mite management
+PR_STRAWBERRY,seed_or_planting_material,CAPEX,15000,25000,Imported runners 15000-20000/acre; crown type
+PR_TOMATO,fertilizer_and_nutrients,OPEX,5000,8000,Fertigation through drip; NPK + Ca + Mg + micronutrients
+PR_TOMATO,harvesting_and_post_harvest,OPEX,4000,8000,Regular picking + grading + packing + cold chain
+PR_TOMATO,infrastructure,CAPEX,2000000,4500000,Full upfront polyhouse construction cost per acre
+PR_TOMATO,intercultural_operations,OPEX,3000,5000,Training + pruning + mulch management + climate control
+PR_TOMATO,irrigation_cost,OPEX,5000,8000,High water need; drip fertigation in polyhouse
+PR_TOMATO,labour,OPEX,8000,14000,Training + pruning + regular harvesting + grading
+PR_TOMATO,land_preparation,CAPEX,5000,8000,Bed preparation + media filling inside polyhouse
+PR_TOMATO,marketing_and_transport,OPEX,3000,6000,Premium produce; cold chain + supermarket/export
+PR_TOMATO,pesticide_and_protection,OPEX,3000,5000,Whitefly + leaf miner + Tuta absoluta in protected
+PR_TOMATO,seed_or_planting_material,CAPEX,4000,7000,Indeterminate hybrid seed + nursery; 4000-4500 plants/acre
+PU_CHICKPEA,fertilizer_and_nutrients,OPEX,1500,3000,DAP + low nitrogen; responds to phosphorus
+PU_CHICKPEA,harvesting_and_post_harvest,OPEX,1500,2500,Uprooting + drying + threshing + cleaning
+PU_CHICKPEA,intercultural_operations,OPEX,1500,2500,Weeding + hoeing; low maintenance
+PU_CHICKPEA,irrigation_cost,OPEX,1500,2500,Low water need; 1-2 irrigations usually sufficient
+PU_CHICKPEA,labour,OPEX,3000,5000,Sowing + weeding + harvest
+PU_CHICKPEA,land_preparation,CAPEX,3000,4500,Ploughing + leveling + seed bed preparation
+PU_CHICKPEA,marketing_and_transport,OPEX,1500,3000,Mandi transport + dal mill sale
+PU_CHICKPEA,pesticide_and_protection,OPEX,1500,3000,Pod borer (Helicoverpa) + wilt management
+PU_CHICKPEA,seed_or_planting_material,CAPEX,2500,4000,Seed 25-35 kg/acre; Rhizobium treatment
+PU_LENTIL,fertilizer_and_nutrients,OPEX,1200,2500,DAP + low nitrogen; N-fixing crop
+PU_LENTIL,harvesting_and_post_harvest,OPEX,1500,2500,Uprooting + drying + threshing + cleaning
+PU_LENTIL,intercultural_operations,OPEX,1500,2500,Weeding + hoeing; short duration crop
+PU_LENTIL,irrigation_cost,OPEX,1500,2500,Low water need; 1-2 irrigations at critical stages
+PU_LENTIL,labour,OPEX,3000,5000,Sowing + weeding + harvest
+PU_LENTIL,land_preparation,CAPEX,3000,4500,Ploughing + leveling + fine seed bed
+PU_LENTIL,marketing_and_transport,OPEX,1500,3000,Mandi transport + dal mill sale
+PU_LENTIL,pesticide_and_protection,OPEX,1000,2000,Wilt + rust + aphid management
+PU_LENTIL,seed_or_planting_material,CAPEX,2000,3500,Seed 12-15 kg/acre; Rhizobium treatment
+PU_MOONG,fertilizer_and_nutrients,OPEX,1200,2500,DAP + Rhizobium; low N requirement
+PU_MOONG,harvesting_and_post_harvest,OPEX,1500,2500,Picking + drying + threshing + cleaning
+PU_MOONG,intercultural_operations,OPEX,1500,2500,Weeding + hoeing; short duration
+PU_MOONG,irrigation_cost,OPEX,3000,4500,Medium water need; 2-3 irrigations at critical stages
+PU_MOONG,labour,OPEX,3000,5000,Sowing + weeding + harvest; short duration
+PU_MOONG,land_preparation,CAPEX,3000,4500,Ploughing + leveling + seed bed preparation
+PU_MOONG,marketing_and_transport,OPEX,1500,3000,Mandi transport + dal mill sale
+PU_MOONG,pesticide_and_protection,OPEX,1000,2000,Whitefly + yellow mosaic virus management
+PU_MOONG,seed_or_planting_material,CAPEX,2000,3500,Seed 6-8 kg/acre
+PU_PEA_DRY,fertilizer_and_nutrients,OPEX,1500,3000,DAP + Rhizobium; phosphorus responsive
+PU_PEA_DRY,harvesting_and_post_harvest,OPEX,1500,3000,Harvesting + drying + threshing + cleaning
+PU_PEA_DRY,intercultural_operations,OPEX,1500,3000,Weeding + hoeing + earthing up
+PU_PEA_DRY,irrigation_cost,OPEX,3000,4500,Medium water need; 3-4 irrigations
+PU_PEA_DRY,labour,OPEX,3000,5500,Sowing + weeding + harvest + threshing
+PU_PEA_DRY,land_preparation,CAPEX,3000,4500,Ploughing + leveling + seed bed preparation
+PU_PEA_DRY,marketing_and_transport,OPEX,1500,3000,Mandi transport + dal processor
+PU_PEA_DRY,pesticide_and_protection,OPEX,1500,2500,Powdery mildew + pod borer management
+PU_PEA_DRY,seed_or_planting_material,CAPEX,3000,5000,Seed 25-30 kg/acre; improved varieties
+PU_PIGEONPEA,fertilizer_and_nutrients,OPEX,1500,2500,DAP + low nitrogen; N-fixing crop
+PU_PIGEONPEA,harvesting_and_post_harvest,OPEX,2000,3000,Multiple pickings + drying + threshing + dal milling
+PU_PIGEONPEA,intercultural_operations,OPEX,2000,3000,Weeding + earthing up; long duration crop
+PU_PIGEONPEA,irrigation_cost,OPEX,3000,4500,Medium water need; 2-3 irrigations at critical stages
+PU_PIGEONPEA,labour,OPEX,3500,6000,Sowing + multiple pickings + threshing
+PU_PIGEONPEA,land_preparation,CAPEX,3000,4500,Ploughing + leveling + ridge/furrow making
+PU_PIGEONPEA,marketing_and_transport,OPEX,1500,3000,Mandi transport + dal mill sale
+PU_PIGEONPEA,pesticide_and_protection,OPEX,2000,4000,Pod borer + pod fly + Fusarium wilt management
+PU_PIGEONPEA,seed_or_planting_material,CAPEX,1500,2500,Seed 6-8 kg/acre
+PU_URAD,fertilizer_and_nutrients,OPEX,1200,2500,DAP + Rhizobium; low nitrogen; phosphorus important
+PU_URAD,harvesting_and_post_harvest,OPEX,1500,2500,Picking + drying + threshing + cleaning
+PU_URAD,intercultural_operations,OPEX,1500,2500,Weeding + hoeing; short duration crop
+PU_URAD,irrigation_cost,OPEX,3000,4500,Medium water need; 2-3 irrigations
+PU_URAD,labour,OPEX,3000,5000,Sowing + weeding + harvest; short duration crop
+PU_URAD,land_preparation,CAPEX,3000,4500,Ploughing + leveling + seed bed preparation
+PU_URAD,marketing_and_transport,OPEX,1500,3000,Mandi transport + dal mill sale
+PU_URAD,pesticide_and_protection,OPEX,1000,2000,Yellow mosaic virus + pod borer + stem fly management
+PU_URAD,seed_or_planting_material,CAPEX,2000,3500,Seed 6-8 kg/acre; improved short-duration varieties
+SP_AJWAIN,fertilizer_and_nutrients,OPEX,1500,3000,NPK + FYM; moderate nutrient needs
+SP_AJWAIN,harvesting_and_post_harvest,OPEX,5000,8000,Harvesting + drying + threshing + cleaning + grading
+SP_AJWAIN,intercultural_operations,OPEX,3000,5000,Weeding + thinning + earthing up
+SP_AJWAIN,irrigation_cost,OPEX,1500,3000,Low water need; 2-3 light irrigations
+SP_AJWAIN,labour,OPEX,3000,5000,Sowing + weeding + harvest + cleaning
+SP_AJWAIN,land_preparation,CAPEX,4000,6000,Ploughing + leveling + fine bed preparation for small seed
+SP_AJWAIN,marketing_and_transport,OPEX,2000,4000,Mandi sale + spice trader + commission
+SP_AJWAIN,pesticide_and_protection,OPEX,1000,2000,Blight + aphid; low pest pressure
+SP_AJWAIN,seed_or_planting_material,CAPEX,1500,2500,Seed 2-3 kg/acre; broadcast/line sowing
+SP_CHILLI,fertilizer_and_nutrients,OPEX,4000,6500,NPK + calcium + FYM + drip fertigation
+SP_CHILLI,harvesting_and_post_harvest,OPEX,6000,12000,Multiple pickings + drying (sun/machine) + grading + packing
+SP_CHILLI,intercultural_operations,OPEX,3500,6000,Weeding + mulching + earthing up + staking
+SP_CHILLI,irrigation_cost,OPEX,3000,5000,Medium water need; drip irrigation recommended
+SP_CHILLI,labour,OPEX,7000,12000,Transplanting + multiple pickings + drying
+SP_CHILLI,land_preparation,CAPEX,4500,7000,Ploughing + bed making + FYM incorporation + mulching
+SP_CHILLI,marketing_and_transport,OPEX,2500,5000,Dried chilli transport + mandi/cold storage + commission
+SP_CHILLI,pesticide_and_protection,OPEX,3000,6000,Thrips + mites + leaf curl virus + fruit rot management
+SP_CHILLI,seed_or_planting_material,CAPEX,3000,6000,Hybrid seed + nursery raising; 8000-12000 plants/acre
+SP_CORIANDER_SEED,fertilizer_and_nutrients,OPEX,1500,3000,NPK + FYM; phosphorus responsive
+SP_CORIANDER_SEED,harvesting_and_post_harvest,OPEX,5000,8000,Harvesting + drying + threshing + cleaning + grading
+SP_CORIANDER_SEED,intercultural_operations,OPEX,3000,5000,Weeding + thinning; clean cultivation needed
+SP_CORIANDER_SEED,irrigation_cost,OPEX,1500,3000,Low water need; 2-3 light irrigations
+SP_CORIANDER_SEED,labour,OPEX,3000,5000,Sowing + weeding + harvest + threshing
+SP_CORIANDER_SEED,land_preparation,CAPEX,4000,6000,Ploughing + leveling + fine bed preparation
+SP_CORIANDER_SEED,marketing_and_transport,OPEX,2000,4000,Mandi sale + spice trader + commission
+SP_CORIANDER_SEED,pesticide_and_protection,OPEX,1000,2000,Powdery mildew + stem gall + aphid management
+SP_CORIANDER_SEED,seed_or_planting_material,CAPEX,1500,3000,Seed 5-6 kg/acre; split seeds for faster germination
+SP_FENNEL,fertilizer_and_nutrients,OPEX,2000,3500,NPK + FYM + sulphur
+SP_FENNEL,harvesting_and_post_harvest,OPEX,5000,9000,Multiple harvests + drying + threshing + cleaning + grading
+SP_FENNEL,intercultural_operations,OPEX,3000,5000,Weeding + thinning + earthing up
+SP_FENNEL,irrigation_cost,OPEX,1500,3000,Low water need; 3-4 irrigations at critical stages
+SP_FENNEL,labour,OPEX,4000,7000,Sowing + weeding + multiple harvests + threshing
+SP_FENNEL,land_preparation,CAPEX,4000,6000,Ploughing + leveling + bed preparation for line sowing
+SP_FENNEL,marketing_and_transport,OPEX,2000,4000,Mandi sale + spice trader + commission
+SP_FENNEL,pesticide_and_protection,OPEX,1000,2500,Ramularia blight + aphid management
+SP_FENNEL,seed_or_planting_material,CAPEX,1500,3000,Seed 3-4 kg/acre; line sowing
+SP_FENUGREEK,fertilizer_and_nutrients,OPEX,1500,2500,NPK + Rhizobium; N-fixing legume
+SP_FENUGREEK,harvesting_and_post_harvest,OPEX,5000,8000,Leaf cutting + seed harvest + drying + threshing + grading
+SP_FENUGREEK,intercultural_operations,OPEX,3000,5000,Weeding + thinning; clean cultivation
+SP_FENUGREEK,irrigation_cost,OPEX,1500,3000,Low water need; 2-3 light irrigations
+SP_FENUGREEK,labour,OPEX,3000,5000,Sowing + leaf cutting + seed harvest
+SP_FENUGREEK,land_preparation,CAPEX,4000,6000,Ploughing + leveling + fine bed preparation
+SP_FENUGREEK,marketing_and_transport,OPEX,2000,4000,Mandi sale + spice trader; dual use (leaf + seed)
+SP_FENUGREEK,pesticide_and_protection,OPEX,800,1500,Powdery mildew + downy mildew; low pressure
+SP_FENUGREEK,seed_or_planting_material,CAPEX,1000,2000,Seed 10-12 kg/acre; broadcast or line sowing
+SP_GARLIC,fertilizer_and_nutrients,OPEX,3000,5000,NPK + sulphur + FYM; responds to sulphur
+SP_GARLIC,harvesting_and_post_harvest,OPEX,6000,10000,Uprooting + curing + cleaning + grading + braiding/packing
+SP_GARLIC,intercultural_operations,OPEX,3500,6000,Weeding + mulching + earthing up
+SP_GARLIC,irrigation_cost,OPEX,3000,5000,Medium water need; 6-8 irrigations; stop before harvest
+SP_GARLIC,labour,OPEX,8000,14000,Clove separation + planting + weeding + harvesting + curing
+SP_GARLIC,land_preparation,CAPEX,5000,8000,Deep ploughing + bed making + FYM incorporation
+SP_GARLIC,marketing_and_transport,OPEX,2500,5000,Mandi transport + cold storage + commission
+SP_GARLIC,pesticide_and_protection,OPEX,2000,3500,Purple blotch + thrips + stemphylium management
+SP_GARLIC,seed_or_planting_material,CAPEX,8000,14000,Cloves 250-300 kg/acre; major cost item
+SP_GINGER,fertilizer_and_nutrients,OPEX,5000,8000,NPK + FYM + micronutrients; heavy organic manure
+SP_GINGER,harvesting_and_post_harvest,OPEX,6000,12000,Digging + washing + drying/curing + grading + packing
+SP_GINGER,intercultural_operations,OPEX,4000,6000,Mulching + earthing up + weeding; multiple rounds
+SP_GINGER,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation but avoid waterlogging
+SP_GINGER,labour,OPEX,10000,16000,Planting + mulching + earthing up + harvesting
+SP_GINGER,land_preparation,CAPEX,5000,8000,Deep ploughing + raised bed making + FYM incorporation
+SP_GINGER,marketing_and_transport,OPEX,3000,5000,Mandi transport + processing/drying + commission
+SP_GINGER,pesticide_and_protection,OPEX,3000,5000,Soft rot + rhizome fly + bacterial wilt; seed treatment critical
+SP_GINGER,seed_or_planting_material,CAPEX,15000,25000,Seed rhizomes 6-10 quintal/acre; very expensive seed
+SP_TURMERIC,fertilizer_and_nutrients,OPEX,4000,7000,NPK + FYM + micronutrients; heavy feeder
+SP_TURMERIC,harvesting_and_post_harvest,OPEX,6000,12000,Digging + boiling/curing + drying + polishing + grading
+SP_TURMERIC,intercultural_operations,OPEX,4000,6000,Mulching + earthing up + weeding; multiple rounds
+SP_TURMERIC,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation needed
+SP_TURMERIC,labour,OPEX,8000,14000,Planting + mulching + earthing up + harvesting + curing
+SP_TURMERIC,land_preparation,CAPEX,5000,8000,Deep ploughing + raised bed making + FYM incorporation
+SP_TURMERIC,marketing_and_transport,OPEX,3000,5000,Processed turmeric transport + mandi/exporter + commission
+SP_TURMERIC,pesticide_and_protection,OPEX,1500,3000,Rhizome rot + shoot borer + leaf blotch management
+SP_TURMERIC,seed_or_planting_material,CAPEX,8000,14000,Seed rhizomes 6-8 quintal/acre; major cost
+VE_BITTER_GOURD,fertilizer_and_nutrients,OPEX,3000,5000,NPK + FYM + micronutrients
+VE_BITTER_GOURD,harvesting_and_post_harvest,OPEX,5000,8000,Multiple pickings + sorting + grading + packing
+VE_BITTER_GOURD,intercultural_operations,OPEX,5000,7000,Trellis maintenance + weeding + vine training
+VE_BITTER_GOURD,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation for vine crop
+VE_BITTER_GOURD,labour,OPEX,5000,8000,Trellis erection + training + regular picking
+VE_BITTER_GOURD,land_preparation,CAPEX,5000,7000,Ploughing + bed making + trellis pit preparation
+VE_BITTER_GOURD,marketing_and_transport,OPEX,3000,5000,Perishable; daily market transport + commission
+VE_BITTER_GOURD,pesticide_and_protection,OPEX,2000,4000,Fruit fly + powdery mildew + mosaic virus
+VE_BITTER_GOURD,seed_or_planting_material,CAPEX,2000,3500,Hybrid seed 500-700g/acre; trellis cost included
+VE_BOTTLE_GOURD,fertilizer_and_nutrients,OPEX,2500,4500,NPK + FYM; moderate feeder
+VE_BOTTLE_GOURD,harvesting_and_post_harvest,OPEX,4000,7000,Regular picking + sorting + packing
+VE_BOTTLE_GOURD,intercultural_operations,OPEX,4500,7000,Pandal maintenance + vine training + weeding
+VE_BOTTLE_GOURD,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation for vine crop
+VE_BOTTLE_GOURD,labour,OPEX,4000,7000,Pandal erection + training + picking
+VE_BOTTLE_GOURD,land_preparation,CAPEX,5000,7000,Ploughing + pit making + pandal foundation preparation
+VE_BOTTLE_GOURD,marketing_and_transport,OPEX,3000,5000,Perishable; daily market transport + commission
+VE_BOTTLE_GOURD,pesticide_and_protection,OPEX,1500,3000,Fruit fly + downy mildew management
+VE_BOTTLE_GOURD,seed_or_planting_material,CAPEX,1500,3000,Seed 400-600g/acre; pandal/trailing system
+VE_BRINJAL,fertilizer_and_nutrients,OPEX,3000,5000,NPK + FYM + micronutrients
+VE_BRINJAL,harvesting_and_post_harvest,OPEX,5000,8000,Multiple pickings + sorting + grading + packing
+VE_BRINJAL,intercultural_operations,OPEX,4500,7000,Weeding + staking + earthing up + mulching
+VE_BRINJAL,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation at fruiting
+VE_BRINJAL,labour,OPEX,6000,10000,Transplanting + staking + regular picking
+VE_BRINJAL,land_preparation,CAPEX,4500,6500,Ploughing + bed making + FYM incorporation
+VE_BRINJAL,marketing_and_transport,OPEX,3000,5000,Perishable; daily market transport + commission
+VE_BRINJAL,pesticide_and_protection,OPEX,3000,6000,Shoot & fruit borer + wilt; heavy pest pressure
+VE_BRINJAL,seed_or_planting_material,CAPEX,2500,4500,Hybrid seed + nursery; 6000-8000 plants/acre
+VE_CABBAGE,fertilizer_and_nutrients,OPEX,3000,5000,NPK + boron + FYM
+VE_CABBAGE,harvesting_and_post_harvest,OPEX,4000,6000,Single harvest + trimming + grading + packing
+VE_CABBAGE,intercultural_operations,OPEX,4000,6000,Weeding + earthing up + thinning
+VE_CABBAGE,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation for head formation
+VE_CABBAGE,labour,OPEX,5000,9000,Transplanting + weeding + single harvest
+VE_CABBAGE,land_preparation,CAPEX,4500,6500,Ploughing + bed making + FYM incorporation
+VE_CABBAGE,marketing_and_transport,OPEX,3000,5000,Bulky perishable; transport + mandi fees
+VE_CABBAGE,pesticide_and_protection,OPEX,2000,3500,Diamond back moth + head borer management
+VE_CABBAGE,seed_or_planting_material,CAPEX,2000,4000,Hybrid seed + nursery raising; 8000-10000 plants/acre
+VE_CARROT,fertilizer_and_nutrients,OPEX,2500,4000,NPK + FYM + potash for root development
+VE_CARROT,harvesting_and_post_harvest,OPEX,4000,6000,Pulling + washing + grading + packing
+VE_CARROT,intercultural_operations,OPEX,4000,6000,Thinning + weeding + earthing up on raised beds
+VE_CARROT,irrigation_cost,OPEX,3000,5000,Medium water need; regular light irrigation
+VE_CARROT,labour,OPEX,4000,7000,Bed preparation + sowing + thinning + harvesting
+VE_CARROT,land_preparation,CAPEX,5000,7000,Deep ploughing + raised bed making; loose soil needed
+VE_CARROT,marketing_and_transport,OPEX,3000,5000,Perishable; washing + packing + market transport
+VE_CARROT,pesticide_and_protection,OPEX,1000,2000,Alternaria leaf blight + root knot nematode
+VE_CARROT,seed_or_planting_material,CAPEX,2000,4000,Seed 1.5-2 kg/acre; raised bed preparation
+VE_CAULIFLOWER,fertilizer_and_nutrients,OPEX,3500,5500,NPK + boron + molybdenum + FYM
+VE_CAULIFLOWER,harvesting_and_post_harvest,OPEX,4000,6000,Single curd harvest + trimming + grading + packing
+VE_CAULIFLOWER,intercultural_operations,OPEX,4000,6000,Weeding + earthing up + leaf tying for curd protection
+VE_CAULIFLOWER,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation for curd development
+VE_CAULIFLOWER,labour,OPEX,5000,9000,Transplanting + weeding + timely harvest
+VE_CAULIFLOWER,land_preparation,CAPEX,4500,6500,Ploughing + bed making + FYM incorporation
+VE_CAULIFLOWER,marketing_and_transport,OPEX,3000,5000,Perishable; quick market transport + commission
+VE_CAULIFLOWER,pesticide_and_protection,OPEX,2000,3500,Diamond back moth + black rot management
+VE_CAULIFLOWER,seed_or_planting_material,CAPEX,2500,4500,Hybrid seed + nursery; 8000-10000 plants/acre
+VE_CORIANDER_LEAF,fertilizer_and_nutrients,OPEX,2000,3500,NPK + FYM; nitrogen for leaf growth
+VE_CORIANDER_LEAF,harvesting_and_post_harvest,OPEX,4000,7000,Multiple cuttings + bunching + washing + packing
+VE_CORIANDER_LEAF,intercultural_operations,OPEX,4000,6000,Weeding + thinning + successive sowing management
+VE_CORIANDER_LEAF,irrigation_cost,OPEX,3000,5000,Medium water need; regular light irrigation for leaf
+VE_CORIANDER_LEAF,labour,OPEX,4000,7000,Multiple cuttings + weeding + watering
+VE_CORIANDER_LEAF,land_preparation,CAPEX,4500,6500,Ploughing + fine bed making + FYM incorporation
+VE_CORIANDER_LEAF,marketing_and_transport,OPEX,3000,5000,Highly perishable leafy; daily market + commission
+VE_CORIANDER_LEAF,pesticide_and_protection,OPEX,1000,2000,Powdery mildew + aphid + stem rot management
+VE_CORIANDER_LEAF,seed_or_planting_material,CAPEX,1500,3000,Seed 8-10 kg/acre; split sowing for continuous harvest
+VE_CUCUMBER_OPEN,fertilizer_and_nutrients,OPEX,3000,5000,NPK + FYM + micronutrients; vine crop
+VE_CUCUMBER_OPEN,harvesting_and_post_harvest,OPEX,5000,8000,Multiple pickings + sorting + grading + packing
+VE_CUCUMBER_OPEN,intercultural_operations,OPEX,4500,7000,Trailing/training + weeding + mulching
+VE_CUCUMBER_OPEN,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation for vine crop
+VE_CUCUMBER_OPEN,labour,OPEX,5000,8000,Trailing/training + multiple pickings + weeding
+VE_CUCUMBER_OPEN,land_preparation,CAPEX,5000,7000,Ploughing + bed/channel making for trailing
+VE_CUCUMBER_OPEN,marketing_and_transport,OPEX,3000,5000,Perishable; daily market transport + commission
+VE_CUCUMBER_OPEN,pesticide_and_protection,OPEX,2000,4000,Downy mildew + fruit fly + mosaic virus management
+VE_CUCUMBER_OPEN,seed_or_planting_material,CAPEX,2000,4000,Hybrid seed 400-500g/acre; direct sowing
+VE_FRENCH_BEAN,fertilizer_and_nutrients,OPEX,2500,4000,NPK + Rhizobium; phosphorus responsive
+VE_FRENCH_BEAN,harvesting_and_post_harvest,OPEX,5000,8000,Multiple pickings + sorting + grading + packing
+VE_FRENCH_BEAN,intercultural_operations,OPEX,4000,6000,Weeding + earthing up + staking (pole type)
+VE_FRENCH_BEAN,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation at flowering
+VE_FRENCH_BEAN,labour,OPEX,5000,8000,Sowing + weeding + multiple pickings + grading
+VE_FRENCH_BEAN,land_preparation,CAPEX,4500,6500,Ploughing + bed making + FYM incorporation
+VE_FRENCH_BEAN,marketing_and_transport,OPEX,3000,5000,Perishable; quick market transport + commission
+VE_FRENCH_BEAN,pesticide_and_protection,OPEX,1500,3000,Rust + anthracnose + pod borer management
+VE_FRENCH_BEAN,seed_or_planting_material,CAPEX,3000,5000,Seed 15-20 kg/acre; bush type varieties
+VE_GREEN_PEA,fertilizer_and_nutrients,OPEX,2500,4000,NPK + Rhizobium; phosphorus important
+VE_GREEN_PEA,harvesting_and_post_harvest,OPEX,5000,8000,Multiple pickings + shelling + sorting + packing
+VE_GREEN_PEA,intercultural_operations,OPEX,4000,6000,Weeding + staking + earthing up
+VE_GREEN_PEA,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation at flowering/podding
+VE_GREEN_PEA,labour,OPEX,5000,8000,Sowing + staking + multiple pickings + shelling
+VE_GREEN_PEA,land_preparation,CAPEX,4500,6500,Ploughing + bed making + FYM incorporation
+VE_GREEN_PEA,marketing_and_transport,OPEX,3000,5000,Perishable; quick market transport + commission
+VE_GREEN_PEA,pesticide_and_protection,OPEX,2000,3500,Powdery mildew + pea moth + aphid management
+VE_GREEN_PEA,seed_or_planting_material,CAPEX,4000,7000,Seed 25-35 kg/acre; improved garden pea varieties
+VE_MUSKMELON,fertilizer_and_nutrients,OPEX,3000,5000,NPK + FYM + potash + micronutrients
+VE_MUSKMELON,harvesting_and_post_harvest,OPEX,5000,8000,Multiple pickings + grading + packing; aroma-based selection
+VE_MUSKMELON,intercultural_operations,OPEX,4500,7000,Vine training + weeding + mulching + thinning
+VE_MUSKMELON,irrigation_cost,OPEX,5000,8000,High water need; regular drip irrigation for sweetness
+VE_MUSKMELON,labour,OPEX,5000,8000,Vine training + multiple pickings + grading
+VE_MUSKMELON,land_preparation,CAPEX,5000,7000,Ploughing + bed making + mulch laying
+VE_MUSKMELON,marketing_and_transport,OPEX,3000,6000,Highly perishable; quick market + careful transport
+VE_MUSKMELON,pesticide_and_protection,OPEX,2000,4000,Powdery mildew + fruit fly + fusarium wilt
+VE_MUSKMELON,seed_or_planting_material,CAPEX,2000,4000,Hybrid seed 200-300g/acre
+VE_OKRA,fertilizer_and_nutrients,OPEX,2500,4000,NPK + FYM
+VE_OKRA,harvesting_and_post_harvest,OPEX,5000,8000,Daily/alternate day picking + sorting + grading + packing
+VE_OKRA,intercultural_operations,OPEX,4000,6000,Weeding + earthing up + thinning
+VE_OKRA,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation at fruiting
+VE_OKRA,labour,OPEX,5000,8000,Multiple pickings every 2-3 days
+VE_OKRA,land_preparation,CAPEX,4500,6500,Ploughing + bed making + FYM incorporation
+VE_OKRA,marketing_and_transport,OPEX,3000,5000,Perishable; daily market transport + commission
+VE_OKRA,pesticide_and_protection,OPEX,1500,3000,Shoot & fruit borer + YVMV management
+VE_OKRA,seed_or_planting_material,CAPEX,2000,3500,Hybrid seed 2-3 kg/acre
+VE_ONION,fertilizer_and_nutrients,OPEX,4000,6500,NPK + sulphur + FYM
+VE_ONION,harvesting_and_post_harvest,OPEX,5000,8000,Uprooting + curing + topping + grading + storage
+VE_ONION,intercultural_operations,OPEX,5000,7000,Weeding + earthing up + mulching; labour intensive
+VE_ONION,irrigation_cost,OPEX,3000,5000,Medium water need; 10-12 irrigations; stop before harvest
+VE_ONION,labour,OPEX,8000,14000,Transplanting + weeding + harvesting + curing; very labour intensive
+VE_ONION,land_preparation,CAPEX,5000,7000,Deep ploughing + raised bed making + FYM incorporation
+VE_ONION,marketing_and_transport,OPEX,3000,5000,Mandi transport + storage + commission; price volatile
+VE_ONION,pesticide_and_protection,OPEX,2000,4000,Thrips + purple blotch + Stemphylium management
+VE_ONION,seed_or_planting_material,CAPEX,4000,8000,Seed 3-4 kg/acre or sets; nursery raising cost
+VE_POTATO,fertilizer_and_nutrients,OPEX,4000,7000,NPK + FYM + micronutrients; heavy feeder
+VE_POTATO,harvesting_and_post_harvest,OPEX,5000,8000,Digging + sorting + grading + cold storage
+VE_POTATO,intercultural_operations,OPEX,4500,7000,Earthing up + weeding + dehaulming
+VE_POTATO,irrigation_cost,OPEX,2000,4000,4-6 irrigations critical
+VE_POTATO,labour,OPEX,6000,10000,Planting + earthing up + harvesting
+VE_POTATO,land_preparation,CAPEX,5000,7000,Deep ploughing + ridge/furrow making + FYM incorporation
+VE_POTATO,marketing_and_transport,OPEX,3000,5000,Cold storage + mandi transport + commission
+VE_POTATO,pesticide_and_protection,OPEX,2000,4000,Late blight + aphid + tuber moth management
+VE_POTATO,seed_or_planting_material,CAPEX,10000,18000,Seed tubers 6-8 quintal/acre; major cost item
+VE_PUMPKIN,fertilizer_and_nutrients,OPEX,2000,3500,NPK + FYM; moderate needs
+VE_PUMPKIN,harvesting_and_post_harvest,OPEX,4000,6000,Harvest + curing + grading; good shelf life
+VE_PUMPKIN,intercultural_operations,OPEX,4000,6000,Vine training + weeding + mulching
+VE_PUMPKIN,irrigation_cost,OPEX,3000,5000,Medium water need; regular irrigation for vine growth
+VE_PUMPKIN,labour,OPEX,3000,5000,Sowing + vine training + harvest; low labour
+VE_PUMPKIN,land_preparation,CAPEX,4500,6500,Ploughing + pit making for vine trailing
+VE_PUMPKIN,marketing_and_transport,OPEX,3000,5000,Bulky; transport cost + mandi fees
+VE_PUMPKIN,pesticide_and_protection,OPEX,1000,2000,Fruit fly + powdery mildew; low pressure
+VE_PUMPKIN,seed_or_planting_material,CAPEX,1000,2000,Seed 500-800g/acre; trailing type
+VE_RADISH,fertilizer_and_nutrients,OPEX,2000,3500,NPK + FYM; quick-growing needs available nutrients
+VE_RADISH,harvesting_and_post_harvest,OPEX,4000,6000,Pulling + washing + grading + bunching + packing
+VE_RADISH,intercultural_operations,OPEX,4000,6000,Thinning + weeding + earthing up on beds
+VE_RADISH,irrigation_cost,OPEX,3000,5000,Medium water need; frequent light irrigation
+VE_RADISH,labour,OPEX,3000,5000,Bed preparation + sowing + thinning + pulling
+VE_RADISH,land_preparation,CAPEX,5000,7000,Deep ploughing + raised bed making; loose soil needed
+VE_RADISH,marketing_and_transport,OPEX,3000,5000,Perishable; daily market + commission
+VE_RADISH,pesticide_and_protection,OPEX,1000,2000,Flea beetle + white rust management
+VE_RADISH,seed_or_planting_material,CAPEX,800,1500,Seed 3-4 kg/acre; direct sowing on beds
+VE_SPINACH,fertilizer_and_nutrients,OPEX,2000,3500,NPK + FYM; nitrogen responsive for leaf growth
+VE_SPINACH,harvesting_and_post_harvest,OPEX,4000,7000,Multiple cuttings + bunching + washing + packing
+VE_SPINACH,intercultural_operations,OPEX,4000,6000,Weeding + thinning + successive sowing management
+VE_SPINACH,irrigation_cost,OPEX,3000,5000,Medium water need; regular light irrigation for leaf
+VE_SPINACH,labour,OPEX,4000,7000,Multiple cuttings + weeding + watering
+VE_SPINACH,land_preparation,CAPEX,4500,6500,Ploughing + fine bed making + FYM incorporation
+VE_SPINACH,marketing_and_transport,OPEX,3000,5000,Highly perishable leafy; daily market + commission
+VE_SPINACH,pesticide_and_protection,OPEX,800,1500,Leaf miner + downy mildew; minimal input
+VE_SPINACH,seed_or_planting_material,CAPEX,1000,2000,Seed 10-12 kg/acre; direct sowing
+VE_TOMATO,fertilizer_and_nutrients,OPEX,4000,7000,NPK + calcium + FYM + drip fertigation
+VE_TOMATO,harvesting_and_post_harvest,OPEX,5000,10000,Multiple pickings + sorting + grading + packing + ripening
+VE_TOMATO,intercultural_operations,OPEX,5000,8000,Staking + mulching + weeding + earthing up
+VE_TOMATO,irrigation_cost,OPEX,5000,8000,High water need; drip irrigation essential
+VE_TOMATO,labour,OPEX,7000,12000,Transplanting + staking + multiple harvests
+VE_TOMATO,land_preparation,CAPEX,5000,7000,Ploughing + bed making + stake pit preparation
+VE_TOMATO,marketing_and_transport,OPEX,3000,6000,Perishable; daily market transport + commission; price volatile
+VE_TOMATO,pesticide_and_protection,OPEX,3000,6000,Tuta absoluta + leaf curl virus + late blight management
+VE_TOMATO,seed_or_planting_material,CAPEX,3000,6000,Hybrid seed + nursery raising; 8000-10000 plants/acre
+VE_WATERMELON,fertilizer_and_nutrients,OPEX,3500,5500,NPK + FYM + potash for sweetness
+VE_WATERMELON,harvesting_and_post_harvest,OPEX,5000,8000,Maturity testing + harvest + grading + loading; heavy fruit
+VE_WATERMELON,intercultural_operations,OPEX,4500,7000,Vine training + weeding + mulching + thinning fruits
+VE_WATERMELON,irrigation_cost,OPEX,5000,8000,High water need; drip + mulching essential
+VE_WATERMELON,labour,OPEX,5000,8000,Bed preparation + vine management + harvest + loading
+VE_WATERMELON,land_preparation,CAPEX,5000,7000,Ploughing + bed making + mulch laying; sandy loam preferred
+VE_WATERMELON,marketing_and_transport,OPEX,3000,6000,Bulky perishable; truck transport + mandi fees
+VE_WATERMELON,pesticide_and_protection,OPEX,2000,4000,Fusarium wilt + anthracnose + fruit fly
+VE_WATERMELON,seed_or_planting_material,CAPEX,2000,4000,Hybrid seed 200-300g/acre; mulching cost

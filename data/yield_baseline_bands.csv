@@ -1,0 +1,78 @@
+crop_id,low_yield_per_acre,base_yield_per_acre,high_yield_per_acre,yield_unit,source_notes
+FR_MANGO,15,30,50,quintal,Bearing trees 5+ years; varies hugely by variety and age
+FR_GUAVA,30,60,100,quintal,Meadow orcharding gives higher yields
+FR_POMEGRANATE,20,40,60,quintal,3+ year bearing trees; drip irrigated
+FR_BANANA,80,120,180,quintal,Tissue culture; Grand Naine or G9
+FR_PAPAYA,60,100,160,quintal,Hybrid varieties; irrigated
+CE_WHEAT,10,16,22,quintal,Irrigated; improved varieties
+CE_MAIZE,12,20,30,quintal,Hybrid; kharif or rabi depending on state
+CE_RICE,12,18,25,quintal,Irrigated transplanted; varies by method (SRI higher)
+MI_BAJRA,5,8,12,quintal,Rainfed kharif; hybrid varieties
+MI_JOWAR,5,8,12,quintal,Rainfed; dual purpose grain+fodder
+MI_RAGI,5,8,12,quintal,Rainfed or irrigated; finger millet
+PU_CHICKPEA,4,7,10,quintal,Rabi irrigated; wilt resistant varieties
+PU_PIGEONPEA,3,6,9,quintal,Kharif; long duration varieties
+PU_LENTIL,3,5,8,quintal,Rabi; small-seeded types
+PU_MOONG,2,4,6,quintal,Short duration 60-65 days; kharif/summer
+PU_URAD,2,4,6,quintal,Kharif; 75-90 days
+OS_MUSTARD,4,7,10,quintal,Rabi; irrigated
+OS_SOYBEAN,5,8,12,quintal,Kharif rainfed; central India
+OS_GROUNDNUT,6,10,15,quintal,Pod yield; kharif or rabi
+VE_POTATO,40,70,100,quintal,Irrigated rabi; 90-120 days
+VE_ONION,40,70,100,quintal,Rabi main season; storage varieties
+VE_TOMATO,60,100,160,quintal,Open field; determinate hybrids
+VE_OKRA,20,35,50,quintal,Kharif or summer; multiple pickings
+VE_BRINJAL,40,70,100,quintal,Multiple pickings over 4-5 months
+VE_CABBAGE,40,70,100,quintal,Single harvest; 80-90 days
+VE_CAULIFLOWER,30,50,80,quintal,Single harvest; curd weight
+VE_CARROT,30,50,80,quintal,Rabi; sandy loam soils best
+VE_SPINACH,15,25,40,quintal,Multiple cuttings; short duration
+SP_TURMERIC,40,70,100,quintal,Fresh rhizome yield; 8-9 month crop
+SP_GINGER,30,50,80,quintal,Fresh rhizome; 8-9 months
+SP_CHILLI,15,25,40,quintal,Dry chilli weight; multiple pickings
+SP_GARLIC,15,25,40,quintal,Rabi; bulb yield
+SP_CUMIN,2,3.5,5,quintal,Rabi; arid zones
+CM_SUGARCANE,200,300,400,quintal,12-month plant crop; ratoon slightly less
+CM_COTTON,4,7,10,quintal,Lint equivalent; Bt cotton
+PR_CAPSICUM,40,70,100,quintal,Polyhouse; year-round production
+PR_TOMATO,80,140,200,quintal,Polyhouse; indeterminate hybrids
+FL_MARIGOLD,20,40,60,quintal,Loose flowers; multiple pickings
+FR_LEMON,15,30,50,quintal,Bearing trees 4+ years; citrus orchard
+FR_ACID_LIME,15,30,50,quintal,Bearing trees 4+ years; closer planting possible
+FR_DRAGONFRUIT,15,30,50,quintal,Bearing pillars 2+ years; high-density trellis
+FR_AMLA,20,40,60,quintal,Mature trees 6+ years; hardy orchard
+FR_BER,15,30,50,quintal,Mature trees 4+ years; arid-tolerant
+FR_LITCHI,10,20,40,quintal,Mature trees 7+ years; cluster bearing; climate-sensitive
+FR_GRAPES,40,80,120,quintal,Mature vines; table/wine grapes; trellis system
+FR_JAMUN,15,30,50,quintal,Mature trees; seasonal fruiting
+FR_COCONUT,40,80,120,nut_in_hundreds,Mature palms 6+ years; nuts per acre per year
+FR_APPLE,15,30,50,quintal,Mature trees; hill regions; high-density possible
+CE_BARLEY,8,14,20,quintal,Irrigated rabi; 6-row barley varieties
+CE_SORGHUM_FODDER,80,120,180,quintal,Green fodder yield; multi-cut system
+PU_PEA_DRY,3,5,8,quintal,Rabi; dry grain yield
+OS_SUNFLOWER,4,7,10,quintal,Hybrid sunflower; kharif/rabi
+OS_SESAME,2,3.5,5,quintal,Kharif rainfed; til varieties
+VE_RADISH,30,50,80,quintal,Short duration 25-40 days; quick turnover
+VE_CORIANDER_LEAF,10,20,30,quintal,Leaf yield; multiple cuttings possible
+VE_CUCUMBER_OPEN,30,50,80,quintal,Open field trailing type
+VE_BITTER_GOURD,20,35,55,quintal,Multiple pickings; trellis recommended
+VE_BOTTLE_GOURD,40,70,100,quintal,Trailing/pandal type; long harvest window
+VE_PUMPKIN,40,60,100,quintal,Hardy cucurbit; good storage life
+VE_WATERMELON,40,70,100,quintal,Summer crop; irrigated
+VE_MUSKMELON,25,45,70,quintal,Summer crop; irrigated; market timing critical
+VE_FRENCH_BEAN,15,25,40,quintal,Multiple pickings; bush type
+VE_GREEN_PEA,15,25,40,quintal,Fresh pod yield; rabi season
+SP_CORIANDER_SEED,2,4,6,quintal,Seed crop; rabi season
+SP_FENUGREEK,3,5,8,quintal,Seed yield; rabi; both leaf and seed use
+SP_FENNEL,3,5,8,quintal,Seed yield; rabi Gujarat/Rajasthan belt
+SP_AJWAIN,2,3.5,5,quintal,Seed yield; rabi dry belt
+CM_POTATO_SEED,35,60,90,quintal,Seed-grade tuber yield; quality premium
+CM_JUTE,8,12,18,quintal,Fibre yield; retting required
+CM_TEA,4,8,12,quintal,Made tea equivalent; mature bushes 5+ years
+CM_COFFEE,2,4,7,quintal,Clean coffee; arabica/robusta mix
+PR_CUCUMBER,60,100,150,quintal,Polyhouse; parthenocarpic hybrids; year-round
+PR_STRAWBERRY,15,30,50,quintal,Protected; 5-6 month season
+PR_LETTUCE,20,40,60,quintal,Protected; multiple cycles; fast turnover
+FL_ROSE,15,30,50,quintal,Cut flower stems; protected cultivation
+FL_GERBERA,10,20,35,quintal,Cut flowers; polyhouse required
+MU_OYSTER,20,40,60,quintal,5-6 cycles per year; indoor controlled
