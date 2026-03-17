@@ -3,19 +3,9 @@ import { useInView } from 'react-intersection-observer'
 
 const stepIcons = [
   'M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z', // map pin
+  'M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155', // chat bubbles
   'M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25z', // cpu
   'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z', // document
-]
-
-const agentPipeline = [
-  { label: 'Validate', agents: ['Input Validator'] },
-  { label: 'Filter', agents: ['Constraint Filter', 'Soil Filter'] },
-  {
-    label: 'Score',
-    agents: ['Soil Scorer', 'Water Scorer', 'Climate Scorer', 'Market Scorer', 'Risk Scorer', 'Financial Scorer'],
-  },
-  { label: 'Plan', agents: ['Crop Planner'] },
-  { label: 'Verify', agents: ['Agronomist Reviewer'] },
 ]
 
 const steps = [
@@ -49,74 +39,56 @@ const steps = [
   },
   {
     num: '02',
+    title: 'Follow-Up Questions',
+    body: 'GrowGrid asks smart follow-up questions to fill in the gaps — soil type, crop preferences, nearby market access, and recent crop history. This ensures every recommendation is tailored to your exact situation.',
+    visual: (
+      <div className="space-y-2">
+        {[
+          ['Soil Type', 'Black Cotton'],
+          ['Crop Preference', 'Open to suggestions'],
+          ['Market Access', 'Local mandi, 5 km'],
+          ['Previous Crops', 'Soybean, Wheat'],
+        ].map(([label, value], i) => (
+          <motion.div
+            key={label}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.6 + i * 0.1 }}
+            className="flex items-center justify-between rounded-lg border border-gray-200 bg-gray-50 px-4 py-2.5"
+          >
+            <span className="text-xs font-medium text-gray-500">{label}</span>
+            <span className="text-sm font-semibold text-forest">{value}</span>
+          </motion.div>
+        ))}
+      </div>
+    ),
+  },
+  {
+    num: '03',
     title: '11 Specialist Agents Build Your Plan',
     body: "GrowGrid runs your inputs through 11 agents in sequence. First, hard filters remove crops and practices that don't fit your constraints. Then, weighted scoring across 6 dimensions ranks what remains. Finally, an agronomist agent cross-checks every recommendation.",
     visual: (
-      <div className="space-y-3 py-1">
-        {/* Phase pipeline — arrows are siblings of phase nodes, not children */}
-        <div className="flex items-center">
-          {agentPipeline.flatMap((phase, i) => {
-            const nodes = [
-              <motion.div
-                key={phase.label}
-                initial={{ opacity: 0, scale: 0.85 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: 0.5 + i * 0.15 }}
-                className="flex flex-shrink-0 flex-col items-center gap-1.5"
-              >
-                <div className="relative flex h-10 w-10 items-center justify-center rounded-full border border-primary-400/50 bg-primary-400/15 text-xs font-bold text-primary-600">
-                  {phase.agents.length}
-                  {phase.agents.length > 1 && (
-                    <span className="absolute -right-1 -top-1 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-primary-500 text-[7px] font-bold leading-none text-white">
-                      ×
-                    </span>
-                  )}
-                </div>
-                <span className="text-[9px] font-semibold uppercase tracking-wide text-gray-500">
-                  {phase.label}
-                </span>
-              </motion.div>,
-            ]
-            if (i < agentPipeline.length - 1) {
-              nodes.push(
-                <motion.div
-                  key={`arrow-${i}`}
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: 0.65 + i * 0.15 }}
-                  className="mb-[18px] flex flex-1 items-center px-1"
-                >
-                  <svg width="100%" height="10" viewBox="0 0 32 10" preserveAspectRatio="none" fill="none">
-                    <line x1="0" y1="5" x2="24" y2="5" stroke="#86efac" strokeWidth="1.5" strokeDasharray="4 2" />
-                    <path d="M21 2l3.5 3-3.5 3" stroke="#86efac" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </motion.div>
-              )
-            }
-            return nodes
-          })}
-        </div>
-
-        {/* All 11 agent chips */}
-        <div className="flex flex-wrap gap-1.5 border-t border-gray-100 pt-3">
-          {agentPipeline.flatMap((phase, pi) =>
-            phase.agents.map((agent, ai) => (
-              <motion.span
-                key={agent}
-                initial={{ opacity: 0, y: 4 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.25, delay: 1.0 + (pi * 3 + ai) * 0.05 }}
-                className="rounded-full border border-primary-200 bg-primary-50 px-2.5 py-0.5 text-[10px] font-medium text-primary-700"
-              >
-                {agent}
-              </motion.span>
-            ))
-          )}
-        </div>
-
+      <div className="space-y-2">
+        {[
+          ['Validate', 'Input Validator'],
+          ['Filter', 'Constraint & Soil Filters'],
+          ['Score', '6 Scoring Agents'],
+          ['Plan', 'Crop Planner'],
+          ['Verify', 'Agronomist Reviewer'],
+        ].map(([phase, detail], i) => (
+          <motion.div
+            key={phase}
+            initial={{ opacity: 0, x: 10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: 0.6 + i * 0.1 }}
+            className="flex items-center justify-between rounded-lg border border-gray-200 bg-gray-50 px-4 py-2.5"
+          >
+            <span className="text-xs font-semibold uppercase tracking-wide text-primary-500">{phase}</span>
+            <span className="text-sm font-medium text-forest">{detail}</span>
+          </motion.div>
+        ))}
         <p className="text-right text-[10px] font-medium text-gray-400">
           11 agents · sequential execution
         </p>
@@ -124,7 +96,7 @@ const steps = [
     ),
   },
   {
-    num: '03',
+    num: '04',
     title: 'Receive Your 17-Section Farm Report',
     body: 'Your report covers: recommended farming practice, crop portfolio with area allocation, grow guides, 3-scenario financials, government scheme matches (like PM-KISAN, PMFBY, and KCC — Kisan Credit Card), risk matrix, field layout, and a month-by-month execution roadmap.',
     visual: (
