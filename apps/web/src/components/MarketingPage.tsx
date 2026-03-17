@@ -25,8 +25,6 @@ export function MarketingPage() {
       <Navbar />
       <HeroSection />
       <ProblemSection />
-      {/* white → cream */}
-      <div className="h-20" style={{ background: 'linear-gradient(to bottom, #FFFFFF, #F5F2EC)' }} />
       <HowItWorksSection />
       {/* cream → dark neutral */}
       <div className="h-20" style={{ background: 'linear-gradient(to bottom, #F5F2EC, #0C0D10)' }} />

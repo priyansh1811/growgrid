@@ -1,15 +1,15 @@
 const linkColumns = [
   {
     title: 'Platform',
-    links: ['How It Works', 'The Agents', 'The Report', 'Confidence Scoring'],
+    links: ['How It Works', 'The 11 Agents', 'Sample Report', 'Scoring Explained'],
   },
   {
     title: 'For Farmers',
-    links: ['Small Farms', 'Orchards & Plantations', 'New Landowners', 'Agri-Entrepreneurs'],
+    links: ['Small Farms (1–5 acres)', 'Orchards & Plantations', 'First-Time Farmers', 'Landowners & Investors'],
   },
   {
     title: 'Research',
-    links: ['Agent Architecture', 'Knowledge Base', 'Scoring Methodology', 'Academic Paper'],
+    links: ['Agent Architecture', 'Crop Database', 'Scoring Methodology', 'Open Source'],
   },
   {
     title: 'Legal',
@@ -32,7 +32,7 @@ export function Footer() {
               GrowGrid.ai
             </div>
             <p className="text-sm text-text-muted-dark">
-              Intelligent agricultural planning for India.
+              Free AI-powered farm planning for Indian agriculture.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
           <p className="text-xs text-text-muted-dark">
-            &copy; 2025 GrowGrid AI. Built in India, for India's farmers.
+            &copy; 2025 GrowGrid AI. Built in India for Indian agriculture.
           </p>
 
           {/* Social icons */}

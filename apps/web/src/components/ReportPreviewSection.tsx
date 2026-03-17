@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom'
 import { useInView } from 'react-intersection-observer'
 
 const chips = [
-  'Farm Profile', 'SWOT Analysis', 'Crop Portfolio', 'Agronomic Verification',
-  'Market Intelligence', 'Financial Plan', 'Water Resource Plan', 'Govt Schemes',
-  'Risk Matrix', 'Implementation Roadmap', '30/60/90 Actions', '+6 more',
+  'Farm Profile', 'SWOT Analysis', 'Crop Portfolio', 'Grow Guides',
+  'Agronomic Verification', 'Market Intelligence', 'Financial Plan (3 Scenarios)',
+  'Water Plan', 'Govt Schemes', 'Risk Matrix', 'Field Layout', 'Month-by-Month Roadmap',
 ]
 
 export function ReportPreviewSection() {
@@ -39,19 +39,19 @@ export function ReportPreviewSection() {
               The Advisory Report
             </p>
             <h2 className="mb-2 font-display text-3xl font-normal text-forest sm:text-4xl">
-              A report detailed enough
+              A 17-section professional report.
             </h2>
             <p className="mb-4 font-display text-3xl italic text-primary-500 sm:text-4xl">
-              to take to your bank.
+              Yours in minutes, for free.
             </p>
             <p className="mb-4 text-base leading-relaxed text-gray-600">
-              GrowGrid generates a professional 17-section advisory document — the kind
-              private agri-consultants charge ₹10,000–₹25,000 to produce. Structured
-              financial projections, risk matrices, govt scheme matches, and a complete
-              month-by-month implementation roadmap.
+              GrowGrid produces the kind of advisory document that private agri-consultants
+              charge ₹10,000–₹25,000 for. It includes your farm profile, SWOT analysis,
+              crop portfolio with grow guides, 3-scenario financial projections, government
+              scheme matches, a risk matrix, and a month-by-month execution roadmap.
             </p>
             <p className="mb-6 text-sm italic text-gray-500">
-              Detailed enough to support a KCC (Kisan Credit Card) loan application.
+              Structured enough to support a KCC (Kisan Credit Card) loan application at your bank.
             </p>
 
             {/* Chips */}
@@ -71,7 +71,7 @@ export function ReportPreviewSection() {
               className="rounded-full bg-accent-gold px-8 py-4 text-base font-semibold text-forest transition-all duration-300 hover:bg-accent-gold-light hover:translate-y-[-1px]"
               style={{ boxShadow: '0 8px 24px rgba(200,149,108,0.25)' }}
             >
-              Get My Free Report
+              Get My Free Farm Plan
             </button>
           </motion.div>
 

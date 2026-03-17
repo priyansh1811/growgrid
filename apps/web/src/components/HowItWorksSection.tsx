@@ -7,11 +7,22 @@ const stepIcons = [
   'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z', // document
 ]
 
+const agentPipeline = [
+  { label: 'Validate', agents: ['Input Validator'] },
+  { label: 'Filter', agents: ['Constraint Filter', 'Soil Filter'] },
+  {
+    label: 'Score',
+    agents: ['Soil Scorer', 'Water Scorer', 'Climate Scorer', 'Market Scorer', 'Risk Scorer', 'Financial Scorer'],
+  },
+  { label: 'Plan', agents: ['Crop Planner'] },
+  { label: 'Verify', agents: ['Agronomist Reviewer'] },
+]
+
 const steps = [
   {
     num: '01',
     title: 'Tell Us About Your Farm',
-    body: 'Enter your state, district, land area, water source, budget, labour availability, soil type, primary goal, and risk tolerance. The more you share, the more precise your plan.',
+    body: 'Share your location, land area, water availability, irrigation source, budget, labour, farming goal, time horizon, and risk tolerance. These 9 inputs are all GrowGrid needs.',
     visual: (
       <div className="space-y-2">
         {[
@@ -38,48 +49,93 @@ const steps = [
   },
   {
     num: '02',
-    title: '11 Specialist Agents Analyse Your Profile',
-    body: "GrowGrid's pipeline of 11 AI agents runs sequentially — each one handling a specialist task. Hard filters eliminate what won't work. Weighted scoring finds the best fit. An Agronomist Agent verifies every claim with real web evidence.",
+    title: '11 Specialist Agents Build Your Plan',
+    body: "GrowGrid runs your inputs through 11 agents in sequence. First, hard filters remove crops and practices that don't fit your constraints. Then, weighted scoring across 6 dimensions ranks what remains. Finally, an agronomist agent cross-checks every recommendation.",
     visual: (
-      <div className="flex items-center gap-2 overflow-hidden py-4">
-        {['Validate', 'Classify', 'Match', 'Select', 'Verify'].map((label, i) => (
-          <motion.div
-            key={label}
-            initial={{ opacity: 0.3 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: 0.6 + i * 0.3 }}
-            className="flex flex-col items-center gap-1.5"
-          >
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-primary-400/40 bg-primary-400/15 text-xs font-bold text-primary-500">
-              {i + 1}
-            </div>
-            <span className="text-[10px] font-medium text-gray-500">{label}</span>
-            {i < 4 && (
-              <div className="absolute translate-x-[38px]">
-                <svg width="16" height="2" className="text-primary-400/40">
-                  <line x1="0" y1="1" x2="16" y2="1" stroke="currentColor" strokeWidth="2" strokeDasharray="4 3" />
-                </svg>
-              </div>
-            )}
-          </motion.div>
-        ))}
+      <div className="space-y-3 py-1">
+        {/* Phase pipeline — arrows are siblings of phase nodes, not children */}
+        <div className="flex items-center">
+          {agentPipeline.flatMap((phase, i) => {
+            const nodes = [
+              <motion.div
+                key={phase.label}
+                initial={{ opacity: 0, scale: 0.85 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.35, delay: 0.5 + i * 0.15 }}
+                className="flex flex-shrink-0 flex-col items-center gap-1.5"
+              >
+                <div className="relative flex h-10 w-10 items-center justify-center rounded-full border border-primary-400/50 bg-primary-400/15 text-xs font-bold text-primary-600">
+                  {phase.agents.length}
+                  {phase.agents.length > 1 && (
+                    <span className="absolute -right-1 -top-1 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-primary-500 text-[7px] font-bold leading-none text-white">
+                      ×
+                    </span>
+                  )}
+                </div>
+                <span className="text-[9px] font-semibold uppercase tracking-wide text-gray-500">
+                  {phase.label}
+                </span>
+              </motion.div>,
+            ]
+            if (i < agentPipeline.length - 1) {
+              nodes.push(
+                <motion.div
+                  key={`arrow-${i}`}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: 0.65 + i * 0.15 }}
+                  className="mb-[18px] flex flex-1 items-center px-1"
+                >
+                  <svg width="100%" height="10" viewBox="0 0 32 10" preserveAspectRatio="none" fill="none">
+                    <line x1="0" y1="5" x2="24" y2="5" stroke="#86efac" strokeWidth="1.5" strokeDasharray="4 2" />
+                    <path d="M21 2l3.5 3-3.5 3" stroke="#86efac" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </motion.div>
+              )
+            }
+            return nodes
+          })}
+        </div>
+
+        {/* All 11 agent chips */}
+        <div className="flex flex-wrap gap-1.5 border-t border-gray-100 pt-3">
+          {agentPipeline.flatMap((phase, pi) =>
+            phase.agents.map((agent, ai) => (
+              <motion.span
+                key={agent}
+                initial={{ opacity: 0, y: 4 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.25, delay: 1.0 + (pi * 3 + ai) * 0.05 }}
+                className="rounded-full border border-primary-200 bg-primary-50 px-2.5 py-0.5 text-[10px] font-medium text-primary-700"
+              >
+                {agent}
+              </motion.span>
+            ))
+          )}
+        </div>
+
+        <p className="text-right text-[10px] font-medium text-gray-400">
+          11 agents · sequential execution
+        </p>
       </div>
     ),
   },
   {
     num: '03',
-    title: 'Receive Your Complete Farm Advisory',
-    body: 'Your plan includes: recommended practice, crop portfolio, financial projections, risk matrix, govt scheme matches, and a month-by-month implementation roadmap. Every decision is explained. Nothing is a black box.',
+    title: 'Receive Your 17-Section Farm Report',
+    body: 'Your report covers: recommended farming practice, crop portfolio with area allocation, grow guides, 3-scenario financials, government scheme matches (like PM-KISAN, PMFBY, and KCC — Kisan Credit Card), risk matrix, field layout, and a month-by-month execution roadmap.',
     visual: (
       <div className="space-y-2">
         {[
-          'Farm Profile',
-          'Crop Portfolio',
-          'Financial Plan',
+          'Farm Profile & SWOT',
+          'Crop Portfolio & Grow Guides',
+          'Financial Projections',
           'Risk Matrix',
-          'Govt Schemes',
-          '30/60/90 Day Actions',
+          'Govt Scheme Matches',
+          'Month-by-Month Roadmap',
         ].map((s, i) => (
           <motion.div
             key={s}
@@ -121,7 +177,7 @@ export function HowItWorksSection() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="mb-16 font-display text-4xl font-normal leading-tight text-forest sm:text-5xl"
         >
-          From farm inputs to full advisory plan.
+          Answer 9 questions. Get a complete farm plan.
           <br />
           <span className="font-display italic text-primary-500">In minutes.</span>
         </motion.h2>

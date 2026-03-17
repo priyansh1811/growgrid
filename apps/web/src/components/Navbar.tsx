@@ -29,8 +29,8 @@ export function Navbar() {
 
   const links = [
     { label: 'How It Works', href: '#how-it-works' },
-    { label: 'The Agents', href: '#agents' },
-    { label: 'Research', href: '#report' },
+    { label: 'How It\'s Built', href: '#agents' },
+    { label: 'Sample Report', href: '#report' },
   ]
 
   const scrollTo = (href: string) => {
@@ -41,31 +41,42 @@ export function Navbar() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        scrolled ? 'bg-[#0a0d0a]/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}
+      className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8"
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div
+        className={`mx-auto flex max-w-7xl items-center justify-between rounded-full border px-4 py-3 transition-all duration-300 sm:px-5 ${
+          scrolled
+            ? 'border-white/12 bg-[#071018]/78 shadow-[0_20px_60px_rgba(0,0,0,0.28)] backdrop-blur-xl'
+            : 'border-white/10 bg-white/[0.05] backdrop-blur-md'
+        }`}
+      >
         {/* Logo */}
         <a
           href="#"
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-          className="flex items-center gap-1.5 text-lg font-bold text-white"
+          className="flex items-center gap-2.5 text-white"
         >
-          <LeafIcon className="text-accent-gold" />
-          <span>GrowGrid<span className="text-text-muted-dark">.ai</span></span>
+          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.06]">
+            <LeafIcon className="text-[#dcc8a8]" />
+          </span>
+          <span className="flex flex-col leading-none">
+            <span className="text-[15px] font-semibold tracking-[0.08em] text-white">GrowGrid</span>
+            <span className="mt-1 text-[10px] font-medium uppercase tracking-[0.28em] text-white/42">
+              AI Farm Planning
+            </span>
+          </span>
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-2 rounded-full border border-white/8 bg-black/10 px-2 py-1 md:flex">
           {links.map((l) => (
             <button
               key={l.href}
               onClick={() => scrollTo(l.href)}
-              className="text-sm font-medium text-white/50 transition-colors hover:text-white/80"
+              className="rounded-full px-4 py-2 text-sm font-medium text-white/54 transition-colors hover:bg-white/[0.06] hover:text-white/86"
             >
               {l.label}
             </button>
@@ -74,20 +85,23 @@ export function Navbar() {
 
         {/* Desktop CTAs */}
         <div className="hidden items-center gap-4 md:flex">
-          <button className="text-sm font-medium text-white/50 transition-colors hover:text-white/80">
+          <button className="text-sm font-medium text-white/54 transition-colors hover:text-white/84">
             Sign In
           </button>
           <button
             onClick={() => navigate('/plan')}
-            className="rounded-full bg-accent-gold px-6 py-2 text-sm font-semibold text-forest transition-all duration-300 hover:bg-accent-gold-light"
+            className="rounded-full bg-[#e7dbc6] px-6 py-2.5 text-sm font-semibold text-[#10211a] transition-transform duration-300 hover:-translate-y-0.5"
+            style={{
+              boxShadow: '0 16px 40px rgba(231, 219, 198, 0.16), 0 4px 16px rgba(0, 0, 0, 0.18)',
+            }}
           >
-            Get Free Plan
+            Get Your Free Plan
           </button>
         </div>
 
         {/* Mobile hamburger */}
         <button
-          className="flex flex-col gap-1.5 md:hidden"
+          className="flex flex-col gap-1.5 rounded-full border border-white/10 bg-white/[0.05] px-3 py-2 md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -114,14 +128,14 @@ export function Navbar() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden bg-[#0a0d0a]/95 backdrop-blur-md md:hidden"
+            className="absolute inset-x-4 top-[calc(100%+0.75rem)] overflow-hidden rounded-[28px] border border-white/10 bg-[#071018]/88 shadow-[0_22px_60px_rgba(0,0,0,0.24)] backdrop-blur-xl md:hidden sm:inset-x-6 lg:inset-x-8"
           >
-            <div className="flex flex-col gap-2 px-4 pb-6 pt-2">
+            <div className="flex flex-col gap-2 px-4 pb-5 pt-4">
               {links.map((l) => (
                 <button
                   key={l.href}
                   onClick={() => scrollTo(l.href)}
-                  className="py-2 text-left text-sm font-medium text-white/60 hover:text-white/90"
+                  className="rounded-2xl px-3 py-2.5 text-left text-sm font-medium text-white/66 transition-colors hover:bg-white/[0.05] hover:text-white"
                 >
                   {l.label}
                 </button>
@@ -129,9 +143,9 @@ export function Navbar() {
               <hr className="border-white/10" />
               <button
                 onClick={() => { setMenuOpen(false); navigate('/plan') }}
-                className="mt-2 rounded-full bg-accent-gold px-6 py-3 text-center text-sm font-semibold text-forest"
+                className="mt-2 rounded-full bg-[#e7dbc6] px-6 py-3 text-center text-sm font-semibold text-[#10211a]"
               >
-                Get Free Plan
+                Get Your Free Plan
               </button>
             </div>
           </motion.div>

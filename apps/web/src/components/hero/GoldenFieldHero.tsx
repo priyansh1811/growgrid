@@ -3,34 +3,45 @@ import { useRef } from 'react'
 import { useCountUp } from '../../hooks/useCountUp'
 import { useHeroParallax } from '../../hooks/useHeroParallax'
 
-/* ------------------------------------------------------------------ */
-/*  Stats data                                                         */
-/* ------------------------------------------------------------------ */
-
 const stats = [
-  { target: 1200, suffix: '+', prefix: '', label: 'Plans Generated', icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z' },
-  { target: 14, suffix: '', prefix: '', label: 'States Covered', icon: 'M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z' },
-  { target: 11, suffix: '', prefix: '', label: 'AI Agents', icon: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z' },
-  { target: 0, suffix: '', prefix: '₹', label: 'Consulting Fee', icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
+  { target: 86, suffix: '', prefix: '', label: 'Crops in Database' },
+  { target: 25, suffix: '', prefix: '', label: 'Indian States' },
+  { target: 18, suffix: '', prefix: '', label: 'Farming Practices' },
+  { target: 0, suffix: '', prefix: '₹', label: 'Consulting Fee' },
 ]
 
-/* ------------------------------------------------------------------ */
-/*  Stat metric with count-up animation + glass card                   */
-/* ------------------------------------------------------------------ */
+const capabilityCards = [
+  {
+    title: 'Every decision explained',
+    body: 'Each crop is scored across 6 dimensions — water fit, soil fit, season fit, goal fit, labour fit, and risk fit. You see the full breakdown.',
+  },
+  {
+    title: 'Built-in financial planning',
+    body: 'Your plan includes 3-scenario financial projections (conservative, base, optimistic) with revenue, costs, and net profit estimates.',
+  },
+  {
+    title: 'Ready-to-follow roadmap',
+    body: 'The report ends with a 30/60/90-day action plan — soil testing, input procurement, planting, harvest prep — all dated to your season.',
+  },
+]
+
+const operatingLane = [
+  { step: '01', title: 'Farm intake', body: 'You share 9 details: location, land area, water, irrigation, budget, labour, goal, time horizon, and risk tolerance.' },
+  { step: '02', title: 'Analysis and scoring', body: '11 specialist agents check feasibility, match crops, model finances, and assess risks.' },
+  { step: '03', title: 'Actionable report', body: 'A 17-section advisory report — crops, finances, risks, govt schemes, and an execution roadmap.' },
+]
 
 function StatMetric({
   target,
   prefix,
   suffix,
   label,
-  icon,
   delay,
 }: {
   target: number
   prefix: string
   suffix: string
   label: string
-  icon: string
   delay: number
 }) {
   const { ref, count } = useCountUp(target, 2)
@@ -38,171 +49,276 @@ function StatMetric({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 30, scale: 0.95 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] }}
-      className="stat-glass group flex flex-col items-center rounded-2xl px-4 py-6 text-center transition-all duration-300 hover:border-white/20 sm:px-6 sm:py-8"
+      className="surface-light rounded-[28px] p-5 sm:p-6"
     >
-      <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-white/5 transition-colors group-hover:bg-primary-500/10">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(107,166,126,0.7)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d={icon} />
-        </svg>
-      </div>
-      <p className="text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#617261]">
+        Platform
+      </p>
+      <p className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-[#16231b] sm:text-5xl">
         {prefix}
         {count}
         {suffix}
       </p>
-      <p className="mt-2 text-[11px] font-medium uppercase tracking-wider text-white/55 sm:text-xs">
+      <p className="mt-2 text-sm font-medium uppercase tracking-[0.18em] text-[#445446]">
         {label}
       </p>
     </motion.div>
   )
 }
 
-/* ------------------------------------------------------------------ */
-/*  Component                                                          */
-/* ------------------------------------------------------------------ */
-
 export function GoldenFieldHero() {
   const containerRef = useRef<HTMLDivElement>(null!)
 
-  const cloudsThreeParallax = useHeroParallax(containerRef, {
-    speedX: -0.6,
-    speedY: -0.8,
+  const cloudParallax = useHeroParallax(containerRef, {
+    speedX: 0.18,
+    speedY: -0.2,
+    smooth: true,
+    stiffness: 46,
+    damping: 20,
   })
-  const cloudsTwoParallax = useHeroParallax(containerRef, {
-    speedX: 0.6,
-    speedY: -0.9,
+  const fieldParallax = useHeroParallax(containerRef, {
+    speedY: 0.28,
+    smooth: true,
+    stiffness: 44,
+    damping: 18,
   })
-  const greenlandParallax = useHeroParallax(containerRef, { speedY: 0.8 })
 
   return (
     <section
       ref={containerRef}
-      className="grain relative h-screen overflow-hidden"
-      style={{
-        background:
-          'linear-gradient(to bottom, #0a0f0a 0%, #0c1a0e 20%, #142a16 40%, #1e3e1e 60%, #2d5a2a 80%, #3a6a35 100%)',
-      }}
+      className="relative overflow-hidden bg-[#f5efe5] py-24 text-[#16231b] sm:py-28 lg:py-32"
     >
-      {/* Clouds three — upper area, drift LEFT (z-10) */}
-      <motion.img
-        src="/images/hero/clouds-three.png"
-        alt=""
-        aria-hidden="true"
-        draggable={false}
-        loading="lazy"
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 h-28"
         style={{
-          x: cloudsThreeParallax.x,
-          y: cloudsThreeParallax.y,
-          willChange: 'transform',
+          background:
+            'linear-gradient(180deg, rgba(5,10,16,1) 0%, rgba(5,10,16,0.2) 60%, rgba(245,239,229,0) 100%)',
         }}
-        className="pointer-events-none absolute left-[-5%] top-[-35%] z-10 w-[110%] select-none mix-blend-screen opacity-90 md:animate-none max-md:animate-[cloud-drift-left_12s_ease-in-out_infinite]"
       />
 
-      {/* Clouds two — middle area, drift RIGHT (z-15) */}
-      <motion.img
-        src="/images/hero/clouds-two.png"
-        alt=""
-        aria-hidden="true"
-        draggable={false}
-        loading="lazy"
-        style={{
-          x: cloudsTwoParallax.x,
-          y: cloudsTwoParallax.y,
-          willChange: 'transform',
-        }}
-        className="pointer-events-none absolute right-[-5%] top-[-45%] z-[15] w-[110%] select-none mix-blend-screen opacity-85 md:animate-none max-md:animate-[cloud-drift-right_14s_ease-in-out_infinite]"
-      />
-
-      {/* Stats content (z-20) */}
-      <div className="relative z-20 flex h-full flex-col items-center justify-center px-4">
-        {/* Section headline */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-3 text-center"
-        >
-          <h2 className="font-display text-3xl font-normal leading-tight text-white sm:text-4xl md:text-5xl">
-            Trusted across{' '}
-            <span
-              style={{
-                color: 'transparent',
-                backgroundImage: 'linear-gradient(90deg, #93C5A4, #6BA67E, #4A8C62)',
-                backgroundClip: 'text',
-                WebkitBackgroundClip: 'text',
-              }}
-            >
-              Indian farmland
-            </span>
-          </h2>
-        </motion.div>
-
-        {/* Divider */}
-        <motion.div
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-4 h-px w-24 origin-center"
-          style={{ background: 'linear-gradient(90deg, transparent, rgba(107,166,126,0.45), transparent)' }}
+      <div className="pointer-events-none absolute inset-0">
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'radial-gradient(circle at 14% 20%, rgba(193, 174, 135, 0.18) 0%, transparent 30%), radial-gradient(circle at 82% 12%, rgba(137, 171, 118, 0.18) 0%, transparent 26%), linear-gradient(180deg, rgba(255,255,255,0.72) 0%, rgba(245,239,229,0.92) 52%, rgba(241,232,217,1) 100%)',
+          }}
         />
+        <motion.img
+          src="/images/hero/clouds-two.png"
+          alt=""
+          aria-hidden="true"
+          draggable={false}
+          loading="lazy"
+          style={{
+            x: cloudParallax.x,
+            y: cloudParallax.y,
+            willChange: 'transform',
+          }}
+          className="absolute right-[-8%] top-[-34%] w-[116%] select-none opacity-30 mix-blend-soft-light"
+        />
+        <motion.img
+          src="/images/hero/wheat-field.png"
+          alt=""
+          aria-hidden="true"
+          draggable={false}
+          loading="lazy"
+          style={{ y: fieldParallax.y, willChange: 'transform' }}
+          className="absolute bottom-[-6%] right-[-8%] w-[88%] max-w-[1180px] select-none opacity-78"
+        />
+      </div>
 
-        {/* Description */}
-        <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="mx-auto mb-10 max-w-xl text-center text-sm leading-relaxed text-white/55 sm:text-base"
-        >
-          An explainable, multi-agent system that recommends what to grow, why,
-          and how — backed by data, verified by AI.
-        </motion.p>
+      {/* Full-width decorative branch */}
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        className="pointer-events-none absolute left-1/2 top-0 z-0 h-16 w-screen -translate-x-1/2 overflow-visible sm:h-20"
+      >
+        <img
+          src="/images/hero/long-branch.png"
+          alt=""
+          aria-hidden="true"
+          draggable={false}
+          loading="lazy"
+          className="absolute left-[-745px] top-[210%] w-[80%] max-w-none -translate-y-[46%] select-none opacity-95"
+        />
+      </motion.div>
 
-        {/* Stats row */}
-        <div className="grid w-full max-w-4xl grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4">
-          {stats.map((s, i) => (
-            <StatMetric key={s.label} {...s} delay={0.1 + i * 0.1} />
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-end lg:gap-16">
+          <div className="max-w-2xl pt-10 sm:pt-14">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#567257]"
+            >
+              How it comes together
+            </motion.p>
+
+            <motion.h2
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-4 max-w-xl font-display text-4xl leading-tight tracking-[-0.04em] text-[#16231b] sm:text-5xl lg:text-6xl"
+            >
+              From your farm details to a plan you can act on.
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 22 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-6 max-w-xl text-base leading-8 text-[#445446] sm:text-lg"
+            >
+              GrowGrid doesn't just suggest crops. It checks what's feasible for your land,
+              scores every option, builds a financial model, and lays out a month-by-month
+              execution plan.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.24, ease: [0.16, 1, 0.3, 1] }}
+              className="surface-light mt-10 rounded-[30px] p-6 sm:p-7"
+            >
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#617261]">
+                Three steps to your plan
+              </p>
+
+              <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                {operatingLane.map((item) => (
+                  <div
+                    key={item.step}
+                    className="rounded-2xl border border-black/6 bg-white/72 p-4"
+                  >
+                    <p className="text-xs font-semibold tracking-[0.24em] text-[#6b7b6a]">
+                      {item.step}
+                    </p>
+                    <p className="mt-3 text-base font-semibold text-[#16231b]">
+                      {item.title}
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-[#556455]">
+                      {item.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            {capabilityCards.map((card, index) => (
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.72,
+                  delay: 0.1 + index * 0.08,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                className="surface-light rounded-[28px] p-6"
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <p className="text-lg font-semibold text-[#16231b]">{card.title}</p>
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#eef4e8] text-[#4a6a47]">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.9"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+                <p className="mt-4 text-sm leading-7 text-[#556455]">{card.body}</p>
+              </motion.div>
+            ))}
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.72, delay: 0.34, ease: [0.16, 1, 0.3, 1] }}
+              className="surface-light overflow-hidden rounded-[28px] p-3"
+            >
+              <div className="relative h-full min-h-[240px] overflow-hidden rounded-[22px] border border-black/6 bg-[#0f1713] shadow-[0_24px_60px_rgba(7,12,9,0.16)]">
+                <video
+                  src="/videos/small.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full object-contain object-center"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,23,19,0.08),rgba(15,23,19,0.48))]" />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.72, delay: 0.42, ease: [0.16, 1, 0.3, 1] }}
+              className="surface-light rounded-[28px] p-6 md:col-span-2"
+            >
+              <div className="flex flex-col gap-4 border-b border-black/6 pb-5 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#617261]">
+                    What makes this different
+                  </p>
+                  <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-[#16231b]">
+                    Database-first, not black-box AI.
+                  </h3>
+                </div>
+                <p className="max-w-sm text-sm leading-6 text-[#556455]">
+                  Most AI tools generate answers from language models alone. GrowGrid uses a
+                  curated database of 86 crops, 18 practices, and 25 states as the primary
+                  engine. AI is used only for verification.
+                </p>
+              </div>
+
+              <div className="mt-5 grid gap-3 sm:grid-cols-3">
+                {[
+                  'Hard filters eliminate options that don\'t fit your land, water, or budget — before any scoring begins.',
+                  'Every crop is scored with weighted formulas across 6 dimensions. No hidden logic.',
+                  'An AI verifier cross-checks recommendations with real agronomic sources as a final safety layer.',
+                ].map((line) => (
+                  <div
+                    key={line}
+                    className="rounded-2xl border border-black/6 bg-white/75 px-4 py-4 text-sm leading-6 text-[#445446]"
+                  >
+                    {line}
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          {stats.map((stat, index) => (
+            <StatMetric key={stat.label} {...stat} delay={0.18 + index * 0.08} />
           ))}
         </div>
       </div>
-
-      {/* Greenland — bottom anchor (z-5) */}
-      <motion.img
-        src="/images/hero/greenland.png"
-        alt=""
-        aria-hidden="true"
-        draggable={false}
-        loading="lazy"
-        style={{ y: greenlandParallax.y, willChange: 'transform' }}
-        className="pointer-events-none absolute bottom-0 left-0 z-[5] w-full select-none object-cover object-bottom"
-      />
-
-      {/* Subtle glow behind stats */}
-      <div className="pointer-events-none absolute inset-0 z-[1]">
-        <div
-          className="absolute left-1/2 top-[45%] -translate-x-1/2 -translate-y-1/2 rounded-full"
-          style={{
-            width: '700px',
-            height: '400px',
-            background:
-              'radial-gradient(ellipse, rgba(107,166,126,0.05) 0%, transparent 70%)',
-          }}
-        />
-      </div>
-
-      {/* Gradient bridge to next section */}
-      <div
-        className="absolute bottom-0 left-0 z-[25] h-32 w-full"
-        style={{
-          background: 'linear-gradient(to bottom, transparent, #FFFFFF)',
-        }}
-      />
     </section>
   )
 }

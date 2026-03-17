@@ -11,6 +11,53 @@ body {
   @apply bg-surface-50 text-slate-800 antialiased;
 }
 
+.hero-grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 140px 140px;
+  mask-image: radial-gradient(circle at center, black 32%, transparent 82%);
+  -webkit-mask-image: radial-gradient(circle at center, black 32%, transparent 82%);
+}
+
+.hero-panel {
+  background: linear-gradient(180deg, rgba(9, 17, 24, 0.72) 0%, rgba(9, 17, 24, 0.44) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 28px 100px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(26px);
+  -webkit-backdrop-filter: blur(26px);
+}
+
+.surface-light {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.64) 100%);
+  border: 1px solid rgba(17, 25, 19, 0.08);
+  box-shadow:
+    0 20px 55px rgba(72, 54, 28, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+
+.surface-sheen {
+  position: relative;
+  isolation: isolate;
+}
+
+.surface-sheen::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: linear-gradient(120deg, transparent 18%, rgba(255, 255, 255, 0.12) 45%, transparent 70%);
+  opacity: 0;
+  transform: translateX(-35%);
+  animation: panel-sheen 9s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* ===== Grain texture overlay ===== */
 .grain::before {
   content: '';
@@ -96,6 +143,12 @@ body {
 @keyframes hero-ambient-glow {
   0%, 100% { opacity: 0.4; transform: scale(1); }
   50% { opacity: 0.55; transform: scale(1.02); }
+}
+
+@keyframes panel-sheen {
+  0%, 100% { opacity: 0; transform: translateX(-35%); }
+  16% { opacity: 0.16; }
+  34% { opacity: 0; transform: translateX(35%); }
 }
 
 .hero-ambient-glow {

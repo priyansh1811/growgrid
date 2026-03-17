@@ -3,17 +3,17 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 const agents = [
-  { num: 1, abbr: 'CL', name: 'Clarification', detail: 'Asks follow-up questions to resolve ambiguity before analysis begins.' },
-  { num: 2, abbr: 'VA', name: 'Validation', detail: 'Checks feasibility of land area, budget, water, and labour combinations.' },
-  { num: 3, abbr: 'GC', name: 'Goal Classifier', detail: 'Maps "maximize profit" into weighted dimensions like ROI, risk, and water efficiency.' },
-  { num: 4, abbr: 'PR', name: 'Practice Recommender', detail: 'Chooses between open field, drip horticulture, polyhouse, orchard, etc.' },
-  { num: 5, abbr: 'CR', name: 'Crop Recommender', detail: 'Scores crops across 6 dimensions and selects the best-fit portfolio.' },
-  { num: 6, abbr: 'AV', name: 'Agronomist Verifier', detail: 'Cross-references every crop recommendation with live agronomic data.' },
-  { num: 7, abbr: 'MI', name: 'Market Intelligence', detail: 'Finds nearby mandis, historical price data, and farmer producer organizations.' },
-  { num: 8, abbr: 'EC', name: 'Economist Agent', detail: 'Generates 3-scenario financials: conservative, base, and optimistic.' },
-  { num: 9, abbr: 'WP', name: 'Water Planner', detail: 'Calculates water needs by crop, month, and irrigation method.' },
-  { num: 10, abbr: 'GS', name: 'Govt Schemes', detail: 'Finds PM-KISAN, PMFBY, state subsidies, and KCC eligibility.' },
-  { num: 11, abbr: 'RC', name: 'Report Composer', detail: 'Compiles the final report with all agent outputs, formatted for action.' },
+  { num: 1, abbr: 'CL', name: 'Clarification', detail: 'Checks if any of your 9 inputs need clarification before analysis starts.' },
+  { num: 2, abbr: 'VA', name: 'Validation', detail: 'Confirms your land, budget, water, and labour combination is realistic and viable.' },
+  { num: 3, abbr: 'GC', name: 'Goal Classifier', detail: 'Translates your farming goal (e.g. "maximize profit" or "stable income") into scoring weights for crop selection.' },
+  { num: 4, abbr: 'PR', name: 'Practice Recommender', detail: 'Picks the best farming practice from 18 options (open field, drip horticulture, polyhouse, orchard, etc.) based on your constraints.' },
+  { num: 5, abbr: 'CR', name: 'Crop Recommender', detail: 'Scores crops from a database of 86 across 6 dimensions (water, soil, season, goal, labour, risk) and picks the best-fit portfolio.' },
+  { num: 6, abbr: 'AV', name: 'Agronomist Verifier', detail: 'Uses AI + web search to cross-check each recommended crop against real agronomic sources.' },
+  { num: 7, abbr: 'MI', name: 'Market Intelligence', detail: 'Identifies nearby mandis (wholesale markets), recent price trends, and farmer producer organisations for your crops.' },
+  { num: 8, abbr: 'EC', name: 'Economist Agent', detail: 'Builds 3-scenario financial projections — conservative, base, and optimistic — with revenue, costs, and net profit.' },
+  { num: 9, abbr: 'WP', name: 'Water Planner', detail: 'Estimates water demand by crop, month, and irrigation type — and flags shortfalls early.' },
+  { num: 10, abbr: 'GS', name: 'Govt Schemes', detail: 'Matches you to relevant government schemes — PM-KISAN (income support), PMFBY (crop insurance), KCC (Kisan Credit Card loans), and state subsidies.' },
+  { num: 11, abbr: 'RC', name: 'Report Composer', detail: 'Assembles the full 17-section advisory report from all agent outputs, ready to read and act on.' },
 ]
 
 export function AgentPipelineSection() {
@@ -30,7 +30,7 @@ export function AgentPipelineSection() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="mb-4 text-center text-sm font-semibold tracking-wider text-primary-300 uppercase"
         >
-          The Engine
+          Under the hood
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -38,9 +38,9 @@ export function AgentPipelineSection() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="mb-4 text-center font-display text-4xl font-normal leading-tight text-white sm:text-5xl"
         >
-          11 specialist agents.
+          11 agents, each with one job.
           <br />
-          <span className="font-display italic text-primary-300">One complete farm plan.</span>
+          <span className="font-display italic text-primary-300">Together, one complete plan.</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -48,8 +48,9 @@ export function AgentPipelineSection() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto mb-16 max-w-3xl text-center text-lg text-[#8A8F98] md:text-xl"
         >
-          Each agent handles exactly one job — and passes its enriched output to the next.
-          No black boxes. No hallucinated recommendations. Every decision is traceable.
+          Your inputs flow through 11 agents in sequence. Each agent handles one specific task —
+          validation, crop scoring, financial modelling, risk analysis — and passes its output to the
+          next. Every step is traceable.
         </motion.p>
 
         {/* Pipeline — horizontal scroll on mobile */}

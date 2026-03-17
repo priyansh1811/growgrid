@@ -51,9 +51,9 @@ export function CTASection() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="mb-6 font-display text-5xl font-normal leading-tight text-white sm:text-6xl md:text-7xl"
         >
-          Your best farm plan
+          Your farm plan is
           <br />
-          starts{' '}
+          ready{' '}
           <span
             className="font-display italic"
             style={{
@@ -63,7 +63,7 @@ export function CTASection() {
               WebkitBackgroundClip: 'text',
             }}
           >
-            here.
+            when you are.
           </span>
         </motion.h2>
 
@@ -75,8 +75,8 @@ export function CTASection() {
           transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto mb-10 max-w-2xl text-lg text-white/60 md:text-xl"
         >
-          Join farmers and landowners across 14 states making smarter,
-          data-driven decisions with GrowGrid AI.
+          Answer 9 questions about your land. Get a complete advisory report — crops,
+          finances, risks, government schemes, and a month-by-month plan. Completely free.
         </motion.p>
 
         {/* Buttons */}
@@ -102,7 +102,7 @@ export function CTASection() {
             }
             className="rounded-full border border-white/15 px-10 py-5 text-lg font-medium text-white/70 transition-all duration-300 hover:border-white/30 hover:bg-white/5 hover:text-white/90"
           >
-            Explore the Agent Pipeline
+            See how GrowGrid works
           </button>
         </motion.div>
       </div>

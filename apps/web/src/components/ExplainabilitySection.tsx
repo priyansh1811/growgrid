@@ -76,24 +76,25 @@ export function ExplainabilitySection() {
             className="flex-1"
           >
             <p className="mb-3 text-sm font-semibold tracking-wider text-primary-500 uppercase">
-              Explainable by Design
+              Transparency
             </p>
             <h2 className="mb-2 font-display text-3xl font-normal text-forest sm:text-4xl">
-              We don't just recommend.
+              Every crop gets a score.
             </h2>
             <p className="mb-4 font-display text-3xl italic text-primary-500 sm:text-4xl">
-              We explain every decision.
+              Every score is explained.
             </p>
             <p className="mb-6 max-w-md text-base leading-relaxed text-gray-600">
-              Every crop that makes it into your plan has a score. Every dimension —
-              water fit, soil fit, goal fit, labour fit, risk fit — is calculated
-              transparently. You can see exactly why a recommendation was made.
+              GrowGrid scores every crop across 6 dimensions: how well it fits your
+              water supply, soil type, season window, farming goal, available labour,
+              and risk tolerance. The scores are shown in your report so you can see
+              exactly why each crop was chosen — or not.
             </p>
             <ul className="space-y-2">
               {[
-                '6-dimensional weighted scoring for every crop',
-                'Confidence level with contributing factors shown',
-                'Evidence-backed agronomic claims per crop',
+                'Each crop scored on water, soil, season, goal, labour, and risk fit',
+                'Overall confidence score with a breakdown of each dimension',
+                'Agronomist agent verifies claims using real web sources',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
                   <span className="mt-0.5 text-primary-500"><CheckIcon /></span>
@@ -112,7 +113,7 @@ export function ExplainabilitySection() {
           >
             <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-lg sm:p-8">
               <p className="mb-1 text-xs font-medium text-gray-500">
-                Why Tomato was recommended
+                Why Tomato was selected for your plan
               </p>
               <p className="mb-5 text-3xl font-bold text-forest">
                 8.4 <span className="text-base font-normal text-gray-400">/ 10</span>
@@ -161,24 +162,25 @@ export function ExplainabilitySection() {
             className="flex-1"
           >
             <p className="mb-3 text-sm font-semibold tracking-wider text-primary-500 uppercase">
-              Rejection Reasoning
+              What didn't make the cut
             </p>
             <h2 className="mb-2 font-display text-3xl font-normal text-forest sm:text-4xl">
-              See what was filtered out.
+              Rejected options are listed too.
             </h2>
             <p className="mb-4 font-display text-3xl italic text-primary-500 sm:text-4xl">
-              And exactly why.
+              With the reason for each.
             </p>
             <p className="mb-6 max-w-md text-base leading-relaxed text-gray-600">
-              GrowGrid doesn't bury the alternatives. It tells you why polyhouse
-              cultivation was eliminated, why orchard farming didn't fit, and what
-              tradeoffs were made on your behalf. Full transparency.
+              Your report doesn't just show what was recommended — it shows what was
+              ruled out and why. If polyhouse farming was too expensive for your budget,
+              or orchard farming doesn't fit your time horizon, the report explains it
+              clearly.
             </p>
             <ul className="space-y-2">
               {[
-                'Every rejected practice gets a reason',
-                'Every filtered crop gets an explanation',
-                'Cross-field conflict warnings shown explicitly',
+                'Practices that don\'t fit your budget or land get a clear rejection reason',
+                'Crops filtered out by hard constraints (water, season, soil) are listed with explanations',
+                'Borderline cases get a warning flag so you can decide (e.g., "water demand is high — proceed with caution")',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
                   <span className="mt-0.5 text-primary-500"><CheckIcon /></span>
