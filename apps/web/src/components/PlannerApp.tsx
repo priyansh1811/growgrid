@@ -1,11 +1,19 @@
 import { useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import { api, type FormInputs, type ClarificationResult, type RefinementResult, type PlanResponse } from '../api/client'
 import { Layout } from './Layout'
 import { FarmForm } from './FarmForm'
 import { Clarification } from './Clarification'
 import { PlanResults } from './PlanResults'
+import { PipelineLoader } from './form/PipelineLoader'
 
 type Step = 'form' | 'clarify' | 'results'
+
+const pageVariants = {
+  initial: { opacity: 0, y: 24 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -24 },
+}
 
 export function PlannerApp() {
   const [form, setForm] = useState<FormInputs>({
@@ -50,12 +58,12 @@ export function PlannerApp() {
       if (result.clarification_needed && result.questions.length > 0) {
         setClarification(result)
         setStep('clarify')
+        setLoading(false)
       } else {
         await runPipeline(null)
       }
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Clarification check failed')
-    } finally {
       setLoading(false)
     }
   }
@@ -83,36 +91,74 @@ export function PlannerApp() {
   }
 
   return (
-    <div className="font-form">
-      <Layout>
+    <>
+      <Layout variant="planner">
         {error && (
-          <div className="mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-red-800">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mx-auto mb-6 max-w-2xl rounded-xl border border-red-500/20 bg-red-500/[0.08] px-5 py-3 text-sm text-red-300"
+          >
             {error}
-          </div>
+          </motion.div>
         )}
 
-        {step === 'form' && (
-          <FarmForm
-            form={form}
-            onChange={setForm}
-            onGenerate={handleGenerate}
-            loading={loading}
-          />
-        )}
+        <AnimatePresence mode="wait">
+          {step === 'form' && (
+            <motion.div
+              key="form"
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <FarmForm
+                form={form}
+                onChange={setForm}
+                onGenerate={handleGenerate}
+                loading={loading}
+              />
+            </motion.div>
+          )}
 
-        {step === 'clarify' && clarification && (
-          <Clarification
-            clarification={clarification}
-            onSubmit={handleClarificationSubmit}
-            onSkip={handleClarificationSkip}
-            loading={loading}
-          />
-        )}
+          {step === 'clarify' && clarification && (
+            <motion.div
+              key="clarify"
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <Clarification
+                clarification={clarification}
+                onSubmit={handleClarificationSubmit}
+                onSkip={handleClarificationSkip}
+                loading={loading}
+              />
+            </motion.div>
+          )}
 
-        {step === 'results' && plan && (
-          <PlanResults plan={plan} onBack={handleBack} />
-        )}
+          {step === 'results' && plan && (
+            <motion.div
+              key="results"
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <PlanResults plan={plan} onBack={handleBack} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </Layout>
-    </div>
+
+      {/* Pipeline loader overlay */}
+      <AnimatePresence>
+        {loading && <PipelineLoader />}
+      </AnimatePresence>
+    </>
   )
 }

@@ -1,0 +1,13 @@
+crop_category,labour_share_pct,notes
+CEREAL,0.30,Mechanized operations like combine harvesting reduce labour share
+PULSE,0.35,Manual harvesting and threshing increases labour component
+VEGETABLE,0.45,Labour-intensive planting harvesting sorting and packing
+FRUIT,0.40,Pruning harvesting grading and post-harvest handling
+FLOWER,0.50,Delicate handling plucking grading and packaging require manual labour
+SPICE,0.40,Harvest processing drying and grading are labour intensive
+COMMERCIAL,0.30,Mechanizable crops like sugarcane cotton jute
+PROTECTED,0.35,Controlled environment reduces some field labour needs
+MUSHROOM,0.25,Indoor systems are more capital and input intensive than labour
+DAIRY_POULTRY,0.35,Feed management milking egg collection and animal care
+FISHERIES,0.20,Pond management and harvesting are less labour-intensive
+DEFAULT,0.35,Fallback for unmatched crop categories

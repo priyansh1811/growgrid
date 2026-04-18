@@ -1,0 +1,6 @@
+irrigation_source,capex_per_acre,opex_per_acre,notes
+NONE,0,0,No irrigation infrastructure
+CANAL,2000,1500,Government canal network access charges and water cess
+BOREWELL,15000,4000,Submersible pump boring and motor installation costs
+DRIP,25000,2500,Micro-irrigation system with laterals emitters and filters
+MIXED,18000,3000,Combination of borewell and surface irrigation methods

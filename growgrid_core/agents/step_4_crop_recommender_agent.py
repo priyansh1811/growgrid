@@ -19,7 +19,13 @@ from growgrid_core.config import (
     OPENAI_API_KEY,
 )
 from growgrid_core.db.db_loader import load_all
-from growgrid_core.db.queries import get_crops_for_practice, get_suitability_by_state
+from growgrid_core.db.queries import (
+    get_crops_for_practice,
+    get_icar_crop_calendar,
+    get_suitability_by_state,
+)
+from growgrid_core.utils.icar_matching import match_crop_to_id, match_id_to_icar_names, normalize_state_for_icar
+from growgrid_core.utils.season import detect_season, month_in_sowing_window
 from growgrid_core.tools.llm_client import BaseLLMClient, get_llm_client
 from growgrid_core.utils.location import parse_state_from_location
 from growgrid_core.utils.scoring import (
@@ -188,7 +194,10 @@ class CropRecommenderAgent(BaseAgent):
 
             compat = c["compatibility_score"]
             location_mult = _location_suitability_multiplier(c["crop_id"], suitability_by_crop)
-            season_mult = _season_multiplier(profile.planning_month, c.get("seasons_supported"))
+            season_mult = _season_multiplier(
+                profile.planning_month, c.get("seasons_supported"),
+                crop_id=c["crop_id"], state=state_name, conn=conn,
+            )
             final = round(base_score * compat * location_mult * season_mult, 4)
 
             all_scores.append(
@@ -211,6 +220,7 @@ class CropRecommenderAgent(BaseAgent):
             feasible, relax_warnings = self._progressive_relax(
                 all_scores, candidates, profile, hard_constraints,
                 suitability_by_crop, soft_constraints, w,
+                state_name=state_name, conn=conn,
             )
             if relax_warnings:
                 existing_warnings = state.get("warnings", [])
@@ -350,6 +360,9 @@ class CropRecommenderAgent(BaseAgent):
         suitability_by_crop: dict[str, dict],
         soft_constraints: list,
         w: dict[str, float],
+        *,
+        state_name: str | None = None,
+        conn: sqlite3.Connection | None = None,
     ) -> tuple[list[CropScore], list[str]]:
         """Progressively relax constraints when all crops are eliminated.
 
@@ -415,7 +428,10 @@ class CropRecommenderAgent(BaseAgent):
             base_score = _apply_soft_penalties(base_score, c, soft_constraints)
             compat = c["compatibility_score"]
             loc_mult = _location_suitability_multiplier(c["crop_id"], suitability_by_crop)
-            season_mult = _season_multiplier(profile.planning_month, c.get("seasons_supported"))
+            season_mult = _season_multiplier(
+                profile.planning_month, c.get("seasons_supported"),
+                crop_id=c["crop_id"], state=state_name, conn=conn,
+            )
             final = round(base_score * compat * loc_mult * season_mult, 4)
 
             relaxed_scores.append(
@@ -512,25 +528,65 @@ def _area_fractions_from_scores(selected: list[CropScore]) -> list[float]:
     return rounded
 
 
-def _season_multiplier(planning_month: int | None, seasons_supported: str | None) -> float:
-    """Return 0.5–1.0: penalize crops whose seasons_supported doesn't match planning month.
-    Indian seasons: Kharif ~Jun–Oct, Rabi ~Nov–Apr. Month 1,2,11,12 -> Rabi; 6,7,8,9,10 -> Kharif; 3,4,5 -> Rabi (late).
+def _season_multiplier(
+    planning_month: int | None,
+    seasons_supported: str | None,
+    *,
+    crop_id: str | None = None,
+    state: str | None = None,
+    conn: sqlite3.Connection | None = None,
+) -> float:
+    """Return 0.5–1.0: penalize crops whose season doesn't match planning month.
+
+    Enhanced flow:
+    1. If ICAR sowing window data exists for this crop+state → use precise
+       month_in_sowing_window() scoring (1.0 / 0.85 / 0.5).
+    2. Otherwise fall back to generic seasons_supported matching.
     """
-    if not planning_month or not seasons_supported or not (seasons_supported or "").strip():
+    if not planning_month:
+        return 1.0
+
+    # ── Try ICAR-backed precision scoring ──────────────────────────
+    if crop_id and state and conn:
+        try:
+            season = detect_season(planning_month)
+            icar_states = normalize_state_for_icar(state)
+            icar_names = match_id_to_icar_names(crop_id)
+
+            for icar_state in icar_states:
+                for name in icar_names:
+                    rows = get_icar_crop_calendar(conn, icar_state, season, name)
+                    if rows:
+                        # Use the best (highest) score across matching rows
+                        best = 0.0
+                        for r in rows:
+                            sow_s = r.get("sow_start_month")
+                            sow_e = r.get("sow_end_month")
+                            if sow_s is not None and sow_e is not None:
+                                score = month_in_sowing_window(
+                                    planning_month, int(sow_s), int(sow_e)
+                                )
+                                best = max(best, score)
+                        if best > 0:
+                            return best
+        except Exception:
+            pass  # Fall through to generic logic
+
+    # ── Fallback: generic seasons_supported matching ───────────────
+    if not seasons_supported or not (seasons_supported or "").strip():
         return 1.0
     supported = {s.strip().upper() for s in (seasons_supported or "").split(",") if s.strip()}
     if not supported:
         return 1.0
-    # Map month to primary season
     if planning_month in (6, 7, 8, 9, 10):
         current = "KHARIF"
     else:
-        current = "RABI"  # Jan–May, Nov–Dec
+        current = "RABI"
     if current in supported or "BOTH" in supported or "ALL" in supported:
         return 1.0
     if "ZAID" in supported and planning_month in (3, 4, 5):
         return 1.0
-    return 0.55  # slight penalty when season not clearly supported
+    return 0.55
 
 
 def _select_diverse(

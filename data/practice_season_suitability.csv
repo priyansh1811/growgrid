@@ -1,0 +1,52 @@
+practice_code,season,suitability,rationale
+OPEN_FIELD,KHARIF,GOOD,Major kharif crops like rice maize soybean cotton are standard open field
+OPEN_FIELD,RABI,GOOD,Wheat mustard chickpea barley are core rabi open field crops
+OPEN_FIELD,ZAID,MED,Limited zaid crops like moong sunflower possible but water is a constraint
+OPEN_FIELD_VEG,KHARIF,GOOD,Many kharif vegetables like okra brinjal cucumber thrive in open field
+OPEN_FIELD_VEG,RABI,GOOD,Winter vegetables like cabbage cauliflower pea carrot are major rabi crops
+OPEN_FIELD_VEG,ZAID,MED,Summer vegetables possible but heat and water stress reduce viability
+RAIN_FED,KHARIF,GOOD,Monsoon rainfall is the foundation of rainfed farming systems
+RAIN_FED,RABI,MED,Residual soil moisture allows some rabi crops but risk increases
+RAIN_FED,ZAID,POOR,No rainfall in summer makes rainfed farming very risky in zaid
+DRIP_INTENSIVE,KHARIF,GOOD,Drip systems work well for kharif horticulture and water efficiency
+DRIP_INTENSIVE,RABI,GOOD,Drip supports rabi vegetables and fruit orchards efficiently
+DRIP_INTENSIVE,ZAID,GOOD,Drip is especially valuable in water-scarce summer season
+NET_HOUSE,KHARIF,GOOD,Net protection reduces pest pressure during monsoon vegetable production
+NET_HOUSE,RABI,GOOD,Cool season vegetables and flowers benefit from net house protection
+NET_HOUSE,ZAID,MED,Heat stress in summer reduces effectiveness though shade helps
+POLYHOUSE,KHARIF,GOOD,Climate control allows quality production throughout monsoon
+POLYHOUSE,RABI,GOOD,Off-season premium vegetable and flower production in winter
+POLYHOUSE,ZAID,GOOD,Summer production of premium crops with climate control advantage
+HYDROPONICS,KHARIF,GOOD,Controlled environment production is season independent
+HYDROPONICS,RABI,GOOD,Year-round leafy green production regardless of season
+HYDROPONICS,ZAID,GOOD,Season independent system operates equally well in summer
+ORCHARD,KHARIF,GOOD,Fruit trees grow and bear during monsoon season
+ORCHARD,RABI,GOOD,Winter fruit management and some harvesting continues
+ORCHARD,ZAID,MED,Summer stress on trees but mango and citrus bear fruit
+ORCHARD_INTERCROP,KHARIF,GOOD,Kharif intercrops like pulses vegetables possible under young orchards
+ORCHARD_INTERCROP,RABI,GOOD,Rabi intercrops like wheat mustard fenugreek viable in young orchards
+ORCHARD_INTERCROP,ZAID,MED,Limited summer intercrops due to heat and water stress
+AGROFORESTRY,KHARIF,GOOD,Monsoon supports tree growth and intercrop establishment
+AGROFORESTRY,RABI,MED,Winter intercrops possible but tree growth slows
+AGROFORESTRY,ZAID,MED,Summer stress but established trees provide shade for some crops
+INTEGRATED,KHARIF,GOOD,Multiple enterprises benefit from monsoon season crops and fodder
+INTEGRATED,RABI,GOOD,Rabi crops plus continued livestock and compost activities
+INTEGRATED,ZAID,MED,Summer operations limited to livestock dairy and limited crops
+DAIRY_FODDER,KHARIF,GOOD,Green fodder production peaks during monsoon with maize sorghum napier
+DAIRY_FODDER,RABI,GOOD,Berseem oats and lucerne provide winter fodder supply
+DAIRY_FODDER,ZAID,MED,Fodder scarcity in summer but stored fodder and some irrigated crops help
+POULTRY_BACKYARD,KHARIF,GOOD,Poultry operations continue year round with monsoon crop support
+POULTRY_BACKYARD,RABI,GOOD,Winter conditions favorable for bird health and crop side income
+POULTRY_BACKYARD,ZAID,MED,Heat stress on birds requires management but operations continue
+FISH_POND,KHARIF,GOOD,Monsoon fills ponds and supports fish growth and breeding
+FISH_POND,RABI,MED,Pond operations continue but water levels may decline
+FISH_POND,ZAID,POOR,Water stress and high temperatures stress fish and reduce pond levels
+NURSERY,KHARIF,GOOD,Monsoon is prime season for seedling and sapling production
+NURSERY,RABI,GOOD,Winter nursery operations for rabi vegetable and flower seedlings
+NURSERY,ZAID,MED,Summer nursery possible with irrigation but heat stress requires care
+MUSHROOM,KHARIF,MED,Monsoon humidity helps but contamination risk increases
+MUSHROOM,RABI,GOOD,Cool winter temperatures are ideal for mushroom production
+MUSHROOM,ZAID,POOR,High summer temperatures increase contamination and reduce yields
+BEEKEEPING,KHARIF,MED,Monsoon provides some flora but rain disrupts bee foraging
+BEEKEEPING,RABI,GOOD,Winter flowering of mustard sesame and orchard crops is prime honey season
+BEEKEEPING,ZAID,MED,Summer provides some flora but heat and dearth period challenge colonies

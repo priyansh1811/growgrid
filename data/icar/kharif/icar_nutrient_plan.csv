@@ -1,0 +1,169 @@
+state,season,crop_name,sub_region,N_kg_ha,P_kg_ha,K_kg_ha,FYM_t_ha,zinc_sulphate_kg_ha,other_micronutrients,biofertilizers,split_schedule,application_notes
+Andaman and Nicobar Islands,kharif,Rice,,,,,2.6,,,Azospirillum @ 2 kg/1000 m² in nursery,,FYM or vermicompost applied in nursery and main field; root dipping with Jeevamrit @ 50 ml/L before transplanting
+Andaman and Nicobar Islands,kharif,Black Pepper,,,,,,,neem cake 0.5,Azospirillum and phosphorus-solubilizing bacteria 20 g each per vine,,"Apply 10 kg FYM, 0.5 kg neem cake, 0.5 kg wood ash, 2 kg vermicompost per vine annually"
+Andaman and Nicobar Islands,kharif,Sweet Potato,,,,,10,,neem cake 100 kg/ha,Azospirillum and PSB,,Use FYM @10 t/ha; neem cake @100 kg/ha and vermicompost @5 t/ha
+Andaman and Nicobar Islands,kharif,Elephant Foot Yam,,,,,,,,Azospirillum and phosphate-solubilizing bacteria,,Apply compost 10-15 t/ha; neem cake 2 t/ha; vermicompost 5 t/ha
+Andaman and Nicobar Islands,kharif,Cinnamon,,,,,,,,,,Apply compost 20-25 t/ha
+Andaman and Nicobar Islands,kharif,Turmeric,,,,,0.01,,,,,Apply 10 kg FYM/plant/year
+Andaman and Nicobar Islands,kharif,Ginger,,,,,0.01,,,,,Apply 10 kg FYM/plant/year
+Andhra Pradesh,kharif,paddy,,,,,,,,,Entire phosphorus dose at final puddling; potash full dose at final puddling in heavy soils or half at puddling and half at panicle initiation in light soils,Grow green manure crops as preceding crop
+Andhra Pradesh,kharif,paddy,,,,,,,,,,Apply potassium @ 15 kg/acre at planting and 20 kg/acre at panicle initiation for bacterial leaf blight areas
+Arunachal Pradesh,kharif,Rice,,40,20,20,10,,,,,"Green manuring dhaincha sown in May, incorporated 10-15 days before transplanting"
+Arunachal Pradesh,kharif,Finger millet,,60,40,40,10,,,,,Compost or FYM @10 t/ha
+Arunachal Pradesh,kharif,Maize,,40,20,20,5,,,,Entire P2O5 and half N at sowing; remaining half N at 30 days after sowing,FYM or compost 5-10 t/ha applied about a month before sowing
+Arunachal Pradesh,kharif,Pumpkin,,75,80,80,20,,{'CaO_kg_ha': 30},,,Basal application; neem cake soil application for fruit fly control
+Arunachal Pradesh,kharif,Black gram,,15,35,15,1,,,"{'Trichoderma_viride': {'seed_treatment_g_per_kg_seed': 4, 'soil_application_kg_ha': 2.5}}",,Neem cake and FYM applied; one weeding at 20-25 days after sowing
+Arunachal Pradesh,kharif,Sesame,,30,20,20,10,,,,,Farmyard manure @100 kg/ha and neem cake @250 kg/ha applied
+Assam,kharif,sali rice,,60,20,40,10,,,Pseudomonas fluorescens,Half urea basal at final puddling; half urea split half at 20-30 DAS and half at panicle initiation stage; full dose of super phosphate and muriate of potash basal at final puddling,"In poor soil, fertilizer rates may increase to 60:30:30 N:P2O5:K2O respectively."
+Assam,kharif,maize,,60,40,40,5,,,,Entire phosphorus and potash and half urea to be applied in furrows before sowing,Sowing should be done at least 2 days after fertilizer application; light hoeing and earthing up as needed.
+Assam,kharif,sesamum,,15,35,15,1,,,,,Reduce N proportionally to FYM or compost applied.
+Assam,kharif,blackgram,,15,35,15,1,,,"Rhizobium, PSB",,Compost or FYM should be applied; fertilizer dose adjusted accordingly.
+Bihar,kharif,Paddy,,44,190,34,,,,,basal dose and topdressing: 44 N + 17 K2O at 25 DAP; 44 N at 45 DAP for short-duration; basal 58 N + 250 P2O5 + 45 K2O and topdress 58 N + 23 K2O at 30 DAP and 58 N at 50 DAP for long duration,"Use neem-coated urea for basal dose, apply nutrient management according to duration"
+Bihar,kharif,Maize,,,,,,,,,,Apply 3-4 quintals lime/ha during land preparation; apply 100-150 quintals well decomposed cow dung compost for soil fertility
+Bihar,kharif,Pulse Crops,,20,40,30,,25,,,,Additional 250 kg/ha gypsum at flowering; zinc application in deficient soils
+Bihar,kharif,Groundnut,Zones IIIA and IIIB,,,,,,,Rhizobium and PSB cultures inoculation,,Seed treatment with Carbendazim or Mancozeb 2 g/kg seed before sowing
+Chhattisgarh,kharif,Rice,,120,60,40,,,zinc-based fertilizers,"Azospirillum, PSB seed treatment","Pre-emergence application within 3 days after sowing; half basal at sowing, half top-dress at 30 DAS",Balanced fertilization based on soil test; zinc supplements recommended
+Chhattisgarh,kharif,Pigeon Pea,,20,45,15,8,,sulfur 20 kg/ha,Rhizobium culture and PSB seed treatment,,Apply FYM and compost 8-10 t/ha before sowing; fertilizer dose per soil test; basal dose recommended
+Chhattisgarh,kharif,Soybean,,25,60,40,,,bentonite sulphur 20 kg/ha,"Trichoderma viride, Bradyrhizobium culture, PSB seed treatment",,Fertilizers based on soil test; seed treatment with fungicides and biofertilizers recommended
+Chhattisgarh,kharif,Vegetables,,30,,,,,,,"Top dressing of nitrogen 20-25 kg/ha for cucurbit and 30-40 kg/ha for tomato, brinjal, chili",Apply farmyard manure with phosphorus fertilizer during field preparation
+Goa,kharif,mango,,,,,,,"neem cake, rock phosphate",,,"Fill pits with FYM, neem cake, rock phosphate"
+Goa,kharif,paddy,,,,,5,,green leaf manure or biomass,,Apply 1 kg urea per 100 m² to nursery when rainfall is low,Incorporate green leaf manure or biomass @5 t/ha in field
+Goa,kharif,arecanut,,,,,,,"FYM, neem cake, rock phosphate",,Apply first fertilizer split early June,
+Goa,kharif,coconut,,,,,,,,,Apply fertilizer in early June,
+Gujarat,kharif,Groundnut,South Saurashtra,120,60,90,6,,"Boric acid foliar spray 0.2% at 30, 45, 60 DAS",Rhizobium seed treatment,,"Potassium at 50 kg/ha, gypsum at 5 t/ha in saline soils"
+Gujarat,kharif,Soybean,,,,,,,,Rhizobium and phosphate solubilizing bacteria seed treatment,,
+Gujarat,kharif,Cotton,,,,,12.5,50,"1% multi-micronutrient foliar spray at 45, 60, 75, 90 DAS",,,
+Gujarat,kharif,Sugarcane,,,,150,10,50,"1% multi-micronutrient foliar spray at 45, 60, 75, 90 DAS",,,
+Gujarat,kharif,Pigeon Pea,,25,50,0,,,,,,
+Gujarat,kharif,Sesame,,40,20,,,,,,,Basal application at sowing
+Gujarat,kharif,Coconut,,,,,,,,,270 g urea/plant/month through drip irrigation,Adjust drip irrigation seasonally; 1.5 hours/day Oct-Feb; 2.5 hours/day Mar onward
+Gujarat,kharif,Paddy,South Gujarat,100,50,50,7.5,,,,"Top dressing nitrogen in 2-3 splits at tillering, panicle initiation, flowering",Basal FYM 5-10 t/ha and NPK as per soil test
+Haryana and Delhi,kharif,Tomato,,100,50,50,10,,Micronutrient mixture spray during flowering and fruiting,,,
+Haryana and Delhi,kharif,Rice,,150,60,60,15,25,,,"Apply 1/3 N + full P, K, Zn at puddling; remaining N in two equal splits at 3 and 6 weeks after transplanting","Apply 25 kg N, 25 kg P, 25 kg ZnSO4 per ha for nursery raising"
+Haryana and Delhi,kharif,Bajra,,160,62.5,,,,,Seed treatment with biomix (Azotobactor+ Azospirillum + PSB) @ 250 g per ha seed,Full P and half N at sowing; remaining N in two splits at thinning and ear formation stage,
+Haryana and Delhi,kharif,Bajra,,40,20,,,,,Seed treatment with biomix (Azotobactor+ Azospirillum + PSB) @ 250 g per ha seed,Full P and half N at sowing; remaining N in two splits at thinning and ear formation stage,For short duration varieties
+Haryana and Delhi,kharif,Arhar,,20,60,,5,25,60 kg sulphur per ha,Rhizobium and PSB seed treatment,,Apply zinc sulphate heptahydrate or monohydrate in deficient soils
+Haryana and Delhi,kharif,Jowar,,80,,,,,,,,Apply 80-100 kg N per ha for American cotton and 50 kg N for desi cotton also info suggests hybrid cotton fertilizer doses; this entry for jowar only contains N approx same
+Haryana and Delhi,kharif,Cotton,,150,60,60,,25,,"Inoculation with C2, M4 and Azospirillum culture saves 25-27 kg N/ha","Apply 1/3 N, full P, K, Zn at sowing; remaining N in two splits at square formation and flowering stage",In sandy soil 90% fertilizer soil applied + 10% foliar spray at boll stage
+Haryana and Delhi,kharif,Summer moong,,15,50,25,,25,,,,Apply doses before sowing with gypsum as sulphur source beneficial
+Himachal Pradesh,kharif,Cluster bean,,20,40,,,,,Rhizobium culture,,Apply 40 kg phosphorus and 20 kg Nitrogen at the time of sowing. Treat seed with Streptocycline @ 6 g/kg seed in 6 L of water.
+Himachal Pradesh,kharif,Maize,,,,,,,,,,
+Himachal Pradesh,kharif,Paddy,,120,60,40,10,25,,Azolla,"Full dose P and K at sowing; N split for hybrids: 1/2 basal at transplanting, 1/4 at first earthing up (3 weeks), 1/4 at second earthing up (6 weeks)",In local varieties lower doses: 80:40:30 kg (high rainfall) or 60:30:20 kg (low rainfall). Apply zinc sulphate at sowing in case of deficiency.
+Jharkhand,kharif,Paddy,,40,20,20,,25,,,"50% N at sowing, 25% N at 30-35 DAS, 25% N at 45-50 DAS; entire P and K at sowing",Treat seeds with Carbendazim 2 g/kg; apply zinc sulphate during field preparation
+Jharkhand,kharif,Paddy,,80,40,20,,25,,,"50% N at transplanting, 25% N at 30-35 days, 25% N at 50-60 days; entire P and K at transplanting",Apply zinc sulphate during field preparation
+Jharkhand,kharif,Maize,,151,130,68,,,,,Additional 65 kg urea after weeding,Incorporate FYM and Methyl Parathion 2% dust during land preparation
+Jharkhand,kharif,Fruit Crops,,25,50,20,,,20,,,Apply at sowing in N:P2O5:K2O:S ratio
+Jharkhand,kharif,Mango,,,,,,,,,,Apply 500 grams urea and 400 grams muriate of potash per plant
+Karnataka,kharif,Turmeric,,,,,25,,,,,Apply FYM at time of final ploughing
+Karnataka,kharif,Ginger,,,,,25,,,,,Apply FYM at time of final ploughing
+Karnataka,kharif,Paddy,Karnataka,75,75,90,,10,"nano urea, nano DAP, Samriddhi micronutrient sprays","['Azospirillum', 'Streptocycline', 'copper sulfate']",Potassium nitrate foliar spray at 60 days after transplanting,"High nitrogen for BPT 5204 and RNR 15048: 150 N, 75 P, 75 K"
+Karnataka,kharif,Maize,Karnataka,150,65,65,,25,"PSB, KSB 500 g/ha, micronutrient sprays 19:19:19 at 5-10 g/l, nano urea at 4 ml/l",['Azospirillum'],Top dressing urea at 45 DAS,Seed treatment with Captan or Thiram; varying dose in dryland condition
+Karnataka,kharif,Sunflower,Karnataka,36,36,25,,4,borax 6 kg/ha,['Azotobacter'],,"Irrigated condition fertilizer rates, foliar spray borax 2 g/l at flowering"
+Kerala,kharif,Arecanut,,,,,,,,,,"100:40:140 g NPK per plant annually, two splits: Sept-Oct with 12 kg organic manure, second in Feb (irrigated) or June (rainfed); zinc sulfate and borax 5 g/plant Oct-Dec"
+Kerala,kharif,Banana,,400,240,500,40,,1 lemon juice mixed in spray,,,Spray Arka Banana Special starting 5 months after planting every 20 days up to 10 months
+Kerala,kharif,Cashew,,,,,,,Foliar nutrition 19:19:19 at 2 g/litre every 15 days in summer,,,Year 1: 60:60:60 g NPK/plant; Years 2-4: double dose; From year 5: 500:250:250 g NPK/plant
+Kerala,kharif,Rice (Wetland),,70,35,35,,,,Pseudomonas fluorescens seed treatment 10g/kg; foliar spray 20g/l,"N split: basal, tillering, 5-7 days before panicle initiation; P full basal; K basal and 5-7 days before panicle initiation",Second lime dose 100 kg/acre one week before first top dressing
+Kerala,kharif,Rice (Upland),,60,30,30,,,,,"N split doses: basal, tillering, 5-7 days before panicle initiation; P full basal; K basal and 5-7 days before panicle initiation",
+Kerala,kharif,Coconut,,,,,0.01,,Boron and zinc applied,,,Farmyard manure 10-15 kg per pit with neem cake and ash or sand
+Ladakh,kharif,Finger Ginger,,,,,20,,,,,Apply 20 t FYM + 2 t neem cake + 1 t ash + 4 t vermicompost per ha during land preparation or planting.
+Ladakh,kharif,Turmeric,,,,,,,,,,
+Ladakh,kharif,Ginger,,,,,20,,,Pseudomonas fluorescens (2%) + cow dung supernatant (2%),"Apply Pseudomonas fluorescens + cow dung at planting, 2 MAP and 4 MAP",Apply bleaching powder (15 g) and lime (250 g) per 3 m2.
+Ladakh,kharif,Wheat,,,,,15,,,,,FYM @ 15 t/ha or sheep manure @ 4-6 t/ha with Ghanjeevamrit @5t/ha
+Ladakh,kharif,Buckwheat,,,,,15,,,,,FYM @ 15 t/ha + Ghanjeevamrit @ 5 t/ha basal dose
+Ladakh,kharif,Potato,,,,,20,,,,,Apply 20-25 t FYM/ha and neem cake @ 250 kg/ha
+Ladakh,kharif,Onion,,,,,15,,,,,Apply FYM at 15-20 t/ha at land preparation
+Ladakh,kharif,Pea,,,,,25,,,,,Apply 25 t/ha FYM at field preparation
+Ladakh,kharif,Radish,,,,,20,,,,,Apply FYM at 20-25 t/ha during field preparation
+Ladakh,kharif,Apricot,,,,,0.01,,,,,Apply 10 kg FYM at planting per tree; increase progressive upto 25 kg per tree per year
+Ladakh,kharif,Apple,,,,,,,,,,Apply FYM @ 5 kg/plant initially increasing to 25 kg/plant by 5 years; vermicompost @ 2.5 kg/plant increasing to 12.5 kg
+Lakshadweep,kharif,banana,,,,,,,,,,Apply organic manure 10kg per plant.
+Lakshadweep,kharif,vegetables,,,,,,,,Pseudomonas florescence 10g/Kg seed,,Treat seeds with Pseudomonas florescence 10g/Kg.
+Madhya Pradesh,kharif,Rice,,,,,,,,,,"Seed treatment: Streptocycline 1 g per 10 L water per 5 kg seed, Vitavax or Carbendazim 2.5 g/kg seed"
+Madhya Pradesh,kharif,Soybean,,25,60,40,,,20 kg/ha bentonite sulphur,Bradyrhizobium culture and Phosphate Solubilizing Bacteria @ 10 g/kg seed each,,Seed treatment with Carbendazim 25% + Mancozeb 50% WS @ 3 g/kg seed and Trichoderma viride 8-10 g/kg seed. Treat seed with Thiamethoxam 30 FS @10 ml/kg for stem fly
+Madhya Pradesh,kharif,Onion,,20,,,,,,,"Top dressing nitrogen 20-25 kg/ha for cucurbits, 30-40 kg/ha for tomato, brinjal, chili",Seed treatment Captan 75 WS @ 2.5 g/kg seed. Dip onion roots in Carbendazim 12%+Mancozeb 63% solution @ 2.5 g/L water before transplanting
+Madhya Pradesh,kharif,Vegetables,,,,,,,,,"Top dressing nitrogen 30-40 kg/ha for tomato, brinjal, chili","Spray NAA @125 ml/ha for better fruit setting in tomato, brinjal, chili. Spray 0.1% borax at fruit setting to prevent fruit cracking in tomato"
+Maharashtra,kharif,Maize,Vidarbha,120,60,60,,,,seed treatment at 25 g/kg,"1/3 at sowing, 1/3 at 30 DAS, 1/3 at 50 DAS",
+Maharashtra,kharif,Cotton,Vidarbha,40,60,60,2.5,,,"Azotobacter (25 g/kg seed), PSB (20 g/kg seed)","half N at planting, rest at 45 and 90 DAP; foliar sprays 2% urea at flowering and 2% DAP at boll formation","Drip fertigation with staged application - 10% at sowing, 20% at 20 DAS, 25% at 40 and 60 DAS, 20% at 80 DAS; phosphorus basal"
+Maharashtra,kharif,Sugarcane,Vidarbha,,,,,,,,,Bavistin or Carbendazim seed treatment with 2.5% urea solution for 10-15 minutes
+Maharashtra,kharif,Soybean,Vidarbha,,,,,,,Rhizobium and PSM at 5 g/kg seed,2% urea or 2% DAP applied during tillering and grand growth stages if pale/yellow,Seeds treated with Azoxystrobin (10 ml/kg)
+Manipur,kharif,Paddy,,40,40,,10,,,,"Apply 2/3 basal at transplanting, remaining nitrogen as top dressing at 15 DAS",Use 1 kg urea/guntha 15 days after transplanting
+Manipur,kharif,Finger Millet,,25,50,,5,,,,,Use boronated SSP for phosphorus
+Manipur,kharif,Blackgram,,,,50,,,,,,Apply 50 kg potash/ha to closer spaced crops
+Manipur,kharif,Vegetables,,120,80,80,15,,,,,For tomato
+Manipur,kharif,Brinjal,,120,80,60,15,,,,,
+Manipur,kharif,Okra,,120,80,60,15,,,,,
+Manipur,kharif,Chilli,,100,50,50,15,,,,,
+Manipur,kharif,Millets,,60,30,30,5,,,,,Apply FYM 1 month before sowing
+Meghalaya,kharif,Paddy,,60,60,40,10,,,,,
+Meghalaya,kharif,Maize,,,,,,,,Seed treatment with Trichoderma harzianum 5 g/kg or Azospirillum/Phosphobacteria 20 g/kg seed,,
+Meghalaya,kharif,Banana,,180,100,250,,0.65,"Magnesium sulphate, Copper sulphate, Manganese sulphate (0.25% spray)",,Half potassium and all phosphorus applied at planting; nitrogen applied in three splits over following months,FYM 8-10 kg per plant at planting
+Meghalaya,kharif,Banana,,,,,0.008,,,,,FYM 8-10 kg per plant (converted to 0.008 t/ha approximation)
+Mizoram,kharif,maize,,,,,,,,,,Root dip treatment with SSP/Rock phosphate + Microbial consortium overnight prior to transplanting upland rice
+Mizoram,kharif,upland paddy,,,,,2,2,,Azospirillum 2 kg per 1000 sqm,,Apply 10 quintals well decomposed FYM per 1000 sqm before nursery sowing; zinc sulphate seed priming recommended
+Mizoram,kharif,soybean,,20,60,30,5,,,,,Balanced fertilizer dose with chemical fertilizers and FYM
+Mizoram,kharif,groundnut,,20,60,40,,,,,Split basal and top dress applications,Incorporate lime to amend soil acidity
+Mizoram,kharif,tomato,,75,60,60,10,,,,"Half nitrogen basal, remainder top-dressed",Adjust soil pH through liming before planting
+Nagaland,kharif,Lowland Paddy,,,,,5,60,,,,Apply zinc sulphate during puddling if deficiency noted
+Nagaland,kharif,Maize,,120,60,40,5,,,,"Nitrogen applied in three splits at sowing, knee-high, and tasselling stages",FYM or compost applied @ 5 t/ha
+Nagaland,kharif,Khasi Mandarin,,,,,0.03,,"Zinc Sulphate 0.5%, Magnesium Sulphate 0.2%, Copper Sulphate 0.4%, Manganese Sulphate 0.4% foliar sprays",,,"Annual dose per tree: 650g urea, 1220g SSP, 450g MOP, 30kg FYM"
+Nagaland,kharif,Fish Ponds,,40,40,,10,,,,Apply urea and superphosphate 40-80 kg/ha every 15 days,"Apply initial cow dung manure at 10,000 kg/ha, lime at 250 kg/ha"
+Odisha,kharif,rice,,,,,,,,,,Adopt soil test based fertilizer scheduling for nutrient use efficiency.
+Odisha,kharif,green gram,,,,,,,,rhizobium and PSB @25g each/kg seed with ammonium molybdate @3 g/10 kg seed mixed with jaggery and water before planting,,
+Odisha,kharif,black gram,,,,,,,,rhizobium and PSB @25g each/kg seed with ammonium molybdate @3 g/10 kg seed mixed with jaggery and water before planting,,
+Odisha,kharif,arhar,,,,,,,,,,
+Odisha,kharif,groundnut,,20,40,40,,,Gypsum 250 kg/ha at hoeing,,At sowing,
+Odisha,kharif,banana,,,,,,,,"Bio-consortia (Azotobacter, Azospirillum & PSB) @ 12 kg/ha mixed with FYM at planting",,
+Odisha,kharif,coconut,,500,300,1000,60,0.2,borax 200 g per bearing plant,,Applied in circular pit 3 ft away from trunk,
+Punjab,kharif,rice,,45,0,,,31.25,,,Apply urea in two equal splits at 3 weeks and 6 weeks after transplanting; apply zinc sulphate at puddling if zinc deficiency observed,Omit phosphorus if previous wheat received recommended dose; apply zinc sulphate monohydrate 16 kg/acre or zinc sulphate heptahydrate 25 kg/acre in case of deficiency
+Punjab,kharif,basmati rice,,,,,,,,,"Apply 45 kg/ha urea for CSR 30, 90 kg/ha urea for Punjab Basmati 5, 7, Pusa Basmati 1718 and 1121, and 135 kg/ha urea for Pusa Basmati 1509; in three equal splits at 3, 6, and 9 weeks",Skip phosphorus if preceding wheat had recommended dose; apply 75 kg superphosphate per acre before last puddling if phosphorus deficient
+Punjab,kharif,maize,,137,55,20,,,,,"Apply one-third nitrogen and entire P and K at sowing; apply remaining nitrogen in splits at 4, 6, and 9 weeks after sowing",Omit phosphorus if maize follows wheat with recommended phosphorus dose; adjust urea dose with DAP use accordingly
+Rajasthan,kharif,bajra,,40,20,,,,,,"half nitrogen basal at sowing, half side-dress at 211 DAS",Low rainfall (<600 mm): 40 N + 20-30 P2O5; High rainfall (>600 mm): 90 N + 30 P2O5
+Rajasthan,kharif,maize,,90,40,,10,25,,Azospirillum and Phosphobacterium,Apply one-third nitrogen and full phosphorus at sowing; half nitrogen 30 DAS; remaining nitrogen at tasselling,On zinc deficient soils apply zinc sulphate at 25 kg/ha or spray 0.5% zinc sulphate at tillering; avoid direct contact of fertilizers with seed.
+Sikkim,kharif,maize,,,,,,,,"['Azospirillum', 'Azotobacter', 'Phosphorus solubilizing bacteria at 20 g/kg seed']",,"Apply mixed compost 2.5 t/ha + neem cake 0.5 t/ha + vermicompost 2.5 t/ha or FYM 2.5 t/ha. One earthing up after knee height, next at 40-45 DAS."
+Sikkim,kharif,rice,,,,,10,,,['Azospirillum at 20 g/kg seed'],,Apply well decomposed FYM 10 q/1000 m2 or vermicompost 3-6 t/ha 15 days before transplanting.
+Sikkim,kharif,finger millet,,,,,20,,,,,"Apply FYM 20 t/ha, neem cake 2 t/ha, vermicompost 2.5 t/ha, root drenching with 20% cow urine every 25 days."
+Sikkim,kharif,spice crops (mandua),,,,,10,,,"['Trichoderma harzanium 50 g', 'Bacillus cereus 200 g']",,Incorporate FYM @ 10 t/ha with Trichoderma harzanium 50g and Bacillus cereus 200 g at field preparation.
+Sikkim,kharif,ginger,,,,,20,,,,,"Apply FYM 20 t/ha, neem cake 2 t/ha, vermicompost 2.5 t/ha."
+Sikkim,kharif,turmeric,,,,,20,,,,,"Apply FYM 20 t/ha, neem cake 2 t/ha, vermicompost 2.5 t/ha."
+Tamil Nadu and Puducherry,kharif,Paddy,,125,100,80,,25,"Zn citrate (0.5%) + Fe citrate (1%) foliar sprays at 30, 40, 50 DAS",Zinc Solubilizing Bacteria 2 L/ha; Bacillus altitudinis FD48 seed treatment 125 ml/ha and foliar spray 500 ml/ha at 30 & 50 DAS,Alternate Wetting and Drying from 21 DAS to 10 days before harvest + 125% RDF,Foliar application of Rice Reap and Rice Bloom at booting and heading stages; Stubble incorporation with TNAU Biomineralizer + urea
+Tamil Nadu and Puducherry,kharif,Cotton,,100,50,50,0.05,,,,,FYM 50 kg/ha + neem cake 5 kg/ha + CuSO4 200 g + MgSO4 1 kg alternately; Apply Mepiquat Chloride and Sodium Chlorate as growth regulators
+Tamil Nadu and Puducherry,kharif,Groundnut,,25,50,25,,,,"Nut Boost seed inoculation with phosphate, potash, and zinc solubilizing PGPRs",25:50:25:40 NPKS kg/ha via drip irrigation,"TNAU Groundnut Rich foliar nutrition twice at 35 and 45 DAS, 5 kg/ha"
+Tamil Nadu and Puducherry,kharif,Blackgram,,25,50,25,,,,Nodule-Associated Plant Probiotics blend of beneficial microbes,25:50:25:40 NPKS kg/ha via drip irrigation,
+Tamil Nadu and Puducherry,kharif,Greengram,,25,50,25,,,,,25:50:25:40 NPKS kg/ha via drip irrigation,
+Tamil Nadu and Puducherry,kharif,Redgram,,25,50,25,,,,,25:50:25:40 NPKS kg/ha via drip irrigation,
+Tamil Nadu and Puducherry,kharif,Banana,,,,,3,,,"Azophos 2 kg/ha, Trichoderma 2.5 kg/ha, vermicompost 1.5 t/ha, Panchagavya 3%","Apply at vegetative, flowering, and grain filling stages",Disease/pest control by NSKE 5% and Bacillus subtilis 0.5% as needed; foliar spray 1.5% at flower initiation
+Telangana,kharif,Maize,,,,,,,,,,"Recommended dose 40-48 Kg Nitrogen, 20 Kg Phosphorus, 16 Kg Potash per acre during Vanakalam; Spray 0.2% ZnSO4 2-3 times at 5 days interval."
+Telangana,kharif,Cotton,,,,,,,"MgSO4, Boron, FeSO4, ZnSO4 sprays at specified days",,,"Spray MgSO4 10 g/l at 45 and 75 DAS; Boron 1.5 g/l at 60 and 90 DAS; 0.5% FeSO4 with citric acid twice at weekly intervals; ZnSO4 2 g/l twice at 4-5 days interval at 45 DAS. During excess rainfall, drain water and apply 25 kg urea and 20 kg potash per acre."
+Telangana,kharif,Soybean,,,50,26,,,,Rhizobium culture,Top dressing of urea at 30 DAS,Apply 50 kg DAP + 26 kg MOP at sowing; top dressing of urea 25-30 kg/acre at 30 DAS.
+Tripura,kharif,maize,,,,,,,,,,Apply atrazine herbicide 2-3 days after sowing for weed control.
+Tripura,kharif,paddy,,,,,,,Azotobacter application 12 kg/ha soil or 1.5L/ha seed treatment,Azotobacter,"Half nitrogen and full FYM, P2O5, K2O as basal at transplanting; remaining half nitrogen top-dressed in one or two splits",Incorporate green manure crops during field preparation
+Tripura,kharif,cucurbits,,100,60,50,25,,,,,Follow soil health card recommendations
+Tripura,kharif,okra,,100,60,50,25,,,,,
+Tripura,kharif,tomato,,100,60,50,25,,,,,
+Tripura,kharif,ginger & turmeric,,75,50,50,25,,,,,Apply FYM and fertilizers for better growth
+Uttar Pradesh,kharif,ginger,,75,50,50,25,,,,,Apply FYM at 25 t/ha and fertilizers with N:P:K 75:50:50
+Uttar Pradesh,kharif,direct seeded rice,,120,60,60,,25,,,"one-third basal, one-third at knee-high stage, remaining at tasseling; nitrogen in 3-4 equal splits starting 2-3 weeks after sowing","Apply fertilizers based on soil test; if not available, general dose used"
+Uttar Pradesh,kharif,basmati rice,,,,,8,25,,,"Urea application in two equal splits at 3 and 6 weeks after sowing for some varieties; three splits at 3,6,9 weeks for Pusa Basmati 1509",Apply FYM or compost @ 8-10 t/ha during land preparation; skip phosphorus if applied in preceding crop
+Uttar Pradesh,kharif,maize,,,,,,,,,,
+Uttarakhand,kharif,Rice,"Tarai, Bhabhar & Plain",150,60,40,0.1,25,,Trichoderma enriched FYM compost @100kg/ha (Trichoderma 2kg + 100kg FYM); seed treatment with Pseudomonas fluorescens 1.5% LF @ 4.5ml/kg seed; seedling dip with Pseudomonas fluorescens 1.5%LF @10 ml/l water; two sprays of Pseudomonas fluorescens 1.5%LF @6L/ha,50% N and entire P and K as basal at transplanting; remaining N in two equal splits at 30 and 45 days after transplanting,
+Uttarakhand,kharif,Hybrid rice,"Tarai, Bhabhar & Plain",150,60,60,,,,,50% N and entire P and K as basal at transplanting; remaining N in two equal splits at 30 and 45 days after transplanting,
+Uttarakhand,kharif,Scented and basmati rice,"Tarai, Bhabhar & Plain",100,60,40,,,,,50% N and entire P and K as basal at transplanting; remaining N in two equal splits at 30 and 45 days after transplanting,
+Uttarakhand,kharif,Old basmati rice,"Tarai, Bhabhar & Plain",60,30,20,,,,,50% N and entire P and K as basal at transplanting; remaining N in two equal splits at 30 and 45 days after transplanting,
+Uttarakhand,kharif,Rice,hilly area,100,60,40,,,,,,Desi rice 60:30:30 kg/ha NPK
+Uttarakhand,kharif,Maize,"Tarai, Bhabhar & Plain",120,60,40,,25,,Seed biofortification with Azospirillum brasilense and Aspergillus awamori @ 25 g/kg seed; seed treatment with carbendazim 2.0 g + Trichoderma 10 g/kg seed,"Full P and K and 1/4 N at sowing; remaining N in 3 equal splits at 3-4 leaf stage, knee stage, and flowering",
+West Bengal,kharif,Rice,,120,60,40,,40,Boron through solubor 20% at puddling,,,Soil application of zinc sulphate heptahydrate 40-50 kg/ha or zinc sulphate monohydrate 20-30 kg/ha if deficiency symptoms were observed.
+West Bengal,kharif,Black gram,,,,,,,,Seed inoculation with Rhizobium @ 1.5 kg per 30 kg seed and mixing with 5 g T. viridae per kg seed after 7 days,,Fungicide seed treatment with Mancozeb or Carbendazim @ 2 g/kg seed
+Jammu & Kashmir,Kharif,Rice,Jammu,80,130,50,15,10,,,"Split N at puddling, tillering, and panicle stages","Full DAP, MOP, ZnSO4 and 1/3 N at puddling; rest N split at tillering and panicle initiation, drain water before top dressing"
+Jammu & Kashmir,Kharif,Maize,Jammu,100,160,67,15,20,,,"Apply during first weeding, hoeing and earthing up at knee-high stage",Well-decomposed FYM/compost before sowing; vermicompost @2.5 t/ha can replace 5 t FYM and 25% NPK
+Jammu & Kashmir,Kharif,Chillies,Jammu & Kashmir,82.4,52.8,20.4,10,,,,,"Apply 10 t FYM, seed treatment for damping-off, foliar spray of NAA to control flower/fruit drop"
+Jammu & Kashmir,Kharif,Bhindi (Okra),Jammu & Kashmir,82,53,41,,,,,,Apply fertilizers as per recommendation
+Jammu & Kashmir,Kharif,Maize,Rainfed,60,100,34,,15,,,,Basal dose for hybrid varieties.
+Jammu & Kashmir,Kharif,Maize,Rainfed,28,87,33,,10,,,,Basal dose for composite varieties.
+Jammu & Kashmir,Kharif,Moong,Jammu,15,130,50,,,,,,Basal dose during final ploughing.
+Jammu & Kashmir,Kharif,Bottle Gourd,Kashmir,70,30,30,,,,,½ N basal dose + ½ N in two split doses,Recommended dose NPK @70:30:30 kg/ha; remaining ½ N applied when plants start growth and fruiting.
+Jammu & Kashmir,Kharif,Cucumber,Kashmir,60,25,25,,,,,,Seeds soaked in lukewarm water before sowing.
+Jammu & Kashmir,Kharif,Bitter Gourd,Kashmir,70,30,30,,,,,,Recommended NPK @70:30:30 kg/ha.
+Jammu & Kashmir,Kharif,Chillies,Jammu & Kashmir,120,83,60,,,"Zn, Mn, Cu, Fe, B foliar spray (0.5% concentration)",,Nitrogen in two split doses: ½ at sowing and ½ at 30-40 DAT,Apply micronutrients foliar spray for seed yield improvement.
+Jammu & Kashmir,Kharif,Bell Pepper,Jammu & Kashmir,120,90,35,,,"B, Zn, Cu, Fe, Mn, Mo foliar spray (0.5%)",,,3 sprays of water-soluble fertilizer (NPK 17:10:27) and micronutrients at 10 days interval starting 30/40 DAT.
+Jammu & Kashmir,Kharif,Potato,Kashmir,80,75,75,4.5,10,Copper Sulphate,Azotobacter + Phosphobacteria seed treatment,,Vermicompost @4.5t/ha with 50% recommended fertilizer; Copper Sulphate @10 kg/ha; treat tubers with 1% urea and 1% sodium bicarbonate plus biofertilizers.
+Jammu & Kashmir,Kharif,Moong,Jammu,,,,,,,,,Pre-emergence Pendimethalin @1 kg a.i./ha within 2-3 DAS for early weed control.

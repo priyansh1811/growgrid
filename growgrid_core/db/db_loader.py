@@ -20,6 +20,8 @@ _INDEX_DDL: list[str] = [
     "CREATE INDEX IF NOT EXISTS idx_practice_location_state ON practice_location_suitability(state)",
     "CREATE INDEX IF NOT EXISTS idx_practice_location_code ON practice_location_suitability(practice_code)",
     "CREATE INDEX IF NOT EXISTS idx_practice_irrigation_code ON practice_irrigation_suitability(practice_code)",
+    "CREATE INDEX IF NOT EXISTS idx_practice_season_code ON practice_season_suitability(practice_code)",
+    "CREATE INDEX IF NOT EXISTS idx_practice_season_season ON practice_season_suitability(season)",
 
     # crop
     "CREATE INDEX IF NOT EXISTS idx_crop_master_id ON crop_master(crop_id)",
@@ -41,6 +43,12 @@ _INDEX_DDL: list[str] = [
     "CREATE INDEX IF NOT EXISTS idx_yield_crop ON yield_baseline_bands(crop_id)",
     "CREATE INDEX IF NOT EXISTS idx_price_crop ON price_baseline_bands(crop_id)",
     "CREATE INDEX IF NOT EXISTS idx_scenario_ref_practice ON economics_scenario_reference(practice_code)",
+    "CREATE INDEX IF NOT EXISTS idx_yield_state_crop ON yield_state_bands(crop_id)",
+    "CREATE INDEX IF NOT EXISTS idx_yield_state_state ON yield_state_bands(state)",
+    "CREATE INDEX IF NOT EXISTS idx_yield_state_crop_state ON yield_state_bands(crop_id, state)",
+    "CREATE INDEX IF NOT EXISTS idx_irrigation_cost_source ON irrigation_cost_reference(irrigation_source)",
+    "CREATE INDEX IF NOT EXISTS idx_fertilizer_input_name ON fertilizer_input_costs(input_name)",
+    "CREATE INDEX IF NOT EXISTS idx_labour_share_category ON crop_labour_share(crop_category)",
 
     # spacing
     "CREATE INDEX IF NOT EXISTS idx_spacing_crop ON crop_spacing_reference(crop_id)",
@@ -48,6 +56,19 @@ _INDEX_DDL: list[str] = [
 
     # schemes
     "CREATE INDEX IF NOT EXISTS idx_schemes_state ON schemes_metadata(state)",
+
+    # ICAR
+    "CREATE INDEX IF NOT EXISTS idx_icar_cc_state_season ON icar_crop_calendar(state, season)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_cc_crop ON icar_crop_calendar(crop_name)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_cc_state_season_crop ON icar_crop_calendar(state, season, crop_name)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_np_state_season ON icar_nutrient_plan(state, season)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_np_crop ON icar_nutrient_plan(crop_name)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_pd_state_season ON icar_pest_disease(state, season)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_pd_crop ON icar_pest_disease(crop_name)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_var_state_season ON icar_varieties(state, season)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_var_crop ON icar_varieties(crop_name)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_wm_state_season ON icar_weed_management(state, season)",
+    "CREATE INDEX IF NOT EXISTS idx_icar_wm_crop ON icar_weed_management(crop_name)",
 ]
 
 
@@ -106,6 +127,15 @@ _DDL: list[str] = [
         suitability        TEXT NOT NULL,
         rationale          TEXT,
         PRIMARY KEY (practice_code, irrigation_source)
+    )
+    """,
+    """
+    CREATE TABLE IF NOT EXISTS practice_season_suitability (
+        practice_code TEXT NOT NULL,
+        season        TEXT NOT NULL,
+        suitability   TEXT NOT NULL,
+        rationale     TEXT,
+        PRIMARY KEY (practice_code, season)
     )
     """,
     """
@@ -218,6 +248,46 @@ _DDL: list[str] = [
         notes                        TEXT
     )
     """,
+    # ── State-specific yield bands table ─────────────────────────────
+    """
+    CREATE TABLE IF NOT EXISTS yield_state_bands (
+        crop_id              TEXT NOT NULL,
+        state                TEXT NOT NULL,
+        season               TEXT NOT NULL,
+        low_yield_per_acre   REAL,
+        base_yield_per_acre  REAL,
+        high_yield_per_acre  REAL,
+        data_points          INTEGER,
+        PRIMARY KEY (crop_id, state, season)
+    )
+    """,
+    # ── Irrigation cost reference table ───────────────────────────────
+    """
+    CREATE TABLE IF NOT EXISTS irrigation_cost_reference (
+        irrigation_source  TEXT PRIMARY KEY,
+        capex_per_acre     REAL,
+        opex_per_acre      REAL,
+        notes              TEXT
+    )
+    """,
+    # ── Fertilizer input costs table ──────────────────────────────────
+    """
+    CREATE TABLE IF NOT EXISTS fertilizer_input_costs (
+        input_name      TEXT PRIMARY KEY,
+        price_per_unit  REAL,
+        unit            TEXT,
+        subsidy_status  TEXT,
+        notes           TEXT
+    )
+    """,
+    # ── Crop labour share table ───────────────────────────────────────
+    """
+    CREATE TABLE IF NOT EXISTS crop_labour_share (
+        crop_category    TEXT PRIMARY KEY,
+        labour_share_pct REAL,
+        notes            TEXT
+    )
+    """,
     # ── Field layout table ──────────────────────────────────────────
     """
     CREATE TABLE IF NOT EXISTS crop_spacing_reference (
@@ -247,7 +317,89 @@ _DDL: list[str] = [
         max_subsidy_inr     REAL,
         application_url     TEXT,
         source_url          TEXT,
-        last_updated        TEXT
+        last_updated        TEXT,
+        max_land_acres      REAL,
+        farmer_type_tags    TEXT,
+        gender_bonus_pct    REAL,
+        season_window       TEXT,
+        scheme_type         TEXT
+    )
+    """,
+    # ── ICAR advisory tables ─────────────────────────────────────
+    """
+    CREATE TABLE IF NOT EXISTS icar_crop_calendar (
+        state              TEXT NOT NULL,
+        season             TEXT NOT NULL,
+        crop_name          TEXT NOT NULL,
+        sub_region         TEXT,
+        sow_start_month    INTEGER,
+        sow_end_month      INTEGER,
+        harvest_month_range TEXT,
+        seed_rate_kg_ha    REAL,
+        row_spacing_cm     REAL,
+        plant_spacing_cm   REAL,
+        nursery_days       INTEGER,
+        duration_days      INTEGER,
+        notes              TEXT
+    )
+    """,
+    """
+    CREATE TABLE IF NOT EXISTS icar_nutrient_plan (
+        state              TEXT NOT NULL,
+        season             TEXT NOT NULL,
+        crop_name          TEXT NOT NULL,
+        sub_region         TEXT,
+        N_kg_ha            REAL,
+        P_kg_ha            REAL,
+        K_kg_ha            REAL,
+        FYM_t_ha           REAL,
+        zinc_sulphate_kg_ha REAL,
+        other_micronutrients TEXT,
+        biofertilizers     TEXT,
+        split_schedule     TEXT,
+        application_notes  TEXT
+    )
+    """,
+    """
+    CREATE TABLE IF NOT EXISTS icar_pest_disease (
+        state              TEXT NOT NULL,
+        season             TEXT NOT NULL,
+        crop_name          TEXT NOT NULL,
+        sub_region         TEXT,
+        pest_or_disease_name TEXT NOT NULL,
+        type               TEXT,
+        monitor_start_month INTEGER,
+        monitor_end_month  INTEGER,
+        chemical_control   TEXT,
+        bio_control        TEXT,
+        threshold_note     TEXT
+    )
+    """,
+    """
+    CREATE TABLE IF NOT EXISTS icar_weed_management (
+        state              TEXT NOT NULL,
+        season             TEXT NOT NULL,
+        crop_name          TEXT NOT NULL,
+        sub_region         TEXT,
+        pre_emergence_herbicide TEXT,
+        pre_em_dose        TEXT,
+        pre_em_timing_das  TEXT,
+        post_emergence_herbicide TEXT,
+        post_em_dose       TEXT,
+        post_em_timing_das TEXT,
+        manual_weeding_schedule TEXT
+    )
+    """,
+    """
+    CREATE TABLE IF NOT EXISTS icar_varieties (
+        state              TEXT NOT NULL,
+        season             TEXT NOT NULL,
+        crop_name          TEXT NOT NULL,
+        sub_region         TEXT,
+        variety_names      TEXT,
+        variety_type       TEXT,
+        duration_type      TEXT,
+        purpose            TEXT
     )
     """,
 ]
@@ -256,9 +408,42 @@ _DDL: list[str] = [
 # ── Public API ───────────────────────────────────────────────────────────
 
 
+def _extract_table_name(ddl: str) -> str | None:
+    """Extract table name from a CREATE TABLE statement."""
+    import re
+    m = re.search(r"CREATE\s+TABLE\s+IF\s+NOT\s+EXISTS\s+(\w+)", ddl, re.IGNORECASE)
+    return m.group(1) if m else None
+
+
+def _expected_columns(ddl: str) -> set[str]:
+    """Parse column names from a CREATE TABLE DDL statement."""
+    import re
+    # Match everything between the first '(' and last ')'
+    m = re.search(r"\((.+)\)", ddl, re.DOTALL)
+    if not m:
+        return set()
+    body = m.group(1)
+    cols: set[str] = set()
+    for line in body.split(","):
+        token = line.strip().split()[0] if line.strip() else ""
+        # Skip constraints / keywords
+        if token and not token.upper().startswith(("PRIMARY", "FOREIGN", "UNIQUE", "CHECK", "CONSTRAINT")):
+            cols.add(token)
+    return cols
+
+
 def create_tables(conn: sqlite3.Connection) -> None:
-    """Create all tables (idempotent via IF NOT EXISTS)."""
+    """Create all tables. Drops and recreates if schema has changed."""
     for ddl in _DDL:
+        table_name = _extract_table_name(ddl)
+        if table_name:
+            # Check if table exists with correct columns
+            cur = conn.execute(f"PRAGMA table_info({table_name})")
+            existing_cols = {row[1] for row in cur.fetchall()}
+            if existing_cols:
+                expected = _expected_columns(ddl)
+                if expected and expected != existing_cols:
+                    conn.execute(f"DROP TABLE {table_name}")
         conn.execute(ddl)
     conn.commit()
 
@@ -310,6 +495,55 @@ def get_connection(db_path: Path | None = None) -> sqlite3.Connection:
     return conn
 
 
+def _load_icar_tables(conn: sqlite3.Connection, data_dir: Path) -> None:
+    """Load ICAR advisory CSVs from kharif/ and rabi/ subdirs, deduplicated.
+
+    Each season directory contains: icar_crop_calendar.csv, icar_nutrient_plan.csv,
+    icar_pest_disease.csv, icar_weed_management.csv, icar_varieties.csv.
+    We concatenate both seasons and drop exact-duplicate rows before loading.
+    """
+    icar_tables = [
+        "icar_crop_calendar",
+        "icar_nutrient_plan",
+        "icar_pest_disease",
+        "icar_weed_management",
+        "icar_varieties",
+    ]
+    icar_dirs = [data_dir / "icar" / "kharif", data_dir / "icar" / "rabi"]
+
+    for table_name in icar_tables:
+        csv_name = f"{table_name}.csv"
+        frames: list[pd.DataFrame] = []
+
+        for icar_dir in icar_dirs:
+            csv_path = icar_dir / csv_name
+            if not csv_path.exists():
+                continue
+            try:
+                df = pd.read_csv(csv_path)
+            except pd.errors.ParserError:
+                df = pd.read_csv(csv_path, engine="python", on_bad_lines="skip")
+            frames.append(df)
+
+        if not frames:
+            continue
+
+        combined = pd.concat(frames, ignore_index=True)
+        combined = combined.drop_duplicates()
+        # Drop rows where any NOT NULL column is missing
+        cur = conn.execute(f"PRAGMA table_info({table_name})")
+        not_null_cols = [row[1] for row in cur.fetchall() if row[3]]  # col[3] = notnull flag
+        nn_present = [c for c in not_null_cols if c in combined.columns]
+        if nn_present:
+            combined = combined.dropna(subset=nn_present)
+        combined = combined.where(pd.notnull(combined), None)
+
+        # Clear existing rows and append fresh
+        conn.execute(f"DELETE FROM {table_name}")
+        conn.commit()
+        combined.to_sql(table_name, conn, if_exists="append", index=False)
+
+
 def load_all(db_path: Path | None = None, data_dir: Path | None = None) -> sqlite3.Connection:
     """Load every CSV into the SQLite database. Returns the connection."""
     db_path = db_path or DB_PATH
@@ -324,6 +558,7 @@ def load_all(db_path: Path | None = None, data_dir: Path | None = None) -> sqlit
         "practice_infrastructure_requirement.csv": "practice_infrastructure_requirement",
         "practice_location_suitability.csv": "practice_location_suitability",
         "practice_irrigation_suitability.csv": "practice_irrigation_suitability",
+        "practice_season_suitability.csv": "practice_season_suitability",
         "practice_cost_profile.csv": "practice_cost_profile",
         "practice_sources.csv": "practice_sources",
         "crop_master.csv": "crop_master",
@@ -335,6 +570,10 @@ def load_all(db_path: Path | None = None, data_dir: Path | None = None) -> sqlit
         "price_baseline_bands.csv": "price_baseline_bands",
         "loss_factor_reference.csv": "loss_factor_reference",
         "economics_scenario_reference.csv": "economics_scenario_reference",
+        "yield_state_bands.csv": "yield_state_bands",
+        "irrigation_cost_reference.csv": "irrigation_cost_reference",
+        "fertilizer_input_costs.csv": "fertilizer_input_costs",
+        "crop_labour_share.csv": "crop_labour_share",
         # Field layout
         "crop_spacing_reference.csv": "crop_spacing_reference",
         # Government schemes
@@ -343,6 +582,9 @@ def load_all(db_path: Path | None = None, data_dir: Path | None = None) -> sqlit
 
     for csv_name, table_name in csv_table_map.items():
         _load_csv_into_table(conn, data_dir / csv_name, table_name)
+
+    # ── Load ICAR advisory CSVs (kharif + rabi, deduplicated) ────────
+    _load_icar_tables(conn, data_dir)
 
     # Create indexes after data load (idempotent)
     create_indexes(conn)

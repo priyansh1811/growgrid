@@ -16,6 +16,34 @@ FISH_POND,ALL,POOR,Only fits states with strong pond or inland fisheries potenti
 NURSERY,ALL,MED,Best where horticulture demand and grower clusters exist
 MUSHROOM,ALL,POOR,Best in cooler or humid regions with hygiene controlled production
 BEEKEEPING,ALL,MED,Works widely but improves where forage and orchards are strong
+OPEN_FIELD,Punjab,GOOD,Dominant cereal pulse system with strong canal and tubewell irrigation
+OPEN_FIELD,Haryana,GOOD,Major wheat rice belt with established input supply and mandi network
+OPEN_FIELD,Uttar Pradesh,GOOD,Largest cultivated area in India with diverse field crop systems
+OPEN_FIELD,Madhya Pradesh,GOOD,Extensive soybean wheat and pulse belts support open field farming
+OPEN_FIELD,Maharashtra,GOOD,Large kharif and rabi crop belts across multiple agroclimatic zones
+OPEN_FIELD,Karnataka,GOOD,Diverse cereal pulse and oilseed systems across dry and irrigated belts
+OPEN_FIELD,Andhra Pradesh,GOOD,Strong rice groundnut and pulse production systems
+OPEN_FIELD,Telangana,GOOD,Established rice cotton and pulse cultivation systems
+OPEN_FIELD,West Bengal,GOOD,Intensive rice based cropping with strong alluvial soils
+OPEN_FIELD,Bihar,GOOD,Major cereal and pulse producer with fertile Indo Gangetic plains
+OPEN_FIELD,Gujarat,GOOD,Diverse field crops including groundnut cotton and castor
+OPEN_FIELD,Tamil Nadu,GOOD,Diversified cereal pulse and oilseed cultivation across multiple zones
+OPEN_FIELD,Rajasthan,GOOD,Large cropped area with bajra mustard and pulse systems
+OPEN_FIELD,Odisha,GOOD,Strong rice based field cropping in coastal and central plains
+OPEN_FIELD,Chhattisgarh,GOOD,Rice bowl of central India with strong paddy systems
+OPEN_FIELD,Jharkhand,MED,Growing field crop area though input access varies by district
+OPEN_FIELD,Assam,MED,Rice dominant field systems with limited mechanization in some areas
+OPEN_FIELD,Uttarakhand,MED,Valley areas support field crops but terrain limits scale
+OPEN_FIELD,Himachal Pradesh,MED,Limited arable land in valleys supports small scale field crops
+OPEN_FIELD,Jammu & Kashmir,MED,Valley areas support rice wheat but terrain limits expansion
+OPEN_FIELD,Goa,MED,Small scale field farming with limited arable area
+OPEN_FIELD,Sikkim,MED,Limited arable land but organic field cropping is promoted
+OPEN_FIELD,Tripura,MED,Rice based field systems with growing crop diversification
+OPEN_FIELD,Meghalaya,MED,Jhum shifting to settled field systems in suitable valleys
+OPEN_FIELD,Manipur,MED,Valley rice cultivation is established but scale is limited
+OPEN_FIELD,Mizoram,POOR,Steep terrain limits conventional open field farming
+OPEN_FIELD,Nagaland,POOR,Hilly terrain with limited flat arable land for open field
+OPEN_FIELD,Arunachal Pradesh,POOR,Mountainous terrain restricts open field agriculture to valleys
 OPEN_FIELD_VEG,Maharashtra,GOOD,Large vegetable belts and mandi access improve viability
 OPEN_FIELD_VEG,Karnataka,GOOD,Commercial vegetable clusters support this practice
 OPEN_FIELD_VEG,Gujarat,GOOD,Strong vegetable commercialization and irrigation access help
@@ -24,13 +52,28 @@ OPEN_FIELD_VEG,West Bengal,GOOD,Intensive vegetable markets and production syste
 OPEN_FIELD_VEG,Bihar,GOOD,High vegetable adoption and market movement support this practice
 OPEN_FIELD_VEG,Tamil Nadu,GOOD,Diversified vegetable belts and input access help performance
 OPEN_FIELD_VEG,Andhra Pradesh,GOOD,Commercial vegetable systems support intensive field production
+OPEN_FIELD_VEG,Rajasthan,MED,Growing vegetable area in irrigated pockets but dry climate limits expansion
+OPEN_FIELD_VEG,Madhya Pradesh,MED,Vegetable cultivation expanding in irrigated districts near urban centers
+OPEN_FIELD_VEG,Odisha,MED,Coastal vegetable belts are viable but interior districts lack market access
+OPEN_FIELD_VEG,Jharkhand,MED,Peri urban vegetable production is growing but market linkage varies
+OPEN_FIELD_VEG,Telangana,GOOD,Strong commercial vegetable production around Hyderabad and irrigated belts
+OPEN_FIELD_VEG,Punjab,MED,Vegetable diversification growing but cereal systems dominate
+OPEN_FIELD_VEG,Haryana,MED,Peri urban vegetable production near Delhi NCR supports viability
+OPEN_FIELD_VEG,Assam,MED,Local vegetable demand exists but market infrastructure is developing
 RAIN_FED,Rajasthan,GOOD,Dryland conditions and hardy crop systems favor rainfed models
 RAIN_FED,Maharashtra,GOOD,Large rainfed belts support low water systems
 RAIN_FED,Karnataka,GOOD,Dryland cropping regions make rainfed systems viable
 RAIN_FED,Telangana,GOOD,Dryland conditions and millet pulse systems align well
 RAIN_FED,Madhya Pradesh,GOOD,Extensive rainfed cropping supports this practice
 RAIN_FED,Chhattisgarh,GOOD,Rainfed and low input field systems are common in many districts
+RAIN_FED,Jharkhand,GOOD,Undulating terrain and limited irrigation make rainfed systems natural fit
+RAIN_FED,Odisha,MED,Rainfed systems work in western districts but eastern coast has irrigation
+RAIN_FED,Gujarat,MED,Dryland pockets exist but irrigated systems are expanding
+RAIN_FED,Andhra Pradesh,MED,Rayalaseema region supports rainfed but coastal areas rely on irrigation
+RAIN_FED,Tamil Nadu,MED,Dry belts exist but canal and tank irrigation are common
 RAIN_FED,Kerala,POOR,High rainfall and humid systems reduce the relevance of dryland models
+RAIN_FED,Punjab,POOR,Highly irrigated state where rainfed models have limited relevance
+RAIN_FED,Haryana,POOR,Canal and tubewell irrigation dominate most cultivated area
 DRIP_INTENSIVE,Rajasthan,GOOD,Water scarce commercial belts benefit from drip efficiency
 DRIP_INTENSIVE,Gujarat,GOOD,High value irrigated horticulture and water saving adoption are strong
 DRIP_INTENSIVE,Maharashtra,GOOD,Commercial horticulture and water pressure make this attractive
@@ -38,23 +81,47 @@ DRIP_INTENSIVE,Karnataka,GOOD,Horticulture belts and irrigation modernization su
 DRIP_INTENSIVE,Telangana,GOOD,Water efficient horticulture is a strong fit
 DRIP_INTENSIVE,Tamil Nadu,GOOD,Intensive irrigated horticulture and input access help
 DRIP_INTENSIVE,Andhra Pradesh,GOOD,Commercial horticulture belts support this model
+DRIP_INTENSIVE,Uttar Pradesh,MED,Drip adoption growing in western UP horticulture belts
+DRIP_INTENSIVE,Bihar,MED,Drip systems expanding in litchi mango and vegetable belts
+DRIP_INTENSIVE,Odisha,MED,Government subsidized drip programs growing in horticulture districts
+DRIP_INTENSIVE,Punjab,MED,Water table crisis pushing drip adoption in some districts
+DRIP_INTENSIVE,Haryana,MED,Drip gaining traction for vegetables and orchards near urban areas
+DRIP_INTENSIVE,Madhya Pradesh,MED,Horticulture diversification supporting drip adoption in key districts
+DRIP_INTENSIVE,Jharkhand,MED,Drip programs expanding under PMKSY in vegetable growing areas
 NET_HOUSE,Karnataka,GOOD,Commercial protected horticulture has strong ecosystem support
 NET_HOUSE,Maharashtra,GOOD,Protected cultivation clusters make this more practical
 NET_HOUSE,Telangana,GOOD,Horticulture commercialization supports shade net systems
 NET_HOUSE,Tamil Nadu,GOOD,Strong nursery and vegetable market linkage support net houses
 NET_HOUSE,Andhra Pradesh,GOOD,Protected horticulture adoption improves viability
 NET_HOUSE,Gujarat,GOOD,Commercial horticulture and irrigation support net house systems
+NET_HOUSE,Uttar Pradesh,MED,Growing adoption in peri urban horticulture but ecosystem still developing
+NET_HOUSE,Rajasthan,MED,Useful for pest and heat protection in vegetable growing districts
+NET_HOUSE,Madhya Pradesh,MED,Net house adoption growing in NHM supported districts
+NET_HOUSE,Bihar,MED,Protected vegetable cultivation gaining momentum with subsidy support
 POLYHOUSE,Himachal Pradesh,GOOD,Protected cultivation is widely relevant in hill horticulture belts
 POLYHOUSE,Uttarakhand,GOOD,Hill horticulture and off season production support polyhouse adoption
 POLYHOUSE,Karnataka,GOOD,Commercial peri urban horticulture supports protected cultivation
 POLYHOUSE,Maharashtra,GOOD,Protected cultivation clusters and market demand improve viability
 POLYHOUSE,Telangana,GOOD,Commercial vegetable and flower systems support polyhouses
 POLYHOUSE,Delhi,GOOD,Peri urban premium market access supports protected production
+POLYHOUSE,Tamil Nadu,MED,Growing adoption near urban centers but heat management is challenging
+POLYHOUSE,Gujarat,MED,Commercial horticulture supports polyhouse in some districts
+POLYHOUSE,Andhra Pradesh,MED,Protected cultivation growing with NHM support
+POLYHOUSE,Punjab,MED,Limited but growing peri urban protected cultivation near cities
 HYDROPONICS,Karnataka,GOOD,Urban demand and commercial tech ecosystems support hydroponics
 HYDROPONICS,Maharashtra,GOOD,Large urban premium markets improve hydroponic viability
 HYDROPONICS,Telangana,GOOD,Peri urban tech driven agriculture supports hydroponics
 HYDROPONICS,Delhi,GOOD,Premium urban demand supports controlled environment production
 HYDROPONICS,Tamil Nadu,GOOD,Urban commercial horticulture creates better fit
+HYDROPONICS,Gujarat,MED,Growing urban demand in Ahmedabad Surat corridor
+HYDROPONICS,Kerala,MED,Urban demand and limited land make controlled environment relevant
+HYDROPONICS,Punjab,POOR,Rural dominated agriculture with limited premium urban demand
+HYDROPONICS,Uttar Pradesh,POOR,Limited to very few peri urban pockets near Noida Lucknow
+HYDROPONICS,Rajasthan,POOR,Limited urban premium market and high operating costs in heat
+HYDROPONICS,Bihar,POOR,Weak premium market and limited technical ecosystem
+HYDROPONICS,Odisha,POOR,Very limited urban premium demand for hydroponic produce
+HYDROPONICS,Jharkhand,POOR,Weak market linkage and limited technical capacity
+HYDROPONICS,Chhattisgarh,POOR,Limited urban demand and weak cold chain infrastructure
 ORCHARD,Himachal Pradesh,GOOD,Established fruit belts make orchards a strong fit
 ORCHARD,Uttarakhand,GOOD,Hill fruit systems support orchard models
 ORCHARD,Jammu & Kashmir,GOOD,Temperate fruit ecosystems strongly favor orchards
@@ -63,18 +130,32 @@ ORCHARD,Karnataka,GOOD,Diverse fruit systems support orchard development
 ORCHARD,Gujarat,GOOD,Commercial fruit systems and irrigation support orchards
 ORCHARD,Andhra Pradesh,GOOD,Horticulture clusters support perennial fruit systems
 ORCHARD,Tamil Nadu,GOOD,Diverse fruit belts and irrigation improve orchard viability
+ORCHARD,Bihar,GOOD,Major litchi mango and guava belts support orchard development
+ORCHARD,West Bengal,MED,Mango and litchi orchards viable but land fragmentation limits scale
+ORCHARD,Uttar Pradesh,GOOD,Large mango guava and amla belts support orchard investment
+ORCHARD,Madhya Pradesh,MED,Growing orange and guava orchards in specific districts
+ORCHARD,Rajasthan,MED,Arid horticulture with ber pomegranate and kinnow in irrigated belts
 ORCHARD_INTERCROP,Maharashtra,GOOD,Many orchard systems benefit from intercrops during establishment
 ORCHARD_INTERCROP,Karnataka,GOOD,Intercropped horticulture is viable in many fruit belts
 ORCHARD_INTERCROP,Madhya Pradesh,GOOD,Early cashflow intercrops can complement orchard establishment
 ORCHARD_INTERCROP,Gujarat,GOOD,Diversified horticulture systems support orchard plus intercrop models
 ORCHARD_INTERCROP,Andhra Pradesh,GOOD,Commercial fruit belts support orchard intercrop combinations
 ORCHARD_INTERCROP,Tamil Nadu,GOOD,Diversified horticulture improves orchard cashflow
+ORCHARD_INTERCROP,Uttar Pradesh,MED,Viable in mango and guava belts with intercrop market access
+ORCHARD_INTERCROP,Bihar,MED,Litchi and mango orchards can support early intercrops
+ORCHARD_INTERCROP,Rajasthan,MED,Pomegranate and kinnow orchards allow pulse oilseed intercrops
 AGROFORESTRY,Rajasthan,GOOD,Resource conservation and tree based resilience make this valuable
 AGROFORESTRY,Madhya Pradesh,GOOD,Mixed tree crop systems suit many semi arid districts
 AGROFORESTRY,Chhattisgarh,GOOD,Tree crop integration aligns well with restoration goals
 AGROFORESTRY,Maharashtra,GOOD,Tree based diversification suits many dryland belts
 AGROFORESTRY,Karnataka,GOOD,Agroforestry works well in several semi arid regions
 AGROFORESTRY,Telangana,GOOD,Tree crop resilience is attractive in water stressed belts
+AGROFORESTRY,Jharkhand,GOOD,Forest fringe communities benefit from tree crop integration
+AGROFORESTRY,Odisha,MED,Agroforestry viable in western hilly districts
+AGROFORESTRY,Uttar Pradesh,MED,Poplar and eucalyptus agroforestry growing in western UP
+AGROFORESTRY,Gujarat,MED,Dryland agroforestry viable in Saurashtra and Kutch
+AGROFORESTRY,Assam,MED,Tea and areca based agroforestry systems exist
+AGROFORESTRY,Meghalaya,MED,Traditional shifting cultivation transitioning to agroforestry
 INTEGRATED,Punjab,GOOD,Strong dairy crop integration and market systems support mixed farming
 INTEGRATED,Haryana,GOOD,Integrated crop livestock models fit strong farm support ecosystems
 INTEGRATED,Uttar Pradesh,GOOD,Large mixed farm base and local demand support integrated systems
@@ -84,25 +165,52 @@ INTEGRATED,Odisha,GOOD,Multi enterprise farm systems fit local mixed farming pat
 INTEGRATED,Karnataka,GOOD,Diverse farm enterprises support integrated planning
 INTEGRATED,Tamil Nadu,GOOD,Crop livestock integration and local demand support the system
 INTEGRATED,Andhra Pradesh,GOOD,Diversified farm enterprises and market access help
+INTEGRATED,Maharashtra,GOOD,Mixed farming systems well established across multiple zones
+INTEGRATED,Gujarat,MED,Dairy crop integration viable but specialized systems dominate
+INTEGRATED,Madhya Pradesh,MED,Growing interest in mixed farming in smaller holdings
+INTEGRATED,Jharkhand,MED,Smallholder mixed systems are common though market linkage varies
+INTEGRATED,Assam,MED,Mixed rice fish livestock systems exist in many districts
+INTEGRATED,Chhattisgarh,MED,Rice plus livestock systems viable in many areas
 DAIRY_FODDER,Punjab,GOOD,Strong dairy value chain and fodder systems support this practice
 DAIRY_FODDER,Haryana,GOOD,Established milk infrastructure improves dairy fodder viability
 DAIRY_FODDER,Uttar Pradesh,GOOD,Large dairy economy supports this integrated model
 DAIRY_FODDER,Gujarat,GOOD,Strong cooperative dairy systems support dairy fodder practice
 DAIRY_FODDER,Rajasthan,GOOD,Dairy with fodder planning is strong in many districts
 DAIRY_FODDER,Karnataka,GOOD,Dairy clusters and fodder demand support this model
+DAIRY_FODDER,Maharashtra,MED,Dairy clusters exist but fodder supply chains vary by region
+DAIRY_FODDER,Bihar,MED,Growing dairy sector with improving fodder awareness
+DAIRY_FODDER,Tamil Nadu,MED,Dairy cooperatives exist but fodder availability is seasonal
+DAIRY_FODDER,Andhra Pradesh,MED,Dairy pockets exist especially in Rayalaseema and coastal districts
+DAIRY_FODDER,Madhya Pradesh,MED,Dairy development growing with government support programs
 POULTRY_BACKYARD,Telangana,GOOD,Strong poultry adoption and local demand support this practice
 POULTRY_BACKYARD,Andhra Pradesh,GOOD,Poultry systems and market access improve viability
 POULTRY_BACKYARD,Tamil Nadu,GOOD,Local poultry demand and smallholder adoption support the model
 POULTRY_BACKYARD,West Bengal,GOOD,Backyard and small commercial poultry demand is strong
 POULTRY_BACKYARD,Odisha,GOOD,Backyard poultry programs and demand support the practice
 POULTRY_BACKYARD,Bihar,GOOD,Smallholder poultry systems can perform well here
+POULTRY_BACKYARD,Karnataka,MED,Poultry belt exists in specific districts but not statewide
+POULTRY_BACKYARD,Maharashtra,MED,Poultry clusters in Pune Nashik corridor but varies elsewhere
+POULTRY_BACKYARD,Uttar Pradesh,MED,Growing backyard poultry with tribal and rural livelihood programs
+POULTRY_BACKYARD,Jharkhand,MED,Tribal livelihood programs support backyard poultry adoption
+POULTRY_BACKYARD,Assam,MED,Backyard poultry common in rural areas with local demand
+POULTRY_BACKYARD,Chhattisgarh,MED,Backyard poultry programs growing in tribal districts
+POULTRY_BACKYARD,Meghalaya,MED,Strong local poultry consumption supports small scale systems
 FISH_POND,West Bengal,GOOD,Inland fisheries ecosystem strongly supports pond systems
 FISH_POND,Assam,GOOD,Water rich conditions and fish demand support pond aquaculture
 FISH_POND,Odisha,GOOD,Pond and inland aquaculture ecosystems improve fit
 FISH_POND,Andhra Pradesh,GOOD,Strong aquaculture culture and market channels support fish ponds
 FISH_POND,Kerala,GOOD,Water rich conditions and fish demand improve viability
+FISH_POND,Bihar,MED,Growing fish farming with pond construction support programs
+FISH_POND,Jharkhand,MED,Pond based fisheries expanding with government support
+FISH_POND,Tripura,GOOD,Strong inland fisheries tradition and water availability support ponds
+FISH_POND,Manipur,MED,Fish demand exists and water availability supports small ponds
+FISH_POND,Chhattisgarh,MED,Pond fisheries growing in plains districts
+FISH_POND,Tamil Nadu,MED,Brackish and freshwater pond systems viable in specific zones
+FISH_POND,Karnataka,MED,Inland fisheries growing in northern districts with reservoir access
 FISH_POND,Rajasthan,POOR,Water scarcity limits most pond based fish systems
 FISH_POND,Delhi,POOR,Land and water constraints reduce pond feasibility
+FISH_POND,Punjab,POOR,Limited water for ponds due to depleting groundwater
+FISH_POND,Haryana,POOR,Water stress and land constraints limit pond feasibility
 NURSERY,Karnataka,GOOD,Horticulture demand and grower clusters support nursery business
 NURSERY,Maharashtra,GOOD,Large horticulture base drives seedling and sapling demand
 NURSERY,Telangana,GOOD,Commercial horticulture improves nursery viability
@@ -110,6 +218,11 @@ NURSERY,Tamil Nadu,GOOD,Horticulture diversification supports nursery demand
 NURSERY,Andhra Pradesh,GOOD,Strong fruit and vegetable systems increase nursery demand
 NURSERY,West Bengal,GOOD,Horticulture and farmer density support planting material demand
 NURSERY,Delhi,GOOD,Peri urban and landscaping demand support nursery operations
+NURSERY,Gujarat,MED,Horticulture expansion driving nursery demand in some districts
+NURSERY,Uttar Pradesh,MED,Large horticulture area creates demand but quality nurseries are few
+NURSERY,Bihar,MED,Litchi mango banana expansion supports nursery demand
+NURSERY,Rajasthan,MED,Arid horticulture nurseries viable for ber pomegranate kinnow
+NURSERY,Madhya Pradesh,MED,Orange guava expansion supports growing nursery sector
 MUSHROOM,Himachal Pradesh,GOOD,Cooler climate supports mushroom production systems
 MUSHROOM,Uttarakhand,GOOD,Hill conditions and cool environments support mushroom cultivation
 MUSHROOM,Jammu & Kashmir,GOOD,Cool climate strongly supports mushroom systems
@@ -117,7 +230,14 @@ MUSHROOM,Meghalaya,GOOD,Cooler humid conditions support mushroom production
 MUSHROOM,West Bengal,GOOD,Strong mushroom market and humid conditions improve fit
 MUSHROOM,Kerala,GOOD,Humid conditions and local market demand support mushrooms
 MUSHROOM,Assam,GOOD,Humid climate supports mushroom production if hygiene is managed
+MUSHROOM,Odisha,MED,Coastal humid conditions can support mushroom with proper infrastructure
+MUSHROOM,Bihar,MED,Mushroom cultivation growing with training programs and cool season
+MUSHROOM,Uttar Pradesh,MED,Winter season mushroom production viable with market access
+MUSHROOM,Punjab,MED,Seasonal mushroom production viable in winter months
+MUSHROOM,Haryana,MED,Winter mushroom production possible near urban markets
+MUSHROOM,Tamil Nadu,MED,Oyster mushroom production viable in humid zones and hill stations
 MUSHROOM,Rajasthan,POOR,Hot arid conditions make climate control more demanding
+MUSHROOM,Gujarat,POOR,Hot climate increases production cost and contamination risk
 BEEKEEPING,Himachal Pradesh,GOOD,Orchard belts and floral diversity strongly support apiaries
 BEEKEEPING,Uttarakhand,GOOD,Hill orchards and forage diversity improve beekeeping fit
 BEEKEEPING,Jammu & Kashmir,GOOD,Floral diversity and orchard ecosystems support beekeeping
@@ -127,3 +247,21 @@ BEEKEEPING,Uttar Pradesh,GOOD,Diverse flowering crops and orchards support apiar
 BEEKEEPING,Bihar,GOOD,Seasonal floral resources support apiary income
 BEEKEEPING,West Bengal,GOOD,Diverse flowering resources improve beekeeping potential
 BEEKEEPING,Assam,GOOD,Diverse forage and horticulture support beekeeping
+BEEKEEPING,Kerala,GOOD,Rich floral diversity and rubber coconut plantations support apiaries
+BEEKEEPING,Karnataka,GOOD,Coffee estates orchard belts and diverse flora support beekeeping
+BEEKEEPING,Maharashtra,GOOD,Large orchard belts and diverse cropping provide forage for apiaries
+BEEKEEPING,Rajasthan,GOOD,Mustard bajra and ber flowering support seasonal beekeeping
+BEEKEEPING,Tamil Nadu,MED,Some floral resources exist but hot dry conditions limit some areas
+BEEKEEPING,Madhya Pradesh,MED,Soybean mustard and forest flora provide seasonal forage
+BEEKEEPING,Gujarat,MED,Cotton oilseed and fruit flowering provide moderate forage
+BEEKEEPING,Telangana,MED,Some crop flowering supports seasonal beekeeping
+BEEKEEPING,Andhra Pradesh,MED,Moderate floral resources in orchard and crop belts
+BEEKEEPING,Odisha,MED,Forest and crop flowering support beekeeping in some districts
+BEEKEEPING,Jharkhand,MED,Forest flora and lac host trees provide some beekeeping potential
+BEEKEEPING,Meghalaya,GOOD,Rich biodiversity and floral resources in Khasi Jaintia Hills
+BEEKEEPING,Sikkim,GOOD,Rich floral diversity in organic farming state supports apiaries
+BEEKEEPING,Tripura,MED,Moderate floral resources support small scale beekeeping
+BEEKEEPING,Manipur,MED,Hill flora and crop diversity provide seasonal forage
+BEEKEEPING,Nagaland,MED,Forest flora supports traditional beekeeping systems
+BEEKEEPING,Mizoram,MED,Hill forests provide moderate forage for beekeeping
+BEEKEEPING,Arunachal Pradesh,MED,Rich forest flora supports beekeeping in accessible areas

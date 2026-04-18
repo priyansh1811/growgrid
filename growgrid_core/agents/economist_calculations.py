@@ -23,13 +23,19 @@ from growgrid_core.agents.economist_llm_estimator import estimate_crop_costs_wit
 from growgrid_core.db.queries import (
     get_crop_by_id,
     get_crop_costs,
+    get_crop_labour_share,
     get_economics_scenario_reference,
+    get_fertilizer_input_costs,
+    get_icar_nutrient_plan,
+    get_irrigation_costs,
     get_loss_factor,
     get_practice_costs,
     get_price_bands,
     get_yield_bands,
 )
 from growgrid_core.tools.llm_client import BaseLLMClient
+from growgrid_core.utils.icar_matching import match_id_to_icar_names, normalize_state_for_icar
+from growgrid_core.utils.season import detect_season
 
 logger = logging.getLogger(__name__)
 
@@ -82,9 +88,41 @@ _SEASON_START_MONTH: dict[str, int] = {
 }
 
 # Year-wise yield ramp for tree crops (fraction of full yield).
-# Improved ramp: modern high-density orchards with drip + good management
-# ramp up faster than traditional wide-spacing orchards.
-_TREE_CROP_RAMP: tuple[float, ...] = (0.40, 0.65, 0.85, 1.0)
+# Different crops reach bearing maturity at very different rates:
+# - FAST: papaya, banana, drumstick — bear within year 1
+# - MEDIUM: guava, lemon, dragonfruit — 2-4 years to full yield
+# - SLOW: mango, coconut, cashew — 5-7+ years to full yield
+_TREE_CROP_RAMPS: dict[str, tuple[float, ...]] = {
+    "FAST":    (0.60, 0.85, 1.0),
+    "MEDIUM":  (0.40, 0.65, 0.85, 1.0),
+    "SLOW":    (0.10, 0.25, 0.45, 0.65, 0.80, 0.95, 1.0),
+    "DEFAULT": (0.40, 0.65, 0.85, 1.0),
+}
+
+_CROP_RAMP_CATEGORY: dict[str, str] = {
+    "FR_PAPAYA": "FAST",
+    "FR_BANANA": "FAST",
+    "FR_DRUMSTICK": "FAST",
+    "FR_GUAVA": "MEDIUM",
+    "FR_LEMON": "MEDIUM",
+    "FR_ACID_LIME": "MEDIUM",
+    "FR_DRAGONFRUIT": "MEDIUM",
+    "FR_POMEGRANATE": "MEDIUM",
+    "FR_MANGO": "SLOW",
+    "FR_COCONUT": "SLOW",
+    "FR_CASHEW": "SLOW",
+    "FR_ARECANUT": "SLOW",
+    "FR_SAPOTA": "SLOW",
+}
+
+# Keep backward-compatible alias
+_TREE_CROP_RAMP: tuple[float, ...] = _TREE_CROP_RAMPS["DEFAULT"]
+
+
+def _get_tree_ramp(crop_id: str) -> tuple[float, ...]:
+    """Return the yield ramp tuple for a tree/perennial crop."""
+    cat = _CROP_RAMP_CATEGORY.get(crop_id, "DEFAULT")
+    return _TREE_CROP_RAMPS.get(cat, _TREE_CROP_RAMPS["DEFAULT"])
 
 _KEYWORD_FAMILIES: tuple[tuple[tuple[str, ...], str], ...] = (
     (("seed", "seedling", "sapling", "planting material", "transplant", "fingerling", "spawn", "colony", "chicks", "birds", "livestock", "mother plant"), "planting_material"),
@@ -477,6 +515,95 @@ def _add_missing_practice_costs(
     return capex_topup, opex_topup
 
 
+# ── ICAR fertilizer cost estimation ────────────────────────────────────
+
+# Standard Indian government-rate fertilizer prices (INR per kg of nutrient)
+# Source: Nutrient-Based Subsidy (NBS) retail prices, 2024-25 typical rates
+_UREA_PRICE_PER_KG_N = 5.36        # Urea ≈ ₹242/45kg bag → ₹5.36/kg N (46% N)
+_DAP_PRICE_PER_KG_P2O5 = 29.17     # DAP ≈ ₹1,350/50kg → ~₹29.17/kg P₂O₅ (46% P₂O₅)
+_MOP_PRICE_PER_KG_K2O = 16.83      # MOP ≈ ₹840/50kg → ~₹16.83/kg K₂O (60% K₂O)
+_FYM_PRICE_PER_TONNE = 800.0       # FYM ~ ₹800/tonne (farm-gate)
+_ZINC_SULPHATE_PRICE_PER_KG = 95.0 # ZnSO₄ 21% ~ ₹95/kg
+
+
+def _load_fertilizer_prices(conn: sqlite3.Connection) -> dict[str, float]:
+    """Load fertilizer input prices from DB; fall back to hardcoded constants."""
+    mapping = {
+        "UREA": _UREA_PRICE_PER_KG_N,
+        "DAP": _DAP_PRICE_PER_KG_P2O5,
+        "MOP": _MOP_PRICE_PER_KG_K2O,
+        "FYM": _FYM_PRICE_PER_TONNE,
+        "ZINC_SULPHATE": _ZINC_SULPHATE_PRICE_PER_KG,
+    }
+    try:
+        rows = get_fertilizer_input_costs(conn)
+        for row in rows:
+            name = row.get("input_name", "")
+            price = float(row.get("price_per_unit", 0) or 0)
+            if name in mapping and price > 0:
+                mapping[name] = price
+    except Exception:
+        pass  # table may not exist yet; use hardcoded fallback
+    return mapping
+
+
+def _estimate_fertilizer_cost_from_icar(
+    conn: sqlite3.Connection,
+    crop_id: str,
+    state: str | None,
+    planning_month: int | None,
+) -> float | None:
+    """Estimate per-acre fertilizer OPEX from ICAR nutrient plan data.
+
+    Converts NPK kg/ha + FYM t/ha + zinc to product quantities at government
+    rates (from DB or hardcoded fallback), then converts from per-hectare to
+    per-acre (÷ 2.471).
+
+    Returns total fertilizer cost per acre (INR), or None if no ICAR data.
+    """
+    if not state:
+        return None
+
+    season = detect_season(planning_month) if planning_month else None
+    if not season:
+        return None
+
+    icar_states = normalize_state_for_icar(state)
+    icar_names = match_id_to_icar_names(crop_id)
+    if not icar_names:
+        return None
+
+    # Load prices from DB (with hardcoded fallback)
+    fert_prices = _load_fertilizer_prices(conn)
+
+    for icar_state in icar_states:
+        for name in icar_names:
+            rows = get_icar_nutrient_plan(conn, icar_state, season, name)
+            if not rows:
+                continue
+
+            r = rows[0]
+            cost_per_ha = 0.0
+
+            n_kg = float(r.get("N_kg_ha") or 0)
+            p_kg = float(r.get("P_kg_ha") or 0)
+            k_kg = float(r.get("K_kg_ha") or 0)
+            fym_t = float(r.get("FYM_t_ha") or 0)
+            zinc_kg = float(r.get("zinc_sulphate_kg_ha") or 0)
+
+            cost_per_ha += n_kg * fert_prices["UREA"]
+            cost_per_ha += p_kg * fert_prices["DAP"]
+            cost_per_ha += k_kg * fert_prices["MOP"]
+            cost_per_ha += fym_t * fert_prices["FYM"]
+            cost_per_ha += zinc_kg * fert_prices["ZINC_SULPHATE"]
+
+            if cost_per_ha > 0:
+                # Convert hectare → acre (1 ha = 2.471 acres)
+                return round(cost_per_ha / 2.471, 0)
+
+    return None
+
+
 def compute_crop_economics(
     conn: sqlite3.Connection,
     crop_id: str,
@@ -493,6 +620,8 @@ def compute_crop_economics(
     capex_contingency_pct: float,
     planning_month: int | None = None,
     llm_client: BaseLLMClient | None = None,
+    *,
+    state: str | None = None,
 ) -> CropEconomics:
     ce = CropEconomics(
         crop_id=crop_id,
@@ -571,6 +700,32 @@ def compute_crop_economics(
                 source="llm_estimate",
             )
 
+    # ── ICAR fertilizer cost supplement ──────────────────────────────
+    # If nutrition_inputs family is absent from assembled costs, use ICAR
+    # nutrient plan to estimate precise, state-specific fertilizer costs.
+    has_nutrition = any(
+        c.get("component_family") == "nutrition_inputs"
+        for c in ce.components
+        if c.get("cost_type") == "OPEX"
+    )
+    if not has_nutrition and state:
+        icar_fert_cost = _estimate_fertilizer_cost_from_icar(
+            conn, crop_id, state, planning_month
+        )
+        if icar_fert_cost and icar_fert_cost > 0:
+            _capture_component(
+                ce,
+                component_name="icar_fertilizer_estimate",
+                cost_type="OPEX",
+                avg_cost=icar_fert_cost,
+                source="icar_nutrient_plan",
+            )
+            ce.opex_per_acre += icar_fert_cost
+            logger.info(
+                "ICAR fertilizer cost for %s in %s: ₹%.0f/acre",
+                crop_name, state, icar_fert_cost,
+            )
+
     capex_topup, opex_topup = _add_missing_practice_costs(ce, practice_costs)
     ce.practice_capex_topup_per_acre = capex_topup
     ce.practice_opex_topup_per_acre = opex_topup
@@ -578,8 +733,11 @@ def compute_crop_economics(
     ce.opex_per_acre += opex_topup
 
     labour_mult = _LABOUR_MULTIPLIER.get((labour_availability, crop_labour_need), 1.0)
-    labour_portion = ce.opex_per_acre * 0.35
-    non_labour_portion = ce.opex_per_acre * 0.65
+    # Use per-category labour share from DB; fall back to 0.35
+    crop_category = (crop_info or {}).get("category", "").upper() if crop_info else ""
+    labour_share = get_crop_labour_share(conn, crop_category) if crop_category else 0.35
+    labour_portion = ce.opex_per_acre * labour_share
+    non_labour_portion = ce.opex_per_acre * (1.0 - labour_share)
     ce.labour_adjusted_opex_per_acre = (labour_portion * labour_mult) + non_labour_portion
 
     has_irrigation_component = any(
@@ -588,15 +746,18 @@ def compute_crop_economics(
         if component["cost_type"] == "CAPEX"
     )
     irr_source = irrigation_source or "NONE"
+    # Look up irrigation costs from DB; fall back to hardcoded dicts
+    irr_db = get_irrigation_costs(conn, irr_source)
+    irr_capex = float(irr_db["capex_per_acre"]) if irr_db else _IRRIGATION_CAPEX_PER_ACRE.get(irr_source, 0)
+    irr_opex = float(irr_db["opex_per_acre"]) if irr_db else _IRRIGATION_OPEX_PER_ACRE.get(irr_source, 0)
     if not has_irrigation_component:
-        ce.irrigation_capex_per_acre = _IRRIGATION_CAPEX_PER_ACRE.get(irr_source, 0)
-    base_irrigation_opex = _IRRIGATION_OPEX_PER_ACRE.get(irr_source, 0)
+        ce.irrigation_capex_per_acre = irr_capex
     if not any(
         component["component_family"] == "irrigation_system"
         for component in ce.components
         if component["cost_type"] == "OPEX"
     ):
-        ce.irrigation_opex_per_acre = base_irrigation_opex * _WATER_OPEX_MULTIPLIER.get(water_availability, 1.0)
+        ce.irrigation_opex_per_acre = irr_opex * _WATER_OPEX_MULTIPLIER.get(water_availability, 1.0)
 
     scale = _scale_factor(land_total_acres)
     ce.physical_capex_per_acre = (ce.capex_per_acre + ce.irrigation_capex_per_acre) * scale
@@ -707,13 +868,15 @@ def _scenario_crop_revenue_profile(
     projection_months: int,
     planning_month: int | None = None,
     budget_per_acre: float = 0.0,
+    override_yield_bands: dict | None = None,
 ) -> tuple[list[float], float]:
     revenue = [0.0] * projection_months
     if area_acres <= 0 or projection_months <= 0:
         return revenue, 0.0
 
     yield_key, price_key, loss_key = _scenario_keys(scenario)
-    yield_data = get_yield_bands(conn, crop_id)
+    # Use state-specific yield bands if provided; else fall back to national
+    yield_data = override_yield_bands or get_yield_bands(conn, crop_id)
     price_data = get_price_bands(conn, crop_id)
     crop_info = get_crop_by_id(conn, crop_id)
     if not yield_data or not price_data:
@@ -745,7 +908,8 @@ def _scenario_crop_revenue_profile(
             bucket = _month_bucket(event_month, projection_months)
             if bucket is None:
                 break
-            ramp = _TREE_CROP_RAMP[min(harvest_number, len(_TREE_CROP_RAMP) - 1)]
+            tree_ramp = _get_tree_ramp(crop_id)
+            ramp = tree_ramp[min(harvest_number, len(tree_ramp) - 1)]
             revenue[bucket] += marketable_revenue_per_harvest * ramp
             event_month += 12
             harvest_number += 1
@@ -876,6 +1040,8 @@ def compute_full_economics(
     budget_total_inr: int,
     planning_month: int | None = None,
     llm_client: BaseLLMClient | None = None,
+    *,
+    state: str | None = None,
 ) -> FullEconomics:
     horizon_years = max(horizon_months / 12, 1)
     projection_months = _cashflow_projection_months(horizon_months)
@@ -908,6 +1074,7 @@ def compute_full_economics(
             capital_buffer_floor_months=scenario_reference["capital_buffer_floor_months"],
             capex_contingency_pct=scenario_reference["capex_contingency_pct"],
             llm_client=llm_client,
+            state=state,
         )
         if ce.has_db_data:
             crops_with_data += 1

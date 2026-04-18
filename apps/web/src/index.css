@@ -173,6 +173,53 @@ body {
   background: linear-gradient(to bottom, #F5F2EC, #0D2B1A);
 }
 
+/* ===== Planner form glassmorphism ===== */
+.form-card-glass {
+  background: linear-gradient(
+    168deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.form-input-dark {
+  @apply w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white
+    placeholder:text-white/25 transition-all duration-200
+    focus:border-accent-gold focus:bg-white/[0.06] focus:outline-none focus:ring-1 focus:ring-accent-gold/40;
+}
+
+.form-input-dark::-webkit-autofill,
+.form-input-dark:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgba(13, 43, 26, 0.99) inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* ===== Pipeline loader ===== */
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 0; }
+}
+
+@keyframes bounce-dot {
+  0%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-6px); }
+}
+
+.pipeline-glow {
+  box-shadow: 0 0 16px 4px rgba(200, 149, 108, 0.35), 0 0 4px 1px rgba(200, 149, 108, 0.5);
+}
+
+.pipeline-dot-bounce span:nth-child(1) { animation: bounce-dot 1.2s ease-in-out 0s infinite; }
+.pipeline-dot-bounce span:nth-child(2) { animation: bounce-dot 1.2s ease-in-out 0.15s infinite; }
+.pipeline-dot-bounce span:nth-child(3) { animation: bounce-dot 1.2s ease-in-out 0.3s infinite; }
+
 /* ===== Cloud drift (mobile fallback when parallax disabled) ===== */
 @keyframes cloud-drift-left {
   0%, 100% { transform: translateX(0); }

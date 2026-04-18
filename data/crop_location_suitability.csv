@@ -361,3 +361,83 @@ MU_OYSTER,Uttar Pradesh,MED,Indoor mushroom; climate independent; large market,C
 MU_OYSTER,Kerala,MED,Indoor mushroom; suitable humidity; local demand,CLIMATE_BASED
 MU_OYSTER,Tamil Nadu,MED,Indoor mushroom; research support from TNAU,CLIMATE_BASED
 MU_OYSTER,Karnataka,MED,Indoor mushroom; Bangalore urban market,CLIMATE_BASED
+CE_RICE,Jharkhand,GOOD,Rice is the dominant kharif crop across most districts,ECON_SURVEY_CROPS
+CE_RICE,Uttarakhand,MED,Valley rice cultivation in Dehradun Haridwar and Nainital districts,CLIMATE_BASED
+CE_RICE,Himachal Pradesh,MED,Limited rice in Kangra Mandi and Sirmour valley areas,CLIMATE_BASED
+CE_RICE,Tripura,GOOD,Rice is the staple crop covering most arable land,ECON_SURVEY_CROPS
+CE_RICE,Manipur,GOOD,Valley rice cultivation is the primary agricultural activity,ECON_SURVEY_CROPS
+CE_RICE,Meghalaya,MED,Rice grown in Garo Hills and Jaintia Hills lowlands,CLIMATE_BASED
+CE_WHEAT,Jharkhand,MED,Wheat grown as rabi crop in Palamu and Ranchi plateau areas,CLIMATE_BASED
+CE_MAIZE,Jharkhand,MED,Maize grown in upland areas as kharif cereal,CLIMATE_BASED
+CE_MAIZE,Chhattisgarh,MED,Maize cultivation in northern plateau districts,CLIMATE_BASED
+CE_MAIZE,Assam,MED,Maize growing as a diversification crop in upper Assam,CLIMATE_BASED
+CE_MAIZE,Meghalaya,MED,Maize is an important cereal in Garo Hills and Khasi Hills,CLIMATE_BASED
+FR_MANGO,West Bengal,GOOD,Malda and Murshidabad are major mango districts,APEDA_MANGO
+FR_MANGO,Jharkhand,MED,Emerging mango cultivation in Ranchi and Singhbhum,CLIMATE_BASED
+VE_TOMATO,Madhya Pradesh,MED,Tomato cultivation growing in Ratlam and Mandsaur belts,CLIMATE_BASED
+VE_TOMATO,Gujarat,MED,Tomato grown in Banaskantha and Sabarkantha irrigated areas,CLIMATE_BASED
+VE_TOMATO,West Bengal,MED,Tomato cultivation in Bankura and Purulia districts,CLIMATE_BASED
+VE_ONION,Telangana,MED,Onion cultivation in several districts with moderate production,CLIMATE_BASED
+VE_POTATO,Maharashtra,MED,Potato cultivation in Pune and Satara at higher elevations,CLIMATE_BASED
+VE_POTATO,Gujarat,GOOD,Significant potato cultivation in Banaskantha and Sabarkantha,ECON_SURVEY_CROPS
+VE_POTATO,Karnataka,MED,Potato grown in Hassan and Chikkamagaluru hill zones,CLIMATE_BASED
+VE_POTATO,Jharkhand,MED,Potato cultivation in Ranchi and Lohardaga plateau areas,CLIMATE_BASED
+VE_POTATO,Assam,MED,Potato as rabi crop in upper Assam districts,CLIMATE_BASED
+OS_SOYBEAN,Karnataka,MED,Soybean cultivation in northern dry zone districts,CLIMATE_BASED
+OS_SOYBEAN,Telangana,MED,Emerging soybean cultivation in some districts,CLIMATE_BASED
+OS_GROUNDNUT,Telangana,MED,Groundnut in some districts as kharif oilseed,CLIMATE_BASED
+OS_MUSTARD,Bihar,GOOD,Major mustard producer after Rajasthan UP and Haryana,ECON_SURVEY_CROPS
+OS_MUSTARD,Gujarat,MED,Mustard cultivation in north Gujarat irrigated pockets,CLIMATE_BASED
+OS_MUSTARD,West Bengal,MED,Mustard as rabi crop in western Bengal districts,CLIMATE_BASED
+PU_CHICKPEA,Andhra Pradesh,GOOD,Chickpea cultivation in Kurnool and Prakasam,ECON_SURVEY_CROPS
+PU_CHICKPEA,Gujarat,MED,Chickpea as rabi pulse in Saurashtra region,CLIMATE_BASED
+CM_COTTON,Punjab,GOOD,Major cotton belt in Malwa region,ECON_SURVEY_CROPS
+CM_COTTON,Haryana,GOOD,Cotton cultivation in Sirsa and Hisar belt,ECON_SURVEY_CROPS
+CM_SUGARCANE,Bihar,MED,Sugarcane in northern Bihar plains with sugar mills,CLIMATE_BASED
+CM_SUGARCANE,Gujarat,GOOD,Significant sugarcane in south Gujarat with sugar factories,ECON_SURVEY_CROPS
+CM_SUGARCANE,Punjab,MED,Sugarcane in Doaba and Majha regions,CLIMATE_BASED
+SP_TURMERIC,Odisha,MED,Turmeric growing in Kandhamal and Koraput districts,CLIMATE_BASED
+SP_TURMERIC,Assam,MED,Turmeric as a spice crop in upper Assam,CLIMATE_BASED
+SP_CHILLI,Madhya Pradesh,MED,Chilli cultivation in some districts,CLIMATE_BASED
+SP_GINGER,Assam,GOOD,Major ginger producing state in northeast India,ECON_SURVEY_CROPS
+SP_GINGER,Uttarakhand,MED,Ginger cultivation in lower hill areas,CLIMATE_BASED
+SP_GINGER,Odisha,MED,Ginger in Koraput and Kandhamal districts,CLIMATE_BASED
+FR_BANANA,Assam,GOOD,Major banana producer with diverse varieties in Brahmaputra valley,ECON_SURVEY_CROPS
+FR_BANANA,Odisha,MED,Banana cultivation in coastal and central districts,CLIMATE_BASED
+FR_BANANA,Bihar,GOOD,Major banana belt in Hajipur and Vaishali,ECON_SURVEY_CROPS
+FR_BANANA,West Bengal,MED,Banana in Nadia and Hooghly districts,CLIMATE_BASED
+FR_COCONUT,Odisha,MED,Coconut in Ganjam and Puri coastal areas,CLIMATE_BASED
+FR_COCONUT,Assam,MED,Coconut cultivation in lower Assam plains,CLIMATE_BASED
+FR_LITCHI,Assam,MED,Limited litchi cultivation in some upper Assam areas,CLIMATE_BASED
+CM_TEA,Tripura,MED,Small tea gardens growing as alternative livelihood,CLIMATE_BASED
+CM_TEA,Meghalaya,MED,Small tea gardens in Jaintia and West Khasi Hills,CLIMATE_BASED
+CM_COFFEE,Andhra Pradesh,MED,Coffee cultivation in Araku Valley tribal areas,CLIMATE_BASED
+CM_COFFEE,Odisha,MED,Emerging coffee in Koraput district tribal areas,CLIMATE_BASED
+MI_JOWAR,Andhra Pradesh,MED,Jowar in Rayalaseema dry districts,CLIMATE_BASED
+PU_MOONG,Odisha,MED,Moong in some rabi and zaid areas,CLIMATE_BASED
+PU_MOONG,Andhra Pradesh,MED,Moong cultivation in some districts as zaid pulse,CLIMATE_BASED
+PU_URAD,Andhra Pradesh,MED,Urad cultivation in some districts,CLIMATE_BASED
+PU_URAD,Jharkhand,MED,Urad as short-duration kharif pulse,CLIMATE_BASED
+PU_LENTIL,Jharkhand,MED,Lentil cultivation in Palamu and Chatra areas,CLIMATE_BASED
+PU_LENTIL,Chhattisgarh,MED,Limited lentil in northern plains areas,CLIMATE_BASED
+MU_OYSTER,Himachal Pradesh,GOOD,Cool hill climate ideal for year-round mushroom production,CLIMATE_BASED
+MU_OYSTER,Uttarakhand,GOOD,Hill climate supports mushroom farming,CLIMATE_BASED
+MU_OYSTER,Odisha,MED,Coastal humidity supports oyster mushroom with proper hygiene,CLIMATE_BASED
+MU_OYSTER,Jharkhand,MED,Mushroom cultivation growing in some districts,CLIMATE_BASED
+MU_OYSTER,Bihar,MED,Winter mushroom production with training program support,CLIMATE_BASED
+VE_OKRA,Odisha,MED,Okra as common vegetable crop in coastal and inland areas,CLIMATE_BASED
+VE_OKRA,Assam,MED,Okra cultivation for local markets in Brahmaputra valley,CLIMATE_BASED
+VE_OKRA,Jharkhand,MED,Okra grown as kharif vegetable in accessible areas,CLIMATE_BASED
+VE_BRINJAL,Odisha,GOOD,Major brinjal producer with commercial cultivation,ECON_SURVEY_CROPS
+VE_BRINJAL,Assam,MED,Brinjal grown widely for local and regional markets,CLIMATE_BASED
+VE_BRINJAL,Jharkhand,MED,Brinjal as common kharif vegetable in peri-urban areas,CLIMATE_BASED
+VE_BRINJAL,Chhattisgarh,MED,Brinjal cultivation in Raipur and Durg districts,CLIMATE_BASED
+FL_MARIGOLD,Jharkhand,MED,Marigold for local festival and market demand,CLIMATE_BASED
+FL_MARIGOLD,Odisha,MED,Marigold cultivation in coastal and accessible districts,CLIMATE_BASED
+FL_MARIGOLD,Assam,MED,Marigold for local festive demand in Brahmaputra valley,CLIMATE_BASED
+SP_CUMIN,Madhya Pradesh,MED,Limited cumin in Malwa region,CLIMATE_BASED
+OS_SESAME,Odisha,MED,Sesame as kharif oilseed in some districts,CLIMATE_BASED
+CE_SORGHUM_FODDER,Andhra Pradesh,MED,Sorghum fodder in Rayalaseema dry belts,CLIMATE_BASED
+CE_SORGHUM_FODDER,Telangana,MED,Sorghum as dual-purpose crop in some districts,CLIMATE_BASED
+FR_GUAVA,Chhattisgarh,MED,Guava cultivation expanding with horticulture mission support,CLIMATE_BASED
+FR_GUAVA,Jharkhand,MED,Guava in Ranchi plateau and accessible districts,CLIMATE_BASED

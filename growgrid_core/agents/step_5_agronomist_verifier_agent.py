@@ -17,10 +17,21 @@ import re
 from typing import Any
 
 from growgrid_core.agents.base_agent import BaseAgent
+from growgrid_core.db.db_loader import get_connection
+from growgrid_core.db.queries import (
+    get_icar_crop_calendar,
+    get_icar_nutrient_plan,
+    get_icar_pest_disease,
+    get_icar_varieties,
+    get_icar_weed_management,
+)
 from growgrid_core.tools.llm_client import BaseLLMClient, get_llm_client
 from growgrid_core.tools.tavily_client import BaseTavilyClient, get_tavily_client
 from growgrid_core.tools.tool_cache import ToolCache
 from growgrid_core.utils.enums import ConflictLevel
+from growgrid_core.utils.icar_matching import match_id_to_icar_names, normalize_state_for_icar
+from growgrid_core.utils.location import parse_state_from_location
+from growgrid_core.utils.season import detect_season
 from growgrid_core.utils.types import (
     AgronomistVerification,
     CropPortfolioEntry,
@@ -161,13 +172,29 @@ class AgronomistVerifierAgent(BaseAgent):
         user_context = getattr(request, "user_context", None) or None
         claims = self._build_claims(profile, selected_practice, crop_portfolio, user_context)
 
+        # ── Phase 1.5: ICAR evidence pre-fill ─────────────────────
+        state_name = parse_state_from_location(profile.location)
+        season = detect_season(profile.planning_month) if profile.planning_month else None
+        icar_cache: dict[str, dict[str, Any]] = {}
+        for entry in crop_portfolio:
+            icar_ev = self._get_icar_evidence(state_name, season, entry)
+            icar_cache[entry.crop_id] = icar_ev
+            covered = sum(1 for v in icar_ev.values() if v is not None)
+            if covered > 0:
+                logger.info(
+                    "ICAR pre-fill for %s: %d/7 fields covered → reducing Tavily queries",
+                    entry.crop_name, covered,
+                )
+
         # ── Phase 2: Tavily search (with caching) ───────────────────
         all_evidence: list[EvidenceCard] = []
         all_citations: list[str] = []
 
         for entry in crop_portfolio:
+            icar_ev = icar_cache.get(entry.crop_id, {})
             search_results = self._search_with_cache(
-                tavily, cache, profile, selected_practice, entry
+                tavily, cache, profile, selected_practice, entry,
+                icar_evidence=icar_ev,
             )
 
             crop_citations: list[str] = []
@@ -207,7 +234,11 @@ class AgronomistVerifierAgent(BaseAgent):
         # ── Phase 6: Grow guide generation ──────────────────────────
         grow_guides: list[GrowGuide] = []
         for entry in verified_portfolio:
-            guide = self._generate_grow_guide(llm, profile, selected_practice, entry, user_context)
+            icar_ev = icar_cache.get(entry.crop_id, {})
+            guide = self._generate_grow_guide(
+                llm, profile, selected_practice, entry, user_context,
+                icar_data=icar_ev,
+            )
             grow_guides.append(guide)
 
         # Compute confidence
@@ -253,14 +284,134 @@ class AgronomistVerifierAgent(BaseAgent):
         return claims
 
     @staticmethod
+    def _get_icar_evidence(
+        state: str | None,
+        season: str | None,
+        entry: CropPortfolioEntry,
+    ) -> dict[str, Any]:
+        """Query ICAR tables for pre-filled evidence. Returns dict of evidence fields.
+
+        Fields that have ICAR data are populated; others are left as None so the
+        caller knows to fall back to Tavily for those.
+        """
+        result: dict[str, Any] = {
+            "sowing_window": None,
+            "time_to_harvest": None,
+            "major_pests": None,
+            "fertilizer_plan": None,
+            "varieties": None,
+            "weed_management": None,
+            "seed_rate": None,
+        }
+
+        if not state or not season:
+            return result
+
+        icar_states = normalize_state_for_icar(state)
+        icar_names = match_id_to_icar_names(entry.crop_id)
+        if not icar_names:
+            # Try using the crop_name directly
+            icar_names = [entry.crop_name.lower()]
+
+        try:
+            conn = get_connection()
+        except Exception:
+            return result
+
+        try:
+            for icar_state in icar_states:
+                for name in icar_names:
+                    # Crop calendar
+                    cal_rows = get_icar_crop_calendar(conn, icar_state, season, name)
+                    if cal_rows:
+                        r = cal_rows[0]
+                        sow_s, sow_e = r.get("sow_start_month"), r.get("sow_end_month")
+                        if sow_s and sow_e:
+                            _months = {1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr", 5: "May",
+                                       6: "Jun", 7: "Jul", 8: "Aug", 9: "Sep", 10: "Oct",
+                                       11: "Nov", 12: "Dec"}
+                            result["sowing_window"] = f"{_months.get(int(sow_s), '?')}–{_months.get(int(sow_e), '?')}"
+                        if r.get("duration_days"):
+                            result["time_to_harvest"] = f"{r['duration_days']} days"
+                        if r.get("seed_rate_kg_ha"):
+                            result["seed_rate"] = f"{r['seed_rate_kg_ha']} kg/ha"
+
+                    # Nutrient plan
+                    nut_rows = get_icar_nutrient_plan(conn, icar_state, season, name)
+                    if nut_rows:
+                        r = nut_rows[0]
+                        parts = []
+                        n, p, k = r.get("N_kg_ha"), r.get("P_kg_ha"), r.get("K_kg_ha")
+                        if n is not None or p is not None or k is not None:
+                            parts.append(f"NPK: {n or 0}:{p or 0}:{k or 0} kg/ha")
+                        if r.get("FYM_t_ha"):
+                            parts.append(f"FYM: {r['FYM_t_ha']} t/ha")
+                        if r.get("split_schedule"):
+                            parts.append(f"Schedule: {r['split_schedule']}")
+                        if parts:
+                            result["fertilizer_plan"] = "; ".join(parts)
+
+                    # Pest/disease
+                    pest_rows = get_icar_pest_disease(conn, icar_state, season, name)
+                    if pest_rows:
+                        pest_items = []
+                        for pr in pest_rows[:8]:
+                            item = pr.get("pest_or_disease_name", "")
+                            ctrl = pr.get("chemical_control") or pr.get("bio_control") or ""
+                            if ctrl:
+                                item += f" → {ctrl[:80]}"
+                            pest_items.append(item)
+                        result["major_pests"] = "; ".join(pest_items)
+
+                    # Varieties
+                    var_rows = get_icar_varieties(conn, icar_state, season, name)
+                    if var_rows:
+                        var_items = []
+                        for vr in var_rows[:4]:
+                            v = vr.get("variety_names", "")
+                            vt = vr.get("variety_type") or ""
+                            dt = vr.get("duration_type") or ""
+                            label = v
+                            if vt or dt:
+                                label += f" ({', '.join(filter(None, [vt, dt]))})"
+                            var_items.append(label)
+                        result["varieties"] = "; ".join(var_items)
+
+                    # Weed management
+                    weed_rows = get_icar_weed_management(conn, icar_state, season, name)
+                    if weed_rows:
+                        wr = weed_rows[0]
+                        weed_parts = []
+                        if wr.get("pre_emergence_herbicide"):
+                            weed_parts.append(f"Pre-em: {wr['pre_emergence_herbicide']}")
+                        if wr.get("post_emergence_herbicide"):
+                            weed_parts.append(f"Post-em: {wr['post_emergence_herbicide']}")
+                        if wr.get("manual_weeding_schedule"):
+                            weed_parts.append(f"Manual: {wr['manual_weeding_schedule']}")
+                        if weed_parts:
+                            result["weed_management"] = "; ".join(weed_parts)
+
+                    # If we found any data, stop searching other name/state combos
+                    if any(v is not None for v in result.values()):
+                        return result
+        except Exception as exc:
+            logger.debug("ICAR evidence lookup failed: %s", exc)
+        finally:
+            conn.close()
+
+        return result
+
+    @staticmethod
     def _search_with_cache(
         tavily: BaseTavilyClient,
         cache: ToolCache | None,
         profile: ValidatedProfile,
         practice: PracticeScore,
         entry: CropPortfolioEntry,
+        *,
+        icar_evidence: dict[str, Any] | None = None,
     ) -> list[dict[str, Any]]:
-        """Search Tavily with optional caching."""
+        """Search Tavily with optional caching. Skips queries covered by ICAR data."""
         cache_key = f"{profile.location}|{practice.practice_code}|{entry.crop_id}|v1"
 
         if cache is not None:
@@ -268,12 +419,29 @@ class AgronomistVerifierAgent(BaseAgent):
             if cached is not None:
                 return cached
 
-        queries = [
-            f"{entry.crop_name} cultivation package of practices {profile.location} India",
-            f"{entry.crop_name} sowing time {profile.location} {practice.practice_name}",
-            f"{entry.crop_name} irrigation requirement water need India",
-            f"{entry.crop_name} major pests diseases India management",
-        ]
+        # Determine which Tavily queries to skip based on ICAR coverage
+        has_sowing = bool(icar_evidence and icar_evidence.get("sowing_window"))
+        has_pests = bool(icar_evidence and icar_evidence.get("major_pests"))
+
+        queries: list[str] = []
+        # Always keep cultivation practices query (broad coverage)
+        queries.append(
+            f"{entry.crop_name} cultivation package of practices {profile.location} India"
+        )
+        # Skip sowing time query if ICAR has sowing window
+        if not has_sowing:
+            queries.append(
+                f"{entry.crop_name} sowing time {profile.location} {practice.practice_name}"
+            )
+        # Always keep irrigation query (ICAR doesn't cover irrigation well)
+        queries.append(
+            f"{entry.crop_name} irrigation requirement water need India"
+        )
+        # Skip pest query if ICAR has pest data
+        if not has_pests:
+            queries.append(
+                f"{entry.crop_name} major pests diseases India management"
+            )
 
         results: list[dict[str, Any]] = []
         for q in queries:
@@ -429,8 +597,10 @@ class AgronomistVerifierAgent(BaseAgent):
         practice: PracticeScore,
         entry: CropPortfolioEntry,
         user_context: str | None = None,
+        *,
+        icar_data: dict[str, Any] | None = None,
     ) -> GrowGuide:
-        """Generate a structured grow guide via LLM."""
+        """Generate a structured grow guide via LLM, enriched with ICAR data."""
         user_prompt = (
             f"Generate a grow guide for:\n"
             f"- Crop: {entry.crop_name}\n"
@@ -442,6 +612,25 @@ class AgronomistVerifierAgent(BaseAgent):
         )
         if user_context and user_context.strip():
             user_prompt += f"- User context: {user_context.strip()}\n"
+
+        # Inject ICAR reference data so the LLM contextualizes rather than invents
+        if icar_data and any(v is not None for v in icar_data.values()):
+            user_prompt += "\nICar advisory reference data (use these as authoritative values):\n"
+            if icar_data.get("sowing_window"):
+                user_prompt += f"- Sowing window: {icar_data['sowing_window']}\n"
+            if icar_data.get("time_to_harvest"):
+                user_prompt += f"- Duration to harvest: {icar_data['time_to_harvest']}\n"
+            if icar_data.get("seed_rate"):
+                user_prompt += f"- Seed rate: {icar_data['seed_rate']}\n"
+            if icar_data.get("fertilizer_plan"):
+                user_prompt += f"- Fertilizer plan: {icar_data['fertilizer_plan']}\n"
+            if icar_data.get("major_pests"):
+                user_prompt += f"- Major pests/diseases: {icar_data['major_pests']}\n"
+            if icar_data.get("varieties"):
+                user_prompt += f"- Recommended varieties: {icar_data['varieties']}\n"
+            if icar_data.get("weed_management"):
+                user_prompt += f"- Weed management: {icar_data['weed_management']}\n"
+
         user_prompt += "\nReturn as JSON with the specified keys."
 
         try:

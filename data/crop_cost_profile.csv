@@ -682,3 +682,21 @@ VE_WATERMELON,land_preparation,CAPEX,5000,7000,Ploughing + bed making + mulch la
 VE_WATERMELON,marketing_and_transport,OPEX,3000,6000,Bulky perishable; truck transport + mandi fees
 VE_WATERMELON,pesticide_and_protection,OPEX,2000,4000,Fusarium wilt + anthracnose + fruit fly
 VE_WATERMELON,seed_or_planting_material,CAPEX,2000,4000,Hybrid seed 200-300g/acre; mulching cost
+FR_ACID_LIME,fertilizer_and_nutrients,OPEX,3500,6000,NPK + FYM + micronutrients for citrus per year
+FR_ACID_LIME,harvesting_and_post_harvest,OPEX,3000,5500,Multiple picking rounds year-round bearing + sorting + packing
+FR_ACID_LIME,intercultural_operations,OPEX,2500,4500,Basin management + weeding + mulching around trees
+FR_ACID_LIME,irrigation_cost,OPEX,2500,4500,Medium water need; drip or basin irrigation recommended
+FR_ACID_LIME,labour,OPEX,5000,9000,Pruning + spraying + harvesting + orchard maintenance
+FR_ACID_LIME,land_preparation,CAPEX,6000,10000,Pit digging 60cm cube + layout for citrus orchard at 5x5m
+FR_ACID_LIME,marketing_and_transport,OPEX,2500,5000,Market transport + mandi commission; year-round supply
+FR_ACID_LIME,pesticide_and_protection,OPEX,2000,4000,Citrus psylla + leaf miner + canker + Phytophthora management
+FR_ACID_LIME,seed_or_planting_material,CAPEX,6000,12000,Budded saplings 120-160 per acre at 40-75 per sapling
+SP_CUMIN,fertilizer_and_nutrients,OPEX,1500,2500,Low NPK dose; responds to phosphorus and sulphur
+SP_CUMIN,harvesting_and_post_harvest,OPEX,2500,4000,Manual or machine harvesting + threshing + winnowing + drying
+SP_CUMIN,intercultural_operations,OPEX,2000,3500,Weeding critical at 30-45 DAS; thinning if broadcast sown
+SP_CUMIN,irrigation_cost,OPEX,1200,2000,Low water need; 2-3 light irrigations at critical stages
+SP_CUMIN,labour,OPEX,3500,6000,Sowing + weeding + harvesting; semi-mechanizable
+SP_CUMIN,land_preparation,CAPEX,2000,3500,Fine tilth required; ploughing + planking + bed making
+SP_CUMIN,marketing_and_transport,OPEX,1500,3000,High-value spice; mandi fees + transport + grading
+SP_CUMIN,pesticide_and_protection,OPEX,1500,2500,Wilt + blight + aphid management; seed treatment important
+SP_CUMIN,seed_or_planting_material,CAPEX,2000,3500,Seed rate 5-6 kg per acre; certified seed preferred

@@ -1,0 +1,109 @@
+state,season,crop_name,sub_region,pre_emergence_herbicide,pre_em_dose,pre_em_timing_das,post_emergence_herbicide,post_em_dose,post_em_timing_das,manual_weeding_schedule
+Andaman and Nicobar Islands,kharif,Rice,,,,,,,,Use cono-weeder for weeding
+Andaman and Nicobar Islands,kharif,Arecanut,,,,,,,,Timely weeding and earthing-up; use organic mulching or black polythene to suppress weeds
+Andaman and Nicobar Islands,kharif,Cinnamon,,,,,,,,Mulch with locally available dry leaves to suppress weeds
+Andhra Pradesh,kharif,paddy,,Pyrazosulfuron-ethyl 10% WP,250,3,,,,
+Andhra Pradesh,kharif,paddy,,Pretilachlor + Safener 37% EW,1500,3,Cyhalofop-P-butyl 10% EC,1000,20,
+Andhra Pradesh,kharif,paddy,,Butachlor 50% EC,3125,3,Bispyribac Sodium 10% SL,250,20,
+Andhra Pradesh,kharif,maize,,Atrazine,2000,0,Tembotrione 34.4% SC + Atrazine 50% WP,,15,
+Arunachal Pradesh,kharif,Rice,,,,,,,,Two weedings at 20 and 40 days after transplanting; critical weeding from 15-45 DAS; manual and/or cono weeder
+Arunachal Pradesh,kharif,Finger millet,,Atrazine,1.0,,,,,Light hoeing and earthing up as necessary
+Arunachal Pradesh,kharif,Maize,,,,,,,,"Two hand weedings: first at 15-20 days, second 15-20 days after first; intercultural operation with tyne-harrow at 30 days"
+Arunachal Pradesh,kharif,Black gram,,,,,,,,One weeding at 20-25 days after sowing by khurpi or hoe
+Arunachal Pradesh,kharif,Sesame,,,,,,,,One weeding
+Assam,kharif,sali rice,,pretilachlor,0.75,3,,,,Two weedings with paddy weeder or hoe at 20 and 40 days after transplanting
+Assam,kharif,maize,,simazine,0.75,,,,,Light hoeing and earthing up as needed
+Assam,kharif,blackgram,,,,,propaquizafop 2.5% + imazethapyr 3.75% ready mix,125,15,"One weeding at 20 days after sowing by khurpi or hoe, crop thinned simultaneously"
+Bihar,kharif,Paddy nursery,,Pyrazosulfuron Ethyl 10 WP,6,,,,,
+Bihar,kharif,Pigeonpea/Arhar,,Pendimethalin,1,2,,,,First intercultural operation 20-25 days after sowing; second operation at 40-45 days after sowing
+Chhattisgarh,kharif,Rice,,Pretilachlor 50% EC,1500,3,Bispyribac sodium (10%),250,,
+Chhattisgarh,kharif,Maize,,,,,Chlorimuron-p-ethyl 10% WP + Metasulfuron-methyl 10% WP,20,,Weeding can be done using plough or harrow in row-sown crops
+Chhattisgarh,kharif,Pigeon Pea,,,,,Quazalofop ethyl 5% E.C.,50,,
+Goa,kharif,paddy,,,,,,,,Keep bunds weed free
+Gujarat,kharif,Groundnut,South Saurashtra,Pendimethalin,1,,Quizalofop-P-ethyl,0.05,,Two hand weedings at 20 and 40 DAS
+Gujarat,kharif,Soybean,,,,,,,,
+Gujarat,kharif,Cotton,,Pendimethalin,,,Quizalofop or Pyrithiobac,,,2-3 timely hoeings
+Gujarat,kharif,Sugarcane,,Atrazine,2,,,,,Two hand weedings at 40 and 60 DAS
+Gujarat,kharif,Bajra,,,,,Atrazine,1,,Two hand weedings at 20 and 40 DAS
+Gujarat,kharif,Pigeon Pea,,,,,,,,Thinning and gap filling at 10-15 DAS
+Gujarat,kharif,Sesame,,,,,,,,Interculture or hand weeding twice at 15-20 and 30-35 DAS
+Gujarat,kharif,Paddy,South Gujarat,Butachlor,1.5,3,,,,Hand weeding at 30 and 45 DAT
+Haryana and Delhi,kharif,Rice,,Butachlor,30,3,Metsulfuron and Chlorimuron,20,20,
+Haryana and Delhi,kharif,Arhar,,Pendimethalin,0.75,,Imazethapyr,0.1,20,Manual weeding at 20-25 and 45-50 days after sowing
+Haryana and Delhi,kharif,Arhar,,Atrazine,0.5,,,,,One hand-weeding after atrazine application
+Haryana and Delhi,kharif,Jowar,,,,,,,,Two hand weeding (hoeing) at 20 and 35 days after sowing
+Himachal Pradesh,kharif,Cluster bean,,Basaline,2,,,,,Two manual weedings at 25 and 45 DAS are usually sufficient
+Himachal Pradesh,kharif,Paddy,,Atrazine,2,,Tembotrione,0.12,15,
+Himachal Pradesh,kharif,Paddy,,Alachlor,1.5,,Topramezone + Atrazine,0.776,15,
+Himachal Pradesh,kharif,Paddy,,Butachlor,3,3,Bispyribac sodium,0.25,20,
+Himachal Pradesh,kharif,Maize,,,,,,,,"Manual weeding recommended, demonstration of post-emergence herbicide in maize at farmers field"
+Jharkhand,kharif,Paddy,,Pendimethalin 30 EC,2.5,1,Bispyribac 10 SC,0.25,20,
+Jharkhand,kharif,Maize,,,,,,,,"After proper weeding, apply additional 65 kg urea"
+Karnataka,kharif,Paddy,Karnataka,Pendimethalin,1,0,Bispyribac sodium,,,
+Karnataka,kharif,Maize,Karnataka,,,,,,,Frequent interculture required both in kharif and rabi for weed control
+Karnataka,kharif,Sunflower,Karnataka,Butachlor or Alachlor or Pendimethalin,2,,,,,One intercultivation at 30 DAS and hand weeding at 40 DAS
+Kerala,kharif,Banana,,,,,,,,Hand weeding
+Kerala,kharif,Cashew,,,,,,,,Hand weeding and light intercultivation as needed
+Kerala,kharif,Rice (Wetland),,Pretilachlor + Bensulfuron Methyl 0.66 WP,4,0,,,,
+Ladakh,kharif,Pea,,,,,,,,Remove weeds before pest incidence to manage aphids
+Ladakh,kharif,"Cabbage, Cauliflower, Broccoli",,,,,,,,Remove weeds regularly to manage aphids
+Lakshadweep,kharif,coconut,,,,,,,,Periodic weeding recommended; use dried banana leaves for mulching.
+Lakshadweep,kharif,banana,,,,,,,,Periodic weeding recommended; field sanitation and avoid water logging to prevent rhizome rot.
+Lakshadweep,kharif,vegetables,,,,,,,,Follow nursery bed sanitation and keep seed beds weed free.
+Madhya Pradesh,kharif,Paddy,,Pretilachlor 50% EC,1500,3,Bispyribac sodium 10%,250,,
+Madhya Pradesh,kharif,Maize,,,,,Tropramezone 33.6% SC,30,20,
+Madhya Pradesh,kharif,Vegetables,,,,,,,,"Sanitize field, periodic weeding, use dried banana leaves for mulching"
+Maharashtra,kharif,Maize,Vidarbha,Pendimethalin 30% EC,50,,Bispyribac sodium 10% SC,6.5,10,
+Maharashtra,kharif,Soybean,Vidarbha,Pendimethalin 30% EC or Flumioxazin 50 SC,,,,,,
+Maharashtra,kharif,Cotton,Vidarbha,,,,,,,3-4 hoeings and 2-3 weedings during first 60 days; trash mulching after 60 DAP
+Manipur,kharif,Paddy,,Butachlor 50 EC,30,2,,,,Light raking or manual weeding 10-12 days after sowing if required; keep fields weed-free up to 50 DAS
+Manipur,kharif,Millets,,,,,,,,Three hoeings with hand hoe during early growth stages
+Manipur,kharif,Groundnut,,,,,,,,Keep field weed-free up to 50 days after sowing with timely intercultivation and weeding
+Meghalaya,kharif,Paddy,,,,,,,,Manual weeding and earthing up after sowing/transplanting
+Meghalaya,kharif,Maize,,,,,,,,Manual weeding and earthing up in early-sown maize
+Meghalaya,kharif,Ginger,,,,,,,,Proper weeding and earthing up for already sown crops
+Meghalaya,kharif,Turmeric,,,,,,,,Proper weeding and earthing up
+Mizoram,kharif,upland paddy,,,,,,,,First weeding by mid-May; second weeding between first week June to second week July
+Mizoram,kharif,groundnut,,Butachlor,10,,,,,Manual weeding 20-25 DAS and earthing up 35-40 DAS
+Mizoram,kharif,tomato,,Metolachlor,1,40,,,,
+Nagaland,kharif,Lowland Paddy,,,,,,,,At least two manual weedings required during crop growth
+Nagaland,kharif,Upland Paddy,,,,,,,,Two manual weedings: first at 25 DAS and second between first week of June to second week of July
+Nagaland,kharif,Maize,,,,,,,,Maintain weed-free crop for first 30-45 days
+Nagaland,kharif,Millet,,,,,,,,One or two manual weedings during early growth stages
+Nagaland,kharif,Soybean,,,,,,,,Keep weed-free crop up to 60 DAS with at least two intercultural operations at 25 and 45 DAS
+Odisha,kharif,rice,,Pretilachlor with safener,1500,0,Fenoxaprop-ethyl + Ethoxysulfuron,1300,15,
+Odisha,kharif,rice,,pyrazosulfuron,200,0,Bispyribac sodium,250,15,
+Odisha,kharif,rice,,Pretilachlor 6% + Bensulfuron methyl 0.6% GR,10000,0,Triafamone + Ethoxysulfuron,90,15,
+Odisha,kharif,rice,,,,,cyhalofop butyl + penoxsulam,2250,15,
+Odisha,kharif,green gram,,Pendimethalin 30%,2500,,Quizalofop ethyl 5%,1000,,
+Odisha,kharif,black gram,,Pendimethalin 30%,2500,,Quizalofop ethyl 5%,1000,,
+Punjab,kharif,rice,,Stomp/Bunker 30 EC (pendimethalin) or PEPE 25 SE (penoxsulam + pendimethalin),1,,"Nominee Gold 10 SC (bispyribac sodium), Novlect 12 EC (fenoxaprop-p-ethyl), Ricestar 6.7 EC (fenoxaprop-p-ethyl), Almix 20 WP (chlorimuron ethyl + metsulfuron methyl)",,15-25 DAS,
+Punjab,kharif,maize,,Atrataf/Atragold/Masstaf/Atari/Traxx 50 WP (atrazine),800,10,"Laudis 420 SC (tembotrione), 2,4-D amine salt 58 SL",,20-25 DAS,Two hoeings about 15 to 30 days after sowing with khurpa/kasaula/wheel-hoe/triphali/tractor-drawn cultivator
+Rajasthan,kharif,maize,,Atrazine 50% WP,0.5,0,,,,Two hand weeding at 20 and 25 days after sowing
+Sikkim,kharif,maize,,,,,,,,"Manual weeding or use of biomass for weed control. One earthing up after knee height stage, next after 40-45 DAS."
+Sikkim,kharif,ginger,,,,,,,,Weeding needs to be carried out 2-3 times to check weed growth; mulching with dried leaves or straw recommended.
+Tamil Nadu and Puducherry,kharif,Cotton,,Pendimethalin 38.7% CS,700,1,,,,
+Tamil Nadu and Puducherry,kharif,Groundnut,,Pendimethalin + Imazethapyr (PE),,,Quizalofop-ethyl + Imazethapyr,,,
+Tamil Nadu and Puducherry,kharif,Greengram,,Pendimethalin + Imazethapyr (PE),,,Quizalofop-ethyl + Imazethapyr,,,
+Telangana,kharif,Cotton,,Pendimethalin,700,1,Quizalofop ethyl + Pyrithiobac sodium,,30,
+Telangana,kharif,Cotton,,,,,Tembotrione + Atrazine or Toperamezone + Atrazine or Mesotrione + Atrazine,,30,Inter-cultivation after 30-35 days followed by earthing up
+Telangana,kharif,Redgram,,Pendimethalin,,1,Quizalofop ethyl or Imazethapyr,,,
+Telangana,kharif,Soybean,,Pendimethalin,1000,1,Quizalofop ethyl or Imazethapyr + Imazomax or Imazethapyr,400,,
+Tripura,kharif,maize,,Atrazine,,2,,,,
+Tripura,kharif,paddy,,Metolachlor,1000,,,,40,Grubber application at 40 days after planting
+Uttar Pradesh,kharif,direct seeded rice,,Pendimethalin,1,1,Bispyribac-sodium,0.025,20,
+Uttar Pradesh,kharif,puddled transplanted rice,,,,,Bispyribac-sodium,0.025,15,Manual or mechanical weeding at 20 and 40-45 days after transplanting
+Uttar Pradesh,kharif,maize,,,,,,,,Perform inter-culture and weeding at 20 and 40 days after sowing
+Uttarakhand,kharif,Rice,,Pendimethalin,1,0,Metsulfuron methyl,4,25,One hand weeding at 40-45 DAS
+Uttarakhand,kharif,Direct seeded rice,,Pendimethalin,1,0,Bispyribac sodium or Penoxulam or Penoxulam + cyhalofop-butyl or Cyhalofop-butyl,,,One manual weeding recommended
+Uttarakhand,kharif,Transplanted rice,,Butachlor or Pretilachlor,,0,"2,4-D or Metsulfuron methyl + chlorimuron ethyl",,,One manual weeding effective
+Uttarakhand,kharif,Maize,,Atrazine or alachlor,,,"Tembotrione or halosulfuron methyl or 2,4-D dimethyl amine salt or 2,4-D ethyl ester",,15,Minimum two hand weeding at 20-25 and 40-45 DAS
+West Bengal,kharif,Rice,,Butachlor 5 G,25,,Bispyribac-Sodium 10% SC,0.25,15,
+West Bengal,kharif,Rice,,Pretilachlor,1,,Triafamone plus ethoxysulfuron,,20,
+West Bengal,kharif,Maize,,Atrataf/Atragold/Atrazine,2,10,Laudis 420 SC (tembotrione),262.5,20,Two hoeing at 15 to 30 days after sowing
+West Bengal,kharif,Black gram,,Pendimethalin,2,,,,,One manual weeding at 20-25 days after sowing
+Jammu & Kashmir,Kharif,Rice,Jammu,Butachlor,1.5,2,Anilophos + Ethoxy sulfuron,0.56,10,Manual weeding recommended
+Jammu & Kashmir,Kharif,Maize,Jammu,Atrazine,0.4,2,,,,Weed manually at 15 and 30 DAS; keep weed-free till 40 DAS
+Jammu & Kashmir,Kharif,Paddy,Jammu,Butachlor 5G or pretilachlor,3,,Butachlor 12 kg/acre or anilophos + ethoxy sulfuron (500 + 60 ml/acre),,10,Manual weed control recommended
+Jammu & Kashmir,Kharif,Moong,Jammu,Pendimethalin,1,2,,,,
+Jammu & Kashmir,Kharif,Apple,Jammu & Kashmir,,,,,,,Keep tree basins weed-free to prevent competition and maintain orchard hygiene.

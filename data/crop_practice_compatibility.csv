@@ -21,7 +21,7 @@ FR_ACID_LIME,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip helps water efficiency and frui
 
 FR_DRAGONFRUIT,ORCHARD,GOOD,1.0,PRIMARY,Perennial high-value fruit grown with trellis pillars; orchard-like system.
 FR_DRAGONFRUIT,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Very compatible—drip is commonly used for efficient irrigation.
-FR_DRAGONFRUIT,ORCHARD_INTERCROP,MED,0.6,PRIMARY,Intercrops possible early, but trellis footprint may limit space.
+FR_DRAGONFRUIT,ORCHARD_INTERCROP,MED,0.6,PRIMARY,Intercrops possible early but trellis footprint may limit space.
 
 FR_BANANA,OPEN_FIELD,GOOD,1.0,PRIMARY,Commercial banana plantations are typically open-field with assured irrigation.
 FR_BANANA,DRIP_INTENSIVE,GOOD,1.0,PRIMARY,Drip is highly beneficial for banana (water + fertigation efficiency).
@@ -344,3 +344,91 @@ MI_BAJRA,POULTRY_BACKYARD,GOOD,1.0,PRIMARY,Bajra grain is a cost-effective poult
 OS_GROUNDNUT,POULTRY_BACKYARD,MED,0.6,INTERCROP,Groundnut cake is a protein supplement for poultry.
 OS_SOYBEAN,POULTRY_BACKYARD,MED,0.6,INTERCROP,Soybean meal is a key protein source in poultry feed.
 PU_MOONG,POULTRY_BACKYARD,MED,0.6,INTERCROP,Short-duration pulse; residue and grain serve as minor poultry feed.
+
+CE_WHEAT,POLYHOUSE,POOR,0.3,PRIMARY,Low-value cereal does not justify high polyhouse investment cost.
+CE_WHEAT,HYDROPONICS,POOR,0.3,PRIMARY,Cereal grain crops are economically unviable in hydroponic systems.
+CE_WHEAT,NET_HOUSE,POOR,0.3,PRIMARY,Wheat does not benefit from protection and the cost is unjustified.
+CE_MAIZE,POLYHOUSE,POOR,0.3,PRIMARY,Field cereal; polyhouse investment is not economically justified.
+CE_MAIZE,HYDROPONICS,POOR,0.3,PRIMARY,Grain crops are not suited to hydroponic production systems.
+CE_RICE,RAIN_FED,MED,0.6,PRIMARY,Rainfed lowland rice is viable in high-rainfall eastern India.
+CE_RICE,HYDROPONICS,POOR,0.3,PRIMARY,Paddy is a flood-irrigated crop; hydroponics is impractical.
+CE_RICE,POLYHOUSE,POOR,0.3,PRIMARY,Rice cultivation in polyhouse is economically unviable.
+CE_BARLEY,POLYHOUSE,POOR,0.3,PRIMARY,Low-value cereal does not justify polyhouse investment.
+CE_BARLEY,HYDROPONICS,POOR,0.3,PRIMARY,Grain cereal is not suited to hydroponic production.
+MI_BAJRA,POLYHOUSE,POOR,0.3,PRIMARY,Dryland millet in polyhouse is not economically viable.
+MI_BAJRA,HYDROPONICS,POOR,0.3,PRIMARY,Millet grain crops are unsuitable for hydroponic systems.
+MI_JOWAR,POLYHOUSE,POOR,0.3,PRIMARY,Low-value millet does not justify polyhouse investment.
+MI_JOWAR,HYDROPONICS,POOR,0.3,PRIMARY,Grain sorghum is not suited to hydroponic production.
+MI_RAGI,POLYHOUSE,POOR,0.3,PRIMARY,Low-value millet does not justify protected cultivation costs.
+MI_RAGI,HYDROPONICS,POOR,0.3,PRIMARY,Finger millet is not suited to hydroponic systems.
+PU_CHICKPEA,POLYHOUSE,POOR,0.3,PRIMARY,Low-value pulse does not justify polyhouse investment.
+PU_CHICKPEA,HYDROPONICS,POOR,0.3,PRIMARY,Pulse grain is not suited to hydroponic production.
+PU_PIGEONPEA,POLYHOUSE,POOR,0.3,PRIMARY,Long-duration pulse is economically unviable in polyhouse.
+PU_PIGEONPEA,HYDROPONICS,POOR,0.3,PRIMARY,Pulse crop is not suited to hydroponic systems.
+OS_MUSTARD,POLYHOUSE,POOR,0.3,PRIMARY,Oilseed crop does not justify polyhouse investment.
+OS_MUSTARD,HYDROPONICS,POOR,0.3,PRIMARY,Oilseed crops are not suited to hydroponic production.
+OS_SOYBEAN,POLYHOUSE,POOR,0.3,PRIMARY,Field oilseed does not justify polyhouse costs.
+OS_SOYBEAN,HYDROPONICS,POOR,0.3,PRIMARY,Soybean is not suited to hydroponic systems.
+CM_SUGARCANE,NET_HOUSE,POOR,0.3,PRIMARY,Sugarcane is too large and long-duration for net house economics.
+CM_SUGARCANE,POLYHOUSE,POOR,0.3,PRIMARY,Sugarcane in polyhouse is impractical due to height and duration.
+CM_SUGARCANE,HYDROPONICS,POOR,0.3,PRIMARY,Sugarcane cannot be grown in hydroponic systems.
+CM_COTTON,POLYHOUSE,POOR,0.3,PRIMARY,Cotton is a field crop; polyhouse investment is not justified.
+CM_COTTON,HYDROPONICS,POOR,0.3,PRIMARY,Cotton is not suited to hydroponic production.
+CM_COTTON,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip can improve water efficiency for cotton but adoption is limited.
+CM_JUTE,POLYHOUSE,POOR,0.3,PRIMARY,Fibre crop does not justify protected cultivation investment.
+CM_JUTE,HYDROPONICS,POOR,0.3,PRIMARY,Jute cannot be grown in hydroponic systems.
+
+VE_SPINACH,HYDROPONICS,GOOD,1.0,PRIMARY,Leafy greens are ideal for hydroponic NFT systems with fast cycles.
+VE_CORIANDER_LEAF,HYDROPONICS,GOOD,1.0,PRIMARY,Herbs are high-value fast-cycle crops ideal for hydroponic production.
+VE_TOMATO,HYDROPONICS,MED,0.6,PRIMARY,Tomato hydroponics is possible but requires more infrastructure than leafy greens.
+PR_CAPSICUM,HYDROPONICS,MED,0.6,PRIMARY,Capsicum in hydroponics is viable with substrate-based systems.
+PR_CUCUMBER,HYDROPONICS,MED,0.6,PRIMARY,Cucumber hydroponics is possible with proper trellis and nutrient management.
+PR_TOMATO,HYDROPONICS,MED,0.6,PRIMARY,Protected tomato in hydroponics produces premium quality but high setup cost.
+
+FR_MANGO,NURSERY,GOOD,1.0,PRIMARY,Mango grafts and saplings are in high demand for orchard establishment.
+FR_LEMON,NURSERY,GOOD,1.0,PRIMARY,Citrus seedlings are widely demanded for new orchard plantations.
+FR_DRAGONFRUIT,NURSERY,GOOD,1.0,PRIMARY,Dragonfruit cuttings are in growing demand for trellis plantations.
+FR_BANANA,NURSERY,MED,0.6,PRIMARY,Tissue culture banana plantlets are a growing nursery segment.
+FR_LITCHI,NURSERY,MED,0.6,PRIMARY,Air-layered litchi plants for orchard establishment demand.
+FR_AMLA,NURSERY,MED,0.6,PRIMARY,Amla saplings for hardy orchard establishments.
+FL_ROSE,NURSERY,MED,0.6,PRIMARY,Rose rootstock and budded plants for nursery production.
+FL_GERBERA,NURSERY,MED,0.6,PRIMARY,Gerbera plantlets for polyhouse growers.
+
+SP_TURMERIC,INTEGRATED,MED,0.6,INTERCROP,Turmeric fits well as a high-value component in integrated farming.
+SP_GINGER,INTEGRATED,MED,0.6,INTERCROP,Ginger can be a high-value spice component in diversified systems.
+VE_POTATO,INTEGRATED,MED,0.6,INTERCROP,Potato as a seasonal cash crop in integrated farming rotations.
+VE_ONION,INTEGRATED,MED,0.6,INTERCROP,Onion provides quick seasonal income in diversified systems.
+SP_GARLIC,INTEGRATED,MED,0.6,INTERCROP,Garlic as a rabi cash crop component in integrated farming.
+VE_TOMATO,INTEGRATED,MED,0.6,INTERCROP,Tomato as a high-value vegetable component in diversified systems.
+VE_CABBAGE,INTEGRATED,MED,0.6,INTERCROP,Cabbage as a seasonal vegetable rotation in integrated farming.
+VE_CAULIFLOWER,INTEGRATED,MED,0.6,INTERCROP,Cauliflower as a cool-season component in diversified systems.
+
+VE_PUMPKIN,DAIRY_FODDER,MED,0.6,INTERCROP,Pumpkin provides supplemental cattle feed and extra farm income.
+PU_MOONG,DAIRY_FODDER,MED,0.6,INTERCROP,Moong residue serves as cattle feed supplement; nitrogen fixer.
+CE_WHEAT,DAIRY_FODDER,MED,0.6,INTERCROP,Wheat straw is a major cattle feed source in dairy systems.
+PU_CHICKPEA,DAIRY_FODDER,MED,0.6,INTERCROP,Chickpea bhusa and grain are useful cattle feed supplements.
+
+OS_GROUNDNUT,BEEKEEPING,MED,0.6,COMPANION,Groundnut flowers provide moderate nectar and pollen for bees.
+FR_MANGO,BEEKEEPING,GOOD,1.0,COMPANION,Mango flowering is a major nectar source for apiaries.
+FR_GUAVA,BEEKEEPING,MED,0.6,COMPANION,Guava flowers provide moderate bee forage.
+CM_COFFEE,BEEKEEPING,GOOD,1.0,COMPANION,Coffee flowering is a premium bee forage source for quality honey.
+
+VE_OKRA,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip improves water efficiency for okra but management remains key.
+VE_BRINJAL,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip can improve water efficiency and reduce pest pressure for brinjal.
+VE_POTATO,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip fertigation can improve potato yields and water efficiency.
+SP_CHILLI,INTEGRATED,MED,0.6,INTERCROP,Chilli as a high-value spice component in diversified farming.
+SP_TURMERIC,RAIN_FED,MED,0.6,PRIMARY,Turmeric can grow in rainfed conditions with adequate monsoon rainfall.
+SP_GINGER,DRIP_INTENSIVE,MED,0.6,PRIMARY,Drip improves moisture management for disease-sensitive ginger.
+
+FR_PAPAYA,ORCHARD_INTERCROP,MED,0.6,PRIMARY,Papaya can serve as an early income intercrop in young orchards.
+FR_BANANA,ORCHARD_INTERCROP,MED,0.6,INTERCROP,Banana as an early-income intercrop in young orchard plantations.
+FR_COCONUT,ORCHARD_INTERCROP,GOOD,1.0,PRIMARY,Coconut gardens commonly support intercrops for additional income.
+
+VE_GREEN_PEA,POLYHOUSE,MED,0.6,PRIMARY,Off-season premium pea production possible in polyhouse.
+VE_FRENCH_BEAN,POLYHOUSE,MED,0.6,PRIMARY,Protected french bean for premium quality and off-season supply.
+VE_BITTER_GOURD,POLYHOUSE,MED,0.6,PRIMARY,Protected bitter gourd can improve quality and reduce pest pressure.
+VE_CUCUMBER_OPEN,POLYHOUSE,MED,0.6,PRIMARY,Open cucumber variety can be grown in polyhouse for quality improvement.
+
+VE_POTATO,FISH_POND,MED,0.6,INTERCROP,Potato on raised pond bunds utilizes nutrient-rich soil.
+VE_PUMPKIN,FISH_POND,MED,0.6,INTERCROP,Pumpkin on pond bunds utilizes space and nutrient-rich pond soil.
+VE_OKRA,FISH_POND,MED,0.6,INTERCROP,Okra on pond bunds provides extra income in fish farming systems.

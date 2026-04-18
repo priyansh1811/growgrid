@@ -1,0 +1,351 @@
+state,season,crop_name,sub_region,pest_or_disease_name,type,monitor_start_month,monitor_end_month,chemical_control,bio_control,threshold_note
+Punjab,rabi,wheat,,army worm,pest,3,4,400 ml Ekalux (quinalphos) in 80-100 litres water per acre,,Observed in March-April and also December in paddy straw loaded fields
+Punjab,rabi,wheat,,aphids,pest,3,4,400 ml Ekalux (quinalphos),,
+Uttarakhand,rabi,wheat,,yellow (stripe) rust,disease,,,Spray Propeconazole (25 EC) @ 1 ml/litre water,,
+Uttarakhand,rabi,wheat,,yellow rust,disease,,,Propeconazole (25 EC) 1 ml/litre water,,
+Uttarakhand,rabi,barley,,yellow rust,disease,,,Propeconazole (25 EC) 1 ml/litre water,,
+Uttarakhand,rabi,barley,,loose smut disease,disease,,,Carboxin fungicide 2.5 gm/kg seed,,
+Uttarakhand,rabi,lentil,,wilt disease,disease,,,,,"Managed by resistant/tolerant varieties, seed treatment and crop rotation"
+Uttarakhand,rabi,yellow mustard/toria,,aphid,pest,,,Acetamiprid 20% SP 0.3 gm/litre spray,,Spray in evening when no honeybee activity
+Uttarakhand,rabi,pea,,powdery mildew,disease,,,Sulphex 2 gm/litre or Dinocap 0.5 ml/litre spray,,
+Uttarakhand,rabi,pea,,pod borer,pest,,,Deltamethrin 1 ml/litre spray,Bacillus thurengensis 1.5 gm/litre spray,Spray during flowering
+Uttarakhand,rabi,onion,,stemphyllum disease,disease,,,Mencozeb 2.5 gm/litre spray with sticker every 10-15 days,,
+Uttarakhand,rabi,onion,,purple disease,disease,,,Difenconazole 1 ml/litre spray with sticker every 10-15 days,,
+Uttarakhand,rabi,onion,,thrips,pest,,,Imidacloprid 17.8 SL 3 ml/10 litre spray,,
+Uttarakhand,rabi,apple,,white root rot,disease,11,12,Bordeaux paint / chaubatia paste on infected portion after cutting,,
+Uttarakhand,rabi,apple,,sun burning,disease,10,11,Lime + copper sulphate + linseed oil mixture applied on stems,,
+Uttarakhand,rabi,apple,,sanjose scale,pest,,,Horticulture Mineral Oil 2% spray at green tip stage,,
+Uttarakhand,rabi,apple,,woolly apple aphid,pest,9,11,Chlorpyriphos 20 EC 4 ml/L drench at collar; Chlorpyriphos 20 EC 2 ml/L or Quinalphos 25 EC 2 ml/L spray Sept-Oct,,
+Uttarakhand,rabi,apple,,scab/powdery mildew,disease,,,Dodine 1 gm/L or Fluxapyroxad + Difenconazole 30 ml/100L spray at green tip stage,,
+Rajasthan,rabi,Mustard,,termite,pest,,,2-3 ml Imidachloprid 48 FS or 2-3 ml Thiomethaxom 30 FS per kg seed for seed treatment,,
+Rajasthan,rabi,Mustard,,sucking pest,pest,10,10,,,Incidence increases with late sowing
+Rajasthan,rabi,Mustard,,white rust,disease,10,10,,,Incidence increases with late sowing
+Rajasthan,rabi,Chickpea,,collar rot,disease,10,10,,Seed treatment with Trichoderma powder or liquid suspension,
+Rajasthan,rabi,Chickpea,,pod borer,pest,,,Spraying 1.25 liter Indoxacarb per ha,Spray 250 L.E. HaNPV 5% NSKE; Installation of 7-10 pheromone traps per ha,Critical monitoring needed for pod borer
+Rajasthan,rabi,Barley,,fungal diseases,disease,,,Seed treatment with Vitavax power 2 g/kg seed,,
+Rajasthan,rabi,Barley,,termite,pest,,,Seed treatment with Fipronil 5 SC 8 ml/kg seed,,
+Rajasthan,rabi,Wheat,,fungal diseases,disease,,,Seed treatment with Vitavax power 2 g/kg seed,,
+Rajasthan,rabi,Wheat,,termite,pest,,,Seed treatment with Fipronil 5 SC 8 ml/kg seed,,
+Rajasthan,rabi,Fenugreek,,fungal diseases,disease,10,10,Seed treatment with Carbendezim 50WP 2 g/kg seed,,
+Rajasthan,rabi,Cumin,,aphids,pest,,,Foliar spray Imidacloprid 17.8 SL 0.3 ml/lit water; neem oil or NSKE 5%,Yellow sticky traps 10-12 traps/ha,
+Rajasthan,rabi,Cumin,,powdery mildew,disease,,,Foliar spray Kerathan (Dinocap) 1 ml/lit water at 10-15 days interval; dusting with sulphur powder 25 kg/ha,,
+Rajasthan,rabi,Cumin,,blight,disease,,,Foliar spray propiconazole or hexaconazole 5% SC 1 ml/lit,,
+Rajasthan,rabi,Ber,,fruit fly,pest,9,12,Foliar spray poison bait (100g Jaggery or molasses + 2 ml deltamethrin 2.8EC per liter water) weekly on tree trunk,Methyl eugenol trap 6 traps/acre; Azadirachtin 0.3% 2.5 ml/liter water or Chlorpyriphos 20 EC 2 ml/liter water at pea size fruiting,
+Rajasthan,rabi,Ber,,powdery mildew,disease,10,12,Foliar spray Kerathan 1 ml/lit water or Carbendazim (Bavstin) 0.05%; Sulphur powder 0.2% repeated at 15 days interval,,
+Rajasthan,rabi,Ber,,fruit rotting,disease,,,Foliar spray Hexaconazol 5% SC or Propiconazole 5% SC 1 ml/lit water,,
+Rajasthan,rabi,Ber,,black leaf spot,disease,,,Foliar spray Hexaconazol 5% SC or Propiconazole 5% SC 1 ml/lit water,,
+Rajasthan,rabi,Ber,,termite,pest,12,12,Drench with Chlorpyriphos 20 EC 1 ml/liter water if infestation observed,,Avoid application of undecomposed FYM
+Rajasthan,rabi,Citrus,,citrus canker,disease,,,Streptocycline @ 250/100 water; NSKE @ 5 kg/100 litre water; 500 ppm Streptocycline if damage observed in October,,
+Rajasthan,rabi,Citrus,,leaf minor,pest,,,Spray Rogor or Metasystox @ 300 ml/100 litre water,,
+Rajasthan,rabi,Citrus,,gummosis,disease,12,12,Scrap gum and apply Bordeaux mixture paste 1:2:20 ratio; soil drench with Matalaxyl or foliar spray with Fosetyl-Aluminum if severe,,
+Haryana and Delhi,rabi,mustard,,stem rot,disease,10,12,Seed treatment with carbendazim 2 g/kg; foliar spray carbendazim 0.1% at 45 and 60 DAS,,
+Haryana and Delhi,rabi,mustard,,painted bug,pest,10,10,Spray malathion 500 ml/ha in 500 L water at emergence,,
+Haryana and Delhi,rabi,mustard,,white rust,disease,12,12,Foliar spray mancozeb 1.5 kg/ha in 750 L water at symptom appearance; repeat after 15 days if needed,,
+Haryana and Delhi,rabi,mustard,,aphid,pest,1,1,Spray dimethoate 625 ml in January,,
+Haryana and Delhi,rabi,chickpea,,wilt,disease,10,10,Seed treatment with carbendazim or Trichoderma + Vitavex; avoid sowing before 15 Oct,,Avoid sowing before 15 October to reduce incidence
+Haryana and Delhi,rabi,chickpea,,root rot,disease,10,10,Seed treatment as for wilt disease management,,
+Haryana and Delhi,rabi,chickpea,,alternaria blight,disease,2,2,,,Remove affected plants on detection; use resistant varieties
+Haryana and Delhi,rabi,chickpea,,pod borer,pest,12,2,Spray quinalphos 1L/ha or fenvalerate 200 ml/ha or cypermethrin 125 ml/ha or novaluron 375 ml/ha in 375 L water,,
+Haryana and Delhi,rabi,wheat,,Karnal bunt,disease,,,Seed treatment with thiram 2 g/kg or raxil-2 DS 1 g/kg,,
+Haryana and Delhi,rabi,wheat,,termite,pest,,,Seed treatment with chlorpyriphos 1.5 ml/kg or ethion 5 ml/kg,,
+Haryana and Delhi,rabi,wheat,,yellow rust,disease,2,2,Spray 2 kg Zineb (Dithane/Indofil Z-78) or mancozeb (Dithane/Indofil M-45) or propiconazole 500 ml/ha; repeat after 10-15 days if needed,,
+Haryana and Delhi,rabi,wheat,,aphid,pest,2,2,Spray malathion 1L/ha,,
+Uttar Pradesh,rabi,Wheat,,Yellow rust,disease,11,3,Propiconazole 0.1% foliar spray,,
+Uttar Pradesh,rabi,Wheat,,Powdery mildew,disease,11,3,Propiconazole 0.1% foliar spray,,
+Uttar Pradesh,rabi,Wheat,,Brown rust,disease,11,3,Propiconazole 0.1% foliar spray,,
+Uttar Pradesh,rabi,Wheat,,Karnal bunt,disease,11,3,Propiconazole 0.1% foliar spray,,
+Uttar Pradesh,rabi,Wheat,,Spot blotch,disease,11,3,Propiconazole 0.1% foliar spray,,
+Uttar Pradesh,rabi,Wheat,,Termites,pest,,,Seed treatment with chlorpyriphos @ 0.9g a.i./kg seed,,
+Uttar Pradesh,rabi,Wheat,,Aphid,pest,,,Imidacloprid 17.8 SL @ 100 ml/ha foliar spray at threshold,,Spray when aphid population reaches more than 10 per tiller or 5 per ear head
+Uttar Pradesh,rabi,Berseem,,Poa annua (bueen),weed,,,Basalin (fluchloralin) 45 EC @ 400 ml per acre before sowing,,
+Bihar,rabi,wheat,,broad leaf weeds,pest,,,"metsulfuron @10g a.i./ha or 2,4-D Na salt @ 1.0 kg /ha after 30-35 DAS",,
+Bihar,rabi,wheat,,mixed weed flora (broad and narrow leaves),pest,,,sulfosulfuron + metsulfuron @40g/ha or clodinofob + metsulfuron 400g/ha after 25-30 DAS,,
+Bihar,rabi,maize,,fall armyworm,pest,,,chlorantraniliprole 18.5 SC @ 0.4 ml/l water or emamectin benzoate 5SG @ 0.4 g/l water,,Regularly monitor and destroy egg masses
+Bihar,rabi,maize,,motha weed,pest,,,"2,4-D amine salt 58 SL @ 1.0L/ha at 20-25 DAS",,
+Jharkhand,rabi,wheat,,broad leaved weed,pest,10,10,pendimethalin 30 EC 1.5 litre/acre pre-emergence under 2-3 days of sowing,,
+Jharkhand,rabi,wheat,,narrow leaf weed,pest,10,11,"2,4-D 0.5 to 1 kg/ha at 4-5 weeks, sulphosulfuran 33 ml/ha at 30-35 DAS",,
+Jharkhand,rabi,gram,,pod borer,pest,,,spinosad 45SC 0.1 ml/lit or indoxacarb 14.5 SC 0.3 ml/lit or quinolphos 1.5 L/ha or flubendiamide 48 SC 0.1 ml/lit or Novacuron 10 EC 1 ml/lit,,
+Jharkhand,rabi,gram,,wilt,disease,,,seed treatment with Tricodarma 5g + carboxsin 1g/kg seed and benlate or benlate+thiram 1:1 @ 2.5g/kg seed,,Rouge out infected plants; appears ~3 weeks after sowing
+Jharkhand,rabi,lentil,,wilt,disease,,,seed treatment with carbendazim 50WP 2g/kg followed by T. viride 8-10g/kg seed,Trichoderma,
+Jharkhand,rabi,mustard,,aphids,pest,,,spray thiamethoxam 80g or imidacloprid 17.8 SL 0.3 ml/lit,,
+Jharkhand,rabi,mustard,,white rust,disease,,,spray Metalaxyl 8% + Mancozeb 64% 2 g/l or copper oxychloride 2.5 g/l twice at interval 10-15 d,,
+Jharkhand,rabi,pea,,powdery mildew,disease,12,12,spray Karathane 1.5 ml/l or Sulfex 3 g/l,,
+Jharkhand,rabi,potato,,late blight/fusarium,disease,12,,spray Metalaxyl 4% + Mancozeb 64% 2 ml/l water,,Apply protective irrigation and smoke to prevent frost damage
+Jharkhand,rabi,lentil,,hairy caterpillar,pest,,,spray dimethoate 30 EC 2 ml/l water,,
+Jharkhand,rabi,lentil,,pod borer,pest,,,spray spinosad 45 SC 0.5 ml/litre,,
+Jharkhand,rabi,lentil,,termite,pest,,,spray chlorpyriphos 20 EC 4 ml/litre,,
+West Bengal,rabi,boro paddy,,stem borer,pest,,,Cartap Hydrochloride 4% G @ 8 kg/acre or Chlorantraniliprole 0.4% GR @ 4 kg/acre or Imidacloprid 0.3% GR @ 6 kg/acre mixed with sand 1:1 at early crop stage,,
+West Bengal,rabi,boro paddy,,blast disease,disease,,,Tricyclazole 75% WP @ 120 g/acre,,
+West Bengal,rabi,boro paddy,,BPH,pest,,,,,Avoid BPH pest load by following skip row transplanting
+West Bengal,rabi,lathyrus,,pod borer,pest,,,Indoxacarb 14.5% SC @ 360 ml/ha or Rynaxypyr 18.5% SC @ 150 ml/ha two times at 15 days interval,,
+West Bengal,rabi,cotton,Sundarbans,spotted boll worm,pest,,,Indoxacarb 14.5% SC @ 360 ml/ha or Rynaxypyr 18.5% SC @ 150 ml/ha two times at 15 days interval during boll development,,
+West Bengal,rabi,cotton,Sundarbans,Helicoverpa,pest,,,Indoxacarb 14.5% SC @ 360 ml/ha or Rynaxypyr 18.5% SC @ 150 ml/ha two times at 15 days interval during boll development,,
+Andaman and Nicobar Islands,rabi,brinjal,,fruit and shoot borer,pest,,,,Integrated pest management practices,
+Andaman and Nicobar Islands,rabi,brinjal,,bacterial wilt,disease,,,,Bacterial wilt resistant varieties like CARI Brinjal-1 & 2,
+Andaman and Nicobar Islands,rabi,french beans,,yellow vein mosaic,disease,,,,,Control timely to minimize crop loss
+Andaman and Nicobar Islands,rabi,french beans,,aphids,pest,,,,,Control timely to minimize crop loss
+Andaman and Nicobar Islands,rabi,chilies,,white fly,pest,,,Spray imidacloprid 1 ml/liter water,,
+Andaman and Nicobar Islands,rabi,chilies,,viral disease,disease,,,Spray 0.05% Dimethoate (Rogor),,
+Andaman and Nicobar Islands,rabi,chilies,,anthracnose,disease,,,Seed treatment with Thiram or Captan 2 g/kg; Spray Benomyl 0.1%,,
+Andaman and Nicobar Islands,rabi,cucurbits,,downy mildew,disease,,,Spray copper oxychloride (Blitox) or Mancozeb during early infection,,
+Andaman and Nicobar Islands,rabi,cucurbits,,powdery mildew,disease,,,Spray Dinocap (Karathane) 0.03%; Dust sulphur dust,,
+Andaman and Nicobar Islands,rabi,bitter gourd,,leaf mosaic virus,disease,,,Control insect vector,,
+Andaman and Nicobar Islands,rabi,cucurbits,,anthracnose,disease,,,Repeat spraying of Mancozeb or Zeneb (Dithane-Z-78),,
+Andaman and Nicobar Islands,rabi,okra,,yellow mosaic virus (YMV),disease,,,,Grow YMV resistant variety,
+Andaman and Nicobar Islands,rabi,okra,,powdery mildew,disease,,,Controlled as per previous crop history,,
+Andaman and Nicobar Islands,rabi,okra,,spotted bollworm,pest,,,Soil application of carbaryl or neem manures,,Remove infected fruits
+Andaman and Nicobar Islands,rabi,mango,,mango fruit fly,pest,3,5,Spray Dimethoate 0.045% + molasses 0.1%,Install sex pheromone traps,
+Andaman and Nicobar Islands,rabi,shooty mold fungus,,shooty mold fungus,disease,,,Spray good fungicide two times before maturity,,Appears in shade areas or inner area of middle Andaman
+Andaman and Nicobar Islands,rabi,guava,,fruit fly,pest,,,,Install sex pheromone trap,
+Andaman and Nicobar Islands,rabi,guava,,fusarium wilt,disease,,,,Apply Trichoderma powder in root zone,
+Andaman and Nicobar Islands,rabi,"citrus (oranges, lime, lemons, pomelo)",,wilt and dieback,disease,,,,Regular application of Trichoderma powder,
+Assam,rabi,rapeseed and mustard,,aphids,pest,10,11,,,Early sowing helps in escaping aphid attack
+Sikkim,rabi,all crops,,various endemic bird diseases,disease,,,,Timely vaccination against endemic diseases,Disease surveillance and monitoring network to be established
+Sikkim,rabi,All Crops,,Neem-based formulation (1500 ppm),pest,,,Spray neem-based formulation @ 0.3% as and when required,,
+Arunachal Pradesh,rabi,maize,,Fall Army worm,pest,9,10,Seed treatment with Cyantraniliprole 19.8% + Thiomethoxam 19.8% @ 4 ml/kg seed; mid-whorl spray Chlorantraniliprole 18.5% SC @ 0.4 ml/l or Spinetoram 11.7% SC @ 0.5 ml/l; late whorl spray Emamectin benzoate 5% SG @ 0.4 ml/l or Thiomethoxam 12.6% + lambda cyhalothrin 9.5% @ 0.25 ml/l,Spray 5% neem seed kernel extract or Azadirachtin 1500 ppm @ 5 ml/l at seedling stage,
+Arunachal Pradesh,rabi,mustard,Papum Pare district,Mustard aphid,pest,10,11,,Spray 5% neem seed kernel extract or Azadirachtin 1500 ppm @ 5 ml/l,
+Arunachal Pradesh,rabi,potato,,Early blight,disease,11,2,"Spray mancozeb @ 2.5 g/litre of water at 15 days interval, 3 times",,
+Arunachal Pradesh,rabi,potato,,Late blight,disease,10,2,"Prophylactic spray Ridomil @ 2.5 g/litre water at 15 days interval, 3 times",,"Vigilance especially during cloudy, foggy, rainy weather"
+Arunachal Pradesh,rabi,pea,,Pod borer,pest,10,11,Spray Nuvan at 0.5% concentration thrice at fortnightly interval,,
+Arunachal Pradesh,rabi,pea,,Aphids,pest,10,11,Spray Malathion 50EC,,
+Arunachal Pradesh,rabi,pea,,Powdery mildew,disease,10,11,Spray Wettable sulphur 2.5 g/litre in three rounds at 15 days interval,,
+Arunachal Pradesh,rabi,winter vegetables,,Diamond black moth and cabbage butterfly,pest,10,11,,Use BT products,
+Arunachal Pradesh,rabi,winter vegetables,,Soil borne insects,pest,10,11,,Use Metarhizium products repeated at 7 days interval,
+Arunachal Pradesh,rabi,broccoli,,White mold,disease,10,11,Spray Metalaxyl + Mencozeb @ 2 g/litre water at 10 days interval,,
+Arunachal Pradesh,rabi,winter vegetables,,Black rot,disease,10,11,Spray Copper oxychloride @ 300 g + Streptomycin 6 g per 150 litres water at 15 days interval,,
+Manipur,rabi,chilli,,damping off,disease,,,,Treat seeds with Trichoderma viride or Pseudomonas fluorescens @ 5-10 g/l water,
+Manipur,rabi,onion,,"beetles, leaf defoliating insects, leaf miner, thrips, aphids",pest,,,,Sprinkling ash in and around vegetable crops,
+Manipur,rabi,various crops,,soil insect pests,pest,,,,Soil application of dried seeds and leaves of Neem or Melia azedarach,
+Manipur,rabi,vegetable crops,,aphids and jassids,pest,,,,Extract of green chilli and garlic as foliar spray,
+Manipur,rabi,stored grains (rice),,"rice weevil, rice moth",pest,,,,Grain stored with neem leaves reduces insect pest damage,
+Manipur,rabi,stored grains (green gram and pulses),,various stored insect pests,pest,,,,Seed treatment with mustard oil or 1% neem leaf powder prior to storage,
+Meghalaya,rabi,rapeseed and mustard,,mustard aphid,pest,,,Yellow sticky traps; 2% neem oil or 5% NSKE,,
+Meghalaya,rabi,rapeseed and mustard,,diamond back moth,pest,,,2% neem oil or 5% NSKE,,
+Meghalaya,rabi,rabi vegetables,,cabbage aphid,pest,,,,Yellow sticky traps @ 12/acre,
+Meghalaya,rabi,rabi vegetables,,diamond back moth,pest,,,,Pheromone traps @ 4-5/acre,
+Mizoram,rabi,maize,,fall army worm,pest,,,Spray 5% NSKE or Azadirachtin 1500 ppm @ 5ml/l for 5% damage; Spinetoram 11.7 SC @ 0.5ml/l for 10-20% damage,,Hand picking and destruction of egg masses and larvae; dry sand application into whorl; mass trapping with pheromone traps @ 15/acre
+Mizoram,rabi,maize,,cutworm,pest,,,Chlorpyriphos @ 2 L/ha mixed in 60-70 kg sandy soil before sowing,,
+Mizoram,rabi,maize,,white grubs,pest,,,Chlorpyriphos @ 2 L/ha mixed in 60-70 kg sandy soil before sowing,,
+Meghalaya,rabi,rabi vegetables,,leaf blight,disease,,,"Bordeaux mixture 1%, Blitox-50",,
+Meghalaya,rabi,rabi vegetables,,leaf spot,disease,,,"Bordeaux mixture 1%, Blitox-50",,
+Meghalaya,rabi,rabi vegetables,,downy mildew,disease,,,"Bordeaux mixture 1%, Blitox-50",,
+Mizoram,rabi,Maize,,Cutworm,pest,10,,Chlorpyriphos @ 2 litre/ha mixed in sandy soil before sowing,,
+Mizoram,rabi,Maize,,White grubs,pest,10,,Chlorpyriphos @ 2 litre/ha mixed in sandy soil before sowing,,
+Mizoram,rabi,Maize (Fall Army Worm),,Fall Army Worm,pest,,,NSKE 5% or Azadirachtin 1500 ppm @ 5ml/litre of water at 5% damage; Spinetoram 11.7% SC @ 0.5ml/litre at 10-20% damage,,Manage at 5% and 10-20% damage thresholds; hand picking larvae after tasseling
+Mizoram,rabi,Soybean,,Blister beetle,pest,9,,Dichlorvos @ 2 ml per litre of water,,
+Mizoram,rabi,Toria,,Rust,disease,,,Spraying of Blitox-50 or Dithane M-45 @ 2 g/litre of water at 10 days interval,,
+Mizoram,rabi,Toria,,Alternaria blight,disease,,,Spraying of Blitox-50 or Dithane M-45 @ 2 g/litre of water at 10 days interval,,
+Mizoram,rabi,Mustard,,Aphids,pest,,,Spray Dimethoate @ 2.5 ml/litre of water,,Set up yellow sticky traps and destroy affected parts
+Mizoram,rabi,Brinjal,,Insect pests,pest,,,Spray Malathion 2ml/litre or Carbaryl 2-4 g/litre of water,,Collect and destroy infected leaves
+Mizoram,rabi,Vegetables,,Powdery Mildew,disease,,,Spray baking soda and liquid non-detergent soap solution or mouthwash,,
+Mizoram,rabi,Khasi Mandarin,,Fruit fly,pest,11,11,Spray Malathion @ 2 ml/litre over fruit,,Harvest fruits at right time to avoid attack
+Mizoram,rabi,Khasi Mandarin,,Bark eating caterpillar,pest,3,4,Inject Dichlorvos @ 0.1% into tunnel,,
+Nagaland,rabi,field pea,,aphids,pest,,,,,Clip aphids infested shoots or parts early
+Nagaland,rabi,field pea,,caterpillars,pest,,,Indoxacarb 14.5 SC @ 0.5 ml/L or Emamectin benzoate 5% SG @ 0.4 g/L,Trichogramma chilonis @ 50000/ha or Spinosad @ 0.75 ml/L,"Spray bio control or chemical in initial infestation; destroy egg masses, grubs, larvae"
+Nagaland,rabi,field pea,,"sucking pests (Aphids, Thrips, bugs)",pest,,,Imidacloprid 200 SL @ 0.5 ml/L or Thiomethoxam 25 WP @ 0.3 g/L or Spiromesifen 240 SC @ 0.5 ml/L,,Spray if incidence persists
+Nagaland,rabi,field pea,,powdery mildew,disease,,,Benomyl 50% WP @ 80 g or Sulphur 80% WG @ 750-1000 g in 300-400 litre water per acre,,Second spray after 15-25 days interval
+Nagaland,rabi,field pea,,pea rust,disease,,,Benomyl 50% WP @ 80 g or Sulphur 80% WG @ 750-1000 g in 300-400 litre water per acre,,Second spray after 15-25 days interval
+Nagaland,rabi,field pea,,sclerotinia stem rot,disease,,,Blitox @ 3 ml/l or Dithane M-45 @ 2 g/l at 10 days interval,,
+Nagaland,rabi,field pea,,alternaria black spot,disease,,,Blitox @ 3 ml/l or Dithane M-45 @ 2 g/l at 10 days interval,,
+Nagaland,rabi,field pea,,white rust,disease,,,Metalaxyl 8% + Mancozeb 64% WP @ 1000 g in 400 l water per acre,,
+Nagaland,rabi,vegetables,,aphids,pest,,,,,Clip aphids infested shoots early
+Nagaland,rabi,vegetables,,caterpillars,pest,,,Emamectin benzoate 5% SG @ 0.4 g/L or Flubendiamide 39.35% SC @ 0.5 ml/L,NSKE or Neem oil @ 4% or Spinosad @ 0.75 ml/L,
+Nagaland,rabi,vegetables,,"sucking pests (Aphids, Thrips, whiteflies, bugs)",pest,,,Imidacloprid 200 SL @ 0.5 ml/L or Thiomethoxam 25 WP @ 0.3 g/L or Fipronil 5 SC @ 1 ml/L,,Spray if incidence persists
+Tripura,rabi,boro rice,,plant hopper,pest,,,Triflumezopyrin 10% SC @ 95g/acre or Pymetrozine 50% WG @ 120g/acre,,
+Tripura,rabi,mustard,,aphids,pest,,,Thiamethoxam 25WG or Clothianidin 50 WDG,"Neem oil spraying, derisom, yellow sticky traps 20-25 nos/ha",
+Tripura,rabi,field pea,,,,,,,,
+Tripura,rabi,lentil,,,,,,,,
+Tripura,rabi,brinjal,,shoot and fruit borer,pest,,,Emamectin benzoate 5% SG @ 100g/acre or Dimethoate 30% EC @ 660ml/ha,"Pheromone traps @12/ha, larval parasitoids like Pristomer testaceus",
+Tripura,rabi,brinjal,,fusarium wilt,disease,,,Seed treatment with Carbendazim/Thiram @ 2 g/kg seed,Seed treatment with Trichoderma sp @ 10-15 g/kg seed,
+Tripura,rabi,chilli,,leaf curl disease (whitefly insect),pest,,,Dimethoate 30% EC 660 ml/ha or Phosalone 625 ml/ha,,
+Tripura,rabi,chilli,,leaf curl disease (thrips),pest,,,Imidaclopride 17.8% SL 3 ml/10 litre or Dimethoate 30% EC 1ml/litre or Emamectin benzoate 5% SG 4g/10 litre,Blue sticky trap 20-24 traps/ha,
+Tripura,rabi,tomato,,leaf curl disease (whitefly insect),pest,,,Dimethoate 30% EC 660 ml/ha or Phosalone 625 ml/ha,,
+Tripura,rabi,radish,,aphids,pest,,,Malathion 50 EC 1 ml/lit twice or thrice at 10 day intervals,,
+Tripura,rabi,radish,,flea beetles,pest,,,Malathion 50 EC 1 ml/lit twice or thrice at 10 day intervals,,
+Tripura,rabi,radish,,mustard saw fly,pest,,,Malathion 50 EC 1 ml/lit twice or thrice at 10 day intervals,,
+Tripura,rabi,radish,,white rust,disease,,,Mancozeb 2 g/lit or Copper oxychloride 2 g/lit,,
+Tripura,rabi,banana,,major banana pests,pest,5,,Spraying or soil application of Cartap hydrochloride 4G (Boregan SP),,
+Tripura,rabi,banana,,fungal diseases,disease,,,Spraying of Azoxystrobin or Trifloxystrobin,,
+Maharashtra,rabi,Chickpea,,Helicoverpa,pest,10,12,"Quinalphos 25 EC 20 ml/10 lit, Emamectin benzoate 5 SG 4 g/10 lit, Chlorantraniliprole 18.5 SC 3 ml/10 lit","5% NSKE spray, 5 pheromone traps per ha",ETL based spray
+Maharashtra,rabi,Wheat,,Stem borer,pest,,,Cypermethrin 10 EC 11 ml/10 lit,,Spray if infestation observed
+Maharashtra,rabi,Safflower,,Aphids,pest,,,Dimethoate 30 EC 10 ml/10 lit,5% NSKE spray,
+Maharashtra,rabi,Mustard,,Powdery mildew,disease,,,"Carbendazim 10 g/10 lit, Wettable sulphur 20 g/10 lit",,
+Maharashtra,rabi,Brinjal,,Brinjal shoot and fruit borer,pest,9,10,"Neemark 4%, Cypermethrin 25% EC 5 ml/10 lit, Chlorpyriphos 20 EC 20 ml/10 lit, Deltamethrin 1%, Trizophos 20 ml/10 lit",,Collect and destroy caterpillars if observed
+Maharashtra,rabi,Okra,,Powdery mildew,disease,,,"0.03% wettable sulphur, three sprays at 10-15 day intervals",,
+Maharashtra,rabi,Rose,,Downy mildew,disease,,,Copper oxychloride 75 WP 20 g/10 lit,,Spray if incidence observed
+Maharashtra,rabi,Rose,,Powdery mildew,disease,,,Captan 50% WP 25 g/10 lit,,Spray if incidence observed
+Gujarat,rabi,paddy,,wilt disease,disease,,,spray 1 g streptocycline + 10 g copper-based fungicide in 15 lit water,,
+Gujarat,rabi,paddy,,false smut disease,disease,,,spray 25 g mencozeb OR 10 g carbendazim in 10 lit water at 50% flowering,,
+Gujarat,rabi,paddy,,stem borer,pest,,,,use sex pheromone traps @ 40/ha,
+Gujarat,rabi,groundnut,,rust disease,disease,,,spray 10 ml hexaconazole / 10 lit water in late sown/late maturing crop,,
+Gujarat,rabi,wheat,,termite infestation,pest,,,seed treatment with bifenthrin 10 EC @ 200 ml OR fipronil 5 SC @ 600 ml in 5 lit water / 100 kg seed,,
+Gujarat,rabi,maize,,fall armyworm,pest,,,spray emamectin benzoate 5 SG @ 4 g OR chlorantraniliprole 18.5 SC @ 3 ml / 10 lit water,spray Bacillus thuringiensis-based formulation OR Beauveria bassiana @ 50 g / 10 liters water,spray chemical control in case of heavy infestation
+Gujarat,rabi,mustard,,aphid infestation,pest,,,use dimethoate 30 EC@10 ml OR thiomethoxam 25 WG @ 4 g / 10 lit water,NSKE 5% OR Neem oil-based formulations,
+Gujarat,rabi,cumin,,blight,disease,,,spray crysoximethyle 10 ml OR diafenaconazole 5 ml / 10 lit water,,
+Gujarat,rabi,fennel,,aphid,pest,,,two sprays of carbosulphan 25 EC @ 20 ml / 10 lit water,,
+Gujarat,rabi,onion,,damping off disease,disease,,,drench/spray copper-oxy-chloride @ 40 g / 10 lit water,,apply if necessary
+Madhya Pradesh,rabi,wheat,,seed borne pathogens,disease,,,Seed treatment with Vitavax or Thiram 2.5 g/kg seed,,
+Madhya Pradesh,rabi,wheat,,broad leaf weeds,pest,,,"2,4-D @ 0.5 kg a.i./ha",,
+Madhya Pradesh,rabi,wheat,,narrow leaf weeds,pest,,,"Sulphosulphuron 25 g ai/ha, Clodinophop 100 g ai/ha",,
+Madhya Pradesh,rabi,chickpea,,pod borers,pest,,,,"Bacillus thuringiensis 750 ml/ha, NPV 500 ml/ha, Metarhizium anisopliae 750 ml/ha, Beauveria bassiana 1 l/ha; Also use 50 bird perchers, 10 pheromone traps, 1 light trap per hectare",
+Madhya Pradesh,rabi,linseed,,weeds at 2-3 leaf stage,pest,,,Metsulfuron methyl 4 g a.i. + Clodinophop 60 g /1.25 ha land at 18-20 DAS,,
+Madhya Pradesh,rabi,mustard,,Aphid,pest,10,11,,Release Chrysoperla; hand pick infested twigs,
+Madhya Pradesh,rabi,mustard,,Sclerotinia rot,disease,,,Avoid heavy irrigation after vegetative stage,,
+Madhya Pradesh,rabi,mustard,,soil borne pathogens,disease,,,Soil incorporation of Trichoderma based product 2.5 kg/ha pre-incubated in FYM,,
+Madhya Pradesh,rabi,mustard,,Orobanche (broomrape),pest,,,Post-emergence glyphosate 25-50 g/ha at 30 and 50 DAS for 60-80% control,,
+Madhya Pradesh,rabi,sugarcane,,Termites and fungal diseases,disease,,,Field sanitation and soil preparation to reduce incidence,,
+Madhya Pradesh,rabi,fruit crops,,shoot borers,pest,,,,"Pull out borers and inject petrol or kerosene, plug holes with mud or clay",
+Madhya Pradesh,rabi,mango,,die-back,disease,,,Spray copper oxychloride 0.3% twice at 15 days interval after pruning dead wood,,
+Madhya Pradesh,rabi,mango,,gummosis,disease,,,Scratch affected part and apply Bordeaux paste,,
+Madhya Pradesh,rabi,pomegranate,,mealy bug,pest,,,Spray Thiamethoxam 25 WG @ 0.25 g/L or Imidacloprid 17 SL @ 0.35 ml/L or Dimethoate 30 EC @ 2 ml/L,,Wrap trunk with 25 cm width polythene strip as preventive
+Madhya Pradesh,rabi,ber,,powdery mildew,disease,,,Spray 0.25% wettable sulphur or 0.05% Karathane 40 EC,,
+Chhattisgarh,rabi,chickpea,plains,gram pod borer,pest,,,Profenophos + Cypermethrin 44 EC or Profenophos 50 EC @ 1 litre per hectare if one caterpillar per sqm observed,Nuclear Polyhydrosis Virus 250 LE @ 500 litre water per hectare at morning and evening time; bird perches every 5 meters; 5 pheromone traps per hectare; change pheromone septa after 15 days,One caterpillar per square meter
+Chhattisgarh,rabi,field pea,,powdery mildew,disease,,,Spray soluble Sulphur 3 g/litre water repeated after 15 days as soon as symptoms appear,,
+Chhattisgarh,rabi,mustard,,leaf blight,disease,,,Seed treatment with Carbendazim; Propeconazole spray 1 ml/litre water repeated after 15 days,,
+Chhattisgarh,rabi,potato,,early blight,disease,,,"Copper Oxychloride or Mancozeb @ 3 g/litre water, repeat spray after 10-15 days intervals",,
+Chhattisgarh,rabi,potato,,late blight,disease,,,"Metalaxyl M.Z. @ 1 g/litre water, repeat spray 3 times after 10-15 days intervals",,
+Telangana,rabi,rice,,Blast,disease,,,Spray Tricyclazole 0.6 g/L,,
+Telangana,rabi,rice,,Stem borer,pest,,,Spray Cartap Hydrochloride 2 g/L or Chlorantriniliprole 0.3 ml/L,,
+Telangana,rabi,rice,,Leaf folder,pest,,,Spray Cartap Hydrochloride 2 g/L,,
+Telangana,rabi,rice,,Rice whorl maggot,pest,,,Spray Fipronil 2.5 ml/L or apply Cartap Hydrochloride granules 8 kg/acre,,
+Telangana,rabi,rice,,False smut,disease,,,Spray Propiconazole 1 ml/L or Carbendazim 1 g/L or Tebuconazole + Tryfloxystrobin 0.4 g/L twice at heading and one week after,,
+Telangana,rabi,rice,,Panicle mite,pest,,,Spray Dicofol 5 ml + Propiconazole 1 ml or Spiromesifen 1 ml + Propiconazole 1 ml per liter,,
+Telangana,rabi,rice,,Neck blast,disease,,,"Spray Tricyclazole 0.6 g or Isoprothiolane 1.5 ml or Kasugamycin 2.5 ml per liter, repeat after 10-15 days",,
+Telangana,rabi,rice,,Sheath blight,disease,,,Spray Hexaconazole 2 ml or Propiconazole 1 ml or Tebuconazole + Tryfloxystrobin 0.4 g per liter twice at 15 days interval,,
+Telangana,rabi,maize,,Fall armyworm (FAW),pest,10,12,Spray Chlorantraniliprole 0.4 ml/L or Spinetoram 0.5 ml/L or Emamectin benzoate 0.4 g/L in plant whorls,Release egg parasitoids Trichogramma spp,"Use integrated pest management including summer ploughing, clean cultivation, intercropping with pulses, balanced fertilizers"
+Telangana,rabi,maize,,Post Flowering Stalk Rots,disease,,,,,"Crop rotation, plant debris removal, summer ploughing, balanced potassium fertilizer application, avoid moisture stress after flowering, grow tolerant hybrids"
+Telangana,rabi,groundnut,,Spodoptera,pest,,,"Spray Novaluron 200 ml or Flubendiamide 400 ml per 200 liters water per acre; Poison bait pellets prepared with rice bran, jaggery and Monochrotophos; Spray 5% NSKE for early larvae; Pheromone traps 4-5 per acre",,
+Telangana,rabi,groundnut,,Tikka leaf spot,disease,,,Spray Chlorothalonil 400 g or Tebuconazole 200 ml per 200 liters per acre,,
+Telangana,rabi,groundnut,,Leaf folder,pest,,,Spray Chlorpyriphos 500 ml or Acephate 300 g per 200 liters water per acre,,
+Telangana,rabi,chickpea,,Leaf eating caterpillar,pest,,,Spray Chlorpyriphos 2.5 ml/L or Quinolphos 2 ml/L,,
+Telangana,rabi,safflower,,Aphids,pest,,,Spray Dimethoate 2 ml/L or Monocrotophos 1.6 ml/L or Chlorpyriphos 2.5 ml/L at 40 and 60 DAS,,
+Telangana,rabi,sweet orange,,Dry root rot,disease,,,Drench soil near tree base with Carbendazim 2 g/L or Mancozeb 3 g/L or 1% Bordeaux mixture,Apply Trichoderma culture 1 kg with 90 kg FYM and 10 kg Neem powder incubated for 15 days near tree base,
+Telangana,rabi,sweet orange,,Mangu mite,pest,,,Spray water soluble sulphur 3 g/L or Propargite 1 ml/L two times 15 days apart,,
+Telangana,rabi,sweet orange,,Leaf Folder,pest,,,Spray Neem oil 5 ml/L; if severe spray Profenophos 2 ml/L or Imidacloprid 0.5 ml/L or Novaluron 0.7 ml/L or Thiomethaxom 0.3 g + Dichlorvos 0.5 ml per liter,,Spray pesticides 14 days after Neem oil spray
+Telangana,rabi,sweet orange,,Stem end rot,disease,,,Spray Carbendazim 1 g/L,,
+Telangana,rabi,acid lime,,Dry root rot,disease,,,Drench soil near trees with Carbendazim 2 g/L or Mancozeb 3 g/L or 1% Bordeaux mixture; Apply Bordeaux mixture on infected stem base and branches after scraping bark,Apply Trichoderma culture 1 kg with 90 kg FYM and 10 kg Neem powder incubated for 15 days near tree base,
+Telangana,rabi,acid lime,,Canker disease,disease,,,Spray Streptocyclin 1 g and Copper oxy chloride 30 g per 10 L water 2-3 times at 20 days interval,,"Use Balaji resistant variety, cut infected branches"
+Telangana,rabi,mango,,Sucking pests,pest,,,Spray Chlorpyriphos 2 ml/L or Dichlorvos 1.5 ml/L or Carbaryl 3 g + Neem oil 2.5 ml/L at 15 day intervals two times,,
+Telangana,rabi,mango,,Mango hoppers,pest,,,Spray Dimethoate 2 ml/L or Chlorpyriphos 2.5 ml/L at flower initiation and fruit formation stages,,
+Telangana,rabi,mango,,Powdery mildew,disease,,,Spray water soluble sulphur 3 g/L or Kerathane 1 ml/L or Myclobutanil 1 g/L or Hexaconazole 2 ml/L,,
+Telangana,rabi,mango,,Mango fruit fly,pest,,,Apply Parathion 50-100 g/tree at basin to kill pupae; Poison bait with malathion 50 ml + molasses/jaggery 200 g in 2 L water; use white or yellow methyl eugenol traps 4 per acre,,
+Kerala,rabi,rice,,rice stem borer,pest,,,,"Trichogramma cards @ 2cc per acre at 15, 30, 45, 60 DAS",
+Kerala,rabi,rice,,leaf folder,pest,,,spray quinalphos 2 ml per litre water if severe,Trichogramma cards @ 2cc per acre,
+Kerala,rabi,rice,,army worm,pest,,,spray chlorantraniliprole 3 ml per 10 litres; granules 4 kg per acre basal dose; complete flooding for 24 hours,,
+Kerala,rabi,rice,,brown plant hopper,pest,,,spray Thiamethoxam 2 g per 10 litres water,,
+Kerala,rabi,rice,,bacterial leaf blight,disease,,,spray Streptocycline 6 g in 30 litres water,,
+Kerala,rabi,rice,,sheath blight,disease,,,spray Trifloxystrobin + Tebuconazole 4 g in 10 litres water,,
+Kerala,rabi,coconut,,red palm weevil,pest,,,use insecticide in coconut log traps,coconut log traps with fermenting toddy or pineapple activated with yeast or molasses,
+Kerala,rabi,coconut,,rhinoceros beetle,pest,9,10,,apply 250 g neem cake or marotti cake with sand in innermost leaf axils twice during Sep-Oct,
+Kerala,rabi,coconut,,whiteflies,pest,,,spray neem oil 5 ml/litre water with soap 10 g/litre on lower leaf surface,,
+Kerala,rabi,coconut,,leaf rot,disease,,,apply Hexaconazole 5 EC 2 ml in 300 ml water; neem cake with sand in leaf axils,,
+Kerala,rabi,coconut,,bud rot,disease,,,spray 1% Bordeaux mixture on spindle leaves and crown as prophylactic,,
+Kerala,rabi,banana,,spodoptera,pest,,,,destroy affected leaves,
+Kerala,rabi,banana,,rhizome weevil,pest,,,,apply 250 g neem cake per pit,
+Kerala,rabi,banana,,nematode,pest,,,,pare rhizomes and apply neem cake 1 kg/plant; Bacillus macerans or Paecilomyces lilacinus @ 5g/sucker and 10g/pit 45 days after planting,
+Kerala,rabi,banana,,pseudostem weevil,pest,,,spray quinalphos 0.05% or chlorpyrifos 0.03%; repeat after 3 weeks if infestation persists,,
+Kerala,rabi,banana,,sigatoka disease,disease,,,cut severely affected leaves and spray 1% Bordeaux mixture with sticker,,
+Kerala,rabi,banana,,panama wilt,disease,,,drench soil with carbendazim 1 g/litre water,,
+Kerala,rabi,black pepper,,flea beetle,pest,9,10,spray dimethoate or quinalphos 0.05%,,spray at time of berry formation (Sep-Oct) and at berry maturing stage if needed
+Kerala,rabi,ginger,,rhizome rot disease,disease,,,drench mancozeb 0.3%,drench pseudomonas 20 g/litre,
+Kerala,rabi,vegetables,,aphids,pest,,,apply 3 ml imidacloprid or 2 g Thiamethoxam per 10 litres if severe,apply 2% neem oil emulsion or 20 g Verticillium lecanii per litre at 10 days interval,
+Kerala,rabi,vegetables,,white fly,pest,,,,apply 2% neem oil-garlic emulsion or spray 20 g Lecanicillium lecanii per litre every 10 days,
+Kerala,rabi,chilli,,thrips,pest,,,spray 2 g Thiamethoxam per 10 litres water,apply 2% neem oil garlic emulsion,
+Kerala,rabi,cabbage,,spodoptera,pest,,,spray Flubendamide 2 ml/10 litres or Chlorantraniliprole 3 ml/10 litres water if severe,destroy affected leaves; spray Neem Kernel suspension 5%,
+Kerala,rabi,cowpea,,fruit borer,pest,,,spray Flubendamide 2 ml/10 litres or Chlorantraniliprole 3 ml/10 litres if severe,apply 5% Neem Kernel Suspension at initial stage,
+Kerala,rabi,bhindi,,green leaf hopper,pest,,,spray 2 g Thiamethoxam per 10 litres water,,
+Kerala,rabi,vegetables,,jassid,pest,,,,apply 2% neem oil emulsion once a week or spray Lecanicillium lecanii 20 g/litre,
+Kerala,rabi,cowpea,,anthracnose disease,disease,,,apply 1% Bordeaux mixture or copper oxychloride 3 g/litre water,,
+Kerala,rabi,bitter gourd,,downy mildew,disease,,,,spray Pseudomonas solution 20 g/litre under leaves,
+Kerala,rabi,rubber,,fungal diseases,disease,,,spray Indofil M45 4 g/litre in tapping panels; spray copper oxychloride 4 g/litre on young leaves,,
+Lakshadweep,rabi,vegetables,,Root Knot Nematode,pest,,,,Apply Pochonia chlamydosporia 10 g/l and Neemcake 1 kg per plant,
+Lakshadweep,rabi,vegetables,,Powdery mildew,disease,,,Spray Bordeaux mixture 1%,,
+Lakshadweep,rabi,vegetables,,Fruit rot,disease,,,,Soil drenching with Trichoderma 10 g/l,
+Lakshadweep,rabi,coconut,,Rhinoceros beetle,pest,,,Fill crown with sand 250 g + 4 naphthalene balls; use beetle hook,,Sanitize field and crown clean
+Lakshadweep,rabi,coconut,,Bud rot,disease,,,Drench with Bordeaux mixture,,Sanitize field and clean crown
+Lakshadweep,rabi,banana,,Rhizome weevil,pest,,,,Apply neem-garlic emulsion; soak planting material in cow dung slurry,
+Lakshadweep,rabi,banana,,Bunchy top virus vectors,pest,,,Spray neem oil and garlic emulsion @6 ml/liter on lower leaf surface,Use neem-garlic emulsion,
+Lakshadweep,rabi,banana,,Pseudo stem weevil,pest,,,,"Use healthy planting materials, soak in cow dung slurry, shade dry",
+Himachal Pradesh,rabi,wheat,,yellow rust,disease,,,Tilt @ 1 ml/litre water spray at symptom appearance,,
+Himachal Pradesh,rabi,wheat,,karnal bunt,disease,,,Tilt @ 1 ml/litre water spray at symptom appearance,,
+Himachal Pradesh,rabi,wheat,,termite,pest,,,Seed treat with chlorpyriphos 20 EC @ 4 ml/kg seed and soil incorporate chlorpyriphos 20 EC @ 2 L/ha with 25 kg sand,,
+Himachal Pradesh,rabi,chickpea,,pod borer,pest,,,Carbaryl 50 WP @ 1250 g/ha spray,,
+Himachal Pradesh,rabi,chickpea,,ascochyta blight,disease,,,Bavistin @ 1 g/litre water spray,,
+Himachal Pradesh,rabi,brown sarson,,aphid,pest,,,Methyl Demeton 25 EC or Dimethoate 30 EC @ 1 ml/litre spray,,
+Himachal Pradesh,rabi,cole crops,,damping off,disease,,,Mancozeb 25 g + Carbendazim 10 g per 10 litres water,,
+Himachal Pradesh,rabi,cole crops,,black rot,disease,,,Seed treatment with hot water (50C) and streptocycline (1 g/10 L water) for 30 minutes each,,
+Himachal Pradesh,rabi,cole crops,,aphids,pest,,,Malathion @ 1 ml/litre water spray,,
+Himachal Pradesh,rabi,cole crops,,cabbage butterfly,pest,,,Malathion @ 1 ml/litre water spray,,
+Himachal Pradesh,rabi,cole crops,,cut worms,pest,,,Cypermethrin @ 1 ml/litre water spray at early stage,,
+Himachal Pradesh,rabi,garden pea,,powdery mildew,disease,,,Karathane 0.5 ml/l or wettable sulphur 2 g/l or hexaconazole 0.5 ml/l,,
+Himachal Pradesh,rabi,garden pea,,leaf miner,pest,,,Lambda cyhalothrin 0.75 ml/l spray,,
+Himachal Pradesh,rabi,garden pea,,pod borer,pest,,,Malathion 2 ml/l spray,,
+Jammu and Kashmir,rabi,mustard,,pod borer,pest,,,spray novaluron 10EC @ 1ml/litre or profenofos 50 EC @ 2ml/litre,NSKE 5% @ 1g/litre water,Spray at pod initiation and repeat after 15 days if needed
+Jammu and Kashmir,rabi,berseem,,stem rot,disease,,,spray copper oxychloride @ 0.3%,,
+Odisha,rabi,rice,,stem borer,pest,,,Cartap Hydrochloride 4% G @ 8 kg/acre or Chlorantraniliprole 0.4% GR @ 4 kg/acre or Imidacloprid 0.3% GR @ 6 kg/acre mixed with sand 1:1 at early crop stage,,
+Odisha,rabi,rice,,blast disease,disease,,,Tricyclazole 75% WP @ 120 g/acre,,
+Odisha,rabi,maize,,fall army worm,pest,,,Seed treatment with Cyantoaniliprone 19.8% + Thiamethoxam 19.8% @ 4 ml/kg seed,,
+Odisha,rabi,green gram,,leaf eating caterpillar,pest,,,Emamectin Benzoate 5% SG @ 80 gm or Profenofos 40% EC + Cypermethrin 4% EC @ 400 ml in 200 litres,,
+Odisha,rabi,black gram,,leaf eating caterpillar,pest,,,Emamectin Benzoate 5% SG @ 80 gm or Profenofos 40% EC + Cypermethrin 4% EC @ 400 ml in 200 litres,,
+Odisha,rabi,green gram,,powdery mildew,disease,,,Sulphur 80% WP @ 800 gm/acre,,
+Odisha,rabi,green gram,,yellow vein mosaic disease,disease,,,Wipe affected plants and spray Thiamethoxam 25% WG @ 66 gm/acre,,Control transmitting vectors white fly
+Odisha,rabi,green gram,,aphids and white fly,pest,,,Thiamethoxam 25% WG @ 66 gm/acre,,
+Odisha,rabi,mustard,,diamond back moth,pest,,,Fipronil 5% SC @ 400 ml/acre,,
+Odisha,rabi,mustard,,downy mildew,disease,,,Metalaxyl 8% + Mancozeb 64% WP @ 400 gm/acre,,
+Odisha,rabi,groundnut,,leaf miner,pest,,,Spinosad 45% SC @ 80 ml/acre,,
+Odisha,rabi,groundnut,,thrips,pest,,,Fipronil 5% SC @ 400 ml/acre,,
+Odisha,rabi,onion,,thrips,pest,,,Imidacloprid @ 0.5 ml/L with sticker,,
+Odisha,rabi,onion,,purple blotch,disease,,,Copper oxychloride 3 gm/L or Mancozeb 3 gm/L,,
+Odisha,rabi,cauliflower,,bacterial black rot,disease,,,Copper Oxychloride 50% WP @ 600 gm + Plantomycin @ 200 gm in 200 liters/acre,,
+Odisha,rabi,cabbage,,bacterial black rot,disease,,,Copper Oxychloride 50% WP @ 600 gm + Plantomycin @ 200 gm in 200 liters/acre,,
+Odisha,rabi,cucurbits,,Epilachna beetle,pest,,,Chlorpyriphos 20% EC @ 2 ml/L or Profenophos 50% EC @ 2 ml/L,Neem-based pesticide (Azadirachtin) 1500 PPM @ 3 ml/L,
+Odisha,rabi,potato,,early leaf blight,disease,,,Mancozeb 75% WP @ 600 gm/acre or Carbendazim 12% + Mancozeb 63% WP @ 400 gm/acre,,
+Odisha,rabi,potato,,late blight,disease,,,Metalaxyl 8% + Mancozeb 64% WP @ 400 gm/acre,,
+Odisha,rabi,tomato,,fungal wilt,disease,,,Thiophanate methyl 70% WP @ 300 gm/acre,,
+Odisha,rabi,brinjal,,mite infestation,pest,,,Propargite 57% EC @ 400 ml/acre,,
+Odisha,rabi,brinjal,,fruit and shoot borer,pest,,,Flubendiamide 480 SC @ 80 ml or Spinosad 45% SC @ 80 ml in 200 litres/acre,,
+Odisha,rabi,brinjal,,"sucking pests (white fly, aphids, jassids)",pest,,,Thiamethoxam 25% WG @ 66 gm/acre,,
+Andhra Pradesh,rabi,rice,,Brown Plant Hopper (BPH),pest,10,12,"acephate, monocrotophos, ethofenprox, fenobucarb, imidacloprid, thiamethoxam, buprofuzin, Imidaclorid+ Ethiprol 80WG, Pymetrogen spray",,Spray fluid directed towards base of plant
+Andhra Pradesh,rabi,rice,,stem borer,pest,10,12,"Cartap hydrochloride 50 WP, acephate, profenophos, Chlorantriniprole, cartaphydrochloride 4G",,Apply when adult moths/egg masses @ one/sq.m noticed
+Andhra Pradesh,rabi,rice,,gall midge,pest,10,12,"phorate 10G, carbofuran 3G",,Apply at 15 DAS in 1–2 inches standing water
+Andhra Pradesh,rabi,rice,,sheath blight,disease,11,,"hexaconazole, propiconazole",,Spray 45 days after transplanting
+Andhra Pradesh,rabi,rice,,leaf blast,disease,,,"Tricyclazole 75 WP, Isoprothiolane 40 EC",,Spray after initiation of symptoms
+Andhra Pradesh,rabi,rice,,neck blast,disease,,,"Tricyclazole 75 WP, Isoprothiolane 40 EC",,Spray once after panicle emergence
+Andhra Pradesh,rabi,rice,,false smut,disease,,,"propiconazole 25 EC, Carbendazim 50 WP",,Spray at 50% panicle emergence and flowering stage
+Andhra Pradesh,rabi,maize,,stem borer,pest,10,11,"Monocrotophos 36 SL, Chlorantraniliprole 20 SC, Carbofuran 3 G",,Spray 10-12 and 25-30 days after sowing
+Andhra Pradesh,rabi,maize,,fall army worm,pest,10,11,"chlorpyrifos 25 EC, Quinolphos 25 EC, Emamectin benzoate 5 SG, Spinosad 45 SE, Thiodicarb poison baiting",neem oil 5%,Spray directed into whorls; poison baiting with rice bran+jaggery+thiodicarb
+Andhra Pradesh,rabi,greengram,,thrips,pest,,,"monocrotophos, acephate, fipronil, dimethoate, spinosad, acetamiprid, thiamethoxam",,
+Andhra Pradesh,rabi,greengram,,whitefly,pest,1,,"monocrotophos, acetamiprid, diafenthiuron",5% NSKE foliar application at 20 DAS,Whitefly transmits Yellow Mosaic Virus
+Andhra Pradesh,rabi,greengram,,aphids,pest,,,"acephate, monocrotophos, imidacloprid, acetamiprid",,
+Andhra Pradesh,rabi,greengram,,maruca,pest,2,,"thiodicarb 75 WP, profenophos 50 EC, acephate, chlorpyriphos, quinalphos, thiodicarb, novaluron, spinosad, emamectin benzoate, chlorantraniliprole, flubendiamide",5% NSKE or neem oil before flower bud initiation,Spray one week before flower initiation as per adult population
+Andhra Pradesh,rabi,greengram,,anthracnose,disease,,,"carbendazim, mancozeb, hexaconazole",seed treatment with captan/thiram/mancozeb/carbendazim,Spray fungicides alternately twice at 10 days interval
+Andhra Pradesh,rabi,greengram,,powdery mildew,disease,,,"carbendazim, thiophanate methyl, hexaconazole, propiconazole",,Spray twice at 10 days interval soon after notice
+Andhra Pradesh,rabi,bengal gram,,fruit borer,pest,,,"thiodicarb, spinosad, rynaxypyr, indoxacarb, flubendiamide","neem formulations (NSKE 5%, neem oil 2.5 l/ha), Bt 1 kg/ha, NPV 500 LE/ha",Use biopesticides twice at 7-10 day intervals in evening hours
+Andhra Pradesh,rabi,bengal gram,,wilt and dry rot,disease,,,,seed treatment with Trichoderma,
+Tamil Nadu and Puducherry,rabi,Rice,,Gall midge,pest,,,Carbosulfan 25% EC 800-1000 ml or Chlorpyriphos 20% EC 1250 ml or Fipronil 5% SC 1000-1500 g or Fipronil 0.3% G 16.67-25 kg or Quinalphos 5% G 5 kg or Thiamethoxam 25% WG 100 g/ha,Distribute Platygaster oryzae parasitised galls at 1 per 10 m2 on 10 days after transplanting,When natural parasitisation is noticed abundantly
+Tamil Nadu and Puducherry,rabi,Rice,,False smut,disease,,,Two sprays propiconazole 25 EC 500 ml/ha or copper hydroxide 77 WP 1.25 kg/ha at boot leaf and 50% flowering; or copper hydroxide 77 WP 2.0 kg/ha at boot leaf and 50% flowering,,
+Tamil Nadu and Puducherry,rabi,Redgram,,Root rot,disease,,,Seed treatment with Carbendazim or Thiram @ 2 g/kg seed,Seed treatment with talc formulation of Trichoderma viride @ 4g/kg or Bacillus subtilis @ 10 g/kg seed,
+Tamil Nadu and Puducherry,rabi,Groundnut,,Root rot,disease,,,Seed treatment with carbendazim @ 2 g/kg seed,Seed treatment with Trichoderma asperellum @ 4 g/kg or Bacillus subtilis @ 10 g/kg seed; Soil application of Bacillus subtilis @ 2.5 kg/ha with 50 kg FYM/sand at 30 DAS,
+Tamil Nadu and Puducherry,rabi,Guava,,Tea mosquito bug,pest,,,,Spray Beauveria bassiana @ 5 g/l during flowering stage,
+Tamil Nadu and Puducherry,rabi,Papaya,,Papaya ringspot virus,disease,,5,Spray systemic insecticide 3 days before transplanting; spray dimethoate @ 1.5 ml/l monthly up to 5 months after planting,,
+Tamil Nadu and Puducherry,rabi,Papaya,,Root rot/wilt,disease,,,Soil drench 1% Bordeaux mixture or metalaxyl @ 0.2% at fortnightly intervals 2 to 4 times,,
+Tamil Nadu and Puducherry,rabi,Mango,,Gummosis,disease,8,9,Spray tebuconazole @ 0.1% at 15 days interval,,Remove infected twigs and branches
+Tamil Nadu and Puducherry,rabi,Mango,,Fruit fly,pest,,,,,Use Methyl eugenol traps @ 25/ha
+Tamil Nadu and Puducherry,rabi,Tomato,,Nematode,pest,,,,Grow marigold as intercrop at 8:1 ratio; bio-inoculants Trichoderma viride and Purpureocillium lilacinum @ 5 kg/ha + neem cake or FYM at planting or 15-30 DAP,
+Tamil Nadu and Puducherry,rabi,Tomato,,Pin-bollworm,pest,,,,Release Trichogramma pretiosum; place pheromone traps @ 40/ha; border crop with pulses,
+Karnataka,rabi,Paddy,,Paddy Neck Blast Disease,disease,,,Spray Tebuconazole 50% and Trifloxystrobin 25% (Nativo 75 WP) @ 4 g/10 L water,,
+Karnataka,rabi,Paddy,,Leaf roller,pest,,,Spray Flubendiamide 20% WG @ 20 g/100 L or Flubendiamide 48 SC @ 8 g/100 L,,
+Karnataka,rabi,Red gram,,Leaf spot and flower dropping,disease,,,Spraying carbendazim 1 g + Pulse magic 10 g per litre water,,
+Karnataka,rabi,Red gram,,Pod borer,pest,,,Spinosad 0.25 ml/L water,Use traps & lures 10 Nos./acre; grow coriander (6:1) as trap crop,
+Karnataka,rabi,Maize,,Fall army worm,pest,,,Spray Emamectin benzoate 5 SG 0.4 g per litre water,,
+Karnataka,rabi,Black gram,,Pulse magic disease management,disease,,,Spray Pulse magic or pulse special 10 gm/litre at 50% flowering and again after 15 days,,
+Karnataka,rabi,Chickpea,,Wilt and dry root rot,disease,,,Seed treatment with Trichoderma 8 g/kg seeds,Rhizobium seed treatment and PSB 500 g/ha,
+Karnataka,rabi,Wheat,,Weeds,pest,,,Pre-emergence Pendimethalin 30 EC 3.25 lit/ha; Post-emergence Metsulfuron methyl 20 WDG 20 g after 30 days,,
+Karnataka,rabi,Sunflower,,Powdery disease,disease,,,Spray myclobutanil 0.5 g or difenconazole 1 ml or hexaconazole 1 ml per litre water,,
+Karnataka,rabi,Ground nut,,Seed damage by soil insects,pest,,,Seed treatment with Chlorpyriphos 10 ml/kg seed,,
+Karnataka,rabi,Cotton,,Leaf reddening,disease,,,Spray Magnesium sulphate 1% with 1% 19:19:19 fertilizer at 100-110 DAS,,
+Karnataka,rabi,Cotton,,Alternaria leaf spot and leaf blight,disease,,,Spray Mancozeb 2 g/liter,,
+Karnataka,rabi,Mulberry,,Powdery mildew,disease,,,Spray wettable sulphur 50 WP 2 g/l or Carbendazim 2 g/l water,,Safety period 15 days
+Karnataka,rabi,Mulberry,,Leaf Roller,pest,,,,Release Trichoderma chilonis egg parasitoids @ 5 Trichocard per acre from 5th day after chemical spray,
+Karnataka,rabi,Onion,,Thrips and purple blotch,pest,,,Spray Mancozeb 0.25% with Methomyl 0.8 g/l at 30 DAT; Tricyclazole 0.1% with Carbosulphan 2 ml/l at 45 DAT; Hexaconazole 0.1% with Profenofos 1 ml/l at 60 DAT; Fipronil or Profenophos 0.1% for thrips,,
+Karnataka,rabi,Chilli,,Seedling fungal diseases,disease,,,Seedling root dipping in Trichoderma harzianum and drenching with carbendazim 2 g/lit,,

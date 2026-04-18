@@ -1,0 +1,342 @@
+state,season,crop_name,sub_region,variety_names,variety_type,duration_type,purpose
+Punjab,rabi,wheat,,"Unnat PBW 343, Unnat PBW 550, PBW 1 Zn, PBW 725, PBW 677, HD 3086, WH 1105, HD 2967, PBW 621, WHD 943, PDW 291",variety,medium,Timely sown irrigated conditions
+Punjab,rabi,wheat,,"PBW 752, PBW 658",variety,late,Late sown irrigated conditions
+Punjab,rabi,rapeseed and mustard,,"TL 17, TL 15",variety,early,Toria
+Punjab,rabi,rapeseed and mustard,,"RCH 1, PHR 126, Giriraj, RLC 3, PBR 357, PBR 97, PBR 91, RLM 619",variety,medium,Raya
+Punjab,rabi,rapeseed and mustard,,"PGSH 1707, GSC 7, GSC 6, Hyola PAC 401, GSL 2, GSL 1",variety,medium,Gobhi Sarson
+Punjab,rabi,rapeseed and mustard,,PC 6,variety,,African Sarson
+Punjab,rabi,rapeseed and mustard,,TMLC 2,variety,,Taramira
+Punjab,rabi,sugarcane,,"CoPb 92, Co 118, CoJ 85, CoJ 64",variety,early,Early Maturing Varieties
+Punjab,rabi,sugarcane,,"CoPb 93, CoPb 94, Co 238, CoPb 91, CoJ 88",variety,medium,Mid-Late Maturing Varieties
+Punjab,rabi,berseem,,"BL 43, BL 42, BL 10",variety,,
+Punjab,rabi,pea,,"AP-3, Matar Ageta-7, Matar Ageta-6, Arkel",variety,early,
+Punjab,rabi,pea,,"Punjab-89, Mithi Phali",variety,medium,
+Punjab,rabi,potato,,"Kufri Surya, Kufri Pukhraj, Kufri Ashoka, Kufri Chandramukhi",variety,early,
+Punjab,rabi,potato,,"Kufri Pushkar, Kufri Bahar, Kufri Jyoti",variety,medium,
+Punjab,rabi,potato,,"Kufri Badshah, Kufri Sindhuri",variety,late,
+Punjab,rabi,potato,,"Kufri Frysona, Kufri Chipsona-3, Kufri Chipsona-1",variety,,Processing Varieties
+Punjab,rabi,chilli,,"CH-27, CH-3, CH-1",hybrid,,
+Punjab,rabi,chilli,,"Punjab Sindhuri, Punjab Tej, Punjab Surkh, Punjab Guchhedar",variety,,
+Punjab,rabi,cauliflower,,"Pusa Snowball-1, Pusa Snowball K-1",variety,late,
+Ladakh,rabi,Chinese cabbage,,"Springsun-60, Palampur green, Tropic Prince",variety,,
+Ladakh,rabi,Cabbage,,"KGMR-1, Mitra",variety,,
+Ladakh,rabi,Broccoli,,"Green Magic, Lucky",variety,,
+Ladakh,rabi,Spinach,,"Banejee Giant, Silver beat/Beet Leaf, Shalimar green, Virginia Savoy",variety,,
+Ladakh,rabi,Swiss Chard,,"CITH-Red, CITH Green",variety,,
+Ladakh,rabi,Methi,,"IC-74, Kasuri, Pusa Early Bunching",variety,,
+Ladakh,rabi,Coriander,,"Shalimar Dhania-1, Surabhi",variety,,
+Ladakh,rabi,Turnip,,PTWG,variety,,
+Ladakh,rabi,Lettuce,,"Chinese Yellow, Simpson Black seeded, Grishma",variety,,
+Ladakh,rabi,Knol Khol,,"White Vienna, early white vienna",variety,,
+Ladakh,rabi,Celery,,Ford Hook Emperor,variety,,
+Ladakh,rabi,Kale,,"Khanyari, HaeznHawk",variety,,
+Uttarakhand,rabi,wheat,"under irrigated conditions Plain, Bhawar and Trai area timely sown","UP 2903, UP 2938, UP 2855, UP 2784, Up2628, UP2554, HD 3086, HD 2967, WH 1105, DPW 621-50, PBW 502, WH542, BL 953",variety,medium,
+Uttarakhand,rabi,wheat,"under irrigated conditions Plain, Bhawar and Trai area late sown","UP2944, UP 2844, UP 2865, UP 2526, UP 2565, WH 1124, HD 3059, PBW 590, DBW 173, DBW 71, Raj 3765, Raj 3077, UP 2944",variety,late,
+Uttarakhand,rabi,wheat,"Rainfed areas Plain, Bhawar and Trai timely sown","PBW 396, PBW 644, WH 1080, PBW 299, PBW 175, V 306",variety,medium,
+Uttarakhand,rabi,wheat,irrigated lower hills timely sown Nov. first fortnight,"UP 2572, UP 2584, VL 953, VL 907, VL 804, VL 738, HS 507, HS 240, HPW 349",variety,medium,
+Uttarakhand,rabi,wheat,rainfed lower hilly timely sown Oct. first fortnight,"UP 2572, VL 953, VL 829",variety,medium,
+Uttarakhand,rabi,wheat,rainfed hill timely sown Oct. first fortnight,"HPW 42, HS 365",variety,medium,
+Uttarakhand,rabi,wheat,"Plain, Bhawar and Trai area","UP 2903, UP 2938, UP 2855, UP 2784, UP 2628, UP 2554, HD 3086, HD 2967, WH 1105, DPW 621-50, PBW 502, WH 542, BL 953",variety,medium,
+Uttarakhand,rabi,wheat,"Plain, Bhawar and Trai area","UP 2944, UP 2844, UP 2865, UP 2526, UP 2565, WH 1124, HD 3059, PBW 590, DBW 173, DBW 71, Raj 3765, Raj 3077",variety,late,
+Uttarakhand,rabi,wheat,"Plain, Bhawar and Trai area","PBW 396, PBW 644, WH 1080, PBW 299, PBW 175, V 306",variety,medium,
+Uttarakhand,rabi,wheat,lower hills irrigated area,"UP 2572, UP 2584, VL 953, VL 907, VL 804, VL 738, HS 507, HS 240, HPW 349",variety,medium,
+Uttarakhand,rabi,wheat,lower hills rainfed area,"UP 2572, VL 953, VL 829",variety,medium,
+Uttarakhand,rabi,wheat,hill rainfed conditions,"HPW 42, HS 365",variety,medium,
+Uttarakhand,rabi,gram,,"Pant G 114, DCP 92-3, GNG 1581, RSG 963",variety,,small grain size
+Uttarakhand,rabi,gram,,"Pant G 186, Pusa 547, Pant G3, Pant G4, Pant G5",variety,,medium size grain
+Uttarakhand,rabi,gram,,Pusa 256,variety,,bold size
+Uttarakhand,rabi,gram,,"Pusa 1003, Pusa 1053, Pant Kabuli Channa 1, Pant Kabuli Channa 2, JGK 1",variety,,kabuli channa
+Uttarakhand,rabi,barley,,"VL Barley 85, VL Barley 118",variety,,
+Uttarakhand,rabi,lentil,"Plain, Bhawar and Trai areas","Pant Lentil 5, Pant Lentil 7, Pant Lentil 8, Pant Lentil 9",variety,,
+Uttarakhand,rabi,lentil,Lower hilly area,"VL Massor 5, VL Masoor 225, VL Masoor 126, Masoor 507, VL Masoor 103",variety,,
+Uttarakhand,rabi,yellow mustard/toria,,"VL Toria 3, Pant Hill Toria 1, Uttara, Pant Pili Sarson 1",variety,,
+Uttarakhand,rabi,yellow mustard,"Plain, Bhawar and Trai area","Pani Swela, Pant Girja",variety,early,
+Uttarakhand,rabi,yellow mustard,lower hilly,"Pilli sarso 1, Pant Sweta Pant",variety,medium,
+Uttarakhand,rabi,rye,"Plain, Bhawar and Trai area","Pusa Mustard 27, Pant Rye 19",variety,early,
+Uttarakhand,rabi,rye,"Plain, Bhawar and Trai area","Pant Rye 20, Pant Rye 21, RGN",variety,timely,
+Uttarakhand,rabi,rye,,"NRCHB 101, Ashirwad, Vardan",variety,late,
+Uttarakhand,rabi,pea,"Plain, Bhawar and Trai area","KPMR 522, ARPANA, Malviya Matar 15, DDR 23, Pant Matar 13, Pant Matar 25, Pant Matar 74, Pant Matar 155, Pant Matar 250",variety,medium,dwarf
+Uttarakhand,rabi,pea,"Plain, Bhawar and Trai area","Pant Matar 42, Pant Matyar 243",variety,medium,regular
+Uttarakhand,rabi,pea,lower hills,"Pant Matar 13, Pant Matar 14, IPFD1-10",variety,medium,
+Uttarakhand,rabi,pea,lower hills,"VL Matar 40, VL Matar 42",variety,medium,regular
+Uttarakhand,rabi,onion,,"VL Pyaz 3, Agrifound Light Red, Pusa Red, Nasik Red, Pusaratnar, Arkaniketan, Arkabindu, Arkapragati, Agri found Light Red, Agri found Rose, Punjab Selection, Pusa White Flat",variety,,
+Uttarakhand,rabi,potato,,"Kufri Jyoti, Kufri Giriraj, Kufri Jawahar, Kufri Bahar, Kufri Satraj, Kufri Chipsona, Kufri Lalima, Kufri Chandan",hybrid,,
+Uttarakhand,rabi,radish,,"Japanese Long, Doonagiri Gol",variety,,
+Uttarakhand,rabi,coriander,,"Pant Haritima, Pant Dhaniya 1",variety,,
+Uttarakhand,rabi,spinach,,All Green,variety,,
+Rajasthan,rabi,Taramira,,"T-27, RTM-314, RTM-2002",variety,,
+Rajasthan,rabi,Mustard,,"NRCDR-2, DRMRIJ-31, NRCHB-101, RH-30, RGN-73, Bio-902, Aravali, RH-725, PM-32",variety,normal,
+Rajasthan,rabi,Mustard,,"RGN-48, RGN-298, RGN-229",variety,barani,
+Rajasthan,rabi,Mustard,,"RGN-145, RGN-236",variety,late,
+Rajasthan,rabi,Chickpea,,"CSJ-515, IPC 207-28, GNG-1488, GNG-1581, GNG-2144, GNG-2171, GNG-1958, GNG-663, Pratap Chana-1",variety,desi,
+Rajasthan,rabi,Chickpea,,"GNG-1969, KAK-2, Shubhra, Ujjaval",variety,kabuli,
+Rajasthan,rabi,Barley,,"RD-2035, RD-2052, RD-2503, RD-2552, RD-2668, RD-2715, RD-2786, RD-2794, RD-2849",variety,,
+Rajasthan,rabi,Wheat,,"Raj-1482, Raj-3765, Raj-3777, Raj-4037, Raj-4120, Raj-4079, Raj-4238, KRL-210, BWD-303, DWD-48",variety,,DWD-48 is biofortified variety
+Rajasthan,rabi,Fenugreek,,"RMT-1, RMT-305, AFG-1, AFG-3",variety,,
+Rajasthan,rabi,Cumin,,"GC-4, RZ-223",variety,,
+Rajasthan,rabi,Ber,,"Seb, Gola, Umran, Ilaichi, Kaithali, Mundiya",variety,,
+Rajasthan,rabi,Papaya,,,,,
+Rajasthan,rabi,Aonla,,,,,
+Rajasthan,rabi,Guava,,,,,
+Rajasthan,rabi,Pomegranate,,Mrig Bahar,variety,,Harvest Mrig Bahar fruits
+Rajasthan,rabi,Lasora,Gunda,,,,Orchard cleaning and leaf defoliation for early fruiting
+Rajasthan,rabi,Sapota,,,,,"Flowering starts Sep-Oct, clean orchard and apply fertilizer after fruit setting"
+Haryana and Delhi,rabi,mustard,,"RH-30, Uravarshi, RH-8812, RH-0749, RH-9304, RB-50, Pusa Mustard-32",variety,,irrigated
+Haryana and Delhi,rabi,mustard,,"RH-725, RB-50, RH-406, RH-0119",variety,,rainfed
+Haryana and Delhi,rabi,chickpea,,"HC-1, HC-3, HC-5, CSJ-515, GNG-2144, GNG-2171",variety,,irrigated
+Haryana and Delhi,rabi,chickpea,,"HC-1, RSG-501",variety,,rainfed
+Haryana and Delhi,rabi,wheat,,"WH 1105, WH 1184, WH 283, WH 542, HD 2967, HD 3086, DBW 88, DBW 187, DBW 222, PBW 550",HYV,medium,irrigated and timely sown
+Haryana and Delhi,rabi,wheat,,"C-306, WH 1025, WH 1080",variety,,light textured soils and limited irrigation
+Haryana and Delhi,rabi,wheat,,"WH 896, WH 912, HD 943",variety,,durum
+Haryana and Delhi,rabi,wheat,,"WH 1124, DBW 90, HD 3059, WH 1021, PBW 373, RAJ 3765",HYV,late,irrigated and late sown
+Uttar Pradesh,rabi,Berseem,,"Mescawi, Wardan, JB-1, BL-10, BL-22, BL-42",variety,,
+Uttar Pradesh,rabi,Oats,,"Kent, OL-9, OS-6, OS-8, Haryana Jai, UPO-212, JAO 822",variety,,
+Uttar Pradesh,rabi,Wheat,,"DBW-187 (Karan Vandana), DBW-222, 252, 47, HS 542 (Pusa Kiran), K 8804, Deva, Indra, Ujiyar, Gomti, Halna, Atal, Gangotri, Prasad, Naina, Unnat Halna, Mandakani, kalayan sona",variety,medium,
+Bihar,rabi,wheat,,"DBW 187, HD 2967, K1317, HD 3226, DBW 39, K0307, HD 2824, HD 2402, CBW 38, PBW 343, Sabour Samridhi",variety,early,
+Bihar,rabi,wheat,,"HD 3118, HD 2985, HI 1563, DBW 107, DBW 14, HD 2643, HP 1633, HD 2307, DBW 173, PBW 752, HUW 234, PBW 373, Sabour Shrestha",variety,late,
+Bihar,rabi,wheat,,"HD 3171, HD 2888, K 8027, C 306, MACS 6145, Sabour Nirjal, HDR 77, K 9465",variety,,dry areas
+Bihar,rabi,maize,,"Ganga 11, DHM 103, DHM 105, Rajendra hybrid makka-1, ICI 705, Dhawal, Laxmi, Devaki, Saktiman 1, Saktiman 2, Saktiman 3, Saktiman 4",hybrid,,
+Bihar,rabi,gram,,"RSG 44, Pusa 329, Pusa 362, DCP-92-3, GCP105, KWR108, BG1003, Vijay, Pragati, Pant gram3, Pant gram 4, HK4, Birsa chana 3, Sadabahar",variety,early,
+Bihar,rabi,gram,,"Pusa 372, KPG 59 (Uday)",variety,late,
+Bihar,rabi,lentil,,"PL 406, PL 639, K 75 (Mallika), HUL 57, NDL 2, WBL 58, WBL 77, PL 777-12 (Arun), IPL 406, Narendra Masoor 1, BR 25, KLS 218",variety,,
+Bihar,rabi,lathyrus,,"Bio L212 (Ratan), LS 147-14 (Prateek), B1 (Nirmal), Pusa 24, RLS 4595, LSD 3, LSD 6",variety,,
+Bihar,rabi,field pea,,"Rachna, Aparna, Malviya Matar 15, Pusa Prabhat, VL matar 42, Swarna Tripti",variety,,high yielding
+Bihar,rabi,rapeseed/mustard,,"Sej 2, Pusa Mahak, Pusa Bold",variety,early,
+Bihar,rabi,rapeseed/mustard,,"Rajendra Rai Pichheti, Rajendra Anukool, Ashirvad, RH0749, T9, 44S-01, RGN 73, NRCHB 101, DRMR 150-35, NRCYS-05-02, Rajendra Suflam Toria: RAUTS 17, Panchali",variety,late,
+Bihar,rabi,rapeseed/mustard,,"Rajendra Sarson 1, Ragini, Benoy",variety,,Yellow Sarson
+Bihar,rabi,linseed,,"Sabour tisi1, Sabour tisi2, Garima, Sweta, Subhra, Gaurav, LCK-8528",variety,,
+Jharkhand,rabi,wheat,,"HD3249, HD3086, K1006, K0307, Birsa Gehu-3, HD2967, DBW39, HI1612, NW5052, Karan Bandana, DBW187, Raj 4120, NW5054, K9107, PBW443, HD2733, CBW38, HI1556",HYV,early,
+Jharkhand,rabi,wheat,,"K1317, HD3171, HI1612",HYV,medium,
+Jharkhand,rabi,wheat,,"HI1563, DBW107, HD3118, HD2985, DBW14, PBW373, HD2643, WR544, RAJ3765",HYV,late,
+Jharkhand,rabi,wheat,,"HI1612, K1317, HD3171, K8027",HYV,medium,rainfed
+Jharkhand,rabi,gram,,"GNG1958, KGP59, KWR108, Pusa372, PusaChana1021, HK4, HK94-134, KAK-2, Birsa Chana-3, Pusa256, GCP105, DCP92-3, PG-186, BG1053",variety,,
+Jharkhand,rabi,lentil,,"HUL57, WBL77, KLS218, PL406, IPL406, Mallik, Arun, PL639, Narendra Masur-1, Shiwalik, BR25, BR26",variety,,
+Jharkhand,rabi,mustard,,"Pusa Mustard 25, Pusa Mustard 28, Pusa Mustard 30, NRCHB 101, Siwani T59 (Varuna), Pusa Agrani",variety,,
+Jharkhand,rabi,toria,,"PT203, Panchali, PB737",variety,,
+Jharkhand,rabi,potato,,"Kufri Ashoka, Kufri Pukhraj, Kufri Surya, Kufri Pushkar, Kufri Kanchan, Kufri Lalima",variety,,early and mid-season
+Jharkhand,rabi,onion,,"Pusa red, Arka Niketan, Agrifound dark red, Patna white, Bellary red",variety,,
+Jharkhand,rabi,tomato,,"Swarna Sampada, Swarna Lalima, Swarna Bhaibhav, Arka Samrat",variety,,
+Jharkhand,rabi,brinjal,,"Swarna Shyamali, Swarna Pratibha",variety,,
+Jharkhand,rabi,chilli,,Swarna Prafulya,variety,,
+West Bengal,rabi,boro paddy,,"IET-4786 (Satabdi), Lalat, WGL-20471 (Lal minikit), IR-36, CR-126-42-1, IET-1444, IET-2233, IET-4094 (Khitish), Rajendra Bhagwati, Kanak, Dudheswar, Mohan (CSR-4), CSR-36, 43 and 46, Gosaba-5 & 6, Rajendra Bhagabati, Shreya",variety,short,
+West Bengal,rabi,maize,,"P 3396, Deccan 103, Deccan 105, P 3546, P 3522, Rajkumar, All-Rounder, 900 M Gold, PAC-740",variety,,
+West Bengal,rabi,lentil,,"WBL-77 (Moitree), L-4717 (Pusa Ageti), KLS-09-3, PL-8, IPL-316",variety,,
+West Bengal,rabi,mustard,,"Binoy, Varuna, Pusa Bold, Kranti, Bhagirathi, PM-2-3, PM-99-125, PM-5, PM-28, PM-30, YSH-0401, NRCHB-101, TBM-204, B-9, TBM 143",variety,,including utera/paira cropping
+West Bengal,rabi,summer greengram,,"IPM-02-14, IPM-205-7",variety,short,yellow mosaic virus resistant
+West Bengal,rabi,sunflower,,"LFSH-171, KBSH-53, KBSH-78",variety,,
+West Bengal,rabi,cotton,Sundarbans,Hirsutum cotton,variety,rabi-summer,
+West Bengal,rabi,lathyrus,,"Ratan, B-1, Pusa-24, Prateek, Maha Teora",variety,,
+Andaman and Nicobar Islands,rabi,brinjal,,"CARI Brinjal-1, CARI Brinjal-2 and other local private company varieties",variety,,Bacterial wilt resistance
+Andaman and Nicobar Islands,rabi,tomato,,"Arka Rashak Laxmi, Utkal Raja, Utkal Urbasi",variety,,Wilt resistance
+Andaman and Nicobar Islands,rabi,cabbage,,"White Marvel, White Short",variety,,Tropical high temperature tolerant
+Andaman and Nicobar Islands,rabi,cauliflower,,"White Marvel, White Short",variety,,Tropical high temperature tolerant
+Andaman and Nicobar Islands,rabi,radish,,"Pusachetaki, Japanese long",variety,,
+Andaman and Nicobar Islands,rabi,sweet potato,,"Bhu-sona, Bhu-sakti, CARI SP-1, CARI SP-2",variety,,Improved biofortified
+Andaman and Nicobar Islands,rabi,carrot,,Pusa Rudhira and others,variety,,
+Andaman and Nicobar Islands,rabi,chilies,,"VNR-Black, Bullet Mirch, Pusajwala, MDU-1",variety,,Leaf curling resistance
+Assam,rabi,early Ahu Rice,,,,,
+Assam,rabi,lentil,,"HUL 57, Axom Masur 1 (SL 2-24), Axom Masur 2 (SL 2-28)",variety,,
+Assam,rabi,rapeseed and mustard,,"TS 36, TS 38, M-27 (toria); Jeuti, TS 46, TS 67 (late sowing); NRCHB-101, PM 26, PM 27 (Indian Mustard)",variety,,
+Assam,rabi,strawberry,,"Sweet Charlie, Festival, Chandler",variety,,
+Sikkim,rabi,rajmash,,"Sikkim Rajma-1, Jwala, Tripura Rajmash Selection 1",variety,,
+Sikkim,rabi,Rajmash,,"Sikkim Rajma-1, Jwala, Tripura Rajmash Selection 1",variety,,
+Sikkim,rabi,Rapeseed Mustard,,"Pant Pili Sarson-1, Pant Sweta, Uttara, Benoy-9, PM-27, PM-28, TS 36, TS 38",variety,,
+Arunachal Pradesh,rabi,maize,,"HQPM-1, C-1415, PAC-705, Vijay, VL Makka-88",hybrid,,high yielding
+Arunachal Pradesh,rabi,rapeseed/mustard,Papum Pare district,"TS-36, TS-38",variety,,
+Arunachal Pradesh,rabi,potato,,"Kufri Pokhraj, Khufri Bahar, Khufri Alankar, Kufri Jyoti, Kufri Kanchan",variety,,
+Manipur,rabi,field pea,,"Aman, Prakash, Rachna, Aparna",variety,,
+Manipur,rabi,chickpea,,"JG-14, JG-16",variety,,
+Manipur,rabi,lentil,,HUL-57,variety,,
+Manipur,rabi,rapeseed-mustard,,"M-27, TS-36, TS-38, Ragini, NRCHB-101",variety,,
+Manipur,rabi,maize,,"HQPM-1, HQPM-5, RCM-76",variety,,
+Manipur,rabi,cauliflower,,"White Excel, Sweta, Pusa snowball",variety,,
+Manipur,rabi,cabbage,,"Green Hero, Rare Ball",variety,,
+Manipur,rabi,broccoli,,"Green magic, Harumi 88, Puspa",variety,,
+Manipur,rabi,tomato,,"Arka Rakshak, Arka Samrat",variety,,triple disease resistant
+Manipur,rabi,onion,,"Arka Lalima, Bhima Shakti, Bhima Kiran, Prema",variety,,
+Meghalaya,rabi,boro paddy,,"Navin, Bisnuprasad, Joymati, KRH 2, DRRH 1, Swarna Ganga Red",variety,,
+Meghalaya,rabi,maize,,"Hybrid 4558, Hero 22, DA61, RCM 76, Vivek Hybrid",hybrid,,
+Meghalaya,rabi,rapeseed and mustard,,"M-27, TS-36, TS-46, PM 27, PM 28, NRCHB 101",variety,early,
+Meghalaya,rabi,rabi vegetables,,"Golden Acre, Pusa Drum Head, Pride of India Rocket, Blue Jays, Pusa Snow Ball, K-1, KSP 1173, Swati, Rocky, Pusha Rohini, Nayak, Romeo, Megha 2, Megha 3, Arka Alok, Arka, Rakshak, Arka Abhed, Arka Niketan, Arka Nishant, KSP 135, KSP 5412, Indame Pirate, White Vienna, Purple Vienna, Taj, Green Globe, Phalguni, Arka Arjun, Naga local, US 28, KSP 1072, Signath, Bholanath",variety,,
+Mizoram,rabi,Maize,,"Composite variety, hybrid sweet corn",hybrid,,
+Mizoram,rabi,Rajmash,,ARUN,variety,,
+Mizoram,rabi,Soybean,,"JS 335, VL 89",variety,,
+Mizoram,rabi,Toria,,"TS 67, TS 36, TS 38",variety,,
+Mizoram,rabi,Field pea,,"Aman, Prakash, Rachna",variety,,
+Nagaland,rabi,Rapeseed,,"M 27, TS-36, TS 38, TS-67",variety,late,
+Nagaland,rabi,Linseed,,"Ruchi, T-397, Shekhar",variety,,
+Nagaland,rabi,field pea,,"Aman, Prakash, Rachna",variety,,
+Nagaland,rabi,rapeseed,,"M 27, TS-36, TS-38, TS-67",variety,late,
+Nagaland,rabi,linseed,,"Ruchi, T-397, Shekhar",variety,,
+Nagaland,rabi,cabbage,,"Rareball, Pusa Ageti, Pride of India, Green Challenger, Green Express",variety,,
+Nagaland,rabi,cauliflower,,"Hybrid-Madhuri, Pusa Snowball 1, Pusa Sharad, Swati, Himani",hybrid,,
+Nagaland,rabi,broccoli,,"Green Magic, Green Belt, Emerald City",variety,,
+Nagaland,rabi,knol khol,,"Early White Vienna, King of the Market",variety,early,
+Nagaland,rabi,radish,,"French Breakfast, Sparkles",variety,,
+Nagaland,rabi,carrot,,"Early Nantes, N.S 820",variety,early,
+Nagaland,rabi,pea,,"Arkel, VL Matar-42, Rachana",variety,,
+Nagaland,rabi,french bean,,"Dwarf-Premier, Masterpiece, Green pods",variety,,
+Tripura,rabi,boro rice,,"MTU 1010, Swarno, Naveen, Tripura Chikon, Gomati, Sahabhagi",variety,,
+Tripura,rabi,rabi maize,,"RCM 1-1, RCM 1-2, RCM 1-3, DA 61-A, RCM 75, RCM 76, Vijay Composite, HQPM-1, HQPM-2, VMH-45, Ganga-11, Ganga-2",variety,,
+Tripura,rabi,mustard,,"TRC-t-1-1-5-1, TRS –Y-01-5-1-1, TRS –Y-01-2-2-1, SCRT 1-2-1, SCRT 1-2-3, NRCHB-101, TS 67, TS 38",variety,,
+Tripura,rabi,lentil,,"WBL-77, WBL-58, HUL-57",variety,,
+Maharashtra,rabi,Chickpea,,"Akash, Phule Vikram, Phule Vikrant, JAKI-9218",variety,,desi varieties
+Maharashtra,rabi,Chickpea,,"PKV Kabuli-2, Virat, BDNGK-798",variety,,kabuli varieties
+Maharashtra,rabi,Wheat,,"Tryambak, Godawari, Tapowan, Parbhani-51, PDKV Washim, PDKV Sardar, AKAW-4647, AKAW-1071",variety,,rust tolerant
+Maharashtra,rabi,Rabi Sorghum,,"Parbhani Moti, Parbhani Super Moti, Phule Vasudha, Phule Revati, PKV Kranti",variety,,higher yield
+Maharashtra,rabi,Safflower,,"PBN-12, PBN-46, PBN-40, PKV Pink (AKS-311), NARI-6, NARI NH-1",variety,,"improved, some non-spiny"
+Maharashtra,rabi,Linseed,,"Latur-93, NL-97",variety,short,high yielding
+Maharashtra,rabi,Mustard,,"Shatabdi (CAN-9), TPM-1",variety,,
+Maharashtra,rabi,Sugarcane,,"MS-10001, VSI-08005, Co-86032, Co-8014 (Mahalaxmi), CoM-0265",variety,,higher yield
+Maharashtra,rabi,Pomegranate,,"Bhagwa, Super Bhagwa",variety,,high yielding
+Maharashtra,rabi,Citrus,,"Orange, sweet orange",variety,,Ambiya bahar
+Maharashtra,rabi,Grapes,,"Thompson seedless, Tas-E-Ganesh, Sonaka, Super Sonaka, Sharad seedless",variety,,
+Maharashtra,rabi,Brinjal,,"Arka Harshita, Arka Unnati, Arka Shirish, Arka Anand, Kalpataru, Krishna, Pragati, Vaishali, Phule Harit, Anuradha, Aruna",variety,,high yielding
+Maharashtra,rabi,Tomato,,"Arka Rakshak, Arka Samrat",variety,,triple disease resistant
+Maharashtra,rabi,Onion,,"Baswant-780, N-2-4-1, Agri Found Light Red, Phule Samarth, Bhima Super, Bhima Red, Bhima Shakti, Bhima Shubhra",variety,,rabi cultivation
+Maharashtra,rabi,Okra,,"Parbhani Kranti, Arka Anamika, Phule Kirti, Utkarsh, PBNOK-1",variety,,high yielding
+Maharashtra,rabi,Gaillardia,,"Murgudi, Fulzari",variety,,
+Maharashtra,rabi,Marigold,,"Local red, Local yellow, Bangalore local, Orange Crush, Pineapple Crush, Pusa Basanti Genda",variety,,
+Maharashtra,rabi,Chrysanthemum,,"Sankar-1, Guldasta, Raja, Piwlirevdi, Pandhrirevdi, Zipri, Birbal sahani",variety,,
+Maharashtra,rabi,Tuberose,,"Single, Double, Phule Rajani, Shrungar, Rajat, Kolkata Single, Prajwal",variety,,high yielding
+Maharashtra,rabi,Gladiolus,,"Apsara, Meera, Sapna, Punam, Phule Ganesh, Phule Prerana, Phule Tejas, Nilrekha, White Prosperity",variety,,high yielding
+Maharashtra,rabi,Jasmin,,"Single, Double, Motiya, Madanban, Gundmalai, Bela, Bangalore",variety,,high yielding
+Maharashtra,rabi,Rose,,,,,grafted plants
+Gujarat,rabi,sugarcane,south Gujarat,"GNS 11, GNS 10, GNS 9, GNS 8",variety,,
+Gujarat,rabi,sugarcane,saurashtra,GS 5,variety,,
+Gujarat,rabi,chickpea,,"GJG-3, GJG-6",variety,,rainfed cultivation
+Gujarat,rabi,chickpea,,GJG-5,variety,,irrigated cultivation
+Gujarat,rabi,wheat,,"GW-366, GW-496, GW-451",variety,early,timely sowing
+Gujarat,rabi,wheat,,"GW-173, GW-11",variety,late,
+Gujarat,rabi,onion,,"GJRO-11, Pusa Red, Bhima Shakti",variety,,red onion
+Gujarat,rabi,onion,,"GJWO-3, GAWO-2, Bhima Shweta, Bhima Safed, Nasik-53",variety,,white onion
+Gujarat,rabi,maize,"north Gujarat, middle Gujarat, south Gujarat",GAYMH-1,variety,,
+Gujarat,rabi,maize,"middle Gujarat, south Gujarat",GAYMH-2,variety,,
+Gujarat,rabi,maize,middle Gujarat,GAYMH-3,variety,,
+Gujarat,rabi,mustard,,"GDM-4, GDM-6",variety,,
+Gujarat,rabi,cumin,,"GC-4, GC-5",variety,,
+Gujarat,rabi,fennel,,GF-12,variety,,
+Gujarat,rabi,pearl millet,,"GHB-538, GHB-744",variety,,semi-rabi
+Gujarat,rabi,ajwain,,Guj. Ajwain-1,variety,,
+Gujarat,rabi,fodder sorghum,,"CSV 21F, Co FS-31, CoFS-29",variety,,
+Gujarat,rabi,lucern,,"Guj. Anand Lucern-3, Guj. Anand Lucern-4",variety,,
+Madhya Pradesh,rabi,wheat,,"C-306, JW3020, JW3280, JW3137, HI1531, JW3288, JW3211, HI74672, JW3382, JW3465, JW1201, GW322, GW273, GW366, JW3336, NI1633, HD2864, HD2932, Lok-1",HYV,early,"General, irrigated, late sown with terminal heat tolerance"
+Madhya Pradesh,rabi,chickpea,,"JG 315, JG 74, JG 322, JG 14, JG 11, JG 130, JG 16, JAKI 92-18, JG 63, JG 412, JG 226, JG 36, PBG 1, BG 267, GNG146, RVG 201, RVG 202, JGK 1, JGK 2, JGK 3, KAK 2, JGG 1",HYV,,High yielding and pest tolerant varieties; Kabuli and pink chickpea types
+Madhya Pradesh,rabi,linseed,,"JLS 66, JLS 73, JLS 95, RLC 148, RLC 164, JLS 79, RLC 167",HYV,,Multiple resistant varieties for rainfed and irrigated conditions
+Madhya Pradesh,rabi,mustard,,"Pusa Tarak, Pusa Mahak, Pusa Agrani, Pusa Aditya",HYV,,General recommended varieties
+Madhya Pradesh,rabi,sugarcane,,"CoJN 86-600, CoJN 86-141, CoJN 9505, COC 671, Co 94008 (Shyama), CoM 88121 (Krishna), Co 86032 (Nayana)",HYV,,High yielding and high sugar varieties
+Chhattisgarh,rabi,wheat,,"Ratan, Chhattisgarh Gehun-2, C.G. Gehun-3, Chhattisgarh Amber wheat, Kanishka (C.G.-1029), Chhattisgarh Hansa Gehun, Chhattisgarh Gehun-1023, H.W. 2004, Lok-1, Sujata, H.I-1500, G.W. 273, D.L. 803-3 (Kanchan), G.W. 322, M.P.-4010, D.L.-788-2 (Vidisha), G.W. 173",HYV,,
+Chhattisgarh,rabi,wheat,,"H.D.-4672, H.I. 4498, H.I.-8381, H.L.-8627, H.I.-8713, M.P.-1215",HYV,,Duram wheat
+Chhattisgarh,rabi,wheat,,"Ratan, H.I.-1531, G.W.-366, H.I.-1544, M.P.-3336, M.P.-1203, H.D.-2332, H.D.-2864, J.W.-3288",HYV,,Aestivum wheat
+Chhattisgarh,rabi,chickpea,plains,"G.G.-1 (Gujarat Gram-1), JAKI-9218, J.G.-16, Vaibhav, J.G.-130, J.G.G.-1, J.G.-14, Indira Chana-1, J.S.C.-55, J.S.C.-56, B.G.D.-128 (Pusa Shubhra), I.P.C.K.-2002-29, I.P.C.K.-2004-29, I.P.C.-2066-77",variety,,
+Chhattisgarh,rabi,lathyrus,,"Ratan, Prateek, Maha Tiwda",variety,,
+Chhattisgarh,rabi,field pea,,"Ambika, Adarsh (I.P.F. 99-25), Shubhra, Paras, Vikas, Prakash, I.P.F.D.-10-12, Indira Matar-1, I.P.F.D. 12-2, Pant P 243",variety,,
+Chhattisgarh,rabi,linseed,,"R-552, Kiran, T-397, Padmini, Shekhar, Indira Alsi-32, Kartika, Deepika, Indravati Alsi, R.L.C.-133, R.L.C.-143, R.L.C.-148, R.L.C.-153",variety,,
+Chhattisgarh,rabi,mustard,,"Pusa Jai Kisan (B.W.-902), Pusa Bold, Kranti (P.R.-15), Vardan (R.K. 1467), Varuna (T-59), Chhattisgarh Sarson-1, Indira Toria-1",variety,,
+Chhattisgarh,rabi,safflower,,"A-1, Naari N.H.-1, Naari H-15, H.U.S.-305, Manjeera, P.B.N.S.-12, Naari-6, P.B.N.S.-40, Parbhani Kusum, Phule Kusum (J.L.S.F.-414), S.S.H.-129, Naari-38, S.S.F.-658",variety,,
+Chhattisgarh,rabi,lentil,,"Lens-4076, I.P.L.-81 (Noori), J.L.-3, I.P.L.-316, R.V.L. 11-6, L-4717 (Pusa ageti Masoor), R.K.L.14-20 (Kota Masoor-2), L-4727, Kota Masoor-1 (RKL-607-1), Chhattisgarh Masoor-1",variety,,
+Chhattisgarh,rabi,maize,,"African Tall, Pratap Makka Chari – 6, Vijay, G.F.- 405, J.- 1006",variety,,
+Chhattisgarh,rabi,hybrid napier,,"C.O. -3, C.O.-5, R.B.N.-13, Sampoorn (DNH-6), IGFRI-7, IGFRI-10",hybrid,,
+Chhattisgarh,rabi,berseem,,"Maskavi, Vardan, Bundel Berseem-2, Bundel Berseem-3, J.B.-5, Pusa Jiant, U.P.B.-110, JHTB 96-4, B.L.-22",variety,,
+Chhattisgarh,rabi,tomato,,"Pusa early Dwarf, Sweet 72, Pusa Ruby, Pusa Gaurav, Naveen, Mangala, C.O.-1, C.O.-2, Pant Tamatar-3, DVRT-2, C.O.-3, N.S.-815, Avinash-2, Selection-7, Arka Rakshhak",variety,,
+Chhattisgarh,rabi,cauliflower,,"Early Kunwari, Pusa Kartik, Pusa Dipali, Pusa Shubha, Pusa Snowball-2, Pusa Sharad",variety,,
+Chhattisgarh,rabi,cabbage,,"Golden Acre, Pusa Synthetic, Harirani, Ganesh Gol, Pusa Drumhead, Late Drumhead",variety,,
+Chhattisgarh,rabi,onion,,"Agrifound Dark Red, N-53, Bheema Super, Bheema Dark Red, Bheema Shakti, Bheema Shubhra, Bheema Shweta",variety,,
+Chhattisgarh,rabi,vegetable pea,,"Arkel, Jawahar Matar-1, Jawahar Matar-2, Azad Matar-3, Pant Sbji Matar-3",variety,,
+Chhattisgarh,rabi,chilli,,"Pusa Jwala, Pusa Sadabahar, Indira Mirch-1, Jawahar Mirch-218",variety,,
+Chhattisgarh,rabi,potato,,"Kufri Khyati, Kufri Pukhraj, Kufri Surya, Kufri Badsahah, Kufri Leema, Kufri Jawahar, Kufri Arun, Kufri Pushkar, Kufri Chipsona-1, Kufri Chipsona-2, Kufri Chipsona-3, Kufri Fryo, Kufri Frysona",variety,,
+Telangana,rabi,rice,,"Talanaga Sona (RNR 15048), Batukamma (JGL 18047), Kunaram Sannalu (KNM 118), Tellahamsa (RNR 10754), Cottondora Sannalu (MTU 1010), Nelluri Mashuri (NLR 34449)",variety,short,
+Telangana,rabi,maize,,"DHM 117, DHM 119, DHM 121, Bisco 855, Bio 9637, Karimnagar Makka 1, JKMH 4848, Karimnagar Makka",HYV,medium,profitable yields
+Telangana,rabi,maize,,"DHM-115, Pioneer 3342, KH 5991, DKC 7074",hybrid,short,profitable yields
+Telangana,rabi,chickpea,,"JG-11, JAKI-9218, NBeG-3, NBeg-47",variety,,"Wilt resistant, suitable for mechanical harvesting"
+Telangana,rabi,acid lime,,Balaji,variety,,Canker disease resistant
+Kerala,rabi,rice,,,,,
+Kerala,rabi,banana,,"poovan, kadali",variety,,
+Lakshadweep,rabi,vegetables,,,,,seedling production through nursery
+Himachal Pradesh,rabi,wheat,low and mid hill zone,"HS 542, HPW 360",variety,early,early sown
+Himachal Pradesh,rabi,wheat,low and mid hill zone,"HPW 155, HPW 349, HPW 249, HPW 236, VL 907, HS 507, HPW 368",variety,medium,timely sown
+Himachal Pradesh,rabi,wheat,low and mid hill zone,"VL 892, HPW 373",variety,late,late sown
+Himachal Pradesh,rabi,wheat,high hill zone,"HPW 155, HPW 236",variety,medium,timely sown
+Himachal Pradesh,rabi,wheat,high snow-covered areas,"Saptdhara, Him Pratham (DH 114)",variety,medium,timely sown
+Himachal Pradesh,rabi,chickpea,,"Himachal chana-1, Himachal chana-2, GPF-2, Palam chana-1",variety,,
+Himachal Pradesh,rabi,chickpea,,HPG 17,variety,,
+Himachal Pradesh,rabi,lentil,,"Vipasha, Markandey",variety,,
+Himachal Pradesh,rabi,brown sarson,,KBS 3,variety,,
+Himachal Pradesh,rabi,gobhi sarson,,"HPBS 1, HPN 3, ONK 1, GSC 7",variety,,
+Himachal Pradesh,rabi,cole crops,,"Cauliflower hybrids: Gibount, Fusiyama, Casper RZ, Swati, Shweta, Bio pearl white; Mid group: Pahuja-71, IAHS-9803; Broccoli hybrids: Palam Samridhi, Palam Haritika, Palam Kanchan, Palam Vachitra, KTS-I, Punjab Broccoli-I; Cabbage hybrids: Pusa cabbage hybrid 1, Pusa cabbage hybrid-81, Varun, Pushkar",hybrid,,nursery sowing
+Himachal Pradesh,rabi,garden pea,,"Early: Arkel, Palm Triloki, GS-10, AS-10; Main season: PB-89, Him Palam Matar-1, AP-3, GS-10",variety,,sowing time differentiated by early/main season
+Himachal Pradesh,rabi,onion,low and mid hills,"Palam Lohit, Nasik Red, Agrifound Dark Red",variety,,
+Himachal Pradesh,rabi,garlic,,"GHC-1, Agrifound Parvati, Large Segmented, Solan Selection",variety,,
+Himachal Pradesh,rabi,radish,,"Pusa Himani, Japanese white, White Icicle, Early Menu White",variety,,
+Himachal Pradesh,rabi,carrot,,"Nantes, Solan, Rachna",variety,,
+Himachal Pradesh,rabi,turnip,,"Purple Top White Globe, Golden Ball, Snowball",variety,,
+Himachal Pradesh,rabi,spinach,,"Pusa Harit, Banerjee Giant",variety,,
+Himachal Pradesh,rabi,fenugreek,,"IC-74, Palam Soumya, Kasuri Methi, Pusa Kasuri",variety,,
+Himachal Pradesh,rabi,coriander,,Mahak and local land races,variety,,
+Jammu and Kashmir,rabi,wheat,Sub-Tropical zone,"JAUW 584, HD 3226, HD 3086, HD 2967, WH 1105, RSP 561, 303, PBW 621, DPW50, DBW 222, 88, 187, WB-2, PBW-752, DBW-173, WH-1124, DBW-90, HD-3059, PBW-757, WH-1021, Raj 3765, Raj 3077, PBW660, PBW 664, WH 1080, PBW 175, RSP 81, HD 3237, HI1620, WH1142, HD3043",variety,,"timely sown, late sown, very late sown, rainfed, restricted irrigation"
+Jammu and Kashmir,rabi,wheat,Intermediate (800-1350 m),"HS562, VL907, HS507, HPW349, VL 832, VL 804, HS 490, VL 892, HS 420",variety,,"timely sown, rainfed timely sown, late sown rainfed"
+Jammu and Kashmir,rabi,wheat,Temperate & High altitude,"VL907, HS507, HPW349, VL804, HS 375",variety,,timely sown
+Jammu and Kashmir,rabi,mustard,Sub-tropical,"Pusa Bahar, Pusa Basant, Pusa Mustard-25, Giriraj (DRMRIJ-31), RH-749, RSPR-69, NRCDR-2, RSPR-01, RSPR-03, RL-1359, Kranti, Varuna, Pusa Bold, RH-406, RH-30, NRCHB-101",variety,,"early sowing, timely irrigated, timely rainfed, late sown"
+Jammu and Kashmir,rabi,mustard,Intermediate (up to 3000 ft),"Kranti, Varuna, RH-3",variety,,
+Jammu and Kashmir,rabi,mustard,Temperate (above 3000 ft),"KOS-1, KS-101 (Gulcheen)",variety,,
+Jammu and Kashmir,rabi,gobhi-sarson,,"GSL-1, GSL-2, DGS-1, GSC-7, RSPN-25",variety,,
+Jammu and Kashmir,rabi,toria,,"RSPT-1, RSPT-2, RSPT-6",variety,,
+Jammu and Kashmir,rabi,chickpea,,"K-468, C-235m, Gaurav, GNG-469, 1581, CSJ-515, DCP 92-3",variety,,
+Jammu and Kashmir,rabi,lentil,,"L-4147 (PusaVaibhav), PL-406 (Angoori), DPL 15 (Priya), DPL 62 (Sheri)",variety,,
+Jammu and Kashmir,rabi,berseem,,"Mescavi, BL-1, BL-10, Wardan, Pusa Giant",variety,,
+Jammu and Kashmir,rabi,oats,,"Kent, HFO-114, Sabzaar (SKO-7), Palampur-1",variety,,
+Jammu and Kashmir,rabi,cauliflower,,"Pusa Katki, Pusa Deepali, Giant Snowball, Pusa Synthetic, Pant Shubra, Pant Gobhi-2, Pant Gobhi-3, Snowball-16, Pusa Snowball-1, Pusa Snowball K-1, Kt-25, Pusa Him Jyoti, Hisar-1",variety,"early, medium, late",
+Jammu and Kashmir,rabi,cabbage,,"Golden Acre, Pride of India, Pusa Drumhead, Pusa Mukta",variety,"early, late",
+Jammu and Kashmir,rabi,knolkhol,,"G-40, White Vienna, Purple Vienna, King of Market",variety,,
+Jammu and Kashmir,rabi,radish,,"Japanese White, Minowase, Pusa Chetki, Pusa Himani, Pusa Reshmi, White Icicle, Pusa Desi, Arka Nishant",variety,,
+Jammu and Kashmir,rabi,carrot,,"Pusa Kesar, Nantes, Chaman, Pusa Yamdagini",variety,,
+Jammu and Kashmir,rabi,garlic,,"Agrifound Parvati-2 (G-408), Yamuna Safed (G-1)",variety,,
+Jammu and Kashmir,rabi,pea,,"Arkel, Azad P-3, Matar Ageta-7, Arka Karthik, Azad P-1, P-89, Bonneville",variety,"early, main",
+Jammu and Kashmir,rabi,french bean,,"Contender, Pusa Parvati, Arka Komal, Arka Anoop, Kashi Param, Kentucky Wonder",variety,,
+Odisha,rabi,rice,,"CR dhan 310, Hiranyamayee, improved Lalat, IR-36, Jogesh, Manaswini, MTU-101, MTU-1010, Naveen, Rajlaxmi, Ajay",hybrid,,
+Odisha,rabi,maize,,,,,
+Odisha,rabi,green gram,,IPM 02-14,variety,,
+Odisha,rabi,black gram,,PU-31,variety,,
+Odisha,rabi,mustard,,Tapeswar,variety,,
+Odisha,rabi,groundnut,,"Devi, Smruti",variety,,
+Odisha,rabi,onion,,"Nasik Red, N-53, Arka Kalyan, Arka Niketan, Arka Pragati, Agri Found Light Red, Bhima Red, Bhima Super, Bhima Shakti",,,
+Odisha,rabi,cauliflower,,"Kartika, Early Kanwari, Pusa Deepali, Sweta, Margasira, Pusa Srad, Pusa katki, Aparjita, Pusa Subhadra, Pusa Snowball-1, Pusa Synthetic",,"early, medium, late",
+Odisha,rabi,potato,,"Kufri Ashoka, Kufri Phukhraj, Kufri Jyoti, Kufri Lalima, Kufri Chipsona, Kufri Sinduri",,,
+Odisha,rabi,tomato,,Arka Rakshak,hybrid,,triple disease resistant
+Odisha,rabi,brinjal,,"Swarna Shymali, Arka Harsita, Arka Anand Anushree, Kalinga, Bhairabi",,,wilt resistant
+Odisha,rabi,broccoli,,"Palam Samruddhi, Pusa KTS-1",,,
+Odisha,rabi,capsicum,,"Arka Gorav, Arka Mohini, Arka Atulya, Yellow Wonder, California Wonder Bharat",,,
+Odisha,rabi,french bean,,"Arka Komal, Contender, Pusa Parbati, Pant Anupama, Arka Arjun, Arka Anoop, Arka Suvidha, Kentucky Wonder, Pusa Himlata, Arka Sukomal, Arka Sarath",,,
+Andhra Pradesh,rabi,rice,North Coast,"Pushkala, Cottondora sannalu, Nellore Mahsuri, Sri Druthi, Tarangini, Chandra, Sujatha, Sasya, Nellore Dhanyarasi",variety,,
+Andhra Pradesh,rabi,rice,High altitude zone,"Cottondora sannalu, Pushkala, Tarangini, Chandra, Nellore Mahsuri, Nellore Sugandha, Swetha, Sri Druthi",variety,,
+Andhra Pradesh,rabi,rice,Godavari zone,"Cottondora sannalu, Prabhat, Nellore Mahsuri, Tarangini, Chandra, Sri Druthi, Sujatha, Sasya, Nellore Dhanyarasi, Nellore Sugandha, Swetha",variety,,
+Andhra Pradesh,rabi,rice,Krishna zone,"Cottondora sannalu, Vijetha, IR 64, Tarangini, Chandra, Sri Druthi, Nellore Sona, Jagityala Sannalu, Nellore Mahsuri",variety,,
+Andhra Pradesh,rabi,rice,Southern zone,"Nellore Siri, Nellore Sona, Swarnamukhi, Cottondora sannalu, Nellore Mahsuri, Tarangini, Swetha, Nellore Dhanyarasi, Nellore Sugandha",variety,,
+Andhra Pradesh,rabi,rice,Scarce rainfall zone,"Nandyala sannalu, Nandyala Sona, Nellore Mahsuri, Cottondora sannalu, Swetha, Nellore Dhanyarasi, Chandra",variety,,
+Andhra Pradesh,rabi,maize,,"DHM 113, 900 M Gold, 30 B 07, NK-30, Bio 9681, NK 6240, Pro-311, MCH 36, SMH 3904, JKMH 2492, DHM 111, DHM 117, DHM 119, DHM 121, Kohinoor, Prabhal, Bisco 855, JKMH 175, Bio 9637, MCH 2, KH 510, KH 9541, KMH 25K60, S 6217, DHM 115, Pioneer 3342, KH 5991, DKC 7074 R, JKMH 1701, MMH 133, Bio 605, Sun Vaman",hybrid,long/medium/short,
+Andhra Pradesh,rabi,sweet corn,,"Sugar 75, Bright Gene, Madhuri, Priya, Win Orange, Almora sweet corn",hybrid/variety,,
+Andhra Pradesh,rabi,popcorn,,"BPCH 6, Amber popcorn, Pearl popcorn, VL popcorn",hybrid/variety,,
+Andhra Pradesh,rabi,baby corn,,"HM 4, DHM 115, Prakash, HIM 128, PEH-1, PEH-2, VL 42, Him 123, Him 129, Madhuri, VL78, JH 3459, VL Baby corn 1",hybrid/variety,,
+Andhra Pradesh,rabi,greengram,rabi uplands,"LGG 460, LGG 407, TM 96-2, WGG 42, IPM 2-14",variety,,
+Andhra Pradesh,rabi,blackgram,rabi uplands,"GBG 1, TBG 104, LBG 787, LBG 752, LBG 685, LBG 645, LBG 709, LBG 20, T9, PU 31",variety,,
+Andhra Pradesh,rabi,bengal gram,,"Nandyal Gram 452 (NBeG 452), Nandyal Gram 49 (NBeG 49), Dheera (NBeG 47), Nandyala Sanaga1 (NBeG 3), JG 11, JAKI 9218, Nandyala Gram 119 (NBeG 119), KAK 2, Vihar (Phule G 95311), LBeG 7 (Lam sanaga), MNK 1",variety,,
+Tamil Nadu and Puducherry,rabi,Rice,,"Late Samba, Thaladi, VGD 1, TKM 13, CO 52, CO (R) 50, ADT 39, ADT 38, Pishanam, Late ADT 49, CO 43, CO 43 sub.1, Improved White Ponni, Pishanam ADT (R) 46, TRY 3, CO(RH) 4, TPS 3, CR1009, Navarai ADT 53, CO 51, ADT (R) 45, TPS 5, MDU 6, ADT 36, ADT 37, CORH 3, ASD 16, TKM 9",,,
+Tamil Nadu and Puducherry,rabi,Sorghum,,"CO 30, CO 32, K 12",,,
+Tamil Nadu and Puducherry,rabi,Pearl millet,,"CO 10, Hybrid CO 9",hybrid,,
+Tamil Nadu and Puducherry,rabi,Finger millet,,"CO (Ra) 14, CO 15, ML 365, Paiyur 2, ATL 1",,,
+Tamil Nadu and Puducherry,rabi,Maize,,"Hybrid CO 6, COH(M) 8, COH(M) 9",hybrid,,
+Tamil Nadu and Puducherry,rabi,Redgram,,"Co (Rg) 7, CO 8, VBN(Rg) 3",,,
+Tamil Nadu and Puducherry,rabi,Blackgram,,"VBN 6, MDU 1, CO 6, VBN 8, VBN 10, Co 7, ADT 3, ADT 6, KKM 1, VBN 9",,,
+Tamil Nadu and Puducherry,rabi,Greengram,,"Co (Gg) 7, VBN(Gg) 2, VBN(Gg) 3, CO 8, VBN 4, ADT 3",,,
+Tamil Nadu and Puducherry,rabi,Horse gram,,"Paiyur 2, CRIDA 18R, CRIDA 19 R",,,
+Tamil Nadu and Puducherry,rabi,Groundnut,,"TMVGn 13, VRI(Gn) 6, VRI 8, CO 7, TMV 14, Dharani, BSR 2",,,
+Tamil Nadu and Puducherry,rabi,Sesame,,"VRI(Sv) 2, TMV 7, VRI 3",,,
+Tamil Nadu and Puducherry,rabi,Tomato,,"PKM 1, CO 3 (Marutham), Paiyur 1, TNAU Tomato Hybrid CO 3, TNAU Tomato Hybrid CO 4, Arka Rakshak, Arka Samrat",HYV,,
+Karnataka,rabi,Ragi,,"Indaf-7, Indaf-9, KMR-301, GPU-48",variety,,
+Karnataka,rabi,Maize,,"MAH-14-5, Hema, Nithyashree",hybrid,,
+Karnataka,rabi,Black gram,,"T-9, Rashmi, local varieties",variety,,
+Karnataka,rabi,Green gram,,"KKM-3, local varieties",variety,,
+Karnataka,rabi,Chickpea,,Jaki-9218,variety,,wilt resistant
+Karnataka,rabi,Sunflower,,"RSFH -1887, KBSH-42, KBSH-44",hybrid,,
+Karnataka,rabi,Onion,,"Bhima Dark Red, Bhima Shakti, Bhima Kiran, Bhima Light Red, Arka Nikitha, Arka Pragati, Arka Kirthiman, Arka Lalima, Arka Bheem, Bhima Shubra, Bhima Shweta, Bhima Safed",variety,,
+Karnataka,rabi,Sugarcane,,CO-86032,variety,,

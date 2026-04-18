@@ -1,0 +1,116 @@
+state,season,crop_name,sub_region,pre_emergence_herbicide,pre_em_dose,pre_em_timing_das,post_emergence_herbicide,post_em_dose,post_em_timing_das,manual_weeding_schedule
+Punjab,rabi,wheat,,pendimethalin,1.5,,sulfosulfuron,13,,
+Punjab,rabi,wheat,,pendimethalin + metribuzin,1,,,,,
+Punjab,rabi,wheat,,isoproturon,,,,0.5,,
+Punjab,rabi,wheat,,"2,4-D sodium salt",0.25,,metsulfuron,10,,
+Punjab,rabi,rapeseed and mustard,,,,,,,,Hoeing once to Toria three weeks after sowing; one or two hoeing to others
+Punjab,rabi,pea,,pendimethalin,1,2,,,,
+Punjab,rabi,potato,,metribuzin,0.2,,,,,Application of paddy straw mulch @24 q/acre immediately after planting
+Punjab,rabi,sugarcane,,atrazine or metribuzin or diuron,0.8,3,,,,
+Ladakh,rabi,,,,,,,,,Manual weeding implied but no herbicides mentioned
+Uttarakhand,rabi,,,,,,,,,
+Rajasthan,rabi,Mustard,,Pendimethalin 30 EC or Pendimethalin 38.7 CS,1,0,,,,
+Rajasthan,rabi,Chickpea,,Pendimethalin 30 EC or Pendimethalin 38.7 CS,1,0,,,,
+Rajasthan,rabi,Cumin,,,,,,,,Two interculture operations needed: first at 30-35 DAS and second at 55-60 DAS
+Rajasthan,rabi,Ber,,,,,,,,Orchard should be clean and weed free
+Rajasthan,rabi,Citrus,,,,,,,,Fruits orchard should be clean and weed free
+Haryana and Delhi,rabi,mustard,,,,,glyphosate 41% SL,62.5,30,Hoeing twice at 3 and 5 weeks after sowing
+Haryana and Delhi,rabi,mustard,,,,,glyphosate 41% SL,125,55,
+Haryana and Delhi,rabi,chickpea,,,,,,,,Hoeing/weeding twice at 25-30 DAS and 45-50 DAS
+Haryana and Delhi,rabi,wheat,,pendimethalin 30 EC,5,0,pinoxaden 50% EC or cladinofop 15% WP or sulfosulfuron 75 W.P. or metsulfuron methyl or carbentrazoneethyl or total (sulfosulfuron + metsulfuron) or Atlantis 3.6 WP or Vesta 16% WP or Accord plus 22% EC or ACM 9 or Shogun,,30,
+Uttar Pradesh,rabi,Berseem,,Basalin (fluchloralin) 45 EC,400,0,,,,
+Uttar Pradesh,rabi,Oats,,Linuron,,,"2,4-D",0.2,,
+Uttar Pradesh,rabi,Wheat,,Isoproturon,,30,"2,4-D or metsulfuron or sulfosulfuron with metsulfuron",,30,
+Bihar,rabi,wheat,,,,,sulfosulfuron + metsulfuron,40,25,
+Bihar,rabi,wheat,,,,,clodinofob + metsulfuron,400,25,
+Bihar,rabi,wheat,,,,,metsulfuron,10,30,
+Bihar,rabi,wheat,,,,,"2,4-D Na salt",1000,30,
+Bihar,rabi,maize,,Gramoxone 24 SL (paraquat),1250,,,,,One or two hand weeding at 20-25 and 40-45 DAS followed by earthing up
+Jharkhand,rabi,wheat,,pendimethalin 30 EC,1.5,2,"2,4-D",0.75,30,
+Jharkhand,rabi,gram,,fluchloralin,1,,,,,First hand weeding or interculture 25-30 days after sowing and second at 60 days after sowing
+Jharkhand,rabi,lentil,,fluchloralin 45 EC,2,1,imazethapyr or alachlor,0.5,1,One or two weedings 30 to 60 days after sowing
+Jharkhand,rabi,mustard,,trifluralin and isoproturon,,2,,,,Two to three weedings and/ or two hoeing at interval of two weeks when intensity is low
+Jharkhand,rabi,lentil,,alachlor 50 EC,2,1,,,,
+West Bengal,rabi,boro paddy,,,,,,,,
+West Bengal,rabi,lentil,,,,,,,,
+West Bengal,rabi,mustard,,,,,,,,
+Andaman and Nicobar Islands,rabi,maize,,,,,,,,
+Andaman and Nicobar Islands,rabi,tomato,,,,,,,,Top dressing of urea should be preceded by weeding
+Assam,rabi,early Ahu Rice,,,,,,,,Weeding to precede urea top dressing
+Sikkim,rabi,"cole crops, onion, rayasaag",,,,,,,,Mulching done to conserve soil moisture and suppress weed growth
+Sikkim,rabi,rajmash,,,,,,,,Ridge-furrow planting to avoid water logging and seed deterioration; proper drainage
+Sikkim,rabi,All crops,,,,,,,,Mulching with locally available biomass to conserve moisture and suppress weed growth
+Arunachal Pradesh,rabi,maize,,,,,,,,Weeding at 30 and 60 DAS
+Arunachal Pradesh,rabi,rapeseed/mustard,Papum Pare district,,,,,,,"Hand weeding at 30, 60 and 90 DAS"
+Arunachal Pradesh,rabi,potato,,,,,,,,"Hand weeding at 30, 60 and 90 DAS"
+Arunachal Pradesh,rabi,pea,,,,,,,,Weeding 15 days after sowing; subsequent weeding as necessary
+Manipur,rabi,vegetable crops,,,,,,,,"Hoeing, earthing up, mulching with rice straw or husk, and timely intercultural operations"
+Meghalaya,rabi,maize,,,,,,,,One hand weeding and earthing up of crop at 40-45 days after sowing
+Mizoram,rabi,maize,,Atrazine,1.5,,Alochlor,1.5,,
+Meghalaya,rabi,rabi vegetables,,,,,,,,Mulching with paddy straw or dry leaves and harvested maize stalk in between rows of french bean
+Mizoram,rabi,Maize,,Atrazine,1.75,,Alochlor,1.5,,
+Mizoram,rabi,Rajmash,,Pendimethalin,1.5,,,,,
+Mizoram,rabi,Rajmash,,Butachlor,,,,,,
+Mizoram,rabi,Soybean,,Butachlor,,,,,,
+Mizoram,rabi,Toria,,Pendimethalin,1,,Isoproturon,0.75,,
+Nagaland,rabi,field pea,,,,,,,,At least two weedings at 20 and 40 DAS
+Nagaland,rabi,vegetables,,,,,,,,Use paddy straw or dry leaves for mulching to conserve moisture and control weeds
+Tripura,rabi,boro rice,,,,,,,,Use cono-weeder in standing water for weed control
+Tripura,rabi,lentil,,,,,,,,One weeding and two hoeing for weed control
+Tripura,rabi,radish,,,,,,,,"Weeding and hoeing as necessary, thinning at second weeding"
+Maharashtra,rabi,Chickpea,,,,,,,,Use of cycle hoe for intercultural operations
+Maharashtra,rabi,Onion,,,,,,,,Use tractor drawn CRIDA Onion Seed Planter to save labour
+Gujarat,rabi,chickpea,,,,,,,,"Inter cropping with chickpea can be adopted with sugarcane, groundnut, onion, garlic to increase economic return"
+Madhya Pradesh,rabi,wheat,,,,,,100,,"Control necessary by appropriate herbicides; broadleaf weeds use 2,4-D @0.5 kg a.i./ha; metsulphuron 10 g/ha; narrow leaf weeds use sulphosulphuron 25 g ai/ha, clodinophop 100 g ai/ha"
+Madhya Pradesh,rabi,linseed,,,,,Metsulfuron methyl + Clodinophop,,18,Mechanical weeding also effective
+Madhya Pradesh,rabi,mustard,,Fluchloralin or Pendimethalin,,,,,40,Hand weeding advised at 40-45 days after sowing
+Chhattisgarh,rabi,wheat,,,,,Metsulfuron methyl,1.6,25,
+Chhattisgarh,rabi,wheat,,,,,Pinoxaden,16,25,
+Chhattisgarh,rabi,wheat,,,,,Pinoxaden + Carfentrazone,28,25,
+Chhattisgarh,rabi,berseem,,Oxyflorfen,0.1,,Emzethapyre,0.1,,
+Telangana,rabi,rice,,,,,,,,
+Telangana,rabi,maize,,Gramoxone,1,,Atrazine,1,,
+Telangana,rabi,groundnut,,Alachlor or Pendimethalin,,0,,,,Inter cultivation 25-30 days after sowing; maintain weed free conditions up to 45 days
+Telangana,rabi,chickpea,,Pendimethalin,,0,,,,
+Telangana,rabi,sesame,,,,,,,,Two weedings at 15-20 days and 30-35 days after sowing
+Telangana,rabi,sunflower,,Oxadiargil,150,1,,,,
+Telangana,rabi,safflower,,Alachlor or Pendimethalin,2.5,0,,,,Harrowing at 25 DAS and 45-50 DAS
+Kerala,rabi,rice,,,,,,,,remove weeds; keep bunds and field surroundings weed free
+Kerala,rabi,cardamom,,,,,,,,keep field weed free and rake inter spaces
+Lakshadweep,rabi,vegetables,,,,,,,,Perform periodic weeding
+Lakshadweep,rabi,banana,,,,,,,,"Perform periodic weeding, sanitize field"
+Himachal Pradesh,rabi,wheat,,,,,Vesta or Clodinofop,400,,
+Himachal Pradesh,rabi,brown sarson,,Pendimethalin (Stomp 30 EC),1500,,Isoproturon,1000,30,Two manual weedings between 40-70 days after sowing
+Himachal Pradesh,rabi,garden pea,,Alachlor or Pendimethalin,3000,,,,,"First hoeing and earthing up after 2-3 weeks, second at flower initiation"
+Jammu and Kashmir,rabi,wheat,,glyphosate,20,,,,,
+Jammu and Kashmir,rabi,mustard,,fluchloralin or trifluralin or pendimethalin or isoproturon or oxyfluorfen,,,,,,Spray oxyfluorfen after dissolving in 200-240 litres water
+Jammu and Kashmir,rabi,chickpea,,Pendimethalin 30 EC + Imazethapyr 2%,400,,,,30,One hoeing at 30-35 DAS recommended
+Jammu and Kashmir,rabi,lentil,,Pendimethalin,400,,,,60,One hand weeding at 60 DAS recommended
+Jammu and Kashmir,rabi,berseem,,fluchloralin,4000,,,,,
+Jammu and Kashmir,rabi,oats,,,,,,,,
+Jammu and Kashmir,rabi,cauliflower,,fluchloralin or pendimethalin,,,,,40,One hand weeding after 40-45 days of transplanting
+Jammu and Kashmir,rabi,cabbage,,pendimethalin,,1,,,,
+Jammu and Kashmir,rabi,garlic,,pendimethalin,1000,,,,45,One hand weeding after 45 days of planting
+Jammu and Kashmir,rabi,pea,,linuron or pendimethalin,,,,,,
+Odisha,rabi,maize,,Atrazine 50% WP,0.8,2,,,,
+Odisha,rabi,green gram,,Pendimethalin,1.5,,,,,Use of Yellow sticky trap and Blue sticky trap
+Odisha,rabi,black gram,,Pendimethalin,1.5,,,,,Use of Yellow sticky trap and Blue sticky trap
+Odisha,rabi,onion,,Oxyflurofen 23.5% EC,0.08,3,Quizalofop-Ethyl 5% EC,0.002,15,
+Andhra Pradesh,rabi,rice,,Butachlor or Anilophos or Pretilachlor or Oxadiargyl,,3,"Pyrazosulfuran ethyl or Bensulfuron methyl or 2,4-D SS",,,Hand weeding at 20 and 40 days after transplanting
+Andhra Pradesh,rabi,maize,,Atrazine 50 W.P.,1,,"Atrazine or 2,4-D Sodium salt 80 WP or Tembotrione + Atrazine or Halosufuron",,20,Intercultivation and earthing up after 30-35 days
+Andhra Pradesh,rabi,greengram,,Pendimethalin,,,Imazethapyr or Quizalofop ethyl (if only grassy weeds present),,20,
+Andhra Pradesh,rabi,blackgram,,Pendimethalin,,,Imazethapyr or Quizalofop ethyl (if only grassy weeds present),,20,
+Andhra Pradesh,rabi,bengal gram,,Pendimethalin,,,,,,
+Tamil Nadu and Puducherry,rabi,Rice,,Butachlor or Anilophos or Pyrazosulfuron ethyl or Pretilachlor or Oxadiazon,,,"2,4-D sodium salt or Bispyribac sodium or 2,4-D + butachlor + bensulfuron methyl",,,
+Tamil Nadu and Puducherry,rabi,Rice nursery,,Pyrazosulfuron ethyl or Butachlor or Pendimethalin,20,3,,,,
+Tamil Nadu and Puducherry,rabi,Maize,,Atrazine,0.5,3,"2,4-D",1,20,
+Tamil Nadu and Puducherry,rabi,Redgram,,Pendimethalin,0.75,3,,,,
+Tamil Nadu and Puducherry,rabi,Groundnut,,Pendimethalin,1,,,,,One row of cowpea for every five rows of groundnut where red hairy caterpillar is endemic
+Tamil Nadu and Puducherry,rabi,Tomato,,Pendimethalin or Fluchloralin,1,,,,,Hand weeding once at 30 days after planting
+Karnataka,rabi,Maize,,Atrazine,1,3,,,,
+Karnataka,rabi,Wheat,,Pendimethalin 30 EC,3.25,0,Metsulfuron methyl 20 WDG,20,30,
+Karnataka,rabi,Sunflower,,,,,,,,Hand weeding and nipping at 35-40 days after sowing
+Karnataka,rabi,Ground nut,,Pendimethalin 30 EC,3.25,,,,,
+Karnataka,rabi,Cotton,,,,,,,,Alternative furrow irrigation in drought condition may be adopted
+Karnataka,rabi,Onion,,Pendimethalin,0.2,,Oxyfluorfen 23.5% EC 0.2%,,40,One hand weeding at 40-60 DAT
+Karnataka,rabi,Sugarcane,,Atrazine,1.6,,"2,4-D",2.5,,

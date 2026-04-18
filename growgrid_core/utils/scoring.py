@@ -25,6 +25,25 @@ def ordinal_fit(user_level: str, item_level: str) -> float:
         return 0.2
 
 
+# ── Asymmetric resource fit ─────────────────────────────────────────────
+
+# For water & labour: having MORE than needed is fine (1.0),
+# having LESS is a real constraint and penalised steeply.
+_RESOURCE_FIT_MATRIX: dict[int, dict[int, float]] = {
+    # user_has → item_needs → score
+    0: {0: 1.0, 1: 0.55, 2: 0.15},  # LOW user
+    1: {0: 1.0, 1: 1.0, 2: 0.55},   # MED user
+    2: {0: 1.0, 1: 1.0, 2: 1.0},    # HIGH user
+}
+
+
+def resource_fit(user_level: str, item_need: str) -> float:
+    """Asymmetric fit: surplus resources → 1.0, deficit → steep penalty."""
+    u = ORDINAL_MAP.get(user_level, 1)
+    i = ORDINAL_MAP.get(item_need, 1)
+    return _RESOURCE_FIT_MATRIX.get(u, {}).get(i, 0.55)
+
+
 # ── CAPEX fit ────────────────────────────────────────────────────────────
 
 
@@ -69,8 +88,8 @@ def time_fit(horizon_months: int, time_min: int, time_max: int) -> float:
 # ── Profit fit ───────────────────────────────────────────────────────────
 
 PROFIT_FIT: dict[str, float] = {
-    "LOW": 0.3,
-    "MED": 0.6,
+    "LOW": 0.30,
+    "MED": 0.65,
     "HIGH": 0.85,
     "VERY_HIGH": 0.95,
 }
@@ -84,9 +103,11 @@ def profit_fit(potential: str) -> float:
 # ── Risk fit ─────────────────────────────────────────────────────────────
 
 RISK_FIT_MATRIX: dict[str, dict[str, float]] = {
-    "LOW": {"LOW": 1.0, "MED": 0.6, "HIGH": 0.2},
-    "MED": {"LOW": 0.8, "MED": 1.0, "HIGH": 0.5},
-    "HIGH": {"LOW": 0.6, "MED": 0.8, "HIGH": 1.0},
+    # user_tolerance → item_risk → score
+    # LOW tolerance + HIGH risk = very bad (0.15); HIGH tolerance + LOW risk = fine (0.80)
+    "LOW": {"LOW": 1.0, "MED": 0.50, "HIGH": 0.15},
+    "MED": {"LOW": 0.85, "MED": 1.0, "HIGH": 0.45},
+    "HIGH": {"LOW": 0.80, "MED": 0.90, "HIGH": 1.0},
 }
 
 

@@ -1,0 +1,220 @@
+state,season,crop_name,sub_region,N_kg_ha,P_kg_ha,K_kg_ha,FYM_t_ha,zinc_sulphate_kg_ha,other_micronutrients,biofertilizers,split_schedule,application_notes
+Punjab,rabi,wheat,,201,123,,,,,Azotobacter and Streptomyces consortium or Azo-S,"half basal at sowing, half top-dress at first and second irrigation",90 kg urea and 55 kg DAP per acre; potassium only to deficient soils
+Punjab,rabi,rapeseed and mustard,,120,100,,,,,,,"90 kg urea and 75 kg SSP per acre for Raya, Gobhi Sarson and African Sarson; 55 kg urea and 50 kg SSP per acre for Toria"
+Punjab,rabi,sugarcane,,,,,,,,,,Apply 130 kg urea per acre for plant crop and 195 kg urea per acre for ratoon crop; ferrous sulphate foliar spray for iron deficiency
+Punjab,rabi,berseem,,,,,,,Manganese sulphate foliar spray,Rhizobium culture,,
+Punjab,rabi,pea,,18,11,,8,,,Rhizobium leguminosarum,,"8 tonnes FYM, 20 kg N, 25 kg P2O5 per acre before sowing"
+Punjab,rabi,potato,,165,155,40,20,,,,All P and K and half N at sowing; remaining half N at earthing-up,Apply FYM or green manuring with recommended NPK doses
+Punjab,rabi,chilli,,25,12,12,,,,,Whole P and K with half N at transplanting; remaining N top dressed after first picking,Well-rotten FYM or paddy straw compost recommended; 30 kg N per acre for hybrids
+Punjab,rabi,cauliflower,,110,155,40,40,,,,"Apply FYM, full P and K and half N before transplanting; remaining N top-dressed 4 weeks after transplanting",
+Ladakh,rabi,leafy vegetables,,,,,5,,,,,Vermi compost should be added before sowing/transplanting
+Ladakh,rabi,cole crops,,,,,7,,,,,Vermi compost should be added before sowing/transplanting
+Uttarakhand,rabi,wheat,irrigated timely sown,150,60,40,10,,,,,FYM applied 3-4 weeks before expected bloom under tree canopy away from trunk; applied when soil moisture present or before rainfall
+Uttarakhand,rabi,wheat,late sown irrigated,80,40,30,10,,,,,FYM applied 3-4 weeks before expected bloom under tree canopy away from trunk; applied when soil moisture present or before rainfall
+Uttarakhand,rabi,wheat,,150,60,40,10,,,,,"150 N, 60 P, 40 K for timely sown; 80 N, 40 P, 30 K for late sown"
+Uttarakhand,rabi,gram,,20,42.5,25,,,,,,
+Uttarakhand,rabi,barley,,,,,10,,,,,
+Uttarakhand,rabi,lentil,,,45,25,,,,,,
+Uttarakhand,rabi,yellow mustard/toria,,120,40,40,,30,,,,"For mustard 90 N, 40 P, 20 K and 30 Sulphur"
+Uttarakhand,rabi,pea,,20,60,40,,,,,,
+Uttarakhand,rabi,onion,,100,60,80,25,,,,,
+Uttarakhand,rabi,potato,,180,80,80,23,,,,,
+Uttarakhand,rabi,apple,lower hilly and hill area,,,,0.1,,,,Complete potash and phosphorus at basin prep with FYM during Dec-Jan,
+Rajasthan,rabi,Mustard,,85,40,,9,,Sulphur 40 kg/ha if no soil report,,N in 2-3 split doses; P as basal,Use SSP instead of DAP.
+Rajasthan,rabi,Chickpea,,20,40,,9,25,Gypsum 250 kg/ha,,,
+Rajasthan,rabi,Barley,,100,40,20,9,25,,,N in 2-3 split doses; P & K as basal,
+Rajasthan,rabi,Wheat,,120,60,40,9,25,,,N in 2-3 split doses; P & K as basal,
+Rajasthan,rabi,Fenugreek,,20,40,,9,25,Gypsum 250 kg/ha,Rhizobium culture recommended,N in 2 split doses; P & K as basal,Seed treatment with Carbendizim 2 g/kg seed for fungal diseases.
+Rajasthan,rabi,Cumin,,30,20,15,12.5,10,Sulphur microgranular mixture before sowing; top dressing Sulphur 7.5 kg/ha,Trichoderma viridae 2.5 kg/ha soil application,"N in two split doses, one before sowing one at 30-35 DAS",Seed treatment with Trichoderma viridae and carbendazim plus Imidacloprid for insects.
+Haryana and Delhi,rabi,mustard,,80,30,20,,25,,Azotobacter and PSB culture inoculate seed at sowing,"Half N basal at sowing, half N top dress at first irrigation","Use SSP or if DAP used, apply 250 kg gypsum/ha at last ploughing"
+Haryana and Delhi,rabi,mustard,,40,20,,,,,,,For rainfed crop
+Haryana and Delhi,rabi,chickpea,,15,40,,,25,,Seed inoculation with Rhizobium and PSB culture,,Use 250 kg SSP or 80-90 kg DAP before sowing
+Haryana and Delhi,rabi,wheat,,150,60,30,,25,,,"Half N with basal sowing, half N broadcast at first irrigation",Use 375 kg SSP or 125 kg DAP for phosphorus
+Haryana and Delhi,rabi,wheat,,30,15,15,,25,,,,For limited irrigation crop; apply all fertilizer at sowing
+Uttar Pradesh,rabi,Berseem,,45,25,,8,,,Rhizobium trifoli seed treatment,,"20 kg phosphorus as single super phosphate; if no FYM, apply 10 kg nitrogen and 32 kg phosphorus per acre."
+Uttar Pradesh,rabi,Oats,,40,8,,10,,,,25 kg urea at sowing and 25 kg urea 25-30 days after sowing,"In absence of FYM, apply 110 kg urea and 8 kg P2O5 per acre."
+Uttar Pradesh,rabi,Wheat,,120,60,40,10,,,,,"10-ton FYM with 120 N, 60 P, 40 K per ha."
+Bihar,rabi,wheat,,150,60,40,,25,,,60 kg N as basal; remaining 60-70 kg N at first irrigation; full dose P and K as basal,"In late sown apply 100-120 kg N, 40 kg P, 20 kg K; rainfed 60 kg N, 30 kg P, 20 kg K"
+Bihar,rabi,maize,,150,75,75,10,25,,,Full dose P and K and 1/3 N at sowing; 1/3 N at knee-high stage; 1/3 N at pre-tasselling,Apply zinc sulphate heptahydrate or monohydrate at sowing in zinc deficient areas
+Bihar,rabi,gram,,20,40,20,,,,Rhizobium culture seed treatment 10 g/kg,,Fertilizers applied at sowing through seed cum fertilizer drill
+Bihar,rabi,lentil,,20,40,20,2.5,,20 kg sulphur/ha,Rhizobium culture seed treatment 10 g/kg,,Fertilizers applied at sowing through seed cum fertilizer drill
+Bihar,rabi,lathyrus,,20,40,20,,,20 kg sulphur/ha,,,Fertilizers applied at sowing through seed cum fertilizer drill
+Bihar,rabi,field pea,,20,40,20,,,20 kg sulphur/ha,Rhizobium culture seed treatment 10 g/kg,,Fertilizers applied at sowing through seed cum fertilizer drill
+Bihar,rabi,rapeseed/mustard,,75,60,40,10,,30 kg sulphur/ha,,Half dose N and full dose P and K as basal; remaining half dose N after first irrigation,Use single super phosphate or bentonite sulphur for sulphur
+Bihar,rabi,linseed,,50,40,,8,,20 kg sulphur/ha,,Half dose nitrogen and full dose phosphorus at sowing; remaining half nitrogen at first irrigation under irrigated; full dose N and P in unirrigated,
+Jharkhand,rabi,wheat,,150,60,40,7.5,,,,"Half N + full P and K at sowing, remaining N in two equal doses at 21 and 45 DAS",For late irrigated condition NPK 90:30:20 with similar split
+Jharkhand,rabi,gram,,25,50,25,,,,Rhizobium and PSB each 20 g/kg seed inoculation,,Also 20 kg S applied
+Jharkhand,rabi,lentil,,25,50,25,,,,,,20 kg S applied
+Jharkhand,rabi,mustard,,80,60,40,7.5,,20 kg S applied,,,
+Jharkhand,rabi,toria,,50,25,25,,,20 kg S applied,,,
+Jharkhand,rabi,vegetable peas,,40,,40,5.5,,,,"Half N at sowing, half after 35-40 days",SSP 100 kg/ha and MOP 40 kg/ha applied
+Jharkhand,rabi,potato,,220,475,200,,10,,,,
+Jharkhand,rabi,tomato,,180,50,40,,,,,,Apply fertilizer at these doses/acre
+West Bengal,rabi,boro paddy,,216.75,312.5,83,7.5,15,,,"Apply basal neem coated urea, SSP and MOP; top dressing with neem coated urea at tillering and panicle initiation stages",Apply 7-8 t/ha FYM or 1.5-2.0 t/ha vermicompost during land preparation; zinc sulphate monohydrate 15-20 kg/ha during puddling
+West Bengal,rabi,maize,,434,375,240,5,25,,,"Basal urea, SSP, MOP and ZnSO4; top-dress urea in two splits at knee-high and pre-tasselling stages",Apply FYM 5 t/ha 10 days before sowing
+West Bengal,rabi,lentil,,,250,35,,,"boron foliar spray 0.2%, two times; foliar spray of DAP or urea 2% during flowering",,,Apply SSP and MOP at final land preparation; light irrigation at pre-flowering if required
+West Bengal,rabi,mustard,,174,250,67,3,,sulphur 45 kg/ha in deficient soil,,"Basal urea, SSP and MOP; top-dress urea at branching and flowering stages",Apply FYM 3 t/ha 10 days before sowing; irrigations at branching and flowering stages
+West Bengal,rabi,sunflower,,90,90,40,7.5,,boron spray 2 g/l at square formation and flowering,,,Use decomposed FYM or vermicompost during field preparation
+West Bengal,rabi,cotton,Sundarbans,80,40,30,,,,,,Fertilizers to be used as per given NPK ratio
+Andaman and Nicobar Islands,rabi,green gram,,,,,,,,,,Foliar spray of DAP 20 g/litre or urea 20 g/litre or pulse wonder 5 kg/ha once at flowering and second spray after 15 days for enhanced seed set
+Andaman and Nicobar Islands,rabi,groundnut,,,,,,,,Rhizobium 125 ml/ha and Phosphobacteria 125 ml/ha seed treatment,,"Foliar application of combined nutrient solution (DAP 2.5 kg, Ammonium sulphate 1 kg and borax 0.5 kg) spray on 25th and 35th days after sowing"
+Andaman and Nicobar Islands,rabi,brinjal,,,,,,,,,,
+Andaman and Nicobar Islands,rabi,tomato,,100,60,60,,,,,"Urea applied in 4 equal splits at final puddling, max tillering, panicle initiation, booting stage",Lime application 100 kg per acre before transplanting
+Andaman and Nicobar Islands,rabi,cabbage,,,,,,,"Boron, zinc, calcium, molybdenum",Biofertilizers and bio-inoculants soil application before transplanting,,Avoid excess DAP and urea
+Andaman and Nicobar Islands,rabi,cauliflower,,,,,,,"Boron, zinc, calcium, molybdenum",Biofertilizers and bio-inoculants soil application before transplanting,,Avoid excess DAP and urea
+Assam,rabi,early Ahu Rice,,40,20,20,,,,,"One third urea at final puddling, one third at tillering, one third at panicle initiation for semi dwarf; four equal splits at final puddling, max tillering, panicle initiation, booting for hybrid",Full doses of SSP and potash applied at final puddling; top dressing preceded by weeding
+Assam,rabi,rapeseed and mustard,,,,,,,,,,Irrigation of 6 cm applied at 50% flowering or early siliqua formation; pre-sowing irrigation not normally required
+Sikkim,rabi,rajmash,,,,,5,,,20,,Apply FYM 5 t/ha + 2 t/ha vermicompost + 20 kg/ha biofertilizer
+Sikkim,rabi,Rajmash,,,,,5,,,20,,Also apply 2.0 t/ha vermicompost
+Sikkim,rabi,Rapeseed Mustard,,,,,5,,,,,"Apply well decomposed FYM, vermicompost 2 t/ha, and 100-120 kg/ha rock phosphate"
+Sikkim,rabi,Buckwheat,,,,,5,,,,,Apply vermicompost 1 t/ha
+Sikkim,rabi,Vegetable pea,,,,,2,,,,,Apply vermicompost 1 t/ha during sowing
+Sikkim,rabi,"Cole crops (cabbage, cauliflower, broccoli)",,,,,7.5,,,,,Apply vermicompost 1.5 t/ha
+Sikkim,rabi,Carrot,,,,,9,,,,,Apply vermicompost 1.5 t/ha
+Sikkim,rabi,Radish,,,,,9,,,,,Apply vermicompost 1.5 t/ha
+Sikkim,rabi,Potato,,,,,12,,,,,Apply vermicompost 2.5 t/ha in line during planting
+Arunachal Pradesh,rabi,maize,,,,,1,,,Azotobacter and Phosphobacteria seed treatment,,FYM@10 q/ha
+Arunachal Pradesh,rabi,pea,,60,80,70,20,,,Rhizobium seed treatment at 2 kg/ha and Phosphobacterium soil application 2 kg/ha before sowing,60 kg N top-dressed at 30 days after sowing; N fertilizer reduced by 50% if Rhizobium used,Basal application of nutrients
+Arunachal Pradesh,rabi,potato,,,,,,,,Azotobacter and Phosphobacteria treatment of seed tubers @2g/kg,,
+Manipur,rabi,lentil,,20,40,20,,,,,,
+Manipur,rabi,rapeseed-mustard,,,,,,,,,Apply 88 kg urea+130 kg SSP+33 kg MOP; SSP (130kg) + half MOP (16kg) at sowing; half urea (44kg) at 1-2 true leaves; remaining urea (44kg) and MOP (17kg) at 25-30 days after first application,
+Manipur,rabi,maize,,150,70,70,10,25,,,,Apply FYM/Compost 10-15 days prior to sowing
+Manipur,rabi,tomato,,120,80,80,,,,,,
+Meghalaya,rabi,boro paddy,,,,,5,,,Azospirillum 200 g/acre seedling,,
+Meghalaya,rabi,maize,,,,,,,,,,Lime 400-500 kg/ha in furrows
+Mizoram,rabi,maize,,120,60,40,,,,,One third N and full dose of P and K at sowing; two split doses of N at first earthing up and after one month,
+Meghalaya,rabi,rapeseed and mustard,,,,,,,,,,Soil incorporation of Trichoderma 2.5 kg/ha pre-incubated in 50 kg well rotten FYM
+Mizoram,rabi,Maize,,120,60,40,,,,,one third N and full dose of P and K at sowing time; two split doses of N at first earthing up and one month thereafter,Fertilizer application using FYM and NPK
+Mizoram,rabi,Rajmash,,20,40,20,,,,Rhizobium and PSB culture seed bio fortification before sowing,,Basal dose at time of sowing
+Mizoram,rabi,Soybean,,20,60,40,,,,Rhizobium and PSB culture seed bio fortification before sowing,,For higher crop production
+Mizoram,rabi,Toria,,50,60,30,,,,,,For higher crop production
+Mizoram,rabi,Khasi Mandarin,,,,,,,"Zinc Sulphate 0.5%, Magnesium Sulphate 0.2%, Copper Sulphate 0.4%, Manganese Sulphate 0.4% (spray on new flushes)",,,"Apply 650g Urea + 1220g SSP + 450g MOP per tree; FYM @ 30 kg per plant (Feb, Mar-Apr); use Bordeaux paste for pruning wounds"
+Nagaland,rabi,field pea,,55,31.3,42,20,,,,,"55 kg urea, 313 kg SSP and 42 kg MOP basal; incorporate organic matter @ 200 q/ha at land preparation"
+Nagaland,rabi,rapeseed,,108,37.5,50,50,,,,"Half at sowing (basal), half top-dress at first irrigation (3 weeks after sowing)","54 kg urea, 375 kg SSP, 50 kg MOP basal and 54 kg urea top-dressed under irrigated conditions"
+Nagaland,rabi,linseed,,87,12.5,17,20,,,,,Apply basal dose under rainfed conditions
+Nagaland,rabi,,,,,,10,,,,,Incorporate 10-15 t/ha well decomposed FYM before winter vegetables sowing
+Tripura,rabi,boro rice,,86,250,68,5,,,Pseudomonas florescence seed treatment and seedling root dip,"one third basal, two doses at tillering and panicle initiation",Maintain thin layer of water during fertiliser application
+Tripura,rabi,rabi maize,,120,60,40,5,25,,,"1/3 N basal, rest at knee-high and tasselling stages",Apply lime as per soil testing
+Tripura,rabi,mustard,,90,60,40,,,Foliar 0.1% boron and 0.5% ZnSO4 during flowering to pod formation,,,
+Tripura,rabi,toria,,40,20,20,,,,,,
+Tripura,rabi,field pea,,20,60,40,,,Foliar spray of 0.1% boron between flowering to pod formation,Seed inoculation with PSB and Rhizobium,,Lime or dolomite application before sowing
+Tripura,rabi,lentil,,20,40,20,2.5,,,Seed treatment with Rhizobium and PSB culture,,
+Tripura,rabi,brinjal,,1210,375,96,,,,Seed treatment with Trichoderma sp or Pseudomonas fluorescens or Carbendazim/Agroson,Top dress with urea 110 kg/ha at 30 days after sowing,
+Tripura,rabi,chilli,,130,250,40,,,,Seed treatment with Trichoderma sp or Pseudomonas fluorescens or Carbendazim/Agroson,Top dress with urea 65 kg/ha at 30 DAT,
+Tripura,rabi,tomato,,,100,,,,"Apply Neem cake 1 kg, VAM 50 g during nursery prep",Seed treatment with Trichoderma sp or Pseudomonas fluorescens or Carbendazim/Agroson,,Apply FYM 10 kg and Super phosphate 100 g per square meter in nursery
+Tripura,rabi,pineapple,South Tripura,,,,,,,,,"300-400 gm organic manure, 18 gm urea, 25 gm SSP, 15 gm MOP per plant/sucker"
+Maharashtra,rabi,Chickpea,,25,50,25,,,based on soil testing,Rhizobium and PSB @ 250 g/10 kg seed,basal dose at sowing,
+Maharashtra,rabi,Wheat,,120,60,60,,,,,"half N basal at sowing, half N at first irrigation (18-20 DAS)",For late sown wheat 80:40:40 NPK; rainfed wheat 40 kg basal N and 20 kg N fertigation
+Maharashtra,rabi,Rabi Sorghum,,80,40,40,,,,,"half N basal at sowing, half N after 30 DAS",
+Maharashtra,rabi,Safflower,,50,50,50,,,,,"apply at sowing time, remaining 50 kg N after 30 days",
+Maharashtra,rabi,Linseed,,50,25,,,,,,"50% N at sowing, remaining N top dressed after one month",
+Maharashtra,rabi,Mustard,,,,,,,,,,
+Maharashtra,rabi,Sugarcane,,300,170,170,,,,Acetobacter and PSB,Nitrogen applied in four equal splits,
+Maharashtra,rabi,Pomegranate,,0.4,0.2,0.2,,,,,Nitrogen in two splits after irrigation,FYM @ 40-50 kg per plant
+Maharashtra,rabi,Citrus,,0.4,0.2,0.2,,,,,Nitrogen in two splits after irrigation,
+Maharashtra,rabi,Gaillardia,,50,50,50,,,,,"apply 50:50:50 kg NPK at sowing, remaining 50 kg N after 30 days",
+Maharashtra,rabi,Marigold,,50,50,50,,,,,"apply 50:50:50 kg NPK at sowing, remaining 50 kg N after 30 days",
+Maharashtra,rabi,Chrysanthemum,,75,50,50,,,,,"apply 75:50:50 kg NPK at sowing, remaining 75 kg N after 30 days",
+Maharashtra,rabi,Tuberose,,50,50,50,,,,,"apply 50:50:50 kg NPK at sowing, remaining 50 kg N after 30 days",
+Maharashtra,rabi,Gladiolus,,50,50,50,,,,,"apply 50:50:50 kg NPK at sowing, remaining 50 kg N after 30 days",
+Maharashtra,rabi,Jasmin,,100,50,50,,,,,"20:20:20 g NPK/plant at planting, 20 g N/plant after 2 months, 100:50:50 kg NPK/ha at pruning after 1 year",
+Maharashtra,rabi,Rose,,,,,,,,,20:15:15 g NPK/plant at pruning,
+Gujarat,rabi,castor,irrigated,,,,,,,,Top dressing with nitrogenous fertilizers on attaining 70 DAS based on soil health card,
+Gujarat,rabi,pomegranate,,,,,,,,,,Apply recommended doses of fertilizers in September – October with two light irrigations
+Gujarat,rabi,ber,irrigated,,,,,,,,Top dressing of recommended fertilizers in September,
+Madhya Pradesh,rabi,wheat,,40,20,10,3,25,"Sulphur 10 kg/ha, Boron 2 kg/ha",PSB and Azotobactor 500g/100kg seed,Use of limited/partial irrigation - 60:40:30 N:P:K; irrigation - 120:60:40 N:P:K,Fertilizers as per soil test; irrigation management important
+Madhya Pradesh,rabi,chickpea,,,,,,,"Boron 1g, Molybdenum 1g per seed treatment",Rhizobium 5g and PSB 5g per seed treatment,,Seed treatment with Thiophanate-methyl + Pyroclostrobin and biofertilizers
+Madhya Pradesh,rabi,linseed,,80,40,20,,5,S: 20 kg/ha,PSB and Azotobacter 10g/kg seed,,Under irrigated condition; foliar spray of NPK 19:19:19 at vegetative stage
+Madhya Pradesh,rabi,mustard,,,,,,15,Sulphur 15 kg/ha,,,Apply 15 kg Zinc sulphate + Sulphur per hectare
+Madhya Pradesh,rabi,sugarcane,,300,85,60,12.5,,,,"Phosphorus and potash before planting, nitrogen in 4 splits",Apply FYM or compost or filter press mud before last ploughing
+Chhattisgarh,rabi,wheat,,110,60,40,,,,,,Blanket application; actual quantity depend on soil health test
+Chhattisgarh,rabi,chickpea,plains,20,40,20,,,20,,,Basal dose
+Chhattisgarh,rabi,lathyrus,,20,40,20,,,20,,,At sowing time
+Chhattisgarh,rabi,linseed,,40,20,20,,,,,,"Rainfed; irrigated condition: 60 N, 30 P, 30 K at sowing"
+Chhattisgarh,rabi,mustard,,100,80,40,,,,,,
+Chhattisgarh,rabi,safflower,,90,40,30,,,,,,
+Chhattisgarh,rabi,lentil,,20,45,20,,,20,,,
+Chhattisgarh,rabi,maize,,100,40,40,,,,,"Half basal at sowing, half top-dress at knee high stage",
+Chhattisgarh,rabi,hybrid napier,,90,50,40,22.5,,,,"60 kg N, 50 kg P, 40 kg K basal; 30 kg N after each cutting",22.5 t FYM during final field preparation
+Chhattisgarh,rabi,berseem,,20,80,40,,,,,,
+Chhattisgarh,rabi,tomato,,150,100,75,,,,,,"Seed treatment for damping off include soil solarization, Thirum or Copper oxychloride; Trichoderma + Pseudomonas seed treatment"
+Chhattisgarh,rabi,cauliflower,,150,80,75,,,,,,
+Chhattisgarh,rabi,cabbage,,150,80,75,,,,,,
+Telangana,rabi,rice,,,,,,,Apply zinc sulphate spray 2 g/l. Carbendazim + Mancozeb 2 g/kg urea application. Zinc sulphate spray 2 g/l,,,Apply 2 quintals poultry/sheep manure or vermicompost per 200 m2 wet nursery along with recommended N and K fertilizers; double phosphorus dose at basal application.
+Telangana,rabi,maize,,196,79,79,,,,,"Nitrogen applied in four splits: at sowing, knee high stage (30-35 DAS), flag leaf emergence (50-55 DAS), tasseling-silking stage (60-65 DAS).",Apply 20 kg zinc sulphate per acre every 2-3 seasons; spray 2 g/l zinc sulphate if deficiency appears.
+Telangana,rabi,chickpea,,20,50,,,,40,,,"Apply 20 kg N, 50 kg P2O5, 40 kg S/ha as basal; phosphate as super phosphate."
+Telangana,rabi,sunflower,,,,,5,,"Gypsum 61 (55 kg/acre), Borax spray 2 g/L",,"Apply 50% N, 100% P & K as basal; remaining N as two split doses.",Apply 5-7.5 t/ha FYM/compost 2-3 weeks prior to sowing.
+Kerala,rabi,rice,,90,,14.4,,,spray 5 gram paddy sampoorna per litre water,soak seeds with Pseudomonas culture 10g/kg seeds; soak seedlings with Pseudomonas culture 20g/l water for 30 minutes,"apply full dose of P, half dose of N and half dose of K as basal",Apply 90 kg Factomphos and 14.4 kg Potash per acre as basal dose
+Kerala,rabi,coconut,,,,,,,,,,"Apply 0.55 kg urea, 0.7 kg Rajphos, 0.8 kg potash per adult palm irrigated; 0.5 kg urea, 0.8 kg Rajphos, 1 kg potash under rainfed; or 4 kg coconut mixture (10:5:20) per adult palm."
+Kerala,rabi,banana,,,,,,,spray 5 grams banana sampoorna per litre water; apply lime 250g per plant; boron spray with 5g sampoorna/litre water,,,Apply 10 kg organic manure and 500 g dolomite at planting; 15 kg organic manure for TC plantlets
+Kerala,rabi,black pepper,,,,,,,foliar spray boron @ 2 g/litre if uneven berry size,,,Spray Pepper Powr Mix or 19:19:19 @ 5 g/litre on vines bearing pepper; spray 1% Bordeaux mixture and drench copper oxychloride 4g/litre monthly.
+Kerala,rabi,ginger,,,,,,,foliar spray multi-nutrient mix @5 g/litre as needed,,,Mulch with glyricidia and earthing up after last fertilizer in October
+Kerala,rabi,turmeric,,,,,,,foliar spray multi-nutrient mix @5 g/litre as needed,,,Mulch with glyricidia and earthing up after last fertilizer in October
+Kerala,rabi,vegetables,,,,,,,foliar spray vegetable sampoorna as needed,apply Pseudomonas culture to soil at planting,,Apply 3 kg dolomite/cent during land preparation; 50 g dolomite per grow bag
+Lakshadweep,rabi,vegetables,,,,,,,,Treat seeds with pseudomonas florescence 10g/kg,,Use FYM or compost in nursery beds; use soil less medium @ 5 kg/bag for seedling production
+Lakshadweep,rabi,banana,,,,,,,,Apply organic manure 10 kg/plant,,
+Himachal Pradesh,rabi,wheat,,260,375,50,,,,,"50% urea at sowing, 50% at crown root initiation or first rain","Treat seed with Bavistin 2.5 g/kg; full SSP, MOP and half urea at sowing"
+Himachal Pradesh,rabi,chickpea,,65,375,50,,,,"Rhizobium, Phosphorus solubilizing bacteria","Full SSP, MOP and half Urea at sowing; half Urea 4-5 weeks after sowing",Treat seed with Bavistin @2.5 g/kg
+Himachal Pradesh,rabi,lentil,,22,250,,,,,,,
+Himachal Pradesh,rabi,brown sarson,,130,250,65,,,Gypsum 140,,"Half Urea at sowing, remainder before flowering",
+Himachal Pradesh,rabi,gobhi sarson,,125,375,65,,,,,"Half Urea at sowing, rest in two splits after 60 and 80-90 days",
+Himachal Pradesh,rabi,cole crops,,120,75,60,20,,Borex for cauliflower browning,,Full P and 1/3 N and half K at transplant; remaining N topdressed monthly; rest K at 2nd top dressing,
+Himachal Pradesh,rabi,garden pea,,50,60,60,25,,,,,"Based on soil fertility status; FYM 20-30 tons/ha; irrigate before flowering, during flowering and at pod formation"
+Himachal Pradesh,rabi,onion,,105,92.5,72.5,25,,,,50% N and full P and K at transplanting; remaining N topdressed 5-6 weeks after transplant,
+Himachal Pradesh,rabi,garlic,,105,92.5,72.5,25,,,,50% N and full P and K at bulb sowing; remaining N topdressed at 5-6 weeks,
+Himachal Pradesh,rabi,radish,,70,65,60,10,,,,"Full FYM, P, K and half N at sowing; remainder N top-dressed in two equal instalments monthly",
+Himachal Pradesh,rabi,carrot,,70,65,60,10,,,,"Full FYM, P, K and half N at sowing; remainder N top-dressed in two equal instalments monthly",
+Himachal Pradesh,rabi,turnip,,70,65,60,10,,,,"Full FYM, P, K and half N at sowing; remainder N top-dressed in two equal instalments monthly",
+Himachal Pradesh,rabi,spinach,,,,,,,,,,
+Himachal Pradesh,rabi,fenugreek,,,,,,,,,,
+Himachal Pradesh,rabi,coriander,,,,,,,,,,
+Himachal Pradesh,rabi,apple,,,,,,,,,"Half N pre-flowering, half N one month after","FYM 100 kg/plant, Urea 1.5 kg/tree, SSP 2 kg/plant, MOP 1.7 kg/plant at basin prep in Dec-Jan"
+Jammu and Kashmir,rabi,wheat,Jammu Region Sub-Tropical zone,98,49,25,,4,,,,"Normal irrigated 40:20:10 NPK (kg/acre), very late 32:16:10, un-irrigated 24:12:8"
+Jammu and Kashmir,rabi,mustard,,26.5,13.3,6.7,,,Sulphur @ 8 kg/acre,,,Apply 0.05% thio-urea spray at 50% flowering & siliquae filling stages if moisture stress
+Jammu and Kashmir,rabi,gobhi-sarson,,24,16,8,,,Sulphur @ 8 kg/acre,,,"Irrigated 24:16:8 NPK, un-irrigated 20:12:6 NPK"
+Jammu and Kashmir,rabi,toria,,12,7,4,,,,,,
+Jammu and Kashmir,rabi,chickpea,,,38,,,,,Rhizobium culture inoculation of seed,,DAP 35 kg/acre as nutrient
+Jammu and Kashmir,rabi,lentil,,,,,,,,,,
+Jammu and Kashmir,rabi,berseem,,21.4,20,,,,,,12 kg N top dressing after first cut,"Apply 20 kg P and 12 kg N at sowing, top dress 12 kg N after first cut"
+Jammu and Kashmir,rabi,oats,,32,16,8,,,,,16 kg N after first cut at 60-70 DAS,Apply 16 kg N and P2O5 and 8 kg K2O at sowing
+Jammu and Kashmir,rabi,cauliflower,,48,24,24,,,,,Half N basal; half top dress 35 days after transplanting,
+Jammu and Kashmir,rabi,cabbage,,,,,,,,,,
+Jammu and Kashmir,rabi,knolkhol,,40,20,20,,,,,Half N basal; half N top dress after 35 days transplanting,
+Jammu and Kashmir,rabi,radish,,27,13.5,22.5,12,,,,Half N basal; half N at earthing-up,
+Jammu and Kashmir,rabi,carrot,,27,13.5,22.5,12,,,,Half N basal; half N at earthing-up,
+Jammu and Kashmir,rabi,garlic,,40,20,20,8,,,,,
+Jammu and Kashmir,rabi,pea,,20,29,20,8,,,,,
+Jammu and Kashmir,rabi,french bean,,20,24,20,8,,,,,
+Odisha,rabi,rice,,,,,5,,,,,Well decomposed FYM applied
+Odisha,rabi,mustard,,,,,,25,borax 10 kg/ha,,,Foliar application of water soluble NPK 19:19:19 at flowering and pod initiation
+Odisha,rabi,onion,,120,60,60,20,,,,"Half nitrogen, full P and half K at final land prep; one fourth N and K 25-30 DAT; rest one fourth N and K 45-50 DAT",
+Odisha,rabi,cauliflower,,60,20,30,10,,borax 10 kg/ha,,"Half nitrogen, full P and half K at final land preparation",
+Odisha,rabi,potato,,48,24,48,10,,,,"Half nitrogen, full P and half K at final land preparation",
+Odisha,rabi,broccoli,,30,40,40,,,,,,
+Odisha,rabi,capsicum,,45,30,30,,,,,,
+Odisha,rabi,french bean,,8,20,20,,,,,,Plant after September 15
+Andhra Pradesh,rabi,rice,North Coast,48,24,18,,50,,,"N applied in three equal splits: basal, active tillering, panicle initiation",Apply total P & K as basal before final leveling mixed in soil; Apply ½ N as basal and ½ N at 10-15 days after sowing for nursery; Zinc sulphate spray at 0.2% repeated at 5 day intervals for deficiency.
+Andhra Pradesh,rabi,rice,High altitude,48,24,16,,50,,,"N applied in three equal splits: basal, active tillering, panicle initiation; K split half basal and half panicle initiation in light soils",
+Andhra Pradesh,rabi,rice,Godavari,72,36,24,,50,,,"N applied in three equal splits: basal, active tillering, panicle initiation; K split half basal and half panicle initiation in light soils",
+Andhra Pradesh,rabi,rice,Krishna,72,36,24,,50,,,"N applied in three equal splits: basal, active tillering, panicle initiation; K split half basal and half panicle initiation in light soils",
+Andhra Pradesh,rabi,rice,Southern,48,24,16,,50,,,"N applied in three equal splits: basal, active tillering, panicle initiation; K split half basal and half panicle initiation in light soils",
+Andhra Pradesh,rabi,rice,Scarce rainfall,96,32,32,,50,,,"N applied in three equal splits: basal, active tillering, panicle initiation; K split half basal and half panicle initiation in light soils",
+Andhra Pradesh,rabi,maize normal hybrids,,100,35,35,11.24,20,,,"N applied in four splits: sowing, knee high (30-35 DAS), flag leaf emergence (50-55 DAS), tasseling-silking (60-65 DAS)",Basal application of FYM at 10 t/acre; zinc sulphate applied if soil deficient
+Andhra Pradesh,rabi,maize sweet corn,,80,25,20,11.24,20,,,"N applied in four splits: sowing, knee high (30-35 DAS), flag leaf emergence (50-55 DAS), tasseling-silking (60-65 DAS)",Basal application of FYM at 10 t/acre; zinc sulphate applied if soil deficient
+Andhra Pradesh,rabi,maize popcorn,,40,25,20,11.24,20,,,"N applied in four splits: sowing, knee high (30-35 DAS), flag leaf emergence (50-55 DAS), tasseling-silking (60-65 DAS)",Basal application of FYM at 10 t/acre; zinc sulphate applied if soil deficient
+Andhra Pradesh,rabi,maize baby corn,,75,25,20,11.24,20,,,"N applied in four splits: sowing, knee high (30-35 DAS), flag leaf emergence (50-55 DAS), tasseling-silking (60-65 DAS)",Basal application of FYM at 10 t/acre; zinc sulphate applied if soil deficient
+Andhra Pradesh,rabi,greengram,,20,50,,,,,,,20 N + 50 P2O5 kg/ha as basal dose
+Andhra Pradesh,rabi,blackgram,,20,50,,,,,,,20 N + 50 P2O5 kg/ha as basal dose
+Andhra Pradesh,rabi,bengal gram,,20,50,,,,40,,,"20 N, 50 P2O5, 40 Sulfur/ha as basal dose"
+Tamil Nadu and Puducherry,rabi,Rice,,150,50,50,,25,5 kg/ha CuSO4 in Cauvery delta zone,"Azospirillum and Phosphobacteria or Azophos, Bacillus subtilis","N and K applied in four equal splits: basal, tillering, panicle initiation and heading stages",Full P applied as basal and incorporated; foliar spray of 1% urea + 2% MAP + 1% KCl at panicle initiation and 10 days after first spray
+Tamil Nadu and Puducherry,rabi,Maize,,135,62.5,50,,,TNAU MN mixture @ 30 kg/ha enriched FYM or 12.5 kg micronutrient mixture,,,"Atrazine @ 0.50 kg/ha as pre-emergence herbicide on 3-5 DAS followed by 2,4-D @ 1 kg/ha on 20-25 DAS; foliar application of TNAU maize maxim @ 7.5 kg/ha during tassel initiation and grain filling"
+Tamil Nadu and Puducherry,rabi,Redgram,,,,,,,,,,
+Tamil Nadu and Puducherry,rabi,Groundnut,,,,,,,Gypsum 400 kg/ha on 40 to 70 DAS,,,TNAU MN mixture @7.5 kg/ha as enriched FYM; broadcasted on soil surface immediately after sowing
+Tamil Nadu and Puducherry,rabi,Sesame,,35,23,23,,,TNAU micronutrient mixture @ 12.5 kg/ha as enriched FYM,,,Thinning of excess seedlings to induce basal branching
+Tamil Nadu and Puducherry,rabi,Banana,,,,,,25,,Bacillus subtilis 25 g/plant,,Foliar spray 75 g banana special in 15 litres water monthly from 4/5th month till bunch formation plus two sprays on bunches; press mud 15 t/ha or neem cake 1.5 t/ha during planting
+Tamil Nadu and Puducherry,rabi,Tomato,,,,,,,,"Azospirillum, Trichoderma viride, Bacillus subtilis",,Foliar application of Vegetable special @ 5 gm/litre thrice at 10 day intervals from 40 DAP; spray ZnSO4 0.5% thrice from 40 DAP; spray 19:19:19 + Mn @ 1% at 60 DAP; Boric acid 0.3% at flowering and 10 days later
+Karnataka,rabi,Ragi,,20,10,10,3,,,,"Split application of nitrogen, half during sowing and half after 6-7 weeks",
+Karnataka,rabi,Maize,,27,13,6,,4,,,Full P & K and 20 N + ZnSo4 before sowing and remaining 20 N after 3-4 weeks,
+Karnataka,rabi,Sunflower,,36,36,25,3,4,Boron 6 kg,,,Spray Boron 0.5% at flowering
+Karnataka,rabi,Onion,,110,40,60,15,,,Azospirillum and Phosphorus solubilizing bacteria 5 kg each/ha,N in seven splits weekly from transplanting to 60 DAT,
+Karnataka,rabi,Ground nut,,,,,,,,Rhizobium and PSB 500 g/ha,,Gypsum 200 kg/ac at sowing

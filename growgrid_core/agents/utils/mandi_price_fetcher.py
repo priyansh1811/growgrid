@@ -276,20 +276,31 @@ def fetch_mandi_prices(
     return _cache_and_return(cache, cache_key, mandi_result)
 
 
+# Confidence-weighted blend factors: how much to shift toward live data
+_BLEND_WEIGHT: dict[str, float] = {
+    "HIGH": 0.75,  # 75% live, 25% DB — strong market signal
+    "MED":  0.50,  # 50/50 blend — moderate confidence
+    "LOW":  0.0,   # Use DB only
+}
+
+
 def merge_prices(
     db_price_bands: dict[str, Any] | None,
     mandi: MandiPriceResult,
 ) -> dict[str, Any]:
-    """Merge live mandi prices with DB baseline prices.
+    """Merge live mandi prices with DB baseline prices using confidence-weighted blending.
 
     Strategy:
-    - If mandi confidence is MED or HIGH and prices are within ±50% of DB range,
-      use mandi prices.
-    - Otherwise, use DB prices.
-    - Always record which source was used.
+    - No DB data → use mandi if available.
+    - No mandi or LOW confidence → use DB.
+    - MED/HIGH confidence + within ±50% of DB → blend (weighted avg of DB + live).
+    - Mandi deviates >50% from DB → use DB (likely bad API data).
+
+    Blend weights: HIGH=75% live, MED=50% live, LOW=0% (DB only).
 
     Returns:
-        Dict with: price_min, price_max, price_base, source ("live_fetch" or "database"),
+        Dict with: price_min, price_max, price_base,
+        source ("live_fetch" | "blended_live" | "database" | "fallback"),
         confidence.
     """
     db_low = float((db_price_bands or {}).get("low_price_per_unit", 0) or 0)
@@ -312,7 +323,11 @@ def merge_prices(
         }
 
     # If mandi data is not available or LOW confidence, use DB
-    if mandi.price_min is None or mandi.price_max is None or mandi.confidence == "LOW":
+    w = _BLEND_WEIGHT.get(mandi.confidence, 0.0) if (
+        mandi.price_min is not None and mandi.price_max is not None
+    ) else 0.0
+
+    if w == 0.0:
         return {
             "price_min": db_low,
             "price_max": db_high,
@@ -325,25 +340,29 @@ def merge_prices(
     db_mid = (db_low + db_high) / 2
     mandi_mid = (mandi.price_min + mandi.price_max) / 2
 
-    # Check if mandi price is within ±50% of DB midpoint
-    if db_mid > 0 and abs(mandi_mid - db_mid) / db_mid <= 0.50:
+    # Reject if mandi deviates >50% from DB midpoint (likely bad data)
+    if db_mid > 0 and abs(mandi_mid - db_mid) / db_mid > 0.50:
+        logger.info(
+            "Mandi price for crop deviates >50%% from DB (mandi=%.0f, db=%.0f). Using DB.",
+            mandi_mid, db_mid,
+        )
         return {
-            "price_min": mandi.price_min,
-            "price_max": mandi.price_max,
-            "price_base": mandi_mid,
-            "source": "live_fetch",
-            "confidence": mandi.confidence,
+            "price_min": db_low,
+            "price_max": db_high,
+            "price_base": db_base,
+            "source": "database",
+            "confidence": "MED",
         }
 
-    # Mandi price too far from DB — use DB with a note
-    logger.info(
-        "Mandi price for crop deviates >50%% from DB (mandi=%.0f, db=%.0f). Using DB.",
-        mandi_mid, db_mid,
-    )
+    # Confidence-weighted blend of DB and live prices
+    blended_min = w * mandi.price_min + (1 - w) * db_low
+    blended_max = w * mandi.price_max + (1 - w) * db_high
+    blended_base = w * mandi_mid + (1 - w) * db_base
+
     return {
-        "price_min": db_low,
-        "price_max": db_high,
-        "price_base": db_base,
-        "source": "database",
-        "confidence": "MED",
+        "price_min": blended_min,
+        "price_max": blended_max,
+        "price_base": blended_base,
+        "source": "blended_live",
+        "confidence": mandi.confidence,
     }

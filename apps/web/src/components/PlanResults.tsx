@@ -5,13 +5,14 @@ import { EconomicsResults } from './results/EconomicsResults'
 import { FieldLayoutResults } from './results/FieldLayoutResults'
 import { SchemesResults } from './results/SchemesResults'
 import { CriticResults } from './results/CriticResults'
+import { IcarAdvisoryResults } from './results/IcarAdvisoryResults'
 
 interface PlanResultsProps {
   plan: PlanResponse
   onBack: () => void
 }
 
-type TabKey = 'overview' | 'practice' | 'crops' | 'economics' | 'layout' | 'schemes' | 'review' | 'guides'
+type TabKey = 'overview' | 'practice' | 'crops' | 'economics' | 'layout' | 'icar' | 'schemes' | 'review' | 'guides'
 
 interface Tab {
   key: TabKey
@@ -32,6 +33,7 @@ export function PlanResults({ plan, onBack }: PlanResultsProps) {
     { key: 'crops', label: 'Crops', available: true },
     { key: 'economics', label: 'Economics', available: !!plan.economics },
     { key: 'layout', label: 'Layout', available: !!plan.field_layout },
+    { key: 'icar', label: 'ICAR Advisory', available: !!plan.icar_advisory },
     { key: 'schemes', label: 'Schemes', available: !!plan.schemes },
     { key: 'review', label: 'Review', available: !!plan.critic_report || !!agronomist_verification },
     { key: 'guides', label: 'Grow Guides', available: grow_guides && grow_guides.length > 0 },
@@ -196,6 +198,10 @@ export function PlanResults({ plan, onBack }: PlanResultsProps) {
 
         {activeTab === 'layout' && plan.field_layout && (
           <FieldLayoutResults layout={plan.field_layout} />
+        )}
+
+        {activeTab === 'icar' && plan.icar_advisory && (
+          <IcarAdvisoryResults advisory={plan.icar_advisory} />
         )}
 
         {activeTab === 'schemes' && plan.schemes && (

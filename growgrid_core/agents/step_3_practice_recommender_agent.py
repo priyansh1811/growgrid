@@ -23,6 +23,7 @@ from growgrid_core.db.queries import (
     get_practice_infrastructure,
     get_practice_irrigation_suitability,
     get_practice_location_suitability,
+    get_practice_season_suitability,
     get_suitability_by_state,
 )
 from growgrid_core.utils.location import parse_state_from_location
@@ -30,6 +31,7 @@ from growgrid_core.utils.scoring import (
     capex_fit,
     ordinal_fit,
     profit_fit,
+    resource_fit,
     risk_fit,
     time_fit,
     weighted_sum,
@@ -277,8 +279,8 @@ class PracticeRecommenderAgent(BaseAgent):
         time_min = p.get("time_to_first_income_months_min") or 0
         time_max = p.get("time_to_first_income_months_max") or max(time_min, 1)
         return {
-            "water": ordinal_fit(profile.water_availability.value, p.get("water_need", "MED")),
-            "labour": ordinal_fit(profile.labour_availability.value, p.get("labour_need", "MED")),
+            "water": resource_fit(profile.water_availability.value, p.get("water_need", "MED")),
+            "labour": resource_fit(profile.labour_availability.value, p.get("labour_need", "MED")),
             "capex": capex_fit(profile.budget_per_acre, capex_min, capex_max),
             "time": time_fit(profile.horizon_months, time_min, time_max),
             "risk": risk_fit(profile.risk_tolerance.value, p.get("risk_level", "MED")),
@@ -329,6 +331,12 @@ class PracticeRecommenderAgent(BaseAgent):
                     f"{practice_code} is not recommended for {state_name or 'this location'}.",
                 ),
             )
+
+        # ── Season suitability ──
+        planning_season = _planning_month_to_season(profile.planning_month)
+        season_row = get_practice_season_suitability(conn, practice_code, planning_season) if planning_season else None
+        season_label = (season_row or {}).get("suitability", "MED")
+        season_multiplier = _PRACTICE_LOCATION_MULTIPLIER.get(season_label, 1.0)
 
         infra_rows = get_practice_infrastructure(conn, practice_code)
         required_count = sum(
@@ -401,6 +409,7 @@ class PracticeRecommenderAgent(BaseAgent):
         }
 
         score_multiplier = location_multiplier
+        score_multiplier *= season_multiplier
         score_multiplier *= crop_outlook["outlook_multiplier"]
         score_multiplier *= crop_outlook["diversity_multiplier"]
         score_multiplier *= goal_alignment_multiplier
@@ -456,8 +465,8 @@ class PracticeRecommenderAgent(BaseAgent):
             loc_mult = _crop_location_suitability_multiplier(crop["crop_id"], suitability_by_crop)
             season_mult = _season_multiplier(profile.planning_month, crop.get("seasons_supported"))
             fits = {
-                "water": ordinal_fit(profile.water_availability.value, crop.get("water_need", "MED")),
-                "labour": ordinal_fit(profile.labour_availability.value, crop.get("labour_need", "MED")),
+                "water": resource_fit(profile.water_availability.value, crop.get("water_need", "MED")),
+                "labour": resource_fit(profile.labour_availability.value, crop.get("labour_need", "MED")),
                 "time": time_fit(
                     profile.horizon_months,
                     crop.get("time_to_first_income_months_min", 0),
@@ -591,12 +600,30 @@ def _season_multiplier(planning_month: int | None, seasons_supported: str | None
     supported = {season.strip().upper() for season in (seasons_supported or "").split(",") if season.strip()}
     if not supported:
         return 1.0
-    current = "KHARIF" if planning_month in (6, 7, 8, 9, 10) else "RABI"
+    # Perennial / year-round crops should never be penalised by season
+    if "PERENNIAL" in supported or "YEAR_ROUND" in supported:
+        return 1.0
+    # Determine the current season from planning month
+    if planning_month in (6, 7, 8, 9, 10):
+        current = "KHARIF"
+    elif planning_month in (3, 4, 5):
+        current = "ZAID"
+    else:
+        current = "RABI"
     if current in supported or "BOTH" in supported or "ALL" in supported:
         return 1.0
-    if "ZAID" in supported and planning_month in (3, 4, 5):
-        return 1.0
     return 0.55
+
+
+def _planning_month_to_season(planning_month: int | None) -> str | None:
+    """Map planning month to Indian cropping season."""
+    if not planning_month:
+        return None
+    if planning_month in (6, 7, 8, 9, 10):
+        return "KHARIF"
+    if planning_month in (3, 4, 5):
+        return "ZAID"
+    return "RABI"
 
 
 def _clamp(value: float, low: float = 0.0, high: float = 1.0) -> float:
@@ -618,24 +645,24 @@ def _goal_alignment_multiplier(
     multiplier = 1.0
 
     if goal == "MAXIMIZE_PROFIT":
-        multiplier *= {"LOW": 0.94, "MED": 0.98, "HIGH": 1.04, "VERY_HIGH": 1.10}.get(
+        multiplier *= {"LOW": 0.88, "MED": 0.96, "HIGH": 1.06, "VERY_HIGH": 1.16}.get(
             profit_potential,
             1.0,
         )
     elif goal == "FAST_ROI":
         if time_min <= 2:
-            multiplier *= 1.10
+            multiplier *= 1.16
         elif time_min <= 4:
-            multiplier *= 1.05
+            multiplier *= 1.08
         elif time_min <= 6:
             multiplier *= 1.0
         else:
-            multiplier *= 0.92
+            multiplier *= 0.88
     elif goal == "WATER_SAVING":
-        multiplier *= {"LOW": 1.10, "MED": 1.0, "HIGH": 0.88}.get(water_need, 1.0)
+        multiplier *= {"LOW": 1.16, "MED": 1.0, "HIGH": 0.82}.get(water_need, 1.0)
     elif goal == "STABLE_INCOME":
-        multiplier *= {"LOW": 1.08, "MED": 1.0, "HIGH": 0.90}.get(risk_level, 1.0)
+        multiplier *= {"LOW": 1.12, "MED": 1.0, "HIGH": 0.85}.get(risk_level, 1.0)
         if stability_score >= 0.80:
             multiplier *= 1.03
 
-    return _clamp(multiplier, low=0.88, high=1.15)
+    return _clamp(multiplier, low=0.82, high=1.20)

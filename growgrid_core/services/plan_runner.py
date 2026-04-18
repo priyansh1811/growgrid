@@ -27,9 +27,36 @@ from growgrid_core.tools.datagov_client import BaseDataGovMandiClient, DataGovMa
 from growgrid_core.tools.llm_client import BaseLLMClient, MockLLMClient, OpenAILLMClient
 from growgrid_core.tools.tavily_client import BaseTavilyClient, MockTavilyClient, TavilyClient
 from growgrid_core.tools.tool_cache import ToolCache
-from growgrid_core.utils.types import PlanRequest, PlanResponse
+from growgrid_core.db.queries import (
+    get_icar_crop_calendar,
+    get_icar_nutrient_plan,
+    get_icar_pest_disease,
+    get_icar_varieties,
+    get_icar_weed_management,
+)
+from growgrid_core.utils.icar_matching import match_id_to_icar_names, normalize_state_for_icar
+from growgrid_core.utils.location import parse_state_from_location
+from growgrid_core.utils.season import detect_season
+from growgrid_core.utils.types import (
+    IcarAdvisory,
+    IcarAdvisoryReport,
+    IcarCalendarEntry,
+    IcarNutrientPlan,
+    IcarPestEntry,
+    IcarVarietyEntry,
+    IcarWeedEntry,
+    PlanRequest,
+    PlanResponse,
+)
 
 logger = logging.getLogger(__name__)
+
+
+def _to_str(val: Any) -> str | None:
+    """Safely coerce a DB value to str (handles float/int columns stored as text fields)."""
+    if val is None:
+        return None
+    return str(val)
 
 
 def _fallback_agronomist_mock_responses() -> list[dict]:
@@ -131,6 +158,9 @@ def run_pipeline(
             logger.exception("Agent %s failed", agent_name)
             raise
 
+    # ── Build ICAR advisory report ─────────────────────────────────
+    icar_advisory = _build_icar_advisory(db, state)
+
     return PlanResponse(
         validated_profile=state["validated_profile"],
         hard_constraints=state["hard_constraints"],
@@ -154,4 +184,148 @@ def run_pipeline(
         economist_output=state.get("economist_output"),
         field_layout=state.get("field_layout"),
         schemes=state.get("schemes"),
+        icar_advisory=icar_advisory,
     )
+
+
+def _build_icar_advisory(
+    conn: sqlite3.Connection,
+    state: dict[str, Any],
+) -> IcarAdvisoryReport | None:
+    """Build ICAR advisory report for all crops in the portfolio.
+
+    Queries all 5 ICAR tables for each crop and returns structured data
+    for the frontend ICAR Advisory tab.
+    """
+    try:
+        profile = state.get("validated_profile")
+        portfolio = state.get("selected_crop_portfolio", [])
+        if not profile or not portfolio:
+            return None
+
+        state_name = parse_state_from_location(profile.location)
+        if not state_name:
+            return None
+
+        season = detect_season(profile.planning_month) if profile.planning_month else "rabi"
+        icar_states = normalize_state_for_icar(state_name)
+        if not icar_states:
+            return None
+
+        advisories: list[IcarAdvisory] = []
+
+        for entry in portfolio:
+            icar_names = match_id_to_icar_names(entry.crop_id)
+            if not icar_names:
+                icar_names = [entry.crop_name.lower()]
+
+            advisory = IcarAdvisory(
+                state=icar_states[0],
+                season=season,
+                crop_name=entry.crop_name,
+                crop_id=entry.crop_id,
+            )
+
+            found = False
+            for icar_state in icar_states:
+                for name in icar_names:
+                    # Calendar
+                    cal_rows = get_icar_crop_calendar(conn, icar_state, season, name)
+                    for r in cal_rows:
+                        advisory.calendar.append(IcarCalendarEntry(
+                            crop_name=_to_str(r.get("crop_name")) or "",
+                            sub_region=_to_str(r.get("sub_region")),
+                            sow_start_month=int(r["sow_start_month"]) if r.get("sow_start_month") else None,
+                            sow_end_month=int(r["sow_end_month"]) if r.get("sow_end_month") else None,
+                            harvest_month_range=_to_str(r.get("harvest_month_range")),
+                            seed_rate_kg_ha=r.get("seed_rate_kg_ha"),
+                            row_spacing_cm=r.get("row_spacing_cm"),
+                            plant_spacing_cm=r.get("plant_spacing_cm"),
+                            duration_days=int(r["duration_days"]) if r.get("duration_days") else None,
+                            notes=_to_str(r.get("notes")),
+                        ))
+                        found = True
+
+                    # Nutrient plan
+                    nut_rows = get_icar_nutrient_plan(conn, icar_state, season, name)
+                    for r in nut_rows:
+                        advisory.nutrient_plans.append(IcarNutrientPlan(
+                            crop_name=_to_str(r.get("crop_name")) or "",
+                            sub_region=_to_str(r.get("sub_region")),
+                            N_kg_ha=r.get("N_kg_ha"),
+                            P_kg_ha=r.get("P_kg_ha"),
+                            K_kg_ha=r.get("K_kg_ha"),
+                            FYM_t_ha=r.get("FYM_t_ha"),
+                            zinc_sulphate_kg_ha=r.get("zinc_sulphate_kg_ha"),
+                            other_micronutrients=_to_str(r.get("other_micronutrients")),
+                            biofertilizers=_to_str(r.get("biofertilizers")),
+                            split_schedule=_to_str(r.get("split_schedule")),
+                            application_notes=_to_str(r.get("application_notes")),
+                        ))
+                        found = True
+
+                    # Pest/disease
+                    pest_rows = get_icar_pest_disease(conn, icar_state, season, name)
+                    for r in pest_rows:
+                        advisory.pests.append(IcarPestEntry(
+                            crop_name=_to_str(r.get("crop_name")) or "",
+                            sub_region=_to_str(r.get("sub_region")),
+                            pest_or_disease_name=_to_str(r.get("pest_or_disease_name")) or "",
+                            type=_to_str(r.get("type")),
+                            monitor_start_month=int(r["monitor_start_month"]) if r.get("monitor_start_month") else None,
+                            monitor_end_month=int(r["monitor_end_month"]) if r.get("monitor_end_month") else None,
+                            chemical_control=_to_str(r.get("chemical_control")),
+                            bio_control=_to_str(r.get("bio_control")),
+                            threshold_note=_to_str(r.get("threshold_note")),
+                        ))
+                        found = True
+
+                    # Varieties
+                    var_rows = get_icar_varieties(conn, icar_state, season, name)
+                    for r in var_rows:
+                        advisory.varieties.append(IcarVarietyEntry(
+                            crop_name=_to_str(r.get("crop_name")) or "",
+                            sub_region=_to_str(r.get("sub_region")),
+                            variety_names=_to_str(r.get("variety_names")),
+                            variety_type=_to_str(r.get("variety_type")),
+                            duration_type=_to_str(r.get("duration_type")),
+                            purpose=_to_str(r.get("purpose")),
+                        ))
+                        found = True
+
+                    # Weed management
+                    weed_rows = get_icar_weed_management(conn, icar_state, season, name)
+                    for r in weed_rows:
+                        advisory.weed_management.append(IcarWeedEntry(
+                            crop_name=r.get("crop_name", ""),
+                            sub_region=r.get("sub_region"),
+                            pre_emergence_herbicide=_to_str(r.get("pre_emergence_herbicide")),
+                            pre_em_dose=_to_str(r.get("pre_em_dose")),
+                            pre_em_timing_das=_to_str(r.get("pre_em_timing_das")),
+                            post_emergence_herbicide=_to_str(r.get("post_emergence_herbicide")),
+                            post_em_dose=_to_str(r.get("post_em_dose")),
+                            post_em_timing_das=_to_str(r.get("post_em_timing_das")),
+                            manual_weeding_schedule=_to_str(r.get("manual_weeding_schedule")),
+                        ))
+                        found = True
+
+                    if found:
+                        break
+                if found:
+                    break
+
+            if found:
+                advisories.append(advisory)
+
+        if not advisories:
+            return None
+
+        return IcarAdvisoryReport(
+            state=icar_states[0],
+            season=season,
+            advisories=advisories,
+        )
+
+    except Exception as exc:
+        logger.warning("Failed to build ICAR advisory report: %s", exc)
+        return None

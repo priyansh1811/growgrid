@@ -23,7 +23,15 @@ from typing import Any
 
 from growgrid_core.agents.base_agent import BaseAgent
 from growgrid_core.db.db_loader import load_all
-from growgrid_core.db.queries import get_all_spacings_for_crop, get_crop_by_id, get_crop_spacing
+from growgrid_core.db.queries import (
+    get_all_spacings_for_crop,
+    get_crop_by_id,
+    get_crop_spacing,
+    get_icar_crop_calendar,
+)
+from growgrid_core.utils.icar_matching import match_id_to_icar_names, normalize_state_for_icar
+from growgrid_core.utils.location import parse_state_from_location
+from growgrid_core.utils.season import detect_season
 from growgrid_core.utils.types import (
     CropPortfolioEntry,
     FieldBlock,
@@ -34,6 +42,20 @@ from growgrid_core.utils.types import (
 )
 
 logger = logging.getLogger(__name__)
+
+# Broadcast seed rates (kg/acre) for crops sown continuously without plant spacing
+_BROADCAST_SEED_RATES: dict[str, float] = {
+    "CE_WHEAT": 40.0,
+    "CE_RICE": 30.0,
+    "CE_MAIZE": 8.0,
+    "MI_BAJRA": 2.0,
+    "MI_JOWAR": 5.0,
+    "MI_RAGI": 4.0,
+    "FO_NAPIER": 15000.0,  # slips per acre, not kg
+    "DEFAULT_CEREAL": 40.0,
+    "DEFAULT_MILLET": 4.0,
+    "DEFAULT_FODDER": 40.0,
+}
 
 # Category-based default spacings (row_cm, plant_cm, plants_per_acre)
 _DEFAULT_SPACING: dict[str, tuple[float, float, int]] = {
@@ -116,6 +138,48 @@ _BORDER_CROPS: dict[str, str] = {
 
 # 1 acre = 43560 sq ft ≈ 4047 sq m
 _SQM_PER_ACRE = 4047.0
+
+
+def _get_icar_spacing(
+    conn: sqlite3.Connection,
+    entry: "CropPortfolioEntry",
+    profile: "ValidatedProfile",
+) -> dict | None:
+    """Try to get row/plant spacing from ICAR crop calendar for the farmer's state.
+
+    Returns dict with row_spacing_cm, plant_spacing_cm, plants_per_acre, state
+    or None if no ICAR data available.
+    """
+    state_name = parse_state_from_location(profile.location)
+    if not state_name:
+        return None
+
+    season = detect_season(profile.planning_month) if profile.planning_month else None
+    if not season:
+        return None
+
+    icar_states = normalize_state_for_icar(state_name)
+    icar_names = match_id_to_icar_names(entry.crop_id)
+    if not icar_names:
+        icar_names = [entry.crop_name.lower()]
+
+    for icar_state in icar_states:
+        for name in icar_names:
+            rows = get_icar_crop_calendar(conn, icar_state, season, name)
+            for r in rows:
+                row_cm = r.get("row_spacing_cm")
+                plant_cm = r.get("plant_spacing_cm")
+                if row_cm and plant_cm and row_cm > 0 and plant_cm > 0:
+                    # Calculate plants per acre
+                    plants_per_sqm = 10000 / (row_cm * plant_cm)
+                    plants_per_acre = int(plants_per_sqm * _SQM_PER_ACRE)
+                    return {
+                        "row_spacing_cm": float(row_cm),
+                        "plant_spacing_cm": float(plant_cm),
+                        "plants_per_acre": plants_per_acre,
+                        "state": icar_state,
+                    }
+    return None
 
 
 def _get_bed_type(planting_pattern: str, category: str) -> str:
@@ -255,8 +319,9 @@ class FieldLayoutAgent(BaseAgent):
             area = land * entry.area_fraction
             block_label = chr(65 + idx)  # A, B, C, ...
 
-            # Try exact practice match first, then any practice, then category default
+            # ── 4-tier spacing lookup ──
             spacing = get_crop_spacing(conn, entry.crop_id, practice.practice_code)
+            spacing_source = "reference"
             if not spacing:
                 all_spacings = get_all_spacings_for_crop(conn, entry.crop_id)
                 spacing = all_spacings[0] if all_spacings else None
@@ -272,35 +337,83 @@ class FieldLayoutAgent(BaseAgent):
                 planting_pattern = spacing.get("planting_pattern") or ""
                 depth_cm = spacing.get("depth_cm") or 0
                 spacing_notes = spacing.get("notes") or ""
+                spacing_source = "reference"
             else:
-                # Fallback to category defaults
-                defaults = _DEFAULT_SPACING.get(category, (60, 45, 5940))
-                row_cm, plant_cm, plants_per_acre = defaults
-                cat_defs = _CATEGORY_DEFAULTS.get(category, {})
-                planting_pattern = cat_defs.get("pattern", "line_sowing")
-                depth_cm = float(cat_defs.get("depth", "3"))
-                spacing_notes = ""
-                notes.append(
-                    f"Block {block_label} ({entry.crop_name}): using default spacing for "
-                    f"{category} category — verify with local KVK or agriculture officer."
+                # Tier 3: Try ICAR crop calendar for state-specific spacing
+                icar_spacing = _get_icar_spacing(conn, entry, profile)
+                if icar_spacing:
+                    row_cm = icar_spacing["row_spacing_cm"]
+                    plant_cm = icar_spacing["plant_spacing_cm"]
+                    plants_per_acre = icar_spacing["plants_per_acre"]
+                    cat_defs = _CATEGORY_DEFAULTS.get(category, {})
+                    planting_pattern = cat_defs.get("pattern", "line_sowing")
+                    depth_cm = float(cat_defs.get("depth", "3"))
+                    spacing_notes = ""
+                    spacing_source = "icar"
+                    notes.append(
+                        f"Block {block_label} ({entry.crop_name}): spacing from ICAR "
+                        f"advisory for {icar_spacing.get('state', 'your state')}."
+                    )
+                else:
+                    # Tier 4: Fallback to category defaults
+                    defaults = _DEFAULT_SPACING.get(category, (60, 45, 5940))
+                    row_cm, plant_cm, plants_per_acre = defaults
+                    cat_defs = _CATEGORY_DEFAULTS.get(category, {})
+                    planting_pattern = cat_defs.get("pattern", "line_sowing")
+                    depth_cm = float(cat_defs.get("depth", "3"))
+                    spacing_notes = ""
+                    spacing_source = "default"
+                    notes.append(
+                        f"Block {block_label} ({entry.crop_name}): using default spacing for "
+                        f"{category} category — verify with local KVK or agriculture officer."
+                    )
+
+            # ── Detect broadcast crops (plant_spacing_cm == 0) ──
+            is_broadcast = plant_cm == 0
+            seed_rate_kg = 0.0
+            if is_broadcast:
+                seed_rate_kg = _BROADCAST_SEED_RATES.get(
+                    entry.crop_id,
+                    _BROADCAST_SEED_RATES.get(f"DEFAULT_{category}", 40.0),
                 )
 
-            # Compute plant count and field dimensions
-            total_plants = int(plants_per_acre * area)
+            # ── Compute field dimensions with variable aspect ratio ──
             area_sqm = area * _SQM_PER_ACRE
 
             if row_cm > 0 and area > 0:
                 row_spacing_m = row_cm / 100
-                # Use 3:2 length-to-width ratio for practical field shape
-                field_length_m = round(math.sqrt(area_sqm * 1.5), 1)
+
+                # Variable aspect ratio: derive from spacing geometry
+                if plant_cm > 0:
+                    natural_ratio = row_cm / plant_cm
+                    ratio = max(1.0, min(3.0, natural_ratio))
+                else:
+                    ratio = 2.0  # broadcast crops: long narrow for seed drill
+
+                field_length_m = round(math.sqrt(area_sqm * ratio), 1)
                 field_width_m = round(area_sqm / field_length_m, 1) if field_length_m > 0 else 0
-                total_rows = max(1, int(field_width_m / row_spacing_m))
-                plants_per_row = max(1, int(total_plants / total_rows)) if total_rows > 0 else total_plants
+
+                # ── Headland deduction for accurate plant counts ──
+                headland_m = 2.0 if land >= 1.0 else 1.0
+                usable_length = max(field_length_m - 2 * headland_m, 1.0)
+                usable_width = max(field_width_m - 2 * headland_m, 1.0)
+
+                total_rows = max(1, int(usable_width / row_spacing_m))
+                if is_broadcast:
+                    # For broadcast crops, plant count is not meaningful
+                    total_plants = int(plants_per_acre * area)
+                    plants_per_row = 0
+                else:
+                    plant_spacing_m = plant_cm / 100
+                    plants_per_row = max(1, int(usable_length / plant_spacing_m)) if plant_spacing_m > 0 else 0
+                    total_plants = total_rows * plants_per_row
             else:
                 field_length_m = round(math.sqrt(area_sqm), 1) if area_sqm > 0 else 0
                 field_width_m = field_length_m
                 total_rows = 0
                 plants_per_row = 0
+                total_plants = int(plants_per_acre * area)
+                headland_m = 0.0
 
             # Determine bed type
             bed_type = _get_bed_type(planting_pattern, category)
@@ -314,8 +427,11 @@ class FieldLayoutAgent(BaseAgent):
             # Planting tip
             planting_tip = _PLANTING_TIPS.get(category, "Follow local best practices for this crop.")
 
-            # Seed rate hint from spacing notes
-            seed_rate_hint = spacing_notes if spacing_notes else ""
+            # Seed rate hint
+            if is_broadcast:
+                seed_rate_hint = f"Broadcast/line sow at {seed_rate_kg:.0f} kg/acre"
+            else:
+                seed_rate_hint = spacing_notes if spacing_notes else ""
 
             blocks.append(FieldBlock(
                 crop_id=entry.crop_id,
@@ -336,6 +452,10 @@ class FieldLayoutAgent(BaseAgent):
                 irrigation_method=irrigation_method,
                 companion_crops=companions,
                 planting_tip=planting_tip,
+                is_broadcast=is_broadcast,
+                seed_rate_kg_per_acre=seed_rate_kg,
+                headland_m=headland_m,
+                spacing_source=spacing_source,
             ))
 
         # Overall field notes

@@ -1,0 +1,382 @@
+state,season,crop_name,sub_region,pest_or_disease_name,type,monitor_start_month,monitor_end_month,chemical_control,bio_control,threshold_note
+Andaman and Nicobar Islands,kharif,Rice,,neem-based formulations,pest,,,"neem-based formulations @ 0.5% or 5 ml/L, 2-3 times",,Use neem-based formulations for pest control
+Andaman and Nicobar Islands,kharif,Coconut,,rhinoceros beetle,pest,,,,pheromone or bio-traps,Place naphthalene balls (10 g/palm) in leaf axils
+Andaman and Nicobar Islands,kharif,Coconut,,"bud rot, stem bleeding",disease,,,1% Bordeaux mixture spray,,Improve drainage conditions
+Andaman and Nicobar Islands,kharif,Arecanut,,"fruit borer, whiteflies, sucking pests",pest,,,neem oil @ 5 ml/L,pheromone and sticky traps,Monitor regularly
+Andaman and Nicobar Islands,kharif,Arecanut,,fungal diseases,disease,,,copper oxychloride as per symptoms,,Ensure proper drainage
+Andaman and Nicobar Islands,kharif,Black Pepper,,foliar diseases,disease,,,1% Bordeaux mixture and neem oil @ 5 ml/L,Trichoderma and Pseudomonas fluorescens (bio-control agents),
+Andaman and Nicobar Islands,kharif,Sweet Potato,,sweet potato weevil,pest,,,,pheromone traps (one trap/100 m² area),
+Andaman and Nicobar Islands,kharif,Elephant Foot Yam,,common pests and diseases,pest,,,neem-based products and Trichoderma formulations,,
+Andaman and Nicobar Islands,kharif,Elephant Foot Yam,,common pests and diseases,disease,,,neem-based products and Trichoderma formulations,,
+Andaman and Nicobar Islands,kharif,Taro,,rhizome rot,disease,,,,Trichoderma for seed treatment,
+Andhra Pradesh,kharif,paddy,,Brown Plant Hopper,pest,,,,,BPH infestation-prone varieties listed; various chemical controls implied
+Andhra Pradesh,kharif,paddy,,False smut,disease,,,"Propiconazole 200 ml per acre twice at booting and 50% panicle emergence, or tebuconazole + trioxystrobin 75 WG 80 g per acre at severe incidence",,
+Andhra Pradesh,kharif,paddy,,Bacterial leaf blight,disease,,,,,"Destroy affected stubbles, judicious nitrogen use, avoid seedling tip clipping and flooded/drying conditions during flowering"
+Andhra Pradesh,kharif,maize,,fall army worm,pest,6,8,"Imidacloprid 17.8 SL 0.3 ml/l at ETL, emamectin benzoate 5SG 0.4 g/l (21-28 DAS), flubendiamide 480SC 0.3 ml/l (36-42 DAS), chlorantraniliprole or spinetoram 0.3 ml/l, thiodicarb 75WP baiting at 45-65 DAS","EPN or Bt spray 2 ml/l (15-21 DAS), Metarhizium anisopliae spray 2 ml/l (30-35 DAS)","Summer ploughing, destruction of eggs, pheromone traps, intercropping with cowpea recommended"
+Andhra Pradesh,kharif,maize,,sucking and leaf eating pests,pest,,,"Imidacloprid 0.3 ml/l water at ETL, quinalphos 2 ml/L and neem oil 5 ml/L at initial and later stages, emamectin benzoate 0.4 g/l water",,
+Andhra Pradesh,kharif,maize,,Tikka leaf spot,disease,,,Chlorothalonil 2 g/l or Hexaconazole 2 ml/l or Tebuconazole 1 ml/l water spray twice at 15 day interval,,
+Arunachal Pradesh,kharif,Rice,,Stem borer,pest,,,,Release of Trichogramma @ 50000/ha 4 times,Clipping of leaf tips at transplanting to remove egg masses
+Arunachal Pradesh,kharif,Finger millet,,Stem borer,pest,,,Spraying 5% Neem Seed Kernel Extract or Azadirachtin 1500 ppm @ 5ml/liter,,
+Arunachal Pradesh,kharif,Finger millet,,Fall Army Worm,pest,,,,FAW pheromone traps @ 12 nos/ha,
+Arunachal Pradesh,kharif,Pumpkin,,Fruit fly,pest,,,Spraying 5% Neem Seed Kernel Extract or Azadirachtin 1500 ppm @ 5ml/liter,Soil application of neem cake @ 100 kg/acre immediately after germination and at flowering,
+Arunachal Pradesh,kharif,Pumpkin,,Blast,disease,,,Spray carbendazim @ 0.1% or tricyclazole @ 0.05%,,
+Arunachal Pradesh,kharif,Pumpkin,,Rust,disease,,,Spray mancozeb @ 0.2%,,
+Arunachal Pradesh,kharif,Black gram,,Yellow mosaic virus,disease,,,Spraying 5% Neem Seed Kernel Extract or Azadirachtin 1500 ppm @ 5ml/liter,,Use yellow sticky traps (5 per acre) to trap whiteflies
+Arunachal Pradesh,kharif,Black gram,,Leaf spot,disease,,,Spray copper oxychloride @ 0.3% (1.8-2.0 kg/ha in 600-700 liters water) at 7-10 day intervals,,
+Arunachal Pradesh,kharif,Tomato,,Early blight and other pathogens,disease,,,,Seed treatment with Trichoderma viride @ 5 g/100 g seed,
+Arunachal Pradesh,kharif,Tomato,,Various pests (moths),pest,,,,Install pheromone traps @ 5/acre; replace lures every 2-3 weeks; garlic chilli extract spray in the evening,
+Arunachal Pradesh,kharif,King chilly,,White fly,pest,,,"Spray neem oil 1500 ppm; if infestation above ETL, spray Buprofezin @ 1 ml/l weekly",,
+Arunachal Pradesh,kharif,Ginger/Turmeric,,Rhizome rot,disease,,,Spray copper oxychloride @ 0.25%,"Spray neem based formulation 3-5 ml/l, Bacillus thuringiensis @ 2 g/l, Metarhizium anisopliae @ 5 ml/l",
+Assam,kharif,king chilly,,white fly,pest,,,Buprofezin @ 1 ml/l weekly if infestation above ETL,neem oil spray (1500 ppm),spray neem oil during initial stage; apply Buprofezin if above ETL
+Assam,kharif,sali rice,,rice stem borer,pest,,,ipronil 5SC @ 1.5-2 ml/l water spray,,
+Assam,kharif,sali rice,,whorl maggot,pest,,,ipronil 5SC @ 1.5-2 ml/l water spray,,
+Assam,kharif,sali rice,,gall midge,pest,,,ipronil 5SC @ 1.5-2 ml/l water spray,,
+Assam,kharif,sali rice,,leaf folder,pest,,,ipronil 5SC @ 1.5-2 ml/l water spray,,
+Assam,kharif,sali rice,,thrips,pest,,,imidacloprid 70 WG @ 0.3 g/l water or thiamethoxam 25 WG @ 0.03 g/l water,,
+Assam,kharif,sali rice,,plant hopper,pest,,,imidacloprid 70 WG @ 0.3 g/l water or thiamethoxam 25 WG @ 0.03 g/l water,,
+Assam,kharif,sali rice,,rice hispa,pest,,,lambda-cyhalothrin 5 EC @ 12.5 g/ha,,
+Assam,kharif,sali rice,,rice blast,disease,,,hexaconazole 5 EC @ 2 g/l water at tillering; two more sprays of ediphenphos @ 1 ml/l at panicle initiation and early panicle emergence,,
+Assam,kharif,pests of maize,,stem borer,pest,,,ipronil 5 SC @ 1.0 kg/ha in 200-250 liters water,,
+Assam,kharif,maize,,fall army worm,pest,,,emamectin benzoate 3% WG + thiamethoxam 12% WG @ 0.1% followed by chlorantraniliprole 18.5% SC @ 0.025% at 7 days interval,,
+Assam,kharif,blackgram,,leaf spot,disease,,,copper oxychloride @ 0.3% (1.8-2.0 kg/ha) every 7-10 days,,
+Assam,kharif,blackgram,,web blight,disease,,,tebuconazole 25 EC @ 0.1% every 10-15 days x 3 times starting at disease appearance,,
+Assam,kharif,blackgram,,"aphids, jassids, flea beetle, pod borers, pod bugs, leaf folder",pest,,,chlorantraniliprole 18.5 SC @ 20 g a.i./ha in 500-700 liters water,,
+Assam,kharif,blackgram,,yellow mosaic virus,disease,,,thiamethoxam 25 WG @ 0.3 g/l to control white fly vector,,Spread checked by controlling white fly
+Bihar,kharif,Paddy,,Yellow stem borer,pest,,,"Cartap Hydrochloride @ 2.0 g/L water twice, 20 days apart",,Clipping terminal shoots before transplanting recommended
+Bihar,kharif,Paddy,,Leaf folder,pest,,,"Cartap Hydrochloride @ 2.0 g/L water twice, 20 days apart",,Clipping terminal shoots before transplanting recommended
+Bihar,kharif,Paddy nursery and other crops,,Grasshopper,pest,,,Cypermethrin 25% EC @1ml/L or Cypermethrin 10% EC @2.5 ml/L or Deltamethrin 2.8% EC @1.5 ml/L; followed by Neem oil @5ml/L after 2-3 days,,
+Bihar,kharif,Maize,,Fall Armyworm,pest,,,Emamectin Benzoate 5 SG at 0.4 g/L after sand application; Thiamethoxam 12.6% + Lambda-Cyhalothrin 9.5% @0.5 ml/L 15 days later,,Apply sand at whorl formation and at 5% damage appearance
+Bihar,kharif,Pigeonpea/Arhar,,Wilt (Fusarium spp.),disease,,,,,Use resistant varieties and practice crop rotation
+Bihar,kharif,Pigeonpea/Arhar,,Podborer (Helicoverpa armigera),pest,,,Spinosad 45 SC @0.3 ml/L or Emamectin Benzoate 5 SG @0.5 g/L at flowering and pod formation stages,,
+Bihar,kharif,Pigeonpea/Arhar,,Sterility Mosaic Virus,disease,,,Remove infected plants; control whitefly using Imidacloprid 17.8 SL @0.5 ml/L,,
+Bihar,kharif,Groundnut,Zones IIIA and IIIB,Leaf spot,disease,,,Mancozeb 75 WP @2.5 g/L,,
+Bihar,kharif,Groundnut,Zones IIIA and IIIB,Aphids,pest,,,Imidacloprid 17.8 SL @0.3 ml/L,,
+Bihar,kharif,Mango,,Mango mealy bug,pest,,,Dimethoate 30 EC @1.0 ml/L or Neem oil @5 ml/L twice at 10-12 days interval followed by two sprays of Planonix @4 ml/10 L water at 10-12 days interval,,To check fruit drop
+Bihar,kharif,Mango,,Fruit borer,pest,,,Chlorpyriphos 50% EC + Cypermethrin 5% EC @2.5 ml/L or Lambda-cyhalothrin 5% EC @0.5 ml/L or Indoxacarb 14.5 SC @0.5-1 ml/L,,
+Bihar,kharif,Mango,,Fruit fly,pest,,,Deltamethrin 2.8 EC @1 ml/L or Spinosad 45 SC @1 ml/L at 15 days interval; set 10 pheromone traps/ha,,
+Bihar,kharif,Mango,,Mango hopper,pest,,,Imidacloprid 17.8 SL @0.5-1 ml/L at 15 days interval,,
+Bihar,kharif,Mango and Papaya,,Anthracnose,disease,,,Carbendazim 50% WP @1 g/L spray during flowering and fruit set stage or rainy season if spots appear,,
+Bihar,kharif,Papaya,,Mealybug,pest,,,Chlorpyrifos 20% EC @2.5 ml/L on base and crown after rains,,
+Bihar,kharif,Guava,,Scale insect,pest,,,Buprofezin 25% SC @1 ml/L spray twice at 15-day interval,,
+Chhattisgarh,kharif,Rice,,Sheath blight,disease,,,Hexaconazole @ 1000 ml/ha,,
+Chhattisgarh,kharif,Rice,,Bacterial Leaf Blight,disease,,,"Mixture of Validamycin @ 1250 ml, Streptomycin @ 30 g, and Potash @ 37.5 kg/ha",,Do not apply/spray urea during this period
+Chhattisgarh,kharif,Rice,,Panicle mite,pest,,,Diafethiuron 50% WP @ 1.2 g/L water + Propiconazole @ 1 ml/L at late tillering,,
+Chhattisgarh,kharif,Rice,,Yellow Stem Borer,pest,,,Fipronil 5% SC @ 1000 ml/ha; destroy egg masses; pheromone traps 5 traps/ha,,Remove 'dead hearts'; monitor regularly
+Chhattisgarh,kharif,Rice,,Leaf folder and army worm caterpillars,pest,,,Fipronil 5% SC @ 1000 ml/ha when larvae population >1 per leaf,,
+Chhattisgarh,kharif,Maize,,Fall Armyworm,pest,5,6,Spinetoram 11.7 SC @ 350 ml/ha or Emamectin Benzoate 5 SG @ 200 g/ha,,"Minimized by crop rotation, dry sowing, and sowing at onset of monsoon"
+Chhattisgarh,kharif,Pigeon Pea,,Phytophthora blight,disease,,,Metalaxyl 4% + Mancozeb 64% WP @ 500 g/ha,,Ensure proper drainage
+Chhattisgarh,kharif,Pigeon Pea,,Pod borer (Helicoverpa),pest,,,Spray Spinosad 45 SC @ 250 ml/ha,,
+Chhattisgarh,kharif,Pigeon Pea,,Aphids/Jassids,pest,,,Spray Imidacloprid 17.8 SL @ 250 ml/ha,,
+Chhattisgarh,kharif,Green Gram,,Yellow Mosaic Virus,disease,,,Seed treatment with Imidacloprid 48% FS at 2 ml/kg seed,,
+Chhattisgarh,kharif,Soybean,,Whitefly,pest,,,Fenitrothion 50 EC at 2000 ml/ha at 15-day intervals,,
+Chhattisgarh,kharif,Soybean,,Leaf hopper,pest,,,Chlorpyrifos 20% EC @ 1500 ml/ha or Dichlorvos 76% EC @ 375 ml/ha or Monocrotophos 36% SL @ 1000 ml/ha,,
+Goa,kharif,mango,,Anthracnose,disease,,,Spray Carbendazim @ 2 g/L on seedlings,,
+Goa,kharif,mango,,Fruit rot,disease,,,Hot water treatment of fruits at 48°C for 1 hour,,
+Goa,kharif,cashew,,Fruit rot,disease,,,Spray 1% Bordeaux mixture,,
+Goa,kharif,cashew,,Cashew Stem and Root Borer (CSRB),pest,,,Apply Fipronil or Imidacloprid on trunk/roots,,
+Goa,kharif,cashew,,Grubs,pest,,,"Remove grubs, apply Chlorpyrifos or Neem oil/neem cake",,
+Gujarat,kharif,Groundnut,South Saurashtra,Collar rot,disease,,,Seed treatment with Fluxapyroxad or Carboxin + Thiram,,
+Gujarat,kharif,Groundnut,South Saurashtra,White grub,pest,,,Seed treatment with Chlorpyriphos or Imidacloprid; soil application of Carbofuran,Metarhizium anisopliae soil application,
+Gujarat,kharif,Groundnut,South Saurashtra,Sucking pests,pest,,,Seed treatment with Imidacloprid; foliar spray with Thiamethoxam,,
+Gujarat,kharif,Groundnut,South Saurashtra,Defoliators,pest,,,"Spray Quinalphos, Chlorpyriphos or Flubendiamide",,
+Gujarat,kharif,Groundnut,South Saurashtra,Collar and stem rot,disease,,,Spray Mancozeb or neem extract at ~75 DAS,,
+Gujarat,kharif,Soybean,,,,,,,,
+Gujarat,kharif,Cotton,,Pink bollworm,pest,6,,Spray Thiodicarb or Quinalphos if ETL crossed,,Monitor from flowering stage
+Gujarat,kharif,Cotton,,Jassid,pest,,,Spray Flonicamid or Dinotefuran,,
+Gujarat,kharif,Cotton,,Leaf spot,disease,,,"Spray Propiconazole, Pyraclostrobin or Azoxystrobin",,
+Gujarat,kharif,Cotton,,Wilt and root rot,disease,,,Seed treatment with Carboxin and Thiram,Beneficial microbes Pseudomonas fluorescens,
+Gujarat,kharif,Pigeon Pea,,Sterility mosaic disease,disease,,,"Spray Propargite, Fenazaquin or Fenpyroximate at 10 ml/10 liters",,Mite transmitted
+Gujarat,kharif,Pigeon Pea,,Powdery mildew,disease,,,"Spray soluble sulfur 80% WP at 30 g or Carbendazim, Hexaconazole, Dinocap at 10 ml/10 liters",,
+Gujarat,kharif,Sesame,,Leaf roller / Capsule borer,pest,,,Spray Neem oil 2% or Spinosad 45 SC at 0.3 ml/liter,,
+Gujarat,kharif,Sesame,,Alternaria leaf spot and Phyllody,disease,,,Remove infected plants; spray Mancozeb 0.2%,,
+Gujarat,kharif,Paddy,South Gujarat,Stem borer,pest,,,Use Chlorantraniliprole or Fipronil,,
+Gujarat,kharif,Paddy,South Gujarat,Leaf folder,pest,,,Use Chlorantraniliprole or Fipronil,,
+Gujarat,kharif,Paddy,South Gujarat,Gall midge,pest,,,Use Chlorantraniliprole or Fipronil,,
+Gujarat,kharif,Paddy,South Gujarat,Sheath blight and blast,disease,,,Spray Tricyclazole or Validamycin,,
+Haryana and Delhi,kharif,Tomato,,Early blight,disease,,,Copper Oxychloride @ 3 g/L or Carbendazim 12% + Mancozeb 63% WP @ 2 g/L,,As symptoms appear
+Haryana and Delhi,kharif,Tomato,,Fruit rot,disease,,,Copper Oxychloride @ 3 g/L or Carbendazim 12% + Mancozeb 63% WP @ 2 g/L,,As symptoms appear
+Haryana and Delhi,kharif,Tomato,,Fruit borer,pest,,,Spinosad 45 SC @ 3 ml/10 litres water,,
+Haryana and Delhi,kharif,Rice,,Rice stem borer and leaf folder,pest,,,"Coragen (Chlorantraniliprole) 18.5 SC @ 150 ml/ha, Fame (Flubendiamide) 480 SC @ 50 ml/ha",,
+Haryana and Delhi,kharif,Rice,,Plant hoppers,pest,,,"Ulala (Thiamethoxam) 50 WG @ 150 g/ha, Osheen (Dinotefuran) 20 SG @ 200 g/ha",,
+Haryana and Delhi,kharif,Rice,,Bacterial Leaf Blight (BLB),disease,,,Nativo (trifloxystrobin + tebuconazole) 75 WG @ 200 g/ha,,
+Haryana and Delhi,kharif,Rice,,Sheath blight,disease,,,Awancer Glow (azoxystrobin 8.3% + mancozeb 66.7%) 75 WG @ 1.5 kg/ha,,
+Haryana and Delhi,kharif,Rice,,Blast,disease,,,Amistar Top (azoxystrobin + difenoconazole) 325 SC @ 500 ml/ha,,
+Haryana and Delhi,kharif,Arhar,,Shoot fly,pest,,,Seed treatment with Slayer (thiamethoxam) 30 FS @ 10 ml/kg seed,,
+Haryana and Delhi,kharif,Arhar,,Grain smut,disease,,,Seed treatment with Sulphur dust @ 4 g/kg seed,,
+Haryana and Delhi,kharif,Jowar,,White Grubs,pest,,,"Apply 0.05% quinalphos 25EC on trees after first, second and third rainfall",,
+Haryana and Delhi,kharif,Jowar,,Downy Mildew,disease,,,Seed treatment with Metalaxyl 35% @ 6 g/kg seed,,To prevent seed-borne infection
+Haryana and Delhi,kharif,Cotton,,Leaf sucking pest & Leaf Curl Virus,pest,,,"Seed treatment with 4 g Thiamethaxom 70 WS/kg seed, spray Thiamethaxom 25 WG @ 0.5g/L water, Profenophos 50 EC @ 1250 ml/ha",Use Neem oil (5 ml/litre) or NSKE 5% every 15 days,Monitor whitefly host plants regularly and remove
+Haryana and Delhi,kharif,Cotton,,"Pink, spotted and American bollworm",pest,,,Proclaim (emamectin benzoate) 5 SG @ 250 g/ha,,
+Haryana and Delhi,kharif,Cotton,,Sterility mosaic virus,disease,,,Remove infected plants early,Neem oil (5 ml/litre) or NSKE 5% every 15 days,Use resistant varieties
+Haryana and Delhi,kharif,Cotton,,Alternaria blight,disease,,,Spray Mancozeb (2.5 g/litre) or Carbendazim (1 g/litre),,Plant on raised beds and use resistant cultivars
+Haryana and Delhi,kharif,Cotton,,Phytophthora blight,disease,,,Seed treatment with Metalaxyl (8 g/kg),,"Maintain good drainage, minimize stem injury, use resistant genotypes"
+Haryana and Delhi,kharif,Groundnut,,Jassid and white fly,pest,,,Apply malathion 50 EC 1.0 litre/ha or dimethoate 30 EC 625 ml/ha in 625 litres water,,
+Himachal Pradesh,kharif,Cluster bean,,Bacterial blight,disease,7,,Two sprays with Streptocycline @ 75g and copper oxychloride @ 500g in 500L water per ha at initiation stage or 55-60 DAS,,
+Himachal Pradesh,kharif,Cluster bean,,"Sucking pests (jassids, aphids, whitefly)",pest,7,,Malathion 50 EC @ 0.75-1.25 ml/L water,,
+Himachal Pradesh,kharif,Maize,,Cutworm and white grubs,pest,5,6,Chlorpyriphos @ 2.0 litre/ha mixed in sandy soil before sowing or cypermethrin 10EC @ 1 ml/l foliar spray,,
+Himachal Pradesh,kharif,Maize,,Fall armyworm,pest,5,6,"Apply flubendamide (Fame), emamectin benzoate, or chlorantraniliprol @ 0.5 ml/L; repeat after 15 days if needed",,If leaves damaged or insect feces seen
+Himachal Pradesh,kharif,Paddy,,Stem borer and leaf folder,pest,6,,Carbofuron granules (furadan 3g) @ 33 kg/ha in standing water 10 days after transplanting or spray Chlorpyriphos @ 3 ml/L or Emamectine Benzoate @ 0.5 g/L,,
+Himachal Pradesh,kharif,Paddy,,Blast and false smut,disease,7,,Spray Copper Oxychloride @ 3g/L or Hexaconazole @ 1 ml/L at panicle initiation stage,,
+Jharkhand,kharif,Paddy,,Chlorosis (iron deficiency),disease,,,Spray 1% ferrous sulphate solution (2.5 kg in 250 liters water) two to three times at weekly intervals,,
+Jharkhand,kharif,Paddy,,Weeds,pest,,,Pendimethalin 2.5 litres/ha within 1-2 days of sowing; Bispyribac 250 ml/ha 20-25 days after sowing,,
+Jharkhand,kharif,Maize,,Termites,pest,,,Use Methyl Parathion 2% dust 25 kg/ha in soil during land preparation,,
+Jharkhand,kharif,Maize,,Early-stage pests,pest,,,Apply 10-15 granules of Fipronil 0.3G or Carbofuran 3G per plant two weeks after germination,,
+Jharkhand,kharif,Maize,,Fall Armyworm,pest,,,Spray Emamectin Benzoate 5% SG at 1 g per 3 litres water,,
+Jharkhand,kharif,Pulses,,White powdery fungal growth,disease,,,Carbendazim 50% WP @ 1 g/l or Tebuconazole 25% EC @ 1 ml/l water,,Apply at first sign or preventively
+Jharkhand,kharif,Chickpea,,"Blight (Alternaria, Cercospora spp.)",disease,,,Mancozeb 75% WP @ 2.5-3 g/l or Copper oxychloride 50% WP @ 2.5-3 g/l,,Apply when symptoms appear
+Jharkhand,kharif,Pulses,,Aphids (Aphis craccivora),pest,,,Imidacloprid 17.8% SL @ 0.5 ml/l or Thiamethoxam 25% WG @ 0.3 g/l,,
+Jharkhand,kharif,Pulses,,Podborer (Helicoverpa armigera),pest,,,Spray Spinosad 45 SC @ 0.3 ml/l or Emamectin Benzoate 5 SG @ 0.5 g/l at flowering and pod formation,,
+Jharkhand,kharif,Groundnut,,Rust (Puccinia arachidis),disease,,,Propiconazole 25% EC at 1 ml/l as foliar spray during early flowering or symptom appearance,,
+Jharkhand,kharif,Groundnut,,Bihar hairy caterpillar,pest,,,"Pluck affected leaves and bury; if severe, spray Indoxacarb 15.8 SC at 10 ml/l",,Early stage leaf plucking recommended
+Jharkhand,kharif,Groundnut,,Tikka disease or brown spots,disease,,,Spray Dithane M-45 at 1.25 kg/ha,,
+Karnataka,kharif,Lac crop (Kusum tree),,Enemy insects (insect infestation),pest,,,Spray Spinosad 2.5% SC 20 ml or Carbendazim 10 g or Hexaconazole 10 ml in 10 L water after 90-95 days of infestation,,Spray from the day of insect infestation
+Karnataka,kharif,Okra,,Yellow Vein Mosaic disease,disease,,,Spray Thiamethoxam 25 WG at 100 g/ha,,Remove and destroy affected plants as soon as symptoms appear
+Karnataka,kharif,Cucurbits,,Red beetle,pest,,,Apply Chlorpyriphos 2% dust @ 20 kg/ha near root zone,Ash dust with kerosine oil on plants and near root zone,
+Karnataka,kharif,Cucurbits,,Fruit fly,pest,,,Spray Malathion 50% EC + Jaggery 5% at 2 ml/l + 50 g jaggery pot spray at fruiting,,
+Karnataka,kharif,Cucurbits,,Powdery Mildew,disease,,,Spray Hexaconazole 5% EC @ 1 ml/l at disease onset,,
+Karnataka,kharif,Ridge gourd,,Leaf spot,disease,,,Spray Indoil M-45 3.5 ml per 1 L water,,
+Karnataka,kharif,Brinjal,,Wilting,disease,,,Spray Streptocycline 1 g + copper oxychloride 30 g in 30 L water on root zone,,
+Karnataka,kharif,Tomato,,Wilting,disease,,,Spray Streptocycline 1 g + copper oxychloride 30 g in 30 L water on root zone,,
+Karnataka,kharif,Brinjal,,Leaf spot,disease,,,Spray Mancozeb 75% WP @ 2.5 g per litre water,,
+Karnataka,kharif,Tomato,,Leaf spot,disease,,,Spray Mancozeb 75% WP @ 2.5 g per litre water,,
+Karnataka,kharif,Brinjal,,Fruit and shoot borer,pest,,,Foliar spray Emamectin benzoate 5% SG @ 0.4 g/l or Spinosad 45% SC @ 0.3 ml/l or Coragen 20 SC @ 60 ml in 200 L water/acre every 10-15 days after flowering,,
+Karnataka,kharif,Tomato,,Fruit and shoot borer,pest,,,Foliar spray Emamectin benzoate 5% SG @ 0.4 g/l or Spinosad 45% SC @ 0.3 ml/l or Coragen 20 SC @ 60 ml in 200 L water/acre every 10-15 days after flowering,,
+Karnataka,kharif,Chilli,,Leaf curl virus (vector: Whitefly),disease,,,Spray Imidacloprid 17.8% SL @ 0.3 ml per litre,,
+Karnataka,kharif,Capsicum,,Leaf curl virus (vector: Whitefly),disease,,,Spray Imidacloprid 17.8% SL @ 0.3 ml per litre,,
+Karnataka,kharif,Okra,,Tobacco vein mosaic virus (TVMV),disease,,,Spray Imidacloprid 17.8% SL @ 0.3 ml per litre,,
+Karnataka,kharif,Various fruits,,Anthracnose / Fruit Rot,disease,,,Spray Carbendazim 50% WP @ 1 g per litre water and repeat after 10 days,,
+Karnataka,kharif,Paddy,Karnataka,Blast,disease,,,Spray Saaf 2 g/litre water,,Seed treatment with Carbendazim 50 WP at 2 g/kg seed
+Karnataka,kharif,Paddy,Karnataka,Stem borer,pest,,,Spray Coragen 0.5 g/litre water,,
+Karnataka,kharif,Maize,Karnataka,Stem borer,pest,,,Spray Chlorpyriphos 20 EC at 2 ml/litre or apply Fipronil 0.3G at 10 kg/acre,,Clip terminal leaf during transplanting
+Karnataka,kharif,Maize,Karnataka,Leaf folder,pest,,,Spray Flubendiamide 48 SC at 0.08 ml/litre,,
+Karnataka,kharif,Maize,Karnataka,Gall midge,pest,,,Spray Chlorpyriphos,,
+Karnataka,kharif,Maize,Karnataka,Brown plant hopper and case worm,pest,,,Soil application of Carbofuran 10% granules at 5 kg or 3G at 8 kg per acre,,
+Karnataka,kharif,Maize,Karnataka,Blast,disease,,,Spray Tricyclazole 75 WP at 0.6-1 g/litre or Propiconazole 25 EC at 1 ml/litre; seed treatment with Carbendazim,,
+Karnataka,kharif,Maize,Karnataka,Brown leaf spot,disease,,,Spray Carbendazim at 1 g/litre,,
+Karnataka,kharif,Maize,Karnataka,Bacterial blight,disease,,,Apply copper oxychloride 50 g + Streptocycline 25 g per acre,,
+Karnataka,kharif,Maize,Karnataka,Udubatta disease,disease,,,Seed treatment with Carbendazim 50 WP at 4 g/kg,,
+Karnataka,kharif,Maize,Karnataka,Fall army worm,pest,5,7,Seed treatment with Chlorantraniliprole 0.4 ml/kg; spray Emamectin benzoate 5 SG 0.2-0.3 g/l; Chlorantraniliprole 18.5 SC 0.2-0.3 ml/l; pheromone traps 10/ha,Nomuraea rileyi or Beauveria bassiana at 10 g/litre,
+Karnataka,kharif,Maize,Karnataka,Aphids,pest,,,Apply Azadirachtin 300 ppm at 5 ml/litre,,
+Karnataka,kharif,Maize,Karnataka,Early armyworm attack,pest,,,Spinetoram 11.7% SC at 0.5 ml/litre applied at 15-20 DAS,,
+Kerala,kharif,Banana,,Rhizome Weevil,pest,,,Treat rhizomes with 20% Neem Seed Kernel Extract,,
+Kerala,kharif,Banana,,Leaf-Eating Caterpillars,pest,,,Apply 2.5 ml Chlorpyriphos per liter of water,,
+Kerala,kharif,Banana,,Thrips,pest,,,Use 0.3 ml Imidacloprid or 1.5 ml Dimethoate per liter,,
+Kerala,kharif,Banana,,Leaf Spot Disease,disease,,,Spray 1 ml Propiconazole per liter of water,,
+Kerala,kharif,Banana,,Nematode infestation,pest,,,,"Apply Pseudomonas 12 g, Pachelomyces 12 g and Neem Cake 500 g combined",
+Kerala,kharif,Cashew,,Tea mosquito bug,pest,,,Spray Lambda Cyhalothrin 0.5 ml/liter or Quinolphos 1 ml/liter,,
+Kerala,kharif,Cashew,,Leaf Spot,disease,,,Spray COC 50 WP 3 g/liter,,
+Kerala,kharif,Cashew,,Stem borers,pest,,,Swab with 2% COC solution and 2 ml Chlorpyriphos 20 EC,,
+Kerala,kharif,Arecanut,,Bud rot,disease,,,"Spray 1% Bordeaux mixture, 0.3% Copper Oxychloride, or 0.2% Metalaxyl + Mancozeb 72WP before monsoon and repeat after 30-45 days",,
+Kerala,kharif,Arecanut,,Leaf spot,disease,,,,,
+Kerala,kharif,Arecanut,,Collar rot,disease,,,,,
+Kerala,kharif,Arecanut,,Crown rot,disease,,,,,
+Kerala,kharif,Arecanut,,Foot rot,disease,,,,,
+Kerala,kharif,Arecanut,,Yellow leaf disease,disease,,,,,
+Kerala,kharif,Arecanut,,Spindle bug,pest,,,,,
+Kerala,kharif,Arecanut,,Pentatomid bug,pest,,,,,
+Kerala,kharif,Arecanut,,Red palm weevil,pest,,,,,
+Kerala,kharif,Arecanut,,Mites,pest,,,,,
+Kerala,kharif,Arecanut,,Root grubs,pest,,,,,
+Kerala,kharif,Arecanut,,Inflorescence caterpillar,pest,,,,,
+Kerala,kharif,Arecanut,,Ambrosia beetle,pest,,,,,
+Kerala,kharif,Arecanut,,Red mite,pest,,,Spray wettable sulphur (80%) at 0.4%,,
+Kerala,kharif,Rice,,Rice stem borer,pest,,,,Release Trichogramma japonicum 2 cc/acre for six weeks starting 1 week after transplanting,
+Kerala,kharif,Rice,,Rice leaf folder,pest,,,,Release Trichogramma chilonis 2 cc/acre for six weeks starting 3 weeks after transplanting,
+Kerala,kharif,Rice,,Brown plant hopper,pest,,,,,"Avoid close planting, provide alley ways and apply nitrogen in split doses"
+Kerala,kharif,Rice,,Bacterial leaf blight,disease,,,Apply bleaching powder 2 kg/acre in small pouches in standing water; streptocyclin 40 g/acre in severe cases,,
+Kerala,kharif,Rice,,False smut,disease,,,Spray Propiconazole 25 EC at booting stage prophylactically,,
+Ladakh,kharif,Finger Ginger,,Wilt,disease,,,Drench soil with Cheshunt compound or 1% Bordeaux Mixture,,
+Ladakh,kharif,Finger Ginger,,Rhizome Rot,disease,,,Drench soil with Cheshunt compound or 1% Bordeaux Mixture,,
+Ladakh,kharif,Turmeric,,,,,,,,
+Ladakh,kharif,Wheat,,Loose Smut,disease,,,Hot water treatment of seeds; rough out infected tillers,,
+Ladakh,kharif,Onion,,Pod Borers,pest,,,Neem oil 2%,,
+Ladakh,kharif,Onion,,Powdery Mildew,disease,,,Wettable sulphur at 1 gm/L,,
+Ladakh,kharif,Pea,,Diamond Back Moth,pest,,,Spray Bt @ 1 ml/L,,Install pheromone traps; use mustard as trap crop
+Ladakh,kharif,Pea,,Aphid,pest,,,Spray neem oil @ 5 ml/L,,"Remove weeds, balance nutrition and maintain ventilation"
+Ladakh,kharif,"Cabbage, Cauliflower, Broccoli",,Diamond Back Moth,pest,,,Spray Bt @ 1 ml/L,,Install pheromone traps; use mustard as trap crop
+Ladakh,kharif,"Cabbage, Cauliflower, Broccoli",,Aphid,pest,,,Spray neem oil @ 5 ml/L every 5 days if severe,Compost tea sprays,"Remove weeds, balance nutrition, maintain ventilation"
+Ladakh,kharif,Apricot,,Wilt or Rhizome Rot,disease,,,Not specified,,
+Ladakh,kharif,Apple,,Codling Moth,pest,9,11,,Use pheromone traps; orchard sanitation,Pick dropped fruits; bur lapping trunks in autumn
+Ladakh,kharif,Apple,,Woolly Apple Aphid,pest,,,,Spray neem @ 5 ml/L fortnightly,
+Ladakh,kharif,Apple,,Brown Tail Moth,pest,12,2,,,Prune twigs with nests during winter; avoid direct contact with larvae
+Ladakh,kharif,Apple,,Gypsy Moth,pest,,,,,Bur lapping trunks
+Ladakh,kharif,Apple,,Aphids,pest,,,Spray neem oil @ 5 ml/L,,Prophylactic spray in infestation prone areas
+Lakshadweep,kharif,coconut,,Rhinoceros beetle,pest,,,Apply 250g sand with 4 naphthalene balls in crown and hook out beetle,,
+Lakshadweep,kharif,coconut,,bud rot,disease,,,Drench crown with Bordeaux mixture,,
+Lakshadweep,kharif,banana,,rhizome weevil,pest,,,"Spray neem-garlic emulsion, neem oil and garlic emulsion 6ml/litre",,
+Lakshadweep,kharif,banana,,pseudo stem weevil,pest,,,,,"Use healthy planting materials, soak rhizome in cow dung slurry and dry."
+Lakshadweep,kharif,vegetables,,Root Knot Nematode,pest,,,,Apply neemcake 1kg/plant,
+Lakshadweep,kharif,vegetables,,Powdery mildew,disease,,,Spray Bordeaux mixture 1%,,
+Lakshadweep,kharif,vegetables,,fruit rot,disease,,,,Soil drenching with Trichoderma 10g/l,
+Madhya Pradesh,kharif,Rice,,Stem borer,pest,6,8,Profenofos 40% + Cypermethrin 4% @ 1000 ml/ha or Chlorantraniliprole 18.5 SC @ 200 ml/ha,"Release Trichogramma cards @ 50,000-75,000/ha at 21, 30, 45 days after transplanting",
+Madhya Pradesh,kharif,Rice,,Leaf folder,pest,6,8,,"Release Trichogramma cards @ 50,000-75,000/ha at 21, 30, 45 days after transplanting",
+Madhya Pradesh,kharif,Rice,,Brown plant hopper,pest,,,Imidacloprid 17.8% SC @ 250 ml/ha; Dinotefuran 10% + Pymetrozine 40% WG @ 250 g/ha if severe,,Spray if population exceeds economic threshold
+Madhya Pradesh,kharif,Rice,,Blast disease,disease,,,Seed treatment with Tricyclazole @ 2 g/kg and Propiconazole 25 EC spray @ 500 ml/ha,,
+Madhya Pradesh,kharif,Rice,,Sheath blight,disease,,,Spray Trifloxystrobin 25% + Tebuconazole 50% @ 0.5 g/L or Carbendazim 50% WP @ 2 g/L and repeat after 12-15 days if necessary,,
+Madhya Pradesh,kharif,Maize,,Fall Armyworm,pest,5,6,Spray Spinetoram 11.7 SC @ 350 ml/ha or Emamectin Benzoate 5 SG @ 200 g/ha,,
+Madhya Pradesh,kharif,Maize,,Leaf blight,disease,,,Spray Mancozeb 75 WP @ 1000 g/ha,,
+Madhya Pradesh,kharif,Green gram,,Yellow mosaic virus,disease,,,Seed treatment with Imidacloprid 48% FS at 2 ml/kg seed,,
+Madhya Pradesh,kharif,Soybean,,Stem fly,pest,,,Seed treatment with Thiamethoxam 30 FS @ 10 ml/kg seed,,
+Madhya Pradesh,kharif,Tomato,,Early blight and fruit rot,disease,,,Spray Copper Oxychloride @ 3 g/L or Metalaxyl 4% + Mancozeb 64% WP @ 1.5 g/L,,
+Madhya Pradesh,kharif,Brinjal,,Fruit and shoot borer,pest,,,Spray Lambda Cyhalothrin 10 WP @ 1.25 g/L or Emamectin Benzoate 5% SG @ 150-200 g/ha,Spray Beauveria bassiana or Metarhizium anisopliae @ 1.5 L/ha,
+Madhya Pradesh,kharif,Chili,,Leaf spot disease,disease,,,Spray Chlorothalonil 75% WP @ 2 g/L every 15 days,,
+Madhya Pradesh,kharif,Vegetables,,"Sucking pests (mites, jassids, leaf hoppers)",pest,,,Spray Neem oil @ 5 ml/L at regular intervals,,
+Madhya Pradesh,kharif,Ginger and Turmeric,,Shoot borer,pest,,,Spray Emamectin Benzoate 5% SG @ 150-200 g/ha,,
+Madhya Pradesh,kharif,Ginger and Turmeric,,Leaf spot,disease,,,Spray Carbendazim 12% + Mancozeb 63% @ 2.5 g/L at 15 days interval,,
+Maharashtra,kharif,Maize,Vidarbha,Fall Armyworm,pest,6,7,seed treatment with Cyantraniliprole + Thiamethoxam; Emamectin or NPV sprays if necessary,,
+Maharashtra,kharif,Cotton,Vidarbha,"Jassid, Thrips, Aphids, Mites",pest,5,9,Dimethoate 30 EC (10 ml/10 L) or Acetamiprid 20 SP (1.5 g/10 L),,
+Maharashtra,kharif,Cotton,Vidarbha,Whiteflies,pest,5,9,Dimethoate 30 EC (33 ml/10 L),,Use yellow sticky traps (5 per acre)
+Maharashtra,kharif,Cotton,Vidarbha,Bollworms,pest,5,9,"Quinalphos, Spinosad, or Cypermethrin",,
+Maharashtra,kharif,Cotton,Vidarbha,Pink Bollworm,pest,5,9,,,"Use pheromone traps, Neemark 300 ppm, deep ploughing, heat treatment; suggest 30 yellow sticky traps and 2-3 light or pheromone traps per gin"
+Maharashtra,kharif,Cotton,Vidarbha,Bacterial leaf blight,disease,5,9,seed treatment with Carboxin (1 g) and Thiram (3 g/kg),,
+Maharashtra,kharif,Cotton,Vidarbha,Grey mildew,disease,5,9,wettable sulphur (25 g/10 L) or Carbendazim (10 g/10 L),,
+Maharashtra,kharif,Cotton,Vidarbha,Myrothecium,disease,5,9,"Copper oxychloride (0.3%), Carbendazim (0.1%), Mancozeb (0.25%)",,
+Maharashtra,kharif,Cotton,Vidarbha,Alternaria,disease,5,9,seed treatment and Mancozeb (0.2%) sprays every 20 days,,
+Maharashtra,kharif,Cotton,Vidarbha,Para wilt,disease,5,9,drench with 25 g Copper oxychloride and 150 g urea in 10 L water,,
+Maharashtra,kharif,Soybean,Vidarbha,Early shoot borer,pest,6,7,Chlorpyrifos 20 EC (5 ml/L),"Release Trichogramma at 50,000/ha/week",Remove affected shoots
+Maharashtra,kharif,Soybean,Vidarbha,Internode borer,pest,6,7,Cartap hydrochloride 4G (10 kg/ha),Trichogramma release,
+Maharashtra,kharif,Soybean,Vidarbha,White grub,pest,6,7,Phorate 10G (25 kg/ha) in moist soil,,
+Maharashtra,kharif,Sugarcane,Vidarbha,Red rot,disease,6,7,Fungicide treatment with Carbendazim 0.1%,,Use resistant varieties and remove infected clumps
+Maharashtra,kharif,Sugarcane,Vidarbha,Smut,disease,6,7,Hot water treatment (50°C for 30 minutes) or fungicide dips,,Use disease-free setts
+Maharashtra,kharif,Sugarcane,Vidarbha,Wilt,disease,6,7,,,Use resistant varieties and crop rotation
+Manipur,kharif,Paddy,,stem borer,pest,6,10,Quinalphos 25 EC or Profenophos 50 EC 1000 ml/ha,Trichogramma japonicum and T. chilonis release at 1 lakh/ha,Apply upon appearance of yellow stem borer and leaf folder eggs/moths
+Manipur,kharif,Paddy,,leaf folder,pest,6,10,Fenitrothion 50 EC or Quinalphos 25 EC 1000 ml/ha,Conserve natural enemies,Based on economic thresholds
+Manipur,kharif,Paddy,,gall midge,pest,6,7,Phorate 10G or Carbofuran 3G 1.5 kg a.i/ha within 10 days of sowing,,
+Manipur,kharif,Paddy,,blast,disease,6,9,Zineb 2 kg/ha or Copper Oxychloride 1.25 kg/ha in 500 liters water,,
+Manipur,kharif,Finger Millet,,blast,disease,6,9,Mancozeb 0.2% spray,,Spray at early crop stages if symptoms appear
+Manipur,kharif,Finger Millet,,brown spot,disease,6,9,Mancozeb 0.2% spray,,Spray at early crop stages if symptoms appear
+Manipur,kharif,Finger Millet,,armyworm,pest,6,9,Thiamethoxam 5 g/15 liters water,,Apply for protection
+Manipur,kharif,Blackgram,,pod borer,pest,6,9,,,"Manage by deep summer ploughing, use FYM/compost"
+Manipur,kharif,Blackgram,,aphids,pest,6,9,Dimethoate 30 EC @1ml/l or Imidacloprid 17.8 SL @0.5ml/l,,Install yellow sticky traps @10 traps/ha
+Manipur,kharif,Groundnut,,seed/soil borne diseases,disease,5,6,Seed treatment with Dithane M-45 or Thiram 3 g/kg,,
+Meghalaya,kharif,Paddy,,Stem borer,pest,,,,Release Trichogramma japonicum 50000 eggs/ha at 35 DAT,
+Meghalaya,kharif,Paddy,,Leaf folder,pest,,,Spray Beauveria bassiana 7 g/L at boot leaf stage,,
+Meghalaya,kharif,Paddy,,Various pests,pest,,,Neem oil spray 3 ml/L at 10 DAT,,
+Meghalaya,kharif,Maize,,Fall Army Worm (FAW),pest,,,Spray neem oil 1500 ppm; dry soil application in whorl,Release Trichogramma pretiosum 50000 eggs/ha; spray Metarhizium anisopliae 5 g/L at 15-25 days after planting,
+Meghalaya,kharif,Ginger,,Rhizome rot,disease,,,Spray neem oil 2000 ppm 2 ml/L,Spray Trichoderma viride or harzianum 10 ml/L,Preventive measure
+Mizoram,kharif,maize,,Fall Armyworm,pest,5,5,"Spray Emamectin Benzoate 0.4 ml/l, Spinosad 3 ml/l, Spinetoram 0.5ml/l, Lambda-Cyhalothrin + Thiamethoxam 0.25 ml/l, Chlorantraniliprole 18.5% SC 0.4 ml/l",,Avoid chemical sprays once tasselling begins; ash or soap water spray in whorls as alternative
+Mizoram,kharif,upland paddy,,"fungal diseases (Leaf Blight, Leaf Spot, Seedling Rot, Frog eye spot, Rust)",disease,,,Seed treatment with Carbendazim 2-3 g/kg seed,,
+Mizoram,kharif,lowland paddy,,"Leaf folder, stem fly, semilooper",pest,,,Spray Nuvacron 1.25 ml/l or Dimethoate 0.04%,Seed treatment with Imidachloprid 7 g/kg seed,
+Mizoram,kharif,soybean,,Gundhi bug,pest,,,,"Use neem-based biopesticides, release Trichogramma egg parasitoids, yellow sticky traps; conserve spiders, dragonflies, ladybugs",Deploy 100 rotten crab funnel traps per hectare during critical milking stage
+Mizoram,kharif,groundnut,,Blister beetles,pest,6,,Spray Dichlorvos 2 ml/l during flowering and monthly from 30 DAS,,
+Mizoram,kharif,groundnut,,fungal diseases (seedling rot etc.),disease,,,Seed treatment with Bavistin 5 g/kg seed; monthly sprays of Dichlorvos 2 ml/l + Bavistin 2 g/l from 30 DAS,,
+Mizoram,kharif,tomato,,late blight,disease,,,Spray Mancozeb 0.25%,,
+Mizoram,kharif,tomato,,bacterial wilt,disease,,,Spray Streptomycin 200 ppm,,
+Mizoram,kharif,tomato,,fungal wilt,disease,,,Spray Captan 0.3%,,
+Nagaland,kharif,Paddy,,Leaf hopper,pest,6,,Spray Diamethoate 0.05%,,
+Nagaland,kharif,Paddy,,Cutworms,pest,6,,Drench soil with Chlorpyriphos 0.1%,,
+Nagaland,kharif,Paddy,,Stem borer,pest,6,,,Release Trichogramma spp. @ 50000/ha one month after transplanting and 3-4 releases at fortnightly intervals,
+Nagaland,kharif,Paddy,,Gundhi bug,pest,,,,,Monitor and manually collect nymphs at tillering stage using sweep nets
+Nagaland,kharif,Paddy,,Blast disease,disease,,,"Apply copper oxychloride 0.25% @ 2.5 g/L water, repeat every 7-10 days until subsided",Treat seeds with Pseudomonas fluorescens and Trichoderma viride @ 10 g/kg seed,Ensure field sanitation
+Nagaland,kharif,Maize,,Fall Armyworm,pest,6,,"Spray Spinosad 0.3 ml/L, Bacillus thuringiensis var. kurstaki 2 g/L, prepare poison bait with rice bran, jaggery, Thiodicarb",Spray Metarhizium anisopliae 5 g/L at 15-25 DAS and 1-2 sprays at 10-day intervals; use NSKE 5% or neem 4 ml/L; use pheromone traps @ 15/acre,Hand-pick and destroy egg masses and larvae; apply sand or ash in whorls
+Nagaland,kharif,Millet,,Neck and finger blast,disease,,,,Spray Pseudomonas fluorescens twice; once at flowering and again 10 days later,Field sanitation and timely removal of diseased plants
+Nagaland,kharif,Turmeric,,Rhizome Rot disease,disease,,,,Apply Trichoderma harzianum to soil every 10-15 days during early crop stage; spray Pseudomonas fluorescens @ 5 g/L every 15 days,Maintain raised beds/ridges and good drainage; use mulch and neem cake (2-5 t/ha)
+Nagaland,kharif,Khasi Mandarin,,Trunk borer,pest,3,5,Inject 5 mL of 0.2% Dichlorvos solution or cotton swab soaked in petrol; apply Bordeaux paste on trunk up to 60 cm height; foliar spray Bavistin 1g/L + Monocrotophos 1 mL/L on new flushes,,Clean infested holes before treatment; mulching to conserve moisture
+Nagaland,kharif,Khasi Mandarin,,Bark-eating caterpillars,pest,,,Inject 0.1% Dichlorvos into tunnels,,
+Odisha,kharif,rice,,yellow stemborer,pest,,,Install pheromone traps with scirpolure 5 no./ha; spray Copper oxychloride 3 g/l water,Tricho cards (50000 eggs/ha) released 4 times,
+Odisha,kharif,green gram,,yellow mosaic vein virus,disease,,,Seed treatment with Thiamethoxam 30 FS or Imidachloprid 600 FS @ 5 ml/kg seed; neem oil 1500 ppm @ 1500 ml/ha alternately with Flonicamide @ 120 g/ha,Installation of yellow sticky traps 50 no./ha at 30 DAS,
+Odisha,kharif,black gram,,yellow mosaic vein virus,disease,,,Seed treatment with Thiamethoxam 30 FS or Imidachloprid 600 FS @ 5 ml/kg seed; neem oil 1500 ppm @ 1500 ml/ha alternately with Flonicamide @ 120 g/ha,Installation of yellow sticky traps 50 no./ha at 30 DAS,
+Odisha,kharif,groundnut,,tobacco caterpillar,pest,,,Spray Indoxacarb + Nuvaluron @ 625 ml/ha or Chlorpyriphos 50% + Cypermethrin 5% EC @ 1000 ml/ha or Fipronil 5SC @ 1000 ml/ha,,
+Odisha,kharif,sugarcane,,top shoot borer,pest,,,Spray Lambda cyhalothrin @ 2 ml/L water,,
+Odisha,kharif,sugarcane,,red rot,disease,,,Sett treatment with Azoxystrobin 18.2% + Difenconazole 11.4% @ 0.1% per kg sett,,Avoid ratooning in affected areas
+Odisha,kharif,brinjal,,fruit and shoot borer,pest,,,"Alternate spraying of Chlorantraniliprole 18.5% SC @ 180 ml/ha, Emamectin benzoate 5 SG @ 200 g/ha, Fenpropathrin 30% EC @ 165 ml/ha, Spinosad 45% SC @ 175 ml/ha",,
+Odisha,kharif,cucurbits,,fruit fly,pest,,,Use food bait @ 100 ml/bait with malathion and install pheromone traps with Cuelure @ 20 nos/ha,,
+Odisha,kharif,vegetables,,sucking insect pests,pest,,,Spray Thiamethoxam 25% WG @ 80 g/ha or Acetamiprid 20 SP @ 125 ml/ha,,
+Odisha,kharif,solanaceous crops,,wilting,disease,,,Spray and soil drenching with 3 g Copper oxychloride + 1 g Plantomycin per litre water,,
+Punjab,kharif,rice,,false smut,disease,,,spray recommended fungicides at boot stage,,
+Punjab,kharif,rice,,foot rot,disease,,,seed treatment with Sprint 75 WS (carbendazim + mancozeb) 3 g per kg seed; seedling root dip with Trichoderma harzianum 15 g per litre water for 6 hours,seed treatment and root dip with Trichoderma harzianum,
+Punjab,kharif,rice,,plant hoppers,pest,,,Avoid synthetic pyrethroids; monitor insect population regularly,,damage detected only after hopper burn
+Rajasthan,kharif,maize,,Termites,pest,5,7,Apply Fipronil 0.3G at 12 kg/ha in seed furrow at sowing,,
+Rajasthan,kharif,maize,,White Grubs,pest,5,7,Apply Fipronil 0.3G at 12 kg/ha in seed furrow at sowing,,
+Rajasthan,kharif,maize,,Downy Mildew,disease,5,7,Treat seeds with Mancozeb 2 kg/ha (seed dressing) before planting,,
+Rajasthan,kharif,maize,,Smut,disease,5,7,Treat seeds with Ceresan or Thiram 1-2 g/kg seed or fine sulphur 4 g/kg,,
+Sikkim,kharif,maize,,cut worm,pest,,,,Mixture of cow urine + water + neem oil (2 litre + 8 litre + 50 ml) @ 100 ml/plant,
+Sikkim,kharif,maize,,fall army worm (FAW),pest,,,Spinosad @ 0.3 ml/litre and neem oil 4 ml/litre spray at 2 weeks interval,,Apply mud slurry in whorl after FAW incidence
+Sikkim,kharif,rice,,general pests,pest,,,"Neem based formulation 15 ppm @ 0.5% or 5 ml/l water, 2-3 times",,
+Sikkim,kharif,ginger,,rhizome rot / soft rot,disease,,,Spray 1% Bordeaux mixture; Drench 0.3% copper oxychloride,,
+Sikkim,kharif,ginger,,shoot borer,pest,,,Spray neem oil @ 3 ml/l or spinosad @ 0.2 ml/l,Beauveria bassiana @ 5 ml/l,
+Sikkim,kharif,spice crops (mandua),,general pests,pest,,,Foliar spray neem-based formulation @ 0.5% or 5 ml/l water weekly,,
+Sikkim,kharif,cherry pepper,,damping off and wilt,disease,,,,Treat seedlings roots with Trichoderma viride and Pseudomonas fluorescens culture @ 10 g/l for 15 min,
+Sikkim,kharif,cherry pepper,,fruit fly,pest,,,,Use 8-12 pheromone traps after fruit set; regular collection and destruction of dropped fruits,
+Tamil Nadu and Puducherry,kharif,Paddy,,Yellow Stem Borer,pest,,,"Emamectin benzoate 5 SG, Chlorantraniliprole 18.5 SC, Flubendiamide 480 SC, Azadirachtin early whorl; Metarhizium anisopliae, Emamectin benzoate, Novaluron, Spinetoram late whorl; Use unused insecticide at tasseling",Telenomus remus release @ 1.25 lakh/ha; Nano-pheromone lure for monitoring and mass trapping,Pheromone traps @ 50/ha and solar traps 1/ha for monitoring
+Tamil Nadu and Puducherry,kharif,Paddy,,Blast Disease,disease,,,Azoxystrobin + Propiconazole @ 500 ml/ha at tillering and booting stages,,
+Tamil Nadu and Puducherry,kharif,Blackgram,,Powdery Mildew and Cercospora Leaf Spot,disease,,,Tebuconazole + Trifloxystrobin 1g/l or Tebuconazole 25 EC 1ml/l at symptom appearance and 15 days later,,
+Tamil Nadu and Puducherry,kharif,Chilli,,Thrips,pest,,,"Azadirachtin 1%, NSKE 5%, 3G extract 5%, five-leaf extract 10%",Bacillus subtilis 0.5%,"IPM module with border cropping, bird perches, sticky and pheromone traps"
+Tamil Nadu and Puducherry,kharif,Cassava,,Mealybug,pest,,,Azadirachtin 0.15% 1.5 L/acre on 60 DAP,Release of Anagyrus lopezi and Apertochrysa astur,IPM module reduces population and increases yield
+Tamil Nadu and Puducherry,kharif,Banana,,Insect pests,pest,5,7,"Emamectin benzoate 5 SG @ 0.4 g/L at 5th, 6th & 7th months via pseudo stem injector",,
+Telangana,kharif,Paddy,,BPH (Brown Plant Hopper),pest,6,,Treat seeds with carbendazim or carbofuran; root dip with Azospirillum and phosphobacteria; spray chemical insecticides as required,,
+Telangana,kharif,Cotton,,Fall Army Worm (FAW),pest,6,7,Spray Chlorantraniliprole 0.4 ml/L or spinetoram 0.5 ml/L or Emamectin benzoate 0.4 g/L,Release egg parasitoids (Trichogramma sp),
+Telangana,kharif,Cotton,,PBW larvae (Pink Bollworm),pest,,,,,Install pheromone traps 8/acre; ETL is 10% damaged flowers
+Telangana,kharif,Redgram,,Pod fly,pest,,,"Spray Thiomethaxam 25 wg @ 0.2 ml/L, Flubendamide 0.2 ml/L with Jaggery 5 g/L at early pod formation",,
+Telangana,kharif,Greengram,,YMV (Yellow Mosaic Virus),disease,,,,,
+Tripura,kharif,maize,,maize stem borer,pest,,,Dimethoate 30 EC 660 ml/ha or Carbaryl 50 WP 1.0 kg/ha,,
+Tripura,kharif,maize,,Fall Armyworm (FAW),pest,,,Emamectin Benzoate 5% SG 600-700 g/ha,,
+Tripura,kharif,paddy,,gundhi bugs,pest,,,Ethofenprox 10EC/Imidacloprid sprays,,
+Tripura,kharif,paddy,,blast disease,disease,,,Hexaconazole at flowering,,
+Tripura,kharif,cucurbits,,melon fly,pest,5,,Spray mixture of 30 ml Malathion and 150 L Gur in 15 L water every 15 days,,Install 25 pheromone traps per hectare in May
+Tripura,kharif,cucurbits,,downy mildew,disease,,,Alternate sprays of Cymoxanil 8% + Mancozeb 64% and Thiaphanate Methyl 70% WP,,
+Tripura,kharif,cucurbits,,fruit fly,pest,,,Use 25 fruit fly traps per hectare,,
+Tripura,kharif,cucurbits,,fungal diseases,disease,,,Spray Bavistin 1 g + Mancozeb 2 g per liter water,,
+Tripura,kharif,cucurbits,,sucking pests,pest,,,Imidacloprid 0.5 ml per liter,,
+Tripura,kharif,paddy,,late blight,disease,,,Mancozeb 75 WP 0.25% solution,,
+Tripura,kharif,paddy,,bacterial wilt,disease,,,Drench soil with Streptomycin 200 ppm,,
+Tripura,kharif,paddy,,fungal wilt,disease,,,Drench soil with Captan 50 WP 0.3%,,
+Uttar Pradesh,kharif,ginger,,soft rot,disease,5,,Spray Neem oil 2 ml/L at 10000 ppm,Dip rhizomes in Trichoderma Viride 4g/L or Trichoderma Harzianum 10ml/L,
+Uttar Pradesh,kharif,direct seeded rice,,stem borer,pest,6,,"Use insecticides Chlorantraniliprole, Flubendiamide, Imidacloprid",,
+Uttar Pradesh,kharif,direct seeded rice,,leaf folder,pest,6,,"Use insecticides Chlorantraniliprole, Flubendiamide, Imidacloprid",,
+Uttar Pradesh,kharif,direct seeded rice,,brown plant hopper,pest,6,,"Use insecticides Chlorantraniliprole, Flubendiamide, Imidacloprid",,
+Uttar Pradesh,kharif,direct seeded rice,,rice blast,disease,6,,Spray Tricyclazole in early stages if symptoms appear,,
+Uttar Pradesh,kharif,direct seeded rice,,sheath blight,disease,6,,Spray Propiconazole in early stages if symptoms appear,,
+Uttar Pradesh,kharif,direct seeded rice,,bacterial leaf blight,disease,6,,,,Grow resistant varieties and improve drainage
+Uttar Pradesh,kharif,puddled transplanted rice,,stem borer,pest,6,9,Apply Cartap hydrochloride 4 G @ 10 kg/ha,,
+Uttar Pradesh,kharif,puddled transplanted rice,,leaf folder,pest,6,9,Spray Chlorantraniliprole @ 150 ml/ha,,
+Uttar Pradesh,kharif,puddled transplanted rice,,grain bugs,pest,6,9,Apply Acephate 75 SP @ 1 g/liter,,
+Uttar Pradesh,kharif,puddled transplanted rice,,blast,disease,6,9,Spray Tricyclazole @ 0.6 g/liter,,
+Uttar Pradesh,kharif,puddled transplanted rice,,brown spot,disease,6,9,Spray Mancozeb @ 2.5 g/liter,,
+Uttar Pradesh,kharif,puddled transplanted rice,,false smut,disease,6,9,Spray Tilt (Propiconazole) @ 1 ml/liter,,
+Uttar Pradesh,kharif,basmati rice,,foot rot,disease,6,,,Seed treatment and root dip with Trichoderma harzianum,
+Uttarakhand,kharif,Rice,,Leaf roller,pest,,,Spray Azadirachtin 0.03% EC 5.0 L/ha,,
+Uttarakhand,kharif,Rice,,Stem borer,pest,,,Spray Iprofenil 5% SC @ 1000-1500 ml/ha; Thiamethoxam 25% WG @ 100 g/ha; Imidacloprid 6% + lambda-cyhalothrin 64% SL @ 300 ml/ha,Bacillus thuringiensis var. kurstaki 2.5% @1.5 kg/ha,
+Uttarakhand,kharif,Rice,,Brown planthopper,pest,,,Spray Iprofenil 5% SC @ 1000-1500 ml/ha; Thiamethoxam 25% WG @ 100 g/ha,,
+Uttarakhand,kharif,Rice,,Leaf folder,pest,,,Spray Thiamethoxam 25% WG @ 100 g/ha,Bacillus thuringiensis var. kurstaki 2.5% @1.5 kg/ha,
+Uttarakhand,kharif,Rice,,White backed plant hopper,pest,,,Spray Iprofenil 5% SC @ 1000-1500 ml/ha; Thiamethoxam 25% WG @ 100 g/ha,,
+Uttarakhand,kharif,Rice,,Green leaf hopper,pest,,,Spray Iprofenil 5% SC @ 1000-1500 ml/ha; Thiamethoxam 25% WG @ 100 g/ha,,
+Uttarakhand,kharif,Rice,,Thrips,pest,,,Spray Thiamethoxam 25% WG @ 100 g/ha,,
+Uttarakhand,kharif,Rice,,Blast disease,disease,,,Spray hexaconazole 5% EC @ 1000 ml/ha or azoxystrobin 18.2% + difenoconazole 11.4% SC @ 500 ml/ha or mancozeb 75 WP 1.5-2.0 kg/ha or isoprothiolane 40% EC 750 ml/ha,Pseudomonas fluorescens 1.5% LF seed treatment and sprays,
+Uttarakhand,kharif,Sheath blight disease,Maize,Sheath blight,disease,,,,Soil application of Trichoderma (Pant Bioagent-1) 1 kg/100 kg vermicompost/FYM 10-15 days before sowing; seed treatment with Trichoderma (Pant Bioagent-1) 20 g/kg seed,
+West Bengal,kharif,Rice,,yellow stem borer,pest,,,Cartap hydrochloride 4 G @ 25 kg/ha at transplanting; chlorantraniliprole 0.4 G @ 10 kg/ha after 18 days of transplanting,,
+West Bengal,kharif,Rice,,brown plant hopper,pest,,,Dinotefuran 20 SG @ 0.25 g/L or buprofezin 25 SC @ 1.5 ml/L as prophylactic,,
+West Bengal,kharif,Rice,,leaf folder,pest,,,Emamectin Benzoate 0.4 g/L,,
+West Bengal,kharif,Rice,,blast,disease,,,Tricyclazole 0.6 g/L,,
+West Bengal,kharif,Rice,,sheath blight,disease,,,Validamycin 2.5 ml/L or cow-based biopesticide (4 L/15 L water),,
+West Bengal,kharif,Rice,,bacterial leaf blight,disease,,,Streptomycin sulphate + Tetracycline combination 300 g + copper oxychloride 1.25 kg/ha,,Repeat spray after 15 days if necessary
+West Bengal,kharif,Maize,,Fall Army Worm,pest,,,"NSKE @ 5 ml/L water at 35-40 DAS or novaluron 5.25% + Emamectin benzoate 0.9% SC @ 40 g a.i./ha at 45 DAS, or Btvarkurstaki @ 2.5 ml/L water at 60 DAS, or spinetoram 11.7 SC @ 35 g a.i./ha at 70 DAS, or chlorantraniliprole 9.5% + lambda cyhalothrin 4.6% ZC @ 85 g a.i./ha at 85 DAS",B. thuringiensis and B. bassiana,Installation of pheromone trap @ 5 per acre at 30 DAS
+West Bengal,kharif,Jute,,jute semilooper,pest,,,Emamectin benzoate and Indoxacarb,B. thuringiensis and B. bassiana,
+West Bengal,kharif,Jute,,stem weevil,pest,,,Cypermethrin 0.03% or quinalphos @ 2 ml/L,,
+West Bengal,kharif,Jute,,yellow mite,pest,,,Dicofol 0.04% or Fenazaquin 0.02%,,
+West Bengal,kharif,Jute,,stem rot,disease,,,Carbendazim @ 2 g/L or Copper oxychloride @ 4 g/L and Mancozeb @ 5 g/L,,
+West Bengal,kharif,Jute,,wilt,disease,,,Validamycin 3% EC @ 2 ml/L water and Streptocyclin @ 1 ml/L water,,
+West Bengal,kharif,Black gram,,weed,pest,,,Pendimethalin @ 2 ml/L pre-emergence herbicide,,Followed by manual weeding at 20-25 days after sowing
+Jammu & Kashmir,Kharif,Rice,Jammu,Blast,disease,,,Spray tricyclazole @ 0.06% or azoxystrobin + difenoconazole @ 0.1% at multiple growth stages,,"Spray at tillering, panicle initiation, booting, milking/dough stages"
+Jammu & Kashmir,Kharif,Rice,Jammu,Stem Borer,pest,,,Apply Cartap hydrochloride 4G (8 kg/acre) in 5-7.5 cm standing water; Cartap hydrochloride 50 SP (240 g/acre) when 5% dead hearts or 1 egg mass/sq.m.,,Do not drain or irrigate for 72 hours after application
+Jammu & Kashmir,Kharif,Maize,Jammu,Blister Beetle,pest,,,Spray acetamiprid 20SP @ 0.2 g/L or chlorpyriphos 20EC @ 480 ml/acre,Manual beetle removal,Adopt trap cropping (okra/arhar)
+Jammu & Kashmir,Kharif,Maize,Jammu,Stem Borer,pest,,,Apply cartap hydrochloride 4G @ 8 kg/acre in whorls,,
+Jammu & Kashmir,Kharif,Maize,Jammu,Cut Worm,pest,,,Apply carbofuran 3% CG @ 32.5 kg/ha before sowing,,Use light and pheromone traps for monitoring; use pitfall traps to destroy larvae
+Jammu & Kashmir,Kharif,Maize,Jammu,Leaf Blight,disease,,,Spray propiconazole @ 0.1%,,Spray at disease onset
+Jammu & Kashmir,Kharif,Mash (Black Gram),Jammu & Kashmir,Yellow Mosaic Virus and sucking pests,disease,,,Spray dimethoate 30 EC @ 1 ml/litre or thiamethoxam @ 0.03%,,Use resistant varieties
+Jammu & Kashmir,Kharif,Brinjal,Jammu & Kashmir,Fruit & Shoot Borer,pest,,,Spray Cypermethrin (1 ml/L) or Melathion 50 EC (2 ml/L); install Ervit lure (5-6/acre),,Mass trapping recommended
+Jammu & Kashmir,Kharif,Chillies,Jammu & Kashmir,Mites,pest,,,Spray dicofol 18.5 EC @ 3 ml/l or wettable sulfur @ 2 ml/l,,Control crinkling due to mite infestation
+Jammu & Kashmir,Kharif,Maize,Rainfed,Armyworm,pest,,,Spray Chlorpyriphos 20 EC @150 ml/100 litres water,,Uproot stubbles of previous crop for management.
+Jammu & Kashmir,Kharif,Rajmash (Kidney Bean),Jammu,Bean common mosaic virus,disease,,,Spray Fenazaquin @1 ml/L on 45 and 60 DAS prophylactically,Rogue out infected plants early growth stages,"Downward curling of foliage, mottling, chlorosis diagnostic."
+Jammu & Kashmir,Kharif,Cowpea,Jammu,Anthracnose,disease,,,Seed treat with Captan 50WP @3 gm/kg; Spray carbendazim + Mancozeb 75WP @0.25%,,Symptoms on immature pods and leaves with brick red veins.
+Jammu & Kashmir,Kharif,Cowpea,Jammu,White Mold,disease,,,,,Light brown water-soaked discoloration and cottony growth on collar region.
+Jammu & Kashmir,Kharif,Cowpea,Jammu,Angular leaf spot,disease,,,,,Circular to angular dark grey to reddish brown leaf spots.
+Jammu & Kashmir,Kharif,Rajmash,Jammu,Rust,disease,,,Spray Propiconazole 25EC @0.1% or Flusilazole 40EC @0.02%,,Rust pustules on leaves and stems causing leaf fall.
+Jammu & Kashmir,Kharif,"Rajmash, Moong, Cowpea",Jammu,Root rot/damping off,disease,,,Seed treatment with Carbendazim 2 g/kg or Thiram 4 g/kg; spot drenching with Carbendazim @1 gm/litre water,Seed treatment with Talc formulation of Trichoderma viride @4 g or P. fluorescens @10 g/kg seed,"Wilting, yellowing, root blackening, vascular discoloration."
+Jammu & Kashmir,Kharif,Apple,Jammu & Kashmir,Apple Blotch Leaf Miner (ABLM),pest,,,Thiamethoxam 25 WG @50g/100L or Imidacloprid 6% + Lambda-Cyhalothrin 4% SL @50ml/100L or Flubendiamide 39.35 SC @40ml/100L,Maintain orchard hygiene; use pheromone traps 1/kanal; sticky traps 10m apart; mass trapping with 2 traps/kanal,Major pest causing damage to apple orchards.
+Jammu & Kashmir,Kharif,Apple,Jammu & Kashmir,Fruit Borer (Helicoverpa armigera),pest,,,Chlorpyriphos 20 EC @100 ml/100 L or Quinalphos 25 EC @100 ml/100 L if 1-2 moths/trap for 5 nights,Destroy infested fruits and larvae; install 8-10 pheromone traps/ha or 1 trap/kanal; mass trapping 2 traps/kanal,Infestation control proactive.
+Jammu & Kashmir,Kharif,Apple,Jammu & Kashmir,Aphids,pest,,,Thiamethoxam 25 WG @50g/100L or Thiacloprid 21.7 SC @40 ml/100 L,,Population can explode - control necessary.
+Jammu & Kashmir,Kharif,Apple,Jammu & Kashmir,San Jose Scale & Wooly Apple Aphid,pest,,,Dimethoate 30 EC or Quinalphos 25 EC @100 ml/100 L,,Significant pests if not controlled.
+Jammu & Kashmir,Kharif,Apple,Jammu & Kashmir,Scab & Foliar Diseases,disease,,,"Preventive: Mancozeb 75 WP@0.3%, Captan 50 WP @0.3%, Zineb 75 WP @0.3%; Curative: Hexaconazole 5 EC @50 ml/100 L or Flusilazole 40 EC @20 ml/100 L",,Apply before onset of rains.
+Jammu & Kashmir,Kharif,Apple,Jammu & Kashmir,Root Rot & Collar Rot,disease,,,Drench tree basin with Carbendazim 50 WP @0.1% or Carbendazim+Mancozeb mix @0.5%; Metalaxyl MZ 72 WP @0.3% or Copper Oxychloride 50 WP @0.6%,,Remove infected soil and expose roots to sunlight; apply Chaubatia or Bordeaux paste on collar.
+Jammu & Kashmir,Kharif,Apple,Jammu & Kashmir,Fabrea leaf & fruit spot,disease,,,"Spray Thiophanate Methyl 70WP (0.05%), Carbendazim 50WP (0.05%), Mancozeb 75WP (0.3%), or Chlorothalonil 75 WP (0.25%)",,

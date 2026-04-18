@@ -1,6 +1,6 @@
 import type { FieldBlock, FieldLayoutPlan } from '../../types'
 
-/* ── colour palette for blocks ─────────────────────────────────────── */
+/* ── colour palette for blocks (12 perceptually distinct colours) ──── */
 const BLOCK_COLORS = [
   { bg: 'bg-emerald-100', border: 'border-emerald-400', text: 'text-emerald-800', fill: '#6ee7b7', stroke: '#059669' },
   { bg: 'bg-blue-100', border: 'border-blue-400', text: 'text-blue-800', fill: '#93c5fd', stroke: '#2563eb' },
@@ -8,6 +8,12 @@ const BLOCK_COLORS = [
   { bg: 'bg-purple-100', border: 'border-purple-400', text: 'text-purple-800', fill: '#c4b5fd', stroke: '#7c3aed' },
   { bg: 'bg-rose-100', border: 'border-rose-400', text: 'text-rose-800', fill: '#fda4af', stroke: '#e11d48' },
   { bg: 'bg-cyan-100', border: 'border-cyan-400', text: 'text-cyan-800', fill: '#67e8f9', stroke: '#0891b2' },
+  { bg: 'bg-teal-100', border: 'border-teal-400', text: 'text-teal-800', fill: '#5eead4', stroke: '#0d9488' },
+  { bg: 'bg-orange-100', border: 'border-orange-400', text: 'text-orange-800', fill: '#fdba74', stroke: '#ea580c' },
+  { bg: 'bg-indigo-100', border: 'border-indigo-400', text: 'text-indigo-800', fill: '#a5b4fc', stroke: '#4f46e5' },
+  { bg: 'bg-lime-100', border: 'border-lime-400', text: 'text-lime-800', fill: '#bef264', stroke: '#65a30d' },
+  { bg: 'bg-pink-100', border: 'border-pink-400', text: 'text-pink-800', fill: '#f9a8d4', stroke: '#db2777' },
+  { bg: 'bg-slate-100', border: 'border-slate-400', text: 'text-slate-800', fill: '#cbd5e1', stroke: '#475569' },
 ]
 
 const fmt = (n: number) =>
@@ -82,6 +88,81 @@ function DimensionLine({
   )
 }
 
+/* ── 2D Grid Layout Calculator ─────────────────────────────────────── */
+
+interface GridCell { x: number; y: number; w: number; h: number; gridRow: number }
+
+function computeGridLayout(
+  blocks: FieldBlock[],
+  usableW: number,
+  usableH: number,
+  gapX: number,
+  gapY: number,
+  startX: number,
+  startY: number,
+): GridCell[] {
+  const n = blocks.length
+  if (n === 0) return []
+
+  const totalArea = blocks.reduce((s, b) => s + b.area_acres, 0)
+
+  // Decide how to split blocks into rows
+  let rowAssignment: number[][]
+  if (n <= 2) {
+    rowAssignment = [blocks.map((_, i) => i)]
+  } else if (n === 3) {
+    rowAssignment = [[0, 1], [2]]
+  } else if (n === 4) {
+    rowAssignment = [[0, 1], [2, 3]]
+  } else if (n === 5) {
+    rowAssignment = [[0, 1, 2], [3, 4]]
+  } else {
+    // 6+: rows of 3
+    const rows: number[][] = []
+    for (let i = 0; i < n; i += 3) {
+      rows.push(blocks.slice(i, Math.min(i + 3, n)).map((_, j) => i + j))
+    }
+    rowAssignment = rows
+  }
+
+  // Calculate row heights proportional to total area in each row
+  const rowAreas = rowAssignment.map(row =>
+    row.reduce((s, idx) => s + blocks[idx].area_acres, 0)
+  )
+  const totalRowGaps = (rowAssignment.length - 1) * gapY
+  const availH = usableH - totalRowGaps
+  const rowHeights = rowAreas.map(a => Math.max(60, (a / totalArea) * availH))
+  const heightSum = rowHeights.reduce((s, h) => s + h, 0)
+  const hScale = availH / heightSum
+  const scaledRowHeights = rowHeights.map(h => h * hScale)
+
+  // Build grid cells
+  const cells: GridCell[] = new Array(n)
+  let cy = startY
+  for (let ri = 0; ri < rowAssignment.length; ri++) {
+    const row = rowAssignment[ri]
+    const rowH = scaledRowHeights[ri]
+    const rowArea = rowAreas[ri]
+    const rowGapsX = (row.length - 1) * gapX
+    const availW = usableW - rowGapsX
+
+    // Block widths proportional to area within this row
+    const rawWidths = row.map(idx => Math.max(50, (blocks[idx].area_acres / rowArea) * availW))
+    const wSum = rawWidths.reduce((s, w) => s + w, 0)
+    const wScale = availW / wSum
+    const scaledW = rawWidths.map(w => w * wScale)
+
+    let cx = startX
+    for (let ci = 0; ci < row.length; ci++) {
+      cells[row[ci]] = { x: cx, y: cy, w: scaledW[ci], h: rowH, gridRow: ri }
+      cx += scaledW[ci] + gapX
+    }
+    cy += rowH + gapY
+  }
+
+  return cells
+}
+
 /* ── SVG Visual Field Map ──────────────────────────────────────────── */
 
 function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[]; pathwayWidth: number }) {
@@ -89,33 +170,28 @@ function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[];
 
   const totalArea = blocks.reduce((s, b) => s + b.area_acres, 0)
   const mapWidth = 720
-  const mapHeight = 520
   const padding = 60
   const compassSize = 30
-  const pathwayGap = 12 // px gap between blocks representing pathways
-  const topMargin = 55 // space for title
-  const bottomMargin = 50 // space for legend
+  const pathwayGapX = 12 // px gap between blocks (horizontal)
+  const pathwayGapY = 16 // px gap between rows (vertical)
+  const topMargin = 55
+  const bottomMargin = 50
   const usableWidth = mapWidth - padding * 2
-  const usableHeight = mapHeight - topMargin - padding - bottomMargin
 
-  // Calculate block widths proportional to area
-  const totalGaps = (blocks.length - 1) * pathwayGap
-  const blockTotalWidth = usableWidth - totalGaps
-  const blockWidths = blocks.map(b => Math.max(70, (b.area_acres / totalArea) * blockTotalWidth))
-  const widthSum = blockWidths.reduce((s, w) => s + w, 0)
-  const scale = blockTotalWidth / widthSum
-  const scaledWidths = blockWidths.map(w => w * scale)
+  // Dynamic height: taller for multi-row layouts
+  const numGridRows = blocks.length <= 2 ? 1 : blocks.length <= 4 ? 2 : Math.ceil(blocks.length / 3)
+  const baseBlockH = 280
+  const mapHeight = topMargin + padding + numGridRows * baseBlockH + (numGridRows - 1) * pathwayGapY + bottomMargin + 20
+  const usableHeight = mapHeight - topMargin - padding - bottomMargin - 20
 
-  // Pre-calculate block positions
-  const blockPositions: Array<{ bx: number; bw: number }> = []
-  let cx = padding
-  for (let i = 0; i < blocks.length; i++) {
-    blockPositions.push({ bx: cx, bw: scaledWidths[i] })
-    cx += scaledWidths[i] + pathwayGap
-  }
+  // Compute 2D grid positions
+  const gridCells = computeGridLayout(
+    blocks, usableWidth, usableHeight, pathwayGapX, pathwayGapY,
+    padding, topMargin + padding - 25,
+  )
 
-  const blockTop = topMargin + padding - 25
-  const blockHeight = usableHeight
+  // Unique hatch pattern ID
+  const hatchId = 'broadcast-hatch'
 
   return (
     <div className="rounded-xl border border-surface-200 bg-white p-6 shadow-sm">
@@ -129,8 +205,21 @@ function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[];
       <svg
         viewBox={`0 0 ${mapWidth} ${mapHeight}`}
         className="w-full rounded-lg border border-slate-200 bg-slate-50"
-        style={{ maxHeight: 500 }}
+        style={{ maxHeight: numGridRows > 1 ? 700 : 500 }}
       >
+        {/* SVG defs for broadcast hatch pattern */}
+        <defs>
+          {blocks.map((block, i) => {
+            if (!block.is_broadcast) return null
+            const color = BLOCK_COLORS[i % BLOCK_COLORS.length]
+            return (
+              <pattern key={`hatch-${i}`} id={`${hatchId}-${i}`} patternUnits="userSpaceOnUse" width={8} height={8} patternTransform="rotate(45)">
+                <line x1={0} y1={0} x2={0} y2={8} stroke={color.stroke} strokeWidth={1.5} strokeOpacity={0.25} />
+              </pattern>
+            )
+          })}
+        </defs>
+
         {/* Compass */}
         <g transform={`translate(${mapWidth - 45}, 35)`}>
           <circle cx={0} cy={0} r={compassSize / 2 + 4} fill="white" stroke="#94a3b8" strokeWidth={1} />
@@ -149,49 +238,69 @@ function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[];
           ↕ Rows run N–S for best sunlight
         </text>
 
-        {/* Border crop strip */}
-        <rect
-          x={padding - 10}
-          y={blockTop - 8}
-          width={usableWidth + 20}
-          height={blockHeight + 16}
-          rx={10}
-          fill="none"
-          stroke="#16a34a"
-          strokeWidth={1.5}
-          strokeDasharray="6,4"
-        />
+        {/* Border crop strip (around entire field) */}
+        {(() => {
+          const allCells = gridCells.filter(c => c != null)
+          if (allCells.length === 0) return null
+          const minX = Math.min(...allCells.map(c => c.x))
+          const minY = Math.min(...allCells.map(c => c.y))
+          const maxX = Math.max(...allCells.map(c => c.x + c.w))
+          const maxY = Math.max(...allCells.map(c => c.y + c.h))
+          return (
+            <rect
+              x={minX - 10} y={minY - 8}
+              width={maxX - minX + 20} height={maxY - minY + 16}
+              rx={10} fill="none"
+              stroke="#16a34a" strokeWidth={1.5} strokeDasharray="6,4"
+            />
+          )
+        })()}
 
         {/* Blocks with full labelling */}
         {blocks.map((block, i) => {
           const color = BLOCK_COLORS[i % BLOCK_COLORS.length]
-          const { bx, bw } = blockPositions[i]
-          const by = blockTop
-          const bh = blockHeight
+          const cell = gridCells[i]
+          if (!cell) return null
+          const { x: bx, y: by, w: bw, h: bh } = cell
 
           // Row lines inside block
           const rowCount = Math.min(block.rows, 30)
-          const rowElements = []
-          if (rowCount > 1 && bw > 50) {
-            const displayRows = Math.min(rowCount, 12)
-            const displaySpacing = bh / (displayRows + 1)
+          const rowElements: React.ReactNode[] = []
+
+          if (block.is_broadcast && bw > 40) {
+            // Broadcast crop: hatch pattern fill instead of dots
+            rowElements.push(
+              <rect
+                key={`hatch-fill-${i}`}
+                x={bx + 4} y={by + 50} width={bw - 8} height={bh - 65}
+                rx={3} fill={`url(#${hatchId}-${i})`}
+              />
+            )
+            // Show seed rate label in center
+            if (bw > 60) {
+              rowElements.push(
+                <text key={`seed-label-${i}`} x={bx + bw / 2} y={by + bh / 2 + 10}
+                  textAnchor="middle" fontSize={8} fill={color.stroke} fontWeight="500">
+                  {block.seed_rate_kg_per_acre ? `${block.seed_rate_kg_per_acre} kg/ac seed rate` : 'Broadcast sowing'}
+                </text>
+              )
+            }
+          } else if (rowCount > 1 && bw > 50) {
+            const displayRows = Math.min(rowCount, 8)
+            const displaySpacing = (bh - 55) / (displayRows + 1)
             for (let r = 1; r <= displayRows; r++) {
               rowElements.push(
                 <line
                   key={`row-${i}-${r}`}
-                  x1={bx + 4}
-                  y1={by + r * displaySpacing}
-                  x2={bx + bw - 4}
-                  y2={by + r * displaySpacing}
-                  stroke={color.stroke}
-                  strokeWidth={0.7}
-                  strokeOpacity={0.35}
-                  strokeDasharray="3,3"
+                  x1={bx + 4} y1={by + 50 + r * displaySpacing}
+                  x2={bx + bw - 4} y2={by + 50 + r * displaySpacing}
+                  stroke={color.stroke} strokeWidth={0.7}
+                  strokeOpacity={0.35} strokeDasharray="3,3"
                 />
               )
             }
 
-            // Plant dots on first two visible rows (to show plant spacing)
+            // Plant dots on first two visible rows
             if (block.plant_spacing_cm > 0 && bw > 70) {
               const dotsPerRow = Math.min(6, Math.floor((bw - 16) / 10))
               const dotSpacing = (bw - 16) / (dotsPerRow + 1)
@@ -201,10 +310,8 @@ function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[];
                     <circle
                       key={`dot-${i}-${row}-${d}`}
                       cx={bx + 8 + d * dotSpacing}
-                      cy={by + row * displaySpacing}
-                      r={2}
-                      fill={color.stroke}
-                      fillOpacity={0.5}
+                      cy={by + 50 + row * displaySpacing}
+                      r={2} fill={color.stroke} fillOpacity={0.5}
                     />
                   )
                 }
@@ -220,7 +327,7 @@ function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[];
                 fill={color.fill} fillOpacity={0.3}
                 stroke={color.stroke} strokeWidth={2}
               />
-              {/* Row lines + plant dots */}
+              {/* Row lines + plant dots / hatch */}
               {rowElements}
 
               {/* Block label */}
@@ -240,14 +347,13 @@ function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[];
               </text>
 
               {/* ── Row spacing annotation (left side of block) ── */}
-              {block.rows > 1 && rowCount > 1 && bw > 50 ? (() => {
-                const dispRows = Math.min(rowCount, 12)
-                const dispSp = bh / (dispRows + 1)
-                const annotY1 = by + dispSp
-                const annotY2 = by + dispSp * 2
+              {block.rows > 1 && !block.is_broadcast && rowCount > 1 && bw > 50 ? (() => {
+                const dispRows = Math.min(rowCount, 8)
+                const dispSp = (bh - 55) / (dispRows + 1)
+                const annotY1 = by + 50 + dispSp
+                const annotY2 = by + 50 + dispSp * 2
                 return (
                   <g>
-                    {/* Bracket between two rows */}
                     <line x1={bx - 2} y1={annotY1} x2={bx - 8} y2={annotY1} stroke="#7c3aed" strokeWidth={0.8} />
                     <line x1={bx - 8} y1={annotY1} x2={bx - 8} y2={annotY2} stroke="#7c3aed" strokeWidth={0.8} />
                     <line x1={bx - 2} y1={annotY2} x2={bx - 8} y2={annotY2} stroke="#7c3aed" strokeWidth={0.8} />
@@ -264,13 +370,13 @@ function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[];
               })() : null}
 
               {/* ── Plant spacing annotation (between dots on first row) ── */}
-              {block.plant_spacing_cm > 0 && bw > 90 && rowCount > 1 ? (() => {
-                const dispRows = Math.min(rowCount, 12)
-                const dispSp = bh / (dispRows + 1)
+              {block.plant_spacing_cm > 0 && !block.is_broadcast && bw > 90 && rowCount > 1 ? (() => {
+                const dispRows = Math.min(rowCount, 8)
+                const dispSp = (bh - 55) / (dispRows + 1)
                 const dotsPerRow = Math.min(6, Math.floor((bw - 16) / 10))
                 if (dotsPerRow < 2) return null
                 const dotSpacing = (bw - 16) / (dotsPerRow + 1)
-                const dotY = by + dispSp - 8
+                const dotY = by + 50 + dispSp - 8
                 const d1x = bx + 8 + dotSpacing
                 const d2x = bx + 8 + dotSpacing * 2
                 return (
@@ -295,8 +401,8 @@ function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[];
                 />
               ) : null}
 
-              {/* ── Length dimension on right side (first block only to avoid clutter) ── */}
-              {i === 0 && block.field_length_m ? (
+              {/* ── Length dimension on right side (first block per grid row) ── */}
+              {cell.gridRow !== gridCells[i - 1]?.gridRow && block.field_length_m ? (
                 <DimensionLine
                   x1={bx + bw} y1={by} x2={bx + bw} y2={by + bh}
                   label={`${block.field_length_m} m length`}
@@ -308,54 +414,108 @@ function FieldMapVisualization({ blocks, pathwayWidth }: { blocks: FieldBlock[];
               {block.rows > 0 && bw > 55 ? (
                 <text x={bx + bw / 2} y={by + bh - 8} textAnchor="middle"
                   fontSize={7.5} fill="#475569">
-                  {block.rows} rows × {block.plants_per_row} plants/row
+                  {block.is_broadcast
+                    ? `${block.rows} rows · broadcast`
+                    : `${block.rows} rows × ${block.plants_per_row} plants/row`
+                  }
                 </text>
-              ) : null}
-
-              {/* ── Pathway dimension between blocks ── */}
-              {i < blocks.length - 1 ? (
-                <g>
-                  {/* Pathway fill */}
-                  <rect
-                    x={bx + bw + 1} y={by + bh / 2 - 20}
-                    width={pathwayGap - 2} height={40}
-                    fill="#f1f5f9" rx={2}
-                  />
-                  <text
-                    x={bx + bw + pathwayGap / 2} y={by + bh / 2 - 4}
-                    textAnchor="middle" fontSize={6.5} fontWeight="500" fill="#64748b">
-                    {pathwayWidth} m
-                  </text>
-                  <text
-                    x={bx + bw + pathwayGap / 2} y={by + bh / 2 + 6}
-                    textAnchor="middle" fontSize={5.5} fill="#94a3b8">
-                    path
-                  </text>
-                </g>
               ) : null}
             </g>
           )
         })}
 
+        {/* ── Pathway width labels between blocks ── */}
+        {blocks.length > 1 ? (() => {
+          // Show pathway label between first two horizontally adjacent blocks
+          const c0 = gridCells[0]
+          const c1 = gridCells[1]
+          if (!c0 || !c1 || c0.gridRow !== c1.gridRow) return null
+          const midX = (c0.x + c0.w + c1.x) / 2
+          const midY = c0.y + c0.h / 2
+          return (
+            <g>
+              <rect x={midX - 12} y={midY - 12} width={24} height={24} rx={3} fill="#f1f5f9" fillOpacity={0.8} />
+              <text x={midX} y={midY - 2} textAnchor="middle" fontSize={7} fontWeight="500" fill="#64748b">
+                {pathwayWidth}m
+              </text>
+              <text x={midX} y={midY + 8} textAnchor="middle" fontSize={5.5} fill="#94a3b8">path</text>
+            </g>
+          )
+        })() : null}
+
+        {/* ── Irrigation channel schematic ── */}
+        {blocks.length >= 3 ? (() => {
+          // Vertical main line through center of field
+          const allCells = gridCells.filter(c => c != null)
+          const minY = Math.min(...allCells.map(c => c.y))
+          const maxY = Math.max(...allCells.map(c => c.y + c.h))
+          const centerX = padding + usableWidth / 2
+          return (
+            <g>
+              {/* Main pipeline */}
+              <line x1={centerX} y1={minY - 6} x2={centerX} y2={maxY + 6}
+                stroke="#3b82f6" strokeWidth={1.5} strokeDasharray="5,3" strokeOpacity={0.6} />
+              {/* Water source icon */}
+              <circle cx={centerX} cy={minY - 12} r={5} fill="#dbeafe" stroke="#3b82f6" strokeWidth={1} />
+              <text x={centerX} y={minY - 10} textAnchor="middle" fontSize={6} fontWeight="bold" fill="#3b82f6">💧</text>
+              {/* Branch lines into each block */}
+              {allCells.map((cell, i) => {
+                const blockMidY = cell.y + cell.h / 2
+                const blockEdge = cell.x + cell.w < centerX ? cell.x + cell.w : cell.x
+                const dir = cell.x + cell.w < centerX ? 1 : -1
+                return (
+                  <line key={`irr-branch-${i}`}
+                    x1={centerX} y1={blockMidY}
+                    x2={blockEdge + dir * 3} y2={blockMidY}
+                    stroke="#3b82f6" strokeWidth={1} strokeDasharray="3,3" strokeOpacity={0.4}
+                  />
+                )
+              })}
+            </g>
+          )
+        })() : blocks.length > 0 ? (() => {
+          // For 1-2 blocks: horizontal line along bottom
+          const allCells = gridCells.filter(c => c != null)
+          const maxY = Math.max(...allCells.map(c => c.y + c.h))
+          const minX = Math.min(...allCells.map(c => c.x))
+          const maxX = Math.max(...allCells.map(c => c.x + c.w))
+          return (
+            <g>
+              <line x1={minX} y1={maxY + 8} x2={maxX} y2={maxY + 8}
+                stroke="#3b82f6" strokeWidth={1.2} strokeDasharray="5,3" strokeOpacity={0.5} />
+              <circle cx={minX - 6} cy={maxY + 8} r={4} fill="#dbeafe" stroke="#3b82f6" strokeWidth={1} />
+              <text x={minX - 6} y={maxY + 10} textAnchor="middle" fontSize={5} fontWeight="bold" fill="#3b82f6">💧</text>
+            </g>
+          )
+        })() : null}
+
         {/* ── Legend ── */}
-        <g transform={`translate(${padding}, ${mapHeight - bottomMargin + 15})`}>
+        <g transform={`translate(${padding}, ${mapHeight - bottomMargin + 10})`}>
           <text x={0} y={0} fontSize={8} fontWeight="600" fill="#475569">Legend:</text>
           {/* Row spacing */}
           <line x1={50} y1={-3} x2={70} y2={-3} stroke="#7c3aed" strokeWidth={1.5} strokeDasharray="3,3" />
-          <text x={74} y={0} fontSize={7} fill="#7c3aed">Row spacing (between rows)</text>
+          <text x={74} y={0} fontSize={7} fill="#7c3aed">Row spacing</text>
           {/* Plant spacing */}
-          <circle cx={200} cy={-3} r={2.5} fill="#0891b2" />
-          <circle cx={210} cy={-3} r={2.5} fill="#0891b2" />
-          <line x1={200} y1={-8} x2={210} y2={-8} stroke="#0891b2" strokeWidth={0.8} />
-          <text x={216} y={0} fontSize={7} fill="#0891b2">Plant spacing (between plants)</text>
+          <circle cx={155} cy={-3} r={2.5} fill="#0891b2" />
+          <circle cx={165} cy={-3} r={2.5} fill="#0891b2" />
+          <line x1={155} y1={-8} x2={165} y2={-8} stroke="#0891b2" strokeWidth={0.8} />
+          <text x={171} y={0} fontSize={7} fill="#0891b2">Plant spacing</text>
+          {/* Broadcast hatch */}
+          <line x1={243} y1={-6} x2={249} y2={0} stroke="#64748b" strokeWidth={1} />
+          <line x1={249} y1={-6} x2={255} y2={0} stroke="#64748b" strokeWidth={1} />
+          <line x1={255} y1={-6} x2={261} y2={0} stroke="#64748b" strokeWidth={1} />
+          <text x={266} y={0} fontSize={7} fill="#64748b">Broadcast sowing</text>
           {/* Dimension */}
-          <line x1={340} y1={-3} x2={365} y2={-3} stroke="#334155" strokeWidth={0.8} />
-          <line x1={340} y1={-6} x2={340} y2={0} stroke="#334155" strokeWidth={0.8} />
-          <line x1={365} y1={-6} x2={365} y2={0} stroke="#334155" strokeWidth={0.8} />
-          <text x={370} y={0} fontSize={7} fill="#334155">Field dimensions (metres)</text>
+          <line x1={355} y1={-3} x2={375} y2={-3} stroke="#334155" strokeWidth={0.8} />
+          <line x1={355} y1={-6} x2={355} y2={0} stroke="#334155" strokeWidth={0.8} />
+          <line x1={375} y1={-6} x2={375} y2={0} stroke="#334155" strokeWidth={0.8} />
+          <text x={380} y={0} fontSize={7} fill="#334155">Dimensions (m)</text>
+          {/* Irrigation */}
+          <line x1={443} y1={-3} x2={463} y2={-3} stroke="#3b82f6" strokeWidth={1.2} strokeDasharray="3,3" />
+          <text x={468} y={0} fontSize={7} fill="#3b82f6">Irrigation line</text>
           {/* Border strip */}
-          <line x1={490} y1={-3} x2={515} y2={-3} stroke="#16a34a" strokeWidth={1.5} strokeDasharray="4,3" />
-          <text x={520} y={0} fontSize={7} fill="#16a34a">Border / windbreak strip</text>
+          <line x1={530} y1={-3} x2={550} y2={-3} stroke="#16a34a" strokeWidth={1.5} strokeDasharray="4,3" />
+          <text x={555} y={0} fontSize={7} fill="#16a34a">Border crop</text>
         </g>
 
         {/* Border label */}
@@ -654,14 +814,23 @@ function LayoutOverviewGraph({ blocks }: { blocks: FieldBlock[] }) {
 function ZoomedPlantingDetail({ block, index }: { block: FieldBlock; index: number }) {
   const color = BLOCK_COLORS[index % BLOCK_COLORS.length]
   const w = 400
-  const h = 340
+  const h = 370
   const pad = 50
-  const rows = Math.min(block.rows || 4, 5) // show up to 5 rows
-  const plantsPerRow = Math.min(block.plants_per_row || 6, 6) // show up to 6 plants
+  const isBroadcast = block.is_broadcast
+  const rows = isBroadcast ? 4 : Math.min(block.rows || 4, 5)
+  const plantsPerRow = isBroadcast ? 0 : Math.min(block.plants_per_row || 6, 6)
   const areaW = w - pad * 2
-  const areaH = h - pad * 2 - 30 // leave room for depth section
+  const headlandPx = block.headland_m ? 14 : 0 // headland strip height in px
+  const areaH = h - pad * 2 - 30 - headlandPx * 2
   const rowGap = areaH / (rows + 1)
-  const plantGap = areaW / (plantsPerRow + 1)
+  const plantGap = plantsPerRow > 0 ? areaW / (plantsPerRow + 1) : 0
+
+  // Spacing source badge
+  const sourceBadge = block.spacing_source === 'icar'
+    ? { label: 'ICAR Advisory', color: '#059669', bg: '#ecfdf5' }
+    : block.spacing_source === 'default'
+    ? { label: 'Default — verify with KVK', color: '#d97706', bg: '#fffbeb' }
+    : { label: 'Reference Data', color: '#2563eb', bg: '#eff6ff' }
 
   return (
     <div className="rounded-xl border border-surface-200 bg-white p-4 shadow-sm">
@@ -674,96 +843,134 @@ function ZoomedPlantingDetail({ block, index }: { block: FieldBlock; index: numb
           {block.block_label}: {block.crop_name}
         </span>
         <span className="text-xs text-slate-500">— close-up planting view</span>
+        {block.spacing_source ? (
+          <span className="ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium"
+            style={{ backgroundColor: sourceBadge.bg, color: sourceBadge.color }}>
+            {sourceBadge.label}
+          </span>
+        ) : null}
       </div>
       <svg viewBox={`0 0 ${w} ${h}`} className="w-full rounded border border-slate-100 bg-slate-50">
         {/* Field area outline */}
         <rect
-          x={pad} y={pad - 10} width={areaW} height={areaH + 10}
+          x={pad} y={pad - 10 + headlandPx} width={areaW} height={areaH + 10}
           rx={4} fill={color.fill} fillOpacity={0.08}
           stroke={color.stroke} strokeWidth={1.5}
         />
+
+        {/* Headland strips (top and bottom) */}
+        {headlandPx > 0 ? (
+          <g>
+            <rect x={pad} y={pad - 10} width={areaW} height={headlandPx}
+              rx={4} fill="#e2e8f0" fillOpacity={0.5} />
+            <text x={pad + areaW / 2} y={pad - 10 + headlandPx / 2 + 3}
+              textAnchor="middle" fontSize={6} fill="#94a3b8">
+              Headland ({block.headland_m}m)
+            </text>
+            <rect x={pad} y={pad - 10 + headlandPx + areaH + 10} width={areaW} height={headlandPx}
+              rx={4} fill="#e2e8f0" fillOpacity={0.5} />
+            <text x={pad + areaW / 2} y={pad - 10 + headlandPx + areaH + 10 + headlandPx / 2 + 3}
+              textAnchor="middle" fontSize={6} fill="#94a3b8">
+              Headland ({block.headland_m}m)
+            </text>
+          </g>
+        ) : null}
 
         {/* Title */}
         <text x={w / 2} y={18} textAnchor="middle" fontSize={10} fontWeight="600" fill="#334155">
           Planting Detail — {block.crop_name}
         </text>
         <text x={w / 2} y={30} textAnchor="middle" fontSize={8} fill="#64748b">
-          {patternLabel(block.planting_pattern)} pattern | {bedLabel(block.bed_type)}
+          {isBroadcast ? 'Broadcast / line sowing' : `${patternLabel(block.planting_pattern)} pattern`} | {bedLabel(block.bed_type)}
         </text>
 
-        {/* Rows + plants grid */}
-        {Array.from({ length: rows }).map((_, ri) => {
-          const ry = pad + (ri + 1) * rowGap - 10
-          return (
-            <g key={`zr-${ri}`}>
-              {/* Row line */}
-              <line
-                x1={pad + 4} y1={ry} x2={pad + areaW - 4} y2={ry}
-                stroke={color.stroke} strokeWidth={0.6} strokeOpacity={0.3} strokeDasharray="4,3"
-              />
-              {/* Row label */}
-              <text x={pad - 4} y={ry + 3} textAnchor="end" fontSize={7} fill="#94a3b8">
-                R{ri + 1}
-              </text>
-              {/* Plants */}
-              {Array.from({ length: plantsPerRow }).map((_, pi) => {
-                const px = pad + (pi + 1) * plantGap
-                return (
-                  <g key={`zp-${ri}-${pi}`}>
-                    <circle cx={px} cy={ry} r={4} fill={color.fill} stroke={color.stroke} strokeWidth={1} />
-                    {ri === 0 && pi === 0 ? (
-                      <text x={px} y={ry - 8} textAnchor="middle" fontSize={6} fill="#475569">
-                        Plant
-                      </text>
-                    ) : null}
-                  </g>
-                )
-              })}
-            </g>
-          )
-        })}
+        {/* Broadcast sowing: scattered seed pattern */}
+        {isBroadcast ? (
+          <g>
+            {/* Diagonal hatch lines */}
+            {Array.from({ length: 12 }).map((_, li) => {
+              const y1 = pad + headlandPx + 10 + li * (areaH / 12)
+              return (
+                <line key={`bcast-line-${li}`}
+                  x1={pad + 4} y1={y1} x2={pad + areaW - 4} y2={y1}
+                  stroke={color.stroke} strokeWidth={0.5} strokeOpacity={0.2} strokeDasharray="2,4"
+                />
+              )
+            })}
+            {/* Scattered seed dots */}
+            {Array.from({ length: 30 }).map((_, si) => {
+              const sx = pad + 15 + ((si * 37 + 13) % (areaW - 30))
+              const sy = pad + headlandPx + 20 + ((si * 53 + 7) % (areaH - 25))
+              return (
+                <circle key={`seed-${si}`} cx={sx} cy={sy} r={2}
+                  fill={color.stroke} fillOpacity={0.3} />
+              )
+            })}
+            {/* Seed rate label */}
+            <text x={w / 2} y={pad + headlandPx + areaH / 2}
+              textAnchor="middle" fontSize={10} fontWeight="600" fill={color.stroke}>
+              {block.seed_rate_kg_per_acre ? `${block.seed_rate_kg_per_acre} kg/acre` : 'Broadcast sowing'}
+            </text>
+            <text x={w / 2} y={pad + headlandPx + areaH / 2 + 14}
+              textAnchor="middle" fontSize={8} fill="#64748b">
+              Row spacing: {block.row_spacing_cm} cm between rows
+            </text>
+          </g>
+        ) : (
+          <g>
+            {/* Rows + plants grid (non-broadcast) */}
+            {Array.from({ length: rows }).map((_, ri) => {
+              const ry = pad + headlandPx + (ri + 1) * rowGap - 10
+              return (
+                <g key={`zr-${ri}`}>
+                  <line
+                    x1={pad + 4} y1={ry} x2={pad + areaW - 4} y2={ry}
+                    stroke={color.stroke} strokeWidth={0.6} strokeOpacity={0.3} strokeDasharray="4,3"
+                  />
+                  <text x={pad - 4} y={ry + 3} textAnchor="end" fontSize={7} fill="#94a3b8">
+                    R{ri + 1}
+                  </text>
+                  {Array.from({ length: plantsPerRow }).map((_, pi) => {
+                    const px = pad + (pi + 1) * plantGap
+                    return (
+                      <g key={`zp-${ri}-${pi}`}>
+                        <circle cx={px} cy={ry} r={4} fill={color.fill} stroke={color.stroke} strokeWidth={1} />
+                        {ri === 0 && pi === 0 ? (
+                          <text x={px} y={ry - 8} textAnchor="middle" fontSize={6} fill="#475569">Plant</text>
+                        ) : null}
+                      </g>
+                    )
+                  })}
+                </g>
+              )
+            })}
+          </g>
+        )}
 
         {/* ── Row spacing dimension (left bracket between R1 and R2) ── */}
-        {rows >= 2 ? (() => {
-          const r1y = pad + rowGap - 10
-          const r2y = pad + 2 * rowGap - 10
+        {!isBroadcast && rows >= 2 ? (() => {
+          const r1y = pad + headlandPx + rowGap - 10
+          const r2y = pad + headlandPx + 2 * rowGap - 10
           const bx = pad - 16
           return (
             <g>
               <line x1={bx} y1={r1y} x2={bx + 6} y2={r1y} stroke="#7c3aed" strokeWidth={0.8} />
               <line x1={bx} y1={r1y} x2={bx} y2={r2y} stroke="#7c3aed" strokeWidth={0.8} />
               <line x1={bx} y1={r2y} x2={bx + 6} y2={r2y} stroke="#7c3aed" strokeWidth={0.8} />
-              {/* Arrow heads */}
               <polygon points={`${bx},${r1y + 1} ${bx - 2},${r1y + 5} ${bx + 2},${r1y + 5}`} fill="#7c3aed" />
               <polygon points={`${bx},${r2y - 1} ${bx - 2},${r2y - 5} ${bx + 2},${r2y - 5}`} fill="#7c3aed" />
-              <text
-                x={bx - 3} y={(r1y + r2y) / 2}
-                textAnchor="end" fontSize={8} fontWeight="600" fill="#7c3aed"
-                dominantBaseline="middle"
-              >
+              <text x={bx - 3} y={(r1y + r2y) / 2} textAnchor="end" fontSize={8} fontWeight="600" fill="#7c3aed" dominantBaseline="middle">
                 {block.row_spacing_cm}
               </text>
-              <text
-                x={bx - 3} y={(r1y + r2y) / 2 + 10}
-                textAnchor="end" fontSize={6} fill="#7c3aed"
-                dominantBaseline="middle"
-              >
-                cm
-              </text>
-              <text
-                x={bx - 3} y={(r1y + r2y) / 2 + 18}
-                textAnchor="end" fontSize={5.5} fill="#9f7aea"
-                dominantBaseline="middle"
-              >
-                (row gap)
-              </text>
+              <text x={bx - 3} y={(r1y + r2y) / 2 + 10} textAnchor="end" fontSize={6} fill="#7c3aed" dominantBaseline="middle">cm</text>
+              <text x={bx - 3} y={(r1y + r2y) / 2 + 18} textAnchor="end" fontSize={5.5} fill="#9f7aea" dominantBaseline="middle">(row gap)</text>
             </g>
           )
         })() : null}
 
         {/* ── Plant spacing dimension (top, between P1 and P2 of first row) ── */}
-        {plantsPerRow >= 2 ? (() => {
-          const r1y = pad + rowGap - 10
+        {!isBroadcast && plantsPerRow >= 2 ? (() => {
+          const r1y = pad + headlandPx + rowGap - 10
           const p1x = pad + plantGap
           const p2x = pad + 2 * plantGap
           const dimY = r1y - 18
@@ -772,21 +979,12 @@ function ZoomedPlantingDetail({ block, index }: { block: FieldBlock; index: numb
               <line x1={p1x} y1={dimY} x2={p2x} y2={dimY} stroke="#0891b2" strokeWidth={1} />
               <line x1={p1x} y1={dimY - 4} x2={p1x} y2={dimY + 4} stroke="#0891b2" strokeWidth={0.8} />
               <line x1={p2x} y1={dimY - 4} x2={p2x} y2={dimY + 4} stroke="#0891b2" strokeWidth={0.8} />
-              {/* Arrow heads */}
               <polygon points={`${p1x + 1},${dimY} ${p1x + 5},${dimY - 2} ${p1x + 5},${dimY + 2}`} fill="#0891b2" />
               <polygon points={`${p2x - 1},${dimY} ${p2x - 5},${dimY - 2} ${p2x - 5},${dimY + 2}`} fill="#0891b2" />
-              <text
-                x={(p1x + p2x) / 2} y={dimY - 6}
-                textAnchor="middle" fontSize={8} fontWeight="600" fill="#0891b2"
-              >
+              <text x={(p1x + p2x) / 2} y={dimY - 6} textAnchor="middle" fontSize={8} fontWeight="600" fill="#0891b2">
                 {block.plant_spacing_cm} cm
               </text>
-              <text
-                x={(p1x + p2x) / 2} y={dimY + 10}
-                textAnchor="middle" fontSize={5.5} fill="#22d3ee"
-              >
-                (plant gap)
-              </text>
+              <text x={(p1x + p2x) / 2} y={dimY + 10} textAnchor="middle" fontSize={5.5} fill="#22d3ee">(plant gap)</text>
             </g>
           )
         })() : null}
@@ -835,10 +1033,16 @@ function ZoomedPlantingDetail({ block, index }: { block: FieldBlock; index: numb
 
         {/* ── Full block stats bottom-right ── */}
         <text x={w - pad + 5} y={pad + 4} textAnchor="end" fontSize={7} fill="#64748b">
-          Full block: {block.rows} rows x {block.plants_per_row} plants
+          {isBroadcast
+            ? `${block.rows} rows · broadcast sowing`
+            : `Full block: ${block.rows} rows x ${block.plants_per_row} plants`
+          }
         </text>
         <text x={w - pad + 5} y={pad + 14} textAnchor="end" fontSize={7} fill="#64748b">
-          Total: {fmt(block.total_plants)} plants
+          {isBroadcast
+            ? `Seed rate: ${block.seed_rate_kg_per_acre || '—'} kg/ac`
+            : `Total: ${fmt(block.total_plants)} plants`
+          }
         </text>
         {block.field_length_m && block.field_width_m ? (
           <text x={w - pad + 5} y={pad + 24} textAnchor="end" fontSize={7} fill="#64748b">
@@ -855,6 +1059,12 @@ function ZoomedPlantingDetail({ block, index }: { block: FieldBlock; index: numb
 function BlockDetailCard({ block, index }: { block: FieldBlock; index: number }) {
   const color = BLOCK_COLORS[index % BLOCK_COLORS.length]
 
+  const sourceBadge = block.spacing_source === 'icar'
+    ? { label: 'ICAR', cls: 'bg-emerald-200 text-emerald-800' }
+    : block.spacing_source === 'default'
+    ? { label: 'Default', cls: 'bg-amber-200 text-amber-800' }
+    : { label: 'Reference', cls: 'bg-blue-200 text-blue-800' }
+
   return (
     <div className={`rounded-xl border-2 ${color.border} ${color.bg} ${color.text} p-5`}>
       {/* Header */}
@@ -862,7 +1072,14 @@ function BlockDetailCard({ block, index }: { block: FieldBlock; index: number })
         <span className="text-xs font-bold uppercase tracking-wider opacity-60">
           {block.block_label}
         </span>
-        <span className="text-sm font-semibold">{block.area_acres} ac</span>
+        <div className="flex items-center gap-2">
+          {block.spacing_source ? (
+            <span className={`rounded-full px-1.5 py-0.5 text-[9px] font-medium ${sourceBadge.cls}`}>
+              {sourceBadge.label}
+            </span>
+          ) : null}
+          <span className="text-sm font-semibold">{block.area_acres} ac</span>
+        </div>
       </div>
       <p className="text-lg font-bold">{block.crop_name}</p>
 
@@ -870,6 +1087,7 @@ function BlockDetailCard({ block, index }: { block: FieldBlock; index: number })
       {block.field_length_m && block.field_width_m ? (
         <p className="mt-1 text-xs opacity-70">
           Field: {block.field_length_m}m × {block.field_width_m}m
+          {block.headland_m ? ` (incl. ${block.headland_m}m headland)` : ''}
         </p>
       ) : null}
 
@@ -881,7 +1099,7 @@ function BlockDetailCard({ block, index }: { block: FieldBlock; index: number })
         </div>
         <div>
           <span className="opacity-60">Plant spacing:</span>{' '}
-          <strong>{block.plant_spacing_cm} cm</strong>
+          <strong>{block.is_broadcast ? 'Broadcast' : `${block.plant_spacing_cm} cm`}</strong>
         </div>
         <div>
           <span className="opacity-60">Pattern:</span>{' '}
@@ -896,8 +1114,8 @@ function BlockDetailCard({ block, index }: { block: FieldBlock; index: number })
           <strong>{bedLabel(block.bed_type)}</strong>
         </div>
         <div>
-          <span className="opacity-60">Total plants:</span>{' '}
-          <strong>{fmt(block.total_plants)}</strong>
+          <span className="opacity-60">{block.is_broadcast ? 'Seed rate:' : 'Total plants:'}</span>{' '}
+          <strong>{block.is_broadcast ? `${block.seed_rate_kg_per_acre || '—'} kg/ac` : fmt(block.total_plants)}</strong>
         </div>
         {block.rows > 0 && (
           <>
@@ -1017,8 +1235,8 @@ export function FieldLayoutResults({ layout }: { layout: FieldLayoutPlan }) {
                   <td className="py-2 pr-3">{b.crop_name}</td>
                   <td className="py-2 pr-3 text-right font-mono">{b.area_acres} ac</td>
                   <td className="py-2 pr-3 text-right font-mono">{b.row_spacing_cm}</td>
-                  <td className="py-2 pr-3 text-right font-mono">{b.plant_spacing_cm}</td>
-                  <td className="py-2 pr-3 text-right font-mono">{fmt(b.total_plants)}</td>
+                  <td className="py-2 pr-3 text-right font-mono">{b.is_broadcast ? 'Broadcast' : b.plant_spacing_cm}</td>
+                  <td className="py-2 pr-3 text-right font-mono">{b.is_broadcast ? `${b.seed_rate_kg_per_acre || '—'} kg/ac` : fmt(b.total_plants)}</td>
                   <td className="py-2 pr-3 text-xs">{patternLabel(b.planting_pattern)}</td>
                   <td className="py-2 text-right font-mono">{b.planting_depth_cm ?? '—'}</td>
                 </tr>

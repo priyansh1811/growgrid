@@ -1,0 +1,6 @@
+input_name,price_per_unit,unit,subsidy_status,notes
+UREA,5.36,INR_per_kg_N,SUBSIDIZED,Urea 242 per 45kg bag equals 5.36 per kg N at 46 percent N content
+DAP,29.17,INR_per_kg_P2O5,PARTIALLY_SUBSIDIZED,DAP 1350 per 50kg bag equals 29.17 per kg P2O5 at 46 percent P2O5
+MOP,16.83,INR_per_kg_K2O,PARTIALLY_SUBSIDIZED,MOP 840 per 50kg bag equals 16.83 per kg K2O at 60 percent K2O
+FYM,800.00,INR_per_tonne,UNSUBSIDIZED,Farm-gate FYM price varies 600-1000 per tonne by region
+ZINC_SULPHATE,95.00,INR_per_kg,UNSUBSIDIZED,ZnSO4 21 percent grade retail price

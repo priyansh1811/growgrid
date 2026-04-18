@@ -44,6 +44,7 @@ class ValidationAgent(BaseAgent):
         user_context = getattr(request, "user_context", None) or None
 
         planning_month = getattr(request, "planning_month", None) if request else None
+        category = getattr(request, "category", None) or None
         validated = ValidatedProfile(
             location=location,
             land_area_acres=request.land_area_acres,
@@ -58,6 +59,7 @@ class ValidationAgent(BaseAgent):
             horizon_months=horizon_months,
             user_context=user_context,
             planning_month=planning_month if 1 <= (planning_month or 0) <= 12 else None,
+            category=category,
         )
 
         # ── Hard constraints ─────────────────────────────────────────

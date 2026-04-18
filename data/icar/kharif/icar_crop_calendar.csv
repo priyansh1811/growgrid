@@ -1,0 +1,247 @@
+state,season,crop_name,sub_region,sow_start_month,sow_end_month,harvest_month_range,seed_rate_kg_ha,row_spacing_cm,plant_spacing_cm,nursery_days,duration_days,notes
+Andaman and Nicobar Islands,kharif,Rice,,,,,,20,20,,,Spacing 20x20 cm in ICM and 25x25 cm for SRI methods; soak seeds 12-24 hours; root dipping with Jeevamrit before transplanting
+Andaman and Nicobar Islands,kharif,Coconut,,,,,,750,750,,,Plant 12 month-old seedlings in 1 m³ pits enriched with organic matter
+Andaman and Nicobar Islands,kharif,Arecanut,,,,,,,,,,Use 12-18 month-old seedlings with five or more leaves; remove dried leaves regularly; intercropping encouraged
+Andaman and Nicobar Islands,kharif,Black Pepper,,,,,,,,,,"Apply 10 kg FYM, 500 g neem cake, 500 g wood ash, 2 kg vermicompost per vine annually; use biofertilizers 20 g each per vine; biocontrol with Trichoderma and P. fluorescens"
+Andaman and Nicobar Islands,kharif,Sweet Potato,,,,,,,,,,"Use raised beds or ridges; varieties: CIARI Swarna, CIARI Aparna, Bhu Sona; install pheromone traps (1 trap/100 m²); compost and biofertilizers recommended"
+Andaman and Nicobar Islands,kharif,Cassava,,,,,,,,,,Varieties: Sree Vijaya and Sree Jaya
+Andaman and Nicobar Islands,kharif,Elephant Foot Yam,,,,,,40,40,,,Variety Gajendra for elephant foot yam; apply compost 20-25 t/ha; use Trichoderma for seed treatment
+Andaman and Nicobar Islands,kharif,Taro,,,,,,,,,,"Varieties: Mega Taro-2, Sree Kiran, Sree Pallavi, Sree Rashmi; treat seed rhizomes with Trichoderma harzianum"
+Andaman and Nicobar Islands,kharif,Dioscorea,,,,,,,,,,Variety Nicobari Alu (Traditional Variety)
+Andaman and Nicobar Islands,kharif,Cinnamon,,,,,2000,40,40,,,Use healthy rhizomes; apply compost 20-25 t/ha; mulch with dry leaves; irrigate during dry spells; avoid waterlogging; seed treatment with Trichoderma
+Andaman and Nicobar Islands,kharif,Turmeric,,7,7,,,,,,,Six months old seedlings transferred to polythene bags at 15 cm height; apply FYM 10 kg/plant/year; mulch with leaves
+Andaman and Nicobar Islands,kharif,Ginger,,7,7,,,,,,,Six months old seedlings transferred to polythene bags at 15 cm height; apply FYM 10 kg/plant/year; mulch with leaves
+Andhra Pradesh,kharif,paddy,Godavari Zone,6,7,[9],,,,,,Late nursery transplanting recommended for various HYV varieties
+Andhra Pradesh,kharif,paddy,North Coastal Zone,6,7,[9],,,,,,"Varieties like Pushkala, Srisatya, Cotton Dora Sannalu recommended"
+Andhra Pradesh,kharif,maize,,6,7,,17.5,,,,,Sowing after more than 50 mm rainfall under rainfed conditions
+Andhra Pradesh,kharif,groundnut,,7,8,,,,,,,Intercropping with redgram recommended at 7:1/11:1/15:1 ratios
+Arunachal Pradesh,kharif,Rice,,6,7,,,20,15,,,"Transplanting completed by June in mid and high altitude and by first fortnight of July in low altitude; 3 seedlings per hill; 33 hills/m² for semi-dwarf, 25 hills/m² for tall traditional"
+Arunachal Pradesh,kharif,Finger millet,,,,,4.5,25,9,,,"Sowing depth 2-3 cm; 4-5 kg/ha for transplanting, 10-15 kg/ha for broadcasting"
+Arunachal Pradesh,kharif,Maize,,,,,20.25,65,22.5,,,Seeds dibbled at 3-4 cm depth; plant spacing 65-75×20-25 cm
+Arunachal Pradesh,kharif,Pumpkin,,9,10,,1.7,275,95,,,"Sowing also from January to April for summer harvest; spacing spring 2.5-3.0 m x 0.9-1.0 m, summer 2.5-3.0 m x 1.0-1.5 m"
+Arunachal Pradesh,kharif,Black gram,,,,,22.5,30,10,,,Sow seeds by keeping spacing of 30 × 10 cm; land ploughed 2-3 times followed by leveling
+Arunachal Pradesh,kharif,Sesame,,,,,4,30,15,,,Line sowing with spacing 30x15 cm
+Arunachal Pradesh,kharif,Tomato,,,,,,,,,,Seed rate 200-250 g/acre; disease resistant varieties; seed treatment with Trichoderma viride
+Arunachal Pradesh,kharif,Brinjal,,,,,0.75,75,60,,,Long and round varieties; seed rate 700-800 g/ha
+Assam,kharif,brinjal,,,,,0.75,75,60,,,"Grow long varieties such as Pusa Purple Cluster, Borbengena, JC-1, Kuchia, BWR-34 and round varieties Pusa Purple Round, Pusa Vairab, BWR-12."
+Assam,kharif,sali rice,,,,,40,20,15,,,"25 days old seedlings for short and medium duration varieties, transplant spacing 20 cm x 15 cm. For long duration varieties, 35-40 days old seedlings, spacing 25 cm x 15 cm. Plant 2-3 seedlings per hill at 4-5 cm depth."
+Assam,kharif,maize,,,,,20,70,22.5,,,"Dibble seed at 3-4 cm depth, rows 65-75 cm apart, seed to seed 20-25 cm, two seeds per hill followed by thinning after 10 days retaining one seedling."
+Assam,kharif,sesamum,,7,8,,4,,,,,Sow seeds from July to first fortnight of August.
+Assam,kharif,blackgram,,,,,22.5,30,10,,,Sowing with seed inoculation using Rhizobium and PSB. Apply one weeding at 20-25 days after sowing.
+Assam,kharif,king chilly,,,,,,,,,,Cultivation under low cost polyhouse conditions advised. Neem oil spray recommended to control whitefly.
+Assam,kharif,tomato,,,,,,,,,,Use black polythene as mulching material for cultivation.
+Assam,kharif,ginger/turmeric,,,,,,,,,,Field should have proper drainage to prevent water stagnation causing rhizome rot.
+Bihar,kharif,Paddy,,5,6,,,20,15,20,,Raise nursery sowing 25 May to 10 June and transplanting during 15 June to 20 June; line transplanting preferred
+Bihar,kharif,Maize,,6,6,,20,60,20,,,Begin land preparation in May; sow in first week of June or with monsoon onset
+Bihar,kharif,Pigeonpea/Arhar,,,,,,,,,,Sow in upland areas with good water drainage; harvest when 80-85% pods turn brown
+Bihar,kharif,Groundnut,Zones IIIA and IIIB,6,7,,12,60,20,,,Optimal sowing between 15 June to 5 July; avoid delay beyond mid-July
+Chhattisgarh,kharif,Rice,,6,6,,80,20,,,,"Seed treated with Azospirillum and PSB @ 5-10 g/kg of seed; line sowing; seed rate 80-90 kg/ha for line sowing, 100-120 kg/ha for broadcast; seeding depth 3-4 cm"
+Chhattisgarh,kharif,Maize,,6,6,,,60,25,,,Sowing time June 15 to June 30; spacing 60x25 cm; germination test recommended; seed treatment advised
+Chhattisgarh,kharif,Pigeon Pea,,,6,,12,60,15,,,Sowing should be completed by end of June; seed treatment with Rhizobium and PSB; deep summer ploughing two months before sowing
+Chhattisgarh,kharif,Green Gram,,,,,20,,,,,Seed treatment with Trichoderma with FYM recommended; seed rate 20-25 kg/ha; treat seeds with Imidacloprid 48% FS at 2 ml/kg
+Chhattisgarh,kharif,Soybean,,,,,,30,10,,,"Sowing on raised bed and broad bed and furrow method; spacing 30 cm row spacing for early and short statured varieties, 45 cm for long duration and 10 cm between plants"
+Chhattisgarh,kharif,Onion,,,,,15,,,,,Seed treatment with Captan 75 WS @ 2.5 g/kg; seed rate 12-15 kg/ha
+Chhattisgarh,kharif,Garlic,,6,,,,,,,,Begin sowing considering temperature and soil moisture
+Goa,kharif,paddy,,6,6,,,,,,,nursery sowing of Kharif rice. Repair bunds and keep weed free
+Goa,kharif,mango,,,,,,500,500,,,New planting; remove fallen fruits; orchard hygiene; hot water treat fruits at 48C for 1 hr
+Goa,kharif,banana,,,,,,,,,,Harvest stage: Remove fallen fruits; orchard hygiene
+Goa,kharif,cashew,,,,,,700,700,,,New planting with spacing 7x7m; prune damaged branches; clear drainage; staking; pits 1.2x1.2x1.2m
+Goa,kharif,arecanut,,6,6,,,500,500,,,"Apply first fertilizer split early June; prepare pits with FYM, neem cake, rock phosphate"
+Goa,kharif,coconut,,6,6,,,,,,,Apply fertilizer in early June; remove dried/diseased leaves; spray 1% Bordeaux for fruit rot
+Gujarat,kharif,Groundnut,South Saurashtra,6,7,,100,60,10,,120,Semi-spreading and erect types with different spacing.
+Gujarat,kharif,Soybean,,6,7,,75,45,5,,,Seed treatment with Carbendazim or Thiram plus Rhizobium and PSB.
+Gujarat,kharif,Cotton,,6,7,,,90,30,,,"Bt and desi types with different seed rates and spacing, HDP spacing 60 x 30 cm."
+Gujarat,kharif,Sugarcane,,12,1,,,75,20,,,"Eksali planting, top setts, planter preferred."
+Gujarat,kharif,Bajra,,6,7,,4,45,10,,,"Seed treated with Vitavax, two hand weedings at 20 and 40 DAS."
+Gujarat,kharif,Pigeon Pea,,6,7,,,,,,,"Spacing varies by early or late maturity types, 45-60 x 15-20 cm early, 90-120 x 25-30 cm late."
+Gujarat,kharif,Coconut,,,,,,,,,,"Hybrid (D x T) palms, monthly urea application via drip irrigation."
+Gujarat,kharif,Paddy,South Gujarat,,,,20,20,15,21,,"Nursery raised, transplanting 2-3 seedlings/hill, seed treatment with Trichoderma viride or Bavistin."
+Gujarat,kharif,Sesame,,6,7,,5.5,30,10,,,Seed treated with Trichoderma viride or Carbendazim.
+Haryana and Delhi,kharif,Tomato,,,,,,90,60,,,Transplant pro-tray raised seedlings onto raised beds with silver-black plastic mulch
+Haryana and Delhi,kharif,Rice,,5,6,,20,15,15,,,"Nursery sowing: early duration 15 May to 31 June, medium, mid-early and hybrid rice 15 May to 31 May"
+Haryana and Delhi,kharif,Bajra,,6,7,,4.5,45,,,,"Sowing should be done in lines at spacing 45 cm, depth max 2.0 cm"
+Haryana and Delhi,kharif,Arhar,,6,6,,12.5,40,15,,,Sowing under irrigated in June; rainfed at onset of monsoon
+Haryana and Delhi,kharif,Jowar,,6,7,,12.5,45,,,,Optimum sowing mid-June to mid-July
+Haryana and Delhi,kharif,Cotton,,4,5,,15,67.5,60,,,Sow in lines 67.5 cm apart with cotton sowing drill; seed treatment recommended
+Haryana and Delhi,kharif,Summer moong,,6,6,,80,30,15,,,"Sowing in rows, optimum in June"
+Haryana and Delhi,kharif,Groundnut,,6,6,,,,,,,"Sowing at onset of monsoon under rainfed, second fortnight June irrigated"
+Himachal Pradesh,kharif,Cluster bean,,7,7,,15,30,15,,,"Under rainfed conditions, sowing should coincide with the onset of the monsoon, ideally within the first two weeks of July. Prior to sowing treat seeds with Rhizobium culture and Streptocycline @ 6 g/kg seed in 6 L of water."
+Himachal Pradesh,kharif,Maize,,4,6,,20,60,20,,,"In high hills best sowing from 15 April to 15 May (Girija variety for timely), Bajaura Makka, Bajaura Popcorn, Bajaura sweet corn for late sowing. Mid and low hills sowing from 20 May to 15 June and 15 June to 30 June respectively."
+Himachal Pradesh,kharif,Paddy,,5,6,,25,,,25,,Paddy nursery sowing after seed treatment with bavistin @ 2.5 g/kg. Transplanting may be completed using 25-30 days old seedlings by end June.
+Jharkhand,kharif,Paddy,,6,6,,,,,10,,Direct Seeded Rice (DSR) method in upland areas; Short-duration varieties suitable for direct sowing in first fortnight of June; Nursery sowing in first week of June for medium land paddy; Nursery size 100 m2 for 1 ha
+Jharkhand,kharif,Maize,,6,6,,20,,,,,Sow in first week of June or onset of monsoon; Ensure proper drainage; Irrigate if dry after 30 days
+Jharkhand,kharif,Pigeon pea,,,,,,,,,,
+Jharkhand,kharif,Black gram,,,,,,,,,,
+Jharkhand,kharif,Green gram,,,,,,,,,,
+Jharkhand,kharif,Horse gram,,,,,,,,,,
+Jharkhand,kharif,Niger,,,7,,,,,,,Sowing before July 10
+Jharkhand,kharif,Sesame,,,7,,,,,,,Sowing before July 10
+Jharkhand,kharif,Groundnut,,6,7,,,,,,,Sowing before July 10
+Jharkhand,kharif,Soybean,,,7,,,,,,,Sowing before July 10
+Jharkhand,kharif,Sunflower,,,7,,,,,,,Sowing before July 10
+Jharkhand,kharif,Mango,,,,,,,,,,Irrigate at weekly intervals; apply urea and muriate of potash per plant; spray micronutrients during fruit development; apply nutrition after harvest
+Karnataka,kharif,Rice bean,,,,,,,,,,Leguminous fodder crop grown during kharif instead of common non-leguminous fodder
+Karnataka,kharif,Cowpea,,,,,,,,,,Leguminous fodder crop grown during kharif instead of common non-leguminous fodder
+Karnataka,kharif,Guar bean,,,,,,,,,,Leguminous fodder crop grown during kharif instead of common non-leguminous fodder
+Karnataka,kharif,Turmeric,,5,5,,,,,,,Add 25-30 tonnes FYM per hectare at final ploughing; complete sowing by mid-May
+Karnataka,kharif,Ginger,,5,5,,,,,,,Add 25-30 tonnes FYM per hectare at final ploughing; complete sowing by mid-May
+Karnataka,kharif,Okra,,,,,,,,,,Control Yellow Vein Mosaic disease by removal of affected plants
+Karnataka,kharif,Cucurbits,,,,,,,,,,Control red beetle by ash dust with kerosine oil & Chlorpyriphos 2% dust; control fruit fly by Malathion+jaggery spray
+Karnataka,kharif,Ridge gourd,,,,,,,,,,Control leaf spot disease by Indoil M-45 spray
+Karnataka,kharif,Brinjal,,,,,,,,,,"Control wilting by Streptocycline+copper oxychloride spray; leaf spot by Mancozeb; fruit and shoot borer by Emamectin benzoate, Spinosad, Coragen"
+Karnataka,kharif,Tomato,,,,,,,,,,"Control wilting by Streptocycline+copper oxychloride spray; leaf spot by Mancozeb; fruit and shoot borer by Emamectin benzoate, Spinosad, Coragen"
+Karnataka,kharif,Chilli,,,,,,,,,,Control Leaf curl virus using Imidacloprid
+Karnataka,kharif,Capsicum,,,,,,,,,,Control Leaf curl virus using Imidacloprid
+Karnataka,kharif,Onion,,,,,,,,,,To prevent tip burn spray Hexaconazole in 200 L water per acre
+Karnataka,kharif,Paddy,Karnataka,6,8,,62.5,20,10,,,"Popular varieties MO-4, Abhilasha, Intan, RNR 15048, Tunga, KHP-10, BPT 5204. Transplanting manual/machine"
+Karnataka,kharif,Maize,Karnataka,5,7,,15,60,20,,,"Hybrids CP-818, Arjun, Dharma(G.H.150125), Shrusti(G.H.0727). May-July sowing for kharif"
+Karnataka,kharif,Sunflower,Karnataka,6,7,,5,60,30,,,"Varieties KBSH-44, KBSH-53, KBSH-78, KBSH-85, KBSH-90"
+Karnataka,kharif,Finger Millet,Karnataka,,,,,,,,,
+Kerala,kharif,Arecanut,,5,6,,,270,270,,,Pit size 90 cm × 90 cm × 90 cm; wider spacing preferred when intercropped
+Kerala,kharif,Banana,,6,7,,,150,150,,,Triangular spacing for Elakki Banana; tissue culture spacing 183 cm × 183 cm (6x6 feet)
+Kerala,kharif,Cashew,,5,10,,,700,700,,,"Planting varies: Vengurla (Jun-Oct), Ullal and Chintamani (May-Jun); soil red sandy loam"
+Kerala,kharif,Rice (Wetland),,4,6,,80,35,15,18,,Transplant nursery age varies by duration type; paired row planting
+Kerala,kharif,Rice (Upland),,6,,,,,,,,Local and HYV varieties suitable; nursery bed height 10-15 cm; organic manure 1 kg/m²
+Kerala,kharif,Coconut,,6,7,,,250,250,,,Pits 60x60x60 cm or 45x45x45 cm; multiple varieties cultivated
+Ladakh,kharif,Finger Ginger,,,,,,25,25,,,Beds of 3m x 1.2m with 40 cm spacing between beds; pits 25x25 cm spacing; rhizomes planted flat with buds facing upwards; mulch green leaves @ 15 t/ha initially and repeat 50 days after planting.
+Ladakh,kharif,Turmeric,,,,,,,,,,
+Ladakh,kharif,Ginger,,,,,,40,20,,,"Beds 1 m wide, 25 cm height, spacing 40 cm between beds; small pits 20x20 to 25x25 cm; rhizomes 20-25 g with at least 2 buds; mulching with green leaves 15 t/ha immediately; mulching repeated twice at 44-60 and 90-120 days after planting."
+Ladakh,kharif,Wheat,,,,,100,,,,,Seed rate 100 kg/ha by seed drill or 300 kg/ha broadcasting; pre-sowing irrigation recommended.
+Ladakh,kharif,Barley,,,,,,,,,,
+Ladakh,kharif,Buckwheat,,,,,100,,,,,Plough 2-3 times and plank; pre-sowing irrigation recommended; line sowing with seed drill or broadcasting at 300 kg/ha.
+Ladakh,kharif,Buckwheat,,,,,30,,,,,Used as second crop after barley harvest; short duration; thinning starts after 20 days.
+Ladakh,kharif,Potato,,4,5,,2000,60,20,,,Plant in April in lower belt and May in higher belts; seed treated with Trichoderma viride @ 5 g; FYM 20-25 t/ha and neem cake 250 kg/ha; irrigation at 7-10 days interval.
+Ladakh,kharif,Onion,,3,4,,8,30,10,,,"Sow in March-April; FYM 15-20 t/ha at land prep; 3-4 irrigations during flowering and pod stage; manage pod borers, powdery mildew."
+Ladakh,kharif,Pea,,4,6,,0.5,45,45,24,,"Sow nursery in April with 500g/ha seed in protected structures, transplant mid-May-June at 45-60 x 45 cm spacing after hardening seedling 24 hrs."
+Ladakh,kharif,"Cabbage, Cauliflower, Broccoli",,3,4,,8,45,45,,,"Sow nursery March-April in line, transplant at 15x7 cm spacing in May-June; FYM 25 t/ha; irrigation at 7-10 day intervals."
+Ladakh,kharif,Radish,,4,5,,5,30,8,,,Sow April-May; FYM 20-25 t/ha; sow over ridges on hard soils.
+Ladakh,kharif,Apricot,,2,3,,,,,,,"Plant dormant nurseries in Nov-Dec pits 1m×1m×1m, planting in Feb-Mar; fertilize early spring and at planting with 10 kg FYM or 5-6 kg vermicompost increasing with age."
+Ladakh,kharif,Apple,,,,,,,,,,High density planting oriented North-South; FYM 5 kg/plant increasing to 25 kg at 5 years; irrigation 2-3 times fortnightly during dry weather.
+Lakshadweep,kharif,coconut,,8,9,,,,,,,Staking young seedlings for wind protection. Green manure crops to be ploughed in Aug-Sep. Use natural mulching at onset of NE monsoon.
+Lakshadweep,kharif,banana,,,,,,,,,,Application of organic manure 10kg per plant to newly planted banana.
+Lakshadweep,kharif,vegetables,,,,,,,,,,Seedling production through nursery method using fertile soil enriched with FYM/compost.
+Madhya Pradesh,kharif,Rice,,6,7,,,20,10,,,"Ideal transplanting time June 15 to July 15, nursery area 800-1000 m2/ha, nursery beds 1.5m wide, well-pulverized soil, FYM incorporated"
+Madhya Pradesh,kharif,Maize,,6,6,,,60,25,,,Optimum sowing time June 15 to June 30
+Madhya Pradesh,kharif,Green gram,,,,,20,,,,,
+Madhya Pradesh,kharif,Soybean,,,,,,30,10,,early,Early maturing short-statured varieties: 30 cm row spacing
+Madhya Pradesh,kharif,Soybean,,,,,,45,10,,long,Long-duration tall varieties: 45 cm row spacing
+Madhya Pradesh,kharif,Onion,,,,,12,,,,,Raise nursery with improved varieties
+Madhya Pradesh,kharif,Brinjal,,,,,,,,25,,"Transplant 25-30 days old seedlings, nursery preparation under 50% green shade net"
+Madhya Pradesh,kharif,Tomato,,,,,,,,25,,"Transplant 25-30 days old seedlings, nursery preparation under 50% green shade net"
+Madhya Pradesh,kharif,Chili,,,,,,,,,,Nursery preparation under 50% green shade net
+Madhya Pradesh,kharif,Cauliflower,,,,,0.6,,,,early,Sow early maturing cauliflower on raised beds
+Maharashtra,kharif,Maize,Vidarbha,6,7,,,,,,,Use PDKV Arambha variety
+Maharashtra,kharif,Cotton,Vidarbha,5,6,,2,120,90,,,Bt/Hybrid irrigated cotton spacing 120x90 cm; Deshi improved rainfed cotton spacing 60x15 or 60x30 cm; Intercropping recommended
+Maharashtra,kharif,Sugarcane,Vidarbha,6,7,,,,,,365,"Duration 12-15 months; seed rate 45,000-50,000 3-budded setts per hectare (~6-8 tonnes)"
+Maharashtra,kharif,Soybean,Vidarbha,6,7,,65,45,,,,"Preferred varieties MAUS-162, MAUS-612, PKV Amba, PKV Yellow Gold"
+Manipur,kharif,Paddy,,6,7,"[9, 10]",6,15,20,,,"Transplant 18-22 days for short, 25-30 for medium, 35-40 for long duration varieties. Use nursery age 4-5 weeks. Maintain water level 2-3 cm after sowing"
+Manipur,kharif,Finger Millet,,6,7,,100,30,15,,,Seed treated with Thiram 5 g/kg plus Rhizobium culture 25 g/kg. Broadcast on nursery beds with light pressing.
+Manipur,kharif,Maize,,6,7,,,75,18,,,Use high yielding composite and hybrid varieties with spacing 75x18 cm.
+Manipur,kharif,Ragi,,6,7,,6,20,8,21,,"Line sow at 3-4cm depth or transplant 3-4 week old seedlings 25x8 cm, 2 plants/hill."
+Manipur,kharif,Blackgram,,6,7,,10,15,30,,,Sowing by broadcasting or dibbling.
+Manipur,kharif,Groundnut,,5,6,,,,,,120,Use varieties ICGS 76 and JL 27. Keep field weed free up to 50 DAS. Earthing up at 30-35 DAS.
+Manipur,kharif,Tomato,,5,6,,0.4,60,60,,,"Varieties Arka Rakshak, Arka Samrat, Arka Abhay"
+Manipur,kharif,Brinjal,,5,6,,0.8,60,45,,,Varieties Pusa Purple Long and Arka Nidhi
+Manipur,kharif,Okra,,5,6,,10,60,45,,,"Varieties Arka Anamika, Arka Nikita"
+Manipur,kharif,Chilli,,5,6,,0.5,60,45,,,Varieties Arka Khyati and Arka Meghana
+Manipur,kharif,Mango,,5,7,,,,,,,"Prepare pits with topsoil, compost, 2kg SSP; graft joint above soil; 10-20% intervarietal grafting; pit dusted with Folidol 2% or Carbaryl 10%"
+Meghalaya,kharif,Paddy,,,,,40,20,15,20,,Transplant 20-25 day-old seedlings
+Meghalaya,kharif,Maize,,5,5,,,60,30,,,Sowing by last week of May; intercropping recommended with Dwarf French bean or soybean
+Meghalaya,kharif,Finger millet,,,,,4.5,,,,100,Transplant seedlings 21-30 days after sowing; delayed transplanting reduces yield
+Meghalaya,kharif,Ginger,,,,,1500,30,30,,,Use variety Nadia; Treat rhizome seeds with Trichoderma viride or harzianum before sowing
+Meghalaya,kharif,Turmeric,,,,,1500,30,30,,,Use varieties Megha Turmeric 1 or Lakadong; Treat rhizome seeds before sowing
+Meghalaya,kharif,Banana,,,,,,200,200,120,,Propagate with 4-month-old sword suckers weighing 1-2 kg and height 80-120 cm; spacing 2-3 m
+Mizoram,kharif,maize,,5,5,,21,60,20,,,"Avoid tall varieties like MZM 11, Ganga Hybrid, local Popcorn in heavy rainfall and strong winds"
+Mizoram,kharif,upland paddy,,6,7,,,,,25,,"Use dibbling method recommended over broadcasting; first weeding mid-May, second weeding early June to mid July; construct log wood/bamboo bunds for slopes >30%"
+Mizoram,kharif,lowland paddy,,6,,,,,,,,Begin puddling from first week of June; ensure proper levelling to prevent water stagnation
+Mizoram,kharif,soybean,,,,,,,,,,"Can be relay cropped with maize, planted between maize rows"
+Mizoram,kharif,groundnut,,5,6,,,,,,,Seed treatment with Bavistin (5g/kg seed); light irrigation during flowering and pod formation; manual weeding 20-25 DAS and earthing up 35-40 DAS
+Mizoram,kharif,tomato,,5,,,,75,30,,,Nursery beds raised 10-15 cm above ground; sow seeds thinly in 2.5 cm spaced furrows 1-2 cm deep; main field pits prepared 15 days before transplanting in June 2-3rd week
+Nagaland,kharif,Lowland Paddy,,5,5,,40,20,15,20,,Transplant seedlings by mid-June; nursery sowing in May; regular manual weeding needed
+Nagaland,kharif,Upland Paddy,,5,7,,,,,,,Treat seeds with Carbendazim 2-3g/kg; dibbling method; two intercultural operations/manual weedings at 25 DAS and between first week of June and second week of July; construct bunds and recharge pits on slopes
+Nagaland,kharif,Maize,,6,,,21,60,20,,85,Sowing after onset of rains recommended; apply FYM and NPK; earthing up twice at 35-40 and 60-65 DAS; weed free for 30-45 days
+Nagaland,kharif,Millet,,3,8,,9,25,8,,,Prepare field with 2-3 harrowings; use local or improved varieties; one to two manual weedings; seed treatment with Bavistin or Captan 2-3 g/kg; rogue off-type and diseased plants at flowering and maturity
+Nagaland,kharif,Soybean,,6,7,,,45,5,,,Line sowing in well drained loamy or sandy loam soil; treat seeds with Rhizobium and Phosphotika 20 g/kg each; maintain weed-free crop up to 60 DAS
+Nagaland,kharif,Turmeric,,,,,1500,30,30,,,Sow immediately with Megha turmeric 1 or Lakadong varieties; earthing up during July to protect rhizome fly; plant in ridges and furrows with proper drainage
+Nagaland,kharif,Groundnut,,5,6,,,,,,,"Sowing from mid May to first week June; use high yielding varieties ICGS 76, Dharani, KDG-123, Girnar 4; treat seed with Rhizobium and PSB culture before sowing"
+Odisha,kharif,rice,,5,6,,,,,,,Direct seeded rice seeds may be sown during last week of May till onset of monsoon. Transplanted rice nursery may be prepared with onset of monsoon.
+Odisha,kharif,green gram,,,,,,,,,,
+Odisha,kharif,black gram,,,,,,,,,,
+Odisha,kharif,arhar,,,,,,,,,,
+Odisha,kharif,groundnut,,,,,,,,,,
+Odisha,kharif,sugarcane,,,,,,,,,,Wrapping and propping at 4-5 months age in medium and late duration varieties.
+Odisha,kharif,ginger,,,,,1800,,,,,"Raised bed of 1 m width, 15 cm height with channels for drainage."
+Odisha,kharif,banana,,6,6,,,,,,,Tissue culture and high-density planting for higher productivity.
+Odisha,kharif,turmeric,,,,,,,,,,Ridge and furrow or furrow irrigated raised bed method for drainage.
+Punjab,kharif,rice,,6,6,,,20,15,30,,Nursery sowing 20 May-20 June; Transplanting 20 June-10 July; transplant two seedlings per hill; direct seeding at 3-4 cm depth in 20 cm spaced rows
+Punjab,kharif,basmati rice,,6,6,,,,,,,Nursery sowing in 1st or 2nd fortnight June and transplanting in 1st or 2nd fortnight July; seed rate 8-10 kg/acre; transplant two seedlings per hill at 20x15 cm; use short and medium duration varieties
+Punjab,kharif,maize,,5,6,,,60,20,,,Use 10 kg seed per acre; sow seed 3-5 cm deep in lines with maize planter
+Rajasthan,kharif,bajra,,6,7,,4.5,,,,,"Adjust seed rate upward on light, sandy soils or late sowing;"
+Rajasthan,kharif,maize,,5,6,,22.5,60,25,,,"In high rainfall areas, sowing in ridge-furrow recommended."
+Sikkim,kharif,maize,,5,5,,15,50,30,,,Sowing in furrows at 2-3 cm depth
+Sikkim,kharif,rice,,5,6,,35,20,15,25,,"Transplanting of 25-30 days old seedlings, 2-3 seedlings/hill"
+Sikkim,kharif,finger millet,,2,2,,,35,40,45,,Seedlings transplanted at 45-50 days age in raised beds
+Sikkim,kharif,cherry pepper,,,,,,,,,,Seed sowing in February for transplanting in April-May
+Sikkim,kharif,ginger,,4,5,,,30,25,,,"Rhizome size 30-45 g, sow at 4-5 cm depth in furrows"
+Sikkim,kharif,turmeric,,4,5,,,30,25,,,
+Sikkim,kharif,spice crops (mandua),,5,5,,,30,10,21,,"Seedlings transplanted 21-25 days old, 2 seedlings/hill"
+Tamil Nadu and Puducherry,kharif,Paddy,,,,,,60,25,,,"Alternate Wetting and Drying from 21 DAS to 10 days before harvest, Stubble management: Incorporate with TNAU Biomineralizer + urea"
+Tamil Nadu and Puducherry,kharif,Cotton,,,,,,45,30,,,Paired row planting (45/90 x 30 cm) with two rows of cluster bean
+Tamil Nadu and Puducherry,kharif,Coconut,,,,,,90,15,,,"High Density Planting with planting density 29,629 plants/acre"
+Tamil Nadu and Puducherry,kharif,Groundnut,,,,,,30,15,,,Raised beds with 30 cm furrows and drip irrigation
+Tamil Nadu and Puducherry,kharif,Greengram,,,,,,30,15,,,Raised beds with 30 cm furrows and drip irrigation
+Tamil Nadu and Puducherry,kharif,Blackgram,,,,,,30,15,,,Raised beds with 30 cm furrows and drip irrigation
+Tamil Nadu and Puducherry,kharif,Redgram,,,,,,30,15,,,Raised beds with 30 cm furrows and drip irrigation
+Telangana,kharif,Paddy,,5,6,,,,,,,Raise nurseries of long duration varieties (140-145 days) from May 20 to June 20 under assured irrigation; medium duration (130-135 days) or short duration (120-125 days) from June 20 onwards. Direct seeding started June end. Treat seeds with carbendazim.
+Telangana,kharif,Maize,,6,7,,,,,,,Optimum sowing window from June 15 to July 15 with medium (90-100 days) and long duration (100-120 days) varieties; sowing can extend to July end if monsoon delayed. Use seed cum ferti drill on ridges and beds.
+Telangana,kharif,Cotton,,6,7,,,,,,,"Sow early by June 1 to 2nd week after sufficient rains (60 mm); do not sow after July 20. Spacing options: 120x60, 120x45, 90x60, 90x45, 90x30 cm. Use ridge and furrow in medium soil, broad bed furrow in black soil."
+Telangana,kharif,Redgram,,6,7,,,,,,155,"Sow after receipt of 60 mm rain; optimum sowing time June 15 to July 15. Spacing 150-180 x 20 cm black soil, 90-120 x 20 cm red soil. Seed rate 2.5 to 3 kg per acre."
+Telangana,kharif,Greengram,,6,7,,,,,,,Sowing generally June 15 to July 15.
+Telangana,kharif,Blackgram,,6,7,,,,,,,Sowing generally June 15 to July 15.
+Telangana,kharif,Groundnut,,6,7,,,,,,,"Sow varieties ASB-22, JS-335, AISb-1, JS-93-05 during June 15 to July 1st week with seed drill, gorru, desi plough, tractor seed cum fertilizer drill or broad bed furrow planter."
+Telangana,kharif,Soybean,,6,7,,237,,,,,Sowing June 15 to July 15. Treat seeds with imidacloprid and carbendazim. Use broad bed furrow planter or raised bed method.
+Telangana,kharif,Castor,,6,7,,,,,,,"Sow high yielding hybrids ICH-5, ICH-66, PCH-111, DCH-519, ICH-6, PCS-262 from June 15 to July 15 under rainfed conditions."
+Tripura,kharif,maize,,,,,,,,,,"High yielding varieties include RCM 1-1, RCM 1-2, RCM 1-3, Vijay Composite, DA 61-A, HQPM-1, and HQPM-2. Perform three deep ploughings, ensure proper drainage, and earthing up."
+Tripura,kharif,paddy,,5,6,,,,,20,135,"Raise nursery for varieties CR Dhan 310, CR Dhan 311, Gomati, Swarna Masuri. Seed treatment 24h before sowing with Carbendazim/Captan or Trichoderma viride. Transplant seedlings based on duration."
+Tripura,kharif,cucurbits,,,,,,,,,,Start seed treatment before sowing; nursery on raised beds with polythene cover; control melon fly and downy mildew with recommended measures.
+Tripura,kharif,okra,,5,6,,8,75,30,,,"Varieties Baazigar-0865 (Sakata), Simba-0895 (Sakata), NS 7774 (Namdhari Seeds), Lavanya (Advanta), Arka Nikita, Arka Abhay."
+Tripura,kharif,tomato,,5,6,,2.5,75,30,,,"Varieties Baazigar-0865 (Sakata), Simba-0895 (Sakata), NS 7774 (Namdhari Seeds), Lavanya (Advanta), Arka Nikita, Arka Abhay."
+Tripura,kharif,ginger & turmeric,,5,5,,,40,20,,,Plant rhizomes with spacing 40x20 cm; dip rhizomes in Trichoderma solutions before planting; mulch beds with dry paddy straw or green leaves.
+Uttar Pradesh,kharif,ginger,,5,5,,,40,20,,,"Plant rhizomes in ridges and furrows; recommended varieties Varadha, Nadia"
+Uttar Pradesh,kharif,turmeric,,5,5,,,40,20,,,"Plant rhizomes in ridges and furrows; recommended varieties Megha Turmeric 1, Lakadong"
+Uttar Pradesh,kharif,direct seeded rice,,6,6,,20,20,25,,,Sow depth 2-3 cm; seed rate 20-30 kg/ha depending on grain type and sowing method
+Uttar Pradesh,kharif,puddled transplanted rice,,6,7,,,20,15,20,,"Transplant 20-25 day-old seedlings, 2-3 seedlings per hill"
+Uttar Pradesh,kharif,basmati rice,,6,7,,30,20,15,25,,Transplant 25-30 day-old seedlings at 20x15 cm spacing; nursery sowing mid-June to mid-July
+Uttar Pradesh,kharif,maize,,6,,,20,60,20,,,Sow 10-15 days before onset of rain for irrigated; after moisture buildup for rainfed
+Uttarakhand,kharif,Rice,"Tarai, Bhabhar & Plain",5,6,,40,20,10,,,"Nursery sowing 2nd fortnight May to 1st week June, transplanting end June to 1st week July; for basmati 1.0 kg seed per 25 m2 nursery"
+Uttarakhand,kharif,Rice,valley & lower hill (<900 msl),5,6,,40,,,,,"Nursery sowing May 2nd fortnight to June 1st week, transplanting last week June"
+Uttarakhand,kharif,Rice,mid hills (900-1500 msl),5,5,,40,,,,,"Nursery sowing May 1st fortnight, transplanting 2nd fortnight June"
+Uttarakhand,kharif,Jethi rice,,5,6,,,,,,,Sowing direct seed 4th week May to 1st week June
+Uttarakhand,kharif,Chetaki rice,,3,4,,,,,,,Sowing mid March to 1st fortnight April
+Uttarakhand,kharif,Maize,"Tarai, Bhabhar & Plain",6,7,,18,60,22.5,,,Sowing mid-June to mid-July; line sowing at 5 cm depth
+Uttarakhand,kharif,Maize,lower hill,6,6,,18,60,22.5,,,Sowing 1st week June to mid-June
+Uttarakhand,kharif,Maize,mid hill,5,6,,18,60,22.5,,,Sowing May end to mid-June
+Uttarakhand,kharif,Maize,higher hill,4,5,,18,60,22.5,,,Sowing April end to mid-May
+West Bengal,kharif,Rice,,6,6,,,,,25,,"Seed bed prep May 20 to June 5, Transplant June 10 to 25. 25-35 days old seedlings."
+West Bengal,kharif,Maize,,,,,,,,,,"Suitable for upland/medium upland, coarse textured soil."
+West Bengal,kharif,Jute,,,,,,,,,,Main summer cash crop with water scarcity in retting ponds.
+West Bengal,kharif,Black gram,,,,,,,,,,Suitable for up or medium upland with good drainage.
+Jammu & Kashmir,Kharif,Rice,Jammu,5,5,,50,15,15,25,,"Transplant 2-3 seedlings per hill, shallow transplanting recommended, maintain 2-3 cm water level"
+Jammu & Kashmir,Kharif,Paddy,Jammu,,,,,,,,,Use blast-resistant coarse/semi-fine varieties in sub-tropical zones; early blast and cold tolerant types in temperate and sub-temperate areas
+Jammu & Kashmir,Kharif,Maize,Jammu,,,,,75,20,,,"Spacing 75x20 cm for hybrids, 60x20 cm for composites"
+Jammu & Kashmir,Kharif,Bhindi (Okra),Jammu & Kashmir,,,,6,60,45,,,"Varieties suitable for rainy season, seed rate 4.8-6.0 kg/acre"
+Jammu & Kashmir,Kharif,Chillies,Jammu & Kashmir,,,,0.32,45,30,,,Seed rate 280-320 g/acre
+Jammu & Kashmir,Kharif,Moong,Jammu,5,5,,40,45,10,,,Complete sowing in first fortnight of May.
+Jammu & Kashmir,Kharif,Soybean,Jammu,5,5,,40,45,10,,,Complete sowing in first fortnight of May. Same spacing and seed rate as moong.
+Jammu & Kashmir,Kharif,Cowpea,Jammu,5,5,,60,30,10,,,Complete sowing in first fortnight of May. Bush type seed rate 60-70 kg/ha and spacing 30x10 cm; Pole type 30-35 kg/ha and 60x20 cm.
+Jammu & Kashmir,Kharif,Rajmash (Kidney Bean),Jammu,5,5,,30,60,20,,,Complete sowing in first fortnight of May. Pole type spacing and seed rate.
+Jammu & Kashmir,Kharif,Brinjal,Jammu & Kashmir,4,5,,0.5,60,45,,,Seed rate 500-750 g/ha for varieties; spacing 60x45 cm.
+Jammu & Kashmir,Kharif,Bell Pepper,Jammu & Kashmir,4,5,,1,60,45,,,Seed rate 1-1.5 kg/ha for varieties; spacing 60x45 cm.
+Jammu & Kashmir,Kharif,Chillies,Jammu & Kashmir,4,5,,1.75,30,25,,,"Recommended varieties include Shalimar Long, Kashmir Long 1, PC-56."
+Jammu & Kashmir,Kharif,Tomato,Kashmir,3,4,,0.55,60,45,,,Spacing varies 45x30 cm for S-I variety; 60x45 cm for Roma and S-II.
+Jammu & Kashmir,Kharif,Potato,Kashmir,,,,2000,60,20,,,Seed tubers spaced at 60x20 cm; seed rate 20-25 q/ha.
+Jammu & Kashmir,Kharif,Bottle Gourd,Kashmir,4,5,,7,200,100,,,Seeds sown @6-8 kg/ha directly in mid-April-May.
+Jammu & Kashmir,Kharif,Cucumber,Kashmir,4,5,,5.5,150,60,28,,Seeds sown mid-April-May; pre-soaked; 2-3 seeds planted per hill.
+Jammu & Kashmir,Kharif,Bitter Gourd,Kashmir,4,5,,2.5,120,30,,,For varieties sown mid-April-May.
+Jammu & Kashmir,Kharif,French Bean,Kashmir,4,6,,80,30,10,,,Bush type sown April to June.
+Jammu & Kashmir,Kharif,Bhindi (Okra),Kashmir,4,5,,18,45,30,,,"Seed pre-soaked, sown on ridge tops."

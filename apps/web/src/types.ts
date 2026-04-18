@@ -322,6 +322,11 @@ export interface FieldBlock {
   irrigation_method?: string
   companion_crops?: string[]
   planting_tip?: string
+  // Layout accuracy fields
+  is_broadcast?: boolean
+  seed_rate_kg_per_acre?: number
+  headland_m?: number
+  spacing_source?: string  // "reference" | "icar" | "default"
 }
 
 export interface FieldLayoutPlan {
@@ -347,6 +352,11 @@ export interface MatchedScheme {
   eligibility_summary: string
   application_url?: string | null
   match_reasons: string[]
+  // Extended fields
+  scheme_type?: string
+  checklist_items?: string[]
+  category_subsidy_note?: string | null
+  source_url?: string | null
 }
 
 export interface SchemesReport {
@@ -354,6 +364,10 @@ export interface SchemesReport {
   total_potential_subsidy?: number | null
   eligibility_checklist: string[]
   data_note: string
+  // Extended fields
+  schemes_by_type?: Record<string, string[]>
+  state_specific_count?: number
+  central_count?: number
 }
 
 // ── Economist v2 Output ──────────────────────────────────────────────
@@ -438,6 +452,87 @@ export interface EconomistOutput {
   warnings: string[]
 }
 
+// ── ICAR Advisory ────────────────────────────────────────────────────
+
+export interface IcarCalendarEntry {
+  crop_name: string
+  sub_region?: string | null
+  sow_start_month?: number | null
+  sow_end_month?: number | null
+  harvest_month_range?: string | null
+  seed_rate_kg_ha?: number | null
+  row_spacing_cm?: number | null
+  plant_spacing_cm?: number | null
+  duration_days?: number | null
+  notes?: string | null
+}
+
+export interface IcarNutrientPlan {
+  crop_name: string
+  sub_region?: string | null
+  N_kg_ha?: number | null
+  P_kg_ha?: number | null
+  K_kg_ha?: number | null
+  FYM_t_ha?: number | null
+  zinc_sulphate_kg_ha?: number | null
+  other_micronutrients?: string | null
+  biofertilizers?: string | null
+  split_schedule?: string | null
+  application_notes?: string | null
+}
+
+export interface IcarPestEntry {
+  crop_name: string
+  sub_region?: string | null
+  pest_or_disease_name: string
+  type?: string | null
+  monitor_start_month?: number | null
+  monitor_end_month?: number | null
+  chemical_control?: string | null
+  bio_control?: string | null
+  threshold_note?: string | null
+}
+
+export interface IcarVarietyEntry {
+  crop_name: string
+  sub_region?: string | null
+  variety_names?: string | null
+  variety_type?: string | null
+  duration_type?: string | null
+  purpose?: string | null
+}
+
+export interface IcarWeedEntry {
+  crop_name: string
+  sub_region?: string | null
+  pre_emergence_herbicide?: string | null
+  pre_em_dose?: string | null
+  pre_em_timing_das?: string | null
+  post_emergence_herbicide?: string | null
+  post_em_dose?: string | null
+  post_em_timing_das?: string | null
+  manual_weeding_schedule?: string | null
+}
+
+export interface IcarAdvisory {
+  state: string
+  season: string
+  crop_name: string
+  crop_id?: string | null
+  calendar: IcarCalendarEntry[]
+  nutrient_plans: IcarNutrientPlan[]
+  pests: IcarPestEntry[]
+  varieties: IcarVarietyEntry[]
+  weed_management: IcarWeedEntry[]
+}
+
+export interface IcarAdvisoryReport {
+  state: string
+  season: string
+  advisories: IcarAdvisory[]
+  data_note: string
+}
+
 // ── Plan Response (full pipeline output) ────────────────────────────
 
 export interface PlanResponse {
@@ -464,4 +559,5 @@ export interface PlanResponse {
   economist_output?: EconomistOutput | null
   field_layout?: FieldLayoutPlan | null
   schemes?: SchemesReport | null
+  icar_advisory?: IcarAdvisoryReport | null
 }

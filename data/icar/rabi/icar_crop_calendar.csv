@@ -1,0 +1,365 @@
+state,season,crop_name,sub_region,sow_start_month,sow_end_month,harvest_month_range,seed_rate_kg_ha,row_spacing_cm,plant_spacing_cm,nursery_days,duration_days,notes
+Punjab,rabi,wheat,,10,11,"[3, 4]",111.33,17.5,,,,Optimum sowing time first fortnight of November; long duration varieties from fourth week of October; seed rate 45 kg/acre except Unnat PBW 550 which is 40 kg/acre; seed treatment recommended for termite and smut; various sowing methods including zero tillage and raised bed; irrigation timing varies with soil texture; use of happy seeder requires 5-10 kg more seed.
+Punjab,rabi,rapeseed and mustard,,9,11,,3.71,30,,,,"Different sowing times for Toria (September), Gobhi Sarson (Oct-Nov), Raya and African Sarson (Oct-Nov), Taramira (October); seed rate 1.5 kg/acre; Gobhi Sarson can be transplanted; nursery raising for gobhi sarson and African sarson; bed planting possible for Gobhi Sarson; hoeing recommended for weed control."
+Punjab,rabi,sugarcane,,2,3,,,75,,,,"Early maturing and mid-late maturing varieties; seed rate about 30-35 quintal/acre; seed treatment soaking setts in ethrel solution; planting methods include trench, paired row trench and FIRB; intercropping with summer moong/mash possible; irrigation critical Apr-Jun at 7-12 days interval."
+Punjab,rabi,berseem,,9,10,,8.89,,,,,Best sowing last week September to first week October; broadcast seed in standing water; inoculation with Rhizobium recommended; manganese deficiency spray recommended; weed control by mixing with raya; irrigation interval varies with soil type; first cutting 50 days after sowing then every 30-40 days total 4-6 cuttings.
+Punjab,rabi,pea,,10,11,,100.12,30,7.5,,,Early maturing varieties sown mid-Oct to mid-Nov; spacing 30x7.5 cm for early and 30x10 cm for main season; seed rate 45 kg/acre early and 30 kg/acre main season; inoculate with Rhizobium; weed control with pendimethalin herbicide within 2 days of sowing.
+Punjab,rabi,potato,,9,1,,,65,18.5,,,"Early sowing last week September to mid-October; spring sowing second half January; seed tubers 40-50 g used at 13-18 q/acre; dormancy breaking treatment suggested; mechanized planting spacing 65x18.5 cm or 75x15 cm; fertilizer includes 20 t FYM, 75 kg N, 25 kg P2O5, 25 kg K2O per acre; earthing-up after 25-30 days; weed control includes paddy straw mulch and metribuzin herbicide as pre-emergence."
+Punjab,rabi,chilli,,10,11,,0.49,75,45,,,"Seed sown in nursery Oct end to mid-Nov; transplanting Feb to March; nursery size one marla per acre; polyhouse nursery recommended; fertilizer includes 25 kg N, 12 kg P2O5, 12 kg K2O per acre; 30 kg N per acre for hybrid chilli; growth regulator spray of NAA after 45 and 55 days for flower retention."
+Punjab,rabi,cauliflower,,6,11,,,45,,,,"Early transplant June-July, main Aug-mid Sept, late Oct-Nov; seed rate 250 g/acre main/late, 500 g/acre early; fertilizer 40 t FYM, 50 kg N, 25 kg P2O5, 25 kg K2O per acre; irrigation after transplant then every 7-8 days summer, 10-15 days winter; 8-12 irrigations per crop."
+Ladakh,rabi,Chinese cabbage,,9,9,,,30,30,,,Nursery should be sown in first fortnight of September; transplant spacing 30x30 cm
+Ladakh,rabi,Cabbage,,9,9,10,,45,30,,,Nursery should be sown in first fortnight of September; spacing 45x30 cm; complete by first fortnight of October
+Ladakh,rabi,Broccoli,,9,9,10,,45,30,,,Nursery should be sown in first fortnight of September; spacing 45x30 cm; complete by first fortnight of October
+Ladakh,rabi,Spinach,,9,9,,,30,30,,,Direct sow before October; spacing 30x30 cm
+Ladakh,rabi,Swiss Chard,,9,9,,,30,30,,,Direct sow before October; spacing 30x30 cm
+Ladakh,rabi,Radish,,9,9,,,,,,,Sow on bunds
+Ladakh,rabi,Carrot,,9,9,,,,,,,Sow on bunds
+Ladakh,rabi,Knol Khol,,9,11,,,,,,,Can be transplanted in September-November to get crop throughout winters
+Ladakh,rabi,Methi,,,,,,,,,,
+Ladakh,rabi,Coriander,,,,,,,,,,
+Ladakh,rabi,Turnip,,,,,,,,,,
+Ladakh,rabi,Lettuce,,9,9,,,,,,,Nursery should be sown in first fortnight of September
+Ladakh,rabi,Celery,,,,,,,,,,
+Ladakh,rabi,Kale,,,,,,,,,,
+Uttarakhand,rabi,wheat,"Plain, Bhawar and Trai area",10,11,,100,,,,,4-6 irrigations required
+Uttarakhand,rabi,gram,"Plain, Bhawar and Trai area",11,12,,80,,,,,"Optimum sowing Nov first fortnight, late sowing up to Dec first fortnight"
+Uttarakhand,rabi,barley,,10,10,,100,,,,,"Sowing last week of Oct in irrigated, first fortnight Oct in rainfed"
+Uttarakhand,rabi,lentil,"Plain, Bhawar and Trai areas",11,12,,40,,,,,
+Uttarakhand,rabi,yellow mustard/toria,"Plain, Bhawar and Trai area",10,10,,5,,,,,Early sowing rye Sep last week to Oct first fortnight
+Uttarakhand,rabi,pea,"Plain, Bhawar and Trai area",10,11,,125,,,,,Dwarf varieties sown mid Oct to mid Nov
+Uttarakhand,rabi,onion,,10,10,,9,,,,,"Nursery in October, transplanting in December"
+Uttarakhand,rabi,potato,"Plain, Bhawar and Trai area",10,10,,2500,,,,,
+Uttarakhand,rabi,radish,"Plain, Bhawar and Trai area",9,1,,9,,,,,"Sowing Sept to Jan for Plain, Bhawar and Trai"
+Uttarakhand,rabi,coriander,,,,,22.5,,,,,
+Uttarakhand,rabi,spinach,,,,,27.5,,,,,
+Uttarakhand,rabi,apple,lower hilly and hill area,12,2,,,,,,,"Apply FYM 100 kg/plant, N 1.5 kg Urea per basin, P SSP 2 kg/plant, K MOP 1.7 kg/plant in December-January"
+Uttarakhand,rabi,peach,"Plain, Bhawar and Trai area",,,,,,,,,
+Uttarakhand,rabi,plum,"Plain, Bhawar and Trai area",,,,,,,,,
+Uttarakhand,rabi,apricot,lower hilly and hill area,,,,,,,,,
+Uttarakhand,rabi,almond,lower hilly and hill area,,,,,,,,,
+Rajasthan,rabi,Taramira,,9,10,,5.5,42.5,,,,Sowing time depends on available soil moisture and prevailing temperature; mostly in barani areas.
+Rajasthan,rabi,Mustard,,9,10,,5,,,,,Late sowing results in more incidence of sucking pest and white rust.
+Rajasthan,rabi,Chickpea,,10,10,,65,,,,,100-130 Kg/ha seed rate for Kabuli chickpea.
+Rajasthan,rabi,Barley,,10,11,,90,,,,,"Dual purpose cereal crop, cultivated in semi-arid and arid regions."
+Rajasthan,rabi,Wheat,,11,11,,110,,,,,Mainly cultivated under irrigated conditions.
+Rajasthan,rabi,Fenugreek,,10,10,,22.5,,,,,Leguminous seed spice crop.
+Rajasthan,rabi,Cumin,,10,11,,13.5,30,,,,Sowing in second fortnight of Oct to 5 Nov.
+Haryana and Delhi,rabi,mustard,,9,10,,3.5,,,,,Use 4.0 kg/ha seed for rainfed crop if moisture available
+Haryana and Delhi,rabi,chickpea,,10,10,,,30,10,,,Avoid sowing before 15 October for wilt management; Kabuli gram sow in last week Oct; spacing 45 cm under rainfed
+Haryana and Delhi,rabi,wheat,,10,12,,100,,,,,Late sowing up to 3rd week December; increase seed rate by 25% for late sown
+Uttar Pradesh,rabi,Berseem,,10,11,11,225,,,,210,"Mix 400 g seed Chinese cabbage variety of mustard with full seed rate of berseem for early first cut; In November, mix berseem with oats at half seed rate of oats."
+Uttar Pradesh,rabi,Oats,,10,10,,75,25,,,,Optimum sowing 2nd to last week October; Seed treated with 1 gm Vitavax per kg seed.
+Uttar Pradesh,rabi,Wheat,,10,11,,100,22.5,,,,For medium grain varieties 100 kg/ha seed rate; Bold seeded 125 kg/ha; Late sown 125-150 kg/ha; Spacing reduced to 15-18 cm for late sowing.
+Bihar,rabi,wheat,,11,12,,,20,,,,Late sown wheat row spacing 18 cm; increase seed rate by 10-20% in late sown wheat
+Bihar,rabi,maize,,10,11,,,60,20,,,Sowing with zero till drill possible
+Bihar,rabi,gram,,10,11,,75,30,10,,,Use seed rate 75-80 for small seeded; 100 for bold seed; depth 8-10cm
+Bihar,rabi,lentil,,10,11,,30,30,10,,,Seed rate 30-35 kg/ha sole crop; 50-60 kg/ha for paira cropping; depth 4-5cm
+Bihar,rabi,lathyrus,,10,11,,40,30,10,,,Seed rate 25-30 kg/ha for grain crop; 40 kg/ha for dual purpose; spacing 30x10 cm
+Bihar,rabi,field pea,,10,11,,70,30,10,,,Seed rate 70-80 for long duration; 100 for short duration; spacing 30x10 cm for long; 22.5x10 cm for short; depth 4-5 cm
+Bihar,rabi,rapeseed/mustard,,10,11,,,30,10,,,Spacing 30x10-15 cm; depth 4-5 cm; thinning after 3 weeks
+Bihar,rabi,linseed,,10,11,,25,30,5,,,Seed rate 20-30 normal sowing; 30-40 for utera/paira cropping; depth 4-5 cm
+Bihar,rabi,potato,,10,12,3,,,,,,Land prep per varieties for early crop; harvesting in March
+Bihar,rabi,cauliflower,,10,12,4,,,,,,Nursery raising mid-season varieties; sowing in October
+Bihar,rabi,cabbage,,10,12,4,,,,,,Nursery raising mid-season varieties; sowing in October
+Bihar,rabi,tomato,,11,2,,,,,,,Planting in November; seedling treatment with Rhizobium and PSB
+Bihar,rabi,onion,,1,2,,,,,,,"Transplantation in January-February; irrigation, weeding and hoeing timed"
+Bihar,rabi,garlic,,2,2,,,,,,,"Irrigation, weeding and hoeing according to time"
+Bihar,rabi,spinach,,10,10,,,,,,,Land preparation and sowing in October
+Bihar,rabi,radish,,10,10,,,,,,,Land preparation and sowing in October
+Bihar,rabi,carrot,,10,10,,,,,,,Land preparation and sowing in October
+Bihar,rabi,turnip,,10,10,,,,,,,Land preparation and sowing in October
+Bihar,rabi,coriander,,10,10,,,,,,,Land preparation and sowing in October
+Jharkhand,rabi,wheat,,10,12,,100,20,10,,,"Timely irrigated condition sow 1st week Oct, timely unirrigated 2nd week Nov, late irrigated 1st week Dec"
+Jharkhand,rabi,gram,,,,,70,30,10,,,Seed depth 8-10 cm
+Jharkhand,rabi,lentil,,10,11,,30,25,8,,,
+Jharkhand,rabi,mustard,,10,11,,5,30,12.5,,,"Seed sown depth 2 cm, sowing for Toria 15 Sept to 15 Oct"
+Jharkhand,rabi,toria,,9,10,,3.75,30,12.5,,,Seed sown depth 2 cm
+Jharkhand,rabi,vegetable peas,,10,10,,50,30,12.5,,,
+Jharkhand,rabi,potato,,10,12,,,50,15,,,"Early variety planting from October at 50x20 cm, mid-season from Dec at 50x20 cm"
+Jharkhand,rabi,onion,,10,11,,,15,10,40,,"Seed depth 2-3 cm for direct sowing, seedlings transplanted November"
+Jharkhand,rabi,cabbage,,11,2,,,60,40,,,Transplant seedlings treated with Trichoderma
+Jharkhand,rabi,cauliflower,,11,2,,,60,40,,,Transplant seedlings treated with Trichoderma
+Jharkhand,rabi,broccoli,,10,11,,,50,40,,,Seedling treated with Trichoderma before planting
+Jharkhand,rabi,tomato,,10,2,,,60,40,,,Seedlings dipped in Trichoderma before planting
+Jharkhand,rabi,brinjal,,10,2,,,50,50,,,Seedlings dipped in Trichoderma before planting
+Jharkhand,rabi,chilli,,10,2,,,50,50,,,Seedlings dipped in Trichoderma before planting
+West Bengal,rabi,boro paddy,,12,12,"[2, 3]",,,,40,,Timely seed sowing in nursery 1-15 December; transplanting 15-30 January with 40-45 days old seedlings
+West Bengal,rabi,maize,,,,,,60,30,,,Follow ridge and furrow sowing; optimum plant population 7 plants/sqm
+West Bengal,rabi,lentil,,11,11,,30,,,,,Sowing between 1-30 November; can be relay crop 7-10 days before kharif paddy harvest
+West Bengal,rabi,mustard,,10,11,,,20,10,,,Sowing completed within 3rd week October to 2nd week November; line sowing
+West Bengal,rabi,summer greengram,,,,,,,,,,
+West Bengal,rabi,sunflower,,,,,,,,,,3-4 irrigations required; use decomposed FYM 7-8 t/ha or vermicompost 2 t/ha
+West Bengal,rabi,cotton,Sundarbans,12,1,,,45,30,,,Sowing 15 Dec to 15 Jan; 2-3 irrigations; direct sowing after seed treatment
+West Bengal,rabi,lathyrus,,11,11,,48,,,,,Sow in November in moist soil during rice flowering
+West Bengal,rabi,tomato,,5,6,"[10, 3]",,,,,,Seed priming advised using Cycocel or KNO3; soluble fertilizer sprays after transplant
+West Bengal,rabi,chilli,,5,6,"[10, 3]",,,,,,Same as tomato
+West Bengal,rabi,bitter gourd,,5,6,"[10, 3]",,,,,,Salt tolerant; use ethrel spray to increase female flowers
+West Bengal,rabi,dolichos bean,,5,6,"[10, 3]",,,,,,Long cropping period from sowing May-June to harvesting October to March
+West Bengal,rabi,cabbage,,,,,,,,,,Suggested for upland and salt affected YAAS soils
+West Bengal,rabi,cauliflower,,,,,,,,,,Suggested for upland and salt affected YAAS soils
+West Bengal,rabi,knolkhol,,,,,,,,,,Suggested for upland and salt affected YAAS soils
+West Bengal,rabi,brinjal,,,,,,,,,,Suggested for upland
+West Bengal,rabi,beet,,,,,,,,,,Suggested for upland and salt affected YAAS soils
+West Bengal,rabi,carrot,,,,,,,,,,Suggested for upland
+Andaman and Nicobar Islands,rabi,green gram,,11,12,,20,,,,,"Relay cropping as rice fallow pulse, broadcast 20 kg seeds in standing crop 5 to 10 days before paddy harvest"
+Andaman and Nicobar Islands,rabi,black gram,,11,12,,20,,,,,"Relay cropping as rice fallow pulse, broadcast 20 kg seeds in standing crop 5 to 10 days before paddy harvest"
+Andaman and Nicobar Islands,rabi,maize,,,,,20,60,25,,,"Dibble seeds at 4 cm depth, single seed per hill if germination assured, else two seeds per hill"
+Andaman and Nicobar Islands,rabi,groundnut,,12,1,,120,,,,,For bold seeded variety seed rate 175 kg/ha
+Andaman and Nicobar Islands,rabi,brinjal,,,,,,,,,,Select high yield round fruited varieties as per local market demand
+Andaman and Nicobar Islands,rabi,tomato,,,,,,,,,,"Avoid rainy days for transplanting, select sandy soils"
+Andaman and Nicobar Islands,rabi,cabbage,,,,,,,,,,"Grow tropical high temperature tolerant varieties like White Marvel, White Short"
+Andaman and Nicobar Islands,rabi,cauliflower,,,,,,,,,,"Grow tropical high temperature tolerant varieties like White Marvel, White Short"
+Andaman and Nicobar Islands,rabi,french beans,,,,,,,,,,Grow pole types only
+Andaman and Nicobar Islands,rabi,radish,,,,,,,,,,"Choose sandy loam loose soil; varieties like Pusachetaki, Japanese long"
+Andaman and Nicobar Islands,rabi,sweet potato,,,,,,,,,,"Improved biofortified varieties like Bhu-sona and Bhu-sakti and CARI SP-1, CARI SP-2"
+Andaman and Nicobar Islands,rabi,carrot,,,,,,,,,,Asiatic variety like Pusa Rudhira and others
+Andaman and Nicobar Islands,rabi,chilies,,,,,,,,,,"Grow leaf curling resistance varieties like VNR-Black, Bullet Mirch, Pusajwala, MDU-1"
+Andaman and Nicobar Islands,rabi,pumpkin,,,,,,,,,,"Sensitive to downy mildew and powdery mildew, control recommended"
+Andaman and Nicobar Islands,rabi,ridge guard,,,,,,,,,,"Sensitive to downy mildew and powdery mildew, control recommended"
+Andaman and Nicobar Islands,rabi,cucumber,,,,,,,,,,"Sensitive to downy mildew and powdery mildew, control recommended"
+Andaman and Nicobar Islands,rabi,bitter gourd,,,,,,,,,,"Sensitive to downy mildew and powdery mildew, leaf mosaic virus problem"
+Andaman and Nicobar Islands,rabi,watermelon,,,,,,,,,,"Control Fusarium wilt, apply TIBA 25 ppm, MH 50 ppm + GA 25 ppm, boron and calcium 20 ppm"
+Andaman and Nicobar Islands,rabi,okra,,,,,,,,,,"Grow YMV resistant varieties, spray Dimethoate every 10 days, manage powdery mildew and spotted bollworm"
+Assam,rabi,early Ahu Rice,,2,2,,40,20,15,,,"Seedbed of 1.25 m width, 10 m length, 30 cm gap between beds; 2-3 seedlings per hill for semi dwarf varieties, 1 seedling per hill for hybrid"
+Assam,rabi,wheat,,,,,110,20,,,,Seed priming by soaking seeds overnight; sowing depth 3-5 cm; pre-sowing irrigation 3-4 days before sowing if dry topsoil
+Assam,rabi,maize,,9,11,,,60,20,,,Well drained sandy loam soil; seeds from composite varieties can be kept for sowing; do not keep seeds of hybrids
+Assam,rabi,buckwheat,Upper Brahmaputra Valley Zone,9,10,,20,30,,,,
+Assam,rabi,buckwheat,Lower Brahmaputra Valley Zone,10,11,,20,30,,,,
+Assam,rabi,foxtail millet,,1,2,,10,25,,,,Seed rate may be increased to 15 kg/ha under broadcast sowing
+Assam,rabi,lentil,,10,11,,30,25,6,,,"Seed spacing 5-7 cm seed to seed; varieties HUL 57, Axom Masur 1 (SL 2-24), Axom Masur 2 (SL 2-28)"
+Assam,rabi,rapeseed and mustard,Hills Zone,10,11,,6,,,,,In Hills Zone mixed 75:25 toria + lentil seed proportion; pure crop seed rate 6-8 kg/ha
+Assam,rabi,rapeseed and mustard,,10,11,,10,,,,,"Toria seed rate 10 kg/ha, rainfed late sown toria seed rate 13 kg/ha"
+Assam,rabi,linseed,Barak Valley Zone,10,12,,15,25,10,,,
+Assam,rabi,linseed,,10,11,,20,25,10,,,Can also be grown as relay crop with kharif rice
+Assam,rabi,niger,Lower Brahmaputra Valley Zone,9,10,,8,25,6,,,"Line sowing seed rate 8 kg/ha, broadcast seed rate 12 kg/ha"
+Assam,rabi,niger,Lower Brahmaputra Valley Zone,9,10,,12,25,6,,,Broadcast seed rate
+Assam,rabi,potato,,10,12,,2250,50,15,,,"Seed tubers about 2.5 cm diameter (25-40 g); may plant bigger with adjusted spacing; 3 irrigations timed at 25, 60, 80 days after emergence without mulching; 2 irrigations at 25 and 60 days with mulching"
+Assam,rabi,strawberry,,11,11,,,,,,,"Varieties: Sweet Charlie, Festival, Chandler; propagated through runner; best time for planting November"
+Sikkim,rabi,Rajmash,,8,8,,75,30,10,,,Sowing on ridge-furrow to avoid water logging; proper drainage
+Sikkim,rabi,Rapeseed Mustard,,10,12,,7,,,,,Field preparation: 2-3 times ploughing in Oct-Nov
+Sikkim,rabi,Buckwheat,,10,11,,35,30,10,,,
+Sikkim,rabi,Vegetable pea,,,,,65,40,10,,,Zero till cultivation; lifesaving irrigation recommended
+Sikkim,rabi,"Cole crops (cabbage, cauliflower, broccoli)",,,,,,40,50,25,,Nursery raised under protected conditions; transplant in evening
+Sikkim,rabi,Tomato (rabi),,,,,,40,50,25,,Nursery raised under protected conditions; transplant in evening
+Sikkim,rabi,Carrot,,,,,,20,10,,,Soak seed overnight before sowing; sow on raised beds 30-40 cm width; thinning after 10-15 DAS
+Sikkim,rabi,Radish,,,,,,30,10,,,Sow on raised beds 30-40 cm width; thinning after 10-15 DAS
+Sikkim,rabi,Potato,,10,11,,,50,20,,,Plant tubers of 40-50g; one irrigation needed; maintain soil moisture
+Arunachal Pradesh,rabi,maize,,9,10,,,60,20,,,Sowing should be completed preferably by mid-October; cobs harvested at grain moisture less than 20%
+Arunachal Pradesh,rabi,paddy,,,,"[11, 11]",,,,,,Complete harvesting of early and medium duration varieties within second fortnight of November
+Arunachal Pradesh,rabi,rapeseed/mustard,Papum Pare district,10,11,,,,,,"[120, 150]","Ploughing by first fortnight October, sowing by second fortnight October, extendable to 15 Nov; harvest at 120-150 DAS"
+Arunachal Pradesh,rabi,potato,,11,11,"[2, 2]",,60,20,,,Planting completed by first fortnight November; harvest by mid February after dehaulming
+Arunachal Pradesh,rabi,buckwheat,"Tawang, West Kameng, Lower Subansiri",9,10,,20,30,,,,Sowing recommended September-October for high altitude
+Arunachal Pradesh,rabi,buckwheat,Dibang and Lohit valleys,10,11,,20,30,,,,Sowing recommended October to mid November for low altitude
+Arunachal Pradesh,rabi,foxtail millet,,1,2,,8,25,,,,Best sowing last week of January; seed rate may increase to 15 kg/ha for broadcast
+Arunachal Pradesh,rabi,pea,,10,11,,50,45,10,,,Sowing Oct-Nov; first picking at 75 DAS
+Manipur,rabi,field pea,,10,11,,60,30,10,,,"Varieties Aman, Prakash, Rachna, Aparna"
+Manipur,rabi,chickpea,,10,11,,60,30,10,,,"Varieties JG-14, JG-16"
+Manipur,rabi,lentil,,10,11,,40,30,10,,,"Variety HUL-57, can be grown in residual moisture or with little irrigation"
+Manipur,rabi,rapeseed-mustard,,10,10,,13,,,,,"Varieties M-27, TS-36, TS-38, Ragini, NRCHB-101; seeds sown directly as relay crop just before 4-7 days of rice harvest"
+Manipur,rabi,maize,,10,11,,20,60,20,,,"Varieties HQPM-1, HQPM-5, RCM-76"
+Manipur,rabi,cauliflower,,9,10,,,,,30,,"Varieties White Excel, Sweta, Pusa snowball"
+Manipur,rabi,cabbage,,9,10,,,,,30,,"Varieties Green Hero, Rare Ball"
+Manipur,rabi,broccoli,,9,10,,,,,30,,"Varieties Green magic, Harumi 88, Puspa"
+Manipur,rabi,chilli,,12,1,,,,,30,,King chilli nursery sowing; medium nursery duration; transplant February-March
+Manipur,rabi,tomato,,9,10,,400,60,60,,,"Varieties Arka Rakshak, Arka Samrat; staking recommended"
+Manipur,rabi,onion,,9,10,,,,,,,"Varieties Arka Lalima, Bhima Shakti, Bhima Kiran, Prema"
+Manipur,rabi,garlic,,9,10,,,,,,,Harvest with stalks and leaves
+Meghalaya,rabi,boro paddy,,11,12,"[1, 3]",,15,10,,,Transplanting @ 2-3 seedlings/hill in December to January. Spacing 15-25x10-20cm.
+Meghalaya,rabi,maize,,8,9,,25,60,30,,,Harvest when silk attains brown colouration.
+Meghalaya,rabi,rapeseed and mustard,,10,11,,,,,,,Early sowing and harvesting before frost.
+Meghalaya,rabi,rabi vegetables,,,,,,,,,,"Nursery on raised beds 15 cm high, 1 m width with polythene cover."
+Meghalaya,rabi,oats,,10,11,,80,,,,,Good rabi fodder.
+Mizoram,rabi,Maize,,10,10,,,60,30,,,Use composite variety or hybrid sweet corn
+Mizoram,rabi,Rajmash,,8,9,,,,,,,Use improved variety like ARUN
+Mizoram,rabi,Soybean,,9,9,,,,,,,"Use high yielding varieties like JS 335, VL 89"
+Mizoram,rabi,Toria,,9,9,,5.5,30,8,,,Thinning done 3 weeks after sowing
+Mizoram,rabi,Nursery Management for winter vegetables,,8,9,,,2.5,,21,30,"Sow seeds thinly in U-shaped furrows, depth 1-2 cm; seedlings ready for transplant 21-30 days after sowing"
+Mizoram,rabi,Tomato,,8,9,,,,30,,,Nursery bed preparation from end August; seed treatment required
+Mizoram,rabi,Cabbage,,8,9,,,,30,,,Nursery bed preparation from end August; seed treatment required
+Mizoram,rabi,Broccoli,,8,9,,,,30,,,Nursery bed preparation from end August; seed treatment required
+Mizoram,rabi,Onion,,8,9,,,,30,,,Nursery bed preparation from end August; seed treatment required
+Mizoram,rabi,Mustard,,,,,,,,,,
+Nagaland,rabi,field pea,,10,11,,,,,,,Sowing during second fortnight October to first fortnight November
+Nagaland,rabi,rapeseed,,10,11,,,,,,,Sowing can be delayed up to last week of November
+Nagaland,rabi,linseed,,10,11,,,,,,,Sowing during second fortnight October to first fortnight November
+Nagaland,rabi,cabbage,,8,9,,,45,30,30,,Prepare nursery August-September; transplant 30-40 day old seedlings at 45x30 cm
+Nagaland,rabi,cauliflower,,8,9,,,45,30,30,,Prepare nursery August-September; transplant 30-40 day old seedlings at 45x30 cm
+Nagaland,rabi,broccoli,,8,9,,,45,30,30,,Prepare nursery August-September; transplant 30-40 day old seedlings at 45x30 cm
+Nagaland,rabi,knol khol,,8,9,,,45,30,30,,Prepare nursery August-September; transplant 30-40 day old seedlings at 45x30 cm
+Nagaland,rabi,radish,,8,9,,,45,30,30,,Prepare nursery August-September; transplant 30-40 day old seedlings at 45x30 cm
+Nagaland,rabi,turnip,,8,9,,,45,30,30,,Prepare nursery August-September; transplant 30-40 day old seedlings at 45x30 cm
+Nagaland,rabi,french bean,,10,11,,,,,,,Start sowing in October and complete by 15th November
+Nagaland,rabi,carrot,,10,11,,,,,,,Start sowing in October and complete by 15th November
+Nagaland,rabi,tomato,,8,9,,,45,30,,,Prepare nursery August-September and transplant at 45x30 cm spacing
+Nagaland,rabi,kiwi,,12,1,,,,,,,Propagated by hardwood cutting in December-January
+Tripura,rabi,boro rice,,11,12,"[12, 1]",,20,15,,,"Transplanting 2-3 seedlings per hill, nursery bed preparation 15 Nov to 15 Dec"
+Tripura,rabi,rabi maize,,11,11,,20,60,20,,,Seed treated with Trichoderma solution 200-250g for 10-15 minutes
+Tripura,rabi,mustard,,,,,,30,10,,,"Seed rate 700-900 gm/kani, rows spacing 30-40 cm, plant to plant distance 10-15 cm"
+Tripura,rabi,toria,,,,,,30,10,,,"Seed rate 700-900 gm/kani, rows spacing 30-40 cm, plant to plant distance 10-15 cm"
+Tripura,rabi,field pea,,11,11,,,,,,,"Seed inoculation with biofertilizers, lime application 15-20 days before sowing"
+Tripura,rabi,lentil,,11,11,,8,30,10,,,"One ploughing and two harrowing, seed treated with rhizobium and PSB"
+Tripura,rabi,brinjal,,,,,,75,60,,,"Seed treatment with biocontrol agents, spacing 75x60 cm"
+Tripura,rabi,chilli,,,,,,,,,,"Seed treatment with biocontrol agents, top dressing urea at 30 DAT"
+Tripura,rabi,tomato,,,,,,,,25,,"Seed treatment with biocontrol agents, nursery sowing with 10 cm spacing"
+Tripura,rabi,cauliflower,,,,,,,,30,,"Seeds sown in seedbeds, seedlings transplanted after 30-35 days"
+Tripura,rabi,radish,,,,,,15,10,,,"15x10 cm spacing, thinning at second weeding"
+Tripura,rabi,carrot,,,,,,,,,80,"Seeds sown on raised or ridged beds, harvest after 80-100 days"
+Tripura,rabi,banana,,8,9,,,,,,,"Intercrop with legume/green manure during Aug-Sept, foliar sprays and bunch feeding recommended"
+Tripura,rabi,pineapple,South Tripura,9,12,,,60,30,,,"Raised bed planting with spacing 30 x 60 x 90 cm or 40 x 60 x 90 cm, sucker curing for 7 days"
+Maharashtra,rabi,Chickpea,,10,11,,75,,,,,Rainfed chickpea sown first fortnight October; irrigated from last week October to first week November; seed treated with 4 g Trichoderma or 3 g Carbendazim per kg seed followed by Rhizobium and PSB biofertilizer @ 250 g / 10 kg seed; sowing on BBF beneficial
+Maharashtra,rabi,Wheat,,10,12,,,,,,,Irrigated wheat sown first fortnight November; late sown up to 15 December if water available; rainfed sown first fortnight October using residual moisture
+Maharashtra,rabi,Rabi Sorghum,,9,10,,,45,12.5,,,"Sown on residual moisture after green gram, black gram or soybean"
+Maharashtra,rabi,Safflower,,10,11,,,45,20,,,"Rainfed sown 1-15 October, irrigated up to 15 November; thinning after two weeks of sowing to maintain stand"
+Maharashtra,rabi,Linseed,,,10,,10,30,15,,,Use short duration varieties; finish sowing before 15 October
+Maharashtra,rabi,Mustard,,11,11,,5,45,20,,,
+Maharashtra,rabi,Sugarcane,,10,2,,,90,22,,,Pre-seasonal planting 1 Oct to 15 Nov; seasonal planting 1 Jan to 15 Feb; 25-30 thousand two budded sets per ha
+Maharashtra,rabi,Pomegranate,,,,,,,,,,Pruning for Ambiya Bahar; water stress 30-60 days based on soil; remove suckers
+Maharashtra,rabi,Citrus,,,,,,,,,,Ambiya bahar and stress management (45-60 days water stress in Nov-Dec)
+Maharashtra,rabi,Mango,,,,,,,,,,Organic mulching; install 4 Rakshak fruit fly traps per ha
+Maharashtra,rabi,Banana,,,,,,,,,,Smoke in orchard during cold wave evenings; irrigation at night; organic mulching
+Maharashtra,rabi,Grapes,,,,,,,,,,October pruning; need based irrigation during rest period
+Maharashtra,rabi,Brinjal,,9,10,,,,,,,
+Maharashtra,rabi,Tomato,,8,9,,,,,,,
+Maharashtra,rabi,Onion,,10,11,,,,,,,Transplanting month Oct-Nov; seed sowing with tractor drawn BBF also advised
+Maharashtra,rabi,Okra,,,,,,,,,,
+Gujarat,rabi,sugarcane,south Gujarat,,,,,,,,,"Varieties GNS 11 (Co N 13072), GNS 10 (Co N 13073), GNS 9 (Co N 9072), GNS 8(Co N 7072) are recommended"
+Gujarat,rabi,sugarcane,saurashtra,,,,,,,,,Variety GS 5 (Co N 05071) recommended
+Gujarat,rabi,chickpea,,,,,,,,,,"Recommended rainfed varieties GJG-3, GJG-6; irrigated GJG-5"
+Gujarat,rabi,wheat,,11,11,,,,,,,Short to medium winter duration; timely sowing 2nd-3rd week Nov preferred
+Gujarat,rabi,onion,,9,10,,,,,,,Raise nursery in September-October
+Gujarat,rabi,maize,,10,11,,,,,,,Sow in 2nd fortnight October to 1st fortnight November
+Gujarat,rabi,mustard,,10,10,,,,,,,Sowing after first week of October
+Gujarat,rabi,cumin,,11,11,,,,,,,Sowing in 1st fortnight November
+Gujarat,rabi,fennel,,10,11,,,,,,,Sowing last week October to first week November
+Gujarat,rabi,pearl millet,,10,10,,,,,,,Semi-rabi crop sowing in first fortnight of October
+Gujarat,rabi,ajwain,,10,10,,,,,,,Sowing in second fortnight of October
+Gujarat,rabi,fodder sorghum,,,,,11,30,,,,"Varieties CSV 21F, Co FS-31, CoFS – 29 recommended"
+Gujarat,rabi,lucern,,,,,,,,,,"Varieties Guj. Anand Lucern – 3, 4"
+Madhya Pradesh,rabi,wheat,,11,12,,100,20,,,,Timely sown: 15-30 Nov; Late sowing: 1-30 Dec
+Madhya Pradesh,rabi,chickpea,,11,11,,,,,,,Sowing in first fortnight of November using Ridge and Furrow or Raised Bed method
+Madhya Pradesh,rabi,linseed,,,,,25,,,,,"Seed rate 30 kg/ha rainfed, 25 kg/ha irrigated; dry sowing followed by irrigation preferred"
+Madhya Pradesh,rabi,mustard,,10,11,,5,30,,,,Sowing mid-October to mid-November; thinning after 15-20 days
+Madhya Pradesh,rabi,sugarcane,,,,,,80,,,,Use trash twist propping at 210 days; seed cane age 8-10 months
+Chhattisgarh,rabi,wheat,,10,12,,125,20,,,,Timely sown varieties by 25th November; late sown 25 Nov to 15 Dec; irrigated ecosystem; seed treated with Carboxin 2 g/kg seed
+Chhattisgarh,rabi,chickpea,plains,10,11,,80,30,,,,"Seed treated with Carbendazim 2 g/kg, Rhizobium and PSB 5 g/kg, Trichoderma 5 g/ha; increase seed rate by 25 kg/ha if late sown; utera crop seed rate 100 kg/ha"
+Chhattisgarh,rabi,lathyrus,,10,11,,45,30,,,,"Seed treated with Thirum 3 g/kg, Rhizobium and PSB 5 g/kg; relay crop seed rate 75-90 kg/ha"
+Chhattisgarh,rabi,field pea,,,,,,,,,,
+Chhattisgarh,rabi,linseed,,10,11,,30,27.5,,,,"Rainfed seed rate 30 kg/ha, irrigated 20-25 kg/ha; seed treated with Carbendazim 2 g/kg seed"
+Chhattisgarh,rabi,mustard,,10,11,,4.5,,,,,Seed treated with Carbendazim 1.5-2 g/kg seed
+Chhattisgarh,rabi,safflower,,10,11,,12.5,45,,,,
+Chhattisgarh,rabi,lentil,,10,11,,42.5,24,,,,"Seed treated with Rhizobium, Trichoderma, PSB 5-10 g/kg seed"
+Chhattisgarh,rabi,maize,,10,11,,55,,,,,Sow by end of February for summer; October-November for rabi crop
+Chhattisgarh,rabi,hybrid napier,,2,3,,,60,60,,,Use 30000-35000 rooted slips per hectare; plant in February-March
+Chhattisgarh,rabi,berseem,,10,11,,27.5,,,,,Sown for 5-6 cuts Nov to March
+Chhattisgarh,rabi,tomato,,10,11,,312.5,,,,,"Seed treated with Thirum 2.5 g/kg, Copper Oxychloride 3 g/kg, Trichoderma and Pseudomonas 8-10 g/kg seed"
+Chhattisgarh,rabi,cauliflower,,9,10,,450,,,,,
+Chhattisgarh,rabi,cabbage,,9,10,,450,,,,,
+Chhattisgarh,rabi,onion,,,11,,9,,,,,Sowing should be completed by 15 Nov
+Chhattisgarh,rabi,vegetable pea,,10,11,,90,,,,,
+Chhattisgarh,rabi,chilli,,9,10,,0.5,,,,,"Seed rate 500 g/ha normal, 200 g/ha hybrid"
+Chhattisgarh,rabi,potato,,,,,,,,,,
+Telangana,rabi,rice,,,,,,,,,,"Select short duration varieties Talanaga Sona (RNR 15048), Batukamma (JGL 18047), Kunaram Sannalu (KNM 118), Tellahamsa (RNR 10754), Cottondora Sannalu (MTU 1010), Nelluri Mashuri (NLR 34449). Treat seed with Carbendazim 3 g/kg before sowing. Wet nursery with Carbendazim 1 g/L soak 24 hrs. Apply 2 quintals poultry/sheep manure or vermicompost per 200 m2 nursery plus recommended N and K, double P dose at basal. Cover nursery in evenings to protect from cold. Zinc sulphate spray 2 g/L. Carbendazim + Mancozeb 2 g/kg urea spray during urea application. Irrigate evening and drain morning. Use sprouted seedlings for rabi puddled nursery."
+Telangana,rabi,maize,,10,12,,,,,,,"Time of sowing October to November for Yasangi; December for rice fallow zero tillage. Recommended medium duration hybrids DHM 117, DHM 119, DHM 121, Bisco 855, Bio 9637, Karimnagar Makka 1, JKMH 4848 and short duration DHM-115, Pioneer 3342, KH 5991, DKC 7074."
+Telangana,rabi,groundnut,,,,,,,,,,Seed treatment with Tebuconazole 1 g/kg or Mancozeb 3 g/kg. In stem rot areas treat with Imidacloprid 600 FS 1 ml/7 ml water/kg seed. For root grub areas treat with Chlorpyriphos 6.5 ml/kg seed. Treat seed with Rhizobium culture 200 g/kg seed for 1 acre. Treat with Trichoderma 10 g/kg seed for dry root rot and stem rot control.
+Telangana,rabi,chickpea,,10,11,,,30,10,,,"Use wilt resistant varieties JG-11, JAKI-9218, NBeG-3, NBeg-47. Late sowing use higher plant density up to 44 plants/m2 by increased seed rate and zig zag sowing."
+Telangana,rabi,sesame,,1,2,,,,,,,"Sowing for summer crop second fortnight January to first fortnight February. Sensitive to weed competition first 20-25 days, two weedings at 15-20 and 30-35 days after sowing. Irrigation immediately after sowing and subsequently every 12-15 days."
+Telangana,rabi,sunflower,,11,12,,,,,,,Yasangi season and Zero tillage optimum sowing November to December. Summer season second fortnight January to first fortnight February. Seed treatment with Thiomethaxom 3 g/kg or Imidacloprid 5 ml/kg. Pre-emergence Oxadiargil 150 g per acre within 24-48 hrs sowing on wet soil. Apply 5-7.5 t/ha FYM 2-3 weeks before sowing. Apply 50% N basal and 100% P and K basal with remaining N in two doses. Gypsum 55 kg/acre if sulphur deficient. Borax spray 2 g/l at star bud stage.
+Telangana,rabi,safflower,,9,10,,,,,,,Planting September second fortnight to October first fortnight. Extended rainfall sowing till end October to first week November. Apply recommended fertilizer basally 2-3 weeks before planting in traditional single cropped yasangi tracts. One irrigation 30 days after planting.
+Kerala,rabi,rice,,,,,,,,,,"In wet direct seeded paddy fields, land preparation may be done immediately after harvest of first crop. Use soil ameliorants like lime or dolomite @ 2 kg/cent. FYM @ 2 t/acre after two weeks from first ploughing."
+Kerala,rabi,coconut,,,,,,,,,,Green manure crops ploughed during August-September; ploughing in September-October; mulching at close of NE monsoon (Oct-Nov).
+Kerala,rabi,banana,,,,,,50,50,,,Select sword suckers 2-3 months age; plant in pits of 50x50x50 cm; apply 10 kg organic manure and 500 g dolomite at planting.
+Kerala,rabi,black pepper,,,,,,,,,,Mulching with dried leaves; shade with coconut leaves; irrigate twice a week.
+Kerala,rabi,ginger,,,,,,,,,,Mulch with glyricidia; earthing up after last fertilizer in October.
+Kerala,rabi,turmeric,,,,,,,,,,Mulch with glyricidia; earthing up after last fertilizer in October.
+Kerala,rabi,cardamom,,,,"[8, 10]",,,,,,Forking done in October-November; peak harvest August to October.
+Kerala,rabi,vegetables,,11,2,,,,,,,All types of vegetables including cool season (Nov-Feb) can be grown open or in grow bags.
+Lakshadweep,rabi,vegetables,,,,,,,,,,"Prepare land for vegetables, start seedling production through nursery method using seedling trays or seed beds with fertile soil enriched with FYM or compost"
+Lakshadweep,rabi,fruits,,,,,,,,,,"Prepare land for fruit cultivation, conserve water, use natural mulching for moisture conservation"
+Lakshadweep,rabi,coconut,,8,9,,,,,,,Plough in and incorporate green manure crops in August-September; use mulching near coconut basin at onset of northeast monsoon
+Lakshadweep,rabi,banana,,,,,,,,,,"Apply organic manure 10 kg/plant; irrigate twice a week, provide shade and mulch using dried leaves; provide staking for wind protection"
+Himachal Pradesh,rabi,wheat,low and mid hill zone,9,12,,100,22,,,,Seed rate 150 kg/ha for late sown; sowing in lines
+Himachal Pradesh,rabi,chickpea,,10,10,,45,30,,,,"HPG 17 seed rate 80, line spacing 50 cm, sowing at proper soil moisture"
+Himachal Pradesh,rabi,lentil,,10,11,,30,,,,,
+Himachal Pradesh,rabi,brown sarson,,10,10,,6,30,10,,,Apply gypsum 140 kg/ha
+Himachal Pradesh,rabi,gobhi sarson,,10,10,,6,30,10,,,
+Himachal Pradesh,rabi,cole crops,low and mid hills,7,11,,,,,,,"Nursery sowing in Aug-Sep, transplant Oct-Jan"
+Himachal Pradesh,rabi,garden pea,low and mid hills,9,11,,,,,,,"Sow early varieties Sep-Oct, main season late Oct-Nov"
+Himachal Pradesh,rabi,onion,low and mid hills,10,11,5,,,,,,"Nursery sowing mid Oct-Nov, transplant Dec-Jan, harvesting last week May"
+Himachal Pradesh,rabi,garlic,,,,,,,,,,
+Himachal Pradesh,rabi,radish,low hill,8,9,,,,,,,
+Himachal Pradesh,rabi,carrot,low hill,8,9,,,,,,,
+Himachal Pradesh,rabi,turnip,low hill,8,9,,,,,,,
+Himachal Pradesh,rabi,spinach,low hill,8,11,,,,,,,
+Himachal Pradesh,rabi,fenugreek,low hill,8,11,,,,,,,
+Himachal Pradesh,rabi,coriander,low hill,8,11,,,,,,,
+Himachal Pradesh,rabi,apple,,,,,,,,,,"FYM and nutrients applied as per tree, pruning and fungal control in winter"
+Jammu and Kashmir,rabi,wheat,Jammu Region Sub-Tropical zone,11,1,,98.8,,,,,"Seed rate: 40 kg/acre normal, 50 kg/acre December sowing, 60 kg/acre January very late sowing. Bed planter method: 37.5 cm wide bed and 30 cm wide furrow"
+Jammu and Kashmir,rabi,mustard,Jammu Region Sub-Tropical,9,11,,1.96,30,15,,,"Cool climate needed early stages, higher temp for maturity"
+Jammu and Kashmir,rabi,mustard,Intermediate up to 3000 ft altitude,10,10,,1.96,30,15,,,
+Jammu and Kashmir,rabi,mustard,Temperate above 3000 ft altitude,9,10,,2.8,30,15,,,
+Jammu and Kashmir,rabi,gobhi-sarson,Jammu Region Sub-Tropical,10,10,,1.96,40,,60,,"For irrigated 24:16:8 NPK, rainfed 20:12:6 NPK + 8kg/acre Sulphur"
+Jammu and Kashmir,rabi,toria,Jammu Region Sub-Tropical,9,9,,1.96,,,,,Sow first week September optimal
+Jammu and Kashmir,rabi,chickpea,Jammu Region,10,10,,21.6,30,,,,Seed inoculated with Rhizobium; sow mid Oct
+Jammu and Kashmir,rabi,lentil,Jammu Region,10,11,,11.3,21,,,,Sow last week Oct to 2nd week Nov
+Jammu and Kashmir,rabi,berseem,Jammu Region Sub-Tropical,10,10,,5.5,,,,,Mix 0.44 kg mustard seed with berseem seed for first cut fodder
+Jammu and Kashmir,rabi,oats,Jammu Region,10,11,,44.1,23,,,,Mid Oct to 1st Nov sowing
+Jammu and Kashmir,rabi,cauliflower,Jammu Region,,,,0.18,60,30,,,Early sow May-June; Medium Aug; Late Sept-Oct
+Jammu and Kashmir,rabi,cabbage,Jammu Region,,,,0.2,,,,,Early and Late varieties seed rate 200g/acre; mid 160g/acre
+Jammu and Kashmir,rabi,knolkhol,Jammu Region,,,,1.34,,,,,
+Jammu and Kashmir,rabi,radish,Jammu Region,,,,,,,,,"Seed rate varies: Asiatic 4-4.8 kg/acre, European 6-7.2 kg/acre, Dibbling 1.6-2.0 kg/acre"
+Jammu and Kashmir,rabi,carrot,Jammu Region,,,,,,,,,Seeds soaked 12-24 hours before sowing
+Jammu and Kashmir,rabi,garlic,Sub Tropical and Intermediate,8,10,,220,15,7.5,,,"Planting Aug-Oct sub-tropical and intermediate, Mar-Apr intermediate high"
+Jammu and Kashmir,rabi,pea,Sub-Tropical zone,9,11,,23.7,,,,,"Early crop last week Oct, main crop mid Oct to mid Nov"
+Jammu and Kashmir,rabi,french bean,Jammu Region Sub-Tropical,1,2,,34,,,,,Sow last week Jan to 1st fortnight Feb subtropical; Mar-Apr intermediate mid and temperate high
+Odisha,rabi,rice,,,,,49.42,,,,,Use certified seeds and germination test; line transplanting; harvest at 85% grain maturity
+Odisha,rabi,maize,,,,,14.88,,,,,Seed treatment recommended for fall army worm
+Odisha,rabi,green gram,,,,,,,,,,Sowing with tractor drill after rice harvest
+Odisha,rabi,black gram,,,,,,,,,,Can be intercropped with maize; sowing with tractor drill after rice harvest
+Odisha,rabi,mustard,,,,,,,,,,
+Odisha,rabi,groundnut,,11,11,,,,,,,Complete sowing by November
+Odisha,rabi,onion,,10,11,,7.41,,,30,,Transplant 1-1.5 months old seedlings
+Odisha,rabi,cauliflower,,,,,,60,30,,70,"Different varieties for early, medium and late duration; seed treated with Thiram"
+Odisha,rabi,potato,,11,11,,,30,15,,,Tuber size at least 15-20gm; final land preparation with FYM
+Odisha,rabi,tomato,,,,,,,,,,Hybrid variety Arka Rakshak; disease resistant
+Odisha,rabi,brinjal,,,,,,,,,,Wilt resistant varieties; seed treatment advised
+Odisha,rabi,broccoli,,,,,,60,45,,,
+Odisha,rabi,capsicum,,,,,0.1,,,,,Various varieties listed
+Odisha,rabi,french bean,,9,,,,,,,,Various varieties for bush and pole type
+Andhra Pradesh,rabi,rice,North Coast,10,12,,20,,,,,Sowing can be taken up to 15th December with a seed rate of 20-25 kg in case of transplanted rice.
+Andhra Pradesh,rabi,maize,,10,11,,19,,,,,Sowing time for rabi is between October 15 and November 15.
+Andhra Pradesh,rabi,greengram,rabi uplands,11,12,,15,30,10,,,
+Andhra Pradesh,rabi,blackgram,rabi uplands,11,12,,18,30,10,,,
+Andhra Pradesh,rabi,bengal gram,,10,11,,85,,,,,
+Tamil Nadu and Puducherry,rabi,Rice,,,,,,,,,,"Varieties recommended for Rabi season include Late Samba, Thaladi, VGD 1, TKM 13, CO 52, CO (R) 50, ADT 39, ADT 38, Pishanam, Late ADT 49, CO 43, CO 43 sub.1, Improved White Ponni, Pishanam ADT (R) 46, TRY 3, CO(RH) 4, TPS 3, CR1009, Navarai ADT 53, CO 51, ADT (R) 45, TPS 5, MDU 6, ADT 36, ADT 37, CORH 3, ASD 16, TKM 9"
+Tamil Nadu and Puducherry,rabi,Sorghum,,,,,,,,,,"Varieties CO 30, CO 32 and K 12"
+Tamil Nadu and Puducherry,rabi,Pearl millet,,,,,,,,,,Varieties CO 10 and Hybrid CO 9
+Tamil Nadu and Puducherry,rabi,Finger millet,,,,,,,,,,"Varieties CO (Ra) 14, CO 15, ML 365, Paiyur 2 and ATL 1"
+Tamil Nadu and Puducherry,rabi,Maize,,,,,,,,,,"Hybrid CO 6, COH(M) 8 and COH(M) 9"
+Tamil Nadu and Puducherry,rabi,Redgram,,,,,,,,,,"Varieties Co (Rg) 7, CO 8 and VBN(Rg) 3"
+Tamil Nadu and Puducherry,rabi,Blackgram,,,,,,,,,,"Varieties VBN 6, MDU 1, CO 6, VBN 8, VBN 10; Co 7 rice fallow: ADT 3, ADT 6, KKM 1, VBN 6, VBN 9"
+Tamil Nadu and Puducherry,rabi,Greengram,,,,,,,,,,"Varieties Co (Gg) 7, VBN(Gg) 2, VBN(Gg) 3, CO 8, VBN 4; Rice fallow: ADT 3"
+Tamil Nadu and Puducherry,rabi,Horse gram,,,,,,,,,,"Variety Paiyur 2, CRIDA 18R and CRIDA 19 R"
+Tamil Nadu and Puducherry,rabi,Groundnut,,,,,,,,,,"Varieties TMVGn 13, VRI(Gn) 6, VRI 8, CO 7, TMV 14, Dharani, BSR 2"
+Tamil Nadu and Puducherry,rabi,Sesame,,,,,,,,,,"Varieties VRI(Sv) 2, TMV 7, VRI 3"
+Tamil Nadu and Puducherry,rabi,Sugarcane,,,,,,,,,,Intercrop with Dhaincha / Sunnhemp; trash mulching recommended
+Tamil Nadu and Puducherry,rabi,Banana,,,,,,,,,,Tissue cultured banana; suckers treatment with carbendazim
+Tamil Nadu and Puducherry,rabi,Guava,,,,,,,,,,Nematode management with Purpureocillium lilacinum and Beauveria bassiana
+Tamil Nadu and Puducherry,rabi,Papaya,,,,,,,,,,Raise seedlings in insect proof net house; root rot/wilt management
+Tamil Nadu and Puducherry,rabi,Mango,,,,,,,,,,Pruning in August-September; gummosis and fruit fly management; off-season flowering induced Dec-Jan
+Tamil Nadu and Puducherry,rabi,Tomato,,,,,,,,,,"Varieties PKM 1, CO 3 (Marutham) and Paiyur 1; Hybrids: TNAU Tomato Hybrid CO 3, TNAU Tomato Hybrid CO4, Arka Rakshak, Arka Samrat"
+Karnataka,rabi,Paddy,,,,,,,,,,Rabi paddy nursery can be initiated using recommended varieties
+Karnataka,rabi,Ragi,,,,,,,,,,"Suitable varieties for rabi season are Indaf-7 & 9, KMR-301 and GPU-48"
+Karnataka,rabi,Maize,,,,,,60,30,,,"Grow improved hybrid maize varieties viz., MAH-14-5, Hema and Nithyashree"
+Karnataka,rabi,Red gram,,,,,,,,,,
+Karnataka,rabi,Black gram,,,,,8,,,,,Sowing after paddy harvest based on residual moisture
+Karnataka,rabi,Green gram,,,,,7,,,,,Sowing after paddy harvest based on residual moisture
+Karnataka,rabi,Chickpea,,,,,28,,,,,Use wilt resistant variety Jaki-9218 in wilt endemic areas
+Karnataka,rabi,Sorghum,,,,,,,,,,Seeds to be treated with Calcium Chloride and grown sole or intercrop
+Karnataka,rabi,Wheat,,,,,,,,,,
+Karnataka,rabi,Sunflower,,,,,5,,,,,"Use new hybrids RSFH -1887, KBSH-42, KBSH-44 seeds"
+Karnataka,rabi,Ground nut,,,,,,,,,,
+Karnataka,rabi,Cotton,,,,,450,,,,,"Bt. Cotton seeds per acre, seed treatment recommended"
+Karnataka,rabi,Sugarcane,,,,,,,,,,Use variety CO-86032 & intercrop with onion
+Karnataka,rabi,Mulberry,,,,,,,,,,
+Karnataka,rabi,Onion,,,,,7,,,40,,Seedlings available for transplanting in 40-45 days after sowing
+Karnataka,rabi,Chilli,,,,,,,,,,Dry harvested produce for 8 to 10 days to avoid aflatoxin

@@ -48,6 +48,10 @@ class PlanRequest(BaseModel):
         le=12,
         description="Month (1–12) when farmer plans to start; used for season-aware crop filtering.",
     )
+    category: str | None = Field(
+        default=None,
+        description="Farmer category: general/obc/sc/st — used for scheme subsidy matching",
+    )
 
     @model_validator(mode="after")
     def validate_cross_field(self) -> "PlanRequest":
@@ -81,6 +85,7 @@ class ValidatedProfile(BaseModel):
     horizon_months: int
     user_context: str | None = None
     planning_month: int | None = None  # 1–12 when farmer plans to start
+    category: str | None = None  # general/obc/sc/st
 
 
 # ── Constraints ──────────────────────────────────────────────────────────
@@ -337,6 +342,9 @@ class ScenarioPnL(BaseModel):
     break_even_months: Optional[float] = None
     break_even_years: Optional[float] = None
     break_even_status: str = "NOT_REACHED"
+    subsidy_pct_applied: float = 0.0  # subsidy % deducted from setup cost
+    subsidy_scheme_name: Optional[str] = None  # name of the applied scheme
+    effective_setup_cost: Optional[float] = None  # setup cost after subsidy
 
 
 class MonthlyCashflow(BaseModel):
@@ -408,6 +416,105 @@ class EconomistOutput(BaseModel):
 # ── Field layout ────────────────────────────────────────────────────────
 
 
+# ── ICAR Advisory ──────────────────────────────────────────────────────
+
+
+class IcarCalendarEntry(BaseModel):
+    """ICAR crop calendar row for a single crop in a state+season."""
+
+    crop_name: str
+    sub_region: Optional[str] = None
+    sow_start_month: Optional[int] = None
+    sow_end_month: Optional[int] = None
+    harvest_month_range: Optional[str] = None
+    seed_rate_kg_ha: Optional[float] = None
+    row_spacing_cm: Optional[float] = None
+    plant_spacing_cm: Optional[float] = None
+    duration_days: Optional[int] = None
+    notes: Optional[str] = None
+
+
+class IcarNutrientPlan(BaseModel):
+    """ICAR nutrient plan row."""
+
+    crop_name: str
+    sub_region: Optional[str] = None
+    N_kg_ha: Optional[float] = None
+    P_kg_ha: Optional[float] = None
+    K_kg_ha: Optional[float] = None
+    FYM_t_ha: Optional[float] = None
+    zinc_sulphate_kg_ha: Optional[float] = None
+    other_micronutrients: Optional[str] = None
+    biofertilizers: Optional[str] = None
+    split_schedule: Optional[str] = None
+    application_notes: Optional[str] = None
+
+
+class IcarPestEntry(BaseModel):
+    """ICAR pest/disease row."""
+
+    crop_name: str
+    sub_region: Optional[str] = None
+    pest_or_disease_name: str = ""
+    type: Optional[str] = None  # "pest" or "disease"
+    monitor_start_month: Optional[int] = None
+    monitor_end_month: Optional[int] = None
+    chemical_control: Optional[str] = None
+    bio_control: Optional[str] = None
+    threshold_note: Optional[str] = None
+
+
+class IcarVarietyEntry(BaseModel):
+    """ICAR variety recommendation row."""
+
+    crop_name: str
+    sub_region: Optional[str] = None
+    variety_names: Optional[str] = None
+    variety_type: Optional[str] = None  # "hybrid", "HYV", "variety"
+    duration_type: Optional[str] = None  # "early", "medium", "late"
+    purpose: Optional[str] = None
+
+
+class IcarWeedEntry(BaseModel):
+    """ICAR weed management row."""
+
+    crop_name: str
+    sub_region: Optional[str] = None
+    pre_emergence_herbicide: Optional[str] = None
+    pre_em_dose: Optional[str] = None
+    pre_em_timing_das: Optional[str] = None
+    post_emergence_herbicide: Optional[str] = None
+    post_em_dose: Optional[str] = None
+    post_em_timing_das: Optional[str] = None
+    manual_weeding_schedule: Optional[str] = None
+
+
+class IcarAdvisory(BaseModel):
+    """Aggregated ICAR advisory data for a crop in a state+season."""
+
+    state: str
+    season: str
+    crop_name: str
+    crop_id: Optional[str] = None
+    calendar: list[IcarCalendarEntry] = Field(default_factory=list)
+    nutrient_plans: list[IcarNutrientPlan] = Field(default_factory=list)
+    pests: list[IcarPestEntry] = Field(default_factory=list)
+    varieties: list[IcarVarietyEntry] = Field(default_factory=list)
+    weed_management: list[IcarWeedEntry] = Field(default_factory=list)
+
+
+class IcarAdvisoryReport(BaseModel):
+    """Full ICAR advisory report for all crops in the portfolio."""
+
+    state: str
+    season: str
+    advisories: list[IcarAdvisory] = Field(default_factory=list)
+    data_note: str = "Source: ICAR Agro-Advisory for Farmers (Kharif 2025 & Rabi 2021-22)"
+
+
+# ── Field layout ────────────────────────────────────────────────────────
+
+
 class FieldBlock(BaseModel):
     crop_id: str
     crop_name: str
@@ -428,6 +535,11 @@ class FieldBlock(BaseModel):
     irrigation_method: str = ""  # recommended irrigation for this block
     companion_crops: list[str] = Field(default_factory=list)
     planting_tip: str = ""  # one-line expert tip for this crop
+    # Layout accuracy fields
+    is_broadcast: bool = False  # True for cereals/fodder with continuous sowing
+    seed_rate_kg_per_acre: float = 0.0  # practical seed rate for broadcast crops
+    headland_m: float = 0.0  # headland/turning space at field ends (metres)
+    spacing_source: str = ""  # "reference", "icar", or "default" — where spacing data came from
 
 
 class FieldLayoutPlan(BaseModel):
@@ -454,6 +566,11 @@ class MatchedScheme(BaseModel):
     eligibility_summary: str = ""
     application_url: Optional[str] = None
     match_reasons: list[str] = Field(default_factory=list)
+    # Extended fields
+    scheme_type: str = ""  # SUBSIDY / CREDIT / INSURANCE / INCOME_SUPPORT / MARKET / INFRASTRUCTURE
+    checklist_items: list[str] = Field(default_factory=list)  # per-scheme action items
+    category_subsidy_note: Optional[str] = None  # e.g. "SC/ST get 60% instead of 40%"
+    source_url: Optional[str] = None  # official source for verification
 
 
 class SchemesReport(BaseModel):
@@ -461,6 +578,10 @@ class SchemesReport(BaseModel):
     total_potential_subsidy: Optional[float] = None
     eligibility_checklist: list[str] = Field(default_factory=list)
     data_note: str = ""
+    # Extended fields
+    schemes_by_type: dict[str, list[str]] = Field(default_factory=dict)  # type → scheme_ids
+    state_specific_count: int = 0
+    central_count: int = 0
 
 
 # ── Full response ────────────────────────────────────────────────────────
@@ -490,3 +611,4 @@ class PlanResponse(BaseModel):
     economist_output: Optional[EconomistOutput] = None
     field_layout: Optional[FieldLayoutPlan] = None
     schemes: Optional[SchemesReport] = None
+    icar_advisory: Optional[IcarAdvisoryReport] = None

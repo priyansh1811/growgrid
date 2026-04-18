@@ -73,7 +73,7 @@ class OpenAILLMClient(BaseLLMClient):
                 {"role": "user", "content": user_prompt},
             ],
             "temperature": LLM_TEMPERATURE,
-            "max_tokens": LLM_MAX_TOKENS,
+            "max_completion_tokens": LLM_MAX_TOKENS,
         }
         if response_format == "json":
             kwargs["response_format"] = {"type": "json_object"}
@@ -99,7 +99,7 @@ class OpenAILLMClient(BaseLLMClient):
                 {"role": "user", "content": user_prompt},
             ],
             temperature=LLM_TEMPERATURE,
-            max_tokens=LLM_MAX_TOKENS,
+            max_completion_tokens=LLM_MAX_TOKENS,
         )
         return response.choices[0].message.content or ""
 

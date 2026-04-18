@@ -38,10 +38,12 @@ from growgrid_core.agents.utils.mandi_price_fetcher import (
 )
 from growgrid_core.db.db_loader import load_all
 from growgrid_core.db.queries import (
+    get_best_matching_subsidy,
     get_crop_by_id,
     get_loss_factor,
     get_price_bands,
     get_yield_bands,
+    get_yield_state_bands,
 )
 from growgrid_core.tools.datagov_client import BaseDataGovMandiClient
 from growgrid_core.tools.llm_client import BaseLLMClient
@@ -87,6 +89,20 @@ Rules:
 - Do NOT use markdown formatting — plain text only
 """
 
+# ── Season helper ────────────────────────────────────────────────────────
+
+
+def _planning_month_to_season(planning_month: int | None) -> str | None:
+    """Map planning month to Indian agricultural season."""
+    if planning_month is None:
+        return None
+    if planning_month in (6, 7, 8, 9, 10):
+        return "KHARIF"
+    if planning_month in (3, 4, 5):
+        return "ZAID"
+    return "RABI"  # Nov-Feb
+
+
 # ── Scenario mapping ─────────────────────────────────────────────────────
 
 # Maps our scenario names to DB yield/price/loss band keys
@@ -108,11 +124,19 @@ _SCENARIO_DB_KEYS: dict[str, dict[str, str]] = {
     },
 }
 
-# Cost multipliers for scenarios (conservative pays more, optimistic less)
-_SCENARIO_COST_MULT: dict[str, float] = {
+# Fallback cost multipliers — used only when economics_scenario_reference.csv
+# has no entry for the practice.  Per-practice values from the CSV are preferred.
+_SCENARIO_COST_MULT_FALLBACK: dict[str, float] = {
     "conservative": 1.10,
     "base": 1.00,
     "optimistic": 0.95,
+}
+
+# Maps our scenario names to the CSV column names for opex multipliers
+_SCENARIO_TO_MULT_KEY: dict[str, str] = {
+    "conservative": "worst_case_opex_multiplier",
+    "base": "base_case_opex_multiplier",
+    "optimistic": "best_case_opex_multiplier",
 }
 
 
@@ -220,12 +244,34 @@ class EconomistAgent(BaseAgent):
                 capital_buffer_floor_months=scenario_ref["capital_buffer_floor_months"],
                 capex_contingency_pct=scenario_ref["capex_contingency_pct"],
                 llm_client=self._llm,
+                state=state_name,
             )
             crop_economics_list.append(ce)
 
             # Collect metadata for revenue computation
             crop_info = get_crop_by_id(conn, entry["crop_id"])
-            yield_bands = get_yield_bands(conn, entry["crop_id"])
+
+            # Try state-specific yield bands first; fall back to national average
+            planning_season = _planning_month_to_season(planning_month) if planning_month else None
+            yield_bands = None
+            yield_source = "national"
+            if state_name:
+                state_bands = get_yield_state_bands(
+                    conn, entry["crop_id"], state_name, planning_season,
+                )
+                if state_bands:
+                    yield_bands = state_bands
+                    yield_source = "state_specific"
+                    logger.info(
+                        "Using state-specific yield for %s in %s: %.1f–%.1f–%.1f q/acre",
+                        entry["crop_name"], state_name,
+                        state_bands["low_yield_per_acre"],
+                        state_bands["base_yield_per_acre"],
+                        state_bands["high_yield_per_acre"],
+                    )
+            if yield_bands is None:
+                yield_bands = get_yield_bands(conn, entry["crop_id"])
+
             db_price_bands = get_price_bands(conn, entry["crop_id"])
             perishability = (crop_info or {}).get("perishability", "MED")
             loss_factor = get_loss_factor(conn, perishability)
@@ -236,6 +282,7 @@ class EconomistAgent(BaseAgent):
                 "area_fraction": entry["area_fraction"],
                 "area_acres": area,
                 "yield_bands": yield_bands or {},
+                "yield_source": yield_source,
                 "db_price_bands": db_price_bands or {},
                 "loss_factor": loss_factor or {},
                 "has_db_data": ce.has_db_data,
@@ -289,14 +336,14 @@ class EconomistAgent(BaseAgent):
                 )
             )
 
-            if merged["source"] == "live_fetch":
+            if merged["source"] in ("live_fetch", "blended_live"):
                 fields_from_live.append(f"{meta['crop_name']} price")
             elif merged["source"] == "database":
                 fields_from_db.append(f"{meta['crop_name']} price")
             else:
                 fields_from_fallback.append(f"{meta['crop_name']} price")
 
-        # Track data quality for cost fields
+        # Track data quality for cost and yield fields
         for crop_id, meta in crop_metadata.items():
             if meta["has_db_data"]:
                 fields_from_db.append(f"{meta['crop_name']} costs")
@@ -304,6 +351,27 @@ class EconomistAgent(BaseAgent):
                 fields_from_fallback.append(f"{meta['crop_name']} costs")
             else:
                 fields_from_db.append(f"{meta['crop_name']} costs (practice-level)")
+
+            if meta.get("yield_source") == "state_specific":
+                fields_from_live.append(f"{meta['crop_name']} yield (state-specific)")
+            else:
+                fields_from_db.append(f"{meta['crop_name']} yield (national avg)")
+
+        # ════════════════════════════════════════════════════════════════
+        # STEP 2b — Look up best matching subsidy scheme for this practice
+        # ════════════════════════════════════════════════════════════════
+        subsidy_info = get_best_matching_subsidy(
+            conn, practice.practice_code, state_name,
+        ) if state_name else None
+        subsidy_pct = 0.0
+        subsidy_scheme_name = None
+        if subsidy_info and float(subsidy_info.get("subsidy_pct", 0) or 0) > 0:
+            subsidy_pct = min(float(subsidy_info["subsidy_pct"]) / 100.0, 0.50)  # cap at 50%
+            subsidy_scheme_name = subsidy_info.get("scheme_name")
+            logger.info(
+                "Applying %.0f%% subsidy from %s to setup costs",
+                subsidy_pct * 100, subsidy_scheme_name,
+            )
 
         # ════════════════════════════════════════════════════════════════
         # STEP 3 — Compute 3 scenarios (pure arithmetic)
@@ -313,7 +381,9 @@ class EconomistAgent(BaseAgent):
 
         for scenario_name in ("conservative", "base", "optimistic"):
             db_keys = _SCENARIO_DB_KEYS[scenario_name]
-            cost_mult = _SCENARIO_COST_MULT[scenario_name]
+            # Use per-practice multiplier from CSV; fall back to hardcoded default
+            mult_key = _SCENARIO_TO_MULT_KEY[scenario_name]
+            cost_mult = scenario_ref.get(mult_key, _SCENARIO_COST_MULT_FALLBACK[scenario_name])
             crop_results: list[CropScenarioResult] = []
             scenario_total_revenue = 0.0
             scenario_total_setup = 0.0
@@ -388,13 +458,16 @@ class EconomistAgent(BaseAgent):
                     )
                 )
 
-            total_cost = scenario_total_setup + scenario_total_opex
+            # Apply subsidy deduction to setup cost
+            effective_setup = scenario_total_setup * (1.0 - subsidy_pct)
+
+            total_cost = effective_setup + scenario_total_opex
             total_profit = scenario_total_revenue - total_cost
             roi_pct = (total_profit / total_cost * 100) if total_cost > 0 else 0.0
 
-            # Break-even for this scenario
+            # Break-even uses effective (post-subsidy) setup cost
             be_months, be_years, be_status = _compute_break_even(
-                total_setup=scenario_total_setup,
+                total_setup=effective_setup,
                 annual_opex=scenario_total_opex / horizon_years if horizon_years > 0 else 0,
                 annual_revenue=scenario_total_revenue / horizon_years if horizon_years > 0 else 0,
                 horizon_months=horizon_months,
@@ -411,6 +484,9 @@ class EconomistAgent(BaseAgent):
                 break_even_months=be_months,
                 break_even_years=be_years,
                 break_even_status=be_status,
+                subsidy_pct_applied=round(subsidy_pct * 100, 1),
+                subsidy_scheme_name=subsidy_scheme_name,
+                effective_setup_cost=round(effective_setup, 0),
             )
 
         # ════════════════════════════════════════════════════════════════
