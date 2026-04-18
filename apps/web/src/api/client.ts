@@ -5,7 +5,7 @@ import type {
   RefinementResult,
 } from '../types'
 
-const API_BASE = import.meta.env.VITE_API_BASE || '/api'
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://growgrid.onrender.com/api'
 
 async function request<T>(path: string, options: RequestInit = {}, timeoutMs = 300_000): Promise<T> {
   const controller = new AbortController()
